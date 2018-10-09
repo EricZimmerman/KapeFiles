@@ -1,0 +1,51 @@
+{
+	"Description": "Parses Windows Event Logs - Security, System, Application, etc.",
+	"Category": "EventLogs",
+	"Author": "Justin Price",
+	"Version": 1.0,
+	"Id": "5cf0c60e-ab0c-4633-83b7-fd222fbbb4e0",
+	"ExportFormat": "csv",
+	"FileMask":"",
+	"Processors": [
+		{
+			"Executable": "SecurityEvents.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "SystemEvents.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "ApplicationEvents.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "PowerShell.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "RDPCoreTS.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "TaskScheduler.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "TS-LSM.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		},
+		{
+			"Executable": "TS-RCM.mjskape",
+			"CommandLine": "",
+			"ExportFormat": ""
+		}
+	]
+}

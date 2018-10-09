@@ -1,0 +1,73 @@
+{
+	"Description": "Internet Explorer",
+	"Author": "Eric Zimmerman",
+	"Version": 1.0,
+	"Id": "b1e1d79b-324d-4587-a002-cc81144588ff",
+	"RecreateDirectories": true,
+	"Targets": [
+		{
+			"Name": "Index.dat History",
+			"Category": "Communications",
+			"Path": "C:\\Documents and Settings\\*\\Local Settings\\History\\History.IE5\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Index.dat History subdirectory",
+			"Category": "Communications",
+			"Path": "C:\\Documents and Settings\\*\\Local Settings\\History\\History.IE5\\*\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Index.dat temp internet files",
+			"Category": "Communications",
+			"Path": "C:\\Documents and Settings\\*\\Local Settings\\Temporary Internet Files\\Content.IE5\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Index.dat cookies",
+			"Category": "Communications",
+			"Path": "C:\\Documents and Settings\\*\\Cookies\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Index.dat UserData",
+			"Category": "Communications",
+			"Path": "C:\\Documents and Settings\\*\\Application Data\\Microsoft\\Internet Explorer\\UserData\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Index.dat Office XP",
+			"Category": "Communications",
+			"Path": "C:\\Documents and Settings\\*\\Application Data\\Microsoft\\Office\\Recent\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Index.dat Office",
+			"Category": "Communications",
+			"Path": "C:\\Users\\*\\AppData\\Roaming\\Microsoft\\Office\\Recent\\index.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "WebcacheV01.dat",
+			"Category": "Communications",
+			"Path": "C:\\Users\\*\\AppData\\Local\\Microsoft\\Windows\\WebCache\\WebCacheV01.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		}
+	]
+}

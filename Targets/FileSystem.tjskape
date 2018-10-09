@@ -1,0 +1,38 @@
+{
+	"Description": "File system metadata",
+	"Author": "Eric Zimmerman",
+	"Version": 1.0,
+	"Id": "cf748dbc-1c5a-4ae9-8f68-4aba6505e181",
+	"RecreateDirectories": true,
+	"Targets": [
+		
+		{
+			"Name": "$MFT",
+			"Category": "FileSystem",
+			"Path": "C:\\$MFT",
+			"IsDirectory": false,
+			"Recursive": false,
+			"AlwaysAddToQueue": true,
+			"Comment": ""
+		},
+		{
+			"Name": "$LogFile",
+			"Category": "FileSystem",
+			"Path": "C:\\$LogFile",
+			"IsDirectory": false,
+			"Recursive": false,
+			"AlwaysAddToQueue": true,
+			"Comment": ""
+		},
+		{
+			"Name": "$J",
+			"Category": "FileSystem",
+			"Path": "c:\\$Extend\\$UsnJrnl:$J",
+			"IsDirectory": false,
+			"Recursive": false,
+			"SaveAsFileName": "$J",
+			"Comment": ""
+		}
+		
+	]
+}

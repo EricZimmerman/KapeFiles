@@ -1,0 +1,18 @@
+{
+	"Description": "Parses Security event log using TZWorks evtwalk64",
+	"Category": "AccountUsage",
+	"Author": "Justin Price",
+	"Version": 1.0,
+	"Id": "9bcdadfe-7279-418f-b21f-45ee6b476225",
+	"ExportFormat": "csv",
+	"Processors": [
+		{
+			"Executable": "evtwalk64.exe",
+			"CommandLine": "-log %sourceDirectory%\\Windows\\system32\\winevt\\Logs\\Security.evtx -pair_datetime -csv",
+			"ExportFormat": "csv",
+			"ExportFile": "security_event_log.csv"
+
+		}
+		
+	]
+}
