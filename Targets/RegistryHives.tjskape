@@ -4,8 +4,7 @@
 	"Version": 1.0,
 	"Id": "76af6086-bd0b-429f-bfd7-4a8e8ff8138f",
 	"RecreateDirectories": true,
-	"Targets": [
-				{
+	"Targets": [{
 			"Name": "ntuser.dat registry hive XP",
 			"Category": "Registry",
 			"Path": "C:\\Documents and Settings\\*\\ntuser.dat",
@@ -156,6 +155,60 @@
 			"IsDirectory": false,
 			"Recursive": false,
 			"Comment": ""
+		},
+
+		{
+			"Name": "System Profile registry hive",
+			"Category": "Registry",
+			"Path": "C:\\Windows\\System32\\config\\systemprofile\\ntuser.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+
+		},
+		{
+			"Name": "System Profile registry transaction files",
+			"Category": "Registry",
+			"Path": "C:\\Windows\\System32\\config\\systemprofile\\ntuser.dat.LOG*",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Local Service registry hive",
+			"Category": "Registry",
+			"Path": "C:\\Windows\\ServiceProfiles\\LocalService\\ntuser.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+
+		},
+		{
+			"Name": "Local Service registry transaction files",
+			"Category": "Registry",
+			"Path": "C:\\Windows\\ServiceProfiles\\LocalService\\ntuser.dat.LOG*",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+		},
+		{
+			"Name": "Network Service registry hive",
+			"Category": "Registry",
+			"Path": "C:\\Windows\\ServiceProfiles\\NetworkService\\ntuser.dat",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
+
+		},
+		{
+			"Name": "Network Service registry transaction files",
+			"Category": "Registry",
+			"Path": "C:\\Windows\\ServiceProfiles\\NetworkService\\ntuser.dat.LOG*",
+			"IsDirectory": false,
+			"Recursive": false,
+			"Comment": ""
 		}
+
+
 	]
 }
