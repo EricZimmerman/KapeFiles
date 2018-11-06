@@ -1,0 +1,12 @@
+Description: Parses TerminalServices-RemoteConnectionManager event log using TZWorks\nevtwalk64
+Category: AccountUsage
+Author: Justin Price
+Version: 1
+Id: 03a235a7-066a-4e44-b1c3-37ddf58e5459
+ExportFormat: csv
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx -pair_datetime -csv
+        ExportFormat: csv
+        ExportFile: ts-rcm_event_log.csv

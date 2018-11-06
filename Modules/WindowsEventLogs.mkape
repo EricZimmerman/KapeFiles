@@ -1,0 +1,40 @@
+Description: Parses Windows Event Logs - Security, System, Application, etc.
+Category: EventLogs
+Author: Justin Price
+Version: 1
+Id: 5cf0c60e-ab0c-4633-83b7-fd222fbbb4e0
+ExportFormat: csv
+FileMask: ""
+Processors:
+    -
+        Executable: SecurityEvents.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SystemEvents.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: ApplicationEvents.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RDPCoreTS.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: TaskScheduler.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: TS-LSM.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: TS-RCM.mkape
+        CommandLine: ""
+        ExportFormat: ""

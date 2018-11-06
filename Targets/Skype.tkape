@@ -1,0 +1,20 @@
+Description: Skype
+Author: Eric Zimmerman
+Version: 1
+Id: d7b0b49c-16bb-4b32-9f57-2d918acaebbc
+RecreateDirectories: true
+Targets:
+    -
+        Name: main.db
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\main.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: main.db XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Skype\*\main.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

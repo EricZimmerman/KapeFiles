@@ -1,0 +1,12 @@
+Description: Parses System event log using TZWorks evtwalk64
+Category: SystemEvents
+Author: Justin Price
+Version: 1
+Id: 8cb3d17d-91e1-4088-92bf-0f3629df2e4d
+ExportFormat: csv
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\System.evtx -pair_datetime -csv
+        ExportFormat: csv
+        ExportFile: system_event_log.csv

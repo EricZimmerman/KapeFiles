@@ -1,0 +1,12 @@
+Description: Parses TerminalServices-LocalSessionManager event log using TZWorks evtwalk64
+Category: AccountUsage
+Author: Justin Price
+Version: 1
+Id: faa03cfe-34e8-4ad1-8bb5-70d39873f11e
+ExportFormat: csv
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx -pair_datetime -csv
+        ExportFormat: csv
+        ExportFile: ts-lcm_event_log.csv
