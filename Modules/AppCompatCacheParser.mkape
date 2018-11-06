@@ -1,4 +1,4 @@
-Description: AppCompatCacheParser: extract AppCompatCache (shimcache) information
+Description: 'AppCompatCacheParser: extract AppCompatCache (shimcache) information'
 Category: ProgramExecution
 Author: Eric Zimmerman
 Version: 1

@@ -1,4 +1,4 @@
-Description: MFTECmd: process $MFT files
+Description: 'MFTECmd: process $MFT files'
 Category: FileSystem
 Author: Eric Zimmerman
 Version: 1

@@ -7,9 +7,8 @@ Targets:
     -
         Name: All targets
         Category: Targets
-	#Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
+        #Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
         Path: '*.tkape'
         IsDirectory: false
         Recursive: false
-        RecreateDirectories: false
         Comment: ""

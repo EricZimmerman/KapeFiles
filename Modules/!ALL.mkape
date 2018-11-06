@@ -7,7 +7,7 @@ ExportFormat: csv
 FileMask: ""
 Processors:
     -
-	#Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
+        #Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
         Executable: '*.mkape'
         CommandLine: ""
         ExportFormat: ""

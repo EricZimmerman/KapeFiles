@@ -1,4 +1,4 @@
-Description: RecentFileCacheParser: extract file names from RecentFilecache.bcf
+Description: 'RecentFileCacheParser: extract file names from RecentFilecache.bcf'
 Category: ProgramExecution
 Author: Eric Zimmerman
 Version: 1

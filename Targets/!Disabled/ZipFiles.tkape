@@ -9,7 +9,7 @@ Targets:
         Category: Archives
         Path: C:\
         IsDirectory: true
-	#Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
+        #Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
         FileMask: '*.zip'
         Recursive: true
         Comment: This is an example of how to walk a drive for a file mask. Probably do not want to use this one as is
