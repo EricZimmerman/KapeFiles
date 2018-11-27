@@ -28,3 +28,29 @@ Targets:
         Recursive: false
         SaveAsFileName: $J
         Comment: ""
+    -
+        Name: $SDS
+        Category: FileSystem
+        Path: c:\$Secure:$SDS
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Secure_$SDS
+        Comment: ""
+    -
+        Name: $Boot
+        Category: FileSystem
+        Path: c:\$Boot
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $T
+        Category: FileSystem
+        Path: c:\$Extend\$RmMetadata\$TxfLog\$Tops:$T
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $T
+        Comment: ""
