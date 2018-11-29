@@ -7,6 +7,6 @@ ExportFormat: csv
 Processors:
     -
         Executable: evtwalk64.exe
-        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\System.evtx -pair_datetime -csv
+        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\System.evtx -pair_datetime -csv -no_whitespace
         ExportFormat: csv
         ExportFile: system_event_log.csv
