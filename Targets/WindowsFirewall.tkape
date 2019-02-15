@@ -1,0 +1,13 @@
+Description: Windows Firewall Logs
+Author: Mike Cary
+Version: 1
+Id: e1c2040e-c1b4-47ef-973f-73a54c5e87ca
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Firewall Logs
+        Category: WindowsFirewallLogs
+        Path: C:\Windows\System32\LogFiles\Firewall\pfirewall.*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

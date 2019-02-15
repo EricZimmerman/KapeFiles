@@ -1,6 +1,6 @@
 Description: Lnk files and jump lists
 Author: Eric Zimmerman
-Version: 1
+Version: 1.1
 Id: 5fc6820c-4d30-4a38-9e43-5e0b788a4b0c
 RecreateDirectories: true
 Targets:
@@ -11,6 +11,13 @@ Targets:
         IsDirectory: true
         Recursive: true
         Comment: Also includes automatic and custom jumplist directories
+    -
+        Name: Lnk files from Microsoft Office Recent
+        Category: LnkFiles
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Office\Recent
+        IsDirectory: true
+        Recursive: true
+        Comment: ""        
     -
         Name: Lnk files from Recent (XP)
         Category: LnkFiles
