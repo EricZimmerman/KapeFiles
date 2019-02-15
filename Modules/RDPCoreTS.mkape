@@ -4,9 +4,10 @@ Author: Justin Price
 Version: 1
 Id: 5209e424-6007-40e0-a8cf-022903a1d9d3
 ExportFormat: csv
+FileMask: Microsoft-Windows-RemoteDesktopServices-RdpCoreTS%4Operational.evtx
 Processors:
     -
         Executable: evtwalk64.exe
-        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\Microsoft-Windows-RemoteDesktopServices-RdpCoreTS%4Operational.evtx -pair_datetime -csv -no_whitespace
+        CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
         ExportFormat: csv
         ExportFile: rdpcorets_event_log.csv
