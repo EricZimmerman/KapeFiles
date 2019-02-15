@@ -1,6 +1,6 @@
 Description: Evidence of execution related files
 Author: Eric Zimmerman
-Version: 1
+Version: 1.1
 Id: 13ba1e33-4899-4843-adf0-c7e6a20d758a
 RecreateDirectories: true
 Targets:
@@ -30,5 +30,12 @@ Targets:
         Category: ApplicationCompatability
         Path: C:\Windows\AppCompat\Programs\Amcache.hve.LOG*
         IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Windows 10 Timeline
+        Category: ActivitiesCache
+        Path: C:\users\*\Appdata\Local\ConnectedDevicesPlatform\*
+        IsDirectory: true
         Recursive: false
         Comment: ""
