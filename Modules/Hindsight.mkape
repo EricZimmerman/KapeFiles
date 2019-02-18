@@ -1,0 +1,17 @@
+Description: 'Hindsight - Chrome browser parsing'
+Category: Browsing.\kape.exe --msource 
+Author: Mike Cary
+Version: 1
+Id: d9661ea6-3369-41d0-8807-904f00edcbf4
+ExportFormat: xlsx
+Processors:
+    -
+        Executable: hindsight.exe
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Chrome -f xlsx 
+        ExportFormat: xlsx
+#####
+# Hindsight - Internet history forensics for Google Chrome/Chromium
+# https://github.com/ocbsidianforensics/hindsight
+# Must specify path to user's chrome profile in --msource
+# Example: "G:\Kape_TEST\C\users\tesuser\Appdata\Local\Google\Chrome\User Data\Default" --mdest D:\Kape_moduleOut --module HindsightHistory
+#####
