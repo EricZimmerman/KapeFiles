@@ -7,6 +7,5 @@ ExportFormat: txt
 Processors:
     -
         Executable: densityscout.exe
-        CommandLine: -pe -p 0.1 -l 0.1 -d -r %sourceDirectory%
+        CommandLine: -pe -p 0.1 -l 0.1 -d -r %sourceDirectory% -o %destinationDirectory%\DensityScout.txt
         ExportFormat: txt
-        ExportFile: DensityScout.txt
