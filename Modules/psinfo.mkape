@@ -6,7 +6,7 @@ Id: 9e89b787-bc97-4e96-b72e-195a390ede98
 ExportFormat: csv
 Processors:
     -
-        Executable: psinfo.exe
+        Executable: PsInfo.exe
         CommandLine: -h -s -d -c -accepteula
         ExportFormat: csv
         ExportFile: psinfo.csv
