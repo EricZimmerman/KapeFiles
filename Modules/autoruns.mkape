@@ -1,5 +1,5 @@
 Description: Autoruns reports Explorer shell extensions, toolbars, browser helper objects, Winlogon notifications, auto-start services, and much more.
-Category: ProgramExecution
+Category: Persistence
 Author: Andy Furnas
 Version: 1
 Id: c95e71bd-7abb-48c3-abae-f48b9ff19dec
