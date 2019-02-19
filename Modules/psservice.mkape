@@ -1,0 +1,13 @@
+Description: Display the configured services (both running and stopped) on the local system.
+Category: Services
+Author: Andy Furnas
+Version: 1
+Id: b5af1e38-2a78-4538-8430-83b8a60e02c4
+ExportFormat: txt
+Processors:
+    -
+        Executable: PsService.exe
+        CommandLine: -accepteula
+        ExportFormat: txt
+        ExportFile: PsService.txt
+        
