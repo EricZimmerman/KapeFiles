@@ -56,7 +56,7 @@ Targets:
     -
         Name: WebcacheV01.dat
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.dat
-        IsDirectory: false
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        IsDirectory: Yes
         Recursive: false
         Comment: ""
