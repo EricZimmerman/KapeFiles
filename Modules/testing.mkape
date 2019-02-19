@@ -1,0 +1,43 @@
+Description: Testing
+Category: Collection
+Author: Andy Furnas
+Version: 1
+Id: 932f775d-f57b-49a0-93a1-b3681ada865e
+ExportFormat: txt
+FileMask: ""
+Processors:
+    -
+        Executable: autoruns.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: handle.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: psfile.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: psinfo.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: pslist.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: psloggedon.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: psservice.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: tcpvcon.mkape
+        CommandLine: ""
+        ExportFormat: ""
+######
+# As this processes live data off the sytem any directory can be set as "msource"
+######
