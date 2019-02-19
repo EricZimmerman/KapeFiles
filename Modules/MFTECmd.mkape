@@ -10,3 +10,7 @@ Processors:
         Executable: MFTECmd.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory%
         ExportFormat: csv
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory%
+        ExportFormat: json
