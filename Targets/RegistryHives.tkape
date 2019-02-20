@@ -179,3 +179,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: System Restore Points Registry Hives (XP)
+        Category: Registry
+        Path: C:\System Volume Information\_restore*\RP*\snapshot\_REGISTRY_*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
