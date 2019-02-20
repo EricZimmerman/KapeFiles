@@ -39,3 +39,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: Restore point lnk files XP
+        Category: LnkFiles
+        Path: C:\System Volume Information\_restore*\RP*\*.lnk
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
