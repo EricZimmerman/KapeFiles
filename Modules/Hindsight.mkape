@@ -9,6 +9,10 @@ Processors:
         Executable: hindsight.exe
         CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Chrome -f xlsx 
         ExportFormat: xlsx
+    -
+        Executable: hindsight.exe
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Chrome -f json 
+        ExportFormat: json
 #####
 # Hindsight - Internet history forensics for Google Chrome/Chromium
 # https://github.com/ocbsidianforensics/hindsight
