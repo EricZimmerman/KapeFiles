@@ -60,3 +60,11 @@ Targets:
         IsDirectory: Yes
         Recursive: false
         Comment: ""
+    -
+        Name: Local Internet Explorer folder
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Internet Explorer
+        IsDirectory: Yes
+        Recursive: false
+        Comment: ""
+

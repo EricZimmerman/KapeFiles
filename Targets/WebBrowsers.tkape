@@ -25,3 +25,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: Edge
+        Category: Communications
+        Path: Edge.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
