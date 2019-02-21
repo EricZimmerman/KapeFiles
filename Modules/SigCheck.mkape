@@ -7,6 +7,6 @@ ExportFormat: csv
 Processors:
     -
         Executable: sigcheck64.exe
-        CommandLine: -a -c -h -s -accepteula -nobanner \\?\%sourceDirectory%\
+        CommandLine: -a -c -h -s -accepteula -nobanner %sourceDirectory%
         ExportFormat: csv
         ExportFile: sigcheck.csv

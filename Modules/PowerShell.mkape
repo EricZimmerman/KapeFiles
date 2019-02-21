@@ -4,9 +4,10 @@ Author: Justin Price
 Version: 1
 Id: 127bf25c-7dc6-4f60-9abe-8b5bcf62eca8
 ExportFormat: csv
+FileMask: Microsoft-Windows-PowerShell%4Operational.evtx
 Processors:
     -
         Executable: evtwalk64.exe
-        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\Microsoft-Windows-PowerShell%4Operational.evtx -pair_datetime -csv -no_whitespace
+        CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
         ExportFormat: csv
         ExportFile: powershell-operational_event_log.csv

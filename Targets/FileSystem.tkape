@@ -29,6 +29,14 @@ Targets:
         SaveAsFileName: $J
         Comment: ""
     -
+        Name: $Max
+        Category: FileSystem
+        Path: c:\$Extend\$UsnJrnl:$Max
+        IsDirectory: false
+        Recursive: false
+        SaveAsFileName: $Max
+        Comment: ""
+    -
         Name: $SDS
         Category: FileSystem
         Path: c:\$Secure:$SDS

@@ -4,9 +4,10 @@ Author: Justin Price
 Version: 1
 Id: 8cb3d17d-91e1-4088-92bf-0f3629df2e4d
 ExportFormat: csv
+FileMask: System.evtx
 Processors:
     -
         Executable: evtwalk64.exe
-        CommandLine: -log %sourceDirectory%\Windows\system32\winevt\Logs\System.evtx -pair_datetime -csv -no_whitespace
+        CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
         ExportFormat: csv
         ExportFile: system_event_log.csv

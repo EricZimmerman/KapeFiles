@@ -1,0 +1,13 @@
+Description: Shows statistics for all running processes
+Category: Processes
+Author: Andy Furnas
+Version: 1
+Id: fa3aa32a-0091-4650-9485-ad87891b8751
+ExportFormat: txt
+Processors:
+    -
+        Executable: pslist.exe
+        CommandLine: -x -accepteula
+        ExportFormat: txt
+        ExportFile: pslist.txt
+        
