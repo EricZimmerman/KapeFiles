@@ -1,0 +1,13 @@
+Description: AppData
+Author: Phill Moore
+Version: 1.1
+Id: f8314fc9-3c07-48e9-bb10-539c0dc39ea7
+RecreateDirectories: true
+Targets:
+    -
+        Name: AppData
+        Category: UserData
+        Path: C:\Users\*\AppData\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
