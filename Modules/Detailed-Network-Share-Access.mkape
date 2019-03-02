@@ -3,6 +3,7 @@ Category: NetworkUsage
 Author: Brian Maloney/@sbousseaden
 Version: 1
 Id: 2d3f0292-d302-4d4a-b292-f8fbd58b8498
+BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 ExportFormat: csv
 FileMask: Security.evtx
 Processors:
