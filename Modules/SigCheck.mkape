@@ -1,5 +1,5 @@
 Description: Sigcheck all files in a volume, with hashes, entropy, and internal metadata
-Category: FileKnowledge
+Category: FileMetadata
 Author: troyla@microsoft.com
 Version: 1
 Id: f93bd081-55cd-4c13-9a7f-280a0caeebf8
