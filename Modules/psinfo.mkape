@@ -3,6 +3,7 @@ Category: SystemInfo
 Author: Andy Furnas
 Version: 1
 Id: 9e89b787-bc97-4e96-b72e-195a390ede98
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
 ExportFormat: csv
 Processors:
     -
