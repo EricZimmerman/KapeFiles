@@ -3,6 +3,7 @@ Category: FileUsage
 Author: Andy Furnas
 Version: 1
 Id: 79cca355-160d-4a61-951d-e295a8c0d8bb
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
 ExportFormat: txt
 Processors:
     -
