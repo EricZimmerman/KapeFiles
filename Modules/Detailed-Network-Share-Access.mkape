@@ -1,5 +1,5 @@
 Description: LogParser Security event 5145
-Category: NetworkUsage
+Category: RemoteAccess
 Author: Brian Maloney/@sbousseaden
 Version: 1
 Id: 2d3f0292-d302-4d4a-b292-f8fbd58b8498
