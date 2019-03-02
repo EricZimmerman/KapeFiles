@@ -3,6 +3,7 @@ Category: Persistence
 Author: Andy Furnas
 Version: 1
 Id: de522157-2cde-46ff-b1b0-d2201fba6554
+BinaryUrl: https://download.sysinternals.com/files/Handle.zip
 ExportFormat: txt
 Processors:
     -
