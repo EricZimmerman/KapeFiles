@@ -3,6 +3,7 @@ Category: NetworkInformation
 Author: Andy Furnas
 Version: 1
 Id: 528beed4-5703-454b-a4e8-879b8daecfd5
+BinaryUrl: https://download.sysinternals.com/files/TCPView.zip
 ExportFormat: csv
 Processors:
     -
