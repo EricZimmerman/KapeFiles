@@ -3,6 +3,7 @@ Category: AccountUsage
 Author: Brian Maloney (idea by @0x47617279)
 Version: 1
 Id: 058b60b0-6d1e-4b1b-8426-7418e40b6a4f
+BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 ExportFormat: csv
 Processors:
     -
