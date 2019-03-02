@@ -3,6 +3,7 @@ Category: Processes
 Author: Andy Furnas
 Version: 1
 Id: fa3aa32a-0091-4650-9485-ad87891b8751
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
 ExportFormat: txt
 Processors:
     -
