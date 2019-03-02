@@ -3,6 +3,7 @@ Category: AccountUsage
 Author: Justin Price
 Version: 1
 Id: 9bcdadfe-7279-418f-b21f-45ee6b476225
+BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv
 FileMask: Security.evtx
 Processors:
