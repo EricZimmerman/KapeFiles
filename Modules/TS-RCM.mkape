@@ -3,6 +3,7 @@ Category: AccountUsage
 Author: Justin Price
 Version: 1
 Id: 03a235a7-066a-4e44-b1c3-37ddf58e5459
+BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv
 FileMask: Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx
 Processors:
