@@ -3,6 +3,7 @@ Category: ProgramExecution
 Author: Justin Price
 Version: 1
 Id: 64cda4d2-8fa0-4948-a994-6b60bc1a50b7
+BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv
 FileMask: Application.evtx
 Processors:
