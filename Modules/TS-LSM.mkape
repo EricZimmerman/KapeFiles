@@ -3,6 +3,7 @@ Category: AccountUsage
 Author: Justin Price
 Version: 1
 Id: faa03cfe-34e8-4ad1-8bb5-70d39873f11e
+BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv
 FileMask: Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
 Processors:
