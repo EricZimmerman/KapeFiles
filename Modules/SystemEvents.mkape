@@ -1,5 +1,5 @@
 Description: Parses System event log using TZWorks evtwalk64
-Category: SystemEvents
+Category: EventLogs
 Author: Justin Price
 Version: 1
 Id: 8cb3d17d-91e1-4088-92bf-0f3629df2e4d
