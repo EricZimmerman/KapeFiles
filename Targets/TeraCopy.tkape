@@ -1,0 +1,13 @@
+Description: 'TeraCopy log history'
+Author: Kevin Pagano
+Version: 1
+Id: 111ee9ac-f8b3-4026-a3c9-90f76b6b2cb4
+RecreateDirectories: true
+Targets:
+    -
+        Name: TeraCopy
+        Category: TeraCopy
+        Path: C:\Users\*\AppData\Roaming\TeraCopy
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
