@@ -3,6 +3,7 @@ Category: ProgramExecution
 Author: Brian Maloney
 Version: 1
 Id: 591b2715-f4eb-47bd-9a6c-249b8c22aba1
+BinaryUrl: https://github.com/esecrpm/WMI_Forensics/raw/master/CCM_RUA_Finder.exe
 ExportFormat: tsv
 FileMask: OBJECTS.DATA
 Processors:
@@ -13,6 +14,4 @@ Processors:
 
 ######
 # Uses David Pany's CCM_RUA_finder.py to extract SCCM software metering RecentlyUsedApplication logs from OBJECTS.DATA files.
-# Executable can be found at
-# https://github.com/esecrpm/WMI_Forensics/raw/master/CCM_RUA_Finder.exe
 ######
