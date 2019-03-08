@@ -1,0 +1,12 @@
+Description: USBTZworks
+Category: ExternalMedia
+Author: Tony Knutson
+Version: 1
+Id: 501bac3b-7ce8-43d1-b5ce-a5c4f0099356
+ExportFormat: csv
+Processors:
+    -
+        Executable: usp64.exe
+        CommandLine: -partition %sourceDirectory% --csv -csv_separator "|" -all_usb_devices -no_whitespace %desintationDirectory%
+        ExportFormat: csv
+        ExportFile: devices.csv
