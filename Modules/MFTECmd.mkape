@@ -1,0 +1,25 @@
+Description: 'MFTECmd: process all files handled by MFTECmd'
+Category: FileSystem
+Author: Eric Zimmerman
+Version: 1
+Id: 7ef84a6b-5215-47bb-af2a-2139a3277e25
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+FileMask: $MFT
+Processors:
+    -
+        Executable: MFTECmd_$Boot.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: MFTECmd_$MFT.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: MFTECmd_$J.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: MFTECmd_$SDS.mkape
+        CommandLine: ""
+        ExportFormat: ""
