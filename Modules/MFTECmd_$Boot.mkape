@@ -1,0 +1,17 @@
+Description: 'MFTECmd: process $Boot files'
+Category: FileSystem
+Author: Eric Zimmerman
+Version: 1
+Id: 7ef84a6b-2215-47bb-af2a-3339a3227e25
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+FileMask: $Boot
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory%
+        ExportFormat: json
