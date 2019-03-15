@@ -1,8 +1,9 @@
 Description: Parses RemoteDesktopServices-RdpCoreTS event log using TZWorks evtwalk64
-Category: AccountUsage
+Category: RemoteAccess
 Author: Justin Price
 Version: 1
 Id: 5209e424-6007-40e0-a8cf-022903a1d9d3
+BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv
 FileMask: Microsoft-Windows-RemoteDesktopServices-RdpCoreTS%4Operational.evtx
 Processors:

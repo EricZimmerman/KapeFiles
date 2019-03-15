@@ -3,6 +3,7 @@ Category: BrowsingHistory
 Author: Mike Cary
 Version: 1
 Id: 53d5bea2-b3d3-4a60-8844-be898390adc1
+BinaryUrl: https://www.nirsoft.net/utils/browsinghistoryview-x64.zip
 ExportFormat: csv
 Processors:
     -

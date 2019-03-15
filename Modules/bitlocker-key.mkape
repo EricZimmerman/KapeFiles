@@ -1,5 +1,5 @@
 Description: Collect BitLocker recovery key for a volume
-Category: VolumeKnowledge
+Category: VolumeInformation
 Author: troyla@microsoft.com
 Version: 1
 Id: d30abed8-35f3-4fb6-ba47-5ffdad46c912

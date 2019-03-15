@@ -3,6 +3,7 @@ Category: ProgramExecution
 Author: Justin Price
 Version: 1
 Id: 127bf25c-7dc6-4f60-9abe-8b5bcf62eca8
+BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv
 FileMask: Microsoft-Windows-PowerShell%4Operational.evtx
 Processors:
