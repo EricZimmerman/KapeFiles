@@ -8,11 +8,11 @@ ExportFormat: csv
 Processors:
     -
         Executable: browsinghistoryview.exe
-        CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory% /VisitTimeFilterType 1 /scomma %destinationDirectory%\BrowsingHistory.csv 
+        CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory% /VisitTimeFilterType 1 /ShowTimeInGMT 1 /scomma %destinationDirectory%\BrowsingHistory.csv 
         ExportFormat: csv
     -
         Executable: browsinghistoryview.exe
-        CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory% /VisitTimeFilterType 1 /sverhtml %destinationDirectory%\BrowsingHistory.html 
+        CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory% /VisitTimeFilterType 1 /ShowTimeInGMT 1 /sverhtml  %destinationDirectory%\BrowsingHistory.html 
         ExportFormat: html
 
 ######
