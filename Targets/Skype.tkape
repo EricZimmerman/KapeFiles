@@ -1,6 +1,6 @@
 Description: Skype
 Author: Eric Zimmerman
-Version: 2
+Version: 3
 Id: d7b0b49c-16bb-4b32-9f57-2d918acaebbc
 RecreateDirectories: true
 Targets:
