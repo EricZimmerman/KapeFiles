@@ -1,0 +1,34 @@
+Description: Torrent Clients
+Author: Banaanhangwagen
+Version: 1
+Id: c43f37fb-1b2f-437c-8595-b5b095a0ca7b
+RecreateDirectories: true
+Targets:
+    -
+        Name: TorrentClients - qBittorrent
+        Category: FileDownload
+        Path: C:\Users\*\AppData\Roaming\qBittorrent\*.ini
+        IsDirectory: false
+        Recursive: false
+        Comment: "Locates settings files and copies them"
+    -
+        Name: TorrentClients - qBittorrent
+        Category: FileDownload
+        Path: C:\Users\*\AppData\Local\qBittorrent\logs
+        IsDirectory: false
+        Recursive: false
+        Comment: "Locates log files and copies them"
+    -
+        Name: TorrentClients - uTorrent
+        Category: FileDownload
+        Path: C:\Users\*\AppData\Roaming\uTorrent\*.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: "Locates settings files and copies them"
+    -
+        Name: TorrentClients - BitTorrent
+        Category: FileDownload
+        Path: C:\Users\*\AppData\Roaming\BitTorrent\*.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: "Locates settings files and copies them"
