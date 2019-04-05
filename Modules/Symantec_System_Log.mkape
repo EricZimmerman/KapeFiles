@@ -1,7 +1,7 @@
 Description: LogParser Symantec System Log
 Category: AntiVirus
 Author: Brian Maloney
-Version: 1
+Version: 1.1
 Id: 657cd499-6516-4a55-84f8-2c970a6cd329
 BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 ExportFormat: csv
@@ -9,10 +9,13 @@ FileMask: syslog.log
 Processors:
     -
         Executable: LogParser.exe
-        CommandLine: -stats:OFF -i:TSV -headerRow:off -nSkipLines:1 -nFields:9 "SELECT FileName, CASE Field2 WHEN 'CVE' THEN '' WHEN NULL THEN '' ELSE TO_STRING(TO_TIMESTAMP(ADD(DIV(SUB(TO_REAL(HEX_TO_INT(Field2)),TO_REAL(116444736000000000)),TO_REAL(10000000)), TO_REAL(TIMESTAMP('1970','yyyy')))), 'M/d/yyyy HH:mm:ss') END AS DateAndTime, CASE TO_STRING(Field5) WHEN '0' THEN 'Information' WHEN '1' THEN 'Warning' WHEN '2' THEN 'Error' ELSE '' END AS Severity, CASE Field2 WHEN 'CVE' THEN Field1 WHEN 'SYLINK' THEN Field1 WHEN 'Smc' THEN Field1 WHEN NULL THEN Field1 ELSE Field7 END AS Summary, Field8 AS Type, Field9 AS Data INTO "'%destinationDirectory%\Symantec_System_Logs.csv'" FROM "'%sourceFile%'" WHERE Summary NOT IN ('Smc')" -filemode:0
+        CommandLine: file:Symantec_system_log.sql?destinationDirectory=%destinationDirectory%+sourceFile=%sourceFile% -stats:OFF -i:TSV -headerRow:off -nSkipLines:1 -nFields:9 -filemode:0
         ExportFormat: csv
 
 ######
 # Uses Microsoft Log Parser
 # https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
+# Requires Symantec_system_log.sql to be located in bin folder
+# Symantec_system_log.sql can be found here:
+# https://github.com/Beercow/Logparser-Studio-SIRT-Query/blob/master/LogParser%20sql%20files/Symantec_system_log.sql
 ######
