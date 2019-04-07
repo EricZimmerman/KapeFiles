@@ -1,0 +1,17 @@
+Description: 'RegRipper: parse SYSTEM hive'
+Category: Registry
+Author: ZeArioch
+Version: 1
+Id: ef988f41-7d77-436d-bc1a-1789f062506b
+BinaryUrl: https://github.com/keydet89/RegRipper2.8
+##
+## Place rip.exe, p2x5124.dll and the plugins folder into Modules\bin
+##
+ExportFormat: txt
+FileMask: SYSTEM
+Processors:
+    -
+        Executable: rip.exe
+        CommandLine: -r %sourceFile% -f system
+        ExportFormat: txt
+        ExportFile: regripper-system.txt
