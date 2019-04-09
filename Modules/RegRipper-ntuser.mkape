@@ -1,0 +1,17 @@
+Description: 'RegRipper: parse NTUSER hives'
+Category: Registry
+Author: ZeArioch
+Version: 1
+Id: ce3bf979-0d4d-4a31-8240-6be6f95610b7
+BinaryUrl: https://github.com/keydet89/RegRipper2.8
+##
+## Place rip.exe, p2x5124.dll and the plugins folder into Modules\bin
+##
+ExportFormat: txt
+FileMask: ntuser.dat
+Processors:
+    -
+        Executable: rip.exe
+        CommandLine: -r %sourceFile% -f ntuser
+        ExportFormat: txt
+        ExportFile: regripper-ntuser.txt

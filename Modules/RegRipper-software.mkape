@@ -1,0 +1,17 @@
+Description: 'RegRipper: parse SOFTWARE hive'
+Category: Registry
+Author: ZeArioch
+Version: 1
+Id: 8fa920ff-03ce-4f88-af2a-0558187f708c
+BinaryUrl: https://github.com/keydet89/RegRipper2.8
+##
+## Place rip.exe, p2x5124.dll and the plugins folder into Modules\bin
+##
+ExportFormat: txt
+FileMask: SOFTWARE
+Processors:
+    -
+        Executable: rip.exe
+        CommandLine: -r %sourceFile% -f software
+        ExportFormat: txt
+        ExportFile: regripper-software.txt

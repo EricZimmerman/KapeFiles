@@ -1,0 +1,17 @@
+Description: 'RegRipper: parse SECURITY hive'
+Category: Registry
+Author: ZeArioch
+Version: 1
+Id: a0011605-10ac-4e7b-b422-8d1afeebfd5c
+BinaryUrl: https://github.com/keydet89/RegRipper2.8
+##
+## Place rip.exe, p2x5124.dll and the plugins folder into Modules\bin
+##
+ExportFormat: txt
+FileMask: SECURITY
+Processors:
+    -
+        Executable: rip.exe
+        CommandLine: -r %sourceFile% -f security
+        ExportFormat: txt
+        ExportFile: regripper-security.txt
