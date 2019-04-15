@@ -8,12 +8,12 @@ ExportFormat: txt
 Processors:
     -
         Executable: mimikatz.exe
-        CommandLine: -version "log %destinationDirectory%\NTLM_hashes.txt" "lsadump::sam /system:%sourceDirectory%\SYSTEM /sam:%sourceDirectory%\SAM" exit
+        CommandLine: -foobar "log %destinationDirectory%\NTLM_hashes.txt" version "lsadump::sam /system:%sourceDirectory%\SYSTEM /sam:%sourceDirectory%\SAM" exit
         ExportFormat: txt
 
 #####
 # This module (Hashes.mkape) extracts the Windows NTLM hashes for every user account. The command is a little bit dirty, but it works.
-# Point the 'module source' to the acquired \Windows\System32\config folder
+# Point the 'module source' to the acquired "\Windows\System32\config" folder
 # mimikatz.exe (x64) must be put in 'Modules\bin' folder
 # Attention: your antivirus may not appreciate the program; whitelist it.
 #
