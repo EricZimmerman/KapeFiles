@@ -1,4 +1,4 @@
-Description: LogParser DRP Usage Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational 21,22,23,24,25,39,40 and Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational 1149
+Description: LogParser RDP Usage Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational 21,22,23,24,25,39,40 and Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational 1149
 Category: RemoteAccess
 Author: Brian Maloney (idea by @0x47617279)
 Version: 1
