@@ -1,0 +1,34 @@
+Description: 'RegRipper: parse all supported hives'
+Category: Registry
+Author: ZeArioch <https://{github,twitter}.com/ZeArioch>, Phill Moore
+Version: 1
+Id: 76037ee9-0346-459a-a44a-1b67edc711c8
+BinaryUrl: https://github.com/keydet89/RegRipper2.8
+ExportFormat: txt
+FileMask: ""
+Processors:
+    -
+        Executable: RegRipper-sam.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RegRipper-security.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RegRipper-software.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RegRipper-system.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RegRipper-ntuser.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+##
+## Create a folder "regripper" within the "Modules\bin" KAPE folder
+## Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"
+##
