@@ -1,0 +1,19 @@
+Description: 'usbdeviceforensics Parses USB Devices'
+Category: ExternalDevices
+Author: Mark Woan (Actual Script), Jack Farley (KAPE Module)
+Version: 1.0
+Id: 21a6ebe8-b1f8-46dd-88b1-d07d8317bd29
+BinaryUrl: https://github.com/woanware/usbdeviceforensics
+ExportFormat: txt
+Processors:
+    -
+        Executable: usbdeviceforensics\usbdeviceforensics.exe
+        CommandLine: -r %sourceDirectory%Windows\system32\config -f text -o %destinationDirectory%
+        ExportFormat: txt
+        ExportFile: usbdeviceforensics.txt
+
+##
+## Follow instructions by Mark Woan on Github to build executable
+## Create a folder "usbdeviceforensics" within the "Modules\bin" KAPE folder
+## Place "usbdeviceforensics.exe", "python2.7.dll" and the "lib" folder into "Modules\bin\usbdeviceforensics"
+##
