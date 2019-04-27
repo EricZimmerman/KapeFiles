@@ -8,7 +8,7 @@ ExportFormat: txt
 Processors:
     -
         Executable: usbdeviceforensics\usbdeviceforensics.exe
-        CommandLine: -r %sourceDirectory%Windows\system32\config -f text -o %destinationDirectory%
+        CommandLine: -r %sourceDirectory%\Windows\system32\config -f text -o %destinationDirectory%
         ExportFormat: txt
         ExportFile: usbdeviceforensics.txt
 
