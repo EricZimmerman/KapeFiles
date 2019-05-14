@@ -3,10 +3,10 @@ Category: Memory
 Author: Eric Capuano 
 Version: 1
 Id: 1d284835-417b-459e-a396-d228edea3808
-BinaryUrl: https://storage.googleapis.com/releases.rekall-forensic.com/v1.3.1/winpmem_1.6.2.exe
+BinaryUrl: https://github.com/Velocidex/c-aff4/releases/download/3.2/winpmem_3.2.exe
 ExportFormat: dmp
 Processors:
     -
-        Executable: winpmem_1.6.2.exe
-        CommandLine: " %destinationDirectory%/memory.dmp"
+        Executable: winpmem_3.2.exe
+        CommandLine: "-o %destinationDirectory%/memory.dmp --volume_format raw -dd"
         ExportFormat: dmp
