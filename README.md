@@ -1,5 +1,7 @@
 # KapeFiles
 
+## Please take a few minutes to Read The Friendly Manual included with KAPE for full and detailed information on all the properties in target and module files! This will save you time in the long run!!!
+
 This repository serves as a place for community created Targets and Modules for use with KAPE.
 
 Please send PRs should you come up with new targets or modules for inclusion in the project!
