@@ -22,3 +22,7 @@ Processors:
         Executable: Symantec_System_Log.mkape
         CommandLine: ""
         ExportFormat: ""
+    -
+        Executable: Symantec_Security_Log.mkape
+        CommandLine: ""
+        ExportFormat: ""
