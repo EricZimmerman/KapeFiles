@@ -1,6 +1,10 @@
-# KapeFiles
+# QUICK START
 
-For general Documentation, start in that folder. TL;DR; for targets and modules, see below
+
+
+For thorough documentation, view the Wiki from the links above.
+
+the TL;DR; for target and module creation is stated below:
 
 ## Please take a few minutes to Read The Friendly Manual included with KAPE for full and detailed information on all the properties in target and module files! This will save you time in the long run!!!
 
