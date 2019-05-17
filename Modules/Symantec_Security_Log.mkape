@@ -3,7 +3,7 @@ Category: AntiVirus
 Author: Brian Maloney
 Version: 1
 Id: b4985c25-4117-4bf4-a69e-0aa2f6fbd8be
-BinaryUrl:https://github.com/Beercow/Logparser-Studio-SIRT-Query/raw/master/Tools/SEPseclogParser.exe
+BinaryUrl: https://github.com/Beercow/Logparser-Studio-SIRT-Query/raw/master/Tools/SEPseclogParser.exe
 ExportFormat: csv
 FileMask: seclog.log
 Processors:
