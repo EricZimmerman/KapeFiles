@@ -2,11 +2,10 @@
 
 
 
-For thorough documentation, view the Wiki from the links above.
+For thorough documentation, view the Wiki from the links above. While a PDF manual is included with the KAPE download, the Wiki will be the most up to date documentation available.
 
-the TL;DR; for target and module creation is stated below:
 
-## Please take a few minutes to Read The Friendly Manual included with KAPE for full and detailed information on all the properties in target and module files! This will save you time in the long run!!!
+## TL;DR; for target and module creation is stated below:
 
 This repository serves as a place for community created Targets and Modules for use with KAPE.
 
