@@ -2,7 +2,7 @@
 
 
 
-For thorough documentation, view the Wiki from the links above. While a PDF manual is included with the KAPE download, the Wiki will be the most up to date documentation available.
+For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#!index.md)!! This URL will always be the latest documentation.
 
 
 ## TL;DR; for target and module creation is stated below:
