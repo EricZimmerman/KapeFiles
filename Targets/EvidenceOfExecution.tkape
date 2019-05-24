@@ -25,3 +25,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: Syscache
+        Category: Syscache
+        Path: Syscache.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
