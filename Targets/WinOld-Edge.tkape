@@ -1,0 +1,20 @@
+Description: Edge profiles in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: 72cfde7d-a70a-4193-a1ef-1c1cc768babb
+RecreateDirectories: true
+Targets:
+    -
+        Name: Edge folder in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+        IsDirectory: True
+        Recursive: True
+        Comment: ""
+    -
+        Name: WebcacheV01.dat in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        IsDirectory: Yes
+        Recursive: false
+        Comment: ""

@@ -1,0 +1,20 @@
+Description: Amcache files in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: 0c525f42-58b1-4080-9085-e3d0a1c65927
+RecreateDirectories: true
+Targets:
+    -
+        Name: Amcache in Windows.old
+        Category: ApplicationCompatability
+        Path: C:\Windows.old\Windows\AppCompat\Programs\Amcache.hve
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Amcache transaction files in Windows.old
+        Category: ApplicationCompatability
+        Path: C:\Windows.old\Windows\AppCompat\Programs\Amcache.hve.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

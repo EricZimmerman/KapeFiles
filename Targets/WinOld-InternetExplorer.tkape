@@ -1,0 +1,62 @@
+Description: Internet Explorer profiles in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: ab07ef03-bbb4-4cae-b404-6aba15fe9a8b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Index.dat Office in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Roaming\Microsoft\Office\Recent\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Local Internet Explorer folder in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Internet Explorer\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Roaming Internet Explorer folder in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Roaming\Microsoft\Internet Explorer\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""		
+    -
+        Name: IE 9/10 History in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Windows\History\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 9/10 Download History in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 11 Metadata in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        IsDirectory: true
+        Recursive: false
+        Comment: ""
+    -
+        Name: IE 11 Cache in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Windows\INetCache\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 11 Cookies in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\AppData\Local\Microsoft\Windows\INetCookies\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""

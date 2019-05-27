@@ -1,0 +1,62 @@
+Description: Artifacts in Windows.old folder
+Author: Minoru Kobayashi (@unkn0wnbit)
+Version: 1
+Id: 12e8b7ed-98af-4f40-9674-f6fa8cd649c0
+RecreateDirectories: true
+Targets:
+    -
+        Name: Event logs in Windows.old
+        Category: EventLogs
+        Path: WinOld-EventLogs.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Prefetch in Windows.old
+        Category: Prefetch
+        Path: WinOld-Prefetch.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Amcache in Windows.old
+        Category: ApplicationCompatability
+        Path: WinOld-Amcache.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Registry hives in Windows.old
+        Category: Registry
+        Path: WinOld-RegistryHives.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: WBEM (WMI) in Windows.old
+        Category: WBEM
+        Path: WinOld-WBEM.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SRUM in Windows.old
+        Category: Execution
+        Path: WinOld-SRUM.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Edge in Windows.old
+        Category: Communications
+        Path: WinOld-Edge.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Internet Explorer in Windows.old
+        Category: Communications
+        Path: WinOld-InternetExplorer.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

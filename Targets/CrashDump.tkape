@@ -1,0 +1,20 @@
+Description: Windows crash dump files (MEMORY.DMP and Minidump)
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: a6b0cec8-3faf-46e5-ab5e-93c2bb8b90ed
+RecreateDirectories: true
+Targets:
+    -
+        Name: MEMORY.DMP
+        Category: Memory
+        Path: C:\Windows\MEMORY.DMP
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Minidump files
+        Category: Memory
+        Path: C:\Windows\Minidump\
+        IsDirectory: true
+        Recursive: false
+        Comment: ""

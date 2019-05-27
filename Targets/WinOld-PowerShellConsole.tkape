@@ -1,0 +1,13 @@
+Description: PowerShell Console Log File in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: cc4bea66-8b4d-4ea2-8f56-ca0084656eb8
+RecreateDirectories: true
+Targets:
+    -
+        Name: PowerShell Console Log in Windows.old
+        Category: Communications
+        Path: C:\Windows.old\Users\*\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

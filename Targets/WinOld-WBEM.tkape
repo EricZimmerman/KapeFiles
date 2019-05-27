@@ -1,0 +1,13 @@
+Description: Web-Based Enterprise Management (WBEM) in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: 3ae32ebd-fd78-4c74-8e41-244471994a7d
+RecreateDirectories: true
+Targets:
+    -
+        Name: WBEM in Windows.old
+        Category: WBEM
+        Path: C:\Windows.old\Windows\System32\wbem\Repository
+        IsDirectory: true
+        Recursive: true
+        Comment: ""

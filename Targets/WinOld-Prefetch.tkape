@@ -1,0 +1,13 @@
+Description: Prefetch files in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: a656f97a-304b-4db9-946b-57c68a592a00
+RecreateDirectories: true
+Targets:
+    -
+        Name: Prefetch in Windows.old
+        Category: Prefetch
+        Path: C:\Windows.old\Windows\prefetch\*.pf
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

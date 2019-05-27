@@ -1,0 +1,13 @@
+Description: EventLogs in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: 669f0c76-5792-4f7a-976b-3b953f1da3f1
+RecreateDirectories: true
+Targets:
+    -
+        Name: EventLogs in Windows.old
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\Logs\*.evtx
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

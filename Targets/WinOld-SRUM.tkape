@@ -1,0 +1,13 @@
+Description: System Resource Usage Monitor (SRUM) Data in Windows.old folder
+Author: Minoru kobayashi (@unkn0wnbit)
+Version: 1
+Id: ebf415e4-0131-483a-93ef-dbd98b05da5c
+RecreateDirectories: true
+Targets:
+    -
+        Name: SRUM in Windows.old
+        Category: Execution
+        Path: C:\Windows.old\Windows\System32\sru
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
