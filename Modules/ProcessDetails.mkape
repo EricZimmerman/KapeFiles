@@ -1,0 +1,36 @@
+Description: Combination Module for LiveResponse. Gathering Running Process Details
+Category: LiveResponse
+Author: piesecurity
+Version: 1
+Id: 337a4733-5549-4d3e-818e-8c4c6b0381de
+ExportFormat: txt
+FileMask: ""
+Processors:
+    -
+        Executable: PWSH-Get-ProcessList.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: pslist.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: pstree.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: psservice.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: handle.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Get-InjectedThread.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    
+######
+# As this processes live data off the sytem any directory can be set as "msource"
+######
