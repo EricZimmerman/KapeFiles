@@ -7,10 +7,10 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer
 ExportFormat: csv
 Processors:
     -
-        Executable: RECmd.exe
+        Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn RECmd_Batch_MC.reb --nl --csv %destinationDirectory% -q
         ExportFormat: csv
 ######
 # RECmd.exe - 
-# Uses the RECmd_Batch_MC.reb batch command file. This file should also be in KAPE\Modules\bin
+# Uses the RECmd_Batch_MC.reb batch command file. This file should also be in same directory as RECmd.exe
 ######

@@ -7,14 +7,14 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxECmd.zip
 ExportFormat: csv
 Processors:
     -
-        Executable: EvtxECmd.exe
+        Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
         ExportFormat: csv
     -
-        Executable: EvtxECmd.exe
+        Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: -d %sourceDirectory% --xml %destinationDirectory%
         ExportFormat: xml
     -
-        Executable: EvtxECmd.exe
+        Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: -d %sourceDirectory% --json %destinationDirectory%
         ExportFormat: json
