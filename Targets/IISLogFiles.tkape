@@ -1,6 +1,6 @@
 Description: IIS Log Files
 Author: Troy Larson
-Version: 1
+Version: 2
 Id: 701573f6-0ce1-454d-af41-612713e22af5
 RecreateDirectories: true
 Targets:
@@ -15,6 +15,13 @@ Targets:
         Name: IIS log files
         Category: Logs
         Path: C:\inetpub\logs\LogFiles\*.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\inetpub\logs\LogFiles\W3SVC*\*.log
         IsDirectory: false
         Recursive: false
         Comment: ""
