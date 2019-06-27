@@ -1,10 +1,17 @@
-# KapeFiles
+# QUICK START
+
+
+
+For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#!index.md)!! This URL will always be the latest documentation.
+
+
+## TL;DR; for target and module creation is stated below:
 
 This repository serves as a place for community created Targets and Modules for use with KAPE.
 
 Please send PRs should you come up with new targets or modules for inclusion in the project!
 
-Please include binaries (if free to distribute) or at the very least, point the BinaryUrl property to the download location.
+Be sure to point the BinaryUrl property to the download location in Module files!
 
 All other info including requirements, etc. should be documeted at the end of the module in comment blocks.
 

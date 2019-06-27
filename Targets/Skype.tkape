@@ -1,16 +1,23 @@
 Description: Skype
 Author: Eric Zimmerman
-Version: 1
+Version: 3
 Id: d7b0b49c-16bb-4b32-9f57-2d918acaebbc
 RecreateDirectories: true
 Targets:
     -
-        Name: main.db
+        Name: main.db (App <v12)
         Category: Communications
         Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\main.db
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: skype.db (App +v12)
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\skype.db
+        IsDirectory: false
+        Recursive: false
+        Comment: "" 
     -
         Name: main.db XP
         Category: Communications
@@ -18,3 +25,24 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: main.db Win7+
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Skype\*\main.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: s4l-[username].db (App +v8)
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\s4l-*.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: leveldb (Skype for Desktop +v8)
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\*.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""        

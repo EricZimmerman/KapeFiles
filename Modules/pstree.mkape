@@ -1,0 +1,14 @@
+Description: Shows a basic process tree for all running processes
+Category: LiveResponse
+Author: piesecurity
+Version: 1
+Id: df6c02c1-d4b9-4e84-a4f6-7dd3f67a319d
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: pslist.exe
+        CommandLine: -t -accepteula
+        ExportFormat: txt
+        ExportFile: pstree.txt
+        

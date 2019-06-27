@@ -1,0 +1,20 @@
+Description: LogParser Microsoft-Windows-SMBServer-Security event 551
+Category: RemoteAccess
+Author: Hadar Yudovich
+Version: 1
+Id: 7f4fed47-cd92-4a94-a2c0-b937ea218bc8
+BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
+ExportFormat: csv
+FileMask: Microsoft-Windows-SMBServer%4Security.evtx
+Processors:
+    -
+        Executable: LogParser.exe
+        CommandLine: -stats:OFF -i:EVT "SELECT TO_UTCTIME(TimeGenerated) AS Date, EventID, 'Client attempted to access SMB via an anonymous logon.' AS Description, EXTRACT_TOKEN(Strings,8,'|') AS UserName,  EXTRACT_TOKEN(Strings,10,'|') AS ClientName INTO '%destinationDirectory%\logparser-SMBServer-Anonymous-Logon.csv' FROM '%sourceDirectory%\Microsoft-Windows-SMBServer%4Security.evtx' WHERE EventID=551" -filemode:0
+        ExportFormat: csv
+
+######
+# Uses Microsoft Log Parser
+# https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
+# In CommandLine, point sourceDirectory to evtx logs folder
+# Example: C:\Windows\system32\winevt\logs
+######
