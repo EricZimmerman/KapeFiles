@@ -3,26 +3,11 @@ Category: AntiVirus
 Author: Brian Maloney
 Version: 1
 Id: 073300a3-2d16-4bf5-b332-b038b571e95f
+BinaryUrl: https://github.com/Beercow/SEPparser/releases
 ExportFormat: csv
 FileMask: ""
 Processors:
     -
-        Executable: Symantec_Daily_AV.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
-        Executable: Symantec_Tamper_Protection_Log.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
-        Executable: Symantec_Control_Log.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
-        Executable: Symantec_System_Log.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
-        Executable: Symantec_Security_Log.mkape
-        CommandLine: ""
-        ExportFormat: ""
+        Executable: SEPparser.exe
+        CommandLine: -d  %sourceDirectory% -o %destinationDirectory%
+        ExportFormat: csv
