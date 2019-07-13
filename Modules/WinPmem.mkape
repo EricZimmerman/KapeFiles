@@ -8,7 +8,7 @@ ExportFormat: dmp
 Processors:
     -
         Executable: winpmem.exe
-        CommandLine: "-o %destinationDirectory%//memory.dmp --volume_format raw --format raw -dd --logfile %destinationDirectory%//winpmem.log"
+        CommandLine: "-o %destinationDirectory%\\memory.dmp --volume_format raw --format raw -dd --logfile %destinationDirectory%\\winpmem.log"
         ExportFormat: dmp
 
 ### README
