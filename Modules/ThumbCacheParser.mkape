@@ -1,0 +1,24 @@
+Description: 'thumbcache_viewer_cmd.exe: process Windows Thumbnail Cache files'
+Category: FileKnowledge
+Author: Dennis Reneau
+Version: 1
+Id: 26fa3330-62a6-45b3-90db-fc76834bcfad
+BinaryUrl: https://github.com/thumbcacheviewer/thumbcacheviewer/releases/download/v1.0.1.7/thumbcache_viewer_cmd.zip
+ExportFormat: html
+FileMask: "*.db"
+Processors:
+    -
+        Executable: thumbcache_viewer_cmd.exe
+        CommandLine: -o %destinationDirectory%\ThumbCache_Results -w -c -z %sourceFile%
+        ExportFormat: html
+        ExportFile: thumbcache_results.csv
+
+
+##################
+# Uses Thumbcache Viewer (https://github.com/thumbcacheviewer)
+# Designed to work with the Thumbcache DB Target collection created by Eric Zimmerman.
+# Executable author Eric Kutcher.
+# Point msource (Module Source) to the Thumbcache folder or use the Target/Module option of KAPE.
+# Options  -w HTML Report | -c CSV Report | -z Exclude 0 byte files | -n Prevent Thumbnail extraction | -o Output
+##################
+
