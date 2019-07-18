@@ -2,7 +2,7 @@ Description: 'thumbcache_viewer_cmd.exe: process Windows Thumbcache files'
 Category: FileKnowledge
 Author: Dennis Reneau
 Version: 1
-Id: 26fa3330-62a6-45b3-90db-fc76834bcfad
+Id: 8896483c-563a-4a28-ad8a-07ba74a54a63
 BinaryUrl: https://github.com/thumbcacheviewer/thumbcacheviewer/releases/download/v1.0.1.7/thumbcache_viewer_cmd.zip
 ExportFormat: html
 FileMask: "*.db"
