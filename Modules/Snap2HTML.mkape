@@ -1,0 +1,20 @@
+Description: 'Directory Lister - HTML Browser'
+Category: DirectoryLister
+Author: Dennis Reneau
+Version: 1
+Id: 0ca2b18d-b886-497c-a57a-ea4442c878e2
+BinaryUrl: https://www.rlvision.com/script/download.php?ref=rlv.com&file=Snap2HTML.zip
+ExportFormat: html
+Processors:
+-
+       Executable: Snap2HTML/Snap2HTML.exe
+       CommandLine: -path:%sourceDirectory% -outfile:%destinationDirectory%/Kape_Processed.html -title:"KAPE Processed Directories" -hidden -system
+       ExportFormat: html
+
+
+######
+# Module uses Snap2HTML to export a browseable HTML directory.
+# Software author: RL Vision (Snap2HTML)
+# Options available: -hidden (Include hidden files) | -system (Include system files) | -title (title of HTML file) | -link (link to path)
+# HTML located at Snap2HTML/template.html can be customized.
+######
