@@ -1,0 +1,188 @@
+Description: System and user related Registry hives
+Author: Eric Zimmerman
+Version: 1
+Id: 76af6086-bd0b-429f-bfd7-4a8e8ff8138f
+RecreateDirectories: true
+Targets:
+    -
+        Name: ntuser.dat registry hive XP
+        Category: Registry
+        Path: C:\Documents and Settings\*\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat registry hive
+        Category: Registry
+        Path: C:\Users\*\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat registry transaction files
+        Category: Registry
+        Path: C:\Users\*\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: UsrClass.dat registry hive
+        Category: Registry
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: UsrClass.dat registry transaction files
+        Category: Registry
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SAM.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SECURITY.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SOFTWARE.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\SYSTEM.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SAM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SECURITY
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SOFTWARE
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\SYSTEM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\*.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SAM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SECURITY
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SOFTWARE
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SYSTEM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\SYSTEM1
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\systemprofile\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\systemprofile\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\LocalService\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\LocalService\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\NetworkService\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\NetworkService\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: System Restore Points Registry Hives (XP)
+        Category: Registry
+        Path: C:\System Volume Information\_restore*\RP*\snapshot\_REGISTRY_*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
