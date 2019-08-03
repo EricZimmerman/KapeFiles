@@ -1,4 +1,4 @@
-Description: 'iTunesBackupAnalyzer: Parses iTunes Backups'
+Description: 'iTunes Backup Reader'
 Category: ExternalDevices
 Author: Jack Farley
 Version: 1
@@ -7,8 +7,8 @@ BinaryUrl: https://github.com/jfarley248/iTunes_Backup_Analyzer/releases
 ExportFormat: db
 Processors:
     -
-        Executable: iTunes_Backup_Analyzer.exe
-        CommandLine:  -i %sourceDirectory% -o %destinationDirectory% -v -K -R
+        Executable: iTunes_Backup_Reader.exe
+        CommandLine:  -i "%sourceDirectory%\" -o %destinationDirectory% -v --ir -r -t db
         ExportFormat: db
 
 ######
