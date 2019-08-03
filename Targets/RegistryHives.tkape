@@ -7,14 +7,14 @@ Targets:
     -
         Name: System Registry Files
         Category: Registry
-        Path: RegistryFilesSystem.tkape
+        Path: RegistryHivesSystem.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: User Level Registry Files
         Category: Registry
-        Path: RegistryFilesUser.tkape
+        Path: RegistryHivesUser.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""
