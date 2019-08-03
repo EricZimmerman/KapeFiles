@@ -1,0 +1,20 @@
+Description: 'EvtxECmd: process event log files'
+Category: EventLogs
+Author: Eric Zimmerman
+Version: 1
+Id: 1b66f0e2-2ccf-467d-ae15-a2b3dc59df08
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: EvtxECmd\EvtxECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: EvtxECmd\EvtxECmd.exe
+        CommandLine: -d %sourceDirectory% --xml %destinationDirectory%
+        ExportFormat: xml
+    -
+        Executable: EvtxECmd\EvtxECmd.exe
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
+        ExportFormat: json
