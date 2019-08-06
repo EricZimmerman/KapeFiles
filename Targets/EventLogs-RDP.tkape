@@ -1,0 +1,35 @@
+Description: Collect Win7+ RDP related Event logs
+Author: Markk Hallman
+Version: 1
+Id: d95784d9-bd1c-472b-aeef-de5d9ecc7aaa
+RecreateDirectories: true
+Targets:
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: 'C:\Windows\system32\winevt\logs\System.evtx'
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: 'C:\Windows\system32\winevt\logs\Security.evtx'
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: 'G:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx'
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: 'G:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx'
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+
