@@ -9,5 +9,5 @@ FileMask: ""
 Processors:
     -
         Executable: SEPparser.exe
-        CommandLine: -d  %sourceDirectory% -o %destinationDirectory%
+        CommandLine: -d  %sourceDirectory% -o %destinationDirectory% -k
         ExportFormat: csv
