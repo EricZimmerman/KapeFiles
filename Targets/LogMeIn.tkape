@@ -1,0 +1,27 @@
+Description: LogMeIn Data
+Author: Drew Ervin
+Version: 1.0
+Id: 488e9de2-ecb6-4b27-88a3-719715147c33
+RecreateDirectories: true
+Targets:
+    -
+        Name: LogMeIn ProgramData Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\LogMeIn\Logs
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: LogMeIn Application Events
+        Category: EventLogs
+        Path: ApplicationEvents.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: "Contains LogMeIn entries, event source: LogMeIn"
+    -
+        Name: LogMeIn Application Logs
+        Category: ApplicationLogs
+        Path: C:\Users\*\AppData\Local\temp\LogMeInLogs
+        IsDirectory: true
+        Recursive: true
+        Comment: "Contains RemoteAssist (formerly GoToAssist), GoToMeeting, and other GoTo* logs"
