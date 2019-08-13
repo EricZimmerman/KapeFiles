@@ -1,0 +1,17 @@
+Description: 'Parse TLN format to readable csv timeline'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 3203e531-0261-4977-86ff-d52c997cad94
+BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+ExportFormat: csv
+Processors:
+    -
+        Executable: tln_tools\parse.exe
+        CommandLine: -f %destinationDirectory%\temp_ascii.tln -c
+        ExportFormat: csv
+        ExportFile: 01_timeline.csv
+        
+#place "p2x5124.dll" in the Modules\Bin folder with regtime.exe
+        
+

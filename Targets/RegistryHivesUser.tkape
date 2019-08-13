@@ -26,6 +26,20 @@ Targets:
         Recursive: false
         Comment: ""
     -
+        Name: ntuser.dat DEFAULT registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\DEFAULT
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\DEFAULT.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
         Name: UsrClass.dat registry hive
         Category: Registry
         Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat
