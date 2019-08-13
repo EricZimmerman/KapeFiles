@@ -1,0 +1,18 @@
+Description: 'RegTime parse SECURITY hive into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 7a563218-525c-4ba8-931d-9b1e55276117
+BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+ExportFormat: txt
+FileMask: SECURITY
+Processors:
+    -
+        Executable: tln_tools\regtime.exe
+        CommandLine: -m HKLM_SECURITY\ -r %sourceFile% -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+        
+
+#place "p2x5124.dll" in the bin folder with regtime.exe

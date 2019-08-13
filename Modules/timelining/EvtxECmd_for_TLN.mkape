@@ -1,0 +1,12 @@
+Description: 'EvtxECmd: process event log files into a format that can be converted into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: a2b2f658-45a8-4d3c-b911-ad70a8cdc1f3
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: EvtxECmd\EvtxECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% --csvf %destinationDirectory%\evtx_for_timeline.csv --dt "yyyy-MM-dd HH:mm:ss"
+        ExportFormat: csv

@@ -1,0 +1,17 @@
+Description: 'Parse the timeline made by the Mini-Timeline into a smaller timerange. Add in key "dateRange", mm/dd/yyyy-mm/dd/yyyy format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 21da92e5-7aed-4f3a-a9cb-b31a87343895
+BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+ExportFormat: csv
+Processors:
+    -
+        Executable: tln_tools\parse.exe
+        CommandLine: -f %destinationDirectory%\temp_ascii.tln -r %dateRange% -c
+        ExportFormat: csv
+        ExportFile: 01_timeline_dateRange.csv
+        
+
+##Add in a Key with the name "dateRange", and set the variable to the desired date range in the fomart "mm/dd/yyyy-mm/dd/yyyy"
+##Must be run AFTER the mini timeline is generated
