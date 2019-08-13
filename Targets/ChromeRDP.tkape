@@ -1,0 +1,13 @@
+Description: Chrome RDP Data
+Author: Drew Ervin
+Version: 1.0
+Id: 79b1c475-3edb-4d6e-91fa-23962abc43f6
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome RDP Application Events
+        Category: EventLogs
+        Path: ApplicationEvents.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: "Contains Chrome remote desktop entries, event source: chromeoting"
