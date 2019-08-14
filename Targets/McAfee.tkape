@@ -1,18 +1,36 @@
 Description: McAfee Log Files
 Author: Sam Smoker
-Version: 1
+Version: 1.1
 Id: d2df019b-35d0-4f7b-8132-7500cbd39901
 RecreateDirectories: True
 Targets:
     -
-        Name: McAfee Logs XP
+        Name: McAfee Desktop Protection Logs XP
         Category: AntiVirus
         Path: C:\Users\All Users\Application Data\McAfee\DesktopProtection
         IsDirectory: true
         Recursive: true
     -
-        Name: McAfee Logs
+        Name: McAfee Desktop Protection Logs
         Category: AntiVirus
         Path: C:\ProgramData\McAfee\DesktopProtection
+        IsDirectory: true
+        Recursive: true
+    -
+        Name: McAfee Endpoint Security Logs
+        Category: AntiVirus
+        Path: C:\ProgramData\McAfee\Endpoint Security\Logs\
+        IsDirectory: true
+        Recursive: true
+    -
+        Name: McAfee Endpoint Security Logs
+        Category: AntiVirus
+        Path: C:\ProgramData\McAfee\Endpoint Security\Logs_Old\
+        IsDirectory: true
+        Recursive: true
+    -
+        Name: McAfee VirusScan Logs
+        Category: AntiVirus
+        Path: C:\ProgramData\Mcafee\VirusScan\
         IsDirectory: true
         Recursive: true
