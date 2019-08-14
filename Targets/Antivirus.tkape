@@ -1,0 +1,111 @@
+Description: Composite target for files related to Antivirus tools
+Author: Drew Ervin
+Version: 1.1
+Id: c989b822-b4ff-47fc-90e1-b45cc5add822
+RecreateDirectories: true
+Targets:
+    -
+        Name: Avast
+        Category: Antivirus
+        Path: Avast.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Bitdefender
+        Category: Antivirus
+        Path: Bitdefender.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ComboFix
+        Category: Antivirus
+        Path: ComboFix.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ESET
+        Category: Antivirus
+        Path: ESET.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: F-Secure
+        Category: Antivirus
+        Path: FSecure.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: HitmanPro
+        Category: Antivirus
+        Path: HitmanPro.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Malwarebytes
+        Category: Antivirus
+        Path: Malwarebytes.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: McAfee
+        Category: Antivirus
+        Path: McAfee.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RogueKiller
+        Category: Antivirus
+        Path: RogueKiller.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Sophos
+        Category: Antivirus
+        Path: Sophos.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SUPERAntiSpyware
+        Category: Antivirus
+        Path: SUPERAntiSpyware.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Symantec
+        Category: Antivirus
+        Path: Symantec_AV_Logs.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Trend Micro
+        Category: Antivirus
+        Path: TrendMicro.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: VIPRE
+        Category: Antivirus
+        Path: VIPRE.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Windows Defender
+        Category: Antivirus
+        Path: WindowsDefender.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
