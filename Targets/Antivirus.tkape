@@ -109,3 +109,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: Avira
+        Category: Antivirus
+        Path: AviraAVLogs.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
