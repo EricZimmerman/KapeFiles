@@ -39,6 +39,10 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
+        Executable: timelining\RegRipper_UsrClass_TLN.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
         Executable: timelining\RegRipper_SAM_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
