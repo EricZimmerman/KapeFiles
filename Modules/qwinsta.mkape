@@ -1,0 +1,12 @@
+Description: Display information about Active Remote Desktop Services sessions. - Query Windows Station
+Category: LiveResponse
+Author: piesecurity
+Version: 1.0
+Id: 7407dd38-cd98-4981-b9ee-d6ae1e306db0
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\system32\qwinsta.exe
+        CommandLine: /counter
+        ExportFormat: txt
+        ExportFile: qwinsta.txt
