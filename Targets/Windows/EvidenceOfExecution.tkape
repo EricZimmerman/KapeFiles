@@ -7,14 +7,14 @@ Targets:
     -
         Name: Prefetch
         Category: Prefetch
-        Path: C:\Windows\prefetch\*.pf
+        Path: Prefetch.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: RecentFileCache
         Category: ApplicationCompatability
-        Path: C:\Windows\AppCompat\Programs\RecentFileCache.bcf
+        Path: RecentFileCache.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""
