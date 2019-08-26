@@ -1,0 +1,13 @@
+Description: Gathers Basic System Information Using the Net Command (LocalGroup)
+Category: LiveResponse
+Author: piesecurity
+Version: 1.0
+Id: a9789a17-1061-4a66-b5da-419223bb6c09
+ExportFormat: txt 
+Processors:
+    -
+        Executable: C:\Windows\system32\net.exe
+        CommandLine: LocalGroup
+        ExportFormat: txt
+        ExportFile: NetSystemInfo.txt
+        Append: True

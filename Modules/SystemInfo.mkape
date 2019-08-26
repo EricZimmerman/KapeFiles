@@ -1,0 +1,12 @@
+Description: Gathers Basic System Information
+Category: LiveResponse
+Author: piesecurity
+Version: 1.0
+Id: e4263b9f-cc93-434a-b56f-d3d7cc205e4b
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\system32\systeminfo.exe
+        CommandLine: /FO CSV
+        ExportFormat: csv
+        ExportFile: SystemInfo.csv
