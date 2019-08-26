@@ -1,4 +1,4 @@
-Description: Kape Triage collections that will collect most of the files needed for a DFIR Investigation.  This module pulls evidence from: File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, Jump Lists, 3rd party remote access software logs, 3rd party antivirus software logs.  
+Description: Kape Triage collections that will collect most of the files needed for a DFIR Investigation.  This module pulls evidence from File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, Jump Lists, 3rd party remote access software logs, 3rd party antivirus software logs.  
 Author: Scott Downie
 Version: 2.0
 Id: a745b730-d6b7-4cb7-9847-4e896d9f3c52
