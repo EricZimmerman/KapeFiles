@@ -1,0 +1,15 @@
+Description: $T
+Author: Eric Zimmerman
+Version: 1
+Id: 8c568aa0-9a67-4035-9720-1423770bc29a
+RecreateDirectories: true
+Targets:
+    -
+        Name: $T
+        Category: FileSystem
+        Path: c:\$Extend\$RmMetadata\$TxfLog\$Tops:$T
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $T
+        Comment: ""

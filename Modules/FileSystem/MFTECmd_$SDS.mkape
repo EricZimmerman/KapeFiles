@@ -1,0 +1,17 @@
+Description: 'MFTECmd: process $SDS files'
+Category: FileSystem
+Author: Eric Zimmerman
+Version: 1
+Id: 7ef84a6b-5215-46bb-af2a-3339a4247e41
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+FileMask: $Secure_$SDS
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory%
+        ExportFormat: json

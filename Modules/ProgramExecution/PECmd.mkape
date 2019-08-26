@@ -1,0 +1,20 @@
+Description: 'PECmd: process prefetch files'
+Category: ProgramExecution
+Author: Eric Zimmerman
+Version: 1
+Id: 7ef84a6b-5115-45bb-af2a-3249a3237e75
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: PECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
+        ExportFormat: csv
+    -
+        Executable: PECmd.exe
+        CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q
+        ExportFormat: html
+    -
+        Executable: PECmd.exe
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
+        ExportFormat: json

@@ -1,0 +1,13 @@
+Description: Sigcheck all files in a volume, with hashes, entropy, and internal metadata
+Category: FileMetadata
+Author: troyla@microsoft.com
+Version: 1
+Id: f93bd081-55cd-4c13-9a7f-280a0caeebf8
+BinaryUrl: https://download.sysinternals.com/files/Sigcheck.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: sigcheck64.exe
+        CommandLine: -a -c -h -s -accepteula -nobanner %sourceDirectory%
+        ExportFormat: csv
+        ExportFile: sigcheck.csv

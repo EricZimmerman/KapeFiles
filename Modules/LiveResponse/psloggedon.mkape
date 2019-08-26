@@ -1,0 +1,14 @@
+Description: PsLoggedOn is an applet that displays both the locally logged on users and users logged on via resources for either the local computer, or a remote one.
+Category: LiveResponse
+Author: Andy Furnas
+Version: 1
+Id: 7b71f318-468e-4616-9ed2-dfd750b6b960
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: PsLoggedon.exe
+        CommandLine: -accepteula
+        ExportFormat: txt
+        ExportFile: PsLoggedOn.txt
+        

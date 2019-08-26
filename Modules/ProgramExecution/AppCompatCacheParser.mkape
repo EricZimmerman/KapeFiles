@@ -1,0 +1,13 @@
+Description: 'AppCompatCacheParser: extract AppCompatCache (shimcache) information'
+Category: ProgramExecution
+Author: Eric Zimmerman
+Version: 1
+Id: e5e0ffa8-fe3e-4196-ac5a-d21cbeb879c2
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip
+ExportFormat: csv
+FileMask: SYSTEM
+Processors:
+    -
+        Executable: AppCompatCacheParser.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
+        ExportFormat: csv

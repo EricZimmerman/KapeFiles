@@ -1,0 +1,20 @@
+Description: 'SRUM-dump: Dump contents of the srum database'
+Category: SystemActivity
+Author: Brian Maloney
+Version: 1
+Id: 8e0a2314-79e4-48f2-81ad-a0719e8af680
+BinaryUrl: https://github.com/MarkBaggett/srum-dump/raw/python3/srum_dump_csv.exe
+ExportFormat: csv
+Processors:
+    -
+        Executable: srum_dump_csv.exe
+        CommandLine: -i %sourceDirectory% -t SRUM_TEMPLATE.xlsx -r %sourceDirectory% -o %destinationDirectory% -q
+        ExportFormat: csv
+
+######
+# Uses Mark Baggett's srum-dump
+# SRUM_TEMPLATE.xlsx should also be in KAPE\Modules\bin
+# https://github.com/MarkBaggett/srum-dump/raw/python3/srum_dump_csv.exe
+# ***Must set -i to srudb.dat and -r to SOFTWARE hive in CommandLine***
+# Example: CommandLine: -i %sourceDirectory%\files\C\WINDOWS\system32\sru\SRUDB.dat -t SRUM_TEMPLATE.xlsx -r %sourceDirectory%\files\C\WINDOWS\system32\config\SOFTWARE -o %destinationDirectory% -q
+######

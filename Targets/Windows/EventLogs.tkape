@@ -1,0 +1,20 @@
+Description: Event logs
+Author: Eric Zimmerman
+Version: 1
+Id: d95784d9-bd1c-472b-aeef-de5d9ecc7aaa
+RecreateDirectories: true
+Targets:
+    -
+        Name: Event logs XP
+        Category: EventLogs
+        Path: C:\Windows\system32\config\*.evt
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows\system32\winevt\logs\*.evtx
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

@@ -1,0 +1,14 @@
+Description: PsInfo is a command-line tool that gathers key information about the local or remote Windows NT/2000 system, including the type of installation, kernel build, registered organization and owner, number of processors and their type, amount of physical memory, the install date of the system, and if its a trial version, the expiration date.
+Category: LiveResponse
+Author: Andy Furnas
+Version: 1
+Id: 9e89b787-bc97-4e96-b72e-195a390ede98
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: PsInfo.exe
+        CommandLine: -h -s -d -c -accepteula
+        ExportFormat: csv
+        ExportFile: psinfo.csv
+        

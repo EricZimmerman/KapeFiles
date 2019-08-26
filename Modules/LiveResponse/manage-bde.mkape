@@ -1,0 +1,15 @@
+Description: Check for BitLocker volumes
+Category: VolumeInformation
+Author: troyla@microsoft.com
+Version: 1
+Id: b069705b-13f0-42c7-86a2-4f310c3c651b
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\manage-bde.exe
+        CommandLine: -status %sourceDirectory%
+        ExportFormat: txt
+        ExportFile: BitLocker-Status.txt
+
+#Updated to directly reference the system path
+# 

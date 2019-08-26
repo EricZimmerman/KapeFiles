@@ -1,0 +1,14 @@
+Description: PsFile is a command-line utility that shows a list of files on a system that are opened remotely, and it also allows you to close opened files either by name or by a file identifier.
+Category: LiveResponse
+Author: Andy Furnas
+Version: 1
+Id: 79cca355-160d-4a61-951d-e295a8c0d8bb
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: psfile.exe
+        CommandLine: -accepteula
+        ExportFormat: txt
+        ExportFile: psfile.txt
+        

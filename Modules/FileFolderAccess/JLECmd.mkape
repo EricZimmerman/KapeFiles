@@ -1,0 +1,20 @@
+Description: 'JLECmd: process jumplist files'
+Category: FileFolderAccess
+Author: Eric Zimmerman
+Version: 1
+Id: 81fe4336-eb10-4733-a770-cb57ec9bd108
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: JLECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
+        ExportFormat: csv
+    -
+        Executable: JLECmd.exe
+        CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q
+        ExportFormat: html
+    -
+        Executable: JLECmd.exe
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
+        ExportFormat: json

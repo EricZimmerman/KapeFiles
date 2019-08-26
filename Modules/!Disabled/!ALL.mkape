@@ -1,0 +1,13 @@
+Description: Run all modules
+Category: Default
+Author: Eric Zimmerman
+Version: 1
+Id: 9f3cfd60-79a9-4dc6-82b5-e9220d885b38
+ExportFormat: csv
+FileMask: ""
+Processors:
+    -
+        #Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
+        Executable: '*.mkape'
+        CommandLine: ""
+        ExportFormat: ""

@@ -1,0 +1,20 @@
+Description: Windows Application Event Log
+Author: Drew Ervin
+Version: 1.0
+Id: 2da16dbf-ea47-448e-a00f-fc442c3109ba
+RecreateDirectories: true
+Targets:
+    -
+        Name: Application Event Log XP
+        Category: EventLogs
+        Path: C:\Windows\system32\config\AppEvent.evt
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Application Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows\system32\winevt\logs\application.evtx
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

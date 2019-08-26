@@ -1,0 +1,14 @@
+Description: Parses TaskScheduler-Operational event log using TZWorks evtwalk64
+Category: SystemActivity
+Author: Justin Price
+Version: 1
+Id: 5875f69b-4de1-418b-b306-db49b9fc0072
+BinaryUrl: https://tzworks.net/download_links.php
+ExportFormat: csv
+FileMask: Microsoft-Windows-TaskScheduler%4Operational.evtx
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
+        ExportFormat: csv
+        ExportFile: task_scheduler_event_log.csv

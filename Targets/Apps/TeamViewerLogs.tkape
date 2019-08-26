@@ -1,0 +1,27 @@
+Description: Team Viewer Logs
+Author: Hadar Yudovich
+Version: 1.1
+Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
+RecreateDirectories: true
+Targets:
+    -
+        Name: TeamViewer Connection Logs
+        Category: Communications
+        Path: C:\Program Files*\TeamViewer\connections*.txt
+        IsDirectory: false
+        Recursive: false
+        Comment: "Includes connections_incoming.txt and connections.txt"
+    -
+        Name: TeamViewer Application Logs
+        Category: ApplicationLogs
+        Path: C:\Program Files*\TeamViewer\TeamViewer*_Logfile*
+        IsDirectory: false
+        Recursive: false
+        Comment: "Includes TeamViewer<version>_Logfile.log and TeamViewer<version>_Logfile_OLD.log"
+    -
+        Name: TeamViewer Configuration Files
+        Category: ApplicationLogs
+        Path: C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport
+        IsDirectory: true
+        Recursive: true
+        Comment: "Includes miscellaneous config files"

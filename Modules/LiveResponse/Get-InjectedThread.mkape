@@ -1,0 +1,21 @@
+Description: 'Get-InjectedThread'
+Category: LiveResponse
+Author: piesecurity
+Version: 1.1
+Id: c3998d96-fa6f-44db-9bb3-4cc66259a09c
+BinaryUrl: https://gist.githubusercontent.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2/raw/104f630cc1dda91d4cb81cf32ef0d67ccd3e0735/Get-InjectedThread.ps1
+ExportFormat: json
+Processors:
+    -
+        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Import-Module %kapedirectory%\Modules\bin\Get-InjectedThread.ps1 -Force; Get-InjectedThread | ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\Get-InjectedThread.json"
+        ExportFormat: json
+#####
+# Get-InjectedThread Memory resident malware (fileless malware) often uses a form of memory injection to get code execution. Get-InjectedThread looks at each running thread to determine if it is the result of memory injection.
+# https://gist.githubusercontent.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2/raw/104f630cc1dda91d4cb81cf32ef0d67ccd3e0735/Get-InjectedThread.ps1
+# In order for this module to work, place the powershell script on the modules bin folder
+# Expected Results:
+# If injected threads are detected: Get-InjectedThread.json in the LiveResponse Folder will have the related process information
+# If no injected threads are detected and the script ran successfully: An empty Get-InjectedThread.json will be found in the LiveResponse folder
+# If the script failed: No output file will be produced. Most likely due to Get-InjectedThread.json not being found in the modules bin folder
+#####

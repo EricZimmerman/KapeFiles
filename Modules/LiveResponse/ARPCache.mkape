@@ -1,0 +1,12 @@
+Description: ARPCache
+Category: LiveResponse
+Author: Mike Cary
+Version: 1
+Id: 6d4ea3be-f634-4809-b7d8-db0d22800737
+ExportFormat: txt
+Processors:
+    -
+        Executable: c:\windows\system32\arp.exe
+        CommandLine: -a
+        ExportFormat: txt
+        ExportFile: arp_cache.txt
