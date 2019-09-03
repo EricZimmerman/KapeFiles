@@ -1,0 +1,21 @@
+Description: Parses the history file databases for TeraCopy history
+Category: FileKnowledge
+Author: Kevin Pagano
+Version: 1
+Id: d77856a2-b657-4be7-88a8-5dffc32e8983
+BinaryUrl: https://sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip
+ExportFormat: csv
+FileMask: "*.db"
+Processors:
+    -
+        Executable: sqlite3.exe
+        CommandLine: -header -separator "," %sourceFile% "SELECT Source as \"File Path\", CASE State WHEN 0 THEN 'Added' WHEN 1 THEN 'OK' WHEN 2 THEN 'Verified' WHEN 3 THEN 'Error' WHEN 4 THEN 'Skipped' WHEN 5 THEN 'Deleted' WHEN 6 THEN 'Moved' END as \"Operation State\", Size as \"Size (Bytes)\", Attributes, Case IsFolder WHEN 0 THEN '' WHEN 1 THEN 'Yes' END as \"Folder\", datetime(julianday(Creation)) as \"Created Date-Time\", datetime(julianday(Access)) as \"Accessed Date-Time\", datetime(julianday(Write)) as \"Modified Date-Time\", SourceCRC as \"Source Hash\", TargetCRC as \"Target Hash\", Message FROM Files"
+        ExportFormat: csv
+        ExportFile: TeraCopy-history_%fileName%.csv
+
+######
+# Uses sqlite3.exe to parse the history files from TeraCopy and export them in the proper format
+# Note: preferred to point msource to the TeraCopy history folder, as other DB's could be pulled using the FileMask
+######
+
+

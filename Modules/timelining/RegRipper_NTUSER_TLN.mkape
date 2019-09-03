@@ -1,0 +1,17 @@
+Description: 'RegTime parse NTUSER hives into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 54199032-ed12-47c8-8e31-221ec3d52ef2
+BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+ExportFormat: txt
+FileMask: ntuser.dat
+Processors:
+    -
+        Executable: tln_tools\regtime.exe
+        CommandLine: -m HKEY_USER\ -r %sourceFile% -u %sourceFile% -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+#place "p2x5124.dll" in the \Modules\bin folder with regtime.exe

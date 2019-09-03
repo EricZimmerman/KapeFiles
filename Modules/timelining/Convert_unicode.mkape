@@ -1,0 +1,13 @@
+Description: Converts the temp timeline which is in Unicode to ASCII so it can be parsed by parse.exe
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 407a520e-b194-42ed-97b3-af159a912126
+BinaryUrl: https://github.com/mdegrazia/KAPE_Tools
+ExportFormat: csv
+Processors:
+    -
+        Executable: tln_tools\unicode_2_ascii.exe
+        CommandLine: -f %destinationDirectory%\temp.tln -o %destinationDirectory%\temp_ascii.tln
+        ExportFormat: csv
+        

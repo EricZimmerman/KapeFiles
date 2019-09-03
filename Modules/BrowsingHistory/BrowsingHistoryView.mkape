@@ -1,0 +1,24 @@
+Description: 'Browsing History View - Nirsoft'
+Category: BrowsingHistory
+Author: Mike Cary
+Version: 1
+Id: 53d5bea2-b3d3-4a60-8844-be898390adc1
+BinaryUrl: https://www.nirsoft.net/utils/browsinghistoryview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: browsinghistoryview.exe
+        CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory% /VisitTimeFilterType 1 /ShowTimeInGMT 1 /scomma %destinationDirectory%\BrowsingHistory.csv 
+        ExportFormat: csv
+    -
+        Executable: browsinghistoryview.exe
+        CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory% /VisitTimeFilterType 1 /ShowTimeInGMT 1 /sverhtml  %destinationDirectory%\BrowsingHistory.html 
+        ExportFormat: html
+
+######
+# Uses Nirsofts BrowsingHistoryView to export browsing history for all users to csv
+# https://www.nirsoft.net/utils/browsing_history_view.html
+# ***Must set msource to users directory of triage to be parsed***
+# Example: .\kape.exe --msource G:\Kape_TEST\C\Users --mdest D:\Kape_moduleOut --module BrowsingHistoryView
+# Example: .\kape.exe --msource G:\Kape_TEST\VSS21\Users --mdest D:\Kape_moduleOut --module BrowsingHistoryView
+######

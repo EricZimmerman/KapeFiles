@@ -18,7 +18,8 @@ All other info including requirements, etc. should be documeted at the end of th
 ## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE DONE THE FOLLOWING:
 
 ## 1. Generated a unique GUID for the target or module
-## 2. Verified KAPE parses the target or module cleanly via kape.exe --tlist or kape.exe --mlist. Check for any reported errors and correct as necessary
+## 2. Place the file in the appropriate sub-folder in Targets or Modules. Use 'Misc' of a better categories does not exist
+## 3. Verified KAPE parses the target or module cleanly via kape.exe --tlist or kape.exe --mlist. Check for any reported errors and correct as necessary
 
 Thanks!!!
 

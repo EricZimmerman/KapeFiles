@@ -1,0 +1,13 @@
+Description: Gathers Basic System Information Using the Net Command (Share)
+Category: LiveResponse
+Author: piesecurity
+Version: 1.0
+Id: aba1ed38-d670-4db1-be70-bebb0a6a4ef3
+ExportFormat: txt 
+Processors:
+    -
+        Executable: C:\Windows\system32\net.exe
+        CommandLine: Share
+        ExportFormat: txt
+        ExportFile: NetSystemInfo.txt
+        Append: True

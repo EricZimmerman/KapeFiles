@@ -1,0 +1,15 @@
+Description: $SDS
+Author: Eric Zimmerman
+Version: 1
+Id: 72d56db2-b8da-4830-a2e7-37437c90e18f
+RecreateDirectories: true
+Targets:
+    -
+        Name: $SDS
+        Category: FileSystem
+        Path: c:\$Secure:$SDS
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Secure_$SDS
+        Comment: ""

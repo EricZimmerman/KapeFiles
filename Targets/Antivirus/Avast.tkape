@@ -1,0 +1,34 @@
+Description: Avast Antivirus Data
+Author: Drew Ervin
+Version: 1.0
+Id: 8b625ea2-fafa-46be-8ba1-15efd1de2a53
+RecreateDirectories: true
+Targets:
+    -
+        Name: Avast AV Logs (XP)
+        Category: Antivirus
+        Path: C:\Documents And Settings\All Users\Application Data\Avast Software\Avast\Log
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Avast AV Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Avast Software\Avast\Log\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Avast AV User Logs
+        Category: Antivirus
+        Path: C:\Users\*\Avast Software\Avast\Log
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Avast AV Index
+        Category: Antivirus
+        Path: C:\ProgramData\Avast Software\Avast\Chest\index.xml
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

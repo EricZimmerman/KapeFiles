@@ -1,0 +1,12 @@
+Description: RoutingTable
+Category: LiveResponse
+Author: Mike Cary
+Version: 1
+Id: 8aaad838-be9e-43d4-8643-145ceaa4208b
+ExportFormat: txt
+Processors:
+    -
+        Executable: c:\windows\system32\route.exe
+        CommandLine: print
+        ExportFormat: txt
+        ExportFile: routing_table.txt

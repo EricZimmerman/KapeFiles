@@ -1,0 +1,13 @@
+Description: 'MFTECmd: process $MFT files into bodyfile format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: b6c6f05b-b793-4759-8abd-11c4413220b4
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: bodyfile
+FileMask: $MFT
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --body %destinationDirectory% --bdl c --bodyf mft_bodyfile
+        ExportFormat: bodyfile

@@ -1,0 +1,13 @@
+Description: 'WxTCmd.exe: process Windows Timeline/Activities Cache files'
+Category: FileFolderAccess
+Author: Mike Cary
+Version: 1
+Id: 47b717ab-9a2f-4eb6-a79f-9f56b2c076c4
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/WxTCmd.zip
+ExportFormat: csv
+FileMask: ActivitiesCache.db
+Processors:
+    -
+        Executable: WxTCmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory% 
+        ExportFormat: csv
