@@ -1,7 +1,7 @@
 Description: ActivitiesCache.db collector
 Author: Lee Whitfield
 Version: 1
-Id: 0a3a3c40-db3f-420f-af69-5700df345f0d
+Id: 8315040f-c9a4-455a-b02c-96372583f436
 RecreateDirectories: true
 Targets:
     -
