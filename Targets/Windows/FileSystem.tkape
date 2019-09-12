@@ -1,0 +1,56 @@
+Description: File system metadata
+Author: Eric Zimmerman
+Version: 1
+Id: 2bd97ef7-5fbf-4427-8ca2-ffb15d545b00
+RecreateDirectories: true
+Targets:
+    -
+        Name: $MFT
+        Category: FileSystem
+        Path: $MFT.tkape
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $LogFile
+        Category: FileSystem
+        Path: $LogFile.tkape
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $J
+        Category: FileSystem
+        Path: $J.tkape
+        IsDirectory: false
+        Recursive: false
+        SaveAsFileName: $J
+        Comment: ""
+    -
+        Name: $SDS
+        Category: FileSystem
+        Path: $SDS.tkape
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Secure_$SDS
+        Comment: ""
+    -
+        Name: $Boot
+        Category: FileSystem
+        Path: $Boot.tkape
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $T
+        Category: FileSystem
+        Path: $T.tkape
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $T
+        Comment: ""

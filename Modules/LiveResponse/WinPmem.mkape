@@ -1,0 +1,24 @@
+Description: WinPmem Memory Dump
+Category: Memory
+Author: Eric Capuano 
+Version: 3
+Id: 1d284835-417b-459e-a396-d228edea3808
+BinaryUrl: https://github.com/Velocidex/c-aff4/releases/download/3.2/winpmem_3.2.exe
+ExportFormat: dmp
+Processors:
+    -
+        Executable: winpmem.exe
+        CommandLine: "-o %destinationDirectory%\\memory.dmp --volume_format raw --format raw -dd --logfile %destinationDirectory%\\winpmem.log"
+        ExportFormat: dmp
+
+### README
+#
+# 1. Download winpmem_3.2.exe using the link above; also tested with winpmem_3.3.rc1.exe. Other versions may work, but are untested.
+# 2. Rename the binary to winpmem.exe (dropping the version number) 
+# 3. Place the binary into '<KAPE_working_directory>/Modules/bin'
+#   - KAPE should now be able to find the executable at '<KAPE_working_directory>/Modules/bin/winpmem.exe'
+#
+# To obtain a compressed AFF4 memory dump, swap `--format raw` for `--format map` in the command line parameter above.
+#
+# Example usage: 
+# kape.exe --tsource C --target EventLogs --tdest "c:\temp\tdest" --module WinPmem --mdest "c:\temp\mdest" --mflush --tflush

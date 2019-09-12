@@ -1,0 +1,13 @@
+Description: RogueKiller Anti-Malware (by Adlice Software)
+Author: Drew Ervin
+Version: 1.0
+Id: 089b2afb-cc29-4565-9c2f-cbf0ba50f10d
+RecreateDirectories: true
+Targets:
+    -
+        Name: RogueKiller Reports
+        Category: Antivirus
+        Path: C:\ProgramData\RogueKiller\logs\AdliceReport_*.json
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

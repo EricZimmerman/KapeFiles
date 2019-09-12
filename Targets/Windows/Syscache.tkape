@@ -1,0 +1,20 @@
+Description: syscache.hve
+Author: Phill Moore
+Version: 1
+Id: d4665b13-9953-4cf0-bdc4-6fcb7a37842f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Syscache
+        Category: Program Execution
+        Path: C:\System Volume Information\Syscache.hve
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Syscache transaction files
+        Category: Program Execution
+        Path: C:\System Volume Information\Syscache.hve.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

@@ -42,7 +42,7 @@ Targets:
     -
         Name: PowerShellConsole
         Category: Evidence Of Execution
-        Path: LnkFilesAndJumpLists.tkape
+        Path: PowerShellConsole.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""

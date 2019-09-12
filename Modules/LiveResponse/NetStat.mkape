@@ -1,0 +1,12 @@
+Description: NetStat
+Category: LiveResponse
+Author: Mike Cary
+Version: 1
+Id: ea773d1a-0a69-432d-ab3a-45a0d87374b8
+ExportFormat: txt
+Processors:
+    -
+        Executable: c:\windows\system32\netstat.exe
+        CommandLine: -anob
+        ExportFormat: txt
+        ExportFile: network_connections.txt
