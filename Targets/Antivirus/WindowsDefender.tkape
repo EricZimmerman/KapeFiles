@@ -14,7 +14,7 @@ Targets:
     -
         Name: Windows Defender Event Logs
         Category: EventLogs
-        Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-WindowsDefender*.evtx
+        Path: C:\Windows*\System32\winevt\Logs\Microsoft-Windows-WindowsDefender*.evtx
         IsDirectory: false
         Recursive: false
         Comment: ""

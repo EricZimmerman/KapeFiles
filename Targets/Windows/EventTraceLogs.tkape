@@ -7,28 +7,28 @@ Targets:
     -
         Name: WDI Trace Logs 1
         Category: Event Trace Logs
-        Path: C:\Windows\System32\WDI\LogFiles\*.etl*
+        Path: C:\Windows*\System32\WDI\LogFiles\*.etl*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: WDI Trace Logs 2
         Category: Event Trace Logs
-        Path: C:\Windows\System32\WDI\{*
+        Path: C:\Windows*\System32\WDI\{*
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: WMI Trace Logs
         Category: Event Trace Logs
-        Path: C:\Windows\System32\LogFiles\WMI\*
+        Path: C:\Windows*\System32\LogFiles\WMI\*
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: SleepStudy Trace Logs
         Category: Event Trace Logs
-        Path: C:\Windows\System32\SleepStudy*
+        Path: C:\Windows*\System32\SleepStudy*
         IsDirectory: true
         Recursive: true
         Comment: ""

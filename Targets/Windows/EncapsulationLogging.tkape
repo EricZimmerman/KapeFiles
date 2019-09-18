@@ -7,14 +7,14 @@ Targets:
     -
         Name: EncapsulationLogging
         Category: Executables
-        Path: C:\windows\Appcompat\Programs\EncapsulationLogging.hve
+        Path: C:\Windows*\Appcompat\Programs\EncapsulationLogging.hve
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: EncapsulationLogging Logs
         Category: Executables
-        Path: C:\windows\Appcompat\Programs\EncapsulationLogging.log*
+        Path: C:\Windows*\Appcompat\Programs\EncapsulationLogging.log*
         IsDirectory: false
         Recursive: false
         Comment: ""

@@ -7,7 +7,7 @@ Targets:
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\Windows\system32\LogFiles\W3SVC*\*.log
+        Path: C:\Windows*\system32\LogFiles\W3SVC*\*.log
         IsDirectory: false
         Recursive: false
         Comment: ""
