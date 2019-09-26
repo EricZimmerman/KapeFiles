@@ -1,7 +1,7 @@
 Description: Eric Zimmerman Parsers
 Category: Modules
 Author: Phill Moore
-Version: 1.0
+Version: 1.1
 Id: f531e7cc-c9f3-4d04-881b-dbc89d1e7f38
 BinaryUrl: https://ericzimmerman.github.io/#!index.md
 ExportFormat: csv
@@ -50,6 +50,9 @@ Processors:
         Executable: WxTCmd.mkape
         CommandLine: ""
         ExportFormat: ""	
-		
+    -
+        Executable: MFTECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""			
 
 		
