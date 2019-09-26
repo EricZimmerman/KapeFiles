@@ -28,14 +28,14 @@ Targets:
     -
         Name: ntuser.dat DEFAULT registry hive
         Category: Registry
-        Path: C:\Windows\System32\config\DEFAULT
+        Path: C:\Windows*\System32\config\DEFAULT
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: ntuser.dat DEFAULT transaction files
         Category: Registry
-        Path: C:\Windows\System32\config\DEFAULT.LOG*
+        Path: C:\Windows*\System32\config\DEFAULT.LOG*
         IsDirectory: false
         Recursive: false
         Comment: ""

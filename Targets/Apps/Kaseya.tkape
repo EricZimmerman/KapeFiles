@@ -49,7 +49,7 @@ Targets:
     -
         Name: Kaseya Setup Log
         Category: ApplicationLogs
-        Path: C:\Windows\Temp\KASetup.log
+        Path: C:\Windows*\Temp\KASetup.log
         IsDirectory: false
         Recursive: false
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"

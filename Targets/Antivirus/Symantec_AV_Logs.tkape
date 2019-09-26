@@ -28,7 +28,7 @@ Targets:
     -
         Name: Symantec Event Log Win7+
         Category: EventLogs
-        Path: C:\Windows\system32\winevt\logs\Symantec Endpoint Protection Client.evtx
+        Path: C:\Windows*\system32\winevt\logs\Symantec Endpoint Protection Client.evtx
         IsDirectory: false
         Recursive: false
         Comment: "Symantec specific Windows event log"

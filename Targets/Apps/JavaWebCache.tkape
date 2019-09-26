@@ -19,25 +19,25 @@ Targets:
     -
         Name: Java WebStart Cache System level
         Category: Communication
-        Path: C:\Windows\System32\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\Windows*\System32\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
     -
         Name: Java WebStart Cache System level - IE Protected Mode
         Category: Communication
-        Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\Windows*\System32\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
     -
         Name: Java WebStart Cache System level (SysWow64)
         Category: Communication
-        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\Windows*\SysWOW64\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
     -
         Name: Java WebStart Cache System level (SysWow64) - IE Protected Mode
         Category: Communication
-        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\Windows*\SysWOW64\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
     -

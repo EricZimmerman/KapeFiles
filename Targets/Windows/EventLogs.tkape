@@ -14,7 +14,7 @@ Targets:
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: C:\Windows\system32\winevt\logs\*.evtx
+        Path: C:\Windows*\system32\winevt\logs\*.evtx
         IsDirectory: false
         Recursive: false
         Comment: ""

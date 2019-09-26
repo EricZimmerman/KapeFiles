@@ -7,19 +7,19 @@ Targets:
     -
         Name: Local Group Policy INI Files
         Category: Communication
-        Path: C:\windows\system32\grouppolicy\*.ini
+        Path: C:\Windows*\system32\grouppolicy\*.ini
         IsDirectory: false
         Recursive: false
 
     -
         Name: Local Group Policy Files - Registry Policy Files
         Category: Communication
-        Path: C:\windows\system32\grouppolicy\*.pol
+        Path: C:\Windows*\system32\grouppolicy\*.pol
         IsDirectory: false
         Recursive: false
     -
         Name: Local Group Policy Files - Startup/Shutdown Scripts
         Category: Communication
-        Path: C:\windows\system32\grouppolicy\*\Scripts
+        Path: C:\Windows*\system32\grouppolicy\*\Scripts
         IsDirectory: true 
         Recursive: true

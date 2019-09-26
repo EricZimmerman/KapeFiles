@@ -7,28 +7,28 @@ Targets:
     -
         Name: RemoteConnectionManager Event Logs
         Category: EventLogs
-        Path: C:\Windows\system32\winevt\logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager*
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: LocalSessionManager Event Logs
         Category: EventLogs
-        Path: C:\Windows\system32\winevt\logs\Microsoft-Windows-TerminalServices-LocalSessionManager*
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-TerminalServices-LocalSessionManager*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: RDPClient Event Logs
         Category: EventLogs
-        Path: C:\Windows\system32\winevt\logs\Microsoft-Windows-TerminalServices-RDPClient*
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-TerminalServices-RDPClient*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: RDPCoreTS Event Logs
         Category: EventLogs
-        Path: C:\Windows\system32\winevt\logs\Microsoft-Windows-RemoteDesktopServices-RdpCoreTS*
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-RemoteDesktopServices-RdpCoreTS*
         IsDirectory: false
         Recursive: false
         Comment: "Can be used to correlate RDP logon failures by originating IP"
