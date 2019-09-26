@@ -1,0 +1,20 @@
+Description: Recycle Bin Metadata
+Author: Phill Moore
+Version: 1
+Id: 740cbac1-1792-434c-9f3b-b06b334ba635
+RecreateDirectories: true
+Targets:
+    -
+        Name: $Recycle.Bin
+        Category: Deleted Files
+        Path: C:\$Recycle.Bin\*\$I*
+        IsDirectory: false
+        Recursive: true
+        Comment: ""
+    -
+        Name: RECYCLER WinXP
+        Category: Deleted Files
+        Path: C:\RECYCLER\*\INFO2
+        IsDirectory: false
+        Recursive: true
+        Comment: ""
