@@ -1,4 +1,4 @@
-Description: Office_Autosave
+Description: Office Autosave
 Author: Russ Taylor
 Version: 1
 Id: 71f1efe7-37be-4285-9896-11f0f6be2770
@@ -18,14 +18,14 @@ Targets:
         IsDirectory: true
         Recursive: true
         Comment: ""
-	-
+    -
         Name: Powerpoint Autosave Location
         Category: FileKnowledge
         Path: C:\Users\*\AppData\Roaming\Microsoft\Powerpoint\*
         IsDirectory: true
         Recursive: true
         Comment: ""
-	-
+    -
         Name: Publisher Autosave Location
         Category: FileKnowledge
         Path: C:\Users\*\AppData\Roaming\Microsoft\Publisher\*
