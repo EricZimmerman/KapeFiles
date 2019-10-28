@@ -1,0 +1,27 @@
+Description: ScreenConnect Data (now known as ConnectWise Control)
+Author: Drew Ervin
+Version: 1.0
+Id: 26c80b79-b3c0-4378-abe8-a5a6c9aebb4f
+RecreateDirectories: true
+Targets:
+    -
+        Name: ScreenConnect Session Database
+        Category: ApplicationLogs
+        Path: C:\Program Files*\ScreenConnect\App_Data\Session.db
+        IsDirectory: false
+        Recursive: false
+        Comment: "SQLite database with session information"
+    -
+        Name: ScreenConnect Session Database
+        Category: ApplicationLogs
+        Path: C:\Program Files*\ScreenConnect\App_Data\User.xml
+        IsDirectory: false
+        Recursive: false
+        Comment: "Contains each user's last authenticated time"
+    -
+        Name: ScreenConnect Application Events
+        Category: EventLogs
+        Path: ApplicationEvents.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: "Contains ScreenConnect entries, source: ScreenConnect Client"

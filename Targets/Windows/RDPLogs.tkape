@@ -1,0 +1,34 @@
+Description: RDP Logs
+Author: Drew Ervin
+Version: 1.0
+Id: 6fa6ac8c-d940-4658-9c61-fdad4cf6416b
+RecreateDirectories: true
+Targets:
+    -
+        Name: RemoteConnectionManager Event Logs
+        Category: EventLogs
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: LocalSessionManager Event Logs
+        Category: EventLogs
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-TerminalServices-LocalSessionManager*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RDPClient Event Logs
+        Category: EventLogs
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-TerminalServices-RDPClient*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RDPCoreTS Event Logs
+        Category: EventLogs
+        Path: C:\Windows*\system32\winevt\logs\Microsoft-Windows-RemoteDesktopServices-RdpCoreTS*
+        IsDirectory: false
+        Recursive: false
+        Comment: "Can be used to correlate RDP logon failures by originating IP"

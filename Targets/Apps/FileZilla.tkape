@@ -1,0 +1,20 @@
+Description: FileZilla XML and SQLite Log Files
+Author: Dennis Reneau
+Version: 1
+Id: f7eaa0d5-0b15-4578-b411-ac4226e13a7f
+RecreateDirectories: true
+Targets:
+    -
+        Name: FileZilla XML Log Files
+        Category: Logs
+        Path: C:\Users\*\AppData\Roaming\FileZilla\*.xml*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: FileZilla SQLite3 Log Files
+        Category: Logs
+        Path: C:\Users\*\AppData\Roaming\FileZilla\*.sqlite3*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

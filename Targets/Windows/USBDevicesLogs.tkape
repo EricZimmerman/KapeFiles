@@ -1,0 +1,20 @@
+Description: USB devices log files
+Author: Eric Zimmerman
+Version: 1
+Id: 07ee308f-c79a-47de-a431-c93ab34e4b66
+RecreateDirectories: true
+Targets:
+    -
+        Name: Setupapi.log XP
+        Category: USBDevices
+        Path: C:\Windows\setupapi.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows*\inf\setupapi.dev.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

@@ -1,0 +1,41 @@
+Description: Symantec AV Logs
+Author: Brian Maloney
+Version: 1.1
+Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Symantec Endpoint Protection Logs (XP)
+        Category: AntiVirus
+        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Symantec Endpoint Protection Logs
+        Category: AntiVirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\CurrentVersion\Data\Logs
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Symantec Endpoint Protection User Logs
+        Category: AntiVirus
+        Path: C:\Users\*\AppData\Local\Symantec\Symantec Endpoint Protection\Logs
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Symantec Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows*\system32\winevt\logs\Symantec Endpoint Protection Client.evtx
+        IsDirectory: false
+        Recursive: false
+        Comment: "Symantec specific Windows event log"
+    -
+        Name: Symantec Endpoint Protection Manager (SEPM) Application Events
+        Category: EventLogs
+        Path: ApplicationEvents.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: "Contains SEPM entries, documented here: https://support.symantec.com/us/en/article.tech196455.html"

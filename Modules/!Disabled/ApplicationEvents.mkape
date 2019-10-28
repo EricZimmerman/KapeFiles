@@ -1,0 +1,16 @@
+Description: Parses Application event log using TZWorks evtwalk64
+Category: ProgramExecution
+Author: Justin Price
+Version: 1
+Id: 64cda4d2-8fa0-4948-a994-6b60bc1a50b7
+BinaryUrl: https://tzworks.net/download_links.php
+ExportFormat: csv
+FileMask: Application.evtx
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
+        ExportFormat: csv
+        ExportFile: application_event_log.csv
+
+# This is an example of how to use a tool that cant write out to a destination file. It is not recommended to use evtwalk since it will silently drop logs it doesnt know how to deal with as of testing in August 2019

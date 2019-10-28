@@ -1,0 +1,20 @@
+Description: Recycle Bin Content
+Author: Phill Moore
+Version: 1.0
+Id: 77404f0e-8d88-4eff-bf9c-a3e3fedba5d7
+RecreateDirectories: true
+Targets:
+    -
+        Name: $Recycle.Bin
+        Category: Deleted Files
+        Path: C:\$Recycle.Bin\*\$R*
+        IsDirectory: false
+        Recursive: true
+        Comment: ""
+    -
+        Name: RECYCLER WinXP
+        Category: Deleted Files
+        Path: C:\RECYCLER\*
+        IsDirectory: true
+        Recursive: true
+        Comment: ""

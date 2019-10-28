@@ -1,0 +1,13 @@
+Description: Discord cache files
+Author: Christian Johansen
+Version: 1
+Id: 5a44a0ef-db56-4103-8748-797432487028
+RecreateDirectories: true
+Targets:
+    -
+        Name: Discord cache files
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\discord\cache
+        IsDirectory: true
+        Recursive: true
+        Comment: "Gets cached data from Discord app"

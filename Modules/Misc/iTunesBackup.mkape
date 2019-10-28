@@ -1,0 +1,17 @@
+Description: 'iTunes Backup Reader'
+Category: ExternalDevices
+Author: Jack Farley
+Version: 1
+Id: e2dbd037-69b5-476a-bbc6-9bcb737d76d4
+BinaryUrl: https://github.com/jfarley248/iTunes_Backup_Analyzer/releases
+ExportFormat: db
+Processors:
+    -
+        Executable: iTunes_Backup_Reader.exe
+        CommandLine:  -i "%sourceDirectory%\" -o %destinationDirectory% -v --ir -r -t db
+        ExportFormat: db
+
+######
+# Make sure to use flag --tdd false to not dedupe files (Thanks Eric!)
+# Backups located in C:\Users\{user}\AppData\Roaming\Apple Computer\MobileSync\Backup\{GUID}
+######

@@ -1,0 +1,39 @@
+Description: Network Details
+Category: LiveResponse
+Author: Mike Cary
+Version: 1
+Id: 77b87364-39b1-46ff-b355-3d6fa8da9560
+ExportFormat: txt
+FileMask: ""
+Processors:
+    -
+        Executable: IPConfig.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: DNSCache.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: ARPCache.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RoutingTable.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Netstat.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NBTStat_Netbios_Sessions.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NBTStat_Netbios_Cache.mkape
+        CommandLine: ""
+        ExportFormat: ""
+######
+# As this processes live data off the sytem any directory can be set as "msource"
+######
