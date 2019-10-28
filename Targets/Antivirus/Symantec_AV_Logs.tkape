@@ -1,6 +1,6 @@
 Description: Symantec AV Logs
 Author: Brian Maloney
-Version: 1.1
+Version: 1.2
 Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
 RecreateDirectories: true
 Targets:
@@ -14,7 +14,7 @@ Targets:
     -
         Name: Symantec Endpoint Protection Logs
         Category: AntiVirus
-        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\CurrentVersion\Data\Logs
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\
         IsDirectory: true
         Recursive: true
         Comment: ""
@@ -39,3 +39,17 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: "Contains SEPM entries, documented here: https://support.symantec.com/us/en/article.tech196455.html"
+    -
+        Name: Symantec Endpoint Protection Quarantine (XP)
+        Category: AntiVirus
+        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Symantec Endpoint Protection Quarantine
+        Category: AntiVirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
