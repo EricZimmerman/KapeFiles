@@ -3,7 +3,7 @@ Category: FileMetadata
 Author: Eric Zimmerman
 Version: 1
 Id: f93bd081-55cd-4c12-8a7f-280a0caeebf9
-BinaryUrl: https://www.cert.at/static/downloads/software/densityscout/densityscout_build_45_windows.zip
+BinaryUrl: https://www.cert.at/en/downloads/software/software-densityscout
 ExportFormat: txt
 Processors:
     -
