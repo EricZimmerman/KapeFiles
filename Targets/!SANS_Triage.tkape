@@ -1,7 +1,10 @@
-Description: SANS Triage Collection.  No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS 500 Students.
+Description: SANS Triage Collection.  
+# No Compound Targets used in this target.  That is intended to make this target 
+# "self documenting" for the SANS 500 Students.
+
 Author: Mark Hallman
-Version: 1
-Id: cb7bc431-532d-4a0a-926c-5ccde61e9b71
+Version: 1.0.0
+Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
 RecreateDirectories: true
 Targets:
 
