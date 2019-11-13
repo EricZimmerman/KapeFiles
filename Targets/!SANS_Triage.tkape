@@ -1,0 +1,1028 @@
+Description: SANS Triage Collection.  
+# No Compound Targets used in this target.  That is intended to make this target 
+# "self documenting" for the SANS 500 Students.
+
+Author: Mark Hallman
+Version: 1
+Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
+RecreateDirectories: true
+Targets:
+
+# Event Logs
+    -
+        Name: Event logs XP
+        Category: EventLogs
+        Path: C:\Windows\system32\config\*.evt
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows*\system32\winevt\logs\*.evtx
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+
+# Evidence of Execution
+    -
+        Name: Prefetch
+        Category: Prefetch
+        Path: C:\Windows*\prefetch\*.pf
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: C:\Windows*\AppCompat\Programs\RecentFileCache.bcf
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows*\AppCompat\Programs\Amcache.hve
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\Windows*\AppCompat\Programs\Amcache.hve.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Syscache
+        Category: Program Execution
+        Path: C:\System Volume Information\Syscache.hve
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Syscache transaction files
+        Category: Program Execution
+        Path: C:\System Volume Information\Syscache.hve.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: PowerShell Console Log
+        Category: PowerShellConsleLog
+        Path: C:\users\*\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+
+# File System    
+    -
+        Name: $MFT
+        Category: FileSystem
+        Path: C:\$MFT
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $LogFile
+        Category: FileSystem
+        Path: C:\$LogFile
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $J
+        Category: FileSystem
+        Path: c:\$Extend\$UsnJrnl:$J
+        IsDirectory: false
+        Recursive: false
+        SaveAsFileName: $J
+        Comment: ""
+    -
+        Name: $Max
+        Category: FileSystem
+        Path: c:\$Extend\$UsnJrnl:$Max
+        IsDirectory: false
+        Recursive: false
+        SaveAsFileName: $Max
+        Comment: ""
+    -
+        Name: $SDS
+        Category: FileSystem
+        Path: c:\$Secure:$SDS
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Secure_$SDS
+        Comment: ""
+    -
+        Name: $Boot
+        Category: FileSystem
+        Path: c:\$Boot
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: $T
+        Category: FileSystem
+        Path: c:\$Extend\$RmMetadata\$TxfLog\$Tops:$T
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        SaveAsFileName: $T
+        Comment: ""
+
+# Link Files and JumpLists        
+    -
+        Name: Lnk files from Recent
+        Category: LnkFiles
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Windows\Recent
+        IsDirectory: true
+        Recursive: true
+        Comment: Also includes automatic and custom jumplist directories
+    -
+        Name: Lnk files from Microsoft Office Recent
+        Category: LnkFiles
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Office\Recent
+        IsDirectory: true
+        Recursive: true
+        Comment: ""        
+    -
+        Name: Lnk files from Recent (XP)
+        Category: LnkFiles
+        Path: C:\Documents and Settings\*\Recent
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Desktop lnk files XP
+        Category: LnkFiles
+        Path: C:\Documents and Settings\*\Desktop\*.lnk
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Desktop lnk files
+        Category: LnkFiles
+        Path: C:\Users\*\Desktop\*.lnk
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Restore point lnk files XP
+        Category: LnkFiles
+        Path: C:\System Volume Information\_restore*\RP*\*.lnk
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+
+# Recycle Bin and Recycler 
+    -
+        Name: $Recycle.Bin
+        Category: Deleted Files
+        Path: C:\$Recycle.Bin\*
+        IsDirectory: false
+        Recursive: true
+        Comment: ""
+    -
+        Name: RECYCLER WinXP
+        Category: Deleted Files
+        Path: C:\RECYCLER\*
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+
+# System Registry Files
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\SAM.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\SECURITY.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\SOFTWARE.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\SYSTEM.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows*\System32\config\SAM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows*\System32\config\SECURITY
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows*\System32\config\SOFTWARE
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows*\System32\config\SYSTEM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\RegBack\*.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows*\System32\config\RegBack\SAM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows*\System32\config\RegBack\SECURITY
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows*\System32\config\RegBack\SOFTWARE
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows*\System32\config\RegBack\SYSTEM
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows*\System32\config\RegBack\SYSTEM1
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows*\System32\config\systemprofile\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\systemprofile\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows*\ServiceProfiles\LocalService\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows*\ServiceProfiles\LocalService\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows*\ServiceProfiles\NetworkService\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows*\ServiceProfiles\NetworkService\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: System Restore Points Registry Hives (XP)
+        Category: Registry
+        Path: C:\System Volume Information\_restore*\RP*\snapshot\_REGISTRY_*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+
+# User Registry Files
+    -
+        Name: ntuser.dat registry hive XP
+        Category: Registry
+        Path: C:\Documents and Settings\*\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat registry hive
+        Category: Registry
+        Path: C:\Users\*\ntuser.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat registry transaction files
+        Category: Registry
+        Path: C:\Users\*\ntuser.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat DEFAULT registry hive
+        Category: Registry
+        Path: C:\Windows*\System32\config\DEFAULT
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ntuser.dat DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows*\System32\config\DEFAULT.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: UsrClass.dat registry hive
+        Category: Registry
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: UsrClass.dat registry transaction files
+        Category: Registry
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""   
+
+# System Level Artifacts  
+
+# Schedules Tasks
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows*\Tasks\*.job
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows*\SchedLgU.txt
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows*\system32\Tasks
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+
+    -
+        Name: SRUM
+        Category: Execution
+        Path: C:\Windows*\System32\SRU
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+
+    -
+        Name: Thumbcache DB
+        Category: FileKnowledge
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\Explorer\thumbcache_*.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+
+# USB Devices Logs
+    -
+        Name: Setupapi.log XP
+        Category: USBDevices
+        Path: C:\Windows\setupapi.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows*\inf\setupapi.dev.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: WindowsIndexSearch
+        Category: FileKnowledge
+        Path: C:\programdata\microsoft\search\data\applications\windows\Windows.edb
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: WBEM
+        Category: WBEM
+        Path: C:\Windows*\System32\wbem\Repository
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+
+# User Communication         
+
+# Outlook PST and OST files
+    -
+        Name: PST XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.pst
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: OST XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.ost
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: PST
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Outlook\*.pst
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: OST
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Outlook\*.ost
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+            
+# Skype
+    -
+        Name: main.db (App <v12)
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\main.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: skype.db (App +v12)
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\skype.db
+        IsDirectory: false
+        Recursive: false
+        Comment: "" 
+    -
+        Name: main.db XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Skype\*\main.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: main.db Win7+
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Skype\*\main.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: s4l-[username].db (App +v8)
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\s4l-*.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: leveldb (Skype for Desktop +v8)
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\*.log
+        IsDirectory: false
+        Recursive: false
+        Comment: ""        
+
+# Web Browser Artificats        
+    -
+        Name: Chrome bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Cookies*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Current Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Current Session
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Current Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Current Tabs
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Favicons*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome History XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\History*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Last Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Last Session
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Last Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Last Tabs
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Preferences XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Shortcuts XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Shortcuts*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Top Sites XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Top Sites*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Visited Links XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Visited Links
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Web Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Web Data*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome bookmarks
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Cookies
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cookies*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Current Session
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Current Session
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Current Tabs
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Current Tabs
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Favicons
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Favicons*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome History
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\History*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Last Session
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Last Session
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Last Tabs
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Last Tabs
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Preferences
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Preferences
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Shortcuts
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Shortcuts*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Top Sites
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Top Sites*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome bookmarks
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Visited Links
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Visited Links
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Web Data
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Web Data*
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
+        Name: Chrome Extension Files
+        Category: Communication
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Extensions
+        IsDirectory: true 
+        Recursive: true
+    -
+        Name: Chrome Extension Files XP 
+        Category: Communications
+        Path: c:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions
+        IsDirectory: true
+        Recursive: true
+    -
+        Name: Edge folder
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+        IsDirectory: True
+        Recursive: True
+        Comment: ""
+    -
+        Name: WebcacheV01.dat
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        IsDirectory: Yes
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Places
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\places.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Downloads
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\downloads.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Form history
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Cookies
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\cookies.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Signons
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\signons.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Webappstore
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Favicons
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\favicons.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Addons
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\addons.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Search
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\search.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Places (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Downloads (XP)    
+        Category: Communications (XP)
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\downloads.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Form history (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Cookies (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\cookies.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Forefox Signons (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\signons.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Webappstore (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Favicons (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\favicons.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Addons (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\addons.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Firefox Search  (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat History
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\History\History.IE5\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat History subdirectory
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\History\History.IE5\*\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat temp internet files
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat cookies (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Cookies\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat UserData (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Microsoft\Internet Explorer\UserData\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat Office XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Microsoft\Office\Recent\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Index.dat Office
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Office\Recent\index.dat
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Local Internet Explorer folder
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Internet Explorer\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Roaming Internet Explorer folder
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Internet Explorer\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""		
+    -
+        Name: IE 9/10 History
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\History\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 9/10 Cache
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 9/10 Cookies
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\Cookies\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 9/10 Download History
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 11 Metadata
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        IsDirectory: true
+        Recursive: false
+        Comment: ""
+    -
+        Name: IE 11 Cache
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\INetCache\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: IE 11 Cookies
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Microsoft\Windows\INetCookies\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""            
+  
+# Windows Timeline
+    -
+        Name: ActivitiesCache.db
+        Category: FileFolderAccess
+        Path: C:\Users\*\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ActivitiesCache.db-shm
+        Category: FileFolderAccess
+        Path: C:\Users\*\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db-shm
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: ActivitiesCache.db-wal
+        Category: FileFolderAccess
+        Path: C:\Users\*\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db-wal
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
