@@ -408,7 +408,7 @@ Targets:
     -
         Name: at SchedLgU.txt
         Category: Persistence
-        Path: C:\Windows*\SchedLgU.txt
+        Path: C:\Windows*\Tasks\SchedLgU.txt
         IsDirectory: false
         Recursive: false
         Comment: ""
@@ -621,13 +621,6 @@ Targets:
         Recursive: false
         Comment: 
     -
-        Name: Chrome bookmarks XP
-        Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
-        IsDirectory: false
-        Recursive: false
-        Comment: 
-    -
         Name: Chrome Visited Links XP
         Category: Communications
         Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Visited Links
@@ -715,13 +708,6 @@ Targets:
         Name: Chrome Top Sites
         Category: Communications
         Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Top Sites*
-        IsDirectory: false
-        Recursive: false
-        Comment: 
-    -
-        Name: Chrome bookmarks
-        Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
         IsDirectory: false
         Recursive: false
         Comment: 
