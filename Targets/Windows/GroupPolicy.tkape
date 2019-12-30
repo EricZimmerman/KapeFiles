@@ -1,0 +1,25 @@
+Description: Current Group Policy Enforcement
+Author: piesecurity
+Version: 1
+Id: e5595e9c-ebab-41db-a688-fdffe91f6fcb
+RecreateDirectories: true
+Targets:
+    -
+        Name: Local Group Policy INI Files
+        Category: Communication
+        Path: C:\Windows*\system32\grouppolicy\*.ini
+        IsDirectory: false
+        Recursive: false
+
+    -
+        Name: Local Group Policy Files - Registry Policy Files
+        Category: Communication
+        Path: C:\Windows*\system32\grouppolicy\*.pol
+        IsDirectory: false
+        Recursive: false
+    -
+        Name: Local Group Policy Files - Startup/Shutdown Scripts
+        Category: Communication
+        Path: C:\Windows*\system32\grouppolicy\*\Scripts
+        IsDirectory: true 
+        Recursive: true

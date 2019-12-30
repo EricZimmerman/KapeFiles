@@ -1,0 +1,29 @@
+Description: Box Cloud Storage Files and Metadata
+Author: Chad Tilbury
+Version: 1
+Id: 2e3bee53-24b6-4867-8510-7da07d353abc
+RecreateDirectories: true
+Targets:
+    -
+        Name: Box User Files
+        Category: Apps
+        Path: C:\Users\*\Box*\
+        IsDirectory: True
+        Recursive: True
+        FollowReparsePoint: True
+        FollowSymbolicLinks: True
+        Comment: "Caution -- This target will collect Box Drive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
+    -
+        Name: Box Drive Application Metadata
+        Category: Apps
+        Path: C:\Users\*\AppData\Local\Box\Box\*\
+        IsDirectory: True
+        Recursive: True
+        Comment: ""
+    -
+        Name: Box Sync Application Metadata
+        Category: Apps
+        Path: C:\Users\*\AppData\Local\Box Sync\*\
+        IsDirectory: True
+        Recursive: True
+        Comment: ""

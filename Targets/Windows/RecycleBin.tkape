@@ -1,0 +1,20 @@
+Description: Recycle Bin
+Author: Phill Moore
+Version: 1
+Id: a22deca9-0c6e-4962-adf0-b082246aad57
+RecreateDirectories: true
+Targets:
+    -
+        Name: RecycleBinMetadata
+        Category: Deleted Files
+        Path: RecycleBinMetadata.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: RecycleBinContent
+        Category: Deleted Files
+        Path: RecycleBinContent.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

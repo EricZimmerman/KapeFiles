@@ -1,0 +1,22 @@
+Description: $J
+Author: Eric Zimmerman
+Version: 1
+Id: 2a9c6f80-250b-42a6-9d29-90cb0a20f7be
+RecreateDirectories: true
+Targets:
+    -
+        Name: $J
+        Category: FileSystem
+        Path: c:\$Extend\$UsnJrnl:$J
+        IsDirectory: false
+        Recursive: false
+        SaveAsFileName: $J
+        Comment: ""
+    -
+        Name: $Max
+        Category: FileSystem
+        Path: c:\$Extend\$UsnJrnl:$Max
+        IsDirectory: false
+        Recursive: false
+        SaveAsFileName: $Max
+        Comment: ""

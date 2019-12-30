@@ -1,0 +1,12 @@
+Description: NBTStat_NETBIOS_Cache
+Category: LiveResponse
+Author: Mike Cary
+Version: 1
+Id: d0309794-03b1-40bf-bbdd-12fe77f5e0a6
+ExportFormat: txt
+Processors:
+    -
+        Executable: c:\windows\system32\nbtstat.exe
+        CommandLine: -c
+        ExportFormat: txt
+        ExportFile: netbios_cache.txt

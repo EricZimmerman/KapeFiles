@@ -1,0 +1,55 @@
+Description: Kaseya Data
+Author: Drew Ervin
+Version: 1.0
+Id: bb83f860-5a10-4471-821e-9ef4ab6f856c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Kaseya Live Connect Logs (XP)
+        Category: ApplicationLogs
+        Path: C:\Documents and Settings\*\Application Data\Kaseya\Log
+        IsDirectory: true
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Live Connect Logs
+        Category: ApplicationLogs
+        Path: C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect
+        IsDirectory: true
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Agent Endpoint Service Logs (XP)
+        Category: ApplicationLogs
+        Path: C:\Documents and Settings\All Users\Application Data\Kaseya\Log\Endpoint
+        IsDirectory: true
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Agent Endpoint Service Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Kaseya\Log\Endpoint
+        IsDirectory: true
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Agent Service Log
+        Category: ApplicationLogs
+        Path: C:\Program Files*\Kaseya\*\agentmon.log*
+        IsDirectory: false
+        Recursive: false
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Setup Log
+        Category: ApplicationLogs
+        Path: C:\Users\*\AppData\Local\Temp\KASetup.log
+        IsDirectory: false
+        Recursive: false
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
+    -
+        Name: Kaseya Setup Log
+        Category: ApplicationLogs
+        Path: C:\Windows*\Temp\KASetup.log
+        IsDirectory: false
+        Recursive: false
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"

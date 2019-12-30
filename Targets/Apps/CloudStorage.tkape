@@ -1,0 +1,34 @@
+Description: Cloud Storage Contents and Metadata
+Author: Chad Tilbury
+Version: 1
+Id: 29984028-0f42-4922-8a3f-752341f5852c
+RecreateDirectories: true
+Targets:
+    -
+        Name: OneDrive
+        Category: Apps
+        Path: OneDrive.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Google Drive
+        Category: Apps
+        Path: GoogleDrive.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Dropbox
+        Category: Apps
+        Path: Dropbox.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Box
+        Category: Apps
+        Path: BoxDrive.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

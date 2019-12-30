@@ -1,0 +1,27 @@
+Description: Windows Error Reporting
+Author: Troy Larson
+Version: 1
+Id: 03106a1c-e1f8-4075-abdb-f9c83078347d
+RecreateDirectories: true
+Targets:
+    -
+        Name: WER Files
+        Category: Executables
+        Path: C:\ProgramData\Microsoft\Windows\WER
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
+    -
+        Name: Crash Dumps
+        Category: SQL Exploitation
+        Path: C:\Users\*\AppData\Local\CrashDumps\*.dmp
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Crash Dumps
+        Category: SQL Exploitation
+        Path: C:\Windows*\*.dmp
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

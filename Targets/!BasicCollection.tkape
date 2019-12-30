@@ -5,13 +5,6 @@ Id: 83b99299-2d84-4844-af25-c727d3440b19
 RecreateDirectories: true
 Targets:
     -
-        Name: Amcache
-        Category: Program Execution
-        Path: Amcache.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-    -
         Name: Event Logs
         Category: Event Logs
         Path: EventLogs.tkape
@@ -47,15 +40,15 @@ Targets:
         Recursive: false
         Comment: ""
     -
-        Name: Recycle
+        Name: RecycleBinMetadata
         Category: File Deletion
-        Path: Recycle.tkape
+        Path: RecycleBinMetadata.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: RegistryHives
-        Category: Registry
+        Category: Registry Hives
         Path: RegistryHives.tkape
         IsDirectory: false
         Recursive: false

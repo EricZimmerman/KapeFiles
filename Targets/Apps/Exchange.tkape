@@ -1,0 +1,20 @@
+Description: Exchange Log Files
+Author: Keith Twombley
+Version: 1
+Id: 1b54aafe-5074-4d45-b129-29107ce7f863
+RecreateDirectories: true
+Targets:
+    -
+        Name: Exchange client access log files
+        Category: Logs
+        Path: ExchangeClientAccess.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Exchange TransportRoles log files
+        Category: Logs
+        Path: ExchangeTransport.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""

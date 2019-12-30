@@ -1,0 +1,12 @@
+Description: DNSCache
+Category: LiveResponse
+Author: Mike Cary
+Version: 1
+Id: b5df17b0-29d2-448f-bdaa-ec221bee29b6
+ExportFormat: txt
+Processors:
+    -
+        Executable: c:\windows\system32\ipconfig.exe
+        CommandLine: /DISPLAYDNS
+        ExportFormat: txt
+        ExportFile: dns_cache.txt

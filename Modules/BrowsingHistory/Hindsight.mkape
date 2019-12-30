@@ -1,0 +1,21 @@
+Description: 'Hindsight - Chrome browser parsing'
+Category: BrowsingHistory
+Author: Mike Cary
+Version: 1.1
+Id: d9661ea6-3369-41d0-8807-904f00edcbf4
+BinaryUrl: https://github.com/obsidianforensics/hindsight/releases
+ExportFormat: xlsx
+Processors:
+    -
+        Executable: hindsight.exe
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f xlsx 
+        ExportFormat: xlsx
+    -
+        Executable: hindsight.exe
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f json 
+        ExportFormat: json
+#####
+# Hindsight - Internet history forensics for Google Chrome/Chromium
+# https://github.com/obsidianforensics/hindsight/releases
+# Use version 2.3 or later to enable parsing of all profiles
+#####
