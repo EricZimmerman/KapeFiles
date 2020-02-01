@@ -214,3 +214,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: 
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Protect\*\
+        IsDirectory: True
+        Recursive: True
+        Comment: "Required for offline decryption"
