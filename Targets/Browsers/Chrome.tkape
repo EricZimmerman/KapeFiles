@@ -68,7 +68,7 @@ Targets:
         Recursive: false
         Comment: 
     -
-		Name: Chrome Preferences XP
+        Name: Chrome Preferences XP
         Category: Communications
         Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
         IsDirectory: false
@@ -173,7 +173,7 @@ Targets:
         Recursive: false
         Comment: 
     -
-		Name: Chrome Preferences
+        Name: Chrome Preferences
         Category: Communications
         Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Preferences
         IsDirectory: false
