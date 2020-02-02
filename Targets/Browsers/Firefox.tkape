@@ -68,6 +68,27 @@ Targets:
         Recursive: false
         Comment: ""
     -
+        Name: Password
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\key*.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\signon*.*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\logins.json
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
         Name: Places
         Category: Communications
         Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
@@ -127,6 +148,27 @@ Targets:
         Name: Search
         Category: Communications
         Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\key*.db
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\signon*.*
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\logins.json
         IsDirectory: false
         Recursive: false
         Comment: ""

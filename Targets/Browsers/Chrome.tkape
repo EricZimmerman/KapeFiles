@@ -61,6 +61,13 @@ Targets:
         Recursive: false
         Comment: 
     -
+        Name: Chrome Login Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Login Data
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
         Name: Chrome Preferences XP
         Category: Communications
         Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
@@ -159,6 +166,13 @@ Targets:
         Recursive: false
         Comment: 
     -
+        Name: Chrome Login Data
+        Category: Communications
+        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Login Data
+        IsDirectory: false
+        Recursive: false
+        Comment: 
+    -
         Name: Chrome Preferences
         Category: Communications
         Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Preferences
@@ -200,3 +214,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: 
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\*\AppData\Roaming\Microsoft\Protect\*\
+        IsDirectory: True
+        Recursive: True
+        Comment: "Required for offline decryption"
