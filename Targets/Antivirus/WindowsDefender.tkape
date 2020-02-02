@@ -18,3 +18,10 @@ Targets:
         IsDirectory: false
         Recursive: false
         Comment: ""
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Support\
+        IsDirectory: true
+        Recursive: true
+        Comment: ""
