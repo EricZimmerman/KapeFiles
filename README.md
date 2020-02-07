@@ -4,6 +4,7 @@
 
 For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#!index.md)!! This URL will always be the latest documentation.
 
+It is also possible to attend KAPE training from Kroll instructors. Details can be found [HERE](training.md)!!
 
 ## TL;DR; for target and module creation is stated below:
 
