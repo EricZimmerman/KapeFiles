@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: hiberfil.sys
-        Category: FileSystem
+        Category: Memory
         Path: C:\hiberfil.sys
         IsDirectory: false
         Recursive: false
@@ -14,7 +14,7 @@ Targets:
         Comment: ""
     -
         Name: pagefile.sys
-        Category: FileSystem
+        Category: Memory
         Path: C:\pagefile.sys
         IsDirectory: false
         Recursive: false
@@ -22,7 +22,7 @@ Targets:
         Comment: ""
     -
         Name: swapfile.sys
-        Category: FileSystem
+        Category: Memory
         Path: c:\swapfile.sys
         IsDirectory: false
         Recursive: false
