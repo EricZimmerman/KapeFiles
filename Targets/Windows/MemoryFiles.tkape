@@ -1,0 +1,30 @@
+Description: Memory Files
+Author: Ahmed Elshaer
+Version: 1
+Id: d9e7fc93-7b63-4286-aa05-27ce3437c9c0
+RecreateDirectories: true
+Targets:
+    -
+        Name: hiberfil.sys
+        Category: FileSystem
+        Path: C:\hiberfil.sys
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: pagefile.sys
+        Category: FileSystem
+        Path: C:\pagefile.sys
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
+    -
+        Name: swapfile.sys
+        Category: FileSystem
+        Path: c:\swapfile.sys
+        IsDirectory: false
+        Recursive: false
+        AlwaysAddToQueue: true
+        Comment: ""
