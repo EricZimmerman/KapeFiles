@@ -7,28 +7,28 @@ Targets:
     -
         Name: User Files - Desktop
         Category: LiveUserFiles
-        Path: C:\Users\*\Desktop
+        Path: C:\users\%user%\Desktop
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: User Files - Documents
         Category: LiveUserFiles
-        Path: C:\Users\*\Documents
+        Path: C:\users\%user%\Documents
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: User Files - Downloads
         Category: LiveUserFiles
-        Path: C:\Users\*\Downloads
+        Path: C:\users\%user%\Downloads
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: User Files - Dropbox
         Category: LiveUserFiles
-        Path: C:\Users\*\Dropbox*\
+        Path: C:\users\%user%\Dropbox*\
         IsDirectory: true
         Recursive: true
         Comment: ""

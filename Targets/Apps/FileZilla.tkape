@@ -7,14 +7,14 @@ Targets:
     -
         Name: FileZilla XML Log Files
         Category: Logs
-        Path: C:\Users\*\AppData\Roaming\FileZilla\*.xml*
+        Path: C:\users\%user%\AppData\Roaming\FileZilla\*.xml*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: FileZilla SQLite3 Log Files
         Category: Logs
-        Path: C:\Users\*\AppData\Roaming\FileZilla\*.sqlite3*
+        Path: C:\users\%user%\AppData\Roaming\FileZilla\*.sqlite3*
         IsDirectory: false
         Recursive: false
         Comment: ""

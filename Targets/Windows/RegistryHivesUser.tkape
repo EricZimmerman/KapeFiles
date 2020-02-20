@@ -14,14 +14,14 @@ Targets:
     -
         Name: ntuser.dat registry hive
         Category: Registry
-        Path: C:\Users\*\ntuser.dat
+        Path: C:\users\%user%\ntuser.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: ntuser.dat registry transaction files
         Category: Registry
-        Path: C:\Users\*\ntuser.dat.LOG*
+        Path: C:\users\%user%\ntuser.dat.LOG*
         IsDirectory: false
         Recursive: false
         Comment: ""
@@ -42,14 +42,14 @@ Targets:
     -
         Name: UsrClass.dat registry hive
         Category: Registry
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\UsrClass.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: UsrClass.dat registry transaction files
         Category: Registry
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG*
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG*
         IsDirectory: false
         Recursive: false
         Comment: ""

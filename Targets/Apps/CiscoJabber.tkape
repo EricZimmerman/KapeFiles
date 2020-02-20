@@ -7,7 +7,7 @@ Targets:
     -
         Name: Cisco Jabber Database
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Cisco\Unified Communications\Jabber\CSF\History\*.db
+        Path: C:\users\%user%\AppData\Local\Cisco\Unified Communications\Jabber\CSF\History\*.db
         IsDirectory: false
         Recursive: false
         Comment: "The Cisco Jabber process needs to be killed before database can be copied."

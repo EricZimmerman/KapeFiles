@@ -7,7 +7,7 @@ Targets:
     -
         Name: Gigatribe Files Windows Vista/7/8/10
         Category: FileDownload
-        Path: C:\Users\*\AppData\Local\Shalsoft\*
+        Path: C:\users\%user%\AppData\Local\Shalsoft\*
         IsDirectory: true
         Recursive: true
         Comment: "Locates Gigatribe files and copies them"

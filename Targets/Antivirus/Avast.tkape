@@ -21,7 +21,7 @@ Targets:
     -
         Name: Avast AV User Logs
         Category: Antivirus
-        Path: C:\Users\*\Avast Software\Avast\Log
+        Path: C:\users\%user%\Avast Software\Avast\Log
         IsDirectory: true
         Recursive: true
         Comment: ""

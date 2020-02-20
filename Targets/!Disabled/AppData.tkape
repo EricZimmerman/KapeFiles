@@ -7,7 +7,7 @@ Targets:
     -
         Name: AppData
         Category: UserData
-        Path: C:\Users\*\AppData\
+        Path: C:\users\%user%\AppData\
         IsDirectory: true
         Recursive: true
         Comment: ""

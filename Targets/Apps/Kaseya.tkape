@@ -14,7 +14,7 @@ Targets:
     -
         Name: Kaseya Live Connect Logs
         Category: ApplicationLogs
-        Path: C:\Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect
+        Path: C:\users\%user%\AppData\Local\Kaseya\Log\KaseyaLiveConnect
         IsDirectory: true
         Recursive: true
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
@@ -42,7 +42,7 @@ Targets:
     -
         Name: Kaseya Setup Log
         Category: ApplicationLogs
-        Path: C:\Users\*\AppData\Local\Temp\KASetup.log
+        Path: C:\users\%user%\AppData\Local\Temp\KASetup.log
         IsDirectory: false
         Recursive: false
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"

@@ -21,7 +21,7 @@ Targets:
     -
         Name: TeamViewer Configuration Files
         Category: ApplicationLogs
-        Path: C:\Users\*\AppData\Roaming\TeamViewer\MRU\RemoteSupport
+        Path: C:\users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport
         IsDirectory: true
         Recursive: true
         Comment: "Includes miscellaneous config files"

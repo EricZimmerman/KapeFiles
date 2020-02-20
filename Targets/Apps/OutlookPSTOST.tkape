@@ -21,14 +21,14 @@ Targets:
     -
         Name: PST
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Outlook\*.pst
+        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\*.pst
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: OST
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Outlook\*.ost
+        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\*.ost
         IsDirectory: false
         Recursive: false
         Comment: ""

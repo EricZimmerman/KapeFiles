@@ -49,70 +49,70 @@ Targets:
     -
         Name: Index.dat Office
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Microsoft\Office\Recent\index.dat
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Office\Recent\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Local Internet Explorer folder
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Internet Explorer\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Internet Explorer\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: Roaming Internet Explorer folder
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Microsoft\Internet Explorer\
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
         IsDirectory: true
         Recursive: true
         Comment: ""		
     -
         Name: IE 9/10 History
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\History\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\History\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: IE 9/10 Cache
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: IE 9/10 Cookies
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\Cookies\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Cookies\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: IE 9/10 Download History
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: IE 11 Metadata
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache
         IsDirectory: true
         Recursive: false
         Comment: ""
     -
         Name: IE 11 Cache
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\INetCache\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCache\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: IE 11 Cookies
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\INetCookies\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
         IsDirectory: true
         Recursive: true
         Comment: ""

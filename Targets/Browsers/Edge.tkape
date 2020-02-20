@@ -7,14 +7,14 @@ Targets:
     -
         Name: Edge folder
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
+        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe
         IsDirectory: True
         Recursive: True
         Comment: ""
     -
         Name: WebcacheV01.dat
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\WebCache
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache
         IsDirectory: Yes
         Recursive: false
         Comment: ""

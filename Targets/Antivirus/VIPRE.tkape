@@ -14,21 +14,21 @@ Targets:
     -
         Name: VIPRE Business User Logs (v7+)
         Category: Antivirus
-        Path: C:\Users\*\AppData\Roaming\VIPRE Business\
+        Path: C:\users\%user%\AppData\Roaming\VIPRE Business\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: VIPRE Business User Logs (v5-v6)
         Category: Antivirus
-        Path: C:\Users\*\AppData\Roaming\GFI Software\AntiMalware\Logs\
+        Path: C:\users\%user%\AppData\Roaming\GFI Software\AntiMalware\Logs\
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: VIPRE Business User Logs (up to v4)
         Category: Antivirus
-        Path: C:\Users\*\AppData\Roaming\Sunbelt Software\AntiMalware\Logs\
+        Path: C:\users\%user%\AppData\Roaming\Sunbelt Software\AntiMalware\Logs\
         IsDirectory: true
         Recursive: true
         Comment: ""

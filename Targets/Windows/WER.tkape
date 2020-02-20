@@ -14,7 +14,7 @@ Targets:
     -
         Name: Crash Dumps
         Category: SQL Exploitation
-        Path: C:\Users\*\AppData\Local\CrashDumps\*.dmp
+        Path: C:\users\%user%\AppData\Local\CrashDumps\*.dmp
         IsDirectory: false
         Recursive: false
         Comment: ""

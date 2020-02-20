@@ -7,28 +7,28 @@ Targets:
     -
         Name: TorrentClients - qBittorrent
         Category: FileDownload
-        Path: C:\Users\*\AppData\Roaming\qBittorrent\*.ini
+        Path: C:\users\%user%\AppData\Roaming\qBittorrent\*.ini
         IsDirectory: false
         Recursive: false
         Comment: "Locates settings files and copies them"
     -
         Name: TorrentClients - qBittorrent
         Category: FileDownload
-        Path: C:\Users\*\AppData\Local\qBittorrent\logs
+        Path: C:\users\%user%\AppData\Local\qBittorrent\logs
         IsDirectory: false
         Recursive: false
         Comment: "Locates log files and copies them"
     -
         Name: TorrentClients - uTorrent
         Category: FileDownload
-        Path: C:\Users\*\AppData\Roaming\uTorrent\*.dat
+        Path: C:\users\%user%\AppData\Roaming\uTorrent\*.dat
         IsDirectory: false
         Recursive: false
         Comment: "Locates settings files and copies them"
     -
         Name: TorrentClients - BitTorrent
         Category: FileDownload
-        Path: C:\Users\*\AppData\Roaming\BitTorrent\*.dat
+        Path: C:\users\%user%\AppData\Roaming\BitTorrent\*.dat
         IsDirectory: false
         Recursive: false
         Comment: "Locates settings files and copies them"

@@ -7,13 +7,13 @@ Targets:
     -
         Name: Java WebStart Cache User Level - Default
         Category: Communication
-        Path: C:\Users\*\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\users\%user%\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
     -
         Name: Java WebStart Cache User Level - IE Protected Mode
         Category: Communication
-        Path: C:\Users\*\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\users\%user%\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
     -

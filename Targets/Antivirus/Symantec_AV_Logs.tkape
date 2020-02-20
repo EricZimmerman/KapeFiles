@@ -21,7 +21,7 @@ Targets:
     -
         Name: Symantec Endpoint Protection User Logs
         Category: AntiVirus
-        Path: C:\Users\*\AppData\Local\Symantec\Symantec Endpoint Protection\Logs
+        Path: C:\users\%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs
         IsDirectory: true
         Recursive: true
         Comment: ""

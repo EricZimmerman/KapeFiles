@@ -7,28 +7,28 @@ Targets:
     -
         Name: .bash_history
         Category: Windows Linux Profile
-        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_history
+        Path: C:\users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_history
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: .bash_logout
         Category: Windows Linux Profile
-        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_logout
+        Path: C:\users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_logout
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: .bashrc
         Category: Windows Linux Profile
-        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bashrc
+        Path: C:\users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bashrc
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: .profile
         Category: Windows Linux Profile
-        Path: C:\Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.profile
+        Path: C:\users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\.profile
         IsDirectory: false
         Recursive: false
         Comment: ""

@@ -112,112 +112,112 @@ Targets:
     -
         Name: Chrome bookmarks
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Cookies
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cookies*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Cookies*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Current Session
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Current Session
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Current Session
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Current Tabs
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Current Tabs
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Current Tabs
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Favicons
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Favicons*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Favicons*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome History
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\History*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\History*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Last Session
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Last Session
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Last Session
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Last Tabs
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Last Tabs
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Last Tabs
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Login Data
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Login Data
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Login Data
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Preferences
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Preferences
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Preferences
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Shortcuts
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Shortcuts*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Shortcuts*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Top Sites
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Top Sites*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Top Sites*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome bookmarks
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Bookmarks*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Visited Links
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Visited Links
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Visited Links
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Web Data
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Web Data*
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Web Data*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Windows Protect Folder
         Category: FileSystem
-        Path: C:\Users\*\AppData\Roaming\Microsoft\Protect\*\
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Protect\*\
         IsDirectory: True
         Recursive: True
         Comment: "Required for offline decryption"
