@@ -7,7 +7,7 @@ Targets:
     -
         Name: Kaseya Live Connect Logs (XP)
         Category: ApplicationLogs
-        Path: C:\Documents and Settings\*\Application Data\Kaseya\Log
+        Path: C:\Documents and Settings\%user%\Application Data\Kaseya\Log
         IsDirectory: true
         Recursive: true
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"

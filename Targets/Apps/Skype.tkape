@@ -21,7 +21,7 @@ Targets:
     -
         Name: main.db XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Skype\*\main.db
+        Path: C:\Documents and Settings\%user%\Application Data\Skype\*\main.db
         IsDirectory: false
         Recursive: false
         Comment: ""

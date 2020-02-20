@@ -91,84 +91,84 @@ Targets:
     -
         Name: Places
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Downloads
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\downloads.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\downloads.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Form history
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Cookies
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\cookies.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\cookies.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Signons
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\signons.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\signons.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Webappstore
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Favicons
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\favicons.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\favicons.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Addons
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\addons.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\addons.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Search
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Password
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\key*.db
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\key*.db
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Password
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\signon*.*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\signon*.*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Password
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\logins.json
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\logins.json
         IsDirectory: false
         Recursive: false
         Comment: ""

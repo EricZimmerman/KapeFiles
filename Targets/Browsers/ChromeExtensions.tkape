@@ -13,6 +13,6 @@ Targets:
     -
         Name: Chrome Extension Files XP 
         Category: Communications
-        Path: c:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions
+        Path: c:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions
         IsDirectory: true
         Recursive: true

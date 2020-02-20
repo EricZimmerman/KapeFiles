@@ -21,14 +21,14 @@ Targets:
     -
         Name: Lnk files from Recent (XP)
         Category: LnkFiles
-        Path: C:\Documents and Settings\*\Recent
+        Path: C:\Documents and Settings\%user%\Recent
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: Desktop lnk files XP
         Category: LnkFiles
-        Path: C:\Documents and Settings\*\Desktop\*.lnk
+        Path: C:\Documents and Settings\%user%\Desktop\*.lnk
         IsDirectory: false
         Recursive: false
         Comment: ""

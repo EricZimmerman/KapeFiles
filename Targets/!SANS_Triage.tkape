@@ -153,14 +153,14 @@ Targets:
     -
         Name: Lnk files from Recent (XP)
         Category: LnkFiles
-        Path: C:\Documents and Settings\*\Recent
+        Path: C:\Documents and Settings\%user%\Recent
         IsDirectory: true
         Recursive: true
         Comment: ""
     -
         Name: Desktop lnk files XP
         Category: LnkFiles
-        Path: C:\Documents and Settings\*\Desktop\*.lnk
+        Path: C:\Documents and Settings\%user%\Desktop\*.lnk
         IsDirectory: false
         Recursive: false
         Comment: ""
@@ -348,7 +348,7 @@ Targets:
     -
         Name: ntuser.dat registry hive XP
         Category: Registry
-        Path: C:\Documents and Settings\*\ntuser.dat
+        Path: C:\Documents and Settings\%user%\ntuser.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
@@ -472,14 +472,14 @@ Targets:
     -
         Name: PST XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.pst
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\*.pst
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: OST XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.ost
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\*.ost
         IsDirectory: false
         Recursive: false
         Comment: ""
@@ -516,7 +516,7 @@ Targets:
     -
         Name: main.db XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Skype\*\main.db
+        Path: C:\Documents and Settings\%user%\Application Data\Skype\*\main.db
         IsDirectory: false
         Recursive: false
         Comment: ""
@@ -546,91 +546,91 @@ Targets:
     -
         Name: Chrome bookmarks XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Cookies XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Cookies*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Cookies*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Current Session XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Current Session
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Current Session
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Current Tabs XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Current Tabs
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Current Tabs
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Favicons XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Favicons*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Favicons*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome History XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\History*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\History*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Last Session XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Last Session
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Last Session
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Last Tabs XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Last Tabs
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Last Tabs
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Preferences XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Shortcuts XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Shortcuts*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Shortcuts*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Top Sites XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Top Sites*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Top Sites*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Visited Links XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Visited Links
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Visited Links
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Web Data XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Web Data*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Web Data*
         IsDirectory: false
         Recursive: false
         Comment: 
@@ -734,7 +734,7 @@ Targets:
     -
         Name: Chrome Extension Files XP 
         Category: Communications
-        Path: c:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions
+        Path: c:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions
         IsDirectory: true
         Recursive: true
     -
@@ -817,105 +817,105 @@ Targets:
     -
         Name: Firefox Places (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Downloads (XP)    
         Category: Communications (XP)
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\downloads.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\downloads.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Form history (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Cookies (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\cookies.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\cookies.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Forefox Signons (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\signons.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\signons.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Webappstore (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Favicons (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\favicons.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\favicons.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Addons (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\addons.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\addons.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Firefox Search  (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Index.dat History
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\History\History.IE5\index.dat
+        Path: C:\Documents and Settings\%user%\Local Settings\History\History.IE5\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Index.dat History subdirectory
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\History\History.IE5\*\index.dat
+        Path: C:\Documents and Settings\%user%\Local Settings\History\History.IE5\*\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Index.dat temp internet files
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+        Path: C:\Documents and Settings\%user%\Local Settings\Temporary Internet Files\Content.IE5\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Index.dat cookies (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Cookies\index.dat
+        Path: C:\Documents and Settings\%user%\Cookies\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Index.dat UserData (XP)
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Microsoft\Internet Explorer\UserData\index.dat
+        Path: C:\Documents and Settings\%user%\Application Data\Microsoft\Internet Explorer\UserData\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""
     -
         Name: Index.dat Office XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Microsoft\Office\Recent\index.dat
+        Path: C:\Documents and Settings\%user%\Application Data\Microsoft\Office\Recent\index.dat
         IsDirectory: false
         Recursive: false
         Comment: ""

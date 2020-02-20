@@ -7,7 +7,7 @@ Targets:
     -
         Name: ntuser.dat registry hive XP
         Category: Registry
-        Path: C:\Documents and Settings\*\ntuser.dat
+        Path: C:\Documents and Settings\%user%\ntuser.dat
         IsDirectory: false
         Recursive: false
         Comment: ""

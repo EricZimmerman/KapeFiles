@@ -7,105 +7,105 @@ Targets:
     -
         Name: Chrome bookmarks XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Cookies XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Cookies*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Cookies*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Current Session XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Current Session
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Current Session
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Current Tabs XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Current Tabs
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Current Tabs
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Favicons XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Favicons*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Favicons*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome History XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\History*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\History*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Last Session XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Last Session
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Last Session
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Last Tabs XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Last Tabs
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Last Tabs
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Login Data XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Login Data
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Login Data
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Preferences XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Preferences
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Shortcuts XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Shortcuts*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Shortcuts*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Top Sites XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Top Sites*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Top Sites*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome bookmarks XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Bookmarks*
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Visited Links XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Visited Links
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Visited Links
         IsDirectory: false
         Recursive: false
         Comment: 
     -
         Name: Chrome Web Data XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\Web Data*
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Web Data*
         IsDirectory: false
         Recursive: false
         Comment: 

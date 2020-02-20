@@ -43,6 +43,6 @@ Targets:
     -
         Name: Java WebStart Cache User Level - XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Sun\Java\Deployment\cache\*\*\*.idx
+        Path: C:\Documents and Settings\%user%\Application Data\Sun\Java\Deployment\cache\*\*\*.idx
         IsDirectory: false
         Recursive: false
