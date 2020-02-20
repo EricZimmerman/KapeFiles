@@ -10,8 +10,6 @@ Targets:
         Path: C:\Users\*\Box
         IsDirectory: True
         Recursive: True
-        FollowReparsePoint: True
-        FollowSymbolicLinks: True
         Comment: "Caution! This target will collect Box Drive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
     -
         Name: Box Sync User Files
@@ -19,8 +17,6 @@ Targets:
         Path: C:\Users\*\Box Sync\
         IsDirectory: True
         Recursive: True
-        FollowReparsePoint: True
-        FollowSymbolicLinks: True
     -
         Name: Box Drive Application Metadata
         Category: Apps
