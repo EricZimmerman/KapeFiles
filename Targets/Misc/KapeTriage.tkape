@@ -70,7 +70,7 @@ Targets:
     -
         Name: AntiVirus
         Category: Targets
-        Path: Antivirus.tkape
+        Path: Antivirus\*.tkape
         IsDirectory: false
         Recursive: false
         Comment: ""
