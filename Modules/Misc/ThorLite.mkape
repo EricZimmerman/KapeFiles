@@ -1,0 +1,23 @@
+Description: Thor Lite, an IOC and YARA scanner written in Golang
+Category: IOCs
+Author: Jonas A. Wendorf (changes), based on the original for Spark Core by Eric Capuano 
+Version: 1
+Id: bc310a24-c824-464a-abde-077bbe85c949
+BinaryUrl: https://www.nextron-systems.com/thor-lite/
+ExportFormat: csv
+Processors:
+    -
+        Executable: thor-lite/thor64-lite.exe
+        CommandLine: "--quick -l %destinationDirectory%/thor-lite.log -o %destinationDirectory%/thor-lite.csv"
+        ExportFormat: csv
+
+### HOW TO PLACE THE BINARY
+#
+# 1. Download thor-lite using the link above. It's a free tool, but you must register for a license.
+# 2. Unzip thor-lite.zip into '<KAPE_working_directory>/Modules'
+# 3. Rename the unpacked 'thor-lite-win-pack' directory to 'thor-lite'
+# 4. KAPE should now be able to find the executable in '<KAPE_working_directory>/Modules/thor-lite/thor64-lite.exe'
+# 5. Be sure to include your '.lic' license file in the 'thor-lite' 
+#
+# Currently configured to run "--quick" option which "selects the most relevant file paths only"
+# Remove "--quick" for a full scan which will take much longer. (~2min versus 23min on test system)
