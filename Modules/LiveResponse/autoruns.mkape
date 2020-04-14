@@ -8,5 +8,5 @@ ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "%kapedirectory%\Modules\bin\autorunsc.exe -a * -s -c -accepteula -nobanner -h * | Set-Content -Path %destinationDirectory%\autoruns.csv"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\autorunsc.exe' -a * -s -c -accepteula -nobanner -h * | Set-Content -Path %destinationDirectory%\autoruns.csv"
         ExportFormat: csv
