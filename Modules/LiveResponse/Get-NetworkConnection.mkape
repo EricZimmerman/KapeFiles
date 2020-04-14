@@ -1,18 +1,18 @@
 Description: 'Get-NetworkConnection including timestamps'
 Category: LiveResponse
 Author: Hadar Yudovich
-Version: 1.0
+Version: 1.1
 Id: 814f00f5-b8c0-4bef-8439-b75bd90c1459
 BinaryUrl: https://raw.githubusercontent.com/IllusiveNetworks-Labs/Get-NetworkConnection/master/Get-NetworkConnection.ps1
 ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1 | ConvertTo-Csv -NoTypeInformation | Out-File -FilePath %destinationDirectory%\Get-NetworkConnection.csv"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1' | ConvertTo-Csv -NoTypeInformation | Out-File -FilePath %destinationDirectory%\Get-NetworkConnection.csv"
         ExportFormat: csv
     -
         Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1 | ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\Get-NetworkConnection.json"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1' | ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\Get-NetworkConnection.json"
         ExportFormat: json
 #####
 # Get-NetworkConnection Returns current TCP and UDP connections, including timestamps!
