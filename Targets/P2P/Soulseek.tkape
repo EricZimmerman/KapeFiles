@@ -10,4 +10,4 @@ Targets:
         Path: C:\users\%user%\AppData\Local\SoulseekQt\Soulseek Chat Logs\*
         IsDirectory: true
         Recursive: true
-        Comment: "Locates Soulseek chat logs and copies them. Chat logs are in plaintext. Current as of Soulseek 2019.7.22."
+        Comment: "Locates Soulseek chat logs and copies them. Chat logs are in plaintext. Current as of version 2019.7.22."
