@@ -10,4 +10,4 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\DC++\Logs\*
         IsDirectory: false
         Recursive: true
-        Comment: "Locates DC++ hub/chat logs and copies them"
+        Comment: "Locates DC++ hub/chat logs and copies them. Current as of version 0.868."
