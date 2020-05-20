@@ -1,6 +1,6 @@
 Description: Soulseek
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: c68061f4-9f79-4d7d-9e95-30636103ed19
 RecreateDirectories: true
 Targets:
@@ -10,4 +10,11 @@ Targets:
         Path: C:\users\%user%\AppData\Local\SoulseekQt\Soulseek Chat Logs\*
         IsDirectory: true
         Recursive: true
-        Comment: "Locates Soulseek chat logs and copies them. Chat logs are in plaintext. Current as of Soulseek 2019.7.22."
+        Comment: "Locates Soulseek chat logs and copies them. Chat logs are in plaintext. Current as of version 2019.7.22."
+    -
+        Name: Soulseek Search History/Shared Folders/Settings
+        Category: FileDownload
+        Path: C:\users\%user%\AppData\Local\SoulseekQt\1\*
+        IsDirectory: false
+        Recursive: false
+        Comment: "Locates .dat file(s) containing: search history, active searches (search_record), current shared folders (shared_file_folder), and wish list items (wish_list_item)."

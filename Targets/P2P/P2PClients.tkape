@@ -1,0 +1,34 @@
+Description: P2P Clients
+Author: Andrew Rathbun
+Version: 1.0
+Id: 4357b5ff-0bd4-41c0-a644-463ea0e14c48
+RecreateDirectories: true
+Targets:
+    -
+        Name: DC++
+        Category: FileDownload
+        Path: DC++.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Gigatribe
+        Category: FileDownload
+        Path: Gigatribe.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Shareaza
+        Category: FileDownload
+        Path: Shareaza.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
+    -
+        Name: Soulseek
+        Category: FileDownload
+        Path: Soulseek.tkape
+        IsDirectory: false
+        Recursive: false
+        Comment: ""
