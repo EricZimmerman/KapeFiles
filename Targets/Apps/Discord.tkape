@@ -7,7 +7,6 @@ Targets:
     -
         Name: Discord cache files
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\discord\cache
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Roaming\discord\cache\
         Recursive: true
         Comment: "Gets cached data from Discord app"

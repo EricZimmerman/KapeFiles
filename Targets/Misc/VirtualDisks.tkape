@@ -9,30 +9,22 @@ Targets:
         Category: Disk Images
         Path: C:\
         FileMask: '*.VHD'
-        IsDirectory: true
         Recursive: true
-        Comment: "VHD"
     -
         Name: VHDX
         Category: Disk Images
         Path: C:\
         FileMask: '*.VHDX'
-        IsDirectory: true
         Recursive: true
-        Comment: "VHDX"
     -
         Name: VDI
         Category: Disk Images
         Path: C:\
         FileMask: '*.VDI'
-        IsDirectory: true
         Recursive: true
-        Comment: "VDI"
     -
         Name: VMDK
         Category: Disk Images
         Path: C:\
         FileMask: '*.VMDK'
-        IsDirectory: true
         Recursive: true
-        Comment: "VMDK"

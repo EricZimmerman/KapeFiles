@@ -8,20 +8,14 @@ Targets:
         Name: Trend Micro Logs
         Category: Antivirus
         Path: C:\ProgramData\Trend Micro\
-        IsDirectory: true
         Recursive: true
-        Comment: ""
     -    
         Name: Trend Micro Security Agent Report Logs
         Category: Antivirus
-        Path: C:\Program Files*\Trend Micro\Security Agent\Report\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Program Files*\Trend Micro\Security Agent\Report\
+        FileMask: '*.log'
     -    
         Name: Trend Micro Security Agent Connection Logs
         Category: Antivirus
-        Path: C:\Program Files*\Trend Micro\Security Agent\ConnLog\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Program Files*\Trend Micro\Security Agent\ConnLog\
+        FileMask: '*.log'

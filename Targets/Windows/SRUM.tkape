@@ -7,7 +7,6 @@ Targets:
     -
         Name: SRUM
         Category: Execution
-        Path: C:\Windows*\System32\SRU
-        IsDirectory: true
+        Path: C:\Windows*\System32\SRU\
         Recursive: true
-        Comment: ""
+

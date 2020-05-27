@@ -7,7 +7,5 @@ Targets:
     -
         Name: NGINX Log Files
         Category: Logs
-        Path: C:\nginx\logs\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\nginx\logs\
+        FileMask: '*.log'

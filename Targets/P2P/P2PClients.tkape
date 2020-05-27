@@ -8,27 +8,15 @@ Targets:
         Name: DC++
         Category: FileDownload
         Path: DC++.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Gigatribe
         Category: FileDownload
         Path: Gigatribe.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Shareaza
         Category: FileDownload
         Path: Shareaza.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Soulseek
         Category: FileDownload
         Path: Soulseek.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""

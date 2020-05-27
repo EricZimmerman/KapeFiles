@@ -8,7 +8,5 @@ Targets:
     -
         Name: Webroot Program Data
         Category: Antivirus
-        Path: C:\ProgramData\WRData\WRLog.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\ProgramData\WRData\
+        FileMask: WRLog.log

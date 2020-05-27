@@ -7,16 +7,14 @@ Targets:
     -
         Name: $J
         Category: FileSystem
-        Path: c:\$Extend\$UsnJrnl:$J
-        IsDirectory: false
-        Recursive: false
+        Path: c:\$Extend\
+        FileMask: $UsnJrnl:$J
+        AlwaysAddToQueue: true
         SaveAsFileName: $J
-        Comment: ""
     -
         Name: $Max
         Category: FileSystem
-        Path: c:\$Extend\$UsnJrnl:$Max
-        IsDirectory: false
-        Recursive: false
+        Path: c:\$Extend\
+        FileMask: $UsnJrnl:$Max
+        AlwaysAddToQueue: true
         SaveAsFileName: $Max
-        Comment: ""

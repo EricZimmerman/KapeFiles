@@ -7,8 +7,6 @@ Targets:
     -
         Name: $MFT
         Category: FileSystem
-        Path: C:\$MFT
-        IsDirectory: false
-        Recursive: false
+        Path: C:\
+        FileMask: $MFT
         AlwaysAddToQueue: true
-        Comment: ""

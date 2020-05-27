@@ -7,14 +7,10 @@ Targets:
     -
         Name: Syscache
         Category: Program Execution
-        Path: C:\System Volume Information\Syscache.hve
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\System Volume Information\
+        FileMask: 'Syscache.hve'
     -
         Name: Syscache transaction files
         Category: Program Execution
-        Path: C:\System Volume Information\Syscache.hve.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\System Volume Information\
+        FileMask: 'Syscache.hve.LOG*'

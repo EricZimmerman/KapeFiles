@@ -8,13 +8,7 @@ Targets:
         Name: Exchange client access log files
         Category: Logs
         Path: ExchangeClientAccess.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Exchange TransportRoles log files
         Category: Logs
         Path: ExchangeTransport.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""

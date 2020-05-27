@@ -7,7 +7,6 @@ Targets:
     -
         Name: Ammyy Program Data
         Category: ApplicationLogs
-        Path: C:\ProgramData\Ammyy
-        IsDirectory: true
+        Path: C:\ProgramData\Ammyy\
         Recursive: true
         Comment: "May not contain traditional log files, but presence of this folder may indicate historical usage"

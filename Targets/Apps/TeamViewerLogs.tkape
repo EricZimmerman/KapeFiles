@@ -7,21 +7,18 @@ Targets:
     -
         Name: TeamViewer Connection Logs
         Category: Communications
-        Path: C:\Program Files*\TeamViewer\connections*.txt
-        IsDirectory: false
-        Recursive: false
+        Path: C:\Program Files*\TeamViewer\
+        FileMask: 'connections*.txt'
         Comment: "Includes connections_incoming.txt and connections.txt"
     -
         Name: TeamViewer Application Logs
         Category: ApplicationLogs
-        Path: C:\Program Files*\TeamViewer\TeamViewer*_Logfile*
-        IsDirectory: false
-        Recursive: false
+        Path: C:\Program Files*\TeamViewer\
+        FileMask: 'TeamViewer*_Logfile*'
         Comment: "Includes TeamViewer<version>_Logfile.log and TeamViewer<version>_Logfile_OLD.log"
     -
         Name: TeamViewer Configuration Files
         Category: ApplicationLogs
-        Path: C:\users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport\
         Recursive: true
         Comment: "Includes miscellaneous config files"

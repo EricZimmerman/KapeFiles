@@ -7,7 +7,5 @@ Targets:
     -
         Name: RogueKiller Reports
         Category: Antivirus
-        Path: C:\ProgramData\RogueKiller\logs\AdliceReport_*.json
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\ProgramData\RogueKiller\logs\
+        FileMask: AdliceReport_*.json

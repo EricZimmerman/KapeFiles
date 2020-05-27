@@ -8,21 +8,11 @@ Targets:
         Name: Event Logs
         Category: Event Logs
         Path: EventLogs.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: File System
         Category: File System
         Path: FileSystem.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: RegistryHives
         Category: Registry
         Path: RegistryHives.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-

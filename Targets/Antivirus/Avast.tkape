@@ -7,28 +7,20 @@ Targets:
     -
         Name: Avast AV Logs (XP)
         Category: Antivirus
-        Path: C:\Documents And Settings\All Users\Application Data\Avast Software\Avast\Log
-        IsDirectory: true
+        Path: C:\Documents And Settings\All Users\Application Data\Avast Software\Avast\Log\
         Recursive: true
-        Comment: ""
     -
         Name: Avast AV Logs
         Category: Antivirus
         Path: C:\ProgramData\Avast Software\Avast\Log\
-        IsDirectory: true
         Recursive: true
-        Comment: ""
     -
         Name: Avast AV User Logs
         Category: Antivirus
-        Path: C:\users\%user%\Avast Software\Avast\Log
-        IsDirectory: true
+        Path: C:\users\%user%\Avast Software\Avast\Log\
         Recursive: true
-        Comment: ""
     -
         Name: Avast AV Index
         Category: Antivirus
-        Path: C:\ProgramData\Avast Software\Avast\Chest\index.xml
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\ProgramData\Avast Software\Avast\Chest\
+        FileMask: index.xml

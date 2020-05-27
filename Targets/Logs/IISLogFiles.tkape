@@ -7,28 +7,20 @@ Targets:
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\Windows*\system32\LogFiles\W3SVC*\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\system32\LogFiles\W3SVC*\
+        FileMask: '*.log'
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\inetpub\logs\LogFiles\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\inetpub\logs\LogFiles\
+        FileMask: '*.log'
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\inetpub\logs\LogFiles\W3SVC*\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\inetpub\logs\LogFiles\W3SVC*\
+        FileMask: '*.log'
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\Resources\directory\* \LogFiles\Web\W3SVC*\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Resources\directory\* \LogFiles\Web\W3SVC*\
+        FileMask: '*.log'

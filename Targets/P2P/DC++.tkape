@@ -7,7 +7,6 @@ Targets:
     -
         Name: DC++ Chat Logs
         Category: FileDownload
-        Path: C:\Users\%user%\AppData\Local\DC++\Logs\*
-        IsDirectory: false
+        Path: C:\Users\%user%\AppData\Local\DC++\Logs\
         Recursive: true
         Comment: "Locates DC++ hub/chat logs and copies them. Current as of version 0.868."

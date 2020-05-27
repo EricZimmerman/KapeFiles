@@ -7,7 +7,6 @@ Targets:
     -
         Name: McAfee ePO Logs
         Category: AntiVirus
-        Path: C:\ProgramData\McAfee\Endpoint Security\Logs
-        IsDirectory: true
+        Path: C:\ProgramData\McAfee\Endpoint Security\Logs\
         Recursive: true
  

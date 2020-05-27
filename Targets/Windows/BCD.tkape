@@ -7,14 +7,10 @@ Targets:
     -
         Name: BCD
         Category: Registry
-        Path: C:\Boot\BCD
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Boot\
+        FileMask: BCD
     -
         Name: BCD Logs
         Category: Registry
-        Path: C:\Boot\BCD.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Boot\
+        FileMask: 'BCD.LOG*'

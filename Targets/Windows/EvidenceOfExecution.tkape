@@ -8,27 +8,15 @@ Targets:
         Name: Prefetch
         Category: Prefetch
         Path: Prefetch.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: RecentFileCache
         Category: ApplicationCompatability
         Path: RecentFileCache.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Amcache
         Category: ApplicationCompatability
         Path: Amcache.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Syscache
         Category: Syscache
         Path: Syscache.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""

@@ -7,21 +7,15 @@ Targets:
     -
         Name: WER Files
         Category: Executables
-        Path: C:\ProgramData\Microsoft\Windows\WER
-        IsDirectory: true
+        Path: C:\ProgramData\Microsoft\Windows\WER\
         Recursive: true
-        Comment: ""
     -
         Name: Crash Dumps
         Category: SQL Exploitation
-        Path: C:\users\%user%\AppData\Local\CrashDumps\*.dmp
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\CrashDumps\
+        FileMask: '*.dmp'
     -
         Name: Crash Dumps
         Category: SQL Exploitation
-        Path: C:\Windows*\*.dmp
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\
+        FileMask: '*.dmp'

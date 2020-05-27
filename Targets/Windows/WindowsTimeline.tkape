@@ -7,21 +7,5 @@ Targets:
     -
         Name: ActivitiesCache.db
         Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-    -
-        Name: ActivitiesCache.db-shm
-        Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db-shm
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-    -
-        Name: ActivitiesCache.db-wal
-        Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db-wal
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db*
