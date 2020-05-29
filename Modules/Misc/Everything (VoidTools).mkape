@@ -1,8 +1,8 @@
-Description: Converts Everything.db to a .efu file which is readable in a text editor (Notepad++/Edit Pad Pro/etc)
+Description: Converts Everything.db to a .efu file which is readable in a text editor
 Category: FileSystem
 Author: Andrew Rathbun
-Version: 1
-Id: 0e904dfb-002c-4355-add4-4ae05820d36c
+Version: 1.0
+Id: aa99e399-bd8d-4881-81e1-3633724d6738
 BinaryUrl: https://www.voidtools.com/db2efu.zip
 ExportFormat: efu
 FileMask: Everything.db
