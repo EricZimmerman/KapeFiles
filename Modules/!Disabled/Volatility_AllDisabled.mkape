@@ -1,0 +1,62 @@
+Description: Post-Process memory images with Volatility. The mkape files in this file are disabled by-default because the Volatility plugins have a high runtime and most of them are commonly not used for triage.
+Category: Modules
+Author: Jos Clephas
+Version: 1
+Id: aa982fb9-dc79-4e42-85d8-34079ef9271c
+BinaryUrl: http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip
+ExportFormat: greptext
+Processors:
+    -
+        Executable: Volatility_apihooks.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_dlldump.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_dumpfiles.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_filescan.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_handles.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_malfind_dump.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_memdump.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_mftparser.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_moddump.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_procdump.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_shellbags.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Volatility_timeliner.mkape
+        CommandLine: ""
+        ExportFormat: ""
+                
+# Place the binary 'volatility_2.6_win64_standalone.exe' into the .\modules\bin folder. And if you want to provide a Volatility profile (such as Win2016x64_14393) or a KDBG, you have to create a file named 'volatilityrc' and place it in the same folder as the Volatility binary. Set the following content in that file:
+#
+#[DEFAULT]
+#PROFILE=Win2016x64_14393
+##KDBG=0x82944c28

@@ -1,0 +1,12 @@
+Description: Post-Process memory images with Volatility
+Category: Memory
+Author: Jos Clephas
+Version: 1
+Id: e734c060-d736-4d1a-a411-93773a87b6c3
+BinaryUrl: http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip
+ExportFormat: greptext
+Processors:
+    -
+        Executable: volatility_2.6_win64_standalone.exe
+        CommandLine: -f %sourceDirectory%\memory.dmp memdump --output=greptext --output-file=%destinationDirectory%\volatility_memdump.txt --dump-dir=%destinationDirectory%
+        ExportFormat: greptext
