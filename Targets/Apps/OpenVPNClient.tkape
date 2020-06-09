@@ -1,0 +1,24 @@
+Description: OpenVPN Client Config and Log
+Author: Mathias Frank
+Version: 1.0
+Id: 03920e05-c794-46d1-b2cd-5e1febd0fdaf
+RecreateDirectories: true
+Targets:
+    -
+        Name: OpenVPN Client Config
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\OpenVPN\config\
+        Recursive: true
+        Comment: "Contains OpenVPN Configs (Profiles)"
+    -
+        Name: OpenVPN Client Config
+        Category: ApplicationLogs
+        Path: C:\Program Files*\OpenVPN\config
+        Recursive: true
+        Comment: "Contains OpenVPN Configs(Profiles)"
+    -
+        Name: OpenVPN Client Config
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\OpenVPN\log\
+        FileMask: '*.log'
+        Comment: "Contains OpenVPN Logs for each Config(Profile)"
