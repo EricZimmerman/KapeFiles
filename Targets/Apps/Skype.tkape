@@ -7,42 +7,30 @@ Targets:
     -
         Name: main.db (App <v12)
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\main.db
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        FileMask: main.db
     -
         Name: skype.db (App +v12)
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\skype.db
-        IsDirectory: false
-        Recursive: false
-        Comment: "" 
+        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        FileMask: skype.db
     -
         Name: main.db XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Skype\*\main.db
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Skype\*\
+        FileMask: main.db
     -
         Name: main.db Win7+
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Skype\*\main.db
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Skype\*\
+        FileMask: main.db
     -
         Name: s4l-[username].db (App +v8)
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\s4l-*.db
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
+        FileMask: s4l-*.db
     -
         Name: leveldb (Skype for Desktop +v8)
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""        
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
+        FileMask: '*.log'

@@ -8,13 +8,14 @@ Targets:
         Name: Windows Defender Logs
         Category: Antivirus
         Path: C:\ProgramData\Microsoft\Microsoft AntiMalware\Support\
-        IsDirectory: true
         Recursive: true
-        Comment: ""
     -
         Name: Windows Defender Event Logs
         Category: EventLogs
-        Path: C:\Windows*\System32\winevt\Logs\Microsoft-Windows-WindowsDefender*.evtx
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\winevt\Logs\
+        FileMask: Microsoft-Windows-Windows Defender*.evtx
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Support\
+        Recursive: true

@@ -1,0 +1,18 @@
+Description: Post-Process memory images with Volatility
+Category: Memory
+Author: Jos Clephas
+Version: 1
+Id: 20ab011d-7142-4132-b153-15f745b1bebb
+BinaryUrl: http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip
+ExportFormat: greptext
+Processors:
+    -
+        Executable: volatility_2.6_win64_standalone.exe
+        CommandLine: -f %sourceDirectory%\memory.dmp shellbags --output=greptext --output-file %destinationDirectory%\volatility_shellbags.txt
+        ExportFormat: greptext
+        
+# Place the binary 'volatility_2.6_win64_standalone.exe' into the .\modules\bin folder. And if you want to provide a Volatility profile (such as Win2016x64_14393) or a KDBG, you have to create a file named 'volatilityrc' and place it in the same folder as the Volatility binary. Set the following content in that file:
+#
+#[DEFAULT]
+#PROFILE=Win2016x64_14393
+##KDBG=0x82944c28

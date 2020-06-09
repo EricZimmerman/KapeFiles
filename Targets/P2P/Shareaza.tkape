@@ -1,0 +1,12 @@
+Description: Shareaza
+Author: Andrew Rathbun
+Version: 1.0
+Id: 3d3203ae-e753-4c37-ac82-d67735972d44
+RecreateDirectories: true
+Targets:
+    -
+        Name: Shareaza Logs
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\Shareaza\
+        Recursive: true
+        Comment: "Locates Shareaza logs and copies them. Logs are stored in .dat format and have to be viewed in a hex editor. Searches.dat within the Data folder will contain information on searches conducted by the user as well as results displayed. Current as of version 2.7.10.2"

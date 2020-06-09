@@ -1,0 +1,36 @@
+Description: Radmin Server/Viewer Logs and Chats
+Author: Mathias Frank
+Version: 1.0
+Id: 432a2374-2310-461e-ad94-aaf07989aa46
+RecreateDirectories: true
+Targets:
+    -
+        Name: Radmin Server 32bit Log
+        Category: ApplicationLogs
+        Path: C:\Windows\SysWOW64\rserver30\
+        FileMask: Radm_log.htm
+        Comment: "Contains Application Log entries such as service start and incomming connections."
+    -
+        Name: Radmin Server 64bit Log
+        Category: ApplicationLogs
+        Path: C:\Windows\system32\rserver30\
+        FileMask: Radm_log.htm
+        Comment: "Contains Application Log entries such as service start and incomming connections."
+    -
+        Name: Radmin Server 32bit Chats
+        Category: ApplicationLogs
+        Path: C:\Windows\SysWOW64\rserver30\CHATLOGS\*\
+        FileMask: '*.htm'
+        Comment: "Previous chat logs"
+    -
+        Name: Radmin Server 64bit Chats
+        Category: ApplicationLogs
+        Path: C:\Windows\system32\rserver30\CHATLOGS\*\
+        FileMask: '*.htm'
+        Comment: "Previous chat logs"
+    -
+        Name: Radmin Viewer Chats
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\Documents\ChatLogs\*\
+        FileMask: '*.htm'
+        Comment: "Previous chat logs"

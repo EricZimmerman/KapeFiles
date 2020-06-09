@@ -8,27 +8,15 @@ Targets:
         Name: OneDrive
         Category: Apps
         Path: OneDrive.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Google Drive
         Category: Apps
         Path: GoogleDrive.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Dropbox
         Category: Apps
         Path: Dropbox.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Box
         Category: Apps
         Path: BoxDrive.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""

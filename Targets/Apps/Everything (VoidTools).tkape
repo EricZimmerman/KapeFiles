@@ -1,0 +1,19 @@
+Description: Pulls Everything.db from AppData folder for use with Everything (VoidTools) Module
+Author: Andrew Rathbun
+Version: 1.0
+Id: d63046dd-1d8c-4f4f-acd0-4c1ea3415b0f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Everything (VoidTools)
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Local\Everything\
+        FileMask: Everything.db
+        Comment: "Copies out Everything.db"
+
+######
+# For those who don't know, VoidTools Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
+# Everything must have been exited completely in order for the Everything.db file to have been committed to disk. So for initial installs, it won't commit until the first exit.
+# Everything creates a searchable index almost instantly on any system its installed on. Everything.db is what this index is stored in.
+# This target pulls the Everything.db which can then be converted with the Everything (VoidTools) Module to provide a readable list of every file located on a system using a text editor or the Everything tool itself.
+######

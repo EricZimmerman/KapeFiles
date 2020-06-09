@@ -7,10 +7,9 @@ Targets:
     -
         Name: SignatureCatalog
         Category: FileMetadata
-        Path: C:\Windows*\System32\CatRoot
-        IsDirectory: true
+        Path: C:\Windows*\System32\CatRoot\
         Recursive: true
-        Comment: ""
+
         
 ## USE CASE ##
 # Validating digital signatures of an offline system can be problematic.  

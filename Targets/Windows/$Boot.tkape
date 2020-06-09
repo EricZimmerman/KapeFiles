@@ -7,8 +7,6 @@ Targets:
     -
         Name: $Boot
         Category: FileSystem
-        Path: c:\$Boot
-        IsDirectory: false
-        Recursive: false
+        Path: c:\
+        FileMask: $Boot
         AlwaysAddToQueue: true
-        Comment: ""

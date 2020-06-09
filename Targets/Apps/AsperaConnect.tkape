@@ -7,17 +7,12 @@ Targets:
     -
         Name: Aspera Client Logs
         Category: FileDownload
-        Path: C:\Users\*\AppData\Local\Aspera\Aspera Connect\var\log\
+        Path: C:\users\%user%\AppData\Local\Aspera\Aspera Connect\var\log\
         FileMask: '*.log'
-        IsDirectory: true
         Recursive: true
-        Comment: "Locates Aspera Connect .log files and copies them"
     -
         Name: Aspera Server Logs
         Category: FileDownload
-        Path: C:\Users\*\.aspera\connect\var\log\
+        Path: C:\users\%user%\.aspera\connect\var\log\
         FileMask: '*.log'
-        IsDirectory: true
         Recursive: true
-        Comment: "Locates Aspera Connect .log files and copies them"
-

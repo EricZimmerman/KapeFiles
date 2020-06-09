@@ -7,126 +7,120 @@ Targets:
     -
         Name: Places
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\places.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
     -
         Name: Downloads
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\downloads.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
     -
         Name: Form history
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
     -
         Name: Cookies
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\cookies.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
     -
         Name: Signons
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\signons.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
     -
         Name: Webappstore
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
     -
         Name: Favicons
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\favicons.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
     -
         Name: Addons
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\addons.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
     -
         Name: Search
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\search.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: key*.db
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: signon*.*
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: logins.json
     -
         Name: Places
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\places.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
     -
         Name: Downloads
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\downloads.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
     -
         Name: Form history
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\formhistory.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
     -
         Name: Cookies
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\cookies.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
     -
         Name: Signons
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\signons.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
     -
         Name: Webappstore
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\webappstore.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
     -
         Name: Favicons
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\favicons.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
     -
         Name: Addons
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\addons.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
     -
         Name: Search
         Category: Communications
-        Path: C:\Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\search.sqlite*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: key*.db
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: signon*.*
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: logins.json

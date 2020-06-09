@@ -1,7 +1,7 @@
 Description: Gathers Basic System Information Using the Net Command
 Category: LiveResponse
-Author: piesecurity
-Version: 1.0
+Author: piesecurity, Andreas Hunkeler (@Karneades)
+Version: 1.1
 Id: be86ac26-4eea-4bcb-b5ae-9686ad0557c4
 ExportFormat: txt 
 Processors:
@@ -11,6 +11,10 @@ Processors:
         ExportFormat: ""
     -
         Executable: NetSystemInfo_LocalGroup.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Administrators.mkape
         CommandLine: ""
         ExportFormat: ""
     -

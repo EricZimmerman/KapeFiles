@@ -7,7 +7,5 @@ Targets:
     -
         Name: ComboFix
         Category: Antivirus
-        Path: C:\ComboFix.txt
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\
+        FileMask: ComboFix.txt

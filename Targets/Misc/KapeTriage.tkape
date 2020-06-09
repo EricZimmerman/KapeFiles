@@ -8,69 +8,39 @@ Targets:
         Name: FileSystem
         Category: Targets
         Path: FileSystem.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: RegistryHives
         Category: Targets
         Path: RegistryHives.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: EventLogs
         Category: Targets
         Path: EventLogs.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: ScheduledTasks
         Category: Targets
         Path: ScheduledTasks.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: EvidenceOfExecution
         Category: Targets
         Path: EvidenceOfExecution.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: SRUM
         Category: Targets
         Path: SRUM.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: WebBrowsers
         Category: Targets
         Path: WebBrowsers.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: LnkFilesAndJumpLists
         Category: Targets
         Path: LnkFilesAndJumpLists.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: RemoteAccess
         Category: Targets
         Path: RemoteAdmin.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: AntiVirus
         Category: Targets
-        Path: Antivirus.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: Antivirus\*

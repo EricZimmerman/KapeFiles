@@ -7,9 +7,7 @@ Targets:
     -
         Name: Exchange client access log files
         Category: Logs
-        Path: C:\Program Files\Microsoft\Exchange Server\*\Logging
-        IsDirectory: true
+        Path: C:\Program Files\Microsoft\Exchange Server\*\Logging\
         Recursive: true
         FileMask: '*.log'
         Comment: "Highly dependent on Exchange configuration"
-

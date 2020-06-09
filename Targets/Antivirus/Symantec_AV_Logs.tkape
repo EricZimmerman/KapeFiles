@@ -7,49 +7,37 @@ Targets:
     -
         Name: Symantec Endpoint Protection Logs (XP)
         Category: AntiVirus
-        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV
-        IsDirectory: true
+        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV\
         Recursive: true
-        Comment: ""
     -
         Name: Symantec Endpoint Protection Logs
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\
-        IsDirectory: true
         Recursive: true
-        Comment: ""
     -
         Name: Symantec Endpoint Protection User Logs
         Category: AntiVirus
-        Path: C:\Users\*\AppData\Local\Symantec\Symantec Endpoint Protection\Logs
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\
         Recursive: true
-        Comment: ""
     -
         Name: Symantec Event Log Win7+
         Category: EventLogs
-        Path: C:\Windows*\system32\winevt\logs\Symantec Endpoint Protection Client.evtx
-        IsDirectory: false
-        Recursive: false
+        Path: C:\Windows*\system32\winevt\logs\
+        FileMask: Symantec Endpoint Protection Client.evtx
         Comment: "Symantec specific Windows event log"
     -
         Name: Symantec Endpoint Protection Manager (SEPM) Application Events
         Category: EventLogs
         Path: ApplicationEvents.tkape
-        IsDirectory: false
-        Recursive: false
         Comment: "Contains SEPM entries, documented here: https://support.symantec.com/us/en/article.tech196455.html"
     -
         Name: Symantec Endpoint Protection Quarantine (XP)
         Category: AntiVirus
-        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine
-        IsDirectory: true
+        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine\
         Recursive: true
-        Comment: ""
     -
         Name: Symantec Endpoint Protection Quarantine
         Category: AntiVirus
-        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine
-        IsDirectory: true
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
         Recursive: true
-        Comment: ""
+

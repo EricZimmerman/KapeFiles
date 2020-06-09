@@ -1,20 +1,16 @@
 Description: Recycle Bin
-Author: Phill Moore
+Author: Mark Hallman
 Version: 1
-Id: a22deca9-0c6e-4962-adf0-b082246aad57
+Id: 336abbbb-e9db-4d04-8904-43718e57df85
 RecreateDirectories: true
 Targets:
     -
-        Name: RecycleBinMetadata
+        Name: $Recycle.Bin
         Category: Deleted Files
-        Path: RecycleBinMetadata.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\$Recycle.Bin\
+        Recursive: true
     -
-        Name: RecycleBinContent
+        Name: RECYCLER WinXP
         Category: Deleted Files
-        Path: RecycleBinContent.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\RECYCLER\
+        Recursive: true

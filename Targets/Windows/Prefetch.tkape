@@ -7,7 +7,5 @@ Targets:
     -
         Name: Prefetch
         Category: Prefetch
-        Path: C:\Windows*\prefetch\*.pf
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\prefetch\
+        FileMask: '*.pf'

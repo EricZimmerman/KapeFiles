@@ -7,28 +7,20 @@ Targets:
     -
         Name: PST XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.pst
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.pst'
     -
         Name: OST XP
         Category: Communications
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.ost
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.ost'
     -
         Name: PST
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Outlook\*.pst
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.pst'
     -
         Name: OST
         Category: Communications
-        Path: C:\Users\*\AppData\Local\Microsoft\Outlook\*.ost
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.ost'

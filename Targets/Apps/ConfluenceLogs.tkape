@@ -7,14 +7,10 @@ Targets:
     -
         Name: Confluence Wiki Log Files
         Category: Logs
-        Path: C:\Atlassian\Application Data\Confluence\logs\*.log*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Atlassian\Application Data\Confluence\logs\
+        FileMask: '*.log*'
     -
         Name: Confluence Wiki Log Files
         Category: Logs
-        Path: C:\Program Files\Atlassian\Confluence\logs\*.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Program Files\Atlassian\Confluence\logs\
+        FileMask: '*.log'

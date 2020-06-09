@@ -7,7 +7,5 @@ Targets:
     -
         Name: System Volume Information
         Category: Folder capture
-        Path: C:\System Volume Information
-        IsDirectory: true
+        Path: C:\System Volume Information\
         Recursive: true
-        Comment: ""

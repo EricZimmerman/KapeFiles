@@ -7,14 +7,8 @@ Targets:
     -
         Name: RDP Cache Files
         Category: FileSystem
-        Path: C:\Users\*\AppData\Local\Microsoft\Terminal Server Client\Cache
-        IsDirectory: true
-        Recursive: false
-        Comment: ""
+        Path: C:\users\%user%\AppData\Local\Microsoft\Terminal Server Client\Cache\
     -
         Name: RDP Cache Files
         Category: FileSystem
-        Path: C:\Documents and Settings\*\Local Settings\Application Data\Microsoft\Terminal Server Client\Cache
-        IsDirectory: true
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Terminal Server Client\Cache\

@@ -7,7 +7,5 @@ Targets:
     -
         Name: TeraCopy
         Category: TeraCopy
-        Path: C:\Users\*\AppData\Roaming\TeraCopy
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Roaming\TeraCopy\
         Recursive: true
-        Comment: ""

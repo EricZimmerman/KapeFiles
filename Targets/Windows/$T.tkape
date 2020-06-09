@@ -7,9 +7,7 @@ Targets:
     -
         Name: $T
         Category: FileSystem
-        Path: c:\$Extend\$RmMetadata\$TxfLog\$Tops:$T
-        IsDirectory: false
-        Recursive: false
+        Path: c:\$Extend\$RmMetadata\$TxfLog\
+        FileMask: $Tops:$T
         AlwaysAddToQueue: true
         SaveAsFileName: $T
-        Comment: ""

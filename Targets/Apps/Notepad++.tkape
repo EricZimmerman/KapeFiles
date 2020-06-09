@@ -7,7 +7,6 @@ Targets:
     -
         Name: Notepad++ backup
         Category: Text Editor
-        Path: C:\Users\*\AppData\Roaming\Notepad++\backup
-        IsDirectory: True
+        Path: C:\users\%user%\AppData\Roaming\Notepad++\backup\
         Recursive: True
         Comment: "Locates non-saved Notepad++ files and copies them."

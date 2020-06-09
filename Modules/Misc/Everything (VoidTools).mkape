@@ -1,0 +1,25 @@
+Description: Converts Everything.db to a .efu file which is readable in a text editor
+Category: FileSystem
+Author: Andrew Rathbun
+Version: 1.0
+Id: aa99e399-bd8d-4881-81e1-3633724d6738
+BinaryUrl: https://www.voidtools.com/db2efu.zip
+ExportFormat: efu
+FileMask: Everything.db
+Processors:
+    -
+        Executable: db2efu.exe
+        CommandLine: "%SourceFile% %DestinationDirectory%\\everythingFileListing.efu"
+        ExportFormat: efu
+
+######
+# For those who don't know, VoidTools Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
+# Should the download link above ever change, check on this page for a download link: https://www.voidtools.com/support/everything/indexes/
+# Download db2efu.zip and extract the executable from the zip file. Please ensure you place this executable in the KAPE\Modules\Bin folder prior to execution of this module.  
+# Everything must have been exited completely in order for the Everything.db file to have been committed to disk. So for initial installs, it won't commit until the first exit.
+# Module will output the converted database into a .efu file in the KAPE bin folder.
+# .efu file can be read with a text editor or in the Everything tool itself. File -> Open File List in Everything and import the .efu file.
+# Timestamps will be in 64-bit filetime when viewed in a text editor. Times can be converted here with the "FILETIME" option - https://www.silisoftware.com/tools/date.php
+# Timestamps when imported into Everything will be converted.
+# Special thanks to Eric Zimmerman for helping troubleshoot the creation of this Module!
+######

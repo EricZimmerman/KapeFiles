@@ -9,6 +9,4 @@ Targets:
         Category: FileDownload
         Path: C:\
         FileMask: '*.torrent'
-        IsDirectory: true
         Recursive: true
-        Comment: "Locates .torrent files and copies them"

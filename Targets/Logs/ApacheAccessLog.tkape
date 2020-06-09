@@ -9,6 +9,4 @@ Targets:
         Category: Webservers
         Path: C:\
         FileMask: 'access.log'
-        IsDirectory: true
         Recursive: true
-        Comment: "Locates Apache access.log file"
