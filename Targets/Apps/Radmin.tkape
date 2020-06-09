@@ -34,4 +34,3 @@ Targets:
         Path: C:\Users\%user%\Documents\ChatLogs\*\
         FileMask: '*.htm'
         Comment: "Previous chat logs"
-        
