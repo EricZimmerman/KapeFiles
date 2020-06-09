@@ -1,0 +1,12 @@
+Description: Sublime Text 2/3 Auto Save Session
+Author: Mathias Frank
+Version: 1
+Id: c1a64d12-bdf3-4ebe-a715-719bd6f2ddad
+RecreateDirectories: true
+Targets:
+    -
+        Name: SublimeText 2/3 Auto Save Session
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Roaming\Sublime Text*\Settings
+        FileMask: Session.sublime_session
+        Comment: "Sublime Text 2/3 stores unsaved (temporary) files and its content in its Session.sublime_session file"

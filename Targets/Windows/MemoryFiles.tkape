@@ -13,8 +13,8 @@ Targets:
     -
         Name: pagefile.sys
         Category: Memory
-        Path: C:\p
-        FileMask: agefile.sys
+        Path: C:\
+        FileMask: pagefile.sys
         AlwaysAddToQueue: true
     -
         Name: swapfile.sys
