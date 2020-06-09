@@ -6,7 +6,7 @@ For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#
 
 It is also possible to attend KAPE training from Kroll instructors. Details can be found [HERE](training.md)!!
 
-*NOTE* We have clarified KAPE usage permissions for commerial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md)
+### NOTE: We have clarified KAPE usage permissions for commerial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md)
 
 
 ## TL;DR; for target and module creation is stated below:
@@ -23,7 +23,7 @@ All other info including requirements, etc. should be documeted at the end of th
 
 ## 1. Generated a unique GUID for the target or module
 ## 2. Place the file in the appropriate sub-folder in Targets or Modules. Use 'Misc' of a better categories does not exist
-## 3. Verified KAPE parses the target or module cleanly via kape.exe --tlist or kape.exe --mlist. Check for any reported errors and correct as necessary
+## 3. Verified KAPE parses the target or module cleanly via kape.exe --tlist . or kape.exe --mlist . (Check for any reported errors and correct as necessary)
 
 Thanks!!!
 
