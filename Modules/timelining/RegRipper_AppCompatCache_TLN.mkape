@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1
 Id: 680dfc07-07af-48a8-9bda-06eab3136baf
-BinaryUrl: https://github.com/keydet89/RegRipper2.8
+BinaryUrl: https://github.com/keydet89/RegRipper2.8/archive/master.zip
 ExportFormat: txt
 FileMask: SYSTEM
 Processors:

@@ -3,7 +3,7 @@ Category: EventLogs
 Author: Barrie Hill
 Version: 1
 Id: bb628207-56cc-4293-aa6a-2073d406c8cb
-BinaryUrl: https://www.nirsoft.net/utils/full_event_log_view.html
+BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
 ExportFormat: csv
 FileMask: System.evtx
 Processors:
