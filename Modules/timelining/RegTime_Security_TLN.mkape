@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1.0
 Id: 7a563218-525c-4ba8-931d-9b1e55276117
-BinaryUrl: https://github.com/keydet89/Tools/blob/master/exe/regtime.exe
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/regtime.exe
 ExportFormat: txt
 FileMask: SECURITY
 Processors:

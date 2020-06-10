@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1.0
 Id: 3203e531-0261-4977-86ff-d52c997cad94
-BinaryUrl: https://github.com/keydet89/Tools/blob/master/exe/parse.exe
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/parse.exe
 ExportFormat: csv
 Processors:
     -
