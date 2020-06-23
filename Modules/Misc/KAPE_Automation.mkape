@@ -1,0 +1,18 @@
+Description: 'Module to run for KAPE automation'
+Category: --module
+Author: Brian Maloney
+Version: 1
+Id: 06cfa868-31f3-43e9-826a-abd199987770
+ExportFormat: ""
+Processors:
+    -
+        Executable: C:\Windows\System32\cmd.exe
+        CommandLine: /c copy NUL %destinationDirectory%\"%module%" & echo | set /p=%mvar% > %destinationDirectory%\"%module%"
+        ExportFormat: ""
+
+######
+# Usage:
+# %module% is a comma separated list of modules you want to run on a collection
+# %mvar% Provide a list of key:value pairs to be used for variable replacement in modules. Multiple pairs should be separated by ◙
+# Example: kape.exe --tsource c --target !SANS_Triage --module KAPE_AUtomation --mvars module:Mini_Timeline,Mini_Timeline_Slice_by_Daterange^mvar:computerName:laptop◙dateRange:01/01/2020-02/01/2020
+######
