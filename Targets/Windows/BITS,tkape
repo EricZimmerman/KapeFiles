@@ -1,0 +1,11 @@
+Description: 'Microsoft BITS (Background Intelligent Transer Service) persistent files'
+Author: Jos Clephas
+Version: 1.0
+Id: bd55a936-7c4d-46a5-b7bb-a4e4064683d2
+RecreateDirectories: True
+Targets:
+    -
+        Name: BITS files
+        Category: Persistence
+        Path: C:\ProgramData\Microsoft\Network\Downloader\
+        Recursive: true
