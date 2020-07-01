@@ -7,7 +7,5 @@ Targets:
     -
         Name: WBEM
         Category: WBEM
-        Path: C:\Windows*\System32\wbem\Repository
-        IsDirectory: true
+        Path: C:\Windows*\System32\wbem\Repository\
         Recursive: true
-        Comment: ""

@@ -8,20 +8,14 @@ Targets:
         Name: F-Secure Logs
         Category: Antivirus
         Path: C:\ProgramData\F-Secure\Log\
-        IsDirectory: true
         Recursive: true
-        Comment: ""
     -
         Name: F-Secure User Logs
         Category: Antivirus
         Path: C:\users\%user%\AppData\Local\F-Secure\Log\
-        IsDirectory: true
         Recursive: true
-        Comment: ""
     -
         Name: F-Secure Scheduled Scan Reports
         Category: Antivirus
         Path: C:\ProgramData\F-Secure\Antivirus\ScheduledScanReports\
-        IsDirectory: true
         Recursive: true
-        Comment: ""

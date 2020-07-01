@@ -7,21 +7,16 @@ Targets:
     -
         Name: LogMeIn ProgramData Logs
         Category: ApplicationLogs
-        Path: C:\ProgramData\LogMeIn\Logs
-        IsDirectory: true
+        Path: C:\ProgramData\LogMeIn\Logs\
         Recursive: true
-        Comment: ""
     -
         Name: LogMeIn Application Events
         Category: EventLogs
         Path: ApplicationEvents.tkape
-        IsDirectory: false
-        Recursive: false
         Comment: "Contains LogMeIn entries, event source: LogMeIn"
     -
         Name: LogMeIn Application Logs
         Category: ApplicationLogs
-        Path: C:\users\%user%\AppData\Local\temp\LogMeInLogs
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Local\temp\LogMeInLogs\
         Recursive: true
         Comment: "Contains RemoteAssist (formerly GoToAssist), GoToMeeting, and other GoTo* logs"

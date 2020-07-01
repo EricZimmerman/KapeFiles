@@ -8,27 +8,15 @@ Targets:
         Name: Internet Explorer
         Category: Communications
         Path: InternetExplorer.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Chrome
         Category: Communications
         Path: Chrome.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: FireFox
         Category: Communications
         Path: FireFox.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
     -
         Name: Edge
         Category: Communications
         Path: Edge.tkape
-        IsDirectory: false
-        Recursive: false
-        Comment: ""

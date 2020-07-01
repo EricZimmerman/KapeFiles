@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1
 Id: f3d7f0ae-f42e-4f4d-b50f-e037f3955971
-BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/evtparse.exe
 ExportFormat: csv
 FileMask: SysEvent.Evt
 Processors:

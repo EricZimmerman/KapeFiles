@@ -7,14 +7,10 @@ Targets:
     -
         Name: Setupapi.log XP
         Category: USBDevices
-        Path: C:\Windows\setupapi.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows\
+        FileMask: setupapi.log
     -
         Name: Setupapi.log Win7+
         Category: USBDevices
-        Path: C:\Windows*\inf\setupapi.dev.log
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\inf\
+        FileMask: setupapi.dev.log

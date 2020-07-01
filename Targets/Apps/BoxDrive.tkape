@@ -7,27 +7,21 @@ Targets:
     -
         Name: Box User Files
         Category: Apps
-        Path: C:\users\%user%\Box
-        IsDirectory: True
+        Path: C:\users\%user%\Box\
         Recursive: True
         Comment: "Caution! This target will collect Box Drive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
     -
         Name: Box Sync User Files
         Category: Apps
         Path: C:\users\%user%\Box Sync\
-        IsDirectory: True
         Recursive: True
     -
         Name: Box Drive Application Metadata
         Category: Apps
         Path: C:\users\%user%\AppData\Local\Box\Box\*\
-        IsDirectory: True
         Recursive: True
-        Comment: ""
     -
         Name: Box Sync Application Metadata
         Category: Apps
         Path: C:\users\%user%\AppData\Local\Box Sync\*\
-        IsDirectory: True
         Recursive: True
-        Comment: ""

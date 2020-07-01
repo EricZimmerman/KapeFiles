@@ -7,21 +7,15 @@ Targets:
     -
         Name: HexChat Chat Logs
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\HexChat\logs\*
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Roaming\HexChat\logs\
         Recursive: true
-        Comment: "Locates HexChat chat logs and copies them."
     -
         Name: IceChat Chat Logs
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\IceChat Networks\IceChat\Logs\*
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Local\IceChat Networks\IceChat\Logs\
         Recursive: true
-        Comment: "Locates IceChat chat logs and copies them."
     -
         Name: mIRC Chat Logs
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\mIRC\logs\*
-        IsDirectory: false
+        Path: C:\users\%user%\AppData\Roaming\mIRC\logs\
         Recursive: true
-        Comment: "Locates mIRC chat logs and copies them."

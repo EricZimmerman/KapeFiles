@@ -7,14 +7,10 @@ Targets:
     -
         Name: Amcache
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\Amcache.hve
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\AppCompat\Programs\
+        FileMask: Amcache.hve
     -
         Name: Amcache transaction files
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\Amcache.hve.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\AppCompat\Programs\
+        FileMask: Amcache.hve.LOG*

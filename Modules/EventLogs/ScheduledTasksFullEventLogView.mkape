@@ -3,7 +3,7 @@ Category: EventLogs
 Author: Hadar Yudovich
 Version: 1
 Id: 8e04da5a-7ee4-4ef6-a4e0-4c68aca39af0
-BinaryUrl: https://www.nirsoft.net/utils/full_event_log_view.html
+BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
 ExportFormat: csv
 FileMask: Microsoft-Windows-TaskScheduler%4Operational.evtx
 Processors:

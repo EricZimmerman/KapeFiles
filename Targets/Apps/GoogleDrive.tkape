@@ -8,20 +8,17 @@ Targets:
         Name: Google Drive User Files
         Category: Apps
         Path: C:\users\%user%\Google Drive*\
-        IsDirectory: True
         Recursive: True
         Comment: "Google Drive Backup and Sync Application"
     -
         Name: Google Drive Metadata
         Category: Apps
         Path: C:\users\%user%\AppData\Local\Google\Drive\
-        IsDirectory: True
         Recursive: True
         Comment: "Google Drive Backup and Sync Application"
     -
         Name: Google File Stream Metadata
         Category: Apps
         Path: C:\users\%user%\AppData\Local\Google\DriveFS\
-        IsDirectory: True
         Recursive: True
         Comment: "Google Drive File Stream Application"

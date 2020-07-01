@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1.0
 Id: 54199032-ed12-47c8-8e31-221ec3d52ef2
-BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/regtime.exe
 ExportFormat: txt
 FileMask: ntuser.dat
 Processors:

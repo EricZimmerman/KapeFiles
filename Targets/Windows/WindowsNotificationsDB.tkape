@@ -7,14 +7,10 @@ Targets:
     -
         Name: Windows 10 Notification DB 
         Category: Notifications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Notifications\wpndatabase.db
-        IsDirectory: false
-        Recursive: false
-        Comment: "Locates Windows notification db files"
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: wpndatabase.db
     -
         Name: Windows 10 Notification DB 
         Category: Notifications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Notifications\appdb.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: "Locates Windows notification db files"
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: appdb.dat

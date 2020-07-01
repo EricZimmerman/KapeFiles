@@ -8,20 +8,15 @@ Targets:
         Name: OneDrive User Files
         Category: Apps
         Path: C:\users\%user%\OneDrive*\
-        IsDirectory: True
         Recursive: True
         Comment: "Caution -- This target will collect OneDrive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
     -
         Name: OneDrive Metadata Logs
         Category: Apps
         Path: C:\users\%user%\AppData\Local\Microsoft\OneDrive\logs\
-        IsDirectory: True
         Recursive: True
-        Comment: ""
     -
         Name: OneDrive Metadata Settings
         Category: Apps
         Path: C:\users\%user%\AppData\Local\Microsoft\OneDrive\settings\
-        IsDirectory: True
         Recursive: True
-        Comment: ""

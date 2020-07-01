@@ -1,0 +1,15 @@
+Description: Display running processes and context information 
+Category: LiveResponse
+Author: Markus Neis, Swisscom 
+Version: 1.0
+Id: f5afb643-3a77-4e3e-a028-18cbeaf5c406
+ExportFormat: csv 
+Processors:
+    -
+        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine:  -Command "Get-CimInstance Win32_Process | select ProcessId, ProcessName, Path, CommandLine, Description, ParentProcessId , CreationDate, Handle, HandleCount, @{Label='File Path MD-5'; Expression={(Get-FileHash -Algorithm MD5 -LiteralPath $_.Path).Hash}} | Export-Csv -NoTypeInformation -Path %destinationDirectory%\PWSH-Get-CIM_ProcessList.csv"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-CimInstance Win32_Process | select ProcessId, ProcessName, Path, CommandLine, Description, ParentProcessId , CreationDate, Handle, HandleCount, @{Label='File Path MD-5'; Expression={(Get-FileHash -Algorithm MD5 -LiteralPath $_.Path).Hash}} |  ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\PWSH-Get-CIM_ProcessList.json"              
+        ExportFormat: json

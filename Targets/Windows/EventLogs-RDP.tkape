@@ -7,29 +7,20 @@ Targets:
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: 'C:\Windows*\system32\winevt\logs\System.evtx'
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\system32\winevt\logs\
+        FileMask: System.evtx
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: 'C:\Windows*\system32\winevt\logs\Security.evtx'
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\system32\winevt\logs\
+        FileMask: Security.evtx
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: 'G:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx'
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
+        FileMask: Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: 'G:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx'
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-
+        Path: C:\Windows\System32\winevt\Logs\
+        FileMask: Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx

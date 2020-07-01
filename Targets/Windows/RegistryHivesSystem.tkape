@@ -7,147 +7,105 @@ Targets:
     -
         Name: SAM registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\SAM.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SAM.LOG*
     -
         Name: SECURITY registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\SECURITY.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SECURITY.LOG*
     -
         Name: SOFTWARE registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\SOFTWARE.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SOFTWARE.LOG*
     -
         Name: SYSTEM registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\SYSTEM.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SYSTEM.LOG*
     -
         Name: SAM registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\SAM
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SAM
     -
         Name: SECURITY registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\SECURITY
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SECURITY
     -
         Name: SOFTWARE registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\SOFTWARE
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SOFTWARE
     -
         Name: SYSTEM registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\SYSTEM
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: SYSTEM
     -
         Name: RegBack registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\*.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\RegBack\
+        FileMask: '*.LOG*'
     -
         Name: SAM registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\SAM
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\RegBack\
+        FileMask: SAM
     -
         Name: SECURITY registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\SECURITY
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\RegBack\
+        FileMask: SECURITY
     -
         Name: SOFTWARE registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\SOFTWARE
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\RegBack\
+        FileMask: SOFTWARE
     -
         Name: SYSTEM registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\SYSTEM
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\RegBack\
+        FileMask: SYSTEM
     -
         Name: SYSTEM registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\SYSTEM1
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\RegBack\
+        FileMask: SYSTEM1
     -
         Name: System Profile registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\systemprofile\ntuser.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\systemprofile\
+        FileMask: ntuser.dat
     -
         Name: System Profile registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\systemprofile\ntuser.dat.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\systemprofile\
+        FileMask: ntuser.dat.LOG*
     -
         Name: Local Service registry hive
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\LocalService\ntuser.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\ServiceProfiles\LocalService\
+        FileMask: ntuser.dat
     -
         Name: Local Service registry transaction files
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\LocalService\ntuser.dat.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\ServiceProfiles\LocalService\
+        FileMask: ntuser.dat.LOG*
     -
         Name: Network Service registry hive
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\NetworkService\ntuser.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\ServiceProfiles\NetworkService\
+        FileMask: ntuser.dat
     -
         Name: Network Service registry transaction files
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\NetworkService\ntuser.dat.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\ServiceProfiles\NetworkService\
+        FileMask: ntuser.dat.LOG*
     -
         Name: System Restore Points Registry Hives (XP)
         Category: Registry
-        Path: C:\System Volume Information\_restore*\RP*\snapshot\_REGISTRY_*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\System Volume Information\_restore*\RP*\snapshot\
+        FileMask: _REGISTRY_*

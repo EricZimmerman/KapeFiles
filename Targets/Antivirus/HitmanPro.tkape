@@ -7,21 +7,16 @@ Targets:
     -
         Name: HitmanPro Logs
         Category: Antivirus
-        Path: C:\ProgramData\HitmanPro\Logs
-        IsDirectory: true
+        Path: C:\ProgramData\HitmanPro\Logs\
         Recursive: true
-        Comment: ""
     -
         Name: HitmanPro Alert Logs
         Category: Antivirus
-        Path: C:\ProgramData\HitmanPro.Alert\Logs
-        IsDirectory: true
+        Path: C:\ProgramData\HitmanPro.Alert\Logs\
         Recursive: true
-        Comment: ""
     -
         Name: HitmanPro Database
         Category: Antivirus
-        Path: C:\ProgramData\HitmanPro.Alert\excalibur.db
-        IsDirectory: false
-        Recursive: false
+        Path: C:\ProgramData\HitmanPro.Alert\
+        FileMask: excalibur.db
         Comment: "SQl Lite DB"

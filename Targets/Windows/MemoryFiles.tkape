@@ -7,24 +7,18 @@ Targets:
     -
         Name: hiberfil.sys
         Category: Memory
-        Path: C:\hiberfil.sys
-        IsDirectory: false
-        Recursive: false
+        Path: C:\
+        FileMask: hiberfil.sys
         AlwaysAddToQueue: true
-        Comment: ""
     -
         Name: pagefile.sys
         Category: Memory
-        Path: C:\pagefile.sys
-        IsDirectory: false
-        Recursive: false
+        Path: C:\
+        FileMask: pagefile.sys
         AlwaysAddToQueue: true
-        Comment: ""
     -
         Name: swapfile.sys
         Category: Memory
-        Path: c:\swapfile.sys
-        IsDirectory: false
-        Recursive: false
+        Path: c:\
+        FileMask: swapfile.sys
         AlwaysAddToQueue: true
-        Comment: ""

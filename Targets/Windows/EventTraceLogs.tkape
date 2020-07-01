@@ -7,35 +7,25 @@ Targets:
     -
         Name: WDI Trace Logs 1
         Category: Event Trace Logs
-        Path: C:\Windows*\System32\WDI\LogFiles\*.etl*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\WDI\LogFiles\
+        FileMask: '*.etl*'
     -
         Name: WDI Trace Logs 2
         Category: Event Trace Logs
-        Path: C:\Windows*\System32\WDI\{*
-        IsDirectory: true
+        Path: C:\Windows*\System32\WDI\{*\
         Recursive: true
-        Comment: ""
     -
         Name: WMI Trace Logs
         Category: Event Trace Logs
-        Path: C:\Windows*\System32\LogFiles\WMI\*
-        IsDirectory: true
+        Path: C:\Windows*\System32\LogFiles\WMI\
         Recursive: true
-        Comment: ""
     -
         Name: SleepStudy Trace Logs
         Category: Event Trace Logs
-        Path: C:\Windows*\System32\SleepStudy*
-        IsDirectory: true
+        Path: C:\Windows*\System32\SleepStudy\
         Recursive: true
-        Comment: ""
     -
         Name: Energy-NTKL Trace Logs
         Category: Event Trace Logs
-        Path:  C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\energy-ntkl.etl
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path:  C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\
+        FileMask: energy-ntkl.etl

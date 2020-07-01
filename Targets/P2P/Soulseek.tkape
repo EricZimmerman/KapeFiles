@@ -7,16 +7,14 @@ Targets:
     -
         Name: Soulseek Chat Logs
         Category: FileDownload
-        Path: C:\users\%user%\AppData\Local\SoulseekQt\Soulseek Chat Logs\*
-        IsDirectory: true
+        Path: C:\users\%user%\AppData\Local\SoulseekQt\Soulseek Chat Logs\
         Recursive: true
         Comment: "Locates Soulseek chat logs and copies them. Chat logs are in plaintext. Current as of version 2019.7.22."
     -
         Name: Soulseek Search History/Shared Folders/Settings
         Category: FileDownload
-        Path: C:\users\%user%\AppData\Local\SoulseekQt\1\*
-        IsDirectory: false
-        Recursive: false
+        Path: C:\users\%user%\AppData\Local\SoulseekQt\1\
+        FileMask: '*.dat'
         Comment: "Locates .dat file(s) containing: search history, active searches (search_record), current shared folders (shared_file_folder), and wish list items (wish_list_item)."
 
 ######

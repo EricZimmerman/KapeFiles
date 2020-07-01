@@ -7,7 +7,5 @@ Targets:
     -
         Name: RecentFileCache
         Category: ApplicationCompatability
-        Path: C:\Windows*\AppCompat\Programs\RecentFileCache.bcf
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\AppCompat\Programs\
+        FileMask: RecentFileCache.bcf

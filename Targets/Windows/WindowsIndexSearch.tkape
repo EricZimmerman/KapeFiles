@@ -7,7 +7,5 @@ Targets:
     -
         Name: WindowsIndexSearch
         Category: FileKnowledge
-        Path: C:\programdata\microsoft\search\data\applications\windows\Windows.edb
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\programdata\microsoft\search\data\applications\windows\
+        FileMask: Windows.edb

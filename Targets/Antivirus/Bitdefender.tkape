@@ -8,6 +8,4 @@ Targets:
         Name: Bitdefender Endpoint Security Logs
         Category: Antivirus
         Path: C:\ProgramData\Bitdefender\Endpoint Security\Logs\
-        IsDirectory: true
         Recursive: true
-        Comment: ""

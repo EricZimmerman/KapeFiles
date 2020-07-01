@@ -49,10 +49,8 @@ Processors:
     -
         Executable: WxTCmd.mkape
         CommandLine: ""
-        ExportFormat: ""	
+        ExportFormat: ""
     -
         Executable: MFTECmd.mkape
         CommandLine: ""
-        ExportFormat: ""			
-
-		
+        ExportFormat: ""

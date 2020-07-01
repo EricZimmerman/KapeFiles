@@ -7,14 +7,10 @@ Targets:
     -
         Name: Application Event Log XP
         Category: EventLogs
-        Path: C:\Windows*\system32\config\AppEvent.evt
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\system32\config\
+        FileMask: AppEvent.evt
     -
         Name: Application Event Log Win7+
         Category: EventLogs
-        Path: C:\Windows*\system32\winevt\logs\application.evtx
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\system32\winevt\logs\
+        FileMask: application.evtx
