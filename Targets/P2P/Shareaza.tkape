@@ -10,4 +10,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Shareaza\*
         IsDirectory: true
         Recursive: true
-        Comment: "Locates Shareaza logs and copies them. Logs are stored in .dat format and have to be viewed in a hex editor. Searches.dat within the Data folder will contain information on searches conducted by the user as well as results displayed. Current as of version 2.7.10.2
+        Comment: "Locates Shareaza logs and copies them."
+
+######
+# Shareaza is a file-sharing client which supports the gnutella, Gnutella2 (G2), eDonkey, BitTorrent, FTP, HTTP and HTTPS.
+# Logs are stored in .dat format and have to be viewed in a hex editor. 
+# Searches.dat within the Data folder will contain information on searches conducted by the user as well as results displayed. 
+# TKape was created for version 2.7.10.2.
+######
