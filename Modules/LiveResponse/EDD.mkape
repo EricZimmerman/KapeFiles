@@ -1,0 +1,18 @@
+Description: Checks the local physical drives on a system for TrueCrypt, PGP, VeraCrypt, SafeBoot, or Bitlocker encrypted volumes
+Category: LiveResponse
+Author: Mohamed El-Hadidi
+Version: 1.0
+Id: c7212da1-ed41-4560-95f7-1a2d99acc1f8
+BinaryUrl: http://magnetfiles.com/free_tools/EDD/EDDv300.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: EDD\EDDv300.exe
+        CommandLine:  /batch >> %destinationDirectory%
+        ExportFormat: txt
+        ExportFile: EDD.txt
+
+##
+## Create a folder "EDD" within the "Modules\bin" KAPE folder
+## Place "EDDv300.exe", "EDDv300.exe.config" files into "Modules\bin\EDD"
+##

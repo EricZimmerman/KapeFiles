@@ -1,0 +1,17 @@
+Description: Shows if the system have either rootkits or bootkits, TDSSKiller tool for detecting and removing rootkits and bootkits
+Category: LiveResponse
+Author: Mohamed El-Hadidi
+Version: 1.0
+Id: 38be1e67-e028-4bc0-ac50-376b7875be08
+BinaryUrl: http://media.kaspersky.com/utilities/VirusUtilities/EN/tdsskiller.exe
+ExportFormat: txt
+Processors:
+    -
+        Executable: TDSSKiller\tdsskiller.exe
+        CommandLine: -accepteula -accepteulaksn -sigcheck -tdlfs -silent -l %destinationDirectory%\tdsskiller.txt
+        ExportFormat: txt
+        
+##
+## Create a folder "TDSSKiller" within the "Modules\bin" KAPE folder
+## Place "tdsskiller.exe" file into "Modules\bin\TDSSKiller"
+##
