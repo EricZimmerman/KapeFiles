@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "& '%kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe' -i config.txt -o %destinationDirectory%\CrowdResponse.xml;&'%kapedirectory%\Modules\bin\CrowdResponse\CRConvert.exe' -v -c -f %destinationDirectory%\CrowdResponse.xml -o %destinationDirectory%;Remove-Item '%destinationDirectory%\CrowdResponse.xml'"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe' -i %kapedirectory%\Modules\bin\CrowdResponse\config.txt -o %destinationDirectory%\CrowdResponse.xml;&'%kapedirectory%\Modules\bin\CrowdResponse\CRConvert.exe' -v -c -f %destinationDirectory%\CrowdResponse.xml -o %destinationDirectory%;Remove-Item '%destinationDirectory%\CrowdResponse.xml'"
         ExportFormat: csv
 
 ##
