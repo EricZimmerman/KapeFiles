@@ -1,0 +1,13 @@
+Description: $MFTMirr
+Author: Teo Kia Meng
+Version: 1
+Id: 8fce369c-a773-41c4-8ca3-ba9df1f72ba0
+RecreateDirectories: true
+Targets:
+    -
+        Name: $MFTMirr
+        Category: FileSystem
+        Path: C:\
+        FileMask: $MFTMirr
+        AlwaysAddToQueue: true
+        Comment: "$MFTMirr is a redundant copy of the first four (4) records of the MFT."
