@@ -10,3 +10,4 @@ Targets:
         Path: C:\
         FileMask: $MFTMirr
         AlwaysAddToQueue: true
+        Comment: "$MFTMirr is a redundant copy of the first four (4) records of the MFT."
