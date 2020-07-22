@@ -5,11 +5,11 @@ Id: 67ec52aa-1a0e-4dfa-8b9f-8d94de28b02f
 RecreateDirectories: true
 Targets:
     -
-        Name: Slack - Partial Chat Logs
+        Name: Slack - Chat Logs
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Slack\IndexedDB\
         Recursive: True
-        Comment: "Locates partial Slack logs and copies them"
+        Comment: "Locates Slack logs and copies them"
 
 ######
 # Slack is a popular chat/collaboration platform that is used by many organizations worldwide.
