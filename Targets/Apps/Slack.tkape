@@ -1,0 +1,21 @@
+Description: Slack
+Author: Andrew Rathbun
+Version: 1.0
+Id: 67ec52aa-1a0e-4dfa-8b9f-8d94de28b02f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Slack - Chat Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Slack\IndexedDB\
+        Recursive: True
+        Comment: "Locates Slack logs and copies them"
+
+######
+# Slack is a popular chat/collaboration platform that is used by many organizations worldwide.
+# Within the IndexedDB folder, there will be another folder that does not appear to be server-specific like Mattermost. I'm in two Slack workspaces but separate folders do not appear to be created for each Slack workspace.
+# Within this folder, there will be a .log file for each Slack workspace. Slack must be exited properly in order for new logs to commit to this directory. My two log files were named .000039.log and .000041.log, respectively. This is where you should concentrate your analysis.
+# Unlike Mattermost, there are no timestamped by the keystroke entries. The log files are also harder to visually parse through compared to Mattermost's log files.
+# Thankfully, these logs appear to be more exhaustive than Mattermost's. Use the following search term in your text editor of choice to zoom to the message content: subtype_
+# It should be noted there appears to be .ldb (Microsoft Access Record-Locking Information) files that don't seem to have as much information once the .log file is converted to .ldb upon application exit.
+######

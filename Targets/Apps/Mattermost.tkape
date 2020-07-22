@@ -1,0 +1,21 @@
+Description: Mattermost
+Author: Andrew Rathbun
+Version: 1.0
+Id: 4adb02a8-149f-4aab-b570-98b02ee0b618
+RecreateDirectories: true
+Targets:
+    -
+        Name: Mattermost - Chat Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Mattermost\IndexedDB\
+        Recursive: True
+        Comment: "Locates Mattermost logs and copies them"
+
+######
+# Mattermost is very similar to Slack but differs mainly in that its a self-hosted, open-source alternative to Slack. 
+# Within the IndexedDB folder, there will be another folder that appears to be server-specific. I'm only in one server currently but this folder in particular was named after that server. 
+# Within this server-specific folder, there will be a .log file. Mine was named 000135.log. This is where you should concentrate your analysis.
+# What is interesting about this file is that it appears to be a timestamped keylogger, of sorts. It appears that recent messages will be stored here (unknown exactly how far back) and timestamped by the keystroke.
+# For example, for a message typed by the user: "hello", there would be 5 entries in this log (h, he, hel, hell, hello) with each entry being timestamped.
+# This does not appear to be an exhaustive chat log, by any means. However, something is better than nothing and the timestamped keystrokes is certainly an interesting artifact.
+######
