@@ -1,0 +1,26 @@
+Description: AVG Antivirus Data
+Author: Kirtan Shah
+Version: 1.0
+Id: b0a4112d-e7f6-4e47-a186-7459cf8b3ab4
+RecreateDirectories: true
+Targets:
+    -
+        Name: AVG AV Logs (XP)
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\AVG\Antivirus\log
+        Recursive: true
+    -
+        Name: AVG AV Report Logs (XP)
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\AVG\Antivirus\report
+        Recursive: true
+    -
+        Name: AVG AV Logs
+        Category: Antivirus
+        Path: C:\ProgramData\AVG\Antivirus\log
+        Recursive: true
+    -
+        Name: AVG Report Logs
+        Category: Antivirus
+        Path: C:\ProgramData\AVG\Antivirus\report
+        Recursive: true
