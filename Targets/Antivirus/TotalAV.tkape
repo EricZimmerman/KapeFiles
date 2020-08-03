@@ -1,0 +1,16 @@
+Description: TotalAV Antivirus Data
+Author: Kirtan Shah
+Version: 1.0
+Id: 8e5ca015-26e8-4993-8008-19421d15f35a
+RecreateDirectories: true
+Targets:
+    -
+        Name: TotalAV Logs
+        Category: Antivirus
+        Path: C:\Program Files*\TotalAV\logs
+        Recursive: true
+    -
+        Name: TotalAV Logs
+        Category: Antivirus
+        Path: C:\ProgramData\TotalAV\logs
+        Recursive: true
