@@ -25,9 +25,9 @@ Targets:
         Category: Evidence Of Execution
         Path: PowerShellConsole.tkape
     -
-        Name: RecycleBinMetadata
+        Name: RecycleBin
         Category: File Deletion
-        Path: RecycleBinMetadata.tkape
+        Path: RecycleBin.tkape
     -
         Name: RegistryHives
         Category: Registry Hives
