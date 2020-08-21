@@ -19,3 +19,9 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Microsoft\Windows Defender\Support\
         Recursive: true
+
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        FileMask: C:\Windows\Temp\MpCmdRun.log
+        
