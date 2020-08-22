@@ -1,0 +1,18 @@
+Description: Usenet (NZB) Files
+Author: Andrew Rathbun
+Version: 1.0
+Id: bae4da97-b565-4cae-b090-dd992839983f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Usenet (NZB) Files
+        Category: FileDownload
+        Path: C:\
+        FileMask: '*.nzb'
+        Recursive: true
+        
+######
+# NZB files are the equivalent to .torrent in the Usenet world. 
+# NZB filenames usually are verbose and very clear in identifying what the user is downloading, i.e. MovieTitle.Year.Resolution.ReleaseType.Codec-ReleaseGroup.nzb.
+# The same format is followed for music, apps, games, etc. 
+######
