@@ -9,30 +9,36 @@ Targets:
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\sabnzbd\logs\
         FileMask: 'sabnzbd.log'
+        Comment: "Locates SABnzbd download log"
     -
         Name: Usenet Clients - SABnzbd History.db
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\sabnzbd\admin\
         FileMask: 'history1.db'
+        Comment: "Locates SABnzbd history log"
     -
         Name: Usenet Clients -  Newsleecher
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Roaming\NewsLeecher\
         FileMask: 'downloaded.dat'
+        Comment: "Locates Newsleecher download .dat file"
     -
         Name: Usenet Clients - Newsbin Pro
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\Newsbin\
         FileMask: 'Downloaded.db3'
+        Comment: "Locates Newsbin Pro download log database"
     -
         Name: Usenet Clients - NZBGet Log File
         Category: FileDownload
         Path: C:\ProgramData\NZBGet\
         FileMask: 'nzbget.log'
+        Comment: "Locates NZBGet download log file"
     -
         Name: Usenet Clients - NZBGet NZBs
         Category: FileDownload
         Path: C:\ProgramData\NZBGet\nzb\
+        Comment: "Locates NZBGet NZB files that were used by the user"
 
 ######
 # SABnzbd 
