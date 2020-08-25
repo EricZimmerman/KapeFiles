@@ -23,5 +23,6 @@ Targets:
     -
         Name: Windows Defender Logs
         Category: Antivirus
-        FileMask: C:\Windows\Temp\MpCmdRun.log
-        
+        Path: C:\Windows*\Temp\MpCmdRun.log
+        FileMask: MpCmdRun.log
+ 
