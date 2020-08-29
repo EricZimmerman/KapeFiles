@@ -155,6 +155,11 @@ Targets:
         Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Web Data*
     -
+        Name: Chrome Cache Folder
+        Category: Communications
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\Default\Cache\
+        Recursive: true
+    -
         Name: Windows Protect Folder
         Category: FileSystem
         Path: C:\users\%user%\AppData\Roaming\Microsoft\Protect\*\
