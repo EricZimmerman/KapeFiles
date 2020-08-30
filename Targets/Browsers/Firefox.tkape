@@ -65,11 +65,6 @@ Targets:
         Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: logins.json
     -
-        Name: Firefox Cache Folder
-        Category: Communications
-        Path: C:\users\%user%\AppData\Local\Mozilla\Firefox\Profiles\*\
-        Recursive: true
-    -
         Name: Places
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
