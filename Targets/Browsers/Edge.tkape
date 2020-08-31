@@ -9,7 +9,3 @@ Targets:
         Category: Communications
         Path: C:\users\%user%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
         Recursive: True
-    -
-        Name: WebcacheV01.dat
-        Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\

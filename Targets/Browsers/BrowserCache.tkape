@@ -1,0 +1,35 @@
+Description: Browser Caches
+Author: Bjorn Vanhaeren
+Version: 1.0
+Id: bbb89525-6b8d-41f6-acdf-a4f513455703
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome Cache Folder
+        Category: Communications
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Firefox Cache Folder
+        Category: Communications
+        Path: C:\users\%user%\AppData\Local\Mozilla\Firefox\Profiles\*\
+        Recursive: true
+    -
+        Name: IE 9/10 Cache
+        Category: Communications
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+        Recursive: true
+    -
+        Name: IE Index.dat temp internet files
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Temporary Internet Files\Content.IE5\
+        FileMask: index.dat
+    -
+        Name: IE 11 Cache
+        Category: Communications
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCache\
+        Recursive: true
+    -
+        Name: Edge WebcacheV01.dat
+        Category: Communications
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\
