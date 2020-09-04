@@ -1,0 +1,16 @@
+Description: QFinderPro (QNAP)
+Author: Andrew Rathbun
+Version: 1.0
+Id: 7323637e-de45-47c4-8f2f-6b11a4f82919
+RecreateDirectories: true
+Targets:
+    -
+        Name: QFinderPro
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\QNAP\QfinderPro
+        Comment: "Locates a JSON file that provides network location information for any QNAP connected devices."
+
+######
+# QFinderPro is the GUI Windows application used to manage a QNAP device outside of the NAS itself. 
+# A .json file resides in the above location which will lay out the following: Firmware Version, IP Address, MAC Address, Device Model, Name of Device, and Timestamp (likely date of last firmware update).
+######
