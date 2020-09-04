@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: ProtonVPN - Connection Logs
-        Category: Apps
+        Category: ApplicationLogs
         Path: C:\Users\%user%\AppData\Local\ProtonVPN\Logs
         Comment: "Locates ProtonVPN connection logs."
 
