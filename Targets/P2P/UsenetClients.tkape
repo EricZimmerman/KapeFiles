@@ -42,8 +42,8 @@ Targets:
 
 ######
 # SABnzbd 
-#  C:\Users\%user%\AppData\Local\sabnzbd\logs\sabnzbd.log is where a verbose log file exists. 
-#  C:\Users\%user%\AppData\Local\sabnzbd\admin\history1.db appears to show a history of filenames of NZBs used by the user.
+# C:\Users\%user%\AppData\Local\sabnzbd\logs\sabnzbd.log is where a verbose log file exists. 
+# C:\Users\%user%\AppData\Local\sabnzbd\admin\history1.db appears to show a history of filenames of NZBs used by the user.
 # 
 # Newsleecher
 # C:\Users\%user%\AppData\Roaming\NewsLeecher\downloaded.dat is where the download log file resides. I haven't been able to test Newsleecher yet so I haven't been able to populate this file. 
