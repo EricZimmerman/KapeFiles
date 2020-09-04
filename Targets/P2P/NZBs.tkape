@@ -1,0 +1,17 @@
+Description: NZB Files (Usenet)
+Author: Andrew Rathbun
+Version: 1.0
+Id: 3c49fcbd-134c-41c0-9460-5e69a595b07a
+RecreateDirectories: true
+Targets:
+    -
+        Name: NZB Files
+        Category: FileDownload
+        Path: C:\
+        FileMask: '*.nzb'
+        Recursive: true
+        Comment: "Locates all .NZB files on disk"        
+        
+######
+# .NZB files are the equivalent to .torrent files for Usenet. 
+######
