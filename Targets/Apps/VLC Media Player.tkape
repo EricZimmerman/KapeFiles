@@ -1,0 +1,12 @@
+Description: VLC Media Player
+Author: Matt Dawson
+Version: 1.0
+Id: f7187e39-0410-41cb-b7e0-243d92090c9c
+RecreateDirectories: true
+Targets:
+    -
+        Name: VLC Media Recently Opened Files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\vlc\
+        FileMask: "vlc-qt-interface.ini"
+        Comment: "Configuration file for VLC. Holds [RecentsMRL] key which lists recently opened files as well as sometimes retaining timestamps for file opening"
