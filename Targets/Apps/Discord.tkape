@@ -1,12 +1,18 @@
-Description: Discord cache files
-Author: Christian Johansen
-Version: 1
+Description: Discord Files
+Author: Christian Johansen and Matt Dawson
+Version: 2
 Id: 5a44a0ef-db56-4103-8748-797432487028
 RecreateDirectories: true
 Targets:
     -
-        Name: Discord cache files
+        Name: Discord Cache Files
         Category: Communications
         Path: C:\users\%user%\AppData\Roaming\discord\cache\
         Recursive: true
         Comment: "Gets cached data from Discord app"
+    -
+        Name: Discord Local Storage LevelDB Files
+        Category: Communications
+        Path: C:\users\%user%\AppData\Roaming\discord\local storage\leveldb\
+        Recursive: true
+        Comment: "Gets LevelDB database from Discord app"
