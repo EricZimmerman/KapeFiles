@@ -15,4 +15,4 @@ Targets:
         Category: Text Editor
         Path: C:\users\%user%\AppData\Roaming\Notepad++\
         FileMask: "config.xml"
-        Comment: "Locates non-saved Notepad++ files and copies them."
+        Comment: "Retrieves config.xml which contains recently searched terms, replaced terms and recently opened documents"
