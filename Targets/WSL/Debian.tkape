@@ -10,6 +10,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\etc
         FileMask: "debian_version"
     -
+        Name: Debian WSL /etc/fstab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\etc
+        FileMask: "fstab"
+    -
         Name: Debian WSL /etc/os-release
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\etc
