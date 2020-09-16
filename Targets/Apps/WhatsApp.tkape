@@ -9,3 +9,8 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\WhatsApp\Cache
         Comment: "Copies the cache of WhatsApp. Can be opened with Chrome Cache Viewer for viewing embedded thumbnails and other image artefacts, as well as extracting .enc message files or other files"
+    -
+        Name: WhatsApp Local Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\WhatsApp\Local Storage\leveldb
+        Comment: "Copies the Local Storage leveldb of WhatsApp. Contains phone model and name of user, plus encrypted base64 strings which can be viewed with LevelDBDumper"
