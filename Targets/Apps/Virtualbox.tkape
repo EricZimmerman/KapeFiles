@@ -1,0 +1,18 @@
+Description: Runs all Virtualbox modules to collect Virtualbox VM config files, logs and Virtual Hard Disks
+Author: Matt Dawson
+Version: 1.0
+Id: b6ce74ad-11a1-4e3c-851e-f8772749894b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Virtualbox Logs
+        Category: Apps
+        Path: VirtualboxLogs.tkape
+    -
+        Name: Virtualbox Configs
+        Category: Apps
+        Path: VirtualboxConfig.tkape
+    -
+        Name: Virtual Hard Drives
+        Category: Apps
+        Path: ..\Misc\VirtualDisks.tkape
