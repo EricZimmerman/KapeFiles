@@ -6,7 +6,7 @@ For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#
 
 It is also possible to attend KAPE training from Kroll instructors. Details can be found [HERE](training.md)!!
 
-### NOTE: We have clarified KAPE usage permissions for commerial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md)
+### NOTE: We have clarified KAPE usage permissions for commercial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md).
 
 
 ## TL;DR; for target and module creation is stated below:
