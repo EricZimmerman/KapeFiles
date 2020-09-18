@@ -1,0 +1,74 @@
+Description: SUSE Linux Enterprise Server on Windows Subsystem for Linux
+Author: Matt Dawson
+Version: 1.0
+Id: 367ab533-8f34-4913-b145-8052294ad633
+RecreateDirectories: true
+Targets:
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/os-release
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "os-release"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/fstab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "fstab"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/passwd
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "passwd"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/group
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "group"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/shadow
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "shadow"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/timezone
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "timezone"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/hostname
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "hostname"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/hosts
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "hosts"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/bash.bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "bash.bashrc"
+    -
+        Name: SUSE Linux Enterprise Server WSL /etc/profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\
+        FileMask: "profile"
+    -
+        Name: SUSE Linux Enterprise Server WSL .bash_history
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bash_history"
+    -
+        Name: SUSE Linux Enterprise Server WSL .bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bashrc"
+    -
+        Name: SUSE Linux Enterprise Server WSL .profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".profile"
