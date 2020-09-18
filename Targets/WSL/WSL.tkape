@@ -12,3 +12,7 @@ Targets:
         Name: Ubuntu
         Category: WSL
         Path: Ubuntu.tkape
+    -
+        Name: Kali
+        Category: WSL
+        Path: Kali.tkape

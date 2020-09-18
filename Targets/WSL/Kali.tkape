@@ -1,0 +1,95 @@
+Description: Kali on Windows Subsystem for Linux
+Author: Matt Dawson
+Version: 1.0
+Id: 6ea14af7-6217-4a39-9455-76ab5a1c0b2d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Kali WSL /etc/debian_version
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "debian_version"
+    -
+        Name: Kali WSL /etc/fstab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "fstab"
+    -
+        Name: Kali WSL /etc/os-release
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "os-release"
+    -
+        Name: Kali WSL /etc/passwd
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "passwd"
+    -
+        Name: Kali WSL /etc/group
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "group"
+    -
+        Name: Kali WSL /etc/shadow
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "shadow"
+    -
+        Name: Kali WSL /etc/timezone
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "timezone"
+    -
+        Name: Kali WSL /etc/hostname
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "hostname"
+    -
+        Name: Kali WSL /etc/hosts
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "hosts"
+    -
+        Name: Kali WSL /etc/crontab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "crontab"
+    -
+        Name: Kali WSL /etc/bash.bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "bash.bashrc"
+    -
+        Name: Kali WSL /etc/profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\etc\
+        FileMask: "profile"
+    -
+        Name: Kali WSL .bash_history
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bash_history"
+    -
+        Name: Kali WSL .bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bashrc"
+    -
+        Name: Kali WSL .profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".profile"
+    -
+        Name: Kali WSL User Crontabs
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\spool\cron\crontabs\
+        Recursive: true
+    -
+        Name: Kali WSL Apt Logs
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\log\apt\
+        Recursive: true
+        FileMask: "*.log"
