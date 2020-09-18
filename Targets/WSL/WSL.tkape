@@ -23,4 +23,4 @@ Targets:
     -
         Name: SUSE Linux Enterprise Server
         Category: WSL
-        Path: SUSE Linux Enterprise Server.tkape
+        Path: SUSELinuxEnterpriseServer.tkape
