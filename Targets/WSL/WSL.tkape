@@ -1,0 +1,14 @@
+Description: All Windows Subsystem for Linux targets
+Author: Matt Dawson
+Version: 1
+Id: 6f1d49c3-e558-4d59-bf33-5ce8bb611102
+RecreateDirectories: true
+Targets:
+    -
+        Name: Debian
+        Category: WSL
+        Path: Debian.tkape
+    -
+        Name: Ubuntu
+        Category: WSL
+        Path: Ubuntu.tkape
