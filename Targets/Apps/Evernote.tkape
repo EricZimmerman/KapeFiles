@@ -1,0 +1,27 @@
+Description: Evernote
+Author: Matt Dawson
+Version: 1.0
+Id: acea0975-6610-4813-8a27-8e78186c87d5
+RecreateDirectories: true
+Targets:
+   -
+        Name: Evernote Accounts
+        Category: App
+        Path: C:\Users\%user%\AppData\Local\Evernote\Evernote\Databases\
+        Recursive: true
+        FileMask: ".accounts"
+        Comment: "Holds username and email of accounts"
+   -
+        Name: Evernote Notebooks
+        Category: App
+        Path: C:\Users\%user%\AppData\Local\Evernote\Evernote\Databases\
+        Recursive: true
+        FileMask: "*.exb"
+        Comment: "SQLite Database of the notes"
+   -
+        Name: Evernote Notebook Snippets
+        Category: App
+        Path: C:\Users\%user%\AppData\Local\Evernote\Evernote\Databases\
+        Recursive: true
+        FileMask: "*.exb.snippets"
+        Comment: "Note 'Snippets'"
