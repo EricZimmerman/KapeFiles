@@ -1,0 +1,25 @@
+Description: Free Download Manager
+Author: Matt Dawson
+Version: 1.0
+Id: 328c98bc-f5f8-4aff-93c1-53fbf02f5ec7
+RecreateDirectories: true
+Targets:
+    -
+        Name: FDM Database
+        Category: App
+        Path: C:\Users\%user%\AppData\Local\Free Download Manager\
+        Recursive: true
+        FileMask: "fdm.sqlite"
+        Comment: "fdm.sqlite shows Torrents, downloads, folder history, auth credentials and more. Will also pull fdm.sqlite in db_backup/"
+    -
+        Name: FDM Backup Info
+        Category: App
+        Path: C:\Users\%user%\AppData\Local\Free Download Manager\backup\
+        FileMask: "backup.info"
+        Comment: "Backup info file - can change backup name from userdata.zip, so could give indication of file name"
+    -
+        Name: FDM Database (userdata.zip)
+        Category: App
+        Path: C:\Users\%user%\AppData\Local\Free Download Manager\backup\
+        FileMask: "userdata.zip"
+        Comment: "fdm.sqlite can also appear in the backup folder in a compressed userdata.zip file"
