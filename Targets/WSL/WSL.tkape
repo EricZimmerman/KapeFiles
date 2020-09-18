@@ -20,3 +20,7 @@ Targets:
         Name: openSUSE
         Category: WSL
         Path: openSUSE.tkape
+    -
+        Name: SUSE Linux Enterprise Server
+        Category: WSL
+        Path: SUSE Linux Enterprise Server.tkape
