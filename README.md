@@ -6,17 +6,17 @@
   <h3 align="center">KAPE Files</h3>
 	
   <p align="center">
-    <a href="LICENSE" alt="License">
-		<img src="https://img.shields.io/github/license/EricZimmerman/KapeFiles?style=flat-square" /></a>
-	<a href="https://github.com/EricZimmerman/KapeFiles/issues" alt="Issues">
-		<img src="https://img.shields.io/github/issues/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="LICENSE" alt="License">
+    <img src="https://img.shields.io/github/license/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="https://github.com/EricZimmerman/KapeFiles/issues" alt="Issues">
+    <img src="https://img.shields.io/github/issues/EricZimmerman/KapeFiles?style=flat-square" /></a>
   <a href="https://github.com/EricZimmerman/KapeFiles/graphs/contributors" alt="Contributors">
     <img src="https://img.shields.io/github/contributors/EricZimmerman/KapeFiles?style=flat-square" /></a>
-  <a href="https://github.com/EricZimmerman/KapeFiles/" alt="Closed PRs">
+  <a href="https://github.com/EricZimmerman/KapeFiles/pulls?q=is%3Apr+is%3Aclosed" alt="Closed PRs">
     <img src="https://img.shields.io/github/issues-pr-closed/EricZimmerman/KapeFiles?style=flat-square" /></a>
-  <a href="https://github.com/EricZimmerman/KapeFiles/" alt="Forks">
+  <a href="https://github.com/EricZimmerman/KapeFiles/network/members/" alt="Forks">
 		<img src="https://img.shields.io/github/forks/EricZimmerman/KapeFiles?style=flat-square" /></a>
-  <a href="https://github.com/EricZimmerman/KapeFiles/" alt="Stars">
+  <a href="https://github.com/EricZimmerman/KapeFiles/stargazers/" alt="Stars">
 		<img src="https://img.shields.io/github/stars/EricZimmerman/KapeFiles?style=flat-square" /></a>
   
   </p>
