@@ -1,0 +1,18 @@
+Description: Runs all VMware modules to collect VMware VM config files, logs and Virtual Hard Disks
+Author: Matt Dawson
+Version: 1.0
+Id: 386c40b5-8fc4-495e-b34e-47508e6c3f73
+RecreateDirectories: true
+Targets:
+    -
+        Name: VMware Inventory
+        Category: Apps
+        Path: VMwareInventory.tkape
+    -
+        Name: VMware Memory
+        Category: Apps
+        Path: VMwareMemory.tkape
+    -
+        Name: Virtual Hard Drives
+        Category: Apps
+        Path: ..\Misc\VirtualDisks.tkape
