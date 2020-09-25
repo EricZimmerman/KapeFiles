@@ -1,0 +1,74 @@
+Description: openSUSE on Windows Subsystem for Linux
+Author: Matt Dawson
+Version: 1.0
+Id: 9b3ad543-b86b-4a9c-b305-ed9dac48ab86
+RecreateDirectories: true
+Targets:
+    -
+        Name: openSUSE WSL /etc/os-release
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "os-release"
+    -
+        Name: openSUSE WSL /etc/fstab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "fstab"
+    -
+        Name: openSUSE WSL /etc/passwd
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "passwd"
+    -
+        Name: openSUSE WSL /etc/group
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "group"
+    -
+        Name: openSUSE WSL /etc/shadow
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "shadow"
+    -
+        Name: openSUSE WSL /etc/timezone
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "timezone"
+    -
+        Name: openSUSE WSL /etc/hostname
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "hostname"
+    -
+        Name: openSUSE WSL /etc/hosts
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "hosts"
+    -
+        Name: openSUSE WSL /etc/bash.bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "bash.bashrc"
+    -
+        Name: openSUSE WSL /etc/profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\etc\
+        FileMask: "profile"
+    -
+        Name: openSUSE WSL .bash_history
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bash_history"
+    -
+        Name: openSUSE WSL .bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bashrc"
+    -
+        Name: openSUSE WSL .profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".profile"

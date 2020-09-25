@@ -1,0 +1,73 @@
+Description: Mozilla Thunderbird Email Client
+Author: Matt Dawson
+Version: 1.0
+Id: e9a06689-bbd9-4540-be17-2633d9b7412c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Mozilla Thunderbird Install Date
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Crash Reports\
+        FileMask: 'InstallTime*'
+        Comment: "Holds install time in Unix Seconds timestamp"
+    -
+        Name: Mozilla Thunderbird Profiles.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\
+        FileMask: 'profiles.ini'
+        Comment: "Profiles list - can hold references to other profiles held elsewhere on the device"
+    -
+        Name: Mozilla Thunderbird prefs.js
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\
+        FileMask: "prefs.js"
+        Comment: "User Preferences for that profile"
+    -
+        Name: Mozilla Thunderbird Global Messages Database
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\
+        FileMask: "global-messages-db.sqlite"
+        Comment: "Holds list of contacts, emails, and other potentially useful artifacts"
+    -
+        Name: Mozilla Thunderbird logins.json
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\
+        FileMask: "logins.json"
+        Comment: "Holds last time online login used, last time password changed, hostname, HTTP(s) URL and more"
+    -
+        Name: Mozilla Thunderbird places.sqlite
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\
+        FileMask: "places.sqlite"
+        Comment: "Holds history for Thunderbird - as it contains portions of Firefox embedded, it can be used to visit websites too"
+    -
+        Name: Mozilla Thunderbird ImapMail INBOX
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\ImapMail\
+        FileMask: "INBOX"
+        Recursive: true
+        Comment: "Holds all email files with headers, content etc"
+    -
+        Name: Mozilla Thunderbird Mail INBOX
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\Mail\
+        FileMask: "INBOX"
+        Recursive: true
+        Comment: "Holds all email files with headers, content etc"
+    -
+        Name: Mozilla Thunderbird Calendar Data
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\calendar-data\
+        FileMask: "local.sqlite"
+        Comment: "Holds local calendar data"
+    -
+        Name: Mozilla Thunderbird Attachments
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\Attachments\
+        Comment: "Holds attachments"
+    -
+        Name: Mozilla Thunderbird Address Book
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\
+        FileMask: "abook.sqlite"
+        Comment: "Holds local address book"

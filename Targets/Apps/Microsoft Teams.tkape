@@ -1,0 +1,22 @@
+Description: Microsoft Teams
+Author: Matt Dawson
+Version: 1.0
+Id: 7d449255-917e-4894-a46d-dcbeee2289b5
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft Teams IndexedDB Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft Teams\IndexedDB\
+        Comment: "LevelDB database which can contain inbound/outbound chat messages, call history and more"
+    -
+        Name: Microsoft Teams Local Storage Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\Local Storage\
+        Comment: "LevelDB database which can contain meeting history, file transfer logs and more"
+    -
+        Name: Microsoft Teams Config
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\
+        FileMask: "desktop-config.json"
+        Comment: "JSON config file for Teams"

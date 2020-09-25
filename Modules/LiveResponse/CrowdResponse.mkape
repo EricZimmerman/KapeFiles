@@ -1,0 +1,19 @@
+Description: CrowdResponse is a lightweight Windows console application designed to aid in the gathering of system information for incident response and security engagements
+Category: LiveResponse
+Author: Mohamed El-Hadidi
+Version: 1.0
+Id: e137a1ed-5bfd-4ca3-9df1-c1d35624cbb2
+BinaryUrl: https://www.crowdstrike.com/wp-content/uploads/2020/03/CrowdResponse.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe' -i %kapedirectory%\Modules\bin\CrowdResponse\config.txt -o %destinationDirectory%\CrowdResponse.xml;&'%kapedirectory%\Modules\bin\CrowdResponse\CRConvert.exe' -v -c -f %destinationDirectory%\CrowdResponse.xml -o %destinationDirectory%;Remove-Item '%destinationDirectory%\CrowdResponse.xml'"
+        ExportFormat: csv
+
+##
+## Create a folder "CrowdResponse" within the "Modules\bin" KAPE folder
+## Place "CrowdResponse.exe", "CrowdResponse64.exe" , "CRConvert.exe", "Config.txt" files into "Modules\bin\CrowdResponse"
+## Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse.exe for 32 bit system
+## Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe for 64 bit system
+##

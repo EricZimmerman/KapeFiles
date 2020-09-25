@@ -1,0 +1,44 @@
+Description: Windows Your Phone 
+Author: Andrew Rathbun
+Version: 1.0
+Id: 2151d28a-3b2b-4784-a91f-72622a97a17b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Your Phone - All Databases
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.YourPhone_8wekyb3d8bbwe\LocalCache\Indexed
+        Recursive: True
+        Comment: "Locates all Your Phone database files "
+
+######
+# This has only been tested with Android at this time. I don't own an Apple device but if someone else does, feel free to edit this target file with iOS related information. 
+# This target will recursively grab folders with a complete file path similar to this one: .\AppData\Local\Packages\Microsoft.YourPhone_8wekyb3d8bbwe\LocalCache\Indexed\GUID\System\Database\.
+# Inside this directory on my system were the following files
+#    photos.db
+#    phone.db
+#    photos.db-wal
+#    phone.db-wal
+#    settings.db-wal
+#    settings.db
+#    contacts.db-wal
+#    contacts.db
+#    deviceData.db-wal
+#    calling.db-shm
+#    contacts.db-shm
+#    deviceData.db-shm
+#    notifications.db-shm
+#    phone.db-shm
+#    photos.db-shm
+#    settings.db-shm
+#    calling.db-wal
+#    notifications.db-wal
+#    calling.db
+# Throw any of these files into a SQLite viewer such as SQLite Expert Pro to view the contents. 
+# A quick rundown: 
+#    Photos.db will have filenames and blob files.
+#    Phone.db will contain all text messages on the device, including RCS chats, conversations, and file transfers, MMS messages, etc.
+#    Contacts.db will contact all contact names, numbers, addresses, email addresses, etc.
+#    Settings.db will contain an enumerated list of installed apps on the device.
+#    Calling.db will contain call history.
+######

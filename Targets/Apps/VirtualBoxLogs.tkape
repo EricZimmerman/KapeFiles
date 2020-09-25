@@ -1,0 +1,27 @@
+Description: Collects VirtualBox log files
+Author: Matt Dawson
+Version: 1.0
+Id: 3d5398fc-5774-4329-a268-29ed1a6d4d9e
+RecreateDirectories: true
+Targets:
+    -
+        Name: VirtualBox Logs
+        Category: Apps
+        Path: C:\
+        Recursive: true
+        FileMask: "VBox.log"
+        Comment: "Locates all VBox.log files on disk"
+    -
+        Name: VirtualBox Backup Logs
+        Category: Apps
+        Path: C:\
+        Recursive: true
+        FileMask: "VBox.log.*"
+        Comment: "Locates all backup VBox.log files on disk - these can show historic VM usage"
+    -
+        Name: VirtualBox Hardening Logs
+        Category: Apps
+        Path: C:\
+        Recursive: true
+        FileMask: "VBoxHardening.log"
+        Comment: "Locates all VBoxHardening.log files on disk"

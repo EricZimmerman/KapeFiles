@@ -1,0 +1,33 @@
+Description: ViberPC Messaging App
+Author: Matt Dawson
+Version: 1.0
+Id: 61e74d50-5e97-4bc8-a78b-c2fb393d2f9f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Viber Config Database
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\ViberPC\
+        FileMask: "config.db"
+        Comment: "Configuration file for Viber"
+    -
+        Name: Viber Users Data Database
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\ViberPC\*\
+        FileMask: "viber.db"
+        Comment: "Viber data for that user, containing Calls, Chat Messages, Contacts and more"
+    -
+        Name: Viber Users Avatars Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\ViberPC\*\Avatars
+        Comment: "Cache of the Avatars for other Viber users"
+    -
+        Name: Viber Users Backgrounds Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\ViberPC\*\Backgrounds
+        Comment: "Store of the backgrounds"
+    -
+        Name: Viber Users Thumbnails Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\ViberPC\*\Thumbnails
+        Comment: "Cache of the thumbnails for uploaded/downloaded images"

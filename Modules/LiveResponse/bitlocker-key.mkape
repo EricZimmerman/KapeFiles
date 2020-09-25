@@ -7,7 +7,7 @@ ExportFormat: txt
 Processors:
     -
         Executable: C:\Windows\System32\manage-bde.exe
-        CommandLine: -protectors -get %sourceDirectory%
+        CommandLine: -protectors -get %sourceDriveLetter%
         ExportFormat: txt
         ExportFile: BitLocker-key.txt
 

@@ -1,0 +1,90 @@
+Description: Ubuntu on Windows Subsystem for Linux
+Author: Matt Dawson
+Version: 1.0
+Id: 08b27869-b454-403a-84af-2aa1f2f69a37
+RecreateDirectories: true
+Targets:
+    -
+        Name: Ubuntu WSL /etc/os-release
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "os-release"
+    -
+        Name: Ubuntu WSL /etc/fstab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "fstab"
+    -
+        Name: Ubuntu WSL /etc/passwd
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "passwd"
+    -
+        Name: Ubuntu WSL /etc/group
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "group"
+    -
+        Name: Ubuntu WSL /etc/shadow
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "shadow"
+    -
+        Name: Ubuntu WSL /etc/timezone
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "timezone"
+    -
+        Name: Ubuntu WSL /etc/hostname
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "hostname"
+    -
+        Name: Ubuntu WSL /etc/hosts
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "hosts"
+    -
+        Name: Ubuntu WSL /etc/crontab
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "crontab"
+    -
+        Name: Ubuntu WSL /etc/bash.bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "bash.bashrc"
+    -
+        Name: Ubuntu WSL /etc/profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\etc\
+        FileMask: "profile"
+    -
+        Name: Ubuntu WSL .bash_history
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bash_history"
+    -
+        Name: Ubuntu WSL .bashrc
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".bashrc"
+    -
+        Name: Ubuntu WSL .profile
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
+        Recursive: true
+        FileMask: ".profile"
+    -
+        Name: Ubuntu WSL User Crontabs
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\spool\cron\crontabs\
+        Recursive: true
+    -
+        Name: Ubuntu WSL Apt Logs
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\log\apt\
+        Recursive: true
+        FileMask: "*.log"
