@@ -1,0 +1,22 @@
+Description: Windows Sticky Notes
+Author: Andrew Rathbun
+Version: 1.0
+Id: 759b36a9-3637-474e-9bc4-88dd4d54472e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Sticky Notes - Windows 7, 8, and 10 version 1511 and earlier
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\StickyNotes\
+        FileMask: StickyNotes.snt
+    -
+        Name: Windows Sticky Notes - 1607 and later
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes*\LocalState\
+        FileMask: plum.sqlite*
+
+######
+# Windows Sticky Notes is a useful feature in Windows operating systems versions 7+. However, the notes are stored differently depending on the version of Windows.
+# I have not yet tested the Stickynotes.snt for earlier versions of Windows. When I do, I will update this target with my results.
+# For Windows 10 version 1607 and later, use your favorite SQL tool to view the .sqlite, .sqlite-wal and .sqlite-shm files. You will notice notes will be stored in the Note database. 
+######
