@@ -1,15 +1,22 @@
 Description: Total Commander
-Author: Andrew Rathbun
-Version: 1.0
+Author: Andrew Rathbun and Jessica Venturo
+Version: 1.1
 Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
 RecreateDirectories: true
 Targets:
     -
-        Name: Total Commander
+        Name: Total Commander - .ini File
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\GHISLER\
         FileMask: 'wincmd.ini'
         Comment: "Locates .ini file associated with Total Commander which stores useful user activity information."
+    -
+        Name: Total Commander - Log File
+        Category: Apps
+        Path: C:\
+        Recursive: True
+        FileMask: 'totalcmd.log'
+        Comment: "Locates log file associated with Total Commander. NOTE: this log file is NOT enabled by default and the filename can be modified."
 
 ######
 # Total Commander is a shareware Windows File Explorer replacement commonly used by threat actors during IR incidents.
@@ -41,4 +48,5 @@ Targets:
 #   8=c:\Program Files (x86)\BraveSoftware\Brave-Browser\	#0
 #   9=c:\Program Files (x86)\BraveSoftware\	#01,Brave-Browser
 #   10=c:\Program Files (x86)\	#02,BraveSoftware
+# The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc. 
 ######
