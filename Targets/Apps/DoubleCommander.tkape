@@ -1,0 +1,57 @@
+Description: Double Commander
+Author: Andrew Rathbun
+Version: 1.0
+Id: 80c608ac-0be4-4bbf-a09e-97d2f6cb90f4
+RecreateDirectories: true
+Targets:
+    -
+        Name: Double Commander - history.xml
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'history.xml'
+        Comment: "Locates an .xml file that contains Shellbags-equivalent artifacts that are sorted in temporal order from bottom to top."
+    -
+        Name: Double Commander - doublecmd.xml
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'doublecmd.xml'
+        Comment: "Locates an .xml file that contains Shellbags-equivalent artifacts that are sorted in temporal order from top to bottom."
+
+######
+# Double Commander is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.
+# If you open up the history.xml file path in a text editor, depending on how big the file is, all your artifacts equivalent to Shellbags should be located under a <Navigation> string with each "Shellbag" preprended by <Item>. 
+# It should be noted that these are sorted in descending order, meaning the top item is the most recent folder navigated to by the user.
+# It should be noted that history.xml only updates when Double Commander is closed. 
+# For instance, I explored the following paths in this order from bottom to top:
+#      <Item>C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\</Item>
+#      <Item>C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Settings\</Item>
+#      <Item>C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Layouts\</Item>
+#      <Item>C:\Users\%user%\Desktop\EZ Tools\</Item>
+#      <Item>C:\Users\%user%\Desktop\EZ Tools\SDBExplorer\</Item>
+#      <Item>C:\Users\%user%\Desktop\EZ Tools\EZViewer\</Item>
+#      <Item>C:\Users\%user%\Desktop\</Item>
+#      <Item>C:\Users\%user%\</Item>
+#      <Item>C:\Users\</Item>
+#      <Item>C:\</Item>
+#      <Item>C:\Program Files\</Item>
+# Doublecmd.xml has a lot more information overall than history.xml, but it does have similar Shellbags-equivalent artifacts that are sorted in descending order. 
+# If you open up the doublecmd.xml file path in a text editor, search for the following string: <Path Filename= and you will start seeing these artifacts. 
+# For instance, besides the top two lines, I explored the following paths in this order from top to bottom:
+#	<Path Filename="bz2.dll">C:\Program Files\Double Commander\</Path>
+#	<Path Filename="Double Commander">C:\Program Files\</Path>
+#       <Path Filename="Users">C:\</Path>
+#       <Path Filename="%user%">C:\Users\</Path>
+#       <Path Filename="Desktop">C:\Users\%user%\</Path>
+#       <Path Filename="EZ Tools">C:\Users\%user%\Desktop\</Path>
+#       <Path Filename="EZViewer">C:\Users\%user%\Desktop\EZ Tools\</Path>
+#       <Path Filename="..">C:\Users\%user%\Desktop\EZ Tools\EZViewer\</Path>
+#       <Path Filename="SDBExplorer">C:\Users\%user%\Desktop\EZ Tools\</Path>
+#       <Path Filename="..">C:\Users\%user%\Desktop\EZ Tools\SDBExplorer\</Path>
+#       <Path Filename="TimelineExplorer">C:\Users\%user%\Desktop\EZ Tools\</Path>
+#       <Path Filename="Layouts">C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\</Path>
+#       <Path Filename="..">C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Layouts\</Path>
+#       <Path Filename="Settings">C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\</Path>
+#       <Path Filename="..">C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Settings\</Path>
+#       <Path Filename="Settings">C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\</Path>
+# These artifacts can be very useful when your threat actor isn't using File Explorer. 
+######
