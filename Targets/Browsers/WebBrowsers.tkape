@@ -20,3 +20,7 @@ Targets:
         Name: Edge
         Category: Communications
         Path: Edge.tkape
+    -
+        Name: Opera
+        Category: Communications
+        Path: Opera.tkape
