@@ -1,0 +1,51 @@
+Description: XYplorer
+Author: Andrew Rathbun
+Version: 1.0
+Id: b350302a-bf5a-4908-a6c5-9e3418aca23c
+RecreateDirectories: true
+Targets:
+    -
+        Name: XYplorer - .ini file
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\XYplorer\
+        FileMask: 'XYplorer.ini'
+        Comment: "Locates .ini file associated with Total Commander which stores useful user activity information."
+    -
+        Name: XYplorer - .ini file for each respective pane
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\XYplorer\Panes\*\
+        Recursive: True
+        FileMask: 'pane.ini'
+        Comment: "Locates the .ini file for the left and right pane."
+    -
+        Name: XYplorer - AutoBackup folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\XYplorer\AutoBackup
+        Recursive: True
+        Comment: "Locates the AutoBackup folder and copies its contents."
+    -
+        Name: XYplorer - .dat files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\XYplorer
+        Recursive: True
+        FileMask: '*.dat'
+        Comment: "Locates the .dat files in the XYplorer's AppData folder, all of which are updated upon program's exit."
+
+######
+# XYPlorer is a third-party Windows File Explorer replacement. 
+# By default, XYPlorer has a left and right pane. Each pane will have it's own respective .ini file which displays the last 5 folders browsed as well as current tabs opened at the time of the program's exit.
+# Within XYplorer.ini, [mruBrowse] will list the last 5 folders browsed. [mruGoto] will list the tabs that were opened at the time of the program's exit.
+# Within each pane's pane.ini file, there will be a section labeled [History] where one can see the last 5 folders browsed, be default. It appears one can change the Count=X value where X is the amount of folders browsed that are recorded here.
+# While using Everything by VoidTools, I observed the following files were modified upon the program's exit:
+#  C:\Users\%user%\AppData\Roaming\XYplorer\lastini.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\action.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\tag.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\fvs.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\ks.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\udc.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\Catalogs\catalog.dat
+#  C:\Users\%user%\AppData\Roaming\XYplorer\Panes\2\pane.ini
+#  C:\Users\%user%\AppData\Roaming\XYplorer\Panes\1\pane.ini
+#  C:\Users\%user%\AppData\Roaming\XYplorer\XYplorer.ini
+# This means there might be something useful in each one of these files. The *.dat will grab all of those .dat files and the other targets will cover the .ini files.
+######
