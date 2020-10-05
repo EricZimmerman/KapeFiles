@@ -16,6 +16,6 @@ Targets:
 # By default, a user's captures are stored in the above location. 
 # The user can change their default folder path for screenshots by navigating to Application Settings -> Paths -> ShareX Personal Folder, hitting Apply, and restarting the program.
 # C:\Users\%user%\Documents\ShareX\PersonalPath.cfg will list where the user currently saves all screenshots, application configuration files, backups, and logs, to name a few. This file should persist even after the user changes the default ShareX folder path.
-# Screenshots folder will contain logical copies of all captures by the user typically separated by folder in YYY-MM format with the logical files residing inside. 
+# Screenshots folder will contain logical copies of all captures by the user typically separated by folder in YYYY-MM format with the logical files residing inside. 
 # This target captures the contents of everything within the default folder path upon ShareX's installation. 
 ######
