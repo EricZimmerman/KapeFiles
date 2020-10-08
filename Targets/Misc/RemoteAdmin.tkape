@@ -1,49 +1,53 @@
 Description: Composite target for files related to remote administration tools
-Author: Drew Ervin, Mathias Frank
-Version: 1.3
+Author: Drew Ervin, Mathias Frank, Andrew Rathbun
+Version: 1.4
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
-    -
-        Name: RDP Logs
-        Category: EventLogs
-        Path: RDPLogs.tkape
-        Comment: "Contains Windows Event Logs related to RDP"
-    -
-        Name: RDP Cache
-        Category: ApplicationData
-        Path: RDPCache.tkape
-        Comment: "Contains data cached during recent RDP sessions"
-    -
-        Name: LogMeIn
-        Category: ApplicationLogs
-        Path: LogMeIn.tkape
-    -
-        Name: VNC
-        Category: ApplicationLogs 
-        Path: VNCLogs.tkape
-    -
-        Name: Chrome Remote Desktop
-        Category: ApplicationLogs
-        Path: ApplicationEvents.tkape
-    -
-        Name: TeamViewer
-        Category: ApplicationLogs
-        Path: TeamViewerLogs.tkape
     -
         Name: Ammyy
         Category: Ammyy.tkape
         Path: ApplicationLogs
     -
+        Name: AnyDesk
+        Category: AnyDesk.tkape
+        Path: ApplicationLogs
+    -
+        Name: Chrome Remote Desktop
+        Category: ApplicationLogs
+        Path: ApplicationEvents.tkape
+    -
         Name: Kaseya
         Category: ApplicationLogs
         Path: Kaseya.tkape
     -
-        Name: ScreenConnect (ConnectWise Control)
+        Name: LogMeIn
         Category: ApplicationLogs
-        Path: ScreenConnect.tkape
+        Path: LogMeIn.tkape
     -
         Name: Radmin
         Category: ApplicationLogs
         Path: Radmin.tkape
         Comment: "Radmin Server and Viewer Logs and Chats"
+    -
+        Name: RDP Cache
+        Category: ApplicationData
+        Path: RDPCache.tkape
+        Comment: "Contains data cached during recent RDP sessions"
+-
+        Name: RDP Logs
+        Category: EventLogs
+        Path: RDPLogs.tkape
+        Comment: "Contains Windows Event Logs related to RDP"
+    -
+        Name: ScreenConnect (ConnectWise Control)
+        Category: ApplicationLogs
+        Path: ScreenConnect.tkape
+    -
+        Name: TeamViewer
+        Category: ApplicationLogs
+        Path: TeamViewerLogs.tkape
+    -
+        Name: VNC
+        Category: ApplicationLogs 
+        Path: VNCLogs.tkape
