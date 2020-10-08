@@ -1,0 +1,25 @@
+Description: AnyDesk
+Author: Andrew Rathbun
+Version: 1.0
+Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
+RecreateDirectories: true
+Targets:
+    -
+        Name: AnyDesk Logs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
+        FileMask: 'ad.trace'
+        Comment: "Collects the ad.trace logfile for AnyDesk"
+    -
+        Name: AnyDesk Videos
+        Category: Communications
+        Path: C:\Users\%user%\Videos\AnyDesk\
+        FileMask: '*.anydesk'
+        Comment: "Collects any session recordings made by the user while using AnyDesk"
+
+######
+# AnyDesk is a remote access tool similar to TeamViewer. A user can download and run AnyDesk without actually installing it and still generate the ad.trace log. 
+# In regards to session recordings, note that it appears only the person who is remote connecting into another person's computer can record. The person being remoted into has to allow the recording to take place via a simple, intuitive setting while a remote session is active.
+# Session recordings will be stored in the .anydesk file format and they can only be played with AnyDesk.
+# In regards to file transfers, the person remoting into a computer can choose whatever files they want to drop wherever on the user's system. Therefore, there isn't a specified folder for file transfers that occur during an AnyDesk remote session.
+######
