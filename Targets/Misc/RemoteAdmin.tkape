@@ -34,7 +34,7 @@ Targets:
         Category: ApplicationData
         Path: RDPCache.tkape
         Comment: "Contains data cached during recent RDP sessions"
--
+    -
         Name: RDP Logs
         Category: EventLogs
         Path: RDPLogs.tkape
