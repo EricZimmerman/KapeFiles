@@ -1,0 +1,30 @@
+Description: Telegram Desktop
+Author: Simone Marinari
+Version: 1
+Id: 7f836137-1479-46b4-91a9-83624b8a8e26
+RecreateDirectories: true
+Targets:
+    -
+        Name: Telegram app folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Telegram Desktop\
+        Recursive: True
+        Comment: "Telegram app folder structure"
+    -
+        Name: Telegram downloaded files
+        Category: Apps
+        Path: C:\users\%user%\Downloads\Telegram Desktop\
+        Recursive: True
+        Comment: "Chat Attachments"
+
+#######
+# Telegram desktop is the official windows client of the messaging platform.
+# The main difference with Whatsapp is the cloud capability, so if you need to recover chats but you don't have access to the smartphone, you can get all "active" contents from the desktop app.
+# You need to open the application and have an active internet connection to view all chats and media contents.
+# If you need to read a single conversation, select and then read it offline.
+# To export all data you must be online and run "Export Telegram Data" from : Settings->Advanced.
+# ***FORENSIC CAUTION***: Be aware that you will be authenticated and you'll receive new contents and messages (with the "online" status)
+# ***IMPORTANT NOTES***
+#   - It's not possible to recover messages from local cache/temp files because of encryption (it only works on old versions and there are few tools available)
+#   - You can't get "private messages" because they're not on cloud.
+#######
