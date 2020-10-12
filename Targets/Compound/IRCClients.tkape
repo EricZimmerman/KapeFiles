@@ -1,0 +1,18 @@
+Description: IRC Clients
+Author: Andrew Rathbun
+Version: 1.0
+Id: 295e5eeb-a836-4ff8-88b7-1caf47c95701
+RecreateDirectories: true
+Targets:
+    -
+        Name: HexChat
+        Category: Communications
+        Path: HexChat.tkape
+    -
+        Name: IceChat
+        Category: Communications
+        Path: IceChat.tkape
+    -
+        Name: mIRC
+        Category: Communications
+        Path: mIRC.tkape

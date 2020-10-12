@@ -1,0 +1,11 @@
+Description: mIRC
+Author: Andrew Rathbun
+Version: 1.0
+Id: 284ffb97-076c-4990-b10a-044d40ac1901
+RecreateDirectories: true
+Targets:
+    -
+        Name: mIRC Chat Logs
+        Category: Communications
+        Path: C:\users\%user%\AppData\Roaming\mIRC\logs\
+        Recursive: true
