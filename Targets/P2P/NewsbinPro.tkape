@@ -1,0 +1,21 @@
+Description: Newsbin Pro
+Author: Andrew Rathbun
+Version: 1.0
+Id: be5a322b-0093-4944-ad6c-5429f176e515
+RecreateDirectories: true
+Targets:
+    -
+        Name: Usenet Clients - Newsbin Pro
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\Newsbin\
+        FileMask: 'Downloaded.db3'
+        Comment: "Locates Newsbin Pro download log database"
+        
+######
+# During installation, the user is not provided an opportunity to choose the default download folder. However, the user can change it once Newsbin Pro is installed. 
+# Default download location: C:\Users\%user%\Documents\Newsbin\.
+# In my testing, regardless of where an NZB file resides on your file system, the NZB is replicated into C:\Users\%user%\AppData\Local\Newsbin\Nzbs\%ParentDirectory%\filename.nzb.
+# As you can see, the parent directory is recreated in the \Nzbs\ directory. To further illustrate, if an NZB is used that's buried 10 folders deep, you will only see the name of the 10th folder recreated after \Nzbs\.
+# C:\Users\%user%\AppData\Local\Newsbin\Downloaded.db3 is a file that can be opened in a text editor to easily see what the user has attempted to download, regardless of completion status. 
+# Please note, C:\Users\%user%\AppData\Local\Newsbin\ is the default path upon installation and can be easily changed by the user post-installation.
+######

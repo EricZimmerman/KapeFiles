@@ -1,0 +1,23 @@
+Description: SABnbzd
+Author: Andrew Rathbun
+Version: 1.0
+Id: 315fb563-fe32-4efb-a1b8-1be4d05023ef
+RecreateDirectories: true
+Targets:
+    -
+        Name: Usenet Clients - SABnzbd Download Logs
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\sabnzbd\logs\
+        FileMask: 'sabnzbd.log'
+        Comment: "Locates SABnzbd download log"
+    -
+        Name: Usenet Clients - SABnzbd History.db
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\sabnzbd\admin\
+        FileMask: 'history1.db'
+        Comment: "Locates SABnzbd history log"
+        
+######
+# C:\Users\%user%\AppData\Local\sabnzbd\logs\sabnzbd.log is where a verbose log file exists. 
+# C:\Users\%user%\AppData\Local\sabnzbd\admin\history1.db appears to show a history of filenames of NZBs used by the user.
+######

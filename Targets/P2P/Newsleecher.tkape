@@ -1,0 +1,16 @@
+Description: Newsleecher
+Author: Andrew Rathbun
+Version: 1.0
+Id: 82920bd3-68bf-42c5-ba3c-55d59af35f64
+RecreateDirectories: true
+Targets:
+    -
+        Name: Usenet Clients - Newsleecher
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\NewsLeecher\
+        FileMask: 'downloaded.dat'
+        Comment: "Locates Newsleecher download .dat file"
+        
+######
+# C:\Users\%user%\AppData\Roaming\NewsLeecher\downloaded.dat is where the download log file resides. I haven't been able to test Newsleecher yet so I haven't been able to populate this file. 
+######
