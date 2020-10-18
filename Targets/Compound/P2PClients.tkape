@@ -9,6 +9,10 @@ Targets:
         Category: FileDownload
         Path: DC++.tkape
     -
+        Name: FrostWire
+        Category: FileDownload
+        Path: FrostWire.tkape
+    -
         Name: Gigatribe
         Category: FileDownload
         Path: Gigatribe.tkape

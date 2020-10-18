@@ -5,6 +5,10 @@ Id: 8e1cb436-dada-413f-845d-f2ed0823cb3a
 RecreateDirectories: true
 Targets:
     -
+        Name: Directory Opus
+        Category: Apps
+        Path: DirectoryOpus.tkape
+    -
         Name: Double Commander
         Category: Apps
         Path: DoubleCommander.tkape

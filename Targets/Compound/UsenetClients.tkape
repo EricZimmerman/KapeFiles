@@ -1,0 +1,22 @@
+Description: Usenet Clients
+Author: Andrew Rathbun
+Version: 1.0
+Id: 2aef5440-16f8-4720-ae40-c2cad380da8d
+RecreateDirectories: true
+Targets:
+    -
+        Name: NewsbinPro
+        Category: FileDownload
+        Path: NewsbinPro.tkape
+    -
+        Name: Newsleecher
+        Category: FileDownload
+        Path: Newsleecher.tkape
+    -
+        Name: NZBGet
+        Category: FileDownload
+        Path: NZBGet.tkape
+    -
+        Name: SABnbzd
+        Category: FileDownload
+        Path: SABnbzd.tkape

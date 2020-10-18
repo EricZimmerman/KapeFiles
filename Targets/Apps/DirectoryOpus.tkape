@@ -1,0 +1,60 @@
+Description: Directory Opus
+Author: Andrew Rathbun
+Version: 1.0
+Id: 31a9022d-bd2e-4031-97c1-046b51bfcc7d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\
+        FileMask: 'rename_folders.osd'
+        Comment: "Locates .osd file which contains names of folders that have been renamed manually by the user."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\
+        FileMask: 'rename_files.osd'
+        Comment: "Locates .osd file which contains names of files that have been renamed manually by the user."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\
+        FileMask: 'find_contains.osd'
+        Comment: "Locates .osd file which contains search queries initiated by the user during a search for files with contents related to the search query."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\
+        FileMask: 'find_name.osd'
+        Comment: "Locates .osd file which contains search queries initiated by the user during a search for files with a filename related to the search query."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\
+        FileMask: 'find_path.osd'
+        Comment: "Locates .osd file which contains file paths related to user activity - not exactly sure how these are generated at this time."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\
+        FileMask: 'recent.osd'
+        Comment: "Locates .osd file which contains file paths related to recent user activity. Effectively the DOpus Shellbags-equivalent. Appears to be for last 10 folder visited within the Lister."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\State Data\
+        FileMask: 'backupconfig.osd'
+        Comment: "Locates .osd file which contains file paths related to the location of the backup settings files for Directory Opus."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\Thumbnail Cache\
+        Comment: "Locates .osd file which contains file paths related to the location of the backup settings files for Directory Opus."
+
+######
+# Directory Opus is the best Windows File Explorer replacement on the market, in my humble opinion.
+# Thankfully, lots of data is stored on user activity if your suspect ends up using this as their daily driver. 
+# Any of the .osd files can be viewed in your favorite text editor.
+# The Thumbnail Cache folder will dump all files which appear to be randomized filenames with a .db extension.
+######
