@@ -41,6 +41,6 @@ Targets:
         Category: Targets
         Path: RemoteAdmin.tkape
     -
-        Name: AntiVirus
+        Name: Antivirus
         Category: Targets
-        Path: Antivirus\*
+        Path: Antivirus.tkape
