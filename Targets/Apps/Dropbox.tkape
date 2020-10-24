@@ -1,6 +1,6 @@
 Description: Dropbox Cloud Storage Files and Metadata
 Author: Chad Tilbury
-Version: 1
+Version: 1.0
 Id: e8501b5d-2cfc-4693-923d-52edd2ddf3bc
 RecreateDirectories: true
 Targets:

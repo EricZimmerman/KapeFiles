@@ -1,7 +1,7 @@
 Description: Parses MFT, Registy and Event Logs into mini-timeline; Add in key "computerName" 
 Category: Timeline
 Author: Mari DeGrazia
-Version: 1
+Version: 1.0
 Id: 50415221-4267-47e4-985f-346a709e8b8e
 ExportFormat: ""
 FileMask: ""

@@ -1,6 +1,6 @@
 Description: $SDS
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: 72d56db2-b8da-4830-a2e7-37437c90e18f
 RecreateDirectories: true
 Targets:

@@ -1,7 +1,7 @@
 Description: 'SRUM-dump: Dump contents of the srum database'
 Category: SystemActivity
 Author: Brian Maloney
-Version: 1
+Version: 1.0	
 Id: 8e0a2314-79e4-48f2-81ad-a0719e8af680
 BinaryUrl: https://github.com/MarkBaggett/srum-dump/raw/python3/srum_dump_csv.exe
 ExportFormat: csv

@@ -1,6 +1,6 @@
 Description: Recycle Bin
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 336abbbb-e9db-4d04-8904-43718e57df85
 RecreateDirectories: true
 Targets:

@@ -1,6 +1,6 @@
 Description: Sublime Text 2/3 Auto Save Session
 Author: Mathias Frank
-Version: 1
+Version: 1.0
 Id: c1a64d12-bdf3-4ebe-a715-719bd6f2ddad
 RecreateDirectories: true
 Targets:

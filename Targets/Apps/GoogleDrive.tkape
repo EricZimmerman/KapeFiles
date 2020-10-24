@@ -1,6 +1,6 @@
 Description: Google Drive Storage Files and Metadata
 Author: Chad Tilbury
-Version: 1
+Version: 1.0
 Id: 34f115e0-687e-49c1-acdd-85cc68a86157
 RecreateDirectories: true
 Targets:

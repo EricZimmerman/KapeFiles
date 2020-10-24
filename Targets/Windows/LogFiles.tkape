@@ -1,6 +1,6 @@
 Description: LogFiles
 Author: Fabian Murer
-Version: 1
+Version: 1.0
 Id: 67c9bb8d-342b-4380-a110-565317fce014
 RecreateDirectories: true
 Targets:

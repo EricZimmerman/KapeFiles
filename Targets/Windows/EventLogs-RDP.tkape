@@ -1,6 +1,6 @@
 Description: Collect Win7+ RDP related Event logs
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 2e79fc64-816c-439a-8b7f-93dd59bf2711
 RecreateDirectories: true
 Targets:

@@ -1,6 +1,6 @@
 Description: $MFT
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: 2b3d01e2-25e1-4079-a630-6cb6e2069456
 RecreateDirectories: true
 Targets:

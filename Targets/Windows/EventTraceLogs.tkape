@@ -1,6 +1,6 @@
 Description: Event Trace Logs
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: af494526-9e44-4548-9d29-f088eafa6f3d
 RecreateDirectories: true
 Targets:

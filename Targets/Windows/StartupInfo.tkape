@@ -1,6 +1,6 @@
 Description: StartupInfo XML Files
 Author: Hadar Yudovich
-Version: 1
+Version: 1.0
 Id: 9bb477a3-fa6f-410d-8646-c3f987c147ce
 RecreateDirectories: true
 Targets:

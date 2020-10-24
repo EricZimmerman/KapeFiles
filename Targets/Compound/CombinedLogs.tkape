@@ -1,6 +1,6 @@
 Description: Collect Event logs, Trace logs, Windows Firewall and PowerShell console
 Author: Mike Cary
-Version: 1
+Version: 1.0
 Id: 6e9f717f-01f8-4460-b552-a3a0ec7d7670
 RecreateDirectories: true
 Targets:

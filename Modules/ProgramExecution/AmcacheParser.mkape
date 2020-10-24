@@ -1,7 +1,7 @@
 Description: 'AmcacheParser: extract program execution information'
 Category: ProgramExecution
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: 4190c518-524f-4623-8038-a014784c018c
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/AmcacheParser.zip
 ExportFormat: csv

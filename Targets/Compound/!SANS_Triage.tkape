@@ -3,7 +3,7 @@ Description: SANS Triage Collection.
 # "self documenting" for the SANS 500 Students.
 
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
 RecreateDirectories: true
 Targets:

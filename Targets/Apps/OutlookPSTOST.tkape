@@ -1,6 +1,6 @@
 Description: Outlook PST and OST files
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: f91909c4-bba1-40d6-a3bc-39d060843a09
 RecreateDirectories: true
 Targets:

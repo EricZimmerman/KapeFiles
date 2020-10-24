@@ -1,7 +1,7 @@
 Description: Thor Lite, an IOC and YARA scanner written in Golang
 Category: IOCs
 Author: Jonas A. Wendorf (changes), based on the original for Spark Core by Eric Capuano 
-Version: 1
+Version: 1.0
 Id: bc310a24-c824-464a-abde-077bbe85c949
 BinaryUrl: https://www.nextron-systems.com/thor-lite/
 ExportFormat: csv

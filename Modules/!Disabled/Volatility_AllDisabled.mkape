@@ -1,7 +1,7 @@
 Description: Post-Process memory images with Volatility. The mkape files in this file are disabled by-default because the Volatility plugins have a high runtime and most of them are commonly not used for triage.
 Category: Modules
 Author: Jos Clephas
-Version: 1
+Version: 1.0
 Id: aa982fb9-dc79-4e42-85d8-34079ef9271c
 BinaryUrl: http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip
 ExportFormat: greptext

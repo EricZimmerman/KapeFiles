@@ -1,7 +1,7 @@
 Description: Retrieve NTLM-hashes of all the user accounts
 Category: Passwords
 Author: Banaanhangwagen
-Version: 1
+Version: 1.0
 Id: 899fd6c5-c957-42cf-a4f7-d62f4430b6b2
 BinaryUrl: https://github.com/gentilkiwi/mimikatz/releases
 ExportFormat: txt

@@ -1,6 +1,6 @@
 Description: Memory Files
 Author: Ahmed Elshaer, Teo Kia Meng
-Version: 1
+Version: 1.0
 Id: d9e7fc93-7b63-4286-aa05-27ce3437c9c0
 RecreateDirectories: true
 Targets:

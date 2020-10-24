@@ -1,6 +1,6 @@
 Description: Windows Firewall Logs
 Author: Mike Cary
-Version: 1
+Version: 1.0
 Id: e1c2040e-c1b4-47ef-973f-73a54c5e87ca
 RecreateDirectories: true
 Targets:

@@ -1,7 +1,7 @@
 Description: Parses TaskScheduler-Operational event log using TZWorks evtwalk64
 Category: SystemActivity
 Author: Justin Price
-Version: 1
+Version: 1.0
 Id: 5875f69b-4de1-418b-b306-db49b9fc0072
 BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: csv

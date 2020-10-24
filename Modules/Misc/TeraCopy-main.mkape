@@ -1,7 +1,7 @@
 Description: Parses the main.db for TeraCopy history
 Category: FileKnowledge
 Author: Kevin Pagano
-Version: 1
+Version: 1.0
 Id: 1ae7d97b-cb8e-4e29-8aec-3514f30e6919
 BinaryUrl: https://sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip
 ExportFormat: csv

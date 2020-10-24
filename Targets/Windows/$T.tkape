@@ -1,6 +1,6 @@
 Description: $T
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: 8c568aa0-9a67-4035-9720-1423770bc29a
 RecreateDirectories: true
 Targets:

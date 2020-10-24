@@ -1,7 +1,7 @@
 Description: 'CAFAE: extract registry information'
 Category: Registry
-Author: Scot Downie
-Version: 1
+Author: Scott Downie
+Version: 1.0
 Id: 5405e8ff-e40f-407c-9c73-224b09ef57ba
 BinaryUrl: https://tzworks.net/download_links.php
 ExportFormat: txt

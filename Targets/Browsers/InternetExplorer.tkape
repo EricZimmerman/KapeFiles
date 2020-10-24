@@ -1,6 +1,6 @@
 Description: Internet Explorer
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: b1e1d79b-324d-4587-a002-cc81144588ff
 RecreateDirectories: true
 Targets:

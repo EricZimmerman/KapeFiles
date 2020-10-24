@@ -1,6 +1,6 @@
 Description: Linux on Windows Profile Files
 Author: Troy Larson
-Version: 1
+Version: 1.0
 Id: 9718a129-21f9-4354-a06f-2eddb112ab03
 RecreateDirectories: true
 Targets:
