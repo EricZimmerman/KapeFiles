@@ -1,7 +1,7 @@
 Description: WinPmem Memory Dump
 Category: Memory
 Author: Eric Capuano 
-Version: 3
+Version: 3.0
 Id: 1d284835-417b-459e-a396-d228edea3808
 BinaryUrl: https://github.com/Velocidex/c-aff4/releases/download/3.2/winpmem_3.2.exe
 ExportFormat: dmp
