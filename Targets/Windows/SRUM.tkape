@@ -1,6 +1,6 @@
 Description: System Resource Usage Monitor (SRUM) Data
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 9858f1fc-5e22-46a0-8bfd-c821ac9b4a13
 RecreateDirectories: true
 Targets:

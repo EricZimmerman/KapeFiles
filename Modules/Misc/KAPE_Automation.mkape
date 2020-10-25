@@ -1,7 +1,7 @@
 Description: 'Module to run for KAPE automation'
 Category: --module
 Author: Brian Maloney
-Version: 1
+Version: 1.0
 Id: 06cfa868-31f3-43e9-826a-abd199987770
 ExportFormat: ""
 Processors:

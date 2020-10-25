@@ -1,7 +1,7 @@
 Description: 'iTunes Backup Reader'
 Category: ExternalDevices
 Author: Jack Farley
-Version: 1
+Version: 1.0
 Id: e2dbd037-69b5-476a-bbc6-9bcb737d76d4
 BinaryUrl: https://github.com/jfarley248/iTunes_Backup_Analyzer/releases
 ExportFormat: db

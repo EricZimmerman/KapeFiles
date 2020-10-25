@@ -1,6 +1,6 @@
 Description: VMware - Virtual Machine Memory
 Author: Andrew Rathbun
-Version: 1
+Version: 1.0
 Id: 45945262-2e36-47c7-a36f-3cf4124dbe63
 RecreateDirectories: true
 Targets:

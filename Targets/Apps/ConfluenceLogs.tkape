@@ -1,6 +1,6 @@
 Description: Confluence Log Files
 Author: Eric Capuano
-Version: 1
+Version: 1.0
 Id: 317b3814-b383-4bcf-97a2-3b3d1c5f8ca0
 RecreateDirectories: true
 Targets:

@@ -1,6 +1,6 @@
 Description: Chrome Extension Files
 Author: piesecurity
-Version: 1
+Version: 1.0
 Id: e748b5e3-e279-4e4d-8083-74293e5b6cde
 RecreateDirectories: true
 Targets:

@@ -1,7 +1,7 @@
 Description: Parses TaskScheduler event log using Nirsoft FullEventLogView.exe
 Category: EventLogs
 Author: Hadar Yudovich
-Version: 1
+Version: 1.0
 Id: 8e04da5a-7ee4-4ef6-a4e0-4c68aca39af0
 BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
 ExportFormat: csv

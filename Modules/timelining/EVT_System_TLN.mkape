@@ -1,7 +1,7 @@
 Description: Parses System event log (EVT) into TLN format
 Category: Timeline
 Author: Mari DeGrazia
-Version: 1
+Version: 1.0
 Id: f3d7f0ae-f42e-4f4d-b50f-e037f3955971
 BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/evtparse.exe
 ExportFormat: csv

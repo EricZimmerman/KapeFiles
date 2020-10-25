@@ -1,6 +1,6 @@
 Description: EncapsulationLogging
 Author: Troy Larson
-Version: 1
+Version: 1.0
 Id: 7c328d9b-4a10-459d-b8b3-36d81686bc74
 RecreateDirectories: true
 Targets:

@@ -1,6 +1,6 @@
 Description: Apache Access Log
 Author: Hadar Yudovich
-Version: 1
+Version: 1.0
 Id: 6ad85ab3-701a-409c-98b8-ea4ef806cdf0
 RecreateDirectories: true
 Targets:

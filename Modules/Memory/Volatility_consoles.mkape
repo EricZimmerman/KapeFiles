@@ -1,7 +1,7 @@
 Description: Post-Process memory images with Volatility
 Category: Memory
 Author: Jos Clephas
-Version: 1
+Version: 1.0
 Id: cdc796f3-6627-496c-9636-d51db65f636c
 BinaryUrl: http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_win64_standalone.zip
 ExportFormat: greptext

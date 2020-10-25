@@ -1,6 +1,6 @@
 Description: Live User Files
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 2a5cb2e6-20e0-495b-9b6d-8728ac210584
 RecreateDirectories: true
 Targets:

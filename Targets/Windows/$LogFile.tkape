@@ -1,6 +1,6 @@
 Description: $LogFile
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: b98612e0-f679-400a-954f-c0b2bc86147b
 RecreateDirectories: true
 Targets:

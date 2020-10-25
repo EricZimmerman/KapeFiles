@@ -1,6 +1,6 @@
 Description: FileZilla XML and SQLite Log Files
 Author: Dennis Reneau
-Version: 1
+Version: 1.0
 Id: f7eaa0d5-0b15-4578-b411-ac4226e13a7f
 RecreateDirectories: true
 Targets:

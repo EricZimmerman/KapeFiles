@@ -1,6 +1,6 @@
 Description: $Boot
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: 9f24d727-fcf0-492d-97cc-108472eb4e00
 RecreateDirectories: true
 Targets:

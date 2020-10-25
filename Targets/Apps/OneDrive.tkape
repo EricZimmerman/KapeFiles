@@ -1,6 +1,6 @@
 Description: Microsoft OneDrive Storage Files and Metadata
 Author: Chad Tilbury
-Version: 1
+Version: 1.0
 Id: f3c680ca-0646-48cc-a471-5f484e22b1cf
 RecreateDirectories: true
 Targets:

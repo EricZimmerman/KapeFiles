@@ -1,7 +1,7 @@
 Description: Parses the history file databases for TeraCopy history
 Category: FileKnowledge
 Author: Kevin Pagano
-Version: 1
+Version: 1.0
 Id: d77856a2-b657-4be7-88a8-5dffc32e8983
 BinaryUrl: https://sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip
 ExportFormat: csv

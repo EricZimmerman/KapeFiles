@@ -1,7 +1,7 @@
 Description: LogParser Apache Access Log
 Category: Webservers
 Author: Hadar Yudovich
-Version: 1
+Version: 1.0
 Id: 631ac549-9ddf-48ea-b95b-ca4678230df6
 BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 ExportFormat: csv

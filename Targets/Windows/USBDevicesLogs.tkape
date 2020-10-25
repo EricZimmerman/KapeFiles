@@ -1,6 +1,6 @@
 Description: USB devices log files
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: 07ee308f-c79a-47de-a431-c93ab34e4b66
 RecreateDirectories: true
 Targets:

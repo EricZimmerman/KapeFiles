@@ -1,6 +1,6 @@
 Description: Office Document Cache
 Author: Banaanhangwagen
-Version: 1
+Version: 1.0
 Id: 15e92d9c-b02d-4cdf-a86e-bafb3d25af5c
 RecreateDirectories: true
 Targets:

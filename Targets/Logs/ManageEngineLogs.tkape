@@ -1,6 +1,6 @@
 Description: ManageEngine Desktop Central Log Files
 Author: Whitney Champion
-Version: 1
+Version: 1.0
 Id: c034ee17-a97f-48a1-b720-c73867ed66e6
 RecreateDirectories: true
 Targets:

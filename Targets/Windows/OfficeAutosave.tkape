@@ -1,6 +1,6 @@
 Description: Office Autosave
 Author: Russ Taylor
-Version: 1
+Version: 1.0
 Id: 71f1efe7-37be-4285-9896-11f0f6be2770
 RecreateDirectories: true
 Targets:

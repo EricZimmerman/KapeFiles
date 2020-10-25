@@ -1,6 +1,6 @@
 Description: Exchange Client Access Log Files
 Author: Keith Twombley
-Version: 1
+Version: 1.0
 Id: 9e802154-53eb-4cc9-9cca-d2e39f3227d7
 RecreateDirectories: true
 Targets:
