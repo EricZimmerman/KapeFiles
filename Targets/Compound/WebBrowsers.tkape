@@ -24,3 +24,7 @@ Targets:
         Name: Opera
         Category: Communications
         Path: Opera.tkape
+    -
+        Name: Puffin Secure Browser
+        Category: Communications
+        Path: PuffinSecureBrowser.tkape
