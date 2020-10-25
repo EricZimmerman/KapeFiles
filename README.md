@@ -41,7 +41,7 @@ It is also possible to attend KAPE training from Kroll instructors. Details can 
 
 ### NOTE: We have clarified KAPE usage permissions for commercial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md).
 
-# Downloading Kape Files for Kape
+# Downloading KAPE Files for KAPE
 
 To download the latest files, click the "Sync with Github" button in gkape.exe or run `kape.exe --sync`
 
