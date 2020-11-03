@@ -2,7 +2,7 @@ Description: Slack
 Author: Andrew Rathbun
 Version: 1.0
 Id: 67ec52aa-1a0e-4dfa-8b9f-8d94de28b02f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Slack - Chat Logs

@@ -2,7 +2,7 @@ Description: Windows Error Reporting
 Author: Troy Larson
 Version: 1.0
 Id: 03106a1c-e1f8-4075-abdb-f9c83078347d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: WER Files

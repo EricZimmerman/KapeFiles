@@ -2,7 +2,7 @@ Description: Gigatribe Files
 Author: Linus Nissi
 Version: 2.0
 Id: 64726d74-1a68-463a-bb26-929054a20b71
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Gigatribe Files Windows Vista/7/8/10

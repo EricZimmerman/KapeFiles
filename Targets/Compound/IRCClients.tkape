@@ -2,7 +2,7 @@ Description: IRC Clients
 Author: Andrew Rathbun
 Version: 1.0
 Id: 295e5eeb-a836-4ff8-88b7-1caf47c95701
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: HexChat

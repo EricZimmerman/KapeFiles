@@ -2,7 +2,7 @@ Description: SUSE Linux Enterprise Server on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 367ab533-8f34-4913-b145-8052294ad633
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: SUSE Linux Enterprise Server WSL /etc/os-release

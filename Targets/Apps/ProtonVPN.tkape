@@ -2,7 +2,7 @@ Description: ProtonVPN
 Author: Andrew Rathbun
 Version: 1.0
 Id: 47dc8f4d-633d-4dcc-994d-2d62c3fa9c28
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ProtonVPN - Connection Logs

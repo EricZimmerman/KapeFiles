@@ -2,7 +2,7 @@ Description: Windows Defender Data
 Author: Drew Ervin
 Version: 1.0
 Id: 061aa929-292b-4d7f-a4af-a3fe2673a3e5
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Windows Defender Logs

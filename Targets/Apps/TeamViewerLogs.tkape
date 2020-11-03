@@ -2,7 +2,7 @@ Description: Team Viewer Logs
 Author: Hadar Yudovich
 Version: 1.1
 Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: TeamViewer Connection Logs

@@ -2,7 +2,7 @@ Description: Cloud Storage Contents and Metadata
 Author: Chad Tilbury and Andrew Rathbun
 Version: 1.1
 Id: 29984028-0f42-4922-8a3f-752341f5852c
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Box

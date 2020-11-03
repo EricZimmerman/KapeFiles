@@ -2,7 +2,7 @@ Description: Avira Logs
 Author: Fabian Murer
 Version: 1.0
 Id: f977c6c9-378b-4812-a5ca-1f6c5fe57b18
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Avira Activity Logs

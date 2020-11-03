@@ -2,7 +2,7 @@ Description: RDP Logs
 Author: Drew Ervin
 Version: 1.0
 Id: 6fa6ac8c-d940-4658-9c61-fdad4cf6416b
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: RemoteConnectionManager Event Logs

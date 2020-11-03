@@ -2,7 +2,7 @@ Description: XYplorer
 Author: Andrew Rathbun
 Version: 1.0
 Id: b350302a-bf5a-4908-a6c5-9e3418aca23c
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: XYplorer - .ini file

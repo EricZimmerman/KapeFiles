@@ -2,7 +2,7 @@ Description: Event logs
 Author: Eric Zimmerman
 Version: 1.0
 Id: d95784d9-bd1c-472b-aeef-de5d9ecc7aaa
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Event logs XP

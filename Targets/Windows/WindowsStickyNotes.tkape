@@ -2,7 +2,7 @@ Description: Windows Sticky Notes
 Author: Andrew Rathbun
 Version: 1.0
 Id: 759b36a9-3637-474e-9bc4-88dd4d54472e
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Windows Sticky Notes - Windows 7, 8, and 10 version 1511 and earlier

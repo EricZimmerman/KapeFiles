@@ -2,7 +2,7 @@ Description: Amcache.hve
 Author: Eric Zimmerman
 Version: 1.0
 Id: 0d93d3fc-1b09-4894-b21f-dddc7f269934
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: RecentFileCache

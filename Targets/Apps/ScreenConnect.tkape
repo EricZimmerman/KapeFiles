@@ -2,7 +2,7 @@ Description: ScreenConnect Data (now known as ConnectWise Control)
 Author: Drew Ervin
 Version: 1.0
 Id: 26c80b79-b3c0-4378-abe8-a5a6c9aebb4f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ScreenConnect Session Database

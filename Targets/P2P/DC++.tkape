@@ -2,7 +2,7 @@ Description: DC++
 Author: Andrew Rathbun
 Version: 1.0
 Id: 577569f8-e10f-4513-9c59-19d17a10eccb
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: DC++ Chat Logs

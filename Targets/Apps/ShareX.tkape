@@ -2,7 +2,7 @@ Description: ShareX
 Author: Andrew Rathbun
 Version: 1.0
 Id: a8409b28-70ac-4961-a1d0-94bdf1b3e7e2
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ShareX

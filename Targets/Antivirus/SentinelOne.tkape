@@ -2,7 +2,7 @@ Description: Sentinel One Logs
 Author: Kirtan Shah
 Version: 1.0
 Id: b658aca2-8a69-440d-83ac-b81666a6484d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: SentinelOne EDR Log

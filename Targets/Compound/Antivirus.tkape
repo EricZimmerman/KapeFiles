@@ -2,7 +2,7 @@ Description: Antivirus
 Author: Andrew Rathbun
 Version: 1.0
 Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Avast

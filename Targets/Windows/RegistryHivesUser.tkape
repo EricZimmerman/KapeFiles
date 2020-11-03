@@ -2,7 +2,7 @@ Description: User Related Registry hives
 Author: Eric Zimmerman / Mark Hallman
 Version: 1.0
 Id: 635fbfd3-4a47-45b5-aae4-0a1bb6545d08
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ntuser.dat registry hive XP

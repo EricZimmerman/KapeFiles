@@ -2,7 +2,7 @@ Description: Aspera Connect Log Files
 Author: Dennis Reneau
 Version: 1.0
 Id: 1f311765-a5c0-496a-a5d5-e79cbd0702e2
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Aspera Client Logs

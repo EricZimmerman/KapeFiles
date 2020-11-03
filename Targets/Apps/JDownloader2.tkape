@@ -2,7 +2,7 @@ Description: JDownloader 2
 Author: Matt Dawson
 Version: 1.0
 Id: 41b218bd-c886-442d-b3a6-7a18a1cd4091
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: JDownloader 2.0 Download Lists

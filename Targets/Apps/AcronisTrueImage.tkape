@@ -2,7 +2,7 @@ Description: Acronis True Image
 Author: Andrew Rathbun
 Version: 1.0
 Id: 4f984e18-81fb-4520-9a01-69bf77a0f459
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Acronis True Image - Logs

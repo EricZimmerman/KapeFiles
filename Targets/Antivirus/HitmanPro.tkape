@@ -2,7 +2,7 @@ Description: HitmanPro Antivirus Data
 Author: Drew Ervin
 Version: 1.0
 Id: db98e01b-bd07-4b40-a6ef-e75bdef39bb2
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: HitmanPro Logs

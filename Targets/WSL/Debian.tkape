@@ -2,7 +2,7 @@ Description: Debian on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 3629bafb-16b5-41de-988f-6961c6d3b6e1
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Debian WSL /etc/debian_version

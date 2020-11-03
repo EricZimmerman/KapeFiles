@@ -2,7 +2,7 @@ Description: Skype
 Author: Eric Zimmerman
 Version: 3.0
 Id: d7b0b49c-16bb-4b32-9f57-2d918acaebbc
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: main.db (App <v12)

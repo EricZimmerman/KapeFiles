@@ -2,7 +2,7 @@ Description: Telegram Desktop
 Author: Simone Marinari
 Version: 1.0
 Id: 7f836137-1479-46b4-91a9-83624b8a8e26
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Telegram app folder

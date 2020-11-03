@@ -2,7 +2,7 @@ Description: System level/related Registry hives
 Author: Eric Zimmerman / Mark Hallman
 Version: 1.0
 Id: 2b7f40fd-cd02-47da-87da-9966fa5d8159
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: SAM registry transaction files

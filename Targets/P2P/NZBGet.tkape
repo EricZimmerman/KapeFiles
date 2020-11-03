@@ -2,7 +2,7 @@ Description: NZBGet
 Author: Andrew Rathbun
 Version: 1.0
 Id: 2c6ffe1d-f884-4065-a4e7-f81dd0d50ea7
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Usenet Clients - NZBGet Log File

@@ -2,7 +2,7 @@ Description: Kape Triage collections that will collect most of the files needed 
 Author: Scott Downie
 Version: 2.0
 Id: a745b730-d6b7-4cb7-9847-4e896d9f3c52
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: FileSystem

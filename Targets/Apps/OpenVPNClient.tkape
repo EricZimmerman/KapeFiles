@@ -2,7 +2,7 @@ Description: OpenVPN Client Config and Log
 Author: Mathias Frank
 Version: 1.0
 Id: 03920e05-c794-46d1-b2cd-5e1febd0fdaf
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: OpenVPN Client Config

@@ -2,7 +2,7 @@ Description: Shareaza
 Author: Andrew Rathbun
 Version: 1.0
 Id: 3d3203ae-e753-4c37-ac82-d67735972d44
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Shareaza Logs

@@ -2,7 +2,7 @@ Description: Symantec AV Logs
 Author: Brian Maloney
 Version: 1.2
 Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Symantec Endpoint Protection Logs (XP)

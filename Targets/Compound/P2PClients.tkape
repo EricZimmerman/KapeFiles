@@ -2,7 +2,7 @@ Description: P2P Clients
 Author: Andrew Rathbun
 Version: 1.0
 Id: 4357b5ff-0bd4-41c0-a644-463ea0e14c48
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: DC++

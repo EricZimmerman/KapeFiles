@@ -2,7 +2,7 @@ Description: Mattermost
 Author: Andrew Rathbun
 Version: 1.0
 Id: 4adb02a8-149f-4aab-b570-98b02ee0b618
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Mattermost - Chat Logs

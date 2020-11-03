@@ -2,7 +2,7 @@ Description: Kali on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 6ea14af7-6217-4a39-9455-76ab5a1c0b2d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Kali WSL /etc/debian_version

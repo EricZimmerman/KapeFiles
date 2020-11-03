@@ -2,7 +2,7 @@ Description: Collects VirtualBox log files
 Author: Matt Dawson
 Version: 1.0
 Id: 3d5398fc-5774-4329-a268-29ed1a6d4d9e
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: VirtualBox Logs

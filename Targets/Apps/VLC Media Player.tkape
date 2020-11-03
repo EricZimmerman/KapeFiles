@@ -2,7 +2,7 @@ Description: VLC Media Player
 Author: Matt Dawson
 Version: 1.0
 Id: f7187e39-0410-41cb-b7e0-243d92090c9c
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: VLC Recently Opened Files

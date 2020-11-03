@@ -2,7 +2,7 @@ Description: Browser Caches
 Author: Bjorn Vanhaeren
 Version: 1.0
 Id: bbb89525-6b8d-41f6-acdf-a4f513455703
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Chrome Cache Folder

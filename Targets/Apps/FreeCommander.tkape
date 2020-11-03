@@ -2,7 +2,7 @@ Description: FreeCommander XE
 Author: Andrew Rathbun
 Version: 1.0
 Id: 418ce15d-2400-4deb-b7bf-546a99095804
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Free Commander - FreeCommander.ini

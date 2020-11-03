@@ -2,7 +2,7 @@ Description: Usenet Clients
 Author: Andrew Rathbun
 Version: 1.0
 Id: 2aef5440-16f8-4720-ae40-c2cad380da8d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: NewsbinPro

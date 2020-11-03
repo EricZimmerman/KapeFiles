@@ -2,7 +2,7 @@ Description: MS SQL ErrorLogs
 Author: Troy Larson
 Version: 1.0
 Id: cb789cbf-bf4a-4491-b6d9-9e2d002bd85e
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: MS SQL Errorlog

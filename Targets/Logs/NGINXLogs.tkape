@@ -2,7 +2,7 @@ Description: NGINX Log Files
 Author: Eric Capuano
 Version: 1.0
 Id: d5c2cfd9-a8a5-400e-8be5-a8e9b5653a51
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: NGINX Log Files
