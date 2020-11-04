@@ -2,7 +2,7 @@ Description: Notepad++ Backups, recently searched/replaced terms and recently op
 Author: Banaanhangwagen and Matt Dawson
 Version: 2.0
 Id: dc6c1009-2d0a-4ead-99f0-d1f3a5380751
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Notepad++ Unsaved Edits

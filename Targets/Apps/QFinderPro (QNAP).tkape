@@ -2,7 +2,7 @@ Description: QFinderPro (QNAP)
 Author: Andrew Rathbun
 Version: 1.0
 Id: 7323637e-de45-47c4-8f2f-6b11a4f82919
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: QFinderPro

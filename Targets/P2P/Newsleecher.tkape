@@ -2,7 +2,7 @@ Description: Newsleecher
 Author: Andrew Rathbun
 Version: 1.0
 Id: 82920bd3-68bf-42c5-ba3c-55d59af35f64
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Usenet Clients - Newsleecher

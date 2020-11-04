@@ -2,7 +2,7 @@ Description: File Explorer Replacements
 Author: Andrew Rathbun
 Version: 1.0
 Id: 8e1cb436-dada-413f-845d-f2ed0823cb3a
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Directory Opus

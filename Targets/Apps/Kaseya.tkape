@@ -2,7 +2,7 @@ Description: Kaseya Data
 Author: Drew Ervin
 Version: 1.0
 Id: bb83f860-5a10-4471-821e-9ef4ab6f856c
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Kaseya Live Connect Logs (XP)

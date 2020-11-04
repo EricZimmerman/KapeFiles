@@ -2,7 +2,7 @@ Description: Virtual Disks
 Author: Phill Moore
 Version: 1.0
 Id: 283fd2b7-b914-4683-85b4-40dd3fefecbb
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: VHD

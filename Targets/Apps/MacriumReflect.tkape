@@ -2,7 +2,7 @@ Description: Macrium Reflect
 Author: Andrew Rathbun
 Version: 1.0
 Id: def63ed5-a10d-4508-9c6b-d32658de8dbd
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Macrium Reflect

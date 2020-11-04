@@ -2,7 +2,7 @@ Description: Mozilla Thunderbird Email Client
 Author: Matt Dawson
 Version: 1.0
 Id: e9a06689-bbd9-4540-be17-2633d9b7412c
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Mozilla Thunderbird Install Date

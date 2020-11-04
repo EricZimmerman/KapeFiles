@@ -2,7 +2,7 @@ Description: $J
 Author: Eric Zimmerman
 Version: 1.0
 Id: 2a9c6f80-250b-42a6-9d29-90cb0a20f7be
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: $J

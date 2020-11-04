@@ -2,7 +2,7 @@ Description: Windows Your Phone
 Author: Andrew Rathbun
 Version: 1.0
 Id: 2151d28a-3b2b-4784-a91f-72622a97a17b
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Windows Your Phone - All Databases

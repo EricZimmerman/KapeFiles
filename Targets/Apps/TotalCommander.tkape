@@ -2,7 +2,7 @@ Description: Total Commander
 Author: Andrew Rathbun and Jessica Venturo
 Version: 1.1
 Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Total Commander - .ini File

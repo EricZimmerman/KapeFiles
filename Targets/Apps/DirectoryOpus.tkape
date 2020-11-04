@@ -2,7 +2,7 @@ Description: Directory Opus
 Author: Andrew Rathbun
 Version: 1.0
 Id: 31a9022d-bd2e-4031-97c1-046b51bfcc7d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Directory Opus

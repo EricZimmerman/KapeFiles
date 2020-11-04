@@ -2,7 +2,7 @@ Description: Usenet (NZB) Files
 Author: Andrew Rathbun
 Version: 1.0
 Id: bae4da97-b565-4cae-b090-dd992839983f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Usenet (NZB) Files

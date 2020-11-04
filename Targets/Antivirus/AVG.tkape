@@ -2,7 +2,7 @@ Description: AVG Antivirus Data
 Author: Kirtan Shah
 Version: 1.0
 Id: b0a4112d-e7f6-4e47-a186-7459cf8b3ab4
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: AVG AV Logs (XP)

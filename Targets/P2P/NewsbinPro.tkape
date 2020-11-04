@@ -2,7 +2,7 @@ Description: Newsbin Pro
 Author: Andrew Rathbun
 Version: 1.0
 Id: be5a322b-0093-4944-ad6c-5429f176e515
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Usenet Clients - Newsbin Pro

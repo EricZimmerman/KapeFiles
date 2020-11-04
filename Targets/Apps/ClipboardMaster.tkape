@@ -2,7 +2,7 @@ Description: ClipboardMaster
 Author: Andrew Rathbun
 Version: 1.0
 Id: 43decd24-2ab6-40cc-9b78-23c7f720906b
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ClipboardMaster - Clipboard History - Text

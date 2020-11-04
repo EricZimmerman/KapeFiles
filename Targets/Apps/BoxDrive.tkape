@@ -2,7 +2,7 @@ Description: Box Cloud Storage Files and Metadata
 Author: Chad Tilbury
 Version: 1.0
 Id: 2e3bee53-24b6-4867-8510-7da07d353abc
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Box User Files

@@ -2,7 +2,7 @@ Description: Free Download Manager
 Author: Matt Dawson
 Version: 1.0
 Id: 328c98bc-f5f8-4aff-93c1-53fbf02f5ec7
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: FDM Database

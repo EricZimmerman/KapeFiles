@@ -2,7 +2,7 @@ Description: Chrome
 Author: Eric Zimmerman
 Version: 1.1
 Id: a56d0a8f-3229-489e-aea7-353d1f6f9639
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Chrome bookmarks XP

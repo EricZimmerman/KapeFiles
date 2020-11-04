@@ -2,7 +2,7 @@ Description: Double Commander
 Author: Andrew Rathbun
 Version: 1.0
 Id: 80c608ac-0be4-4bbf-a09e-97d2f6cb90f4
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Double Commander - history.xml

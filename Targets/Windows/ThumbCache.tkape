@@ -2,7 +2,7 @@ Description: Thumbcache DB
 Author: Eric Zimmerman
 Version: 1.0
 Id: 1eec8849-b6eb-475b-a700-f4fb0055356d
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Thumbcache DB

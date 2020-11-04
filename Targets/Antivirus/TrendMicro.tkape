@@ -2,7 +2,7 @@ Description: Trend Micro Data
 Author: Drew Ervin
 Version: 1.0
 Id: 73f8ccea-61cf-4993-aa26-e5cad4f8cc8f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -    
         Name: Trend Micro Logs

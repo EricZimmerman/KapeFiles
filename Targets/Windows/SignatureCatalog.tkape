@@ -2,7 +2,7 @@ Description: Obtain detached signature catalog files
 Author: Mike Pilkington
 Version: 1.0
 Id: 953b16e8-69ea-4967-9f9b-bcfa4f4fbe7b
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: SignatureCatalog

@@ -2,7 +2,7 @@ Description: Ubuntu on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 08b27869-b454-403a-84af-2aa1f2f69a37
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Ubuntu WSL /etc/os-release

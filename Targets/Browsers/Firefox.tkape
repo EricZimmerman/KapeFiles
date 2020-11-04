@@ -2,7 +2,7 @@ Description: Firefox
 Author: Eric Zimmerman
 Version: 1.1
 Id: 28801734-b95a-47e7-b84f-4ebd0c104862
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Places

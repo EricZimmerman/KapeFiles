@@ -2,7 +2,7 @@ Description: Pulls Everything.db from AppData folder for use with Everything (Vo
 Author: Andrew Rathbun
 Version: 1.1
 Id: d63046dd-1d8c-4f4f-acd0-4c1ea3415b0f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Everything (VoidTools)

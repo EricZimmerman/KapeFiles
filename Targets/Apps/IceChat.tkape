@@ -2,7 +2,7 @@ Description: IceChat
 Author: Andrew Rathbun
 Version: 1.0
 Id: 4c437510-9fba-4d36-8070-0a14c29f1033
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: IceChat Chat Logs

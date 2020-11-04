@@ -2,7 +2,7 @@ Description: Puffin Secure Browser
 Author: Andrew Rathbun
 Version: 1.0
 Id: 0adfdd1e-16e7-4b2e-808a-8643f42ebe16
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Puffin - data.db

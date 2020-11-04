@@ -2,7 +2,7 @@ Description: ViberPC Messaging App
 Author: Matt Dawson
 Version: 1.0
 Id: 61e74d50-5e97-4bc8-a78b-c2fb393d2f9f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Viber Config Database

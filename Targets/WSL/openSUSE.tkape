@@ -2,7 +2,7 @@ Description: openSUSE on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 9b3ad543-b86b-4a9c-b305-ed9dac48ab86
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: openSUSE WSL /etc/os-release

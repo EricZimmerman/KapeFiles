@@ -2,7 +2,7 @@ Description: Fences
 Author: Andrew Rathbun
 Version: 1.0
 Id: fbfd4a5b-130c-437b-b896-769813fd23e1
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Fences - Desktop Screenshots

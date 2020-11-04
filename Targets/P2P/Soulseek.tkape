@@ -2,7 +2,7 @@ Description: Soulseek
 Author: Andrew Rathbun
 Version: 1.1
 Id: c68061f4-9f79-4d7d-9e95-30636103ed19
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Soulseek Chat Logs

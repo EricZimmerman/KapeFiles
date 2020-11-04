@@ -2,7 +2,7 @@ Description: Evernote
 Author: Matt Dawson
 Version: 1.0
 Id: acea0975-6610-4813-8a27-8e78186c87d5
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
    -
         Name: Evernote Accounts

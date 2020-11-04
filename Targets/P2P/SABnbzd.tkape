@@ -2,7 +2,7 @@ Description: SABnbzd
 Author: Andrew Rathbun
 Version: 1.0
 Id: 315fb563-fe32-4efb-a1b8-1be4d05023ef
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Usenet Clients - SABnzbd Download Logs

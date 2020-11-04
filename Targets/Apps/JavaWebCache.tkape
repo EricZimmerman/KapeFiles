@@ -2,7 +2,7 @@ Description: Java WebStart Cache - (IDX Files)
 Author: piesecurity
 Version: 1.0
 Id: 4dc2e35c-fc20-45f6-89a6-5d729596c522
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Java WebStart Cache User Level - Default

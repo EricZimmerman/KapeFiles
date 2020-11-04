@@ -2,7 +2,7 @@ Description: Avast Antivirus Data
 Author: Drew Ervin
 Version: 1.0
 Id: 8b625ea2-fafa-46be-8ba1-15efd1de2a53
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Avast AV Logs (XP)

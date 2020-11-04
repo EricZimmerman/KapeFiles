@@ -2,7 +2,7 @@ Description: Snagit
 Author: Andrew Rathbun
 Version: 1.0
 Id: b2281102-476c-4aa2-804d-4c906a20415a
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Snagit - Captures

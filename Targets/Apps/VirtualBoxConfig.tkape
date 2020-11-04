@@ -2,7 +2,7 @@ Description: Collects VirtualBox configuration files
 Author: Matt Dawson
 Version: 1.0
 Id: 0983f8c9-721b-4dd5-b4d2-f16ee289b1c3
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: VirtualBox VM configs

@@ -2,7 +2,7 @@ Description: F-Secure Antivirus Data
 Author: Drew Ervin
 Version: 1.0
 Id: 8bfd6f82-f867-4ce2-89ac-22802ff9a15f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: F-Secure Logs

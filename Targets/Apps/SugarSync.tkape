@@ -2,7 +2,7 @@ Description: SugarSync
 Author: Andrew Rathbun
 Version: 1.0
 Id: 91e7965c-d9ed-440e-93b7-65d7ebdb3584
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: SugarSync Log File

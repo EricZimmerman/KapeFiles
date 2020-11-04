@@ -2,7 +2,7 @@ Description: FrostWire
 Author: Andrew Rathbun
 Version: 1.0
 Id: 7e78190f-e21e-4d55-ae8a-a84e130fb1b1
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: FrostWire Downloads

@@ -2,7 +2,7 @@ Description: Runs all VMware modules to collect VMware VM config files, logs and
 Author: Matt Dawson
 Version: 1.0
 Id: 386c40b5-8fc4-495e-b34e-47508e6c3f73
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: VMware Inventory

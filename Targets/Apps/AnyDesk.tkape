@@ -2,7 +2,7 @@ Description: AnyDesk
 Author: Andrew Rathbun
 Version: 1.0
 Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: AnyDesk Logs
