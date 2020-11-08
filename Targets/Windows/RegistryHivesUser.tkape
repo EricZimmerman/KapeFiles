@@ -12,12 +12,12 @@ Targets:
     -
         Name: ntuser.dat registry hive
         Category: Registry
-        Path: \%user%\
+        Path: C:\users\%user%\
         FileMask: ntuser.dat
     -
         Name: ntuser.dat registry transaction files
         Category: Registry
-        Path: \%user%\
+        Path: C:\users\%user%\
         FileMask: ntuser.dat.LOG*
     -
         Name: ntuser.dat DEFAULT registry hive
@@ -32,11 +32,11 @@ Targets:
     -
         Name: UsrClass.dat registry hive
         Category: Registry
-        Path: \%user%\AppData\Local\Microsoft\Windows\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat
     -
         Name: UsrClass.dat registry transaction files
         Category: Registry
-        Path: \%user%\AppData\Local\Microsoft\Windows\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat.LOG*
  

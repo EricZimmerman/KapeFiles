@@ -7,5 +7,5 @@ Targets:
     -
         Name: mIRC Chat Logs
         Category: Communications
-        Path: \%user%\AppData\Roaming\mIRC\logs\
+        Path: C:\users\%user%\AppData\Roaming\mIRC\logs\
         Recursive: True

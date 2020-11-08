@@ -17,7 +17,7 @@ Targets:
     -
         Name: Avast AV User Logs
         Category: Antivirus
-        Path: \%user%\Avast Software\Avast\Log\
+        Path: C:\users\%user%\Avast Software\Avast\Log\
         Recursive: True
     -
         Name: Avast AV Index

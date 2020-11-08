@@ -7,16 +7,16 @@ Targets:
     -
         Name: OneDrive User Files
         Category: Apps
-        Path: \%user%\OneDrive*\
+        Path: C:\users\%user%\OneDrive*\
         Recursive: True
         Comment: "Caution -- This target will collect OneDrive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
     -
         Name: OneDrive Metadata Logs
         Category: Apps
-        Path: \%user%\AppData\Local\Microsoft\OneDrive\logs\
+        Path: C:\users\%user%\AppData\Local\Microsoft\OneDrive\logs\
         Recursive: True
     -
         Name: OneDrive Metadata Settings
         Category: Apps
-        Path: \%user%\AppData\Local\Microsoft\OneDrive\settings\
+        Path: C:\users\%user%\AppData\Local\Microsoft\OneDrive\settings\
         Recursive: True

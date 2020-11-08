@@ -17,6 +17,6 @@ Targets:
     -
         Name: LogMeIn Application Logs
         Category: ApplicationLogs
-        Path: \%user%\AppData\Local\temp\LogMeInLogs\
+        Path: C:\users\%user%\AppData\Local\temp\LogMeInLogs\
         Recursive: True
         Comment: "Contains RemoteAssist (formerly GoToAssist), GoToMeeting, and other GoTo* logs"

@@ -7,9 +7,9 @@ Targets:
     -
         Name: TorrentClients - qBittorrent
         Category: FileDownload
-        Path: \%user%\AppData\Roaming\qBittorrent\
+        Path: C:\users\%user%\AppData\Roaming\qBittorrent\
         FileMask: '*.ini'
     -
         Name: TorrentClients - qBittorrent
         Category: FileDownload
-        Path: \%user%\AppData\Local\qBittorrent\logs\
+        Path: C:\users\%user%\AppData\Local\qBittorrent\logs\

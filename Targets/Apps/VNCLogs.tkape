@@ -7,7 +7,7 @@ Targets:
     -
         Name: RealVNC Log
         Category: ApplicationLogs
-        Path: \%user%\AppData\Local\RealVNC\
+        Path: C:\users\%user%\AppData\Local\RealVNC\
         FileMask: vncserver.log
         Comment: "https://www.realvnc.com/en/connect/docs/logging.html#logging"
     -

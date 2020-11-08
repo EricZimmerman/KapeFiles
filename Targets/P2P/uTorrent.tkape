@@ -7,5 +7,5 @@ Targets:
     -
         Name: TorrentClients - uTorrent
         Category: FileDownload
-        Path: \%user%\AppData\Roaming\uTorrent\
+        Path: C:\users\%user%\AppData\Roaming\uTorrent\
         FileMask: '*.dat'

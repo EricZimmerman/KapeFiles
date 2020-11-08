@@ -7,20 +7,20 @@ Targets:
     -
         Name: Word Autosave Location
         Category: FileKnowledge
-        Path: \%user%\AppData\Roaming\Microsoft\Word\
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Word\
         Recursive: True
     -
         Name: Excel Autosave Location
         Category: ApplicationCompatibility
-        Path: \%user%\AppData\Roaming\Microsoft\Excel\
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Excel\
         Recursive: True
     -
         Name: Powerpoint Autosave Location
         Category: FileKnowledge
-        Path: \%user%\AppData\Roaming\Microsoft\Powerpoint\
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Powerpoint\
         Recursive: True
     -
         Name: Publisher Autosave Location
         Category: FileKnowledge
-        Path: \%user%\AppData\Roaming\Microsoft\Publisher\
+        Path: C:\users\%user%\AppData\Roaming\Microsoft\Publisher\
         Recursive: True

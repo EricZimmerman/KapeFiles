@@ -7,17 +7,17 @@ Targets:
     -
         Name: Chrome Cache Folder
         Category: Communications
-        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\Cache\
+        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Cache\
         Recursive: True
     -
         Name: Firefox Cache Folder
         Category: Communications
-        Path: \%user%\AppData\Local\Mozilla\Firefox\Profiles\*\
+        Path: C:\users\%user%\AppData\Local\Mozilla\Firefox\Profiles\*\
         Recursive: True
     -
         Name: IE 9/10 Cache
         Category: Communications
-        Path: \%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
         Recursive: True
     -
         Name: IE Index.dat temp internet files
@@ -27,9 +27,9 @@ Targets:
     -
         Name: IE 11 Cache
         Category: Communications
-        Path: \%user%\AppData\Local\Microsoft\Windows\INetCache\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCache\
         Recursive: True
     -
         Name: Edge WebcacheV01.dat
         Category: Communications
-        Path: \%user%\AppData\Local\Microsoft\Windows\WebCache\
+        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\

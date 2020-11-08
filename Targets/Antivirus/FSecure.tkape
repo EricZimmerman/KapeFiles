@@ -12,7 +12,7 @@ Targets:
     -
         Name: F-Secure User Logs
         Category: Antivirus
-        Path: \%user%\AppData\Local\F-Secure\Log\
+        Path: C:\users\%user%\AppData\Local\F-Secure\Log\
         Recursive: True
     -
         Name: F-Secure Scheduled Scan Reports

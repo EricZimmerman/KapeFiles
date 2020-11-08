@@ -19,7 +19,7 @@ Targets:
     -
         Name: swapfile.sys
         Category: Memory
-        Path: 
+        Path: C:\
         FileMask: swapfile.sys
         AlwaysAddToQueue: true
     -

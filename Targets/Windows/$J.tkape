@@ -7,14 +7,14 @@ Targets:
     -
         Name: $J
         Category: FileSystem
-        Path: $Extend\
+        Path: C:\$Extend\
         FileMask: $UsnJrnl:$J
         AlwaysAddToQueue: true
         SaveAsFileName: $J
     -
         Name: $Max
         Category: FileSystem
-        Path: $Extend\
+        Path: C:\$Extend\
         FileMask: $UsnJrnl:$Max
         AlwaysAddToQueue: true
         SaveAsFileName: $Max

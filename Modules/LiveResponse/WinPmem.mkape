@@ -21,4 +21,4 @@ Processors:
 # To obtain a compressed AFF4 memory dump, swap `--format raw` for `--format map` in the command line parameter above.
 #
 # Example usage: 
-# kape.exe --tsource C --target EventLogs --tdest "temp\tdest" --module WinPmem --mdest "temp\mdest" --mflush --tflush
+# kape.exe --tsource C --target EventLogs --tdest "C:\temp\tdest" --module WinPmem --mdest "C:\temp\mdest" --mflush --tflush

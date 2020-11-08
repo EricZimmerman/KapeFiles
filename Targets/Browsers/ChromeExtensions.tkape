@@ -7,10 +7,10 @@ Targets:
     -
         Name: Chrome Extension Files
         Category: Communication
-        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
         Recursive: True
     -
         Name: Chrome Extension Files XP 
         Category: Communications
-        Path: Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions\
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions\
         Recursive: True
