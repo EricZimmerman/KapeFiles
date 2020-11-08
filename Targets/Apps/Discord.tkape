@@ -7,12 +7,12 @@ Targets:
     -
         Name: Discord Cache Files
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\discord\cache\
+        Path: C:\Users\%user%\AppData\Roaming\discord\cache\
         Recursive: True
         Comment: "Gets cached data from Discord app"
     -
         Name: Discord Local Storage LevelDB Files
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\discord\local storage\leveldb\
+        Path: C:\Users\%user%\AppData\Roaming\discord\local storage\leveldb\
         Recursive: True
         Comment: "Gets LevelDB database from Discord app"

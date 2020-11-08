@@ -7,12 +7,12 @@ Targets:
     -
         Name: Aspera Client Logs
         Category: FileDownload
-        Path: C:\users\%user%\AppData\Local\Aspera\Aspera Connect\var\log\
+        Path: C:\Users\%user%\AppData\Local\Aspera\Aspera Connect\var\log\
         FileMask: '*.log'
         Recursive: True
     -
         Name: Aspera Server Logs
         Category: FileDownload
-        Path: C:\users\%user%\.aspera\connect\var\log\
+        Path: C:\Users\%user%\.aspera\connect\var\log\
         FileMask: '*.log'
         Recursive: True

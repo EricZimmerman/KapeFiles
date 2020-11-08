@@ -32,39 +32,39 @@ Targets:
     -
         Name: Index.dat Office
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
         FileMask: index.dat
     -
         Name: Local Internet Explorer folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Internet Explorer\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Internet Explorer\
         Recursive: True
     -
         Name: Roaming Internet Explorer folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
         Recursive: True
     -
         Name: IE 9/10 History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\History\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\History\
         Recursive: True
     -
         Name: IE 9/10 Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Cookies\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Cookies\
         Recursive: True
     -
         Name: IE 9/10 Download History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
         Recursive: True
     -
         Name: IE 11 Metadata
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
     -
         Name: IE 11 Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
         Recursive: True

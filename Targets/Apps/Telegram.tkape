@@ -13,7 +13,7 @@ Targets:
     -
         Name: Telegram downloaded files
         Category: Apps
-        Path: C:\users\%user%\Downloads\Telegram Desktop\
+        Path: C:\Users\%user%\Downloads\Telegram Desktop\
         Recursive: True
         Comment: "Chat Attachments"
 

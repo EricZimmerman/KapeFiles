@@ -7,5 +7,5 @@ Targets:
     -
         Name: AppData
         Category: UserData
-        Path: C:\users\%user%\AppData\
+        Path: C:\Users\%user%\AppData\
         Recursive: True

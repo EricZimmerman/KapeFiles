@@ -7,29 +7,29 @@ Targets:
     -
         Name: Dropbox User Files
         Category: Apps
-        Path: C:\users\%user%\Dropbox*\
+        Path: C:\Users\%user%\Dropbox*\
         Recursive: True
     -
         Name: Dropbox Metadata
         Category: Apps
-        Path: C:\users\%user%\AppData\Local\Dropbox\
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
         FileMask: info.json
         Comment: "Getting individual files because folder may contain very large extraneous files"
     -
         Name: Dropbox Metadata
         Category: Apps
-        Path: C:\users\%user%\AppData\Local\Dropbox\*\
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
         FileMask: filecache.dbx
         Comment: "Getting individual files because folder may contain very large extraneous files"
     -
         Name: Dropbox Metadata
         Category: Apps
-        Path: C:\users\%user%\AppData\Local\Dropbox\*\
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
         FileMask: config.dbx
         Comment: "Getting individual files because folder may contain very large extraneous files"
     -
         Name: Windows Protect Folder
         Category: FileSystem
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: True
         Comment: "Required for offline decryption of Dropbox databases"

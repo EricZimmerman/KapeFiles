@@ -7,12 +7,12 @@ Targets:
     -
         Name: Notepad++ Unsaved Edits
         Category: Text Editor
-        Path: C:\users\%user%\AppData\Roaming\Notepad++\backup\
+        Path: C:\Users\%user%\AppData\Roaming\Notepad++\backup\
         Recursive: True
         Comment: "Locates non-saved Notepad++ files and copies them."
     -
         Name: Notepad++ Config
         Category: Text Editor
-        Path: C:\users\%user%\AppData\Roaming\Notepad++\
+        Path: C:\Users\%user%\AppData\Roaming\Notepad++\
         FileMask: "config.xml"
         Comment: "Retrieves config.xml which contains recently searched terms, replaced terms and recently opened documents"

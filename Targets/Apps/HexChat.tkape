@@ -7,5 +7,5 @@ Targets:
     -
         Name: HexChat Chat Logs
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\HexChat\logs\
+        Path: C:\Users\%user%\AppData\Roaming\HexChat\logs\
         Recursive: True
