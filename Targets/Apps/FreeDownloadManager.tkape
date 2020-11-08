@@ -8,7 +8,7 @@ Targets:
         Name: FDM Database
         Category: App
         Path: C:\Users\%user%\AppData\Local\Free Download Manager\
-        Recursive: true
+        Recursive: True
         FileMask: "fdm.sqlite"
         Comment: "fdm.sqlite shows Torrents, downloads, folder history, auth credentials and more. Will also pull fdm.sqlite in db_backup/"
     -

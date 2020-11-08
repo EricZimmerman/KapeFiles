@@ -32,39 +32,39 @@ Targets:
     -
         Name: Index.dat Office
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Path: \%user%\AppData\Roaming\Microsoft\Office\Recent\
         FileMask: index.dat
     -
         Name: Local Internet Explorer folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Internet Explorer\
-        Recursive: true
+        Path: \%user%\AppData\Local\Microsoft\Internet Explorer\
+        Recursive: True
     -
         Name: Roaming Internet Explorer folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
-        Recursive: true
+        Path: \%user%\AppData\Roaming\Microsoft\Internet Explorer\
+        Recursive: True
     -
         Name: IE 9/10 History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\History\
-        Recursive: true
+        Path: \%user%\AppData\Local\Microsoft\Windows\History\
+        Recursive: True
     -
         Name: IE 9/10 Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Cookies\
-        Recursive: true
+        Path: \%user%\AppData\Local\Microsoft\Windows\Cookies\
+        Recursive: True
     -
         Name: IE 9/10 Download History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
-        Recursive: true
+        Path: \%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        Recursive: True
     -
         Name: IE 11 Metadata
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+        Path: \%user%\AppData\Local\Microsoft\Windows\WebCache\
     -
         Name: IE 11 Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
-        Recursive: true
+        Path: \%user%\AppData\Local\Microsoft\Windows\INetCookies\
+        Recursive: True

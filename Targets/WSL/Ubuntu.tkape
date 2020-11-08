@@ -63,28 +63,28 @@ Targets:
         Name: Ubuntu WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bash_history"
     -
         Name: Ubuntu WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bashrc"
     -
         Name: Ubuntu WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".profile"
     -
         Name: Ubuntu WSL User Crontabs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\spool\cron\crontabs\
-        Recursive: true
+        Recursive: True
     -
         Name: Ubuntu WSL Apt Logs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\log\apt\
-        Recursive: true
+        Recursive: True
         FileMask: "*.log"

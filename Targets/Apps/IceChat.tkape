@@ -7,5 +7,5 @@ Targets:
     -
         Name: IceChat Chat Logs
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\IceChat Networks\IceChat\Logs\
-        Recursive: true
+        Path: \%user%\AppData\Local\IceChat Networks\IceChat\Logs\
+        Recursive: True

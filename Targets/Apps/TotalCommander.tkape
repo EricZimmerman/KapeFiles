@@ -27,26 +27,26 @@ Targets:
 #  Path listed for both Left and Right panes - in my testing, this is what folders were currently displayed in each respective pane upon exiting Total Commander
 #  RightHistory and LeftHistory - each of these provide a breadcrumb trail of the user's actions in each respective pain. For example, mine looked like this (0 is most recent):
 #   [RightHistory]
-#   0=c:\Users\%user%\Music\	#0
-#   1=c:\Users\%user%\	#08,Music
-#   2=c:\Users\	#01,%user%
-#   3=c:\	#04,Users
-#   4=c:\Program Files (x86)\Google\
-#   5=c:\Program Files (x86)\	#05,Google
-#   6=c:\Program Files (x86)\BraveSoftware\	#2,CrashReports
-#   7=c:\Program Files (x86)\	#02,BraveSoftware
-#   8=c:\	#2,Program Files (x86)
+#   0=Users\%user%\Music\	#0
+#   1=Users\%user%\	#08,Music
+#   2=Users\	#01,%user%
+#   3=	#04,Users
+#   4=Program Files (x86)\Google\
+#   5=Program Files (x86)\	#05,Google
+#   6=Program Files (x86)\BraveSoftware\	#2,CrashReports
+#   7=Program Files (x86)\	#02,BraveSoftware
+#   8=	#2,Program Files (x86)
 #   [LeftHistory]
-#   0=c:\Users\%user%\Desktop\	#0
-#   1=c:\Users\%user%\	#03,Desktop
-#   2=c:\Users\	#01,%user%
-#   3=c:\	#04,Users
-#   4=c:\Program Files (x86)\Microsoft\
-#   5=c:\Program Files (x86)\	#07,Microsoft
-#   6=c:\	#2,Program Files (x86)
-#   7=c:\Program Files (x86)\	#0
-#   8=c:\Program Files (x86)\BraveSoftware\Brave-Browser\	#0
-#   9=c:\Program Files (x86)\BraveSoftware\	#01,Brave-Browser
-#   10=c:\Program Files (x86)\	#02,BraveSoftware
+#   0=Users\%user%\Desktop\	#0
+#   1=Users\%user%\	#03,Desktop
+#   2=Users\	#01,%user%
+#   3=	#04,Users
+#   4=Program Files (x86)\Microsoft\
+#   5=Program Files (x86)\	#07,Microsoft
+#   6=	#2,Program Files (x86)
+#   7=Program Files (x86)\	#0
+#   8=Program Files (x86)\BraveSoftware\Brave-Browser\	#0
+#   9=Program Files (x86)\BraveSoftware\	#01,Brave-Browser
+#   10=Program Files (x86)\	#02,BraveSoftware
 # The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc. 
 ######

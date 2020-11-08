@@ -8,4 +8,4 @@ Targets:
         Name: WBEM
         Category: WBEM
         Path: C:\Windows*\System32\wbem\Repository\
-        Recursive: true
+        Recursive: True

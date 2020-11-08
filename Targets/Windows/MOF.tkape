@@ -8,5 +8,5 @@ Targets:
         Name: MOF files
         Category: WMI
         Path: C:\
-        Recursive: true
+        Recursive: True
         FileMask: '*.MOF'

@@ -7,5 +7,5 @@ Targets:
     -
         Name: Office Document Cache
         Category: FileKnowledge
-        Path: C:\users\%user%\AppData\Local\Microsoft\Office\*\OfficeFileCache\
-        Recursive: true
+        Path: \%user%\AppData\Local\Microsoft\Office\*\OfficeFileCache\
+        Recursive: True

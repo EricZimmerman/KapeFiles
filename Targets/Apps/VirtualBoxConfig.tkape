@@ -8,13 +8,13 @@ Targets:
         Name: VirtualBox VM configs
         Category: Apps
         Path: C:\
-        Recursive: true
+        Recursive: True
         FileMask: "*.vbox"
         Comment: "Locates all .vbox VM configuration files on disk"
     -
         Name: VirtualBox VM backup configs
         Category: Apps
         Path: C:\
-        Recursive: true
+        Recursive: True
         FileMask: "*.vbox-prev"
         Comment: "Locates all backup .vbox VM configuration files on disk"

@@ -8,17 +8,17 @@ Targets:
         Name: Symantec Endpoint Protection Logs (XP)
         Category: AntiVirus
         Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV\
-        Recursive: true
+        Recursive: True
     -
         Name: Symantec Endpoint Protection Logs
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\
-        Recursive: true
+        Recursive: True
     -
         Name: Symantec Endpoint Protection User Logs
         Category: AntiVirus
-        Path: C:\users\%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\
-        Recursive: true
+        Path: \%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\
+        Recursive: True
     -
         Name: Symantec Event Log Win7+
         Category: EventLogs
@@ -34,10 +34,10 @@ Targets:
         Name: Symantec Endpoint Protection Quarantine (XP)
         Category: AntiVirus
         Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine\
-        Recursive: true
+        Recursive: True
     -
         Name: Symantec Endpoint Protection Quarantine
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
-        Recursive: true
+        Recursive: True
 

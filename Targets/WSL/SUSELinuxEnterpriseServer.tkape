@@ -58,17 +58,17 @@ Targets:
         Name: SUSE Linux Enterprise Server WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bash_history"
     -
         Name: SUSE Linux Enterprise Server WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bashrc"
     -
         Name: SUSE Linux Enterprise Server WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".profile"

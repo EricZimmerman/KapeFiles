@@ -8,9 +8,9 @@ Targets:
         Name: Bitdefender Endpoint Security Logs
         Category: Antivirus
         Path: C:\ProgramData\Bitdefender\Endpoint Security\Logs\
-        Recursive: true
+        Recursive: True
     -
         Name: Bitdefender Internet Security Logs
         Category: Antivirus
         Path: C:\ProgramData\Bitdefender\Desktop\Profiles\Logs\
-        Recursive: true
+        Recursive: True

@@ -8,5 +8,5 @@ Targets:
         Name: Avira Activity Logs
         Category: AntiVirus
         Path: C:\ProgramData\Avira\Antivirus\LOGFILES\
-        Recursive: true
+        Recursive: True
         Comment: "Collects the scan logs of Avira AntiVirus"

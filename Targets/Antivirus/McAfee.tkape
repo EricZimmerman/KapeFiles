@@ -8,24 +8,24 @@ Targets:
         Name: McAfee Desktop Protection Logs XP
         Category: AntiVirus
         Path: C:\Users\All Users\Application Data\McAfee\DesktopProtection\
-        Recursive: true
+        Recursive: True
     -
         Name: McAfee Desktop Protection Logs
         Category: AntiVirus
         Path: C:\ProgramData\McAfee\DesktopProtection\
-        Recursive: true
+        Recursive: True
     -
         Name: McAfee Endpoint Security Logs
         Category: AntiVirus
         Path: C:\ProgramData\McAfee\Endpoint Security\Logs\
-        Recursive: true
+        Recursive: True
     -
         Name: McAfee Endpoint Security Logs
         Category: AntiVirus
         Path: C:\ProgramData\McAfee\Endpoint Security\Logs_Old\
-        Recursive: true
+        Recursive: True
     -
         Name: McAfee VirusScan Logs
         Category: AntiVirus
         Path: C:\ProgramData\Mcafee\VirusScan\
-        Recursive: true
+        Recursive: True

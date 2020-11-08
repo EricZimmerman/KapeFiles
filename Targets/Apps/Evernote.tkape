@@ -8,20 +8,20 @@ Targets:
         Name: Evernote Accounts
         Category: App
         Path: C:\Users\%user%\AppData\Local\Evernote\Evernote\Databases\
-        Recursive: true
+        Recursive: True
         FileMask: ".accounts"
         Comment: "Holds username and email of accounts"
    -
         Name: Evernote Notebooks
         Category: App
         Path: C:\Users\%user%\AppData\Local\Evernote\Evernote\Databases\
-        Recursive: true
+        Recursive: True
         FileMask: "*.exb"
         Comment: "SQLite Database of the notes"
    -
         Name: Evernote Notebook Snippets
         Category: App
         Path: C:\Users\%user%\AppData\Local\Evernote\Evernote\Databases\
-        Recursive: true
+        Recursive: True
         FileMask: "*.exb.snippets"
         Comment: "Note 'Snippets'"

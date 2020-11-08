@@ -8,6 +8,6 @@ Targets:
         Name: SentinelOne EDR Log
         Category: Antivirus
         Path: C:\programdata\sentinel\logs\
-        Recursive: true
+        Recursive: True
         Comment: "Logs are in Binary Format (.binlog)"
     

@@ -8,4 +8,4 @@ Targets:
         Name: BITS files
         Category: Persistence
         Path: C:\ProgramData\Microsoft\Network\Downloader\
-        Recursive: true
+        Recursive: True

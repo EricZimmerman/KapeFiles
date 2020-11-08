@@ -82,81 +82,81 @@ Targets:
     -
         Name: Chrome bookmarks
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Bookmarks*
     -
         Name: Chrome Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Cookies*
     -
         Name: Chrome Current Session
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Current Session
     -
         Name: Chrome Current Tabs
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Current Tabs
     -
         Name: Chrome Favicons
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Favicons*
     -
         Name: Chrome History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: History*
     -
         Name: Chrome Last Session
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Last Session
     -
         Name: Chrome Last Tabs
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Last Tabs
     -
         Name: Chrome Login Data
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Login Data
     -
         Name: Chrome Preferences
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Preferences
     -
         Name: Chrome Shortcuts
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Shortcuts*
     -
         Name: Chrome Top Sites
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Top Sites*
     -
         Name: Chrome bookmarks
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Bookmarks*
     -
         Name: Chrome Visited Links
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Visited Links
     -
         Name: Chrome Web Data
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: \%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Web Data*
     -
         Name: Windows Protect Folder
         Category: FileSystem
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Path: \%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: True
         Comment: "Required for offline decryption"

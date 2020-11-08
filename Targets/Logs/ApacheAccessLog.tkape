@@ -9,4 +9,4 @@ Targets:
         Category: Webservers
         Path: C:\
         FileMask: 'access.log'
-        Recursive: true
+        Recursive: True

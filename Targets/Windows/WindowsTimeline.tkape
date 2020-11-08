@@ -7,5 +7,5 @@ Targets:
     -
         Name: ActivitiesCache.db
         Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        Path: \%user%\AppData\Local\ConnectedDevicesPlatform\*\
         FileMask: ActivitiesCache.db*

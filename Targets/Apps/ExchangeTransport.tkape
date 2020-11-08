@@ -8,6 +8,6 @@ Targets:
         Name: Exchange TransportRoles log files
         Category: Logs
         Path: C:\Program Files\Microsoft\Exchange Server\*\TransportRoles\Logs\
-        Recursive: true
+        Recursive: True
         FileMask: '*.log'
         Comment: "Highly dependent on Exchange configuration"

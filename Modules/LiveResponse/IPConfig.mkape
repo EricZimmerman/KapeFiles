@@ -6,7 +6,7 @@ Id: 5afdfd6b-5ebb-4545-9980-88e6f421e508
 ExportFormat: txt
 Processors:
     -
-        Executable: c:\windows\system32\ipconfig.exe
+        Executable: windows\system32\ipconfig.exe
         CommandLine: /all
         ExportFormat: txt
         ExportFile: ipconfig.txt

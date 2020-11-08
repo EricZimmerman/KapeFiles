@@ -17,10 +17,10 @@ Targets:
     -
         Name: PST
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\
+        Path: \%user%\AppData\Local\Microsoft\Outlook\
         FileMask: '*.pst'
     -
         Name: OST
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\
+        Path: \%user%\AppData\Local\Microsoft\Outlook\
         FileMask: '*.ost'

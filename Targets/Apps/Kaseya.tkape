@@ -8,25 +8,25 @@ Targets:
         Name: Kaseya Live Connect Logs (XP)
         Category: ApplicationLogs
         Path: C:\Documents and Settings\%user%\Application Data\Kaseya\Log\
-        Recursive: true
+        Recursive: True
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
     -
         Name: Kaseya Live Connect Logs
         Category: ApplicationLogs
-        Path: C:\users\%user%\AppData\Local\Kaseya\Log\KaseyaLiveConnect\
-        Recursive: true
+        Path: \%user%\AppData\Local\Kaseya\Log\KaseyaLiveConnect\
+        Recursive: True
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
     -
         Name: Kaseya Agent Endpoint Service Logs (XP)
         Category: ApplicationLogs
         Path: C:\Documents and Settings\All Users\Application Data\Kaseya\Log\Endpoint\
-        Recursive: true
+        Recursive: True
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
     -
         Name: Kaseya Agent Endpoint Service Logs
         Category: ApplicationLogs
         Path: C:\ProgramData\Kaseya\Log\Endpoint\
-        Recursive: true
+        Recursive: True
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
     -
         Name: Kaseya Agent Service Log
@@ -37,7 +37,7 @@ Targets:
     -
         Name: Kaseya Setup Log
         Category: ApplicationLogs
-        Path: C:\users\%user%\AppData\Local\Temp\
+        Path: \%user%\AppData\Local\Temp\
         FileMask: KASetup.log
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
     -

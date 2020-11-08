@@ -8,19 +8,19 @@ Targets:
         Name: AVG AV Logs (XP)
         Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\AVG\Antivirus\log
-        Recursive: true
+        Recursive: True
     -
         Name: AVG AV Report Logs (XP)
         Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\AVG\Antivirus\report
-        Recursive: true
+        Recursive: True
     -
         Name: AVG AV Logs
         Category: Antivirus
         Path: C:\ProgramData\AVG\Antivirus\log
-        Recursive: true
+        Recursive: True
     -
         Name: AVG Report Logs
         Category: Antivirus
         Path: C:\ProgramData\AVG\Antivirus\report
-        Recursive: true
+        Recursive: True

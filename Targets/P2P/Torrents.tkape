@@ -9,4 +9,4 @@ Targets:
         Category: FileDownload
         Path: C:\
         FileMask: '*.torrent'
-        Recursive: true
+        Recursive: True

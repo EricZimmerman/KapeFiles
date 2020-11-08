@@ -7,5 +7,5 @@ Targets:
     -
         Name: Thumbcache DB
         Category: FileKnowledge
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Explorer\
+        Path: \%user%\AppData\Local\Microsoft\Windows\Explorer\
         FileMask: 'thumbcache_*.db'

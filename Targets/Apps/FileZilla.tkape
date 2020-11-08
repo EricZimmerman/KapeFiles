@@ -7,10 +7,10 @@ Targets:
     -
         Name: FileZilla XML Log Files
         Category: Logs
-        Path: C:\users\%user%\AppData\Roaming\FileZilla\
+        Path: \%user%\AppData\Roaming\FileZilla\
         FileMask: '*.xml*'
     -
         Name: FileZilla SQLite3 Log Files
         Category: Logs
-        Path: C:\users\%user%\AppData\Roaming\FileZilla\
+        Path: \%user%\AppData\Roaming\FileZilla\
         FileMask: '*.sqlite3*'

@@ -8,7 +8,7 @@ Targets:
         Name: Windows Defender Logs
         Category: Antivirus
         Path: C:\ProgramData\Microsoft\Microsoft AntiMalware\Support\
-        Recursive: true
+        Recursive: True
     -
         Name: Windows Defender Event Logs
         Category: EventLogs
@@ -18,7 +18,7 @@ Targets:
         Name: Windows Defender Logs
         Category: Antivirus
         Path: C:\ProgramData\Microsoft\Windows Defender\Support\
-        Recursive: true
+        Recursive: True
 
     -
         Name: Windows Defender Logs

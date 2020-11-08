@@ -6,7 +6,7 @@ Id: 6d4ea3be-f634-4809-b7d8-db0d22800737
 ExportFormat: txt
 Processors:
     -
-        Executable: c:\windows\system32\arp.exe
+        Executable: windows\system32\arp.exe
         CommandLine: -a
         ExportFormat: txt
         ExportFile: arp_cache.txt

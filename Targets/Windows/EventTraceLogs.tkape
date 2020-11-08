@@ -13,17 +13,17 @@ Targets:
         Name: WDI Trace Logs 2
         Category: Event Trace Logs
         Path: C:\Windows*\System32\WDI\{*\
-        Recursive: true
+        Recursive: True
     -
         Name: WMI Trace Logs
         Category: Event Trace Logs
         Path: C:\Windows*\System32\LogFiles\WMI\
-        Recursive: true
+        Recursive: True
     -
         Name: SleepStudy Trace Logs
         Category: Event Trace Logs
         Path: C:\Windows*\System32\SleepStudy\
-        Recursive: true
+        Recursive: True
     -
         Name: Energy-NTKL Trace Logs
         Category: Event Trace Logs

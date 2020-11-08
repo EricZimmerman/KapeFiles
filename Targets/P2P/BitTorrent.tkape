@@ -7,5 +7,5 @@ Targets:
     -
         Name: TorrentClients - BitTorrent
         Category: FileDownload
-        Path: C:\users\%user%\AppData\Roaming\BitTorrent\
+        Path: \%user%\AppData\Roaming\BitTorrent\
         FileMask: '*.dat'

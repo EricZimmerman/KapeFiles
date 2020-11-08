@@ -9,5 +9,5 @@ Targets:
         Category: Memory
         Path: C:\
         FileMask: '*.sav'
-        Recursive: true
+        Recursive: True
         Comment: "Captures all partial memory images from VirtualBox."

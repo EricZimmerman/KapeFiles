@@ -9,22 +9,22 @@ Targets:
         Category: Disk Images
         Path: C:\
         FileMask: '*.VHD'
-        Recursive: true
+        Recursive: True
     -
         Name: VHDX
         Category: Disk Images
         Path: C:\
         FileMask: '*.VHDX'
-        Recursive: true
+        Recursive: True
     -
         Name: VDI
         Category: Disk Images
         Path: C:\
         FileMask: '*.VDI'
-        Recursive: true
+        Recursive: True
     -
         Name: VMDK
         Category: Disk Images
         Path: C:\
         FileMask: '*.VMDK'
-        Recursive: true
+        Recursive: True

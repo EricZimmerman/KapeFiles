@@ -45,14 +45,14 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\ImapMail\
         FileMask: "INBOX"
-        Recursive: true
+        Recursive: True
         Comment: "Holds all email files with headers, content etc"
     -
         Name: Mozilla Thunderbird Mail INBOX
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\Mail\
         FileMask: "INBOX"
-        Recursive: true
+        Recursive: True
         Comment: "Holds all email files with headers, content etc"
     -
         Name: Mozilla Thunderbird Calendar Data

@@ -8,12 +8,12 @@ Targets:
         Name: HitmanPro Logs
         Category: Antivirus
         Path: C:\ProgramData\HitmanPro\Logs\
-        Recursive: true
+        Recursive: True
     -
         Name: HitmanPro Alert Logs
         Category: Antivirus
         Path: C:\ProgramData\HitmanPro.Alert\Logs\
-        Recursive: true
+        Recursive: True
     -
         Name: HitmanPro Database
         Category: Antivirus

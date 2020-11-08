@@ -7,12 +7,12 @@ Targets:
     -
         Name: Java WebStart Cache User Level - Default
         Category: Communication
-        Path: C:\users\%user%\AppData\Local\Sun\Java\Deployment\cache\*\*\
+        Path: \%user%\AppData\Local\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache User Level - IE Protected Mode
         Category: Communication
-        Path: C:\users\%user%\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
+        Path: \%user%\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level

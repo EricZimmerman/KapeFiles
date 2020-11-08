@@ -8,7 +8,7 @@ Targets:
         Name: FrostWire Downloads
         Category: FileDownload
         Path: C:\Users\%user%\Documents\FrostWire\Torrent Data
-        Recursive: true
+        Recursive: True
         Comment: "Locates files downloaded that land in the default location as specified by FrostWire"
     -
         Name: FrostWire AppData

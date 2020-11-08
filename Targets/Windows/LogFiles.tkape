@@ -8,5 +8,5 @@ Targets:
         Name: LogFiles
         Category: Logs
         Path: C:\Windows*\System32\LogFiles\
-        Recursive: true
+        Recursive: True
 

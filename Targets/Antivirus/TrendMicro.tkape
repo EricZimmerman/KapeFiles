@@ -8,7 +8,7 @@ Targets:
         Name: Trend Micro Logs
         Category: Antivirus
         Path: C:\ProgramData\Trend Micro\
-        Recursive: true
+        Recursive: True
     -    
         Name: Trend Micro Security Agent Report Logs
         Category: Antivirus
