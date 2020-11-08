@@ -68,30 +68,30 @@ Targets:
         Name: Debian WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bash_history"
     -
         Name: Debian WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bashrc"
     -
         Name: Debian WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".profile"
     -
         Name: Debian WSL User Crontabs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\var\spool\cron\crontabs\
-        Recursive: true
+        Recursive: True
     -
         Name: Debian WSL Apt Logs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\var\log\apt\
-        Recursive: true
+        Recursive: True
         FileMask: "*.log"
         
 # https://blog.1234n6.com/2017/10/further-forensicating-of-windows.html

@@ -8,9 +8,9 @@ Targets:
         Name: TotalAV Logs
         Category: Antivirus
         Path: C:\Program Files*\TotalAV\logs
-        Recursive: true
+        Recursive: True
     -
         Name: TotalAV Logs
         Category: Antivirus
         Path: C:\ProgramData\TotalAV\logs
-        Recursive: true
+        Recursive: True

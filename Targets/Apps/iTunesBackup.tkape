@@ -7,16 +7,16 @@ Targets:
     -
         Name: iTunes Backup Folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Apple\Mobilesync\Backup\
+        Path: C:\Users\%user%\AppData\Roaming\Apple\Mobilesync\Backup\
         Recursive: True
 
     -
         Name: iTunes Backup Folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Apple Computer\Mobilesync\Backup\
+        Path: C:\Users\%user%\AppData\Roaming\Apple Computer\Mobilesync\Backup\
         Recursive: True
 
     -
         Name: iTunes Backup Folder - iOS13
         Category: Communications
-        Path: C:\users\%user%\Apple\Mobilesync\Backup\
+        Path: C:\Users\%user%\Apple\Mobilesync\Backup\

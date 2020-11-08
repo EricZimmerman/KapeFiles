@@ -9,19 +9,19 @@ Targets:
         Category: Memory
         Path: C:\
         FileMask: '*.vmem'
-        Recursive: true
+        Recursive: True
         Comment: "Captures all raw memory from VMware virtual machines."
     -
         Name: VMware (Fusion/Workstation/Server/Player)
         Category: Memory
         Path: C:\
         FileMask: '*.vmss'
-        Recursive: true
+        Recursive: True
         Comment: "Captures all memory images from VMware virtual machines."
     -
         Name: VMware (Fusion/Workstation/Server/Player)
         Category: Memory
         Path: C:\
         FileMask: '*.vmsn'
-        Recursive: true
+        Recursive: True
         Comment: "Captures all memory images from VMware virtual machines."

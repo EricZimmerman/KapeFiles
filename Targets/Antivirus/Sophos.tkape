@@ -8,13 +8,13 @@ Targets:
         Name: Sophos Logs (XP)
         Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\Sophos\Sophos *\Logs\
-        Recursive: true
+        Recursive: True
         Comment: "Includes Anti-Virus, Client Firewall, Data Control, Device Control, Endpoint Defense, Network Threat Detection, Management Communications System, Patch Control, Tamper Protection"
     -
         Name: Sophos Logs
         Category: Antivirus
         Path: C:\ProgramData\Sophos\Sophos *\Logs\
-        Recursive: true
+        Recursive: True
         Comment: "Includes Anti-Virus, Client Firewall, Data Control, Device Control, Endpoint Defense, Network Threat Detection, Management Communications System, Patch Control, Tamper Protection"
     -
         Name: Sophos Application Events

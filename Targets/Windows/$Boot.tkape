@@ -7,6 +7,6 @@ Targets:
     -
         Name: $Boot
         Category: FileSystem
-        Path: c:\
+        Path: C:\
         FileMask: $Boot
         AlwaysAddToQueue: true

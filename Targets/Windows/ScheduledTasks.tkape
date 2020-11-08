@@ -18,4 +18,4 @@ Targets:
         Name: XML
         Category: Persistence
         Path: C:\Windows*\system32\Tasks\
-        Recursive: true
+        Recursive: True

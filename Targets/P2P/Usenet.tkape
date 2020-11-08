@@ -9,7 +9,7 @@ Targets:
         Category: FileDownload
         Path: C:\
         FileMask: '*.nzb'
-        Recursive: true
+        Recursive: True
         
 ######
 # NZB files are the equivalent to .torrent in the Usenet world. 

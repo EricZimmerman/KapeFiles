@@ -8,4 +8,4 @@ Targets:
         Name: ManageEngine Desktop Central Log Files
         Category: Logs
         Path: C:\ManageEngine\DesktopCentral_Server\logs\
-        Recursive: true
+        Recursive: True

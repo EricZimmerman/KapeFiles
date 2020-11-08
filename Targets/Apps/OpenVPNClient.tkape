@@ -8,13 +8,13 @@ Targets:
         Name: OpenVPN Client Config
         Category: ApplicationLogs
         Path: C:\Users\%user%\OpenVPN\config\
-        Recursive: true
+        Recursive: True
         Comment: "Contains OpenVPN Configs (Profiles)"
     -
         Name: OpenVPN Client Config
         Category: ApplicationLogs
         Path: C:\Program Files*\OpenVPN\config
-        Recursive: true
+        Recursive: True
         Comment: "Contains OpenVPN Configs(Profiles)"
     -
         Name: OpenVPN Client Config

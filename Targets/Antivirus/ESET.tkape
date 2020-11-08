@@ -8,10 +8,10 @@ Targets:
         Name: ESET NOD32 AV Logs (XP)
         Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\ESET\ESET NOD32 Antivirus\Logs\
-        Recursive: true
+        Recursive: True
     -
         Name: ESET NOD32 AV Logs
         Category: Antivirus
         Path: C:\ProgramData\ESET\ESET NOD32 Antivirus\Logs\
-        Recursive: true
+        Recursive: True
         Comment: "Parser available at https://github.com/laciKE/EsetLogParser"

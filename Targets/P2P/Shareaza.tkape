@@ -8,7 +8,7 @@ Targets:
         Name: Shareaza Logs
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Roaming\Shareaza\
-        Recursive: true
+        Recursive: True
         Comment: "Locates Shareaza logs and copies them."
 
 ######

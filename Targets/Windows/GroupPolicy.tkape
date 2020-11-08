@@ -18,4 +18,4 @@ Targets:
         Name: Local Group Policy Files - Startup/Shutdown Scripts
         Category: Communication
         Path: C:\Windows*\system32\grouppolicy\*\Scripts\
-        Recursive: true
+        Recursive: True

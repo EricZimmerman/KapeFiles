@@ -7,6 +7,6 @@ Targets:
     -
         Name: SUPERAntiSpyware Logs
         Category: Antivirus
-        Path: C:\users\%user%\AppData\Roaming\SUPERAntiSpyware\Logs\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Roaming\SUPERAntiSpyware\Logs\
+        Recursive: True
 

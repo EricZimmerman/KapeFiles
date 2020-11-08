@@ -7,12 +7,12 @@ Targets:
     -
         Name: main.db (App <v12)
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
         FileMask: main.db
     -
         Name: skype.db (App +v12)
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
         FileMask: skype.db
     -
         Name: main.db XP
@@ -22,15 +22,15 @@ Targets:
     -
         Name: main.db Win7+
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Skype\*\
+        Path: C:\Users\%user%\AppData\Roaming\Skype\*\
         FileMask: main.db
     -
         Name: s4l-[username].db (App +v8)
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
         FileMask: s4l-*.db
     -
         Name: leveldb (Skype for Desktop +v8)
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
         FileMask: '*.log'

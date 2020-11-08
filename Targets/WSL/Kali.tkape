@@ -68,28 +68,28 @@ Targets:
         Name: Kali WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bash_history"
     -
         Name: Kali WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".bashrc"
     -
         Name: Kali WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
-        Recursive: true
+        Recursive: True
         FileMask: ".profile"
     -
         Name: Kali WSL User Crontabs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\spool\cron\crontabs\
-        Recursive: true
+        Recursive: True
     -
         Name: Kali WSL Apt Logs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\log\apt\
-        Recursive: true
+        Recursive: True
         FileMask: "*.log"

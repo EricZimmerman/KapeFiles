@@ -54,7 +54,7 @@ Targets:
     -
         Name: PowerShell Console Log
         Category: PowerShellConsleLog
-        Path: C:\users\%user%\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadline\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
         FileMask: ConsoleHost_history.txt
 
 # File System    
@@ -73,34 +73,34 @@ Targets:
     -
         Name: $J
         Category: FileSystem
-        Path: c:\$Extend\
+        Path: C:\$Extend\
         FileMask: $UsnJrnl:$J
         AlwaysAddToQueue: true
         SaveAsFileName: $J
     -
         Name: $Max
         Category: FileSystem
-        Path: c:\$Extend\
+        Path: C:\$Extend\
         FileMask: $UsnJrnl:$Max
         AlwaysAddToQueue: true
         SaveAsFileName: $Max
     -
         Name: $SDS
         Category: FileSystem
-        Path: c:\
+        Path: C:\
         FileMask: $Secure:$SDS
         AlwaysAddToQueue: true
         SaveAsFileName: $Secure_$SDS
     -
         Name: $Boot
         Category: FileSystem
-        Path: c:\
+        Path: C:\
         FileMask: $Boot
         AlwaysAddToQueue: true
     -
         Name: $T
         Category: FileSystem
-        Path: c:\$Extend\$RmMetadata\$TxfLog\
+        Path: C:\$Extend\$RmMetadata\$TxfLog\
         FileMask: $Tops:$T
         AlwaysAddToQueue: true
         SaveAsFileName: $T
@@ -109,19 +109,19 @@ Targets:
     -
         Name: Lnk files from Recent
         Category: LnkFiles
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
+        Recursive: True
         Comment: Also includes automatic and custom jumplist directories
     -
         Name: Lnk files from Microsoft Office Recent
         Category: LnkFiles
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Office\Recent\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Recursive: True
     -
         Name: Lnk files from Recent (XP)
         Category: LnkFiles
         Path: C:\Documents and Settings\%user%\Recent\
-        Recursive: true
+        Recursive: True
     -
         Name: Desktop lnk files XP
         Category: LnkFiles
@@ -130,7 +130,7 @@ Targets:
     -
         Name: Desktop lnk files
         Category: LnkFiles
-        Path: C:\users\%user%\Desktop\
+        Path: C:\Users\%user%\Desktop\
         FileMask: '*.lnk'
     -
         Name: Restore point lnk files XP
@@ -143,12 +143,12 @@ Targets:
         Name: $Recycle.Bin
         Category: Deleted Files
         Path: C:\$Recycle.Bin\
-        Recursive: true
+        Recursive: True
     -
         Name: RECYCLER WinXP
         Category: Deleted Files
         Path: C:\RECYCLER\
-        Recursive: true
+        Recursive: True
 
 # System Registry Files
     -
@@ -266,12 +266,12 @@ Targets:
     -
         Name: ntuser.dat registry hive
         Category: Registry
-        Path: C:\users\%user%\
+        Path: C:\Users\%user%\
         FileMask: ntuser.dat
     -
         Name: ntuser.dat registry transaction files
         Category: Registry
-        Path: C:\users\%user%\
+        Path: C:\Users\%user%\
         FileMask: ntuser.dat.LOG*
     -
         Name: ntuser.dat DEFAULT registry hive
@@ -286,12 +286,12 @@ Targets:
     -
         Name: UsrClass.dat registry hive
         Category: Registry
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat
     -
         Name: UsrClass.dat registry transaction files
         Category: Registry
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat.LOG*
 
 # System Level Artifacts  
@@ -311,16 +311,16 @@ Targets:
         Name: XML
         Category: Persistence
         Path: C:\Windows*\system32\Tasks\
-        Recursive: true
+        Recursive: True
     -
         Name: SRUM
         Category: Execution
         Path: C:\Windows*\System32\SRU\
-        Recursive: true
+        Recursive: True
     -
         Name: Thumbcache DB
         Category: FileKnowledge
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Explorer\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Explorer\
         FileMask: thumbcache_*.db
 
 # USB Devices Logs
@@ -343,7 +343,7 @@ Targets:
         Name: WBEM
         Category: WBEM
         Path: C:\Windows*\System32\wbem\Repository\
-        Recursive: true
+        Recursive: True
 
 # User Communication         
 
@@ -361,24 +361,24 @@ Targets:
     -
         Name: PST
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
         FileMask: '*.pst'
     -
         Name: OST
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Outlook\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
         FileMask: '*.ost'
             
 # Skype
     -
         Name: main.db (App <v12)
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
         FileMask: main.db
     -
         Name: skype.db (App +v12)
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
         FileMask: skype.db
     -
         Name: main.db XP
@@ -388,17 +388,17 @@ Targets:
     -
         Name: main.db Win7+
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Skype\*\
+        Path: C:\Users\%user%\AppData\Roaming\Skype\*\
         FileMask: main.db
     -
         Name: s4l-[username].db (App +v8)
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
         FileMask: s4l-*.db
     -
         Name: leveldb (Skype for Desktop +v8)
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
         FileMask: '*.log'
 
 # Web Browser Artifacts        
@@ -470,131 +470,131 @@ Targets:
     -
         Name: Chrome bookmarks
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Bookmarks*
     -
         Name: Chrome Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Cookies*
     -
         Name: Chrome Current Session
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Current Session
     -
         Name: Chrome Current Tabs
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Current Tabs
     -
         Name: Chrome Favicons
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Favicons*
     -
         Name: Chrome History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: History*
     -
         Name: Chrome Last Session
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Last Session
     -
         Name: Chrome Last Tabs
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\L
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\L
         FileMask: ast Tabs
     -
         Name: Chrome Preferences
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Preferences
     -
         Name: Chrome Shortcuts
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Shortcuts*
     -
         Name: Chrome Top Sites
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Top Sites*
     -
         Name: Chrome Visited Links
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Visited Links
     -
         Name: Chrome Web Data
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Web Data*
     -
         Name: Chrome Extension Files
         Category: Communication
-        Path: C:\users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
+        Recursive: True
     -
         Name: Chrome Extension Files XP 
         Category: Communications
-        Path: c:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions\
-        Recursive: true
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions\
+        Recursive: True
     -
         Name: Edge folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
         Recursive: True
     -
         Name: WebcacheV01.dat
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
     -
         Name: Firefox Places
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: places.sqlite*
     -
         Name: Firefox Downloads
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: downloads.sqlite*
     -
         Name: Firefox Form history
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: formhistory.sqlite*
     -
         Name: Firefox Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: cookies.sqlite*
     -
         Name: Firefox Signons
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: signons.sqlite*
     -
         Name: Firefox Webappstore
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: webappstore.sqlite*
     -
         Name: Firefox Favicons
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: favicons.sqlite*
     -
         Name: Firefox Addons
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: addons.sqlite*
     -
         Name: Firefox Search
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: search.sqlite*
     -
         Name: Firefox Places (XP)
@@ -674,66 +674,66 @@ Targets:
     -
         Name: Index.dat Office
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
         FileMask: index.dat
     -
         Name: Local Internet Explorer folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Internet Explorer\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Internet Explorer\
+        Recursive: True
     -
         Name: Roaming Internet Explorer folder
         Category: Communications
-        Path: C:\users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
+        Recursive: True
     -
         Name: IE 9/10 History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\History\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\History\
+        Recursive: True
     -
         Name: IE 9/10 Cache
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+        Recursive: True
     -
         Name: IE 9/10 Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\Cookies\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Cookies\
+        Recursive: True
     -
         Name: IE 9/10 Download History
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        Recursive: True
     -
         Name: IE 11 Metadata
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
     -
         Name: IE 11 Cache
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCache\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCache\
+        Recursive: True
     -
         Name: IE 11 Cookies
         Category: Communications
-        Path: C:\users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
+        Recursive: True
   
 # Windows Timeline
     -
         Name: ActivitiesCache.db
         Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
         FileMask: ActivitiesCache.db
     -
         Name: ActivitiesCache.db-shm
         Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
         FileMask: ActivitiesCache.db-shm
     -
         Name: ActivitiesCache.db-wal
         Category: FileFolderAccess
-        Path: C:\users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
         FileMask: ActivitiesCache.db-wal
