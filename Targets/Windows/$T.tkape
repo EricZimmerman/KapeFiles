@@ -9,5 +9,5 @@ Targets:
         Category: FileSystem
         Path: C:\$Extend\$RmMetadata\$TxfLog\
         FileMask: $Tops:$T
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $T

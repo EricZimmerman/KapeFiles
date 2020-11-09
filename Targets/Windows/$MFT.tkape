@@ -9,4 +9,4 @@ Targets:
         Category: FileSystem
         Path: C:\
         FileMask: $MFT
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True

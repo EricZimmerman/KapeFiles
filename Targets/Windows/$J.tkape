@@ -9,12 +9,12 @@ Targets:
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $UsnJrnl:$J
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $J
     -
         Name: $Max
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $UsnJrnl:$Max
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $Max

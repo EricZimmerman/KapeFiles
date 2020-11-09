@@ -9,19 +9,19 @@ Targets:
         Category: Memory
         Path: C:\
         FileMask: hiberfil.sys
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
     -
         Name: pagefile.sys
         Category: Memory
         Path: C:\
         FileMask: pagefile.sys
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
     -
         Name: swapfile.sys
         Category: Memory
         Path: C:\
         FileMask: swapfile.sys
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
     -
         Name: Small Memory Dump directory
         Category: Memory

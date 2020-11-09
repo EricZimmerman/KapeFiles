@@ -16,5 +16,5 @@ Processors:
 # Uses Microsoft Log Parser
 # https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 # In CommandLine, point sourceDirectory to evtx logs folder
-# Example: C:\Windows\system32\winevt\logs
+# Example: C:\Windows\System32\winevt\logs
 ######

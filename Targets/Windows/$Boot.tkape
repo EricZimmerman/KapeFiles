@@ -9,4 +9,4 @@ Targets:
         Category: FileSystem
         Path: C:\
         FileMask: $Boot
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True

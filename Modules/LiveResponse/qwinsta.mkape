@@ -6,7 +6,7 @@ Id: 7407dd38-cd98-4981-b9ee-d6ae1e306db0
 ExportFormat: txt
 Processors:
     -
-        Executable: C:\Windows\system32\qwinsta.exe
+        Executable: C:\Windows\System32\qwinsta.exe
         CommandLine: /counter
         ExportFormat: txt
         ExportFile: qwinsta.txt

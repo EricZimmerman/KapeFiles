@@ -9,5 +9,5 @@ Targets:
         Category: FileSystem
         Path: C:\
         FileMask: $LogFile
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
  

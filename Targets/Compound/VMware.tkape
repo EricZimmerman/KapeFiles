@@ -15,4 +15,4 @@ Targets:
     -
         Name: Virtual Hard Drives
         Category: Apps
-        Path: ..\Misc\VirtualDisks.tkape
+        Path: VirtualDisks.tkape
