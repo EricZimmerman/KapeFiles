@@ -12,7 +12,7 @@ Processors:
         CommandLine: -m HKLM_SYSTEM\ -r %sourceFile% -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
         
 
 #place "p2x5124.dll" in the bin folder with regtime.exe

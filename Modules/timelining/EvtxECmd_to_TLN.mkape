@@ -11,5 +11,5 @@ Processors:
         CommandLine: -f %destinationDirectory%\evtx_for_timeline.csv
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
         
