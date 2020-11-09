@@ -9,5 +9,5 @@ Targets:
         Category: FileSystem
         Path: C:\
         FileMask: $Secure:$SDS
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $Secure_$SDS

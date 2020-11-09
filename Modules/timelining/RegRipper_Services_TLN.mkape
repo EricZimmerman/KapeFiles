@@ -12,7 +12,7 @@ Processors:
         CommandLine: -r %sourceFile% -p svc_tln -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
 
 ##
 ## Create a folder "regripper" within the "Modules\bin" KAPE folder

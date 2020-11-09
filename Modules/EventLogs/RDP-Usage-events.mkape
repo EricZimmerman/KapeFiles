@@ -15,5 +15,5 @@ Processors:
 # Uses Microsoft Log Parser
 # https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 # In CommandLine, point from to Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx and Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx
-# Example: FROM '%sourceDirectory%\files\C\WINDOWS\system32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx','%sourceDirectory%\files\C\WINDOWS\system32\winevt\Logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx'
+# Example: FROM '%sourceDirectory%\files\C\WINDOWS\System32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx','%sourceDirectory%\files\C\WINDOWS\System32\winevt\Logs\Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx'
 ######

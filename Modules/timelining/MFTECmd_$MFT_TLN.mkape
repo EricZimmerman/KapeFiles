@@ -11,6 +11,6 @@ Processors:
         CommandLine: -f %destinationDirectory%\mft_bodyfile -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
 
 #The MFTECmd_$MFT_Bodyfile.mkape must be ran before this to create the bodyfile. This module with then convert the bodyfile into TLN format

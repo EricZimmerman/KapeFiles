@@ -12,6 +12,6 @@ Processors:
         CommandLine: -m HKEY_USER\ -r %sourceFile% -u %sourceFile% -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
 
 #place "p2x5124.dll" in the \Modules\bin folder with regtime.exe

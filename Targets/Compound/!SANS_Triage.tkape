@@ -12,12 +12,12 @@ Targets:
     -
         Name: Event logs XP
         Category: EventLogs
-        Path: C:\Windows\system32\config\
+        Path: C:\Windows\System32\config\
         FileMask: '*.evt'
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: C:\Windows*\system32\winevt\logs\
+        Path: C:\Windows*\System32\winevt\logs\
         FileMask: '*.evtx'
 
 # Evidence of Execution
@@ -63,46 +63,46 @@ Targets:
         Category: FileSystem
         Path: C:\
         FileMask: $MFT
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
     -
         Name: $LogFile
         Category: FileSystem
         Path: C:\
         FileMask: $LogFile
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
     -
         Name: $J
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $UsnJrnl:$J
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $J
     -
         Name: $Max
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $UsnJrnl:$Max
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $Max
     -
         Name: $SDS
         Category: FileSystem
         Path: C:\
         FileMask: $Secure:$SDS
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $Secure_$SDS
     -
         Name: $Boot
         Category: FileSystem
         Path: C:\
         FileMask: $Boot
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
     -
         Name: $T
         Category: FileSystem
         Path: C:\$Extend\$RmMetadata\$TxfLog\
         FileMask: $Tops:$T
-        AlwaysAddToQueue: true
+        AlwaysAddToQueue: True
         SaveAsFileName: $T
 
 # LNK Files and JumpLists        
@@ -310,7 +310,7 @@ Targets:
     -
         Name: XML
         Category: Persistence
-        Path: C:\Windows*\system32\Tasks\
+        Path: C:\Windows*\System32\Tasks\
         Recursive: True
     -
         Name: SRUM

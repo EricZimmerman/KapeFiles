@@ -6,12 +6,12 @@ RecreateDirectories: True
 Targets:
     -
         Name: Ammyy
-        Category: Ammyy.tkape
-        Path: ApplicationLogs
+        Category: ApplicationLogs
+        Path: Ammyy.tkape
     -
         Name: AnyDesk
-        Category: AnyDesk.tkape
-        Path: ApplicationLogs
+        Category: ApplicationLogs
+        Path: AnyDesk.tkape
     -
         Name: Chrome Remote Desktop
         Category: ApplicationLogs

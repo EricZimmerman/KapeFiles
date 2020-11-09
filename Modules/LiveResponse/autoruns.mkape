@@ -7,6 +7,6 @@ BinaryUrl: https://download.sysinternals.com/files/Autoruns.zip
 ExportFormat: csv
 Processors:
     -
-        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "& '%kapedirectory%\Modules\bin\autorunsc.exe' -a * -s -c -accepteula -nobanner -h * | Set-Content -Path %destinationDirectory%\autoruns.csv"
         ExportFormat: csv

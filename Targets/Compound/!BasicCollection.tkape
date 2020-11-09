@@ -10,7 +10,7 @@ Targets:
         Path: EventLogs.tkape
     -
         Name: Evidence of Execution
-        Category: Evidence Of Execution
+        Category: Evidence of Execution
         Path: EvidenceOfExecution.tkape
     -
         Name: File System

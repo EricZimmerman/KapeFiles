@@ -7,7 +7,7 @@ BinaryUrl: https://raw.githubusercontent.com/forensenellanebbia/powershell-scrip
 ExportFormat: csv
 Processors:
     -
-        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-DoSvc4n6.ps1' %sourceDirectory% -NoIP2Location -OutputPath %destinationDirectory%"
         ExportFormat: csv
 #####

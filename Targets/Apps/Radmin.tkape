@@ -13,7 +13,7 @@ Targets:
     -
         Name: Radmin Server 64bit Log
         Category: ApplicationLogs
-        Path: C:\Windows\system32\rserver30\
+        Path: C:\Windows\System32\rserver30\
         FileMask: Radm_log.htm
         Comment: "Contains Application Log entries such as service start and incomming connections."
     -
@@ -25,7 +25,7 @@ Targets:
     -
         Name: Radmin Server 64bit Chats
         Category: ApplicationLogs
-        Path: C:\Windows\system32\rserver30\CHATLOGS\*\
+        Path: C:\Windows\System32\rserver30\CHATLOGS\*\
         FileMask: '*.htm'
         Comment: "Previous chat logs"
     -

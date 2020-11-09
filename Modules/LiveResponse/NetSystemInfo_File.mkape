@@ -6,7 +6,7 @@ Id: fb732a7a-e5f3-484e-95dd-d49cdac29391
 ExportFormat: txt 
 Processors:
     -
-        Executable: C:\Windows\system32\net.exe
+        Executable: C:\Windows\System32\net.exe
         CommandLine: File
         ExportFormat: txt
         ExportFile: NetSystemInfo.txt

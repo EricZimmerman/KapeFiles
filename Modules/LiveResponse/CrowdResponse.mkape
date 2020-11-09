@@ -7,7 +7,7 @@ BinaryUrl: https://www.crowdstrike.com/wp-content/uploads/2020/03/CrowdResponse.
 ExportFormat: csv
 Processors:
     -
-        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "& '%kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe' -i %kapedirectory%\Modules\bin\CrowdResponse\config.txt -o %destinationDirectory%\CrowdResponse.xml;&'%kapedirectory%\Modules\bin\CrowdResponse\CRConvert.exe' -v -c -f %destinationDirectory%\CrowdResponse.xml -o %destinationDirectory%;Remove-Item '%destinationDirectory%\CrowdResponse.xml'"
         ExportFormat: csv
 
