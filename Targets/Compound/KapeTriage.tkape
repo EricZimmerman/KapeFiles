@@ -33,9 +33,9 @@ Targets:
         Category: Targets
         Path: WebBrowsers.tkape
     -
-        Name: LnkFilesAndJumpLists
+        Name: LNKFilesAndJumpLists
         Category: Targets
-        Path: LnkFilesAndJumpLists.tkape
+        Path: LNKFilesAndJumpLists.tkape
     -
         Name: RemoteAccess
         Category: Targets

@@ -1,37 +1,42 @@
-Description: Lnk files and jump lists
-Author: Eric Zimmerman
-Version: 1.1
+Description: LNK Files and jump lists
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.2
 Id: 5fc6820c-4d30-4a38-9e43-5e0b788a4b0c
 RecreateDirectories: True
 Targets:
     -
-        Name: Lnk files from Recent
-        Category: LnkFiles
+        Name: LNK Files from Recent
+        Category: LNKFiles
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
         Recursive: True
         Comment: Also includes automatic and custom jumplist directories
     -
-        Name: Lnk files from Microsoft Office Recent
-        Category: LnkFiles
+        Name: LNK Files from Microsoft Office Recent
+        Category: LNKFiles
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
         Recursive: True
     -
-        Name: Lnk files from Recent (XP)
-        Category: LnkFiles
+        Name: LNK Files from Recent (XP)
+        Category: LNKFiles
         Path: C:\Documents and Settings\%user%\Recent\
         Recursive: True
     -
-        Name: Desktop lnk files XP
-        Category: LnkFiles
+        Name: Desktop LNK Files XP
+        Category: LNKFiles
         Path: C:\Documents and Settings\%user%\Desktop\
-        FileMask: '*.lnk'
+        FileMask: '*.LNK'
     -
-        Name: Desktop lnk files
-        Category: LnkFiles
+        Name: Desktop LNK Files
+        Category: LNKFiles
         Path: C:\Users\%user%\Desktop\
-        FileMask: '*.lnk'
+        FileMask: '*.LNK'
     -
-        Name: Restore point lnk files XP
-        Category: LnkFiles
+        Name: Restore point LNK Files XP
+        Category: LNKFiles
         Path: C:\System Volume Information\_restore*\RP*\
-        FileMask: '*.lnk'
+        FileMask: '*.LNK'
+    -
+        Name: LNK Files from C:\ProgramData
+        Category: LNKFiles
+        Path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\
+        FileMask: '*.LNK'

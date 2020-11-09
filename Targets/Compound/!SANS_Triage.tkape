@@ -107,36 +107,36 @@ Targets:
 
 # LNK Files and JumpLists        
     -
-        Name: Lnk files from Recent
-        Category: LnkFiles
+        Name: LNK files from Recent
+        Category: LNKFiles
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
         Recursive: True
         Comment: Also includes automatic and custom jumplist directories
     -
-        Name: Lnk files from Microsoft Office Recent
-        Category: LnkFiles
+        Name: LNK files from Microsoft Office Recent
+        Category: LNKFiles
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
         Recursive: True
     -
-        Name: Lnk files from Recent (XP)
-        Category: LnkFiles
+        Name: LNK files from Recent (XP)
+        Category: LNKFiles
         Path: C:\Documents and Settings\%user%\Recent\
         Recursive: True
     -
-        Name: Desktop lnk files XP
-        Category: LnkFiles
+        Name: Desktop LNK files XP
+        Category: LNKFiles
         Path: C:\Documents and Settings\%user%\Desktop\
-        FileMask: '*.lnk'
+        FileMask: '*.LNK'
     -
-        Name: Desktop lnk files
-        Category: LnkFiles
+        Name: Desktop LNK files
+        Category: LNKFiles
         Path: C:\Users\%user%\Desktop\
-        FileMask: '*.lnk'
+        FileMask: '*.LNK'
     -
-        Name: Restore point lnk files XP
-        Category: LnkFiles
+        Name: Restore point LNK files XP
+        Category: LNKFiles
         Path: C:\System Volume Information\_restore*\RP*\
-        FileMask: '*.lnk'
+        FileMask: '*.LNK'
 
 # Recycle Bin and Recycler 
     -
