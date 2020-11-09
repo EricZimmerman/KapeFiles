@@ -17,9 +17,9 @@ Targets:
         Category: File System
         Path: FileSystem.tkape
     -
-        Name: LnkFilesAndJumpLists
+        Name: LNKFilesAndJumpLists
         Category: File Access
-        Path: LnkFilesAndJumpLists.tkape
+        Path: LNKFilesAndJumpLists.tkape
     -
         Name: PowerShellConsole
         Category: Evidence Of Execution

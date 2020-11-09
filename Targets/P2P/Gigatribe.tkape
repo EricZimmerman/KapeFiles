@@ -15,10 +15,10 @@ Targets:
         Category: FileDownload
         Path: C:\Documents and Settings\%user%\*\Application Data\Gigatribe\
         Recursive: True
-        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and settings\<username>\Lokala Inställningar\Application Data\Gigatribe
+        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and Settings\<username>\Lokala Inställningar\Application Data\Gigatribe
     -
         Name: Gigatribe Files Windows XP
         Category: FileDownload
         Path: C:\Documents and Settings\%user%\*\Application Data\Shalsoft\
         Recursive: True
-        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and settings\<username>\Lokala Inställningar\Application Data\Shalsoft
+        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and Settings\<username>\Lokala Inställningar\Application Data\Shalsoft
