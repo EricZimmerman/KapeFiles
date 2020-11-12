@@ -19,3 +19,4 @@ Targets:
         Category: AntiVirus
         Path: C:\ProgramData\crb1
         Recursive: True
+        
