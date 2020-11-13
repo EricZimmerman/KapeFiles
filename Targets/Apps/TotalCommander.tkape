@@ -49,4 +49,5 @@ Targets:
 #   9=C:\Program Files (x86)\BraveSoftware\	#01,Brave-Browser
 #   10=C:\Program Files (x86)\	#02,BraveSoftware
 # The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc. 
+# Within a user's NTUSER.DAT file, there will be a key with an address of: SOFTWARE\Ghisler\Total Commander. There will be a value for InstallDir which will list where TotalCommander is installed for that user. 
 ######
