@@ -505,8 +505,8 @@ Targets:
     -
         Name: Chrome Last Tabs
         Category: Communications
-        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\L
-        FileMask: ast Tabs
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
     -
         Name: Chrome Preferences
         Category: Communications
@@ -624,8 +624,8 @@ Targets:
     -
         Name: Firefox Webappstore (XP)
         Category: Communications
-        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\w
-        FileMask: ebappstore.sqlite*
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
     -
         Name: Firefox Favicons (XP)
         Category: Communications
