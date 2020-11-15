@@ -65,62 +65,72 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: logins.json
     -
-        Name: Places
+        Name: Sessionstore
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: sessionstore*
+    -
+        Name: Sessionstore Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\sessionstore-backups
+        Recursive: True
+    -
+        Name: Places XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: places.sqlite*
     -
-        Name: Downloads
+        Name: Downloads XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: downloads.sqlite*
     -
-        Name: Form history
+        Name: Form history XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: formhistory.sqlite*
     -
-        Name: Cookies
+        Name: Cookies XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: cookies.sqlite*
     -
-        Name: Signons
+        Name: Signons XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: signons.sqlite*
     -
-        Name: Webappstore
+        Name: Webappstore XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: webappstore.sqlite*
     -
-        Name: Favicons
+        Name: Favicons XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: favicons.sqlite*
     -
-        Name: Addons
+        Name: Addons XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: addons.sqlite*
     -
-        Name: Search
+        Name: Search XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: search.sqlite*
     -
-        Name: Password
+        Name: Password XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: key*.db
     -
-        Name: Password
+        Name: Password XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: signon*.*
     -
-        Name: Password
+        Name: Password XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: logins.json
