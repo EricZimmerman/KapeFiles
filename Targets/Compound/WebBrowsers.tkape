@@ -21,6 +21,10 @@ Targets:
         Category: Communications
         Path: Edge.tkape
     -
+        Name: Edge Chromium
+        Category: Communications
+        Path: EdgeChromium.tkape
+    -
         Name: Opera
         Category: Communications
         Path: Opera.tkape
