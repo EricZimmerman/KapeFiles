@@ -1,20 +1,16 @@
 Description: Boot Configuration Files
 Author: Troy Larson
-Version: 1
+Version: 1.0
 Id: eedec61a-bae4-4e96-a2cd-b6b30aa5a786
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: BCD
         Category: Registry
-        Path: C:\Boot\BCD
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Boot\
+        FileMask: BCD
     -
         Name: BCD Logs
         Category: Registry
-        Path: C:\Boot\BCD.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Boot\
+        FileMask: 'BCD.LOG*'

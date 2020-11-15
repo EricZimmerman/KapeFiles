@@ -1,16 +1,15 @@
 Description: Obtain detached signature catalog files
 Author: Mike Pilkington
-Version: 1
+Version: 1.0
 Id: 953b16e8-69ea-4967-9f9b-bcfa4f4fbe7b
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: SignatureCatalog
         Category: FileMetadata
-        Path: C:\Windows*\System32\CatRoot
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Path: C:\Windows*\System32\CatRoot\
+        Recursive: True
+
         
 ## USE CASE ##
 # Validating digital signatures of an offline system can be problematic.  

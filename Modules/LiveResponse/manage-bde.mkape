@@ -1,7 +1,7 @@
 Description: Check for BitLocker volumes
 Category: VolumeInformation
 Author: troyla@microsoft.com
-Version: 1
+Version: 1.0
 Id: b069705b-13f0-42c7-86a2-4f310c3c651b
 ExportFormat: txt
 Processors:

@@ -1,7 +1,7 @@
 Description: Parses MFT, Registy and Event Logs into mini-timeline; Add in key "computerName" 
 Category: Timeline
 Author: Mari DeGrazia
-Version: 1
+Version: 1.0
 Id: 50415221-4267-47e4-985f-346a709e8b8e
 ExportFormat: ""
 FileMask: ""
@@ -35,27 +35,27 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper_NTUSER_TLN.mkape
+        Executable: RegTime_NTUSER_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper_UsrClass_TLN.mkape
+        Executable: RegTime_UsrClass_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper_SAM_TLN.mkape
+        Executable: RegTime_SAM_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper_Security_TLN.mkape
+        Executable: RegTime_Security_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper_Software_TLN.mkape
+        Executable: RegTime_Software_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper_System_TLN.mkape
+        Executable: RegTime_System_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -       
@@ -63,7 +63,7 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -       
-        Executable: RegRipper_Default_TLN.mkape
+        Executable: RegTime_Default_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
     -

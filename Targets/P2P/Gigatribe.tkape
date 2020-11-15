@@ -1,27 +1,24 @@
 Description: Gigatribe Files
 Author: Linus Nissi
-Version: 2
+Version: 2.0
 Id: 64726d74-1a68-463a-bb26-929054a20b71
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Gigatribe Files Windows Vista/7/8/10
         Category: FileDownload
-        Path: C:\Users\*\AppData\Local\Shalsoft\*
-        IsDirectory: true
-        Recursive: true
+        Path: C:\Users\%user%\AppData\Local\Shalsoft\
+        Recursive: True
         Comment: "Locates Gigatribe files and copies them"
     -
         Name: Gigatribe Files Windows XP
         Category: FileDownload
-        Path: C:\Documents and settings\*\*\Application Data\Gigatribe\*
-        IsDirectory: true
-        Recursive: true
-        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and settings\<username>\Lokala Inställningar\Application Data\Gigatribe
+        Path: C:\Documents and Settings\%user%\*\Application Data\Gigatribe\
+        Recursive: True
+        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and Settings\<username>\Lokala Inställningar\Application Data\Gigatribe
     -
         Name: Gigatribe Files Windows XP
         Category: FileDownload
-        Path: C:\Documents and settings\*\*\Application Data\Shalsoft\*
-        IsDirectory: true
-        Recursive: true
-        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and settings\<username>\Lokala Inställningar\Application Data\Shalsoft
+        Path: C:\Documents and Settings\%user%\*\Application Data\Shalsoft\
+        Recursive: True
+        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and Settings\<username>\Lokala Inställningar\Application Data\Shalsoft

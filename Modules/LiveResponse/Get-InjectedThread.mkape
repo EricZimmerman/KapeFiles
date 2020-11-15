@@ -7,7 +7,7 @@ BinaryUrl: https://gist.githubusercontent.com/jaredcatkinson/23905d34537ce4b5b18
 ExportFormat: json
 Processors:
     -
-        Executable: C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "Import-Module %kapedirectory%\Modules\bin\Get-InjectedThread.ps1 -Force; Get-InjectedThread | ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\Get-InjectedThread.json"
         ExportFormat: json
 #####

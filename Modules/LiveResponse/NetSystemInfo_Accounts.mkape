@@ -6,7 +6,7 @@ Id: 6ec49720-1afc-4b89-9454-1398430cb31f
 ExportFormat: txt 
 Processors:
     -
-        Executable: C:\Windows\system32\net.exe
+        Executable: C:\Windows\System32\net.exe
         CommandLine: Accounts
         ExportFormat: txt
         ExportFile: NetSystemInfo.txt

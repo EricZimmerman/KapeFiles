@@ -1,13 +1,11 @@
 Description: Windows Index Search
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 9828b927-f955-464a-80fb-a48ce0101236
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: WindowsIndexSearch
         Category: FileKnowledge
-        Path: C:\programdata\microsoft\search\data\applications\windows\Windows.edb
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\programdata\microsoft\search\data\applications\windows\
+        FileMask: Windows.edb

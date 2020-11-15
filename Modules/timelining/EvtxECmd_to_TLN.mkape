@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1.0
 Id: 44d3fdf4-a248-447f-ba71-b822a09cffc5
-BinaryUrl: https://github.com/mdegrazia/KAPE_Tools
+BinaryUrl: https://github.com/mdegrazia/KAPE_Tools/raw/master/executables/evtxECmd_2_tln.exe
 ExportFormat: txt
 Processors:
     -
@@ -11,5 +11,5 @@ Processors:
         CommandLine: -f %destinationDirectory%\evtx_for_timeline.csv
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
         

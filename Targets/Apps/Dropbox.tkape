@@ -1,41 +1,35 @@
 Description: Dropbox Cloud Storage Files and Metadata
 Author: Chad Tilbury
-Version: 1
+Version: 1.0
 Id: e8501b5d-2cfc-4693-923d-52edd2ddf3bc
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Dropbox User Files
         Category: Apps
-        Path: C:\Users\*\Dropbox*\
-        IsDirectory: True
+        Path: C:\Users\%user%\Dropbox*\
         Recursive: True
-        Comment: ""
     -
         Name: Dropbox Metadata
         Category: Apps
-        Path: C:\Users\*\AppData\Local\Dropbox\info.json
-        IsDirectory: False
-        Recursive: False
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
+        FileMask: info.json
         Comment: "Getting individual files because folder may contain very large extraneous files"
     -
         Name: Dropbox Metadata
         Category: Apps
-        Path: C:\Users\*\AppData\Local\Dropbox\*\filecache.dbx
-        IsDirectory: False
-        Recursive: False
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: filecache.dbx
         Comment: "Getting individual files because folder may contain very large extraneous files"
     -
         Name: Dropbox Metadata
         Category: Apps
-        Path: C:\Users\*\AppData\Local\Dropbox\*\config.dbx
-        IsDirectory: False
-        Recursive: False
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: config.dbx
         Comment: "Getting individual files because folder may contain very large extraneous files"
     -
         Name: Windows Protect Folder
         Category: FileSystem
-        Path: C:\Users\*\AppData\Roaming\Microsoft\Protect\*\
-        IsDirectory: True
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: True
         Comment: "Required for offline decryption of Dropbox databases"

@@ -2,19 +2,16 @@ Description: ESET Antivirus Data
 Author: Drew Ervin
 Version: 1.0
 Id: 14ac7bff-2d77-4582-8558-73cf75805aaa
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ESET NOD32 AV Logs (XP)
         Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\ESET\ESET NOD32 Antivirus\Logs\
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Recursive: True
     -
         Name: ESET NOD32 AV Logs
         Category: Antivirus
         Path: C:\ProgramData\ESET\ESET NOD32 Antivirus\Logs\
-        IsDirectory: true
-        Recursive: true
+        Recursive: True
         Comment: "Parser available at https://github.com/laciKE/EsetLogParser"

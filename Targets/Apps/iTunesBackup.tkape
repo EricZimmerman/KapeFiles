@@ -1,24 +1,22 @@
 Description: iTunes Backups
 Author: Tony Knutson
-Version: 2
+Version: 2.0
 Id: 7b4a98d9-b36a-40be-bacc-ad0102b0a8c3
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: iTunes Backup Folder
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Apple\Mobilesync\Backup
-        IsDirectory: True
+        Path: C:\Users\%user%\AppData\Roaming\Apple\Mobilesync\Backup\
         Recursive: True
-        Comment: ""
+
     -
         Name: iTunes Backup Folder
         Category: Communications
-        Path: C:\Users\*\AppData\Roaming\Apple Computer\Mobilesync\Backup
-        IsDirectory: True
+        Path: C:\Users\%user%\AppData\Roaming\Apple Computer\Mobilesync\Backup\
         Recursive: True
-        Comment: ""
+
     -
         Name: iTunes Backup Folder - iOS13
         Category: Communications
-        Path: C:\Users\*\Apple\Mobilesync\Backup        
+        Path: C:\Users\%user%\Apple\Mobilesync\Backup\

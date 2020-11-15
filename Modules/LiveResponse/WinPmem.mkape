@@ -1,7 +1,7 @@
 Description: WinPmem Memory Dump
 Category: Memory
 Author: Eric Capuano 
-Version: 3
+Version: 3.0
 Id: 1d284835-417b-459e-a396-d228edea3808
 BinaryUrl: https://github.com/Velocidex/c-aff4/releases/download/3.2/winpmem_3.2.exe
 ExportFormat: dmp
@@ -21,4 +21,4 @@ Processors:
 # To obtain a compressed AFF4 memory dump, swap `--format raw` for `--format map` in the command line parameter above.
 #
 # Example usage: 
-# kape.exe --tsource C --target EventLogs --tdest "c:\temp\tdest" --module WinPmem --mdest "c:\temp\mdest" --mflush --tflush
+# kape.exe --tsource C --target EventLogs --tdest "C:\temp\tdest" --module WinPmem --mdest "C:\temp\mdest" --mflush --tflush

@@ -2,22 +2,17 @@ Description: Aspera Connect Log Files
 Author: Dennis Reneau
 Version: 1.0
 Id: 1f311765-a5c0-496a-a5d5-e79cbd0702e2
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Aspera Client Logs
         Category: FileDownload
-        Path: C:\Users\*\AppData\Local\Aspera\Aspera Connect\var\log\
+        Path: C:\Users\%user%\AppData\Local\Aspera\Aspera Connect\var\log\
         FileMask: '*.log'
-        IsDirectory: true
-        Recursive: true
-        Comment: "Locates Aspera Connect .log files and copies them"
+        Recursive: True
     -
         Name: Aspera Server Logs
         Category: FileDownload
-        Path: C:\Users\*\.aspera\connect\var\log\
+        Path: C:\Users\%user%\.aspera\connect\var\log\
         FileMask: '*.log'
-        IsDirectory: true
-        Recursive: true
-        Comment: "Locates Aspera Connect .log files and copies them"
-
+        Recursive: True

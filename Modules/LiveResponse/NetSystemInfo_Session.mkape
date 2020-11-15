@@ -6,7 +6,7 @@ Id: 878ca28e-aa20-4e2e-b3d4-2a30402057d6
 ExportFormat: txt 
 Processors:
     -
-        Executable: C:\Windows\system32\net.exe
+        Executable: C:\Windows\System32\net.exe
         CommandLine: Session
         ExportFormat: txt
         ExportFile: NetSystemInfo.txt

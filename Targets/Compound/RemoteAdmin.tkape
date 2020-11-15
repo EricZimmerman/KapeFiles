@@ -1,0 +1,53 @@
+Description: Composite target for files related to remote administration tools
+Author: Drew Ervin, Mathias Frank, Andrew Rathbun
+Version: 1.4
+Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
+RecreateDirectories: True
+Targets:
+    -
+        Name: Ammyy
+        Category: ApplicationLogs
+        Path: Ammyy.tkape
+    -
+        Name: AnyDesk
+        Category: ApplicationLogs
+        Path: AnyDesk.tkape
+    -
+        Name: Chrome Remote Desktop
+        Category: ApplicationLogs
+        Path: ApplicationEvents.tkape
+    -
+        Name: Kaseya
+        Category: ApplicationLogs
+        Path: Kaseya.tkape
+    -
+        Name: LogMeIn
+        Category: ApplicationLogs
+        Path: LogMeIn.tkape
+    -
+        Name: Radmin
+        Category: ApplicationLogs
+        Path: Radmin.tkape
+        Comment: "Radmin Server and Viewer Logs and Chats"
+    -
+        Name: RDP Cache
+        Category: ApplicationData
+        Path: RDPCache.tkape
+        Comment: "Contains data cached during recent RDP sessions"
+    -
+        Name: RDP Logs
+        Category: EventLogs
+        Path: RDPLogs.tkape
+        Comment: "Contains Windows Event Logs related to RDP"
+    -
+        Name: ScreenConnect (ConnectWise Control)
+        Category: ApplicationLogs
+        Path: ScreenConnect.tkape
+    -
+        Name: TeamViewer
+        Category: ApplicationLogs
+        Path: TeamViewerLogs.tkape
+    -
+        Name: VNC
+        Category: ApplicationLogs 
+        Path: VNCLogs.tkape

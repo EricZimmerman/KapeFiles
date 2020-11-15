@@ -1,13 +1,11 @@
 Description: PowerShell Console Log File
 Author: Mike Cary
-Version: 1
+Version: 1.0
 Id: efa4332a-89eb-430c-ab61-006a9e6620d7
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: PowerShell Console Log
         Category: PowerShellConsleLog
-        Path: C:\users\*\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
+        FileMask: ConsoleHost_history.txt

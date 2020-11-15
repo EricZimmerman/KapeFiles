@@ -1,9 +1,9 @@
 Description: Parses Security event log using Nirsoft FullEventLogView.exe
 Category: EventLogs
 Author: Barrie Hill
-Version: 1
+Version: 1.0
 Id: 6f9da2e0-0c7c-4147-9a02-58622e4c1b34
-BinaryUrl: https://www.nirsoft.net/utils/full_event_log_view.html
+BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
 ExportFormat: csv
 FileMask: Security.evtx
 Processors:

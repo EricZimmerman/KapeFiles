@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1.0
 Id: 0132fe8e-4887-40a3-a86e-fbffbfe29a10
-BinaryUrl: https://github.com/keydet89/RegRipper2.8
+BinaryUrl: https://github.com/keydet89/RegRipper2.8/archive/master.zip
 ExportFormat: txt
 FileMask: ntuser.dat
 Processors:
@@ -12,7 +12,7 @@ Processors:
         CommandLine: -r %sourceFile% -p muicache_tln -u %sourceFile% -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
 
 ##
 ## Create a folder "regripper" within the "Modules\bin" KAPE folder

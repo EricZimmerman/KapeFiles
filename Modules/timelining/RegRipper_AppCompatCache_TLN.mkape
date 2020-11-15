@@ -1,9 +1,9 @@
 Description: 'RegRipper: parse appcompatcache hive into TLN format'
 Category: Timeline
 Author: Mari DeGrazia
-Version: 1
+Version: 1.0
 Id: 680dfc07-07af-48a8-9bda-06eab3136baf
-BinaryUrl: https://github.com/keydet89/RegRipper2.8
+BinaryUrl: https://github.com/keydet89/RegRipper2.8/archive/master.zip
 ExportFormat: txt
 FileMask: SYSTEM
 Processors:
@@ -12,7 +12,7 @@ Processors:
         CommandLine: -r %sourceFile% -p appcompatcache_tln -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: true
+        Append: True
 ##
 ## Create a folder "regripper" within the "Modules\bin" KAPE folder
 ## Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"

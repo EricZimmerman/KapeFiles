@@ -1,56 +1,42 @@
 Description: User Related Registry hives
 Author: Eric Zimmerman / Mark Hallman
-Version: 1
+Version: 1.0
 Id: 635fbfd3-4a47-45b5-aae4-0a1bb6545d08
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ntuser.dat registry hive XP
         Category: Registry
-        Path: C:\Documents and Settings\*\ntuser.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Documents and Settings\%user%\
+        FileMask: ntuser.dat
     -
         Name: ntuser.dat registry hive
         Category: Registry
-        Path: C:\Users\*\ntuser.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\
+        FileMask: ntuser.dat
     -
         Name: ntuser.dat registry transaction files
         Category: Registry
-        Path: C:\Users\*\ntuser.dat.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\
+        FileMask: ntuser.dat.LOG*
     -
         Name: ntuser.dat DEFAULT registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\DEFAULT
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: DEFAULT
     -
         Name: ntuser.dat DEFAULT transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\DEFAULT.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\System32\config\
+        FileMask: DEFAULT.LOG*
     -
         Name: UsrClass.dat registry hive
         Category: Registry
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
+        FileMask: UsrClass.dat
     -
         Name: UsrClass.dat registry transaction files
         Category: Registry
-        Path: C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
+        FileMask: UsrClass.dat.LOG*
  

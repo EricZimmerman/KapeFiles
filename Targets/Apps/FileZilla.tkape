@@ -1,20 +1,16 @@
 Description: FileZilla XML and SQLite Log Files
 Author: Dennis Reneau
-Version: 1
+Version: 1.0
 Id: f7eaa0d5-0b15-4578-b411-ac4226e13a7f
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: FileZilla XML Log Files
         Category: Logs
-        Path: C:\Users\*\AppData\Roaming\FileZilla\*.xml*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\AppData\Roaming\FileZilla\
+        FileMask: '*.xml*'
     -
         Name: FileZilla SQLite3 Log Files
         Category: Logs
-        Path: C:\Users\*\AppData\Roaming\FileZilla\*.sqlite3*
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\AppData\Roaming\FileZilla\
+        FileMask: '*.sqlite3*'

@@ -1,13 +1,11 @@
 Description: Prefetch files
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: f6715d3f-b8ca-4cc2-9e5e-4ed18e88abbe
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: Prefetch
         Category: Prefetch
-        Path: C:\Windows*\prefetch\*.pf
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Windows*\prefetch\
+        FileMask: '*.pf'

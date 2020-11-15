@@ -1,27 +1,11 @@
 Description: ActivitiesCache.db collector
 Author: Lee Whitfield
-Version: 1
+Version: 1.0
 Id: 8315040f-c9a4-455a-b02c-96372583f436
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ActivitiesCache.db
         Category: FileFolderAccess
-        Path: C:\Users\*\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-    -
-        Name: ActivitiesCache.db-shm
-        Category: FileFolderAccess
-        Path: C:\Users\*\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db-shm
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
-    -
-        Name: ActivitiesCache.db-wal
-        Category: FileFolderAccess
-        Path: C:\Users\*\AppData\Local\ConnectedDevicesPlatform\*\ActivitiesCache.db-wal
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db*

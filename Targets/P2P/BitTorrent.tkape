@@ -1,0 +1,11 @@
+Description: BitTorrent
+Author: Banaanhangwagen
+Version: 1.0
+Id: ea203900-3f49-4ebf-a213-21d82ccae5db
+RecreateDirectories: True
+Targets:
+    -
+        Name: TorrentClients - BitTorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\BitTorrent\
+        FileMask: '*.dat'

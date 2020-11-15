@@ -1,7 +1,7 @@
 Description: 'SBECmd: process shellbags'
 Category: FileFolderAccess
 Author: Barrie Hill
-Version: 1
+Version: 1.0
 Id: fe12cf94-dad8-4f1a-b09d-3e64614fe2de
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip
 ExportFormat: csv

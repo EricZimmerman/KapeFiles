@@ -1,7 +1,7 @@
 Description: LogParser Security event 5145
 Category: RemoteAccess
 Author: Brian Maloney/@sbousseaden
-Version: 1
+Version: 1.0
 Id: 2d3f0292-d302-4d4a-b292-f8fbd58b8498
 BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
 ExportFormat: csv

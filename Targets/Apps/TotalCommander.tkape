@@ -1,0 +1,52 @@
+Description: Total Commander
+Author: Andrew Rathbun and Jessica Venturo
+Version: 1.1
+Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
+RecreateDirectories: True
+Targets:
+    -
+        Name: Total Commander - .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GHISLER\
+        FileMask: 'wincmd.ini'
+        Comment: "Locates .ini file associated with Total Commander which stores useful user activity information."
+    -
+        Name: Total Commander - Log File
+        Category: Apps
+        Path: C:\
+        Recursive: True
+        FileMask: 'totalcmd.log'
+        Comment: "Locates log file associated with Total Commander. NOTE: this log file is NOT enabled by default and the filename can be modified."
+
+######
+# Total Commander is a shareware Windows File Explorer replacement commonly used by threat actors during IR incidents.
+# This Target grabs the .ini file which provides some useful information very similar to Windows Shellbags.
+# It should be noted this .ini file is updated when Total Commander is exited. 
+# Within the wincmd.ini file, you will notice the following fields: 
+#  InstallDir - directory where Total Commander is installed
+#  Path listed for both Left and Right panes - in my testing, this is what folders were currently displayed in each respective pane upon exiting Total Commander
+#  RightHistory and LeftHistory - each of these provide a breadcrumb trail of the user's actions in each respective pain. For example, mine looked like this (0 is most recent):
+#   [RightHistory]
+#   0=C:\Users\%user%\Music\	#0
+#   1=C:\Users\%user%\	#08,Music
+#   2=C:\Users\	#01,%user%
+#   3=C:\	#04,Users
+#   4=C:\Program Files (x86)\Google\
+#   5=C:\Program Files (x86)\	#05,Google
+#   6=C:\Program Files (x86)\BraveSoftware\	#2,CrashReports
+#   7=C:\Program Files (x86)\	#02,BraveSoftware
+#   8=C:\	#2,Program Files (x86)
+#   [LeftHistory]
+#   0=C:\Users\%user%\Desktop\	#0
+#   1=C:\Users\%user%\	#03,Desktop
+#   2=C:\Users\	#01,%user%
+#   3=C:\	#04,Users
+#   4=C:\Program Files (x86)\Microsoft\
+#   5=C:\Program Files (x86)\	#07,Microsoft
+#   6=C:\	#2,Program Files (x86)
+#   7=C:\Program Files (x86)\	#0
+#   8=C:\Program Files (x86)\BraveSoftware\Brave-Browser\	#0
+#   9=C:\Program Files (x86)\BraveSoftware\	#01,Brave-Browser
+#   10=C:\Program Files (x86)\	#02,BraveSoftware
+# The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc. 
+######

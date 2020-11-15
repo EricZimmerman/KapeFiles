@@ -1,15 +1,13 @@
 Description: $LogFile
 Author: Eric Zimmerman
-Version: 1
+Version: 1.0
 Id: b98612e0-f679-400a-954f-c0b2bc86147b
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: $LogFile
         Category: FileSystem
-        Path: C:\$LogFile
-        IsDirectory: false
-        Recursive: false
-        AlwaysAddToQueue: true
-        Comment: ""
+        Path: C:\
+        FileMask: $LogFile
+        AlwaysAddToQueue: True
  

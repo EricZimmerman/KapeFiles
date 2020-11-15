@@ -1,0 +1,13 @@
+Description: Sentinel One Logs
+Author: Kirtan Shah
+Version: 1.0
+Id: b658aca2-8a69-440d-83ac-b81666a6484d
+RecreateDirectories: True
+Targets:
+    -
+        Name: SentinelOne EDR Log
+        Category: Antivirus
+        Path: C:\programdata\sentinel\logs\
+        Recursive: True
+        Comment: "Logs are in Binary Format (.binlog)"
+    

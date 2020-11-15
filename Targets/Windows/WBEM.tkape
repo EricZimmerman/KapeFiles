@@ -1,13 +1,11 @@
 Description: Web-Based Enterprise Management (WBEM)
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: e985f5e3-f951-4e13-8099-a2a6877355cb
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: WBEM
         Category: WBEM
-        Path: C:\Windows*\System32\wbem\Repository
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Path: C:\Windows*\System32\wbem\Repository\
+        Recursive: True

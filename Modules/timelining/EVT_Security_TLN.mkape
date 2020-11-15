@@ -3,7 +3,7 @@ Category: Timeline
 Author: Mari DeGrazia
 Version: 1.0
 Id: ced21bd0-ca01-4816-93aa-3abf95221752
-BinaryUrl: https://github.com/keydet89/Tools/tree/master/exe
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/evtparse.exe
 ExportFormat: csv
 FileMask: SecEvent.Evt
 Processors:
@@ -12,6 +12,6 @@ Processors:
         CommandLine: evtparse -e %sourceFile% -t -s %computerName%
         ExportFormat: csv
         ExportFile: temp.tln
-        Append: true
+        Append: True
 
 #place "p2x5124.dll" in the bin folder with regtime.exe

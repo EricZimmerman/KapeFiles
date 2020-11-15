@@ -2,12 +2,10 @@ Description: ComboFix Antivirus Data
 Author: Drew Ervin
 Version: 1.0
 Id: 8fb8608e-65ab-4fd1-b7a4-13618caf5ad7
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: ComboFix
         Category: Antivirus
-        Path: C:\ComboFix.txt
-        IsDirectory: false
-        Recursive: false
-        Comment: ""
+        Path: C:\
+        FileMask: ComboFix.txt

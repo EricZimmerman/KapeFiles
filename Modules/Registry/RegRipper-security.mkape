@@ -3,7 +3,7 @@ Category: Registry
 Author: ZeArioch <https://{github,twitter}.com/ZeArioch>, Phill Moore
 Version: 1.1
 Id: a0011605-10ac-4e7b-b422-8d1afeebfd5c
-BinaryUrl: https://github.com/keydet89/RegRipper2.8
+BinaryUrl: https://github.com/keydet89/RegRipper2.8/archive/master.zip
 ExportFormat: txt
 FileMask: SECURITY
 Processors:

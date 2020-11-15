@@ -1,7 +1,7 @@
 Description: 'RegRipper: parse all supported hives'
 Category: Registry
 Author: ZeArioch <https://{github,twitter}.com/ZeArioch>, Phill Moore
-Version: 1
+Version: 1.0
 Id: 76037ee9-0346-459a-a44a-1b67edc711c8
 BinaryUrl: https://github.com/keydet89/RegRipper2.8
 ExportFormat: txt

@@ -1,0 +1,26 @@
+Description: File Explorer Replacements
+Author: Andrew Rathbun
+Version: 1.0
+Id: 8e1cb436-dada-413f-845d-f2ed0823cb3a
+RecreateDirectories: True
+Targets:
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: DirectoryOpus.tkape
+    -
+        Name: Double Commander
+        Category: Apps
+        Path: DoubleCommander.tkape
+    -
+        Name: FreeCommander XE
+        Category: Apps
+        Path: FreeCommander.tkape
+    -
+        Name: Total Commander
+        Category: Apps
+        Path: TotalCommander.tkape
+    -
+        Name: XYplorer
+        Category: Apps
+        Path: XYplorer.tkape
