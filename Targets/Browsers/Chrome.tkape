@@ -125,6 +125,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Login Data
     -
+        Name: Chrome Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Action Predictor
+    -
         Name: Chrome Preferences
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
@@ -139,6 +144,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Top Sites*
+    -
+        Name: Chrome SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
     -
         Name: Chrome bookmarks
         Category: Communications
