@@ -134,3 +134,8 @@ Targets:
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
         FileMask: logins.json
+    -
+        Name: Sessionstore XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: sessionstore*
