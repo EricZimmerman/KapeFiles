@@ -1,6 +1,6 @@
 Description: Antivirus
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
 RecreateDirectories: True
 Targets:
@@ -24,6 +24,10 @@ Targets:
         Name: ComboFix
         Category: Antivirus
         Path: ComboFix.tkape
+    -        
+        Name: Cybereason
+        Category: Antivirus
+        Path: Cybereason.tkape
     -
         Name: ESET
         Category: Antivirus
