@@ -5,17 +5,9 @@ Id: e4ffb938-dcc0-4d91-9c77-3aa303d38512
 RecreateDirectories: True
 Targets:
     -
-        Name: Internet Explorer
-        Category: Communications
-        Path: InternetExplorer.tkape
-    -
         Name: Chrome
         Category: Communications
         Path: Chrome.tkape
-    -
-        Name: FireFox
-        Category: Communications
-        Path: FireFox.tkape
     -
         Name: Edge
         Category: Communications
@@ -24,6 +16,14 @@ Targets:
         Name: Edge Chromium
         Category: Communications
         Path: EdgeChromium.tkape
+    -
+        Name: Firefox
+        Category: Communications
+        Path: Firefox.tkape
+    -
+        Name: Internet Explorer
+        Category: Communications
+        Path: InternetExplorer.tkape
     -
         Name: Opera
         Category: Communications
