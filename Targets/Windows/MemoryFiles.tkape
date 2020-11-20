@@ -25,7 +25,12 @@ Targets:
     -
         Name: Small Memory Dump directory
         Category: Memory
-        Path: C:\Windows*\Minidump\     
+        Path: C:\Windows\Minidump\     
         FileMask: '*.dmp'
         Comment: "https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/small-memory-dump"
-        
+    -
+        Name: Small Memory Dump directory
+        Category: Memory
+        Path: C:\Windows.old\Windows\Minidump\     
+        FileMask: '*.dmp'
+        Comment: "https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/small-memory-dump"

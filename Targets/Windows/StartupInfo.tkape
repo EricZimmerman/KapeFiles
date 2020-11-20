@@ -7,5 +7,10 @@ Targets:
     -
         Name: StartupInfo XML Files
         Category: Persistence
-        Path: C:\Windows*\System32\WDI\LogFiles\StartupInfo\
+        Path: C:\Windows\System32\WDI\LogFiles\StartupInfo\
+        FileMask: '*.xml'
+    -
+        Name: StartupInfo XML Files
+        Category: Persistence
+        Path: C:\Windows.old\Windows\System32\WDI\LogFiles\StartupInfo\
         FileMask: '*.xml'

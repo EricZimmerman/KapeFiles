@@ -7,5 +7,10 @@ Targets:
     -
         Name: Prefetch
         Category: Prefetch
-        Path: C:\Windows*\prefetch\
+        Path: C:\Windows\prefetch\
+        FileMask: '*.pf'
+    -
+        Name: Prefetch
+        Category: Prefetch
+        Path: C:\Windows.old\Windows\prefetch\
         FileMask: '*.pf'

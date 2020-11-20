@@ -7,5 +7,10 @@ Targets:
     -
         Name: Windows Firewall Logs
         Category: WindowsFirewallLogs
-        Path: C:\Windows*\System32\LogFiles\Firewall\
+        Path: C:\Windows\System32\LogFiles\Firewall\
+        FileMask: pfirewall.*
+    -
+        Name: Windows Firewall Logs
+        Category: WindowsFirewallLogs
+        Path: C:\Windows.old\Windows\System32\LogFiles\Firewall\
         FileMask: pfirewall.*

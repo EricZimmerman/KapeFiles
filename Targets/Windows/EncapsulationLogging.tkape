@@ -7,10 +7,20 @@ Targets:
     -
         Name: EncapsulationLogging
         Category: Executables
-        Path: C:\Windows*\Appcompat\Programs\
+        Path: C:\Windows\Appcompat\Programs\
+        FileMask: EncapsulationLogging.hve
+    -
+        Name: EncapsulationLogging
+        Category: Executables
+        Path: C:\Windows.old\Windows\Appcompat\Programs\
         FileMask: EncapsulationLogging.hve
     -
         Name: EncapsulationLogging Logs
         Category: Executables
-        Path: C:\Windows*\Appcompat\Programs\
+        Path: C:\Windows\Appcompat\Programs\
+        FileMask: EncapsulationLogging.hve.log*
+    -
+        Name: EncapsulationLogging Logs
+        Category: Executables
+        Path: C:\Windows.old\Windows\Appcompat\Programs\
         FileMask: EncapsulationLogging.hve.log*

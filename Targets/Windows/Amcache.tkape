@@ -7,10 +7,20 @@ Targets:
     -
         Name: Amcache
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: Amcache.hve
     -
         Name: Amcache transaction files
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve.LOG*
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: Amcache.hve.LOG*

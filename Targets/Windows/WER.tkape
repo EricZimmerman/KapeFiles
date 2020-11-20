@@ -17,5 +17,10 @@ Targets:
     -
         Name: Crash Dumps
         Category: SQL Exploitation
-        Path: C:\Windows*\
+        Path: C:\Windows\
+        FileMask: '*.dmp'
+    -
+        Name: Crash Dumps
+        Category: SQL Exploitation
+        Path: C:\Windows.old\Windows\
         FileMask: '*.dmp'

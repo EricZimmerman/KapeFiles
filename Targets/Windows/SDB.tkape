@@ -7,10 +7,20 @@ Targets:
     -
         Name: SDB Files 
         Category: Executables
-        Path: C:\Windows*\apppatch\Custom\
+        Path: C:\Windows\apppatch\Custom\
+        FileMask: '*.sdb'
+    -
+        Name: SDB Files 
+        Category: Executables
+        Path: C:\Windows.old\Windows\apppatch\Custom\
         FileMask: '*.sdb'
     -
         Name: SDB Files x64
         Category: Executables
-        Path: C:\Windows*\apppatch\Custom\Custom64\
+        Path: C:\Windows\apppatch\Custom\Custom64\
+        FileMask: '*.sdb'
+    -
+        Name: SDB Files x64
+        Category: Executables
+        Path: C:\Windows.old\Windows\apppatch\Custom\Custom64\
         FileMask: '*.sdb'

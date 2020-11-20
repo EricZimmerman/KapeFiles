@@ -7,10 +7,14 @@ Targets:
     -
         Name: SignatureCatalog
         Category: FileMetadata
-        Path: C:\Windows*\System32\CatRoot\
+        Path: C:\Windows\System32\CatRoot\
+        Recursive: True
+    -
+        Name: SignatureCatalog
+        Category: FileMetadata
+        Path: C:\Windows.old\Windows\System32\CatRoot\
         Recursive: True
 
-        
 ## USE CASE ##
 # Validating digital signatures of an offline system can be problematic.  
 # Microsoft relies mostly on detached signature files to sign Windows 
