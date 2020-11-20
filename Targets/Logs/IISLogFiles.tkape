@@ -7,7 +7,12 @@ Targets:
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\Windows*\System32\LogFiles\W3SVC*\
+        Path: C:\Windows\System32\LogFiles\W3SVC*\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\Windows.old\Windows\System32\LogFiles\W3SVC*\
         FileMask: '*.log'
     -
         Name: IIS log files

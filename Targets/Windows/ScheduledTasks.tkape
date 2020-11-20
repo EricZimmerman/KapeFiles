@@ -7,15 +7,30 @@ Targets:
     -
         Name: at .job
         Category: Persistence
-        Path: C:\Windows*\Tasks\
+        Path: C:\Windows\Tasks\
+        FileMask: '*.job'
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows.old\Windows\Tasks\
         FileMask: '*.job'
     -
         Name: at SchedLgU.txt
         Category: Persistence
-        Path: C:\Windows*\
+        Path: C:\Windows\
+        FileMask: SchedLgU.txt
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows.old\Windows\
         FileMask: SchedLgU.txt
     -
         Name: XML
         Category: Persistence
-        Path: C:\Windows*\System32\Tasks\
+        Path: C:\Windows\System32\Tasks\
+        Recursive: True
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows.old\Windows\System32\Tasks\
         Recursive: True

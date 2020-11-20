@@ -12,5 +12,10 @@ Targets:
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: C:\Windows*\System32\winevt\logs\
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: '*.evtx'
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
         FileMask: '*.evtx'

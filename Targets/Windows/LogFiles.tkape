@@ -7,6 +7,10 @@ Targets:
     -
         Name: LogFiles
         Category: Logs
-        Path: C:\Windows*\System32\LogFiles\
+        Path: C:\Windows\System32\LogFiles\
         Recursive: True
-
+    -
+        Name: LogFiles
+        Category: Logs
+        Path: C:\Windows.old\Windows\System32\LogFiles\
+        Recursive: True

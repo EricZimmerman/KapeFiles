@@ -3,7 +3,7 @@ Description: SANS Triage Collection.
 # "self documenting" for the SANS 500 Students.
 
 Author: Mark Hallman
-Version: 1.0
+Version: 1.1
 Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
 RecreateDirectories: True
 Targets:
@@ -17,29 +17,54 @@ Targets:
     -
         Name: Event logs Win7+
         Category: EventLogs
-        Path: C:\Windows*\System32\winevt\logs\
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: '*.evtx'
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
         FileMask: '*.evtx'
 
 # Evidence of Execution
     -
         Name: Prefetch
         Category: Prefetch
-        Path: C:\Windows*\prefetch\
+        Path: C:\Windows\prefetch\
+        FileMask: '*.pf'
+    -
+        Name: Prefetch
+        Category: Prefetch
+        Path: C:\Windows.old\Windows\prefetch\
         FileMask: '*.pf'
     -
         Name: RecentFileCache
         Category: ApplicationCompatability
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: RecentFileCache.bcf
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: RecentFileCache.bcf
     -
         Name: Amcache
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: Amcache.hve
     -
         Name: Amcache transaction files
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve.LOG*
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: Amcache.hve.LOG*
     -
         Name: Syscache
@@ -154,103 +179,203 @@ Targets:
     -
         Name: SAM registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SAM.LOG*
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SAM.LOG*
     -
         Name: SECURITY registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SECURITY.LOG*
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SECURITY.LOG*
     -
         Name: SOFTWARE registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SOFTWARE.LOG*
     -
         Name: SYSTEM registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SYSTEM.LOG*
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SYSTEM.LOG*
     -
         Name: SAM registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SAM
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SAM
     -
         Name: SECURITY registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SECURITY
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SECURITY
     -
         Name: SOFTWARE registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SOFTWARE
     -
         Name: SYSTEM registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: SYSTEM
     -
         Name: RegBack registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: '*.LOG*'
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
         FileMask: '*.LOG*'
     -
         Name: SAM registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SAM
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
         FileMask: SAM
     -
         Name: SECURITY registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SECURITY
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
         FileMask: SECURITY
     -
         Name: SOFTWARE registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
         FileMask: SOFTWARE
     -
         Name: SYSTEM registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\
+        Path: C:\Windows\System32\config\RegBack\
         FileMask: SYSTEM
     -
         Name: SYSTEM registry hive (RegBack)
         Category: Registry
-        Path: C:\Windows*\System32\config\RegBack\
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SYSTEM1
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
         FileMask: SYSTEM1
     -
         Name: System Profile registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\systemprofile\
-        FileMask: ntuser.dat
+        Path: C:\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT
     -
         Name: System Profile registry transaction files
         Category: Registry
-        Path: C:\Windows*\System32\config\systemprofile\
-        FileMask: ntuser.dat.LOG*
+        Path: C:\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT.LOG*
     -
         Name: Local Service registry hive
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\LocalService\
-        FileMask: ntuser.dat
+        Path: C:\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT
     -
         Name: Local Service registry transaction files
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\LocalService\
-        FileMask: ntuser.dat.LOG*
+        Path: C:\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT.LOG*
     -
         Name: Network Service registry hive
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\NetworkService\
-        FileMask: ntuser.dat
+        Path: C:\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT
     -
         Name: Network Service registry transaction files
         Category: Registry
-        Path: C:\Windows*\ServiceProfiles\NetworkService\
-        FileMask: ntuser.dat.LOG*
+        Path: C:\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT.LOG*
     -
         Name: System Restore Points Registry Hives (XP)
         Category: Registry
@@ -259,29 +384,39 @@ Targets:
 
 # User Registry Files
     -
-        Name: ntuser.dat registry hive XP
+        Name: NTUSER.DAT registry hive XP
         Category: Registry
         Path: C:\Documents and Settings\%user%\
-        FileMask: ntuser.dat
+        FileMask: NTUSER.DAT
     -
-        Name: ntuser.dat registry hive
+        Name: NTUSER.DAT registry hive
         Category: Registry
         Path: C:\Users\%user%\
-        FileMask: ntuser.dat
+        FileMask: NTUSER.DAT
     -
-        Name: ntuser.dat registry transaction files
+        Name: NTUSER.DAT registry transaction files
         Category: Registry
         Path: C:\Users\%user%\
-        FileMask: ntuser.dat.LOG*
+        FileMask: NTUSER.DAT.LOG*
     -
-        Name: ntuser.dat DEFAULT registry hive
+        Name: NTUSER.DAT DEFAULT registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
         FileMask: DEFAULT
     -
-        Name: ntuser.dat DEFAULT transaction files
+        Name: NTUSER.DAT DEFAULT registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: DEFAULT
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: DEFAULT.LOG*
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: DEFAULT.LOG*
     -
         Name: UsrClass.dat registry hive
@@ -300,23 +435,47 @@ Targets:
     -
         Name: at .job
         Category: Persistence
-        Path: C:\Windows*\Tasks\
+        Path: C:\Windows\Tasks\
+        FileMask: '*.job'
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows.old\Windows\Tasks\
         FileMask: '*.job'
     -
         Name: at SchedLgU.txt
         Category: Persistence
-        Path: C:\Windows*\Tasks\
+        Path: C:\Windows\
+        FileMask: SchedLgU.txt
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows.old\Windows\
         FileMask: SchedLgU.txt
     -
         Name: XML
         Category: Persistence
-        Path: C:\Windows*\System32\Tasks\
+        Path: C:\Windows\System32\Tasks\
+        Recursive: True
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows.old\Windows\System32\Tasks\
+        Recursive: True
+
+# System Resource Usage Monitor
+    -
+        Name: SRUM
+        Category: Execution
+        Path: C:\Windows\System32\SRU\
         Recursive: True
     -
         Name: SRUM
         Category: Execution
-        Path: C:\Windows*\System32\SRU\
+        Path: C:\Windows.old\Windows\System32\SRU\
         Recursive: True
+
+# Thumbcache.db
     -
         Name: Thumbcache DB
         Category: FileKnowledge
@@ -332,7 +491,12 @@ Targets:
     -
         Name: Setupapi.log Win7+
         Category: USBDevices
-        Path: C:\Windows*\inf\
+        Path: C:\Windows\inf\
+        FileMask: setupapi.dev.log
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows.old\Windows\inf\
         FileMask: setupapi.dev.log
     -
         Name: WindowsIndexSearch
@@ -342,7 +506,12 @@ Targets:
     -
         Name: WBEM
         Category: WBEM
-        Path: C:\Windows*\System32\wbem\Repository\
+        Path: C:\Windows\System32\wbem\Repository\
+        Recursive: True
+    -
+        Name: WBEM
+        Category: WBEM
+        Path: C:\Windows.old\Windows\System32\wbem\Repository\
         Recursive: True
 
 # User Communication         

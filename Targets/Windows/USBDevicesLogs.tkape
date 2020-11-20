@@ -12,5 +12,10 @@ Targets:
     -
         Name: Setupapi.log Win7+
         Category: USBDevices
-        Path: C:\Windows*\inf\
+        Path: C:\Windows\inf\
+        FileMask: setupapi.dev.log
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows.old\Windows\inf\
         FileMask: setupapi.dev.log
