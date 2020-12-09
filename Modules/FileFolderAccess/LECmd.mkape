@@ -4,17 +4,17 @@ Author: Eric Zimmerman
 Version: 1.0
 Id: 1b66f0e2-2ccf-449c-ae02-a1b3dc59df08
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: LECmd.exe
         CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
-        ExportFormat: csv
+        ExportFormat: CSV
     -
         Executable: LECmd.exe
         CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q
-        ExportFormat: html
+        ExportFormat: HTML
     -
         Executable: LECmd.exe
         CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
-        ExportFormat: json
+        ExportFormat: JSON

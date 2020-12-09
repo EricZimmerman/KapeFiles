@@ -4,12 +4,12 @@ Author: Brian Maloney
 Version: 1.0	
 Id: 8e0a2314-79e4-48f2-81ad-a0719e8af680
 BinaryUrl: https://github.com/MarkBaggett/srum-dump/raw/python3/srum_dump_csv.exe
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: srum_dump_csv.exe
         CommandLine: -i %sourceDirectory% -t SRUM_TEMPLATE.xlsx -r %sourceDirectory% -o %destinationDirectory% -q
-        ExportFormat: csv
+        ExportFormat: CSV
 
 ######
 # Uses Mark Baggett's srum-dump

@@ -4,17 +4,17 @@ Author: Eric Zimmerman
 Version: 1.0
 Id: 1b66f0e2-2ccf-467d-ae15-a2b3dc59df08
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
-        ExportFormat: csv
+        ExportFormat: CSV
     -
         Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: -d %sourceDirectory% --xml %destinationDirectory%
-        ExportFormat: xml
+        ExportFormat: XML
     -
         Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: -d %sourceDirectory% --json %destinationDirectory%
-        ExportFormat: json
+        ExportFormat: JSON
