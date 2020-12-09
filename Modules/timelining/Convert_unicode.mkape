@@ -4,10 +4,10 @@ Author: Mari DeGrazia
 Version: 1.0
 Id: 407a520e-b194-42ed-97b3-af159a912126
 BinaryUrl: https://github.com/mdegrazia/KAPE_Tools/raw/master/executables/unicode_2_ascii.exe
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: tln_tools\unicode_2_ascii.exe
         CommandLine: -f %destinationDirectory%\temp.tln -o %destinationDirectory%\temp_ascii.tln
-        ExportFormat: csv
+        ExportFormat: CSV
         
