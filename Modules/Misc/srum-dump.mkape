@@ -1,14 +1,15 @@
 Description: 'SRUM-dump: Dump contents of the srum database'
 Category: SystemActivity
-Author: Brian Maloney
-Version: 1.0	
-Id: 8e0a2314-79e4-48f2-81ad-a0719e8af680
+Original Author: Brian Maloney
+Author: Jay Houlden
+Version: 1.1
+Id: c594e592-b740-4d01-a0f8-799ff9bac97a
 BinaryUrl: https://github.com/MarkBaggett/srum-dump/raw/python3/srum_dump_csv.exe
 ExportFormat: CSV
 Processors:
     -
         Executable: srum_dump_csv.exe
-        CommandLine: -i %sourceDirectory% -t SRUM_TEMPLATE.xlsx -r %sourceDirectory% -o %destinationDirectory% -q
+        CommandLine: -i %sourceDirectory%\Windows\System32\SRU\SRUDB.dat -t SRUM_TEMPLATE.xlsx -r %sourceDirectory%\WINDOWS\System32\config\SOFTWARE -o %destinationDirectory% -q
         ExportFormat: CSV
 
 ######
