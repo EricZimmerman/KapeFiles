@@ -4,12 +4,12 @@ Author: Jonas A. Wendorf (changes), based on the original for Spark Core by Eric
 Version: 1.0
 Id: bc310a24-c824-464a-abde-077bbe85c949
 BinaryUrl: https://www.nextron-systems.com/thor-lite/
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: thor-lite/thor64-lite.exe
         CommandLine: "--quick -l %destinationDirectory%/thor-lite.log -o %destinationDirectory%/thor-lite.csv"
-        ExportFormat: csv
+        ExportFormat: CSV
 
 ### HOW TO PLACE THE BINARY
 #

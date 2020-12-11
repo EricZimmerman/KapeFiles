@@ -4,7 +4,7 @@ Author: Brian Maloney, Jay Houlden
 Version: 1.1
 Id: 8e0a2314-79e4-48f2-81ad-a0719e8af680
 BinaryUrl: https://github.com/MarkBaggett/srum-dump/raw/python3/srum_dump_csv.exe
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: srum_dump_csv.exe

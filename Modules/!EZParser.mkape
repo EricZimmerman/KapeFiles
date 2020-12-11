@@ -4,7 +4,7 @@ Author: Phill Moore
 Version: 1.1
 Id: f531e7cc-c9f3-4d04-881b-dbc89d1e7f38
 BinaryUrl: https://ericzimmerman.github.io/#!index.md
-ExportFormat: csv
+ExportFormat: CSV
 Processors:
     -
         Executable: AmcacheParser.mkape

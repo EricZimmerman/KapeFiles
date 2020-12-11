@@ -4,14 +4,14 @@ Author: Eric Zimmerman
 Version: 1.0
 Id: 7ef84a6b-5215-46bb-af2a-3339a3227e25
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
-ExportFormat: csv
+ExportFormat: CSV
 FileMask: $MFT
 Processors:
     -
         Executable: MFTECmd.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory%
-        ExportFormat: csv
+        ExportFormat: CSV
     -
         Executable: MFTECmd.exe
         CommandLine: -f %sourceFile% --json %destinationDirectory%
-        ExportFormat: json
+        ExportFormat: JSON

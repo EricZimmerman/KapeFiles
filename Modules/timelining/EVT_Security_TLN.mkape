@@ -4,13 +4,13 @@ Author: Mari DeGrazia
 Version: 1.0
 Id: ced21bd0-ca01-4816-93aa-3abf95221752
 BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/evtparse.exe
-ExportFormat: csv
+ExportFormat: CSV
 FileMask: SecEvent.Evt
 Processors:
     -
         Executable: tln_tools\evtparse.exe
         CommandLine: evtparse -e %sourceFile% -t -s %computerName%
-        ExportFormat: csv
+        ExportFormat: CSV
         ExportFile: temp.tln
         Append: True
 

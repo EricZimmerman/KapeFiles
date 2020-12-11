@@ -51,6 +51,12 @@ This repository serves as a place for community-created Targets and Modules for 
 
 Please send PRs should you come up with new Targets or Modules for inclusion in the project!
 
+## Targets
+
+If you need help with creating Targets, check out [this guide](https://ericzimmerman.github.io/KapeDocs/#!Pages\60-Tips-and-tricks.md#KAPE_Target_Creation). 
+
+## Modules
+
 Be sure to point the BinaryUrl property to the download location in Module files!
 
 All other info including requirements, etc. should be documented at the end of the Module in comment blocks.
