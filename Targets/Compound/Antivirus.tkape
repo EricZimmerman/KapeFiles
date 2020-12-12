@@ -92,3 +92,6 @@ Targets:
         Name: Windows Defender
         Category: Antivirus
         Path: WindowsDefender.tkape
+
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_antivirus_software. 
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that target in the appropriate Compound target.
