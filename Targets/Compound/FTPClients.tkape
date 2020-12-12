@@ -1,0 +1,17 @@
+Description: FTP Clients
+Author: Andrew Rathbun
+Version: 1.0
+Id: b1f3e04d-6525-4a1a-9e19-82300ec1e3b7
+RecreateDirectories: True
+Targets:
+    -
+        Name: FileZilla
+        Category: FTP
+        Path: FileZilla.tkape
+    -
+        Name: WinSCP
+        Category: FTP
+        Path: WinSCP.tkape
+
+# For those looking for ideas to contribute to this Compound Target, check here: https://en.wikipedia.org/wiki/Comparison_of_FTP_client_software.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.
