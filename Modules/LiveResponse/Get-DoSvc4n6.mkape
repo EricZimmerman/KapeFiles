@@ -8,7 +8,7 @@ ExportFormat: CSV
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-DoSvc4n6.ps1' %sourceDirectory% -NoIP2Location -OutputPath %destinationDirectory%"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-DoSvc4n6.ps1' %sourceDirectory% -SkipIP2Location -OutputPath %destinationDirectory%"
         ExportFormat: CSV
 #####
 # Get-DoSvcExternalIP extracts public IP addresses of a Windows 10 device from DoSvc EventTraceLogs
