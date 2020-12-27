@@ -16,3 +16,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Notepad++\
         FileMask: "config.xml"
         Comment: "Retrieves config.xml which contains recently searched terms, replaced terms and recently opened documents"
+
+# Documentation
+# N/A

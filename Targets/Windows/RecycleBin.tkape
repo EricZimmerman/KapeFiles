@@ -14,3 +14,10 @@ Targets:
         Category: Deleted Files
         Path: C:\RECYCLER\
         Recursive: True
+
+# Documentation
+# https://www.youtube.com/watch?v=Gkir-wGqG2c
+# https://www.andreafortuna.org/2019/09/26/windows-forensics-analysis-of-recycle-bin-artifacts/
+# https://www.blackbagtech.com/blog/examining-the-windows-10-recycle-bin/
+# https://www.sans.org/security-resources/posters/windows-forensics-evidence-of/75/download
+# https://dereknewton.com/2010/06/recycle-bin-forensics-in-windows-7-and-vista/

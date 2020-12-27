@@ -25,3 +25,8 @@ Targets:
         Recursive: True
         FileMask: "*.exb.snippets"
         Comment: "Note 'Snippets'"
+
+# Documentation
+# https://arxiv.org/pdf/1709.10395
+# https://www.forensicfocus.com/articles/evernote-introduction/
+# https://www.carpeindicium.com/blog/quick-dirty-recover-local-evernote/

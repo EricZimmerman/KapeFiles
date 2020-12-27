@@ -24,3 +24,7 @@ Targets:
         Category: EventLogs
         Path: C:\Windows.old\Windows\System32\winevt\logs\
         FileMask: application.evtx
+
+# Documentation
+# https://countuponsecurity.com/2015/11/23/digital-forensics-supertimeline-event-logs-part-i/
+# https://www.jaiminton.com/cheatsheet/DFIR/

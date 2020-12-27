@@ -19,3 +19,6 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\F-Secure\Antivirus\ScheduledScanReports\
         Recursive: True
+
+# Documentation
+# N/A

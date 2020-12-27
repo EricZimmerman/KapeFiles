@@ -88,3 +88,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\log\apt\
         Recursive: True
         FileMask: "*.log"
+
+# Documentation
+# 

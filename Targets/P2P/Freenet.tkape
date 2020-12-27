@@ -29,3 +29,6 @@ Targets:
         Category: File Downloads
         Path: C:\Users\%user%\AppData\Local\Freenet\downloads\
         Recursive: True
+
+# Documentation
+# N/A

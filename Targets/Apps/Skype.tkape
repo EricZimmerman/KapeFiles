@@ -34,3 +34,9 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
         FileMask: '*.log'
+
+# Documentation
+# https://bebinary4n6.blogspot.com/2019/07/analysis-of-skype-windows-10-app.html
+# https://bebinary4n6.blogspot.com/2019/07/skype-from-old-one-to-newest-one.html
+# https://blog.elcomsoft.com/2019/12/extracting-skype-histories-and-deleted-files-metadata-from-microsoft-account/
+# https://bebinary4n6.blogspot.com/2019/07/analysis-skype-app-for-windows-metro.html

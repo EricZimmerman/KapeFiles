@@ -9,3 +9,6 @@ Targets:
         Category: FileKnowledge
         Path: C:\Users\%user%\AppData\Local\Microsoft\Office\*\OfficeFileCache\
         Recursive: True
+
+# Documentation
+# https://arsenalrecon.com/2019/10/the-office-document-cache-and-introducing-odc-recon-part-i/

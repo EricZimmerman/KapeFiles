@@ -20,3 +20,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\temp\LogMeInLogs\
         Recursive: True
         Comment: "Contains RemoteAssist (formerly GoToAssist), GoToMeeting, and other GoTo* logs"
+
+# Documentation
+# N/A

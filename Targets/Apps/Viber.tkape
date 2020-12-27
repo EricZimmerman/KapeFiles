@@ -31,3 +31,6 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\ViberPC\*\Thumbnails
         Comment: "Cache of the thumbnails for uploaded/downloaded images"
+
+# Documentation
+# https://www.digitalforensics.com/blog/forensic-analysis-instant-messengers-desktop-applications/

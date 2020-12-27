@@ -22,3 +22,10 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\DriveFS\
         Recursive: True
         Comment: "Google Drive File Stream Application"
+
+# Documentation
+# https://digital-forensics.sans.org/summit-archives/Prague_Summit/Cloud_Storage_Forensics_Mattia_Eppifani.pdf
+# https://www.researchgate.net/publication/330319091_Cloud_Drives_Forensic_Artifacts_A_Google_Drive_Case
+# https://cyberforensicator.com/2018/10/19/cloud-forensics-google-drive/
+# https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics/
+# https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics-2/

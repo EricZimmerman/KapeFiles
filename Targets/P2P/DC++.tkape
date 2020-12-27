@@ -11,8 +11,7 @@ Targets:
         Recursive: True
         Comment: "Locates DC++ hub/chat logs and copies them. Current as of version 0.868."
         
-######
+# Documentation
 # DC++ is a popular file-sharing client that runs on the Direct Connect network. 
 # DC++ is commonly used to share any file type with any users either directly or within chat rooms (hubs). 
 # Hub/chat logs are plain text readable with your favorite text editor.
-######

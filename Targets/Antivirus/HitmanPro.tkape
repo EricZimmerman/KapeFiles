@@ -20,3 +20,6 @@ Targets:
         Path: C:\ProgramData\HitmanPro.Alert\
         FileMask: excalibur.db
         Comment: "SQl Lite DB"
+
+# Documentation
+# N/A

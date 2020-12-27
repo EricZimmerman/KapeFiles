@@ -10,3 +10,6 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\WRData\
         FileMask: WRLog.log
+
+# Documentation
+# N/A

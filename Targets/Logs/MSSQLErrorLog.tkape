@@ -14,3 +14,6 @@ Targets:
         Category: SQL Exploitation
         Path: C:\Program Files\Microsoft SQL Server\*\MSSQL\LOG\
         FileMask: ERRORLOG.*
+
+# Documentation
+# N/A

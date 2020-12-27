@@ -11,3 +11,6 @@ Targets:
         FileMask: $MFTMirr
         AlwaysAddToQueue: True
         Comment: "$MFTMirr is a redundant copy of the first four (4) records of the MFT."
+
+# Documentation
+# N/A

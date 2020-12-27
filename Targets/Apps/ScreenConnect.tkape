@@ -21,3 +21,6 @@ Targets:
         Category: EventLogs
         Path: ApplicationEvents.tkape
         Comment: "Contains ScreenConnect entries, source: ScreenConnect Client"
+
+# Documentation
+# N/A

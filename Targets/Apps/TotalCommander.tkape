@@ -18,7 +18,7 @@ Targets:
         FileMask: 'totalcmd.log'
         Comment: "Locates log file associated with Total Commander. NOTE: this log file is NOT enabled by default and the filename can be modified."
 
-######
+# Documentation
 # Total Commander is a shareware Windows File Explorer replacement commonly used by threat actors during IR incidents.
 # This Target grabs the .ini file which provides some useful information very similar to Windows Shellbags.
 # It should be noted this .ini file is updated when Total Commander is exited. 
@@ -50,4 +50,3 @@ Targets:
 #   10=C:\Program Files (x86)\	#02,BraveSoftware
 # The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc. 
 # Within a user's NTUSER.DAT file, there will be a key with an address of: SOFTWARE\Ghisler\Total Commander. There will be a value for InstallDir which will list where TotalCommander is installed for that user. 
-######

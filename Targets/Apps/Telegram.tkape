@@ -17,7 +17,8 @@ Targets:
         Recursive: True
         Comment: "Chat Attachments"
 
-#######
+# Documentation
+# https://www.digitalforensics.com/blog/forensic-analysis-instant-messengers-desktop-applications/
 # Telegram desktop is the official windows client of the messaging platform.
 # The main difference with Whatsapp is the cloud capability, so if you need to recover chats but you don't have access to the smartphone, you can get all "active" contents from the desktop app.
 # You need to open the application and have an active internet connection to view all chats and media contents.
@@ -27,4 +28,3 @@ Targets:
 # ***IMPORTANT NOTES***
 #   - It's not possible to recover messages from local cache/temp files because of encryption (it only works on old versions and there are few tools available)
 #   - You can't get "private messages" because they're not on cloud.
-#######

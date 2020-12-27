@@ -19,3 +19,6 @@ Targets:
         Category: Antivirus
         Path: C:\Program Files*\Trend Micro\Security Agent\ConnLog\
         FileMask: '*.log'
+
+# Documentation
+# N/A

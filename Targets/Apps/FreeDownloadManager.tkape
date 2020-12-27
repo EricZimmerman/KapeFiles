@@ -23,3 +23,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Free Download Manager\backup\
         FileMask: "userdata.zip"
         Comment: "fdm.sqlite can also appear in the backup folder in a compressed userdata.zip file"
+
+# Documentation
+# N/A

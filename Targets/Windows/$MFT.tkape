@@ -10,3 +10,13 @@ Targets:
         Path: C:\
         FileMask: $MFT
         AlwaysAddToQueue: True
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
+# https://www.andreafortuna.org/2017/10/06/macb-times-in-windows-forensic-analysis/
+# https://www.andreafortuna.org/2018/06/04/using-mft-anomalies-to-spot-suspicious-files-in-forensic-analysis/
+# https://www.thedigitalforensics.com/windows-forensics/timestamp-in-ntfs-system
+# https://www.youtube.com/watch?v=OTea54BelTg
+# https://www.sciencedirect.com/topics/computer-science/master-file-table
+# https://www.tzworks.net/prototype_page.php?proto_id=46
+# https://www.youtube.com/watch?v=xW5UwDztkX4

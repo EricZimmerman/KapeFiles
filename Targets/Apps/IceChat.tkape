@@ -9,3 +9,6 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\IceChat Networks\IceChat\Logs\
         Recursive: True
+
+# Documentation
+# N/A

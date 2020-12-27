@@ -20,7 +20,7 @@ Targets:
         Path: C:\ProgramData\Macrium\Reflect Launcher
         Comment: "Copies out the Reflect folder which contains many important logs"
 
-######
+# Documentation
 # Macrium Reflect is a program that can be used to create full, incremental, and differential backups of any disk/volume on a user's system.
 # Often times, backups are automated and scheduled through Scheduled Tasks. 
 # If you notice there are Scheduled Tasks (ScheduledTasks.tkape) for Macrium Reflect, then this target is for you!
@@ -29,4 +29,3 @@ Targets:
 # .\Macrium\Reflect\ contains a Consolidate.log file, which contains a play-by-play of when backups occur and their destination. There will also be daily logs for scheduled backups. 
 # .\Macrium\Macrium Service\ contains logs that are similar to running --debug or --trace in KAPE, which provide more information than you really need. 
 # .\Macrium\Macrium Launcher\ contains logs that give a play-by-play of the program's events on a given day. 
-######

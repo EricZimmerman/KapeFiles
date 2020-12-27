@@ -11,6 +11,8 @@ Targets:
         FileMask: 'WinSCP.ini'
         Recursive: True
 
+# Documentation
+# https://az4n6.blogspot.com/2020/02/detecting-laterial-movment-with-winscp.html for more information
+# https://www.fireeye.com/blog/threat-research/2017/03/using_the_registryt.html
 # This will grab the .ini file which is a configuration file that can provide details about the FTP session
 # This file should be located in the same folder as WinSCP.exe
-# https://az4n6.blogspot.com/2020/02/detecting-laterial-movment-with-winscp.html for more information

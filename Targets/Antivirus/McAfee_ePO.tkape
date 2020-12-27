@@ -10,3 +10,5 @@ Targets:
         Path: C:\ProgramData\McAfee\Endpoint Security\Logs\
         Recursive: True
  
+# Documentation
+# N/A

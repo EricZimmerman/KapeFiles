@@ -13,3 +13,6 @@ Targets:
         Name: TorrentClients - qBittorrent
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\qBittorrent\logs\
+
+# Documentation
+# https://troy4n6.blogspot.com/2019/02/text-based-treasure-qbittorent-log-file.html

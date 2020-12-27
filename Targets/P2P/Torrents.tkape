@@ -10,3 +10,6 @@ Targets:
         Path: C:\
         FileMask: '*.torrent'
         Recursive: True
+
+# Documentation
+# N/A

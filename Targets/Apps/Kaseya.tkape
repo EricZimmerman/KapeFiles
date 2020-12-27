@@ -52,3 +52,6 @@ Targets:
         Path: C:\Windows.old\Windows\Temp\
         FileMask: KASetup.log
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
+
+# Documentation
+# N/A

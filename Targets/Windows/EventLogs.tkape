@@ -19,3 +19,6 @@ Targets:
         Category: EventLogs
         Path: C:\Windows.old\Windows\System32\winevt\logs\
         FileMask: '*.evtx'
+
+# Documentation
+# https://www.youtube.com/watch?v=qjeA1a5n0LQ

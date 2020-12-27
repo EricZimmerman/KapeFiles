@@ -15,7 +15,7 @@ Targets:
         Path: C:\Windows.old\Windows\System32\CatRoot\
         Recursive: True
 
-## USE CASE ##
+# Documentation
 # Validating digital signatures of an offline system can be problematic.  
 # Microsoft relies mostly on detached signature files to sign Windows 
 # executables.  Checking those on an offline system using sigcheck.exe
@@ -28,4 +28,3 @@ Targets:
 # machine's signature database and should accurately validate the target 
 # system's files (which presumabley were collected with other KAPE modules).
 # Kudos to Troy Larson for providing this workaround technique.
-##
