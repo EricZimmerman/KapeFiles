@@ -34,3 +34,6 @@ Targets:
         Category: Communication
         Path: C:\Windows.old\Windows\System32\grouppolicy\*\Scripts\
         Recursive: True
+
+# Documentation
+# https://medium.com/@grzegorztworek/gpo-group-policy-object-is-one-of-the-most-useful-features-of-the-windows-ecosystem-73b6eeab812

@@ -9,3 +9,6 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\HexChat\logs\
         Recursive: True
+
+# Documentation
+# N/A

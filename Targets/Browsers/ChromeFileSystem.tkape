@@ -9,3 +9,6 @@ Targets:
         Category: Communication
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\File System\
         Recursive: True
+
+# Documentation
+# N/A

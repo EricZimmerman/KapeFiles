@@ -24,3 +24,6 @@ Targets:
         Category: Windows Linux Profile
         Path: C:\Users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\
         FileMask: '.profile'
+
+# Documentation
+# N/A

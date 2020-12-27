@@ -11,3 +11,6 @@ Targets:
         Recursive: True
         FileMask: '*.log'
         Comment: "Highly dependent on Exchange configuration"
+
+# Documentation
+# N/A

@@ -59,3 +59,6 @@ Targets:
         Category: Communications
         Path: C:\Documents and Settings\%user%\Application Data\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
+
+# Documentation
+# N/A

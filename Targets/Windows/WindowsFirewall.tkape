@@ -14,3 +14,6 @@ Targets:
         Category: WindowsFirewallLogs
         Path: C:\Windows.old\Windows\System32\LogFiles\Firewall\
         FileMask: pfirewall.*
+
+# Documentation
+# https://www.forensicfocus.com/articles/finding-and-interpreting-windows-firewall-rules/

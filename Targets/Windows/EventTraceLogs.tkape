@@ -49,3 +49,6 @@ Targets:
         Category: Event Trace Logs
         Path:  C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\
         FileMask: energy-ntkl.etl
+
+# Documentation
+# https://www.youtube.com/watch?v=TUR-L9AtzQE

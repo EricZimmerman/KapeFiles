@@ -33,3 +33,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: True
         Comment: "Required for offline decryption of Dropbox databases"
+
+# Documentation
+# https://www.marshall.edu/forensics/files/Treleven-Dropbox-Paper-FINAL.pdf
+# https://arxiv.org/pdf/1709.10395
+# https://digital-forensics.sans.org/summit-archives/Prague_Summit/Cloud_Storage_Forensics_Mattia_Eppifani.pdf
+# https://www.sans.org/blog/digital-forensics-dropbox/
+# https://www.researchgate.net/publication/342991973_Forensic_Analysis_of_Dropbox_Data_Remnants_on_Windows_10
+# https://www.atropos4n6.com/cloud-forensics/windows-10-artifacts-of-dropboxs-native-app-usage/
+# https://www.atropos4n6.com/cloud-forensics/artifacts-of-dropbox-usage-on-windows-10-part-2/

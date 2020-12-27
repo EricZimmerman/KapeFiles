@@ -10,3 +10,6 @@ Targets:
         Path: C:\ProgramData\Ammyy\
         Recursive: True
         Comment: "May not contain traditional log files, but presence of this folder may indicate historical usage"
+
+# Documentation
+# N/A

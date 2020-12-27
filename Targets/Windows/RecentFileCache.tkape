@@ -14,3 +14,8 @@ Targets:
         Category: ApplicationCompatability
         Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: RecentFileCache.bcf
+
+# Documentation
+# https://digital-forensics.sans.org/media/poster-windows-forensics-final.pdf
+# http://journeyintoir.blogspot.com/2013/12/revealing-recentfilecachebcf-file.html
+# https://www.youtube.com/watch?v=ZKlyu-HOvxY

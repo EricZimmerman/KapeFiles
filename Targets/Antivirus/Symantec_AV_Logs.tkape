@@ -47,3 +47,5 @@ Targets:
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
         Recursive: True
 
+# Documentation
+# N/A

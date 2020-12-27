@@ -210,3 +210,8 @@ Targets:
         Path: C:\System Volume Information\_restore*\RP*\snapshot\
         FileMask: _REGISTRY_*
 
+# Documentation
+# https://medium.com/@lucideus/windows-registry-forensic-analysis-part-1-windows-forensics-manual-2018-2cb4da210125
+# https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://www.youtube.com/watch?v=VYROU-ZwZX8

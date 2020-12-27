@@ -12,3 +12,7 @@ Targets:
         Name: RDP Cache Files
         Category: FileSystem
         Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Terminal Server Client\Cache\
+
+# Documentation
+# https://www.youtube.com/watch?v=NnEOk5-Dstw
+# https://cbtgeeks.com/2018/05/22/digital-forensics-on-rdp-cache/

@@ -14,3 +14,11 @@ Targets:
         Category: Prefetch
         Path: C:\Windows.old\Windows\prefetch\
         FileMask: '*.pf'
+
+# Documentation
+# https://forensicswiki.xyz/wiki/index.php?title=Prefetch
+# https://www.youtube.com/watch?v=f4RAtR_3zcs
+# https://nasbench.medium.com/windows-forensics-analysis-windows-artifacts-part-ii-71b8fa68d8a1
+# https://www.sans.org/blog/device-profiling-with-windows-prefetch
+# https://www.youtube.com/watch?v=prEghfj3bPI
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download

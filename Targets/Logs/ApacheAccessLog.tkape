@@ -10,3 +10,6 @@ Targets:
         Path: C:\
         FileMask: 'access.log'
         Recursive: True
+
+# Documentation
+# N/A

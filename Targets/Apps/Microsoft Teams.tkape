@@ -20,3 +20,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\
         FileMask: "desktop-config.json"
         Comment: "JSON config file for Teams"
+
+# Documentation
+# https://cyberforensicator.com/2020/04/16/looking-at-microsoft-teams-from-a-dfir-perspective/

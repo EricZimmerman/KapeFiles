@@ -9,3 +9,8 @@ Targets:
         Category: TeraCopy
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
         Recursive: True
+
+# Documentation
+# https://www.kraftkennedy.com/teracopy-forensics-finding-elusive-copy-log/
+# https://www.stark4n6.com/2018/11/teracopy-forensic-analysis-part-1.html
+# https://www.stark4n6.com/2018/11/teracopy-forensic-analysis-part-2.html

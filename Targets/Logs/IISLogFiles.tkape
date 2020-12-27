@@ -29,3 +29,6 @@ Targets:
         Category: Logs
         Path: C:\Resources\directory\* \LogFiles\Web\W3SVC*\
         FileMask: '*.log'
+
+# Documentation
+# N/A

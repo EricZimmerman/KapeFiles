@@ -34,3 +34,6 @@ Targets:
         Category: Antivirus
         Path: C:\Windows.old\Windows\Temp\
         FileMask: MpCmdRun.log
+
+# Documentation
+# N/A

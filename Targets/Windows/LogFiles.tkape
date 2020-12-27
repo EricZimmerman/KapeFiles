@@ -14,3 +14,6 @@ Targets:
         Category: Logs
         Path: C:\Windows.old\Windows\System32\LogFiles\
         Recursive: True
+
+# Documentation
+# https://digital-forensics.sans.org/community/papers/gcfa/forensic-analysis-windows-2000-server-iis-oracle_112

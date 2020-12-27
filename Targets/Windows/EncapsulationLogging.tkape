@@ -24,3 +24,6 @@ Targets:
         Category: Executables
         Path: C:\Windows.old\Windows\Appcompat\Programs\
         FileMask: EncapsulationLogging.hve.log*
+
+# Documentation
+# N/A

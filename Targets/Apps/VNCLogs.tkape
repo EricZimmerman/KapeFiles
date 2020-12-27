@@ -15,3 +15,7 @@ Targets:
         Category: EventLogs
         Path: ApplicationEvents.tkape
         Comment: "Contains RealVNC entries, event source: VNC Server"
+
+# Documentation
+# https://www.semanticscholar.org/paper/Tracing-VNC-And-RDP-Protocol-Artefacts-on-Windows-Kerai/20467cee88102cffcc2b856b93fc0bb7a58fd499
+# https://www.hackingarticles.in/capture-vnc-session-remote-pc-using-settoolkit/

@@ -10,4 +10,6 @@ Targets:
         Path: C:\programdata\sentinel\logs\
         Recursive: True
         Comment: "Logs are in Binary Format (.binlog)"
-    
+
+# Documentation
+# N/A

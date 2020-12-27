@@ -14,3 +14,7 @@ Targets:
         Category: Program Execution
         Path: C:\System Volume Information\
         FileMask: 'Syscache.hve.LOG*'
+
+# Documentation
+# https://dfir.ru/2018/12/02/the-cit-database-and-the-syscache-hive/
+# https://www.hecfblog.com/2018/12/daily-blog-579-meaning-of-syscachehve.html

@@ -24,3 +24,7 @@ Targets:
         Category: Executables
         Path: C:\Windows.old\Windows\apppatch\Custom\Custom64\
         FileMask: '*.sdb'
+
+# Documentation
+# https://geoffchappell.com/studies/windows/win32/apphelp/sdb/index.htm?tx=54
+# https://docs.microsoft.com/en-us/windows/win32/devnotes/application-compatibility-database?redirectedfrom=MSDN

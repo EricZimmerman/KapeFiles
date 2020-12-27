@@ -10,3 +10,6 @@ Targets:
         Path: C:\ProgramData\Avira\Antivirus\LOGFILES\
         Recursive: True
         Comment: "Collects the scan logs of Avira AntiVirus"
+
+# Documentation
+# N/A

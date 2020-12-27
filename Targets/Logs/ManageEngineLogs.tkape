@@ -9,3 +9,6 @@ Targets:
         Category: Logs
         Path: C:\ManageEngine\DesktopCentral_Server\logs\
         Recursive: True
+
+# Documentation
+# N/A

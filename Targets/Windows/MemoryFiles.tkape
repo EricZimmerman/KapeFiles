@@ -34,3 +34,7 @@ Targets:
         Path: C:\Windows.old\Windows\Minidump\     
         FileMask: '*.dmp'
         Comment: "https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/small-memory-dump"
+
+# Documentation
+# https://www.13cubed.com/episodes/memory.html
+# https://digital-forensics.sans.org/media/volatility-memory-forensics-cheat-sheet.pdf

@@ -24,3 +24,6 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Avast Software\Avast\Chest\
         FileMask: index.xml
+
+# Documentation
+# N/A

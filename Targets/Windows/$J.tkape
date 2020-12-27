@@ -18,3 +18,12 @@ Targets:
         FileMask: $UsnJrnl:$Max
         AlwaysAddToQueue: True
         SaveAsFileName: $Max
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
+# http://forensicinsight.org/wp-content/uploads/2013/07/F-INSIGHT-Advanced-UsnJrnl-Forensics-English.pdf
+# https://countuponsecurity.com/2017/05/25/digital-forensics-ntfs-change-journal/
+# http://journeyintoir.blogspot.com/2013/01/re-introducing-usnjrnl.html
+# https://tzworks.net/prototype_page.php?proto_id=5
+# http://az4n6.blogspot.com/2015/03/usn-journal-where-have-you-been-all-my.html
+# https://www.youtube.com/watch?v=1mwiShxREm8

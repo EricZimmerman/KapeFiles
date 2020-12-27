@@ -1,4 +1,4 @@
-Description: Team Viewer Logs
+Description: TeamViewer Logs
 Author: Hadar Yudovich
 Version: 1.1
 Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
@@ -22,3 +22,9 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport\
         Recursive: True
         Comment: "Includes miscellaneous config files"
+
+# Documentation
+# https://www.champlain.edu/Documents/LCDI/archive/Team-Viewer-Forensics.pdf
+# https://svch0st.medium.com/writeup-magnet-user-summit-dfir-ctf-2019-activity-79cf149c04d7
+# https://www.systoolsgroup.com/forensics/teamviewer/
+# https://athenaforensics.co.uk/teamviewer-forensics/

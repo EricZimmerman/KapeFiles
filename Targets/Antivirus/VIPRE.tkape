@@ -24,3 +24,6 @@ Targets:
         Category: Antivirus
         Path: C:\Users\%user%\AppData\Roaming\Sunbelt Software\AntiMalware\Logs\
         Recursive: True
+
+# Documentation
+# N/A

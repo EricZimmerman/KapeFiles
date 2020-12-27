@@ -50,3 +50,9 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat.LOG*
  
+# Documentation
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://www.youtube.com/watch?v=OBp6SHgSSZg
+# https://www.secjuice.com/windows-forensics-artifacts-2/
+# https://www.sans.org/reading-room/whitepapers/forensics/windows-shellbag-forensics-in-depth-34545
+# https://cyberforensicator.com/2019/02/03/shellbags-forensics-directory-viewing-preferences/

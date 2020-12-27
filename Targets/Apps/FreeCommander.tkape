@@ -35,11 +35,10 @@ Targets:
         Recursive: True
         Comment: "Locates an exact copy of the above files which will have a timestamped folder name, i.e. Bkp_Settings-YYYY-MM-DD HH-MM-SS."
         
-######
+# Documentation
 # Free Commander XE is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.
 # FreeCommander.ini contains some interesting artifacts including but not limited to: Path= (starting path when opening a browser window, sorted by Left and Right), PathLastUsed= (path last opened upon program exit), and [MainPanel] (will contain the last opened paths for both Left and Right directory browsers).
 # FreeCommander.ftp.ini contains a file path to the FTP log. 
 # FreeCommander.hist.ini updates upon program exit and only records the last 30 folders browsed by the user. History0 is the most recent folder browsed whereas History29 is the least recent. Log continues to roll over after 30 entries. 
 # In FreeCommander.fav.xml, the string <folder_item will be the beginning of a new entry which will include the file path of the file/folder that the user favorited.
 # Note: for the Backup Settings target above, you may only see a deduplicated version of that folder, I.E. there may only be one or two files. This is because the backup files are exactly the same as the current set of .ini and .xml files. If the user has a long history of using the program, there should be many more files as a result. 
-######
