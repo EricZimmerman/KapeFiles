@@ -21,6 +21,12 @@ Targets:
         Category: EventLogs
         Path: ApplicationEvents.tkape
         Comment: "Contains ScreenConnect entries, source: ScreenConnect Client"
-
+   -
+        Name: ScreenConnect User Config
+        Category: ApplicationLogs
+        Path: C:\ProgramData\ScreenConnect Client*\
+        FileMask: user.config
+        Comment: "Contains server domain and IP info"
+        
 # Documentation
 # N/A
