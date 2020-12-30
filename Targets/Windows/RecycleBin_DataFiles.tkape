@@ -1,18 +1,20 @@
-Description: Recycle Bin
-Author: Mark Hallman
+Description: Recycle Bin Data Files
+Author: Joshua Hickman
 Version: 1.0
-Id: 336abbbb-e9db-4d04-8904-43718e57df85
+Id: bb5785ec-0e6e-42f9-97ca-94ef12720827
 RecreateDirectories: True
 Targets:
     -
-        Name: $Recycle.Bin
-        Category: Deleted Files
+        Name: Recycle Bin - Windows Vista+
+        Category: FileDeletion
         Path: C:\$Recycle.Bin\
+        FileMask: '$R*.*'
         Recursive: True
     -
-        Name: RECYCLER WinXP
-        Category: Deleted Files
-        Path: C:\RECYCLER\
+        Name: RECYCLER - WinXP
+        Category: FileDeletion
+        Path: C:\RECYCLE*\
+        FileMask: 'D*.*'
         Recursive: True
 
 # Documentation
