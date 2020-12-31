@@ -24,7 +24,7 @@ Targets:
         Category: Registry
         Path: C:\Windows.old\Windows\System32\config\
         FileMask: SOFTWARE   
-         
+    -     
         Name: SOFTWARE registry transaction files
         Category: Registry
         Path: C:\Windows\System32\config\
