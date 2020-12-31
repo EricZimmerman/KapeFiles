@@ -14,6 +14,26 @@ Targets:
         Category: Execution
         Path: C:\Windows.old\Windows\System32\SRU\
         Recursive: True
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SOFTWARE   
+    -     
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
 
 # Documentation
 # https://medium.com/@esmyl/srum-forensics-dfir-aa9522a925c5
