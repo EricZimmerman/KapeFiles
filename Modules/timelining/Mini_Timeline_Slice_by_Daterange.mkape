@@ -12,6 +12,7 @@ Processors:
         ExportFormat: CSV
         ExportFile: 01_timeline_dateRange.csv
         
-
-##Add in a Key with the name "dateRange", and set the variable to the desired date range in the fomart "mm/dd/yyyy-mm/dd/yyyy"
-##Must be run AFTER the mini timeline is generated
+# Documentation
+# https://github.com/keydet89/RegRipper3.0
+# Add in a Key with the name "dateRange", and set the variable to the desired date range in the fomart "mm/dd/yyyy-mm/dd/yyyy"
+# Must be run AFTER the mini timeline is generated

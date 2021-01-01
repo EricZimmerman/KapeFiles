@@ -11,3 +11,9 @@ Processors:
         Executable: AmcacheParser.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory% -i
         ExportFormat: CSV
+
+# Documentation
+# https://github.com/EricZimmerman/AmcacheParser
+# https://binaryforay.blogspot.com/2015/07/amcacheparser-reducing-noise-finding.html
+# https://www.youtube.com/watch?v=ZKlyu-HOvxY
+# https://www.youtube.com/watch?v=GhCZfCzn2l0

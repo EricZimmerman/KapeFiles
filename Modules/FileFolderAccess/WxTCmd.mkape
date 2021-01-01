@@ -11,3 +11,7 @@ Processors:
         Executable: WxTCmd.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory% 
         ExportFormat: CSV
+
+# Documentation
+# https://github.com/EricZimmerman/WxTCmd
+# https://binaryforay.blogspot.com/2018/05/introducing-wxtcmd.html

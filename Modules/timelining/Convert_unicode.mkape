@@ -11,3 +11,6 @@ Processors:
         CommandLine: -f %destinationDirectory%\temp.tln -o %destinationDirectory%\temp_ascii.tln
         ExportFormat: CSV
         
+# Documentation
+# https://az4n6.blogspot.com/2019/08/triage-collection-and-timeline.html
+# https://www.kroll.com/-/media/kroll/pdfs/webinars/artifact-analysis-timelining-with-kape.pdf?la=en&hash=B6D61EF796311CA636461B502818D3F29A906C0D

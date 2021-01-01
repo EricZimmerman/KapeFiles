@@ -10,3 +10,8 @@ Processors:
         Executable: volatility_2.6_win64_standalone.exe
         CommandLine: -f %sourceDirectory%\memory.dmp malfind --dump-dir=%destinationDirectory%\
         ExportFormat: greptext
+
+# Documentation
+# https://github.com/volatilityfoundation/volatility
+# https://github.com/volatilityfoundation/volatility/wiki
+# https://resources.infosecinstitute.com/topic/memory-forensics-and-analysis-using-volatility/ 

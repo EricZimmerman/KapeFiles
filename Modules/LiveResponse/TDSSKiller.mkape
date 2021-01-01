@@ -11,7 +11,6 @@ Processors:
         CommandLine: -accepteula -accepteulaksn -sigcheck -tdlfs -silent -l %destinationDirectory%\tdsskiller.txt
         ExportFormat: txt
         
-##
-## Create a folder "TDSSKiller" within the "Modules\bin" KAPE folder
-## Place "tdsskiller.exe" file into "Modules\bin\TDSSKiller"
-##
+# Documentation
+# Create a folder "TDSSKiller" within the "Modules\bin" KAPE folder
+# Place "tdsskiller.exe" file into "Modules\bin\TDSSKiller"

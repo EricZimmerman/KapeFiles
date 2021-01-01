@@ -14,11 +14,11 @@ Processors:
         ExportFile: thumbcache_results.csv
 
 
-##################
+# Documentation
 # Uses Thumbcache Viewer (https://github.com/thumbcacheviewer)
 # Designed to work with the Thumbcache DB Target collection created by Eric Zimmerman.
 # Executable author Eric Kutcher.
 # Point msource (Module Source) to the Thumbcache folder or use the Target/Module option of KAPE.
 # Options  -w HTML Report | -c CSV Report | -z Exclude 0 byte files | -n Prevent Thumbnail extraction | -o Output
-##################
+
 

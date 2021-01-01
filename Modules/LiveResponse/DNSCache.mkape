@@ -10,3 +10,6 @@ Processors:
         CommandLine: /DISPLAYDNS
         ExportFormat: txt
         ExportFile: dns_cache.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig

@@ -10,9 +10,8 @@ Processors:
         CommandLine: /c copy NUL %destinationDirectory%\"%module%" & echo | set /p=%mvar% > %destinationDirectory%\"%module%"
         ExportFormat: ""
 
-######
+# Documentation
 # Usage:
 # %module% is a comma separated list of modules you want to run on a collection
 # %mvar% Provide a list of key:value pairs to be used for variable replacement in modules. Multiple pairs should be separated by ◙
 # Example: kape.exe --tsource c --target !SANS_Triage --module KAPE_AUtomation --mvars module:Mini_Timeline,Mini_Timeline_Slice_by_Daterange^mvar:computerName:laptop◙dateRange:01/01/2020-02/01/2020
-######

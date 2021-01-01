@@ -11,3 +11,6 @@ Processors:
         CommandLine: -a -c -h -s -accepteula -nobanner %sourceDirectory%
         ExportFormat: CSV
         ExportFile: sigcheck.csv
+
+# Documentation
+# https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck

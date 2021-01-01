@@ -10,3 +10,7 @@ Processors:
         CommandLine: /FO CSV
         ExportFormat: CSV
         ExportFile: SystemInfo.csv
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/systeminfo
+# https://en.wikipedia.org/wiki/Systeminfo.exe

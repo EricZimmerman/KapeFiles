@@ -13,3 +13,6 @@ Processors:
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "Get-CimInstance Win32_Process | select ProcessId, ProcessName, Path, CommandLine, Description, ParentProcessId , CreationDate, Handle, HandleCount, @{Label='File Path MD-5'; Expression={(Get-FileHash -Algorithm MD5 -LiteralPath $_.Path).Hash}} |  ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\PWSH-Get-CIM_ProcessList.json"              
         ExportFormat: JSON
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/

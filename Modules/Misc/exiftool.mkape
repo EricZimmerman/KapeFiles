@@ -11,3 +11,6 @@ Processors:
         CommandLine: -r %sourceDirectory% -csv
         ExportFormat: CSV
         ExportFile: exif.csv
+
+# Documentation
+# https://exiftool.org/

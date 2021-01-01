@@ -23,3 +23,9 @@ Processors:
         Executable: MFTECmd_$SDS.mkape
         CommandLine: ""
         ExportFormat: ""
+
+# Documentation
+# https://github.com/EricZimmerman/MFTECmd
+# https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
