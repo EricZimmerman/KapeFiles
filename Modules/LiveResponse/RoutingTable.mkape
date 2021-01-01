@@ -10,3 +10,6 @@ Processors:
         CommandLine: print
         ExportFormat: txt
         ExportFile: routing_table.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/route_ws2008

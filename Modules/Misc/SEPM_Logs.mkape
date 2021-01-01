@@ -11,3 +11,6 @@ Processors:
         Executable: SEPparser.exe
         CommandLine: -d  %sourceDirectory% -o %destinationDirectory% -k
         ExportFormat: CSV
+
+# Documentation
+# https://github.com/Beercow/SEPparser

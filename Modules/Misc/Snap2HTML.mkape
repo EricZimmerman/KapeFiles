@@ -11,10 +11,9 @@ Processors:
        CommandLine: -path:%sourceDirectory% -outfile:%destinationDirectory%/Kape_Processed.html -title:"KAPE Processed Directories" -hidden -system
        ExportFormat: html
 
-
-######
+# Documentation
+# https://www.rlvision.com/snap2html/about.php
 # Module uses Snap2HTML to export a browseable HTML directory.
 # Software author: RL Vision (Snap2HTML)
 # Options available: -hidden (Include hidden files) | -system (Include system files) | -title (title of HTML file) | -link (link to path)
 # HTML located at Snap2HTML/template.html can be customized.
-######

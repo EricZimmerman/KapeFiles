@@ -12,3 +12,6 @@ Processors:
         CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
         ExportFormat: CSV
         ExportFile: task_scheduler_event_log.csv
+
+# Documentation
+# https://tzworks.net/prototype_page.php?proto_id=25

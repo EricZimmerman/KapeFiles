@@ -14,5 +14,6 @@ Processors:
         ExportFile: temp.tln
         Append: True
         
-
-#place "p2x5124.dll" in the bin folder with regtime.exe
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" in the bin folder with regtime.exe

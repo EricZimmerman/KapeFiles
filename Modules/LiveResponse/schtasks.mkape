@@ -15,3 +15,7 @@ Processors:
         CommandLine: /Query /XML
         ExportFormat: XML
         ExportFile: scheduled_tasks.csv
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows/win32/taskschd/schtasks
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks

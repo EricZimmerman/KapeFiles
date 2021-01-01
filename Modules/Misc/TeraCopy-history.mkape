@@ -13,9 +13,7 @@ Processors:
         ExportFormat: CSV
         ExportFile: TeraCopy-history_%fileName%.csv
 
-######
+# Documentation
+# https://www.codesector.com/teracopy
 # Uses sqlite3.exe to parse the history files from TeraCopy and export them in the proper format
 # Note: preferred to point msource to the TeraCopy history folder, as other DB's could be pulled using the FileMask
-######
-
-

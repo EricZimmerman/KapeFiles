@@ -15,3 +15,8 @@ Processors:
         Executable: RecentFileCacheParser.exe
         CommandLine: -f %sourceFile% --json %destinationDirectory%
         ExportFormat: JSON
+
+# Documentation
+# https://github.com/EricZimmerman/RecentFileCacheParser
+# https://www.youtube.com/watch?v=ZKlyu-HOvxY
+

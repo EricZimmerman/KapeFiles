@@ -11,8 +11,9 @@ Processors:
         CommandLine: "-o %destinationDirectory%\\memory.dmp --volume_format raw --format raw -dd --logfile %destinationDirectory%\\winpmem.log"
         ExportFormat: dmp
 
-### README
-#
+# Documentation
+# https://winpmem.velocidex.com/
+# https://github.com/Velocidex/WinPmem
 # 1. Download winpmem_3.2.exe using the link above; also tested with winpmem_3.3.rc1.exe. Other versions may work, but are untested.
 # 2. Rename the binary to winpmem.exe (dropping the version number) 
 # 3. Place the binary into '<KAPE_working_directory>/Modules/bin'

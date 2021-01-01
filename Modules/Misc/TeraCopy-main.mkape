@@ -13,7 +13,7 @@ Processors:
         ExportFormat: CSV
         ExportFile: TeraCopy-main.csv
 
-######
+# Documentation
+# https://www.codesector.com/teracopy
 # Uses sqlite3.exe to parse the database file and export in the proper format
 # Note: preferred to point msource to the TeraCopy folder, as other DB's could be named the same
-######

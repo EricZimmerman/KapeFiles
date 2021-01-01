@@ -13,7 +13,8 @@ Processors:
         ExportFormat: txt
         ExportFile: temp.tln
         Append: True
-##
-## Create a folder "regripper" within the "Modules\bin" KAPE folder
-## Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"
-##
+
+# Documentation
+# https://github.com/keydet89/RegRipper3.0
+# Create a folder "regripper" within the "Modules\bin" KAPE folder
+# Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"
