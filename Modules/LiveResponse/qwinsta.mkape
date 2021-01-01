@@ -10,3 +10,6 @@ Processors:
         CommandLine: /counter
         ExportFormat: txt
         ExportFile: qwinsta.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/qwinst

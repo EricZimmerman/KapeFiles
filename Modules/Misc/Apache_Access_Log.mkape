@@ -12,7 +12,8 @@ Processors:
         CommandLine: -i:ncsa -o:csv "select * into '%destinationDirectory%\access_log.csv' from '%sourceDirectory%\access.log'"
         ExportFormat: CSV
 
-######
+# Documentation
+# https://www.microsoft.com/en-us/download/details.aspx?id=24659
+# https://www.stevebunting.org/udpd4n6/forensics/logparser.htm
 # Uses Microsoft Log Parser
 # Point msource (Module Source) to the apache logs folder
-######

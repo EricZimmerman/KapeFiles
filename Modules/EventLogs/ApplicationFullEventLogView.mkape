@@ -12,14 +12,10 @@ Processors:
         CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Application.evtx /scomma %destinationDirectory%\full_application_event_log.csv
         ExportFormat: CSV
         
-
-######
-# Uses Nirsofts FullEventLogView to export event logs to csv
+# Documentation
+# Uses Nirsoft's FullEventLogView to export event logs to CSV
 # https://www.nirsoft.net/utils/full_event_log_view.html
 # FullEventLogView.exe should be in the Modules\bin folder
 # Assumes the msource will include the drive letter. e.g. D:\kape\C
 # Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module ApplicationFullEventLogView
 # Example: .\kape.exe --msource C:\Windows\System32\winevt\Logs --mdest D:\kape\out --module ApplicationFullEventLogView
-######
-
-

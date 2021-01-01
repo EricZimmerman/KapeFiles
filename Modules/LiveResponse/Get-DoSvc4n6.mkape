@@ -10,9 +10,9 @@ Processors:
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-DoSvc4n6.ps1' %sourceDirectory% -SkipIP2Location -OutputPath %destinationDirectory%"
         ExportFormat: CSV
-#####
+
+# Documentation
 # Get-DoSvcExternalIP extracts public IP addresses of a Windows 10 device from DoSvc EventTraceLogs
 # https://raw.githubusercontent.com/forensenellanebbia/powershell-scripts/master/Get-DoSvc4n6.ps1
 # Get-DoSvc4n6.ps1 must be in Modules\bin folder
 # Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module Get-DoSvc4n6
-#####

@@ -12,3 +12,5 @@ Processors:
         ExportFormat: CSV
         ExportFile: psinfo.csv
         
+# Documentation
+# https://docs.microsoft.com/en-us/sysinternals/downloads/psinfo

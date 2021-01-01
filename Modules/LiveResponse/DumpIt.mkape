@@ -10,3 +10,6 @@ Processors:
         Executable: DumpIt.exe 
         CommandLine: /O %destinationDirectory%/memdump.dmp /Q	
         ExportFormat: dmp
+
+# Documentation
+# https://blog.comae.io/your-favorite-memory-toolkit-is-back-f97072d33d5c

@@ -11,5 +11,6 @@ Processors:
         ExportFormat: txt
         ExportFile: BitLocker-Status.txt
 
-#Updated to directly reference the system path
-# 
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde
+# Updated to directly reference the system path

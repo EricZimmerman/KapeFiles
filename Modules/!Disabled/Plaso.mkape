@@ -11,7 +11,8 @@ Processors:
         CommandLine: -z "UTC" --status_view none --source %sourceDirectory% -o l2tcsv -w %destinationDirectory%\timeline.csv
         ExportFormat: CSV
 
-#########
+# Documentation
+# https://plaso.readthedocs.io/en/latest/sources/user/Using-psteal.html
 # The Plaso executables are accessed via a symbolic link from the kape/bin folder to the plaso folder.
 # mklink /D <kape/plaso folder> <path to plaso dir>
 # Example:  mklink /D C:\KAPE\Modules\bin\Plaso C:\plaso
@@ -22,4 +23,3 @@ Processors:
 # with Kape you can't use the "--vhdx or --vhd" options.
 #
 # Example Kape command line: C:\kape.exe --msource E:\C\Users\ --module plaso --mdest g:\cases\sample
-#########

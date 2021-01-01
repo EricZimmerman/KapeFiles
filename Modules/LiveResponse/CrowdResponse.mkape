@@ -11,9 +11,10 @@ Processors:
         CommandLine: -Command "& '%kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe' -i %kapedirectory%\Modules\bin\CrowdResponse\config.txt -o %destinationDirectory%\CrowdResponse.xml;&'%kapedirectory%\Modules\bin\CrowdResponse\CRConvert.exe' -v -c -f %destinationDirectory%\CrowdResponse.xml -o %destinationDirectory%;Remove-Item '%destinationDirectory%\CrowdResponse.xml'"
         ExportFormat: CSV
 
-##
-## Create a folder "CrowdResponse" within the "Modules\bin" KAPE folder
-## Place "CrowdResponse.exe", "CrowdResponse64.exe" , "CRConvert.exe", "Config.txt" files into "Modules\bin\CrowdResponse"
-## Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse.exe for 32 bit system
-## Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe for 64 bit system
-##
+# Documentation
+# https://www.crowdstrike.com/resources/community-tools/crowdresponse/
+# Create a folder "CrowdResponse" within the "Modules\bin" KAPE folder
+# Place "CrowdResponse.exe", "CrowdResponse64.exe", "CRConvert.exe", "Config.txt" files into "Modules\bin\CrowdResponse"
+# Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse.exe for 32 bit system
+# Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe for 64 bit system
+#

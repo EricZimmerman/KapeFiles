@@ -12,3 +12,5 @@ Processors:
         ExportFormat: txt
         ExportFile: pslist.txt
         
+# Documentation
+# https://docs.microsoft.com/en-us/sysinternals/downloads/pslist

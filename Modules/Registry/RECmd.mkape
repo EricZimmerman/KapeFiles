@@ -17,6 +17,7 @@ Processors:
 # https://aboutdfir.com/toolsandartifacts/windows/registry-explorer-recmd/
 # https://www.andreafortuna.org/2020/03/04/recmd-command-line-tool-for-windows-registry-analysis/
 # https://www.sans.org/blog/finding-registry-malware-persistence-with-recmd/
-# https://youtu.be/tk9XsMHzPlM                                            
+# https://www.youtube.com/watch?v=tk9XsMHzPlM
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
 # Uses the RECmd_Batch_MC.reb batch command file. This file should also be in same directory as RECmd.exe
 # Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.

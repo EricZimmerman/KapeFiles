@@ -13,4 +13,8 @@ Processors:
         ExportFile: temp.tln
         Append: True
 
-#The MFTECmd_$MFT_Bodyfile.mkape must be ran before this to create the bodyfile. This module with then convert the bodyfile into TLN format
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# https://www.sans.org/blog/triage-collection-and-timeline-generation-with-kape/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# The MFTECmd_$MFT_Bodyfile.mkape must be ran before this to create the bodyfile. This module with then convert the bodyfile into TLN format

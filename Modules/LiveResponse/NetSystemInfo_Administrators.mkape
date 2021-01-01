@@ -12,3 +12,6 @@ Processors:
         ExportFormat: TXT
         ExportFile: NetSystemInfo.txt
         Append: True
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/?view=powershell-5.1

@@ -11,3 +11,6 @@ Processors:
         CommandLine: "-d %sourceDirectory% --csv %destinationDirectory% -q"
         ExportFormat: CSV
         ExportFile: "LevelDBDumperOutput.log"
+
+# Documentation
+# https://github.com/mdawsonuk/LevelDBDumper

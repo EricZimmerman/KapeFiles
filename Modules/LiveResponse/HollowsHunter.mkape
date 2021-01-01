@@ -10,11 +10,13 @@ Processors:
         Executable: hollows_hunter.exe
         CommandLine: /dir "%destinationDirectory%"
         ExportFormat: json
-#####
+
+# Documentation
+# https://github.com/hasherezade/hollows_hunter
+# https://securityliterate.com/extracting-malware-from-memory-with-hollows-hunter/
 # HollowsHunter Scans all running processes. Recognizes and dumps a variety of potentially malicious implants (replaced/implanted PEs, shellcodes, hooks, in-memory patches).
 # By default only replaced/implanted PEs are detected.
 # In order for this module to work, place hollows_hunter.exe and pe-sieve.dll in the Modules/bin folder
 # Expected Results:
 # If replaced/implanted PEs are detected: The HollowsHunter folder will have the related process information (summary.json and report.json) as well as dump files
 # Otherwise: No HollowsHunter folder will be created
-#####

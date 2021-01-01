@@ -15,3 +15,9 @@ Processors:
         Executable: MFTECmd.exe
         CommandLine: -f %sourceFile% --json %destinationDirectory%
         ExportFormat: JSON
+
+# Documentation
+# https://github.com/EricZimmerman/MFTECmd
+# https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0

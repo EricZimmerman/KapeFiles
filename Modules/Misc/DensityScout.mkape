@@ -10,3 +10,7 @@ Processors:
         Executable: densityscout.exe
         CommandLine: -pe -p 0.1 -l 0.1 -d -r %sourceDirectory% -o %destinationDirectory%\DensityScout.txt
         ExportFormat: txt
+
+# Documentation
+# https://www.cert.at/en/downloads/software/software-densityscout
+# https://www.sans.org/blog/finding-unknown-malware-with-densityscout/
