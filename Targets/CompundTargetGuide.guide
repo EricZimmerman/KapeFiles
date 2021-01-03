@@ -1,0 +1,39 @@
+#  Full documentation on Targets can be found here - https://ericzimmerman.github.io/KapeDocs/#!Pages\2.1-Targets.md. This guide is meant to provide a high level summary with the benefit of a template as a visual. 
+Description: Name of application/artifact here # Required, this will be visible within gKape on the Target side under the Description colum., 
+Author: Your name here # Required
+Version: 1.0 # Required, increment as revisions are made.
+Id: Unique GUID here # Required, generate within gKape by double clicking on a Target or Module, then click Generate GUID button at bottom of popup window, paste GUID here.
+RecreateDirectories: True # Required, true means the folder structure of the artifacts will be created within the user-specified Target Destination directory. If an artifact is buried 10 folders deep on the suspect's system, it will be buried 10 folders deep within the Target Destination folder.
+Targets:
+    -
+        Name: CompoundTarget1 # Required
+        Category: Category # Required, it is recommended to use the Category referenced within the Target file itself to keep things consistent.
+        Path: CompoundTarget1.tkape # Required, needs to exactly match the filename of the Target you're referencing, regardless of where the Target resides. KAPE will find it as long as it exists within the Targets folder.
+        Comments: "Comments go here" # Optional, and rarely used in Compound Targets, this won't be included in examples below.
+    -
+        Name: CompoundTarget2
+        Category: Category
+        Path: CompoundTarget2.tkape
+    -
+        Name: CompoundTarget3
+        Category: Category
+        Path: CompoundTarget1.tkape
+    -
+        Name: CompoundTarget4
+        Category: Category
+        Path: CompoundTarget2.tkape
+    -
+        Name: CompoundTarget5
+        Category: Category
+        Path: CompoundTarget1.tkape
+    -
+        Name: CompoundTarget6
+        Category: Category
+        Path: CompoundTarget2.tkape
+
+# Documentation
+# Include any and all documentation for your artifact, if any. If none, please include N/A instead. N/A is standard among all Targets without any documentation present and it makes it easy for one to search across all Targets that need documentation to be added.
+# Add more Targets as needed. 
+# Be sure to follow the steps within the Pull Request template to ensure there are no syntax errors prior to doing to Pull Request!
+# If there are any questions, just make an Issue on the KapeFiles repository and we'll get it figured out.
+# Please end all Targets with a blank new line below your last # line under Documentation. AKA hit enter once and save prior to doing a PR.
