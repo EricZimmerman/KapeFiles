@@ -17,4 +17,3 @@ Processors:
 # Place "CrowdResponse.exe", "CrowdResponse64.exe", "CRConvert.exe", "Config.txt" files into "Modules\bin\CrowdResponse"
 # Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse.exe for 32 bit system
 # Place %kapedirectory%\Modules\bin\CrowdResponse\CrowdResponse64.exe for 64 bit system
-#

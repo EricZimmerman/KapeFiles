@@ -11,7 +11,6 @@ Processors:
         Executable: FullEventLogView.exe
         CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Security.evtx /scomma %destinationDirectory%\full_security_event_log.csv
         ExportFormat: CSV
-        
 
 # Documentation
 # Uses Nirsoft's FullEventLogView to export event logs to csv
