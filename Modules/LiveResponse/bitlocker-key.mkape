@@ -17,4 +17,4 @@ Processors:
 # DO NOT include the trailing slash or the command will error out.
 # DO this: --msource C:
 # NOT this: --msource C:\
-# if using targets and not specifying msource, make sure --tsource also uses the same format (no trailing slash)
+# If using targets and not specifying msource, make sure --tsource also uses the same format (no trailing slash)
