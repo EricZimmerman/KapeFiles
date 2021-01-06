@@ -46,6 +46,10 @@ Processors:
         Executable: RECmd.mkape
         CommandLine: ""
         ExportFormat: ""
+-
+        Executable: SBECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
     -
         Executable: SrumECmd.mkape
         CommandLine: ""
