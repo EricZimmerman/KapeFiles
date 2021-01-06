@@ -47,10 +47,6 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: SBECmd.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
         Executable: SrumECmd.mkape
         CommandLine: ""
         ExportFormat: ""
