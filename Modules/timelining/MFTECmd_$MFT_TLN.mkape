@@ -1,0 +1,20 @@
+Description: Converts the MFT Bodyfile into TLN format
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 3bccbad7-a912-499a-ae6e-372381a585c1
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/bodyfile.exe
+ExportFormat: txt
+Processors:
+    -
+        Executable: tln_tools\bodyfile.exe
+        CommandLine: -f %destinationDirectory%\mft_bodyfile -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: True
+
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# https://www.sans.org/blog/triage-collection-and-timeline-generation-with-kape/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# The MFTECmd_$MFT_Bodyfile.mkape must be ran before this to create the bodyfile. This module with then convert the bodyfile into TLN format

@@ -1,34 +1,26 @@
 Description: Live User Files
 Author: Mark Hallman
-Version: 1
+Version: 1.0
 Id: 2a5cb2e6-20e0-495b-9b6d-8728ac210584
-RecreateDirectories: true
+RecreateDirectories: True
 Targets:
     -
         Name: User Files - Desktop
         Category: LiveUserFiles
-        Path: C:\Users\*\Desktop
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Path: C:\Users\%user%\Desktop\
+        Recursive: True
     -
         Name: User Files - Documents
         Category: LiveUserFiles
-        Path: C:\Users\*\Documents
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Path: C:\Users\%user%\Documents\
+        Recursive: True
     -
         Name: User Files - Downloads
         Category: LiveUserFiles
-        Path: C:\Users\*\Downloads
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Path: C:\Users\%user%\Downloads\
+        Recursive: True
     -
         Name: User Files - Dropbox
         Category: LiveUserFiles
-        Path: C:\Users\*\Dropbox*\
-        IsDirectory: true
-        Recursive: true
-        Comment: ""
+        Path: C:\Users\%user%\Dropbox*\
+        Recursive: True

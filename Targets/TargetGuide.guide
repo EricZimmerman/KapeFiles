@@ -1,0 +1,26 @@
+# Full documentation on Targets can be found here - https://ericzimmerman.github.io/KapeDocs/#!Pages\2.1-Targets.md. This guide is meant to provide a high level summary with the benefit of a template as a visual. 
+Description: Name of application/artifact here # Required, this will be visible within gKape on the Target side under the Description column.
+Author: Your name here # Required
+Version: 1.0 # Required, increment as Target is revised.
+Id: Unique GUID here # Required, generate within gKape by double clicking on a Target or Module, then click Generate GUID button at bottom of popup window, paste GUID here.
+RecreateDirectories: True # Required, true means the folder structure of the artifacts will be created within the user-specified Target Destination directory. If an artifact is buried 10 folders deep on the suspect's system, it will be buried 10 folders deep within the Target Destination folder.
+Targets:
+    -
+        Name: Artifact name here # Required
+        Category: Category goes here # Required, if your Target is related to other pre-existing Targets, it's recommended to use that same Category for your Target.
+        Path: C:\Users\%user%\AppData\*\Microsoft\ # Required, notice the %user% variable is in place telling KAPE to search every user folder on the system. * can be used as wildcards for folder or file names that are unpredictable/unique. 
+        Recursive: True # Optional, if missing, it will default to false.
+        FileMask: "desktop.ini" # Optional, other examples include SOFTWARE.logX (for those .log1, .log2, etc files), *_logs.txt (for those logs that are prepended with a timestamp, for instance), log*.txt (for log files that are named as log1, log2, etc), *.txt (for all .txt files regardless of filename), and filename.* (for all files with a filename of "filename", regardless of file extension) to name a few. When in doubt, test your Target on your own sample data to confirm it works.
+        AlwaysAddToQueue: True # Optional, this setting it mostly used for files that are actively in use by the system at the time of acquisition, i.e. MFT, etc. True means it'll defer grabbing the file until the other Targets run. In most cases, do not use this. Please read the KapeDocs documentation prior to using this.
+        SaveAsFileName: output.csv # Optional, but can be used if needed.
+        MinSize: 1000 # Optional, in bytes.
+        MaxSize: 10000 # Optional, in bytes.
+        Comment: "Locates all evidence to solve the case" # Optional, but it helps to give a brief overview of what is grabbed. Go into more detail in the Documentation section below.
+
+# Documentation
+# https://ericzimmerman.github.io/KapeDocs/#!Pages\2.1-Targets.md
+# Include any and all documentation for your artifact, if any. If none, please include N/A instead. N/A is standard among all Targets without any documentation present and it makes it easy for one to search across all Targets that need documentation to be added.
+# Add more Targets as needed. 
+# Be sure to follow the steps within the Pull Request template to ensure there are no syntax errors prior to doing to Pull Request!
+# If there are any questions, just make an Issue on the KapeFiles repository and we'll get it figured out.
+# Please end all Targets with a blank new line below your last # line under Documentation. AKA hit enter once and save prior to doing a PR.

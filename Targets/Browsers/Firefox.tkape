@@ -1,0 +1,146 @@
+Description: Firefox
+Author: Eric Zimmerman
+Version: 1.1
+Id: 28801734-b95a-47e7-b84f-4ebd0c104862
+RecreateDirectories: True
+Targets:
+    -
+        Name: Places
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
+    -
+        Name: Downloads
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
+    -
+        Name: Form history
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
+    -
+        Name: Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
+    -
+        Name: Signons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
+    -
+        Name: Webappstore
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
+    -
+        Name: Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
+    -
+        Name: Addons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
+    -
+        Name: Search
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: key*.db
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: signon*.*
+    -
+        Name: Password
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: logins.json
+    -
+        Name: Sessionstore
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: sessionstore*
+    -
+        Name: Sessionstore Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\sessionstore-backups
+        Recursive: True
+    -
+        Name: Places XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
+    -
+        Name: Downloads XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
+    -
+        Name: Form history XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
+    -
+        Name: Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
+    -
+        Name: Signons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
+    -
+        Name: Webappstore XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
+    -
+        Name: Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
+    -
+        Name: Addons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
+    -
+        Name: Search XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Password XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: key*.db
+    -
+        Name: Password XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: signon*.*
+    -
+        Name: Password XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: logins.json
+    -
+        Name: Sessionstore XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: sessionstore*
+
+# Documentation
+# https://www.4n6k.com/2017/11/forensics-quickie-identifying-clear.html
+# https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/
+# https://www.foxtonforensics.com/browser-history-examiner/firefox-history-location

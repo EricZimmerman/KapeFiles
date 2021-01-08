@@ -1,0 +1,33 @@
+Description: Outlook PST and OST files
+Author: Eric Zimmerman
+Version: 1.0
+Id: f91909c4-bba1-40d6-a3bc-39d060843a09
+RecreateDirectories: True
+Targets:
+    -
+        Name: PST XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.pst'
+    -
+        Name: OST XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.ost'
+    -
+        Name: PST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.pst'
+    -
+        Name: OST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.ost'
+
+# Documentation
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://gist.github.com/richaarya/d336fec34c600cc8ab8a51195289c99a
+# https://www.nirsoft.net/outlook_office_software.html
+# https://www.eshlomo.us/windows-forensics-analysis-evidence/
+# https://www.meridiandiscovery.com/articles/email-attachment-timestamps-forensics-outlook/

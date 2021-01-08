@@ -1,0 +1,43 @@
+Description: Gathers Basic System Information Using the Net Command
+Category: LiveResponse
+Author: piesecurity, Andreas Hunkeler (@Karneades)
+Version: 1.1
+Id: be86ac26-4eea-4bcb-b5ae-9686ad0557c4
+ExportFormat: txt 
+Processors:
+    -
+        Executable: NetSystemInfo_User.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_LocalGroup.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Administrators.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Accounts.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Share.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_File.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Session.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Use.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NetSystemInfo_Start.mkape
+        CommandLine: ""
+        ExportFormat: ""

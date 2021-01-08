@@ -1,0 +1,19 @@
+Description: Bitdefender Antivirus Data
+Author: Drew Ervin
+Version: 1.0
+Id: e48c32bf-4069-4f79-acac-4ed181fa84c9
+RecreateDirectories: True
+Targets:
+    -
+        Name: Bitdefender Endpoint Security Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Bitdefender\Endpoint Security\Logs\
+        Recursive: True
+    -
+        Name: Bitdefender Internet Security Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Bitdefender\Desktop\Profiles\Logs\
+        Recursive: True
+
+# Documentation
+# N/A

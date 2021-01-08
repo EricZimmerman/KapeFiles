@@ -1,0 +1,29 @@
+Description: Office Autosave
+Author: Russ Taylor
+Version: 1.0
+Id: 71f1efe7-37be-4285-9896-11f0f6be2770
+RecreateDirectories: True
+Targets:
+    -
+        Name: Word Autosave Location
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Word\
+        Recursive: True
+    -
+        Name: Excel Autosave Location
+        Category: ApplicationCompatibility
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Excel\
+        Recursive: True
+    -
+        Name: Powerpoint Autosave Location
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Powerpoint\
+        Recursive: True
+    -
+        Name: Publisher Autosave Location
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Publisher\
+        Recursive: True
+
+# Documentation
+# N/A

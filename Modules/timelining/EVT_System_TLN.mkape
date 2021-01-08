@@ -1,0 +1,19 @@
+Description: Parses System event log (EVT) into TLN format
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: f3d7f0ae-f42e-4f4d-b50f-e037f3955971
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/evtparse.exe
+ExportFormat: CSV
+FileMask: SysEvent.Evt
+Processors:
+    -
+        Executable: tln_tools\evtparse.exe
+        CommandLine: evtparse -e %sourceFile% -t -s %computerName%
+        ExportFormat: CSV
+        ExportFile: temp.tln
+        Append: True
+        
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" in the bin folder with evtparse.exe
