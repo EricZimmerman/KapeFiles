@@ -56,7 +56,7 @@ Targets:
         Name: OpenSSH Authorized Administrator Keys
         Category: Apps
         Path: C:\ProgramData\ssh\
-        FileMask: 'administrators_authorized_keys '
+        FileMask: 'administrators_authorized_keys'
         Comment: "Retrieves the administrator group's authorised public keys"
 
 # Documentation
