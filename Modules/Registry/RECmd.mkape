@@ -7,43 +7,43 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer
 ExportFormat: CSV
 Processors:
     -
-        Executable: RECmd - AllRegExecutablesFoundOrRun.mkape
+        Executable: RECmd_AllRegExecutablesFoundOrRun.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd - BasicSystemInfo.mkape
+        Executable: RECmd_BasicSystemInfo.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd - BasicSystemInfo.mkape
+        Executable: RECmd_BasicSystemInfo.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd - InstalledSoftware.mkape                                          
+        Executable: RECmd_InstalledSoftware.mkape                                          
         CommandLine: ""                                                   
         ExportFormat: ""                                                  
-    -                                                                     
+    -
         Executable: RECmd - RegistryASEPs.mkape                                           
         CommandLine: ""                                                   
         ExportFormat: ""                                                  
-    -                                                                     
-        Executable: RECmd - SoftwareASEPs.mkape                                         
+    -
+        Executable: RECmd_SoftwareASEPs.mkape                                         
         CommandLine: ""                                                   
         ExportFormat: ""
     -
-        Executable: RECmd - SoftwareClassesASEPs.mkape
+        Executable: RECmd_SoftwareClassesASEPs.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd - SoftwareWoW6432ASEPs.mkape
+        Executable: RECmd_SoftwareWoW6432ASEPs.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd - SystemASEPs.mkape
+        Executable: RECmd_SystemASEPs.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd - UserActivity.mkape
+        Executable: RECmd_UserActivity.mkape
         CommandLine: ""
         ExportFormat: ""
 
