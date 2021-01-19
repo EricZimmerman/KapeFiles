@@ -125,6 +125,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Login Data
     -
+        Name: Chrome Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Media History*
+    -
         Name: Chrome Network Action Predictor
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
