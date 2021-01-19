@@ -8,7 +8,7 @@ ExportFormat: CSV
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -d %sourceDirectory% --bn SystemASEPs.reb --nl false --csv %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\SystemASEPs.reb --nl false --csv %destinationDirectory% -q
         ExportFormat: CSV
 
 # Documentation
