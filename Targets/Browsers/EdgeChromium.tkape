@@ -55,6 +55,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Login Data
     -
+        Name: Edge Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Media History*
+    -
         Name: Edge Network Action Predictor
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
