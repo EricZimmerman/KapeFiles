@@ -23,7 +23,7 @@ Processors:
         CommandLine: ""                                                   
         ExportFormat: ""                                                  
     -
-        Executable: RECmd - RegistryASEPs.mkape                                           
+        Executable: RECmd_RegistryASEPs.mkape                                           
         CommandLine: ""                                                   
         ExportFormat: ""                                                  
     -
