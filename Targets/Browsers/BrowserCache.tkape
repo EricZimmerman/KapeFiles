@@ -33,3 +33,6 @@ Targets:
         Name: Edge WebcacheV01.dat
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+
+# Documentation
+# N/A

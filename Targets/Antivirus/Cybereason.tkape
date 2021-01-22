@@ -7,7 +7,7 @@ Targets:
     -
         Name: Cybereason Anti-Ransomware Logs
         Category: AntiVirus
-        Path: C:\ProgramData\crs1
+        Path: C:\ProgramData\crs1\Logs
         Recursive: True
     -
         Name: Cybereason Sensor Communications and Anti-Malware Logs
@@ -17,6 +17,8 @@ Targets:
     -
         Name: Cybereason Application Control and NGAV Logs
         Category: AntiVirus
-        Path: C:\ProgramData\crb1
+        Path: C:\ProgramData\crb1\Logs
         Recursive: True
         
+# Documentation
+# N/A

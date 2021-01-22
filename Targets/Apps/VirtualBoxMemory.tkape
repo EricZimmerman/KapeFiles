@@ -11,3 +11,8 @@ Targets:
         FileMask: '*.sav'
         Recursive: True
         Comment: "Captures all partial memory images from VirtualBox."
+
+# Documentation
+# https://www.researchgate.net/publication/323676948_Virtual_Machine_Forensic_Analysis_And_Recovery_Method_For_Recovery_And_Analysis_Digital_Evidence
+# https://www.researchgate.net/publication/323676948_Virtual_Machine_Forensic_Analysis_And_Recovery_Method_For_Recovery_And_Analysis_Digital_Evidence
+# https://digitalforensicsurvivalpodcast.com/2017/04/25/dfsp-062-building-a-forensic-vm-with-virtualbox/

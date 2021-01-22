@@ -16,7 +16,6 @@ Targets:
         Path: C:\ProgramData\NZBGet\nzb\
         Comment: "Locates NZBGet NZB files that were used by the user"
         
-######
+# Documentation
 # C:\ProgramData\NZBGet\nzbget.log is where a verbose log file exists. 
 # C:\ProgramData\NZBGet\nzb\ is where a replication of any NZBs used by the user will reside, regardless of where the NZB was residing prior to its use. This behavior is similar to Newsbin Pro above. 
-######

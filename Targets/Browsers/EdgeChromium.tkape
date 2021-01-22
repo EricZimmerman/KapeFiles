@@ -55,6 +55,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Login Data
     -
+        Name: Edge Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Media History*
+    -
         Name: Edge Network Action Predictor
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
@@ -100,3 +105,10 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: True
         Comment: "Required for offline DPAPI decryption"
+
+# Documentation
+# https://www.dataforensics.org/microsoft-edge-browser-forensics/
+# https://www.forensicfocus.com/articles/chromium-based-microsoft-edge-from-a-forensic-point-of-view/
+# https://www.foxtonforensics.com/browser-history-examiner/microsoft-edge-history-location
+# https://www.sans.org/security-resources/posters/windows-forensics-evidence-of/75/download
+# https://cyberforensicator.com/2017/02/07/windows-10-forensics/

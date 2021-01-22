@@ -7,15 +7,33 @@ Targets:
     -
         Name: Local Group Policy INI Files
         Category: Communication
-        Path: C:\Windows*\System32\grouppolicy\
+        Path: C:\Windows\System32\grouppolicy\
+        FileMask: '*.ini'
+    -
+        Name: Local Group Policy INI Files
+        Category: Communication
+        Path: C:\Windows.old\Windows\System32\grouppolicy\
         FileMask: '*.ini'
     -
         Name: Local Group Policy Files - Registry Policy Files
         Category: Communication
-        Path: C:\Windows*\System32\grouppolicy\
+        Path: C:\Windows\System32\grouppolicy\
+        FileMask: '*.pol'
+    -
+        Name: Local Group Policy Files - Registry Policy Files
+        Category: Communication
+        Path: C:\Windows.old\Windows\System32\grouppolicy\
         FileMask: '*.pol'
     -
         Name: Local Group Policy Files - Startup/Shutdown Scripts
         Category: Communication
-        Path: C:\Windows*\System32\grouppolicy\*\Scripts\
+        Path: C:\Windows\System32\grouppolicy\*\Scripts\
         Recursive: True
+    -
+        Name: Local Group Policy Files - Startup/Shutdown Scripts
+        Category: Communication
+        Path: C:\Windows.old\Windows\System32\grouppolicy\*\Scripts\
+        Recursive: True
+
+# Documentation
+# https://medium.com/@grzegorztworek/gpo-group-policy-object-is-one-of-the-most-useful-features-of-the-windows-ecosystem-73b6eeab812

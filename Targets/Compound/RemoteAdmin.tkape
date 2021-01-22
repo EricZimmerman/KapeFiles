@@ -51,3 +51,6 @@ Targets:
         Name: VNC
         Category: ApplicationLogs 
         Path: VNCLogs.tkape
+
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software. 
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

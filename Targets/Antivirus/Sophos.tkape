@@ -21,3 +21,6 @@ Targets:
         Category: Antivirus
         Path: ApplicationEvents.tkape
         Comment: "Event source: Sophos Anti-Virus"
+
+# Documentation
+# N/A

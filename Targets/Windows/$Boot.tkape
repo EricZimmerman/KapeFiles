@@ -10,3 +10,6 @@ Targets:
         Path: C:\
         FileMask: $Boot
         AlwaysAddToQueue: True
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf

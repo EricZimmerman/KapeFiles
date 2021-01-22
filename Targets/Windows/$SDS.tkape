@@ -11,3 +11,7 @@ Targets:
         FileMask: $Secure:$SDS
         AlwaysAddToQueue: True
         SaveAsFileName: $Secure_$SDS
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
+# https://www.youtube.com/watch?v=ZCj7cbWwUOs

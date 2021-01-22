@@ -10,3 +10,6 @@ Processors:
         CommandLine: -a
         ExportFormat: txt
         ExportFile: arp_cache.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/arp

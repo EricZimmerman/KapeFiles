@@ -9,3 +9,7 @@ Targets:
         Category: Persistence
         Path: C:\ProgramData\Microsoft\Network\Downloader\
         Recursive: True
+
+# Documentation
+# https://www.sans.org/reading-room/whitepapers/forensics/bits-forensics-39195
+# https://cyberforensicator.com/2019/05/12/using-mitre-attck-for-forensics-bits-jobs-t1197/

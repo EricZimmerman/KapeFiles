@@ -125,6 +125,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Login Data
     -
+        Name: Chrome Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Media History*
+    -
         Name: Chrome Network Action Predictor
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
@@ -170,3 +175,10 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: True
         Comment: "Required for offline decryption"
+
+# Documentation
+# https://nasbench.medium.com/web-browsers-forensics-7e99940c579a
+# https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/
+# https://www.sans.org/blog/google-chrome-forensics/
+# http://cyberforensicator.com/wp-content/uploads/2017/02/20160919.pdf
+# https://forensicswiki.xyz/wiki/index.php?title=Google_Chrome

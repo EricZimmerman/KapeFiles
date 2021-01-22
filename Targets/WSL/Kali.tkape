@@ -93,3 +93,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\log\apt\
         Recursive: True
         FileMask: "*.log"
+
+# Documentation
+# N/A

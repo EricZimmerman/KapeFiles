@@ -31,9 +31,9 @@ Targets:
         FileMask: '*.dat'
         Comment: "Locates the .dat files in the XYplorer's AppData folder, all of which are updated upon program's exit."
 
-######
-# XYPlorer is a third-party Windows File Explorer replacement. 
-# By default, XYPlorer has a left and right pane. Each pane will have it's own respective .ini file which displays the last 5 folders browsed as well as current tabs opened at the time of the program's exit.
+# Documentation
+# XYplorer is a third-party Windows File Explorer replacement. 
+# By default, XYplorer has a left and right pane. Each pane will have it's own respective .ini file which displays the last 5 folders browsed as well as current tabs opened at the time of the program's exit.
 # Within XYplorer.ini, [mruBrowse] will list the last 5 folders browsed. [mruGoto] will list the tabs that were opened at the time of the program's exit.
 # Within each pane's pane.ini file, there will be a section labeled [History] where one can see the last 5 folders browsed, be default. It appears one can change the Count=X value where X is the amount of folders browsed that are recorded here.
 # While using Everything by VoidTools, I observed the following files were modified upon the program's exit:
@@ -48,4 +48,3 @@ Targets:
 #  C:\Users\%user%\AppData\Roaming\XYplorer\Panes\1\pane.ini
 #  C:\Users\%user%\AppData\Roaming\XYplorer\XYplorer.ini
 # This means there might be something useful in each one of these files. The *.dat will grab all of those .dat files and the other targets will cover the .ini files.
-######

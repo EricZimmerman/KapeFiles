@@ -25,3 +25,6 @@ Targets:
         Recursive: True
         FileMask: "VBoxHardening.log"
         Comment: "Locates all VBoxHardening.log files on disk"
+
+# Documentation
+# N/A

@@ -9,9 +9,9 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.YourPhone_8wekyb3d8bbwe\LocalCache\Indexed
         Recursive: True
-        Comment: "Locates all Your Phone database files "
+        Comment: "Locates all Your Phone database files"
 
-######
+# Documentation
 # This has only been tested with Android at this time. I don't own an Apple device but if someone else does, feel free to edit this target file with iOS related information. 
 # This target will recursively grab folders with a complete file path similar to this one: .\AppData\Local\Packages\Microsoft.YourPhone_8wekyb3d8bbwe\LocalCache\Indexed\GUID\System\Database\.
 # Inside this directory on my system were the following files
@@ -41,4 +41,3 @@ Targets:
 #    Contacts.db will contact all contact names, numbers, addresses, email addresses, etc.
 #    Settings.db will contain an enumerated list of installed apps on the device.
 #    Calling.db will contain call history.
-######

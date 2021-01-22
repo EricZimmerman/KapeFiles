@@ -11,3 +11,6 @@ Processors:
         ExportFormat: txt
         ExportFile: NetSystemInfo.txt
         Append: True
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows/win32/winsock/net-exe-2

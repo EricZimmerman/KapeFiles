@@ -4,14 +4,16 @@ Author: Mari DeGrazia
 Version: 1.0
 Id: e18c98d0-e3da-4eea-ba98-453089714e49
 BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/evtparse.exe
-ExportFormat: csv
+ExportFormat: CSV
 FileMask: AppEvent.Evt
 Processors:
     -
         Executable: tln_tools\evtparse.exe
         CommandLine: evtparse -e %sourceFile% -t -s %computerName%
-        ExportFormat: csv
+        ExportFormat: CSV
         ExportFile: temp.tln
         Append: True
 
-#place "p2x5124.dll" in the bin folder with regtime.exe
+# Documentation                                             
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" in the bin folder with evtparse.exe

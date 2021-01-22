@@ -7,5 +7,16 @@ Targets:
     -
         Name: WBEM
         Category: WBEM
-        Path: C:\Windows*\System32\wbem\Repository\
+        Path: C:\Windows\System32\wbem\Repository\
         Recursive: True
+    -
+        Name: WBEM
+        Category: WBEM
+        Path: C:\Windows.old\Windows\System32\wbem\Repository\
+        Recursive: True
+
+# Documentation
+# https://www.jaiminton.com/cheatsheet/DFIR/
+# https://www.sans.org/blog/investigating-wmi-attacks
+# https://www.fireeye.com/blog/threat-research/2016/12/do_you_see_what_icc.html
+# https://cyberforensicator.com/2019/07/13/using-mitre-attck-for-forensics-wmi-event-subscription-t1084/

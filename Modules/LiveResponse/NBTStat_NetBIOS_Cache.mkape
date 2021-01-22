@@ -10,3 +10,6 @@ Processors:
         CommandLine: -c
         ExportFormat: txt
         ExportFile: netbios_cache.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat

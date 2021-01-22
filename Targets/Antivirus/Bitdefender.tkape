@@ -14,3 +14,6 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Bitdefender\Desktop\Profiles\Logs\
         Recursive: True
+
+# Documentation
+# N/A

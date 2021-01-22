@@ -9,3 +9,6 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\RogueKiller\logs\
         FileMask: AdliceReport_*.json
+
+# Documentation
+# N/A

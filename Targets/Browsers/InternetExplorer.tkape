@@ -68,3 +68,10 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
         Recursive: True
+
+# Documentation
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/
+# https://www.dataforensics.org/internet-explorer-forensics/
+# https://www.xploreforensics.com/blog/internet-explorer-forensic-artifacts-analysis.html
+# https://cyberforensicator.com/2017/02/07/windows-10-forensics/

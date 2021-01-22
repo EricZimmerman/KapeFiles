@@ -16,3 +16,7 @@ Targets:
         Path: C:\Users\%user%\Videos\
         FileMask: "vlc-*.avi"
         Comment: "Recorded files in VLC. Sometimes the Record button may be pressed instead of Play by suspects, which can record them watching content with VLC"
+
+# Documentation
+# https://www.forensicfocus.com/forums/general/vlc-recent-files/
+# https://superuser.com/questions/287137/does-vlc-media-player-store-the-files-or-its-history-in-a-hidden-location/1206411

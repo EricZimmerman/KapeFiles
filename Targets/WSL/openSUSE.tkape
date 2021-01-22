@@ -72,3 +72,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\
         Recursive: True
         FileMask: ".profile"
+
+# Documentation
+# N/A

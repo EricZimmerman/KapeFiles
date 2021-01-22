@@ -52,9 +52,8 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\Thumbnail Cache\
         Comment: "Locates .osd file which contains file paths related to the location of the backup settings files for Directory Opus."
 
-######
+# Documentation
 # Directory Opus is the best Windows File Explorer replacement on the market, in my humble opinion.
 # Thankfully, lots of data is stored on user activity if your suspect ends up using this as their daily driver. 
 # Any of the .osd files can be viewed in your favorite text editor.
 # The Thumbnail Cache folder will dump all files which appear to be randomized filenames with a .db extension.
-######

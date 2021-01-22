@@ -22,7 +22,13 @@ Targets:
     -
         Name: Symantec Event Log Win7+
         Category: EventLogs
-        Path: C:\Windows*\System32\winevt\logs\
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Symantec Endpoint Protection Client.evtx
+        Comment: "Symantec specific Windows event log"
+    -
+        Name: Symantec Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
         FileMask: Symantec Endpoint Protection Client.evtx
         Comment: "Symantec specific Windows event log"
     -
@@ -41,3 +47,5 @@ Targets:
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
         Recursive: True
 
+# Documentation
+# N/A

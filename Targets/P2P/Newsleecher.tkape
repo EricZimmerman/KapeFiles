@@ -11,6 +11,5 @@ Targets:
         FileMask: 'downloaded.dat'
         Comment: "Locates Newsleecher download .dat file"
         
-######
+# Documentation
 # C:\Users\%user%\AppData\Roaming\NewsLeecher\downloaded.dat is where the download log file resides. I haven't been able to test Newsleecher yet so I haven't been able to populate this file. 
-######

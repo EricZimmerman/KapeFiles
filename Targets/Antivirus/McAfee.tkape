@@ -29,3 +29,6 @@ Targets:
         Category: AntiVirus
         Path: C:\ProgramData\Mcafee\VirusScan\
         Recursive: True
+
+# Documentation
+# N/A

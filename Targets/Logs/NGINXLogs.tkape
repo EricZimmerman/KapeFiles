@@ -9,3 +9,6 @@ Targets:
         Category: Logs
         Path: C:\nginx\logs\
         FileMask: '*.log'
+
+# Documentation
+# N/A

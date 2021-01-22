@@ -5,29 +5,39 @@ Id: 635fbfd3-4a47-45b5-aae4-0a1bb6545d08
 RecreateDirectories: True
 Targets:
     -
-        Name: ntuser.dat registry hive XP
+        Name: NTUSER.DAT registry hive XP
         Category: Registry
         Path: C:\Documents and Settings\%user%\
-        FileMask: ntuser.dat
+        FileMask: NTUSER.DAT
     -
-        Name: ntuser.dat registry hive
+        Name: NTUSER.DAT registry hive
         Category: Registry
         Path: C:\Users\%user%\
-        FileMask: ntuser.dat
+        FileMask: NTUSER.DAT
     -
-        Name: ntuser.dat registry transaction files
+        Name: NTUSER.DAT registry transaction files
         Category: Registry
         Path: C:\Users\%user%\
-        FileMask: ntuser.dat.LOG*
+        FileMask: NTUSER.DAT.LOG*
     -
-        Name: ntuser.dat DEFAULT registry hive
+        Name: NTUSER.DAT DEFAULT registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows\System32\config\
         FileMask: DEFAULT
     -
-        Name: ntuser.dat DEFAULT transaction files
+        Name: NTUSER.DAT DEFAULT registry hive
         Category: Registry
-        Path: C:\Windows*\System32\config\
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: DEFAULT
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: DEFAULT.LOG*
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
         FileMask: DEFAULT.LOG*
     -
         Name: UsrClass.dat registry hive
@@ -40,3 +50,9 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat.LOG*
  
+# Documentation
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://www.youtube.com/watch?v=OBp6SHgSSZg
+# https://www.secjuice.com/windows-forensics-artifacts-2/
+# https://www.sans.org/reading-room/whitepapers/forensics/windows-shellbag-forensics-in-depth-34545
+# https://cyberforensicator.com/2019/02/03/shellbags-forensics-directory-viewing-preferences/

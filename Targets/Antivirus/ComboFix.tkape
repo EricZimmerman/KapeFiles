@@ -9,3 +9,6 @@ Targets:
         Category: Antivirus
         Path: C:\
         FileMask: ComboFix.txt
+
+# Documentation
+# N/A

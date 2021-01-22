@@ -16,8 +16,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\sabnzbd\admin\
         FileMask: 'history1.db'
         Comment: "Locates SABnzbd history log"
-        
-######
+
+# Documentation
 # C:\Users\%user%\AppData\Local\sabnzbd\logs\sabnzbd.log is where a verbose log file exists. 
 # C:\Users\%user%\AppData\Local\sabnzbd\admin\history1.db appears to show a history of filenames of NZBs used by the user.
-######

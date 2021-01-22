@@ -10,3 +10,6 @@ Processors:
         CommandLine: /all
         ExportFormat: txt
         ExportFile: ipconfig.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig

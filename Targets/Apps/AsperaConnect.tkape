@@ -16,3 +16,6 @@ Targets:
         Path: C:\Users\%user%\.aspera\connect\var\log\
         FileMask: '*.log'
         Recursive: True
+
+# Documentation
+# N/A

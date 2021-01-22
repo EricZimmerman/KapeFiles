@@ -24,3 +24,6 @@ Targets:
         Category: FileKnowledge
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Publisher\
         Recursive: True
+
+# Documentation
+# N/A

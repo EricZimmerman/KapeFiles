@@ -71,3 +71,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Thunderbird\Profiles\*\
         FileMask: "abook.sqlite"
         Comment: "Holds local address book"
+
+# Documentation
+# https://www.mailxaminer.com/blog/mozilla-thunderbird-forensics/
+# https://az4n6.blogspot.com/2014/04/whats-word-thunderbird-parser-that-is.html

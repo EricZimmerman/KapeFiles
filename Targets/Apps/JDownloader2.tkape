@@ -39,3 +39,6 @@ Targets:
         Recursive: True
         FileMask: "org.jdownloader.settings.InternetConnectionSettings.customproxylist.json"
         Comment: "Proxy configuration for JDownloader 2.0"
+
+# Documentation
+# N/A

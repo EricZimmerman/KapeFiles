@@ -24,3 +24,6 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\AVG\Antivirus\report
         Recursive: True
+
+# Documentation
+# N/A

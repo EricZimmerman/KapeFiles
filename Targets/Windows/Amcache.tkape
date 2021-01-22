@@ -7,10 +7,27 @@ Targets:
     -
         Name: Amcache
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: Amcache.hve
     -
         Name: Amcache transaction files
         Category: ApplicationCompatibility
-        Path: C:\Windows*\AppCompat\Programs\
+        Path: C:\Windows\AppCompat\Programs\
         FileMask: Amcache.hve.LOG*
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve.LOG*
+
+# Documentation
+# https://digital-forensics.sans.org/media/poster-windows-forensics-final.pdf
+# https://www.youtube.com/watch?v=_DqTBYeQ8yA
+# https://www.youtube.com/watch?v=-0bYcD3_bBs
+# https://www.youtube.com/watch?v=iTchBtRr6TA
+# https://www.andreafortuna.org/2017/10/16/amcache-and-shimcache-in-forensic-analysis/
