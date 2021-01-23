@@ -50,6 +50,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Last Tabs
     -
+        Name: Edge Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Sessions\
+        Recursive: False   
+    -
         Name: Edge Login Data
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
