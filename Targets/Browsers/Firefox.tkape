@@ -10,10 +10,20 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: places.sqlite*
     -
+        Name: Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\bookmarkbackups
+        Recursive: True
+    -
         Name: Downloads
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: downloads.sqlite*
+    -
+        Name: Extensions
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: extensions.json
     -
         Name: Form history
         Category: Communications
@@ -64,6 +74,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: logins.json
+    -
+        Name: Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: prefs.js
     -
         Name: Sessionstore
         Category: Communications
