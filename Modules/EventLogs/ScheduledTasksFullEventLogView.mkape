@@ -4,13 +4,13 @@ Author: Hadar Yudovich
 Version: 1.0
 Id: 8e04da5a-7ee4-4ef6-a4e0-4c68aca39af0
 BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
-ExportFormat: CSV
+ExportFormat: csv
 FileMask: Microsoft-Windows-TaskScheduler%4Operational.evtx
 Processors:
     -
         Executable: FullEventLogView.exe
         CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Microsoft-Windows-TaskScheduler%4Operational.evtx /scomma %destinationDirectory%\task_scheduler_event_log.csv
-        ExportFormat: CSV
+        ExportFormat: csv
         
 # Documentation
 # Uses Nirsoft's FullEventLogView to export event logs to csv

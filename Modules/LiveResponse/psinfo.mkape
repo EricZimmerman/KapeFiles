@@ -4,12 +4,12 @@ Author: Andy Furnas
 Version: 1.0
 Id: 9e89b787-bc97-4e96-b72e-195a390ede98
 BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: PsInfo.exe
         CommandLine: -h -s -d -c -accepteula
-        ExportFormat: CSV
+        ExportFormat: csv
         ExportFile: psinfo.csv
         
 # Documentation

@@ -4,12 +4,12 @@ Author: Mark Hallman
 Version: 1.0
 Id: b9f74cd7-b80d-4a5c-8381-6e260ffffdf5
 BinaryUrl: https://github.com/log2timeline/plaso/releases
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: psteal.exe
         CommandLine: -z "UTC" --status_view none --source %sourceDirectory% -o l2tcsv -w %destinationDirectory%\timeline.csv
-        ExportFormat: CSV
+        ExportFormat: csv
 
 # Documentation
 # https://plaso.readthedocs.io/en/latest/sources/user/Using-psteal.html

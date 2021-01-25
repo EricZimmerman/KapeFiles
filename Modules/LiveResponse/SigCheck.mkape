@@ -4,12 +4,12 @@ Author: troyla@microsoft.com
 Version: 1.0
 Id: f93bd081-55cd-4c13-9a7f-280a0caeebf8
 BinaryUrl: https://download.sysinternals.com/files/Sigcheck.zip
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: sigcheck64.exe
         CommandLine: -a -c -h -s -accepteula -nobanner %sourceDirectory%
-        ExportFormat: CSV
+        ExportFormat: csv
         ExportFile: sigcheck.csv
 
 # Documentation
