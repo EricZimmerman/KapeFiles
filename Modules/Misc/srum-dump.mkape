@@ -9,7 +9,7 @@ Processors:
     -
         Executable: srum_dump_csv.exe
         CommandLine: -i %sourceDirectory%\WINDOWS\System32\sru\SRUDB.dat -t SRUM_TEMPLATE.xlsx -r %sourceDirectory%\WINDOWS\System32\config\SOFTWARE -o %destinationDirectory% -q
-        ExportFormat: csv
+        ExportFormat: CSV
 
 # Documentation
 # https://github.com/MarkBaggett/srum-dump
