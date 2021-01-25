@@ -120,6 +120,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Last Tabs
     -
+        Name: Chrome Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sessions\
+        Recursive: False   
+    -
         Name: Chrome Login Data
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
