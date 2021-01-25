@@ -4,20 +4,20 @@ Author: Eric Zimmerman
 Version: 1.0
 Id: 81fe4336-eb10-4733-a770-cb57ec9bd108
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/JLECmd.zip
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: JLECmd.exe
         CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
-        ExportFormat: CSV
+        ExportFormat: csv
     -
         Executable: JLECmd.exe
         CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q
-        ExportFormat: HTML
+        ExportFormat: html
     -
         Executable: JLECmd.exe
         CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
-        ExportFormat: JSON
+        ExportFormat: json
 
 # Documentation
 # https://github.com/EricZimmerman/JLECmd

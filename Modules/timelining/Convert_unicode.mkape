@@ -4,12 +4,12 @@ Author: Mari DeGrazia
 Version: 1.0
 Id: 407a520e-b194-42ed-97b3-af159a912126
 BinaryUrl: https://github.com/mdegrazia/KAPE_Tools/raw/master/executables/unicode_2_ascii.exe
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: tln_tools\unicode_2_ascii.exe
         CommandLine: -f %destinationDirectory%\temp.tln -o %destinationDirectory%\temp_ascii.tln
-        ExportFormat: CSV
+        ExportFormat: csv
         
 # Documentation
 # https://az4n6.blogspot.com/2019/08/triage-collection-and-timeline.html

@@ -4,13 +4,13 @@ Author: Eric Zimmerman
 Version: 1.0
 Id: e5e0ffa8-fe3e-4196-ac5a-d21cbeb879c2
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/AppCompatCacheParser.zip
-ExportFormat: CSV
+ExportFormat: csv
 FileMask: SYSTEM
 Processors:
     -
         Executable: AppCompatCacheParser.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory%
-        ExportFormat: CSV
+        ExportFormat: csv
 
 # Documentation
 # https://github.com/EricZimmerman/AppCompatCacheParser
