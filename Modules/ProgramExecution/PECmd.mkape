@@ -17,7 +17,7 @@ Processors:
     -
         Executable: PECmd.exe
         CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
-        ExportFormat: JSON
+        ExportFormat: json
 
 # Documentation
 # https://github.com/EricZimmerman/PECmd
