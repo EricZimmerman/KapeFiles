@@ -14,7 +14,7 @@ Processors:
     -
         Executable: NTFS Log Tracker v1.6 CMD\NTFS_Log_Tracker_CMD_V1.6.exe
         CommandLine: -u %sourceFile% -o %destinationDirectory% -c
-        ExportFormat: CSV
+        ExportFormat: csv
 
 # Documentation
 # https://sites.google.com/site/forensicnote/ntfs-log-tracker

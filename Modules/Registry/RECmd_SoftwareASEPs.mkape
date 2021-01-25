@@ -4,12 +4,12 @@ Author: Andrew Rathbun
 Version: 1.0
 Id: 193817d5-85a1-4dbb-b8e0-61693d2deebc
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\SoftwareASEPs.reb --nl false --csv %destinationDirectory% -q
-        ExportFormat: CSV
+        ExportFormat: csv
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd

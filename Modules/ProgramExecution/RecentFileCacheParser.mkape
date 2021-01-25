@@ -4,13 +4,13 @@ Author: Eric Zimmerman
 Version: 1.0
 Id: 32fa31cc-8be6-4a1d-917a-97fbdff552ef
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RecentFileCacheParser.zip
-ExportFormat: CSV
+ExportFormat: csv
 FileMask: RecentFileCache.bcf
 Processors:
     -
         Executable: RecentFileCacheParser.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory%
-        ExportFormat: CSV
+        ExportFormat: csv
     -
         Executable: RecentFileCacheParser.exe
         CommandLine: -f %sourceFile% --json %destinationDirectory%

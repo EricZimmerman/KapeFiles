@@ -4,13 +4,13 @@ Author: Barrie Hill
 Version: 1.0
 Id: 10c90348-bf0d-436d-815b-e3c63ae6218e
 BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
-ExportFormat: CSV
+ExportFormat: csv
 FileMask: Microsoft-Windows-PrintService%4Operational.evtx
 Processors:
     -
         Executable: FullEventLogView.exe
         CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Microsoft-Windows-PrintService%4Operational.evtx /scomma %destinationDirectory%\full_Microsoft_Windows_PrintService_Operational_event_log.csv
-        ExportFormat: CSV
+        ExportFormat: csv
         
 # Documentation
 # Uses Nirsoft's FullEventLogView to export event logs to csv

@@ -4,13 +4,13 @@ Author: Barrie Hill
 Version: 1.0
 Id: 6f9da2e0-0c7c-4147-9a02-58622e4c1b34
 BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
-ExportFormat: CSV
+ExportFormat: csv
 FileMask: Security.evtx
 Processors:
     -
         Executable: FullEventLogView.exe
         CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Security.evtx /scomma %destinationDirectory%\full_security_event_log.csv
-        ExportFormat: CSV
+        ExportFormat: csv
 
 # Documentation
 # Uses Nirsoft's FullEventLogView to export event logs to csv

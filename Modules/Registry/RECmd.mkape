@@ -4,7 +4,7 @@ Author: Andrew Rathbun
 Version: 1.0
 Id: f2c9c95d-375e-4fb7-b069-7e9b95ea6db5
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
-ExportFormat: CSV
+ExportFormat: csv
 Processors:
     -
         Executable: RECmd_AllRegExecutablesFoundOrRun.mkape
