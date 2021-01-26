@@ -1,0 +1,15 @@
+Description: Content of system and user files temp folders
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: e90ae1d1-dc63-4fc6-931d-387d693e8335
+RecreateDirectories: true
+Targets:
+    -
+        Name: System Temp files
+        Category: TempFiles
+        Path: SystemTemp.tkape
+
+    -
+        Name: User Temp files
+        Category: TempFiles
+        Path: UserTemp.tkape

@@ -1,0 +1,10 @@
+Description: User Temp Files
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 22b6aa2d-407d-4644-a74e-5143f91ed9d7
+RecreateDirectories: True
+Targets:
+    -
+        Name: UserTemp
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Local\Temp\

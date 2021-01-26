@@ -1,0 +1,10 @@
+Description: System Temp Files
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 1a74ad3e-346b-44f3-bada-e7518b2603b8
+RecreateDirectories: True
+Targets:
+    -
+        Name: SystemTemp
+        Category: FileSystem
+        Path: C:\Windows\Temp\
