@@ -16,4 +16,5 @@ Processors:
 
 # Documentation
 # https://github.com/keydet89/Tools/tree/master/exe 
-# Place "p2x5124.dll" in the bin folder with regtime.exe
+# Place "p2x5124.dll" in the Modules/bin/tln_tools folder with regtime.exe
+# Add in key "computerName" using --mvars computerName:XXXX
