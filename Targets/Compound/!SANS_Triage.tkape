@@ -5,9 +5,9 @@ Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
 RecreateDirectories: true
 Targets:
 
-# No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS FOR500 Students.
+        # No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS FOR500 Students.
 
-# Event Logs - .\Targets\Windows\EventLogs.tkape
+        # Event Logs - .\Targets\Windows\EventLogs.tkape
     -
         Name: Event logs XP
         Category: EventLogs
@@ -24,7 +24,7 @@ Targets:
         Path: C:\Windows.old\Windows\System32\winevt\logs\
         FileMask: '*.evtx'
 
-# Evidence of Execution - .\Targets\Compound\EvidenceOfExecution.tkape and .\Targets\Logs\PowerShellConsole.tkape
+        # Evidence of Execution - .\Targets\Compound\EvidenceOfExecution.tkape and .\Targets\Logs\PowerShellConsole.tkape
     -
         Name: Prefetch
         Category: Prefetch
@@ -81,7 +81,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
         FileMask: ConsoleHost_history.txt
 
-# File System - .\Targets\Compound\FileSystem.tkape
+        # File System - .\Targets\Compound\FileSystem.tkape
     -
         Name: $MFT
         Category: FileSystem
@@ -129,7 +129,7 @@ Targets:
         AlwaysAddToQueue: true
         SaveAsFileName: $T
 
-# LNK Files and JumpLists - .\Targets\Windows\LNKFilesAndJumpLists.tkape
+        # LNK Files and JumpLists - .\Targets\Windows\LNKFilesAndJumpLists.tkape
     -
         Name: LNK files from Recent
         Category: LNKFiles
@@ -162,7 +162,7 @@ Targets:
         Path: C:\System Volume Information\_restore*\RP*\
         FileMask: '*.LNK'
 
-# Recycle Bin and Recycler - .\Targets\Windows\RecycleBin_DataFiles.tkape and .\Targets\Windows\RecycleBin_InfoFiles.tkape
+        # Recycle Bin and Recycler - .\Targets\Windows\RecycleBin_DataFiles.tkape and .\Targets\Windows\RecycleBin_InfoFiles.tkape
     -
         Name: Recycle Bin - Windows Vista+
         Category: FileDeletion
@@ -188,7 +188,7 @@ Targets:
         FileMask: 'INFO2'
         Recursive: true
 
-# System Registry Files - .\Targets\Windows\RegistryHivesSystem.tkape
+        # System Registry Files - .\Targets\Windows\RegistryHivesSystem.tkape
     -
         Name: SAM registry transaction files
         Category: Registry
@@ -395,7 +395,7 @@ Targets:
         Path: C:\System Volume Information\_restore*\RP*\snapshot\
         FileMask: _REGISTRY_*
 
-# User Registry Files - .\Targets\Windows\RegistryHivesUser.tkape
+        # User Registry Files - .\Targets\Windows\RegistryHivesUser.tkape
     -
         Name: NTUSER.DAT registry hive XP
         Category: Registry
@@ -442,9 +442,9 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
         FileMask: UsrClass.dat.LOG*
 
-# System Level Artifacts
+        # System Level Artifacts
 
-# Scheduled Tasks - .\Targets\Windows\ScheduledTasks.tkape
+        # Scheduled Tasks - .\Targets\Windows\ScheduledTasks.tkape
     -
         Name: at .job
         Category: Persistence
@@ -476,7 +476,7 @@ Targets:
         Path: C:\Windows.old\Windows\System32\Tasks\
         Recursive: true
 
-# System Resource Usage Monitor - .\Targets\Windows\SRUM.tkape
+        # System Resource Usage Monitor - .\Targets\Windows\SRUM.tkape
     -
         Name: SRUM
         Category: Execution
@@ -488,14 +488,14 @@ Targets:
         Path: C:\Windows.old\Windows\System32\SRU\
         Recursive: true
 
-# Thumbcache.db - .\Targets\Windows\ThumbCache.tkape
+        # Thumbcache.db - .\Targets\Windows\ThumbCache.tkape
     -
         Name: Thumbcache DB
         Category: FileKnowledge
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Explorer\
         FileMask: thumbcache_*.db
 
-# USB Devices Logs - .\Targets\Windows\USBDevicesLogs.tkape
+        # USB Devices Logs - .\Targets\Windows\USBDevicesLogs.tkape
     -
         Name: Setupapi.log XP
         Category: USBDevices
@@ -527,9 +527,9 @@ Targets:
         Path: C:\Windows.old\Windows\System32\wbem\Repository\
         Recursive: true
 
-# User Communication
+        # User Communication
 
-# Outlook PST and OST files - .\Targets\Apps\OutlookPSTOST.tkape
+        # Outlook PST and OST files - .\Targets\Apps\OutlookPSTOST.tkape
     -
         Name: PST XP
         Category: Communications
@@ -551,7 +551,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
         FileMask: '*.ost'
 
-# Skype - .\Targets\Apps\Skype.tkape
+        # Skype - .\Targets\Apps\Skype.tkape
     -
         Name: main.db (App <v12)
         Category: Communications
@@ -583,7 +583,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
         FileMask: '*.log'
 
-# Web Browser Artifacts - .\Targets\Compound\WebBrowsers.tkape
+        # Web Browser Artifacts - .\Targets\Compound\WebBrowsers.tkape
     -
         Name: Chrome bookmarks XP
         Category: Communications
@@ -903,7 +903,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
         Recursive: true
 
-# Windows Timeline - .\Targets\Windows\WindowsTimeline.tkape
+        # Windows Timeline - .\Targets\Windows\WindowsTimeline.tkape
     -
         Name: ActivitiesCache.db
         Category: FileFolderAccess

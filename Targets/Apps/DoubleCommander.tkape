@@ -37,8 +37,8 @@ Targets:
 # Doublecmd.xml has a lot more information overall than history.xml, but it does have similar Shellbags-equivalent artifacts that are sorted in descending order.
 # If you open up the doublecmd.xml file path in a text editor, search for the following string: <Path Filename= and you will start seeing these artifacts.
 # For instance, besides the top two lines, I explored the following paths in this order from top to bottom:
-#	<Path Filename="bz2.dll">C:\Program Files\Double Commander\</Path>
-#	<Path Filename="Double Commander">C:\Program Files\</Path>
+# <Path Filename="bz2.dll">C:\Program Files\Double Commander\</Path>
+# <Path Filename="Double Commander">C:\Program Files\</Path>
 #       <Path Filename="Users">C:\</Path>
 #       <Path Filename="%user%">C:\Users\</Path>
 #       <Path Filename="Desktop">C:\Users\%user%\</Path>
