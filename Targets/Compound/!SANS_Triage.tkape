@@ -7,7 +7,7 @@ Targets:
 
     # No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS FOR500 Students.
 
-        # Event Logs - .\Targets\Windows\EventLogs.tkape
+    # Event Logs - .\Targets\Windows\EventLogs.tkape
     -
         Name: Event logs XP
         Category: EventLogs
