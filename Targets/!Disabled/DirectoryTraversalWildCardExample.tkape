@@ -8,8 +8,8 @@ Targets:
         Name: Zips
         Category: Archives
         Path: C:\
-        #Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
-        #You can also do regex:<regex pattern> if more control is needed. i.e. FileMask: regex:(2019|DSC|Log).+\.(jpg|txt)
+        # Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml
+        # You can also do regex:<regex pattern> if more control is needed. i.e. FileMask: regex:(2019|DSC|Log).+\.(jpg|txt)
         FileMask: '*.zip'
         Recursive: true
         Comment: This is an example of how to walk a drive for a file mask. Probably do not want to use this one as is
