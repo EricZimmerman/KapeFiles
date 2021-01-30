@@ -31,4 +31,3 @@ rules:
   quoted-strings: disable
   trailing-spaces: enable
   truthy: {allowed-values: ["true", "false"]}
-    level: warning
