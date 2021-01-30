@@ -8,13 +8,13 @@ ExportFormat: xlsx
 Processors:
     -
         Executable: hindsight.exe
-        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f xlsx 
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f xlsx
         ExportFormat: xlsx
     -
         Executable: hindsight.exe
-        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f json 
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f json
         ExportFormat: json
-
+#
 # Documentation
 # Hindsight - Internet history forensics for Google Chrome/Chromium
 # https://github.com/obsidianforensics/hindsight/releases

@@ -19,4 +19,4 @@ Processors:
 # ShellBags Explorer - For browsing shellbags data. Handles locked files.
 # https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip
 # SBECmd.exe must be in Modules\bin folder
-# Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module SBECmd 
+# Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module SBECmd

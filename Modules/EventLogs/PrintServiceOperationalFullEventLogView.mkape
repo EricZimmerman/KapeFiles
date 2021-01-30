@@ -11,7 +11,7 @@ Processors:
         Executable: FullEventLogView.exe
         CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Microsoft-Windows-PrintService%4Operational.evtx /scomma %destinationDirectory%\full_Microsoft_Windows_PrintService_Operational_event_log.csv
         ExportFormat: csv
-        
+
 # Documentation
 # Uses Nirsoft's FullEventLogView to export event logs to csv
 # https://www.nirsoft.net/utils/full_event_log_view.html
