@@ -7,9 +7,9 @@ BinaryUrl: https://www.rlvision.com/script/download.php?ref=rlv.com&file=Snap2HT
 ExportFormat: html
 Processors:
   -
-       Executable: Snap2HTML/Snap2HTML.exe
-       CommandLine: -path:%sourceDirectory% -outfile:%destinationDirectory%/Kape_Processed.html -title:"KAPE Processed Directories" -hidden -system
-       ExportFormat: html
+    Executable: Snap2HTML/Snap2HTML.exe
+    CommandLine: -path:%sourceDirectory% -outfile:%destinationDirectory%/Kape_Processed.html -title:"KAPE Processed Directories" -hidden -system
+    ExportFormat: html
 #
 # Documentation
 # https://www.rlvision.com/snap2html/about.php
