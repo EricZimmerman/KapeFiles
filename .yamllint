@@ -24,7 +24,7 @@ rules:
   indentation: enable
   key-duplicates: enable
   key-ordering: disable
-  line-length: enable
+  line-length: disable
   new-line-at-end-of-file: enable
   new-lines: disable
   octal-values: disable
