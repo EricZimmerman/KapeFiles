@@ -15,4 +15,3 @@ Targets:
 # Fences takes a daily snapshot of the user's desktop.
 # Fences also takes a PreInstallSnapshot and OnInstallSnapshot that can potentially be useful for the historical contents of a user's desktop.
 # Please note, if the user has multiple monitors, it will grab the contents of all monitors into one .PNG file.
-

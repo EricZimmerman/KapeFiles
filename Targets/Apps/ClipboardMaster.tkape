@@ -28,4 +28,3 @@ Targets:
 # Clipboard.clm4 can be viewed in any text editor. It appears to store in plaintext the user’s clipboard history.
 # Clipboard.clm.bak appears to be a 1:1 backup of Clipboard.clm4.
 # There appeared to be multiple files with the naming convention ofClipboard.clm4.ba# where # iterated from 2 upward. These were also plaintext readable in any text editor.
-
