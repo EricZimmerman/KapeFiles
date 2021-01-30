@@ -1,7 +1,7 @@
 Description: AceText
 Author: Andrew Rathbun
 Version: 1.0
-Id: 	0b7b9e23-5653-4075-9862-48cbdf1dda8a
+Id: 0b7b9e23-5653-4075-9862-48cbdf1dda8a
 RecreateDirectories: True
 Targets:
     -
