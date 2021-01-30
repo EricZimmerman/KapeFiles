@@ -12,7 +12,7 @@ Processors:
         CommandLine: -log %sourceFile% -pair_datetime -csv -no_whitespace
         ExportFormat: csv
         ExportFile: application_event_log.csv
-#
+
 # Documentation
 # https://tzworks.net/prototype_page.php?proto_id=25
 # This is an example of how to use a tool that cant write out to a destination file. It is not recommended to use evtwalk since it will silently drop logs it doesnt know how to deal with as of testing in August 2019
