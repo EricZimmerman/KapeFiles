@@ -8,7 +8,7 @@ ExportFormat: db
 Processors:
     -
         Executable: iTunes_Backup_Reader.exe
-        CommandLine:  -i "%sourceDirectory%\" -o %destinationDirectory% -v --ir -r -t db
+        CommandLine: -i "%sourceDirectory%\" -o %destinationDirectory% -v --ir -r -t db
         ExportFormat: db
 #
 # Documentation
