@@ -10,7 +10,7 @@ Processors:
         CommandLine: -Command "$admin = (Get-LocalGroup -Name 'Admini*').name; net localgroup $admin"
         ExportFormat: txt
         ExportFile: NetSystemInfo.txt
-        Append: True
+        Append: true
 #
 # Documentation
 # https://docs.microsoft.com/en-us/powershell/?view=powershell-5.1
