@@ -47,7 +47,7 @@ Targets:
     -
         Name: Energy-NTKL Trace Logs
         Category: Event Trace Logs
-        Path:  C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\
+        Path: C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\
         FileMask: energy-ntkl.etl
 
 # Documentation

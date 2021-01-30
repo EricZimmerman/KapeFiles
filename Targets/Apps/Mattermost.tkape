@@ -18,4 +18,3 @@ Targets:
 # What is interesting about this file is that it appears to be a timestamped keylogger, of sorts. It appears that recent messages will be stored here (unknown exactly how far back) and timestamped by the keystroke.
 # For example, for a message typed by the user: "hello", there would be 5 entries in this log (h, he, hel, hell, hello) with each entry being timestamped.
 # This does not appear to be an exhaustive chat log, by any means. However, something is better than nothing and the timestamped keystrokes is certainly an interesting artifact.
-
