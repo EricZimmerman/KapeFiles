@@ -20,3 +20,6 @@ Targets:
         Name: Windows Firewall Log
         Category: WindowsFirewallLogs
         Path: WindowsFirewall.tkape
+
+# Documentation
+# N/A

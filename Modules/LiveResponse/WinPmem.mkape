@@ -17,7 +17,7 @@ Processors:
 # 1. Download winpmem_3.2.exe using the link above; also tested with winpmem_3.3.rc1.exe. Other versions may work, but are untested.
 # 2. Rename the binary to winpmem.exe (dropping the version number)
 # 3. Place the binary into '<KAPE_working_directory>/Modules/bin'
-#   - KAPE should now be able to find the executable at '<KAPE_working_directory>/Modules/bin/winpmem.exe'
+# KAPE should now be able to find the executable at '<KAPE_working_directory>/Modules/bin/winpmem.exe'
 #
 # To obtain a compressed AFF4 memory dump, swap `--format raw` for `--format map` in the command line parameter above.
 #

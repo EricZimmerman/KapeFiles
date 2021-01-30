@@ -26,5 +26,5 @@ Targets:
 # To export all data you must be online and run "Export Telegram Data" from : Settings->Advanced.
 # ***FORENSIC CAUTION***: Be aware that you will be authenticated and you'll receive new contents and messages (with the "online" status)
 # ***IMPORTANT NOTES***
-#   - It's not possible to recover messages from local cache/temp files because of encryption (it only works on old versions and there are few tools available)
-#   - You can't get "private messages" because they're not on cloud.
+# It's not possible to recover messages from local cache/temp files because of encryption (it only works on old versions and there are few tools available)
+# You can't get "private messages" because they're not on cloud.
