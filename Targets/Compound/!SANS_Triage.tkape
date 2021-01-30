@@ -5,7 +5,7 @@ Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
 RecreateDirectories: true
 Targets:
 
-        # No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS FOR500 Students.
+    # No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS FOR500 Students.
 
         # Event Logs - .\Targets\Windows\EventLogs.tkape
     -
