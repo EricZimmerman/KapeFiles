@@ -3,8 +3,8 @@
 yaml-files:
   - '*.yaml'
   - '*.yml'
-  - '.tkape'
-  - '.mkape'
+  - '*.tkape'
+  - '*.mkape'
 
 rules:
   braces: enable
