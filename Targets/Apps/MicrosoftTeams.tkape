@@ -1,6 +1,6 @@
 Description: Microsoft Teams
 Author: Matt Dawson
-Version: 1.0
+Version: 2.0
 Id: 7d449255-917e-4894-a46d-dcbeee2289b5
 RecreateDirectories: True
 Targets:
