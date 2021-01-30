@@ -1,9 +1,24 @@
-name: Yaml Lint
+# name: Yaml Lint
+# on: [push, pull_request]
+# jobs:
+#   lintAllTheThings:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#       - name: yaml-lint
+#         uses: ibiqlik/action-yamllint@v3
+
+
+name: reviewdog
 on: [push, pull_request]
 jobs:
-  lintAllTheThings:
+  yamllint:
+    name: runner / yamllint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+      - name: yamllint
+        uses: reviewdog/action-yamllint@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review # Change reporter.
