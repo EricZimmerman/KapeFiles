@@ -10,7 +10,7 @@ Processors:
         Executable: volatility_2.6_win64_standalone.exe
         CommandLine: -f %sourceDirectory%\memory.dmp shimcache --output=greptext --output-file %destinationDirectory%\volatility_shimcache.txt
         ExportFormat: greptext
-#
+
 # Documentation
 # https://github.com/volatilityfoundation/volatility
 # https://github.com/volatilityfoundation/volatility/wiki
@@ -18,6 +18,6 @@ Processors:
 #
 # Place the binary 'volatility_2.6_win64_standalone.exe' into the .\modules\bin folder. And if you want to provide a Volatility profile (such as Win2016x64_14393) or a KDBG, you have to create a file named 'volatilityrc' and place it in the same folder as the Volatility binary. Set the following content in that file:
 #
-#[DEFAULT]
-#PROFILE=Win2016x64_14393
-##KDBG=0x82944c28
+# [DEFAULT]
+# PROFILE=Win2016x64_14393
+# #KDBG=0x82944c28
