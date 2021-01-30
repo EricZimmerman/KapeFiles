@@ -9,7 +9,7 @@ FileMask: SYSTEM
 Processors:
     -
         Executable: cafae64.exe
-        CommandLine: -hive %sourceFile% -csv -devices -no_regkey_hdr 
+        CommandLine: -hive %sourceFile% -csv -devices -no_regkey_hdr
         ExportFormat: txt
         ExportFile: devices.txt
 #

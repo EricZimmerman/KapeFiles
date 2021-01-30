@@ -10,6 +10,6 @@ Processors:
         Executable: SrumECmd.exe
         CommandLine: -d %sourceDirectory% -k --csv %destinationDirectory%
         ExportFormat: csv
-
+#
 # Documentation
-# https://github.com/EricZimmerman/Srum/blob/master/README.md will show you how to repair the SRUDB.dat prior to successfully parsing. 
+# https://github.com/EricZimmerman/Srum/blob/master/README.md will show you how to repair the SRUDB.dat prior to successfully parsing.

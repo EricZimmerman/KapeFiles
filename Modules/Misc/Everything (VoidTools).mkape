@@ -11,11 +11,11 @@ Processors:
         Executable: db2efu.exe
         CommandLine: "%SourceFile% %DestinationDirectory%\\everythingFileListing.efu"
         ExportFormat: efu
-
+#
 # Documentation
 # For those who don't know, VoidTools' Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
 # Should the download link above ever change, check on this page for a download link: https://www.voidtools.com/support/everything/indexes/
-# Download db2efu.zip and extract the executable from the zip file. Please ensure you place this executable in the KAPE\Modules\Bin folder prior to execution of this module.  
+# Download db2efu.zip and extract the executable from the zip file. Please ensure you place this executable in the KAPE\Modules\Bin folder prior to execution of this module.
 # Everything must have been exited completely in order for the Everything.db file to have been committed to disk. So for initial installs, it won't commit until the first exit.
 # Module will output the converted database into a .efu file in the KAPE bin folder.
 # .efu file can be read with a text editor or in the Everything tool itself. File -> Open File List in Everything and import the .efu file.

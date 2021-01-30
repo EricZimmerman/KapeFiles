@@ -10,7 +10,7 @@ Processors:
         Executable: iTunes_Backup_Reader.exe
         CommandLine:  -i "%sourceDirectory%\" -o %destinationDirectory% -v --ir -r -t db
         ExportFormat: db
-
+#
 # Documentation
 # https://github.com/jfarley248/iTunes_Backup_Reader
 # Make sure to use flag --tdd false to not dedupe files (Thanks Eric!)

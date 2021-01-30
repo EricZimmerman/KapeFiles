@@ -12,7 +12,7 @@ Processors:
         CommandLine: -r %sourceFile% -f software
         ExportFormat: txt
         ExportFile: regripper-software.txt
-
+#
 # Documentation
 # https://github.com/keydet89/RegRipper3.0
 # Create a folder "regripper" within the "Modules\bin" KAPE folder
