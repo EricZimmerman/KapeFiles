@@ -78,8 +78,7 @@ Processors:
         Executable: RegRipper_NTUSER_userassit_TLN.mkape
         CommandLine: ""
         ExportFormat: ""
-
-##Add new modules for TLN output above this line^
+        # Add new modules for TLN output above this line^
     -
         Executable: Convert_unicode.mkape
         CommandLine: ""
