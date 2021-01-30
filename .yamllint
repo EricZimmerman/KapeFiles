@@ -1,6 +1,6 @@
 yaml-files:
-#  - '*.yaml'
-#  - '*.yml'
+  - '*.yaml'
+  - '*.yml'
   - '*.tkape'
   - '*.mkape'
 
