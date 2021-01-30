@@ -2,14 +2,14 @@ Description: $Boot
 Author: Eric Zimmerman
 Version: 1.0
 Id: 9f24d727-fcf0-492d-97cc-108472eb4e00
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: $Boot
         Category: FileSystem
         Path: C:\
         FileMask: $Boot
-        AlwaysAddToQueue: True
+        AlwaysAddToQueue: true
 
 # Documentation
 # https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf

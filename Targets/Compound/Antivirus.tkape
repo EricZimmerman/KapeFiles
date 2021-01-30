@@ -2,7 +2,7 @@ Description: Antivirus
 Author: Andrew Rathbun
 Version: 1.1
 Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Avast
@@ -24,7 +24,7 @@ Targets:
         Name: ComboFix
         Category: Antivirus
         Path: ComboFix.tkape
-    -        
+    -
         Name: Cybereason
         Category: Antivirus
         Path: Cybereason.tkape
@@ -93,5 +93,5 @@ Targets:
         Category: Antivirus
         Path: WindowsDefender.tkape
 
-# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_antivirus_software. 
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_antivirus_software.
 # Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

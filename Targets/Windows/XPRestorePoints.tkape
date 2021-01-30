@@ -2,13 +2,13 @@ Description: XP Restore Points - System Volume Information directory
 Author: Phill Moore
 Version: 1.0
 Id: 07f57a75-f9d9-42f3-842c-bd7e5abbb569
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: System Volume Information
         Category: Folder capture
         Path: C:\System Volume Information\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download

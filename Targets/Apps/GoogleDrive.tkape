@@ -2,25 +2,25 @@ Description: Google Drive Storage Files and Metadata
 Author: Chad Tilbury
 Version: 1.0
 Id: 34f115e0-687e-49c1-acdd-85cc68a86157
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Google Drive User Files
         Category: Apps
         Path: C:\Users\%user%\Google Drive*\
-        Recursive: True
+        Recursive: true
         Comment: "Google Drive Backup and Sync Application"
     -
         Name: Google Drive Metadata
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Google\Drive\
-        Recursive: True
+        Recursive: true
         Comment: "Google Drive Backup and Sync Application"
     -
         Name: Google File Stream Metadata
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Google\DriveFS\
-        Recursive: True
+        Recursive: true
         Comment: "Google Drive File Stream Application"
 
 # Documentation

@@ -2,13 +2,13 @@ Description: LogMeIn Data
 Author: Drew Ervin
 Version: 1.0
 Id: 488e9de2-ecb6-4b27-88a3-719715147c33
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: LogMeIn ProgramData Logs
         Category: ApplicationLogs
         Path: C:\ProgramData\LogMeIn\Logs\
-        Recursive: True
+        Recursive: true
     -
         Name: LogMeIn Application Events
         Category: EventLogs
@@ -18,7 +18,7 @@ Targets:
         Name: LogMeIn Application Logs
         Category: ApplicationLogs
         Path: C:\Users\%user%\AppData\Local\temp\LogMeInLogs\
-        Recursive: True
+        Recursive: true
         Comment: "Contains RemoteAssist (formerly GoToAssist), GoToMeeting, and other GoTo* logs"
 
 # Documentation

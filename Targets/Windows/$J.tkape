@@ -2,21 +2,21 @@ Description: $J
 Author: Eric Zimmerman
 Version: 1.0
 Id: 2a9c6f80-250b-42a6-9d29-90cb0a20f7be
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: $J
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $UsnJrnl:$J
-        AlwaysAddToQueue: True
+        AlwaysAddToQueue: true
         SaveAsFileName: $J
     -
         Name: $Max
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $UsnJrnl:$Max
-        AlwaysAddToQueue: True
+        AlwaysAddToQueue: true
         SaveAsFileName: $Max
 
 # Documentation

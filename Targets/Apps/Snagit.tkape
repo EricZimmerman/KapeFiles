@@ -2,7 +2,7 @@ Description: Snagit
 Author: Andrew Rathbun
 Version: 1.0
 Id: b2281102-476c-4aa2-804d-4c906a20415a
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Snagit - Captures
@@ -12,6 +12,6 @@ Targets:
 
 # Documentation
 # Snagit is an awesome, premium screen capturing software that is totally worth looking into.
-# Captures with Snagit are stored as .SNAG files, which can be opened with Snagit Editor. 
-# Think of Snagit as Snipping Tool on steroids. The user can create robust diagrams and guides on top of the captured image. 
-# This target will grab all the contents of the DataStore folder. 
+# Captures with Snagit are stored as .SNAG files, which can be opened with Snagit Editor.
+# Think of Snagit as Snipping Tool on steroids. The user can create robust diagrams and guides on top of the captured image.
+# This target will grab all the contents of the DataStore folder.

@@ -2,7 +2,7 @@ Description: syscache.hve
 Author: Phill Moore
 Version: 1.0
 Id: d4665b13-9953-4cf0-bdc4-6fcb7a37842f
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Syscache

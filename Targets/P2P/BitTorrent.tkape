@@ -2,7 +2,7 @@ Description: BitTorrent
 Author: Banaanhangwagen
 Version: 1.0
 Id: ea203900-3f49-4ebf-a213-21d82ccae5db
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: TorrentClients - BitTorrent

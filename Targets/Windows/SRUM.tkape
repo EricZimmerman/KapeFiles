@@ -2,18 +2,18 @@ Description: System Resource Usage Monitor (SRUM) Data
 Author: Mark Hallman
 Version: 1.0
 Id: 9858f1fc-5e22-46a0-8bfd-c821ac9b4a13
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: SRUM
         Category: Execution
         Path: C:\Windows\System32\SRU\
-        Recursive: True
+        Recursive: true
     -
         Name: SRUM
         Category: Execution
         Path: C:\Windows.old\Windows\System32\SRU\
-        Recursive: True
+        Recursive: true
     -
         Name: SOFTWARE registry hive
         Category: Registry
@@ -23,8 +23,8 @@ Targets:
         Name: SOFTWARE registry hive
         Category: Registry
         Path: C:\Windows.old\Windows\System32\config\
-        FileMask: SOFTWARE   
-    -     
+        FileMask: SOFTWARE
+    -
         Name: SOFTWARE registry transaction files
         Category: Registry
         Path: C:\Windows\System32\config\

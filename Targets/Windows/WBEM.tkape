@@ -2,18 +2,18 @@ Description: Web-Based Enterprise Management (WBEM)
 Author: Mark Hallman
 Version: 1.0
 Id: e985f5e3-f951-4e13-8099-a2a6877355cb
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: WBEM
         Category: WBEM
         Path: C:\Windows\System32\wbem\Repository\
-        Recursive: True
+        Recursive: true
     -
         Name: WBEM
         Category: WBEM
         Path: C:\Windows.old\Windows\System32\wbem\Repository\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # https://www.jaiminton.com/cheatsheet/DFIR/

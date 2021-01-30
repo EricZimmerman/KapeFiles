@@ -2,7 +2,7 @@ Description: Prefetch files
 Author: Eric Zimmerman
 Version: 1.0
 Id: f6715d3f-b8ca-4cc2-9e5e-4ed18e88abbe
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Prefetch

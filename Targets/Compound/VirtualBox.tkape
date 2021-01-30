@@ -2,7 +2,7 @@ Description: Runs all VirtualBox modules to collect Virtualbox VM config files, 
 Author: Matt Dawson
 Version: 1.0
 Id: b6ce74ad-11a1-4e3c-851e-f8772749894b
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: VirtualBox Logs

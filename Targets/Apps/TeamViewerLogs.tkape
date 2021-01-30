@@ -2,7 +2,7 @@ Description: TeamViewer Logs
 Author: Hadar Yudovich
 Version: 1.1
 Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: TeamViewer Connection Logs
@@ -20,7 +20,7 @@ Targets:
         Name: TeamViewer Configuration Files
         Category: ApplicationLogs
         Path: C:\Users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport\
-        Recursive: True
+        Recursive: true
         Comment: "Includes miscellaneous config files"
 
 # Documentation

@@ -11,7 +11,7 @@ Processors:
         CommandLine: -f %destinationDirectory%\mft_bodyfile -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: True
+        Append: true
 
 # Documentation
 # https://github.com/keydet89/Tools/tree/master/exe

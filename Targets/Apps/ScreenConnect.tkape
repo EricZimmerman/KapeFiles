@@ -2,7 +2,7 @@ Description: ScreenConnect Data (now known as ConnectWise Control)
 Author: Drew Ervin
 Version: 1.0
 Id: 26c80b79-b3c0-4378-abe8-a5a6c9aebb4f
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: ScreenConnect Session Database
@@ -27,6 +27,6 @@ Targets:
         Path: C:\ProgramData\ScreenConnect Client*\
         FileMask: user.config
         Comment: "Contains server domain and IP info"
-        
+
 # Documentation
 # N/A

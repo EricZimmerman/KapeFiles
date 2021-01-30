@@ -11,7 +11,7 @@ Processors:
         CommandLine: -f %destinationDirectory%\evtx_for_timeline.csv
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: True
+        Append: true
 
 # Documentation
 # https://github.com/mdegrazia/KAPE_Tools

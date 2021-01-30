@@ -2,13 +2,13 @@ Description: Slack
 Author: Andrew Rathbun
 Version: 1.0
 Id: 67ec52aa-1a0e-4dfa-8b9f-8d94de28b02f
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Slack - Chat Logs
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Slack\IndexedDB\
-        Recursive: True
+        Recursive: true
         Comment: "Locates Slack logs and copies them"
 
 # Documentation

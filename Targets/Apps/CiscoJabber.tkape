@@ -2,7 +2,7 @@ Description: Jabber
 Author: Andrew Bannon
 Version: 1.0
 Id: 69249cc7-2b04-47c4-8ba9-d8055fadc950
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Cisco Jabber Database

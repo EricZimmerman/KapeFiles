@@ -2,7 +2,7 @@ Description: FTP Clients
 Author: Andrew Rathbun
 Version: 1.0
 Id: b1f3e04d-6525-4a1a-9e19-82300ec1e3b7
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: FileZilla

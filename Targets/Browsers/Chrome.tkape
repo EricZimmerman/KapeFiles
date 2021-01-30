@@ -2,7 +2,7 @@ Description: Chrome
 Author: Eric Zimmerman
 Version: 1.1
 Id: a56d0a8f-3229-489e-aea7-353d1f6f9639
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Chrome bookmarks XP
@@ -123,7 +123,7 @@ Targets:
         Name: Chrome Sessions Folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sessions\
-        Recursive: False   
+        Recursive: false
     -
         Name: Chrome Login Data
         Category: Communications
@@ -178,7 +178,7 @@ Targets:
         Name: Windows Protect Folder
         Category: FileSystem
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
-        Recursive: True
+        Recursive: true
         Comment: "Required for offline decryption"
 
 # Documentation

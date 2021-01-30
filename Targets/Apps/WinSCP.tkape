@@ -2,14 +2,14 @@ Description: WinSCP
 Author: Andrew Rathbun
 Version: 1.0
 Id: acd134fb-6f0b-446e-a781-3a9b6411488d
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: WinSCP (.ini file)
         Category: Logs
         Path: C:\
         FileMask: 'WinSCP.ini'
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # https://az4n6.blogspot.com/2020/02/detecting-laterial-movment-with-winscp.html for more information

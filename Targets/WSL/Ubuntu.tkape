@@ -2,7 +2,7 @@ Description: Ubuntu on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 08b27869-b454-403a-84af-2aa1f2f69a37
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Ubuntu WSL /etc/os-release
@@ -63,30 +63,30 @@ Targets:
         Name: Ubuntu WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".bash_history"
     -
         Name: Ubuntu WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".bashrc"
     -
         Name: Ubuntu WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".profile"
     -
         Name: Ubuntu WSL User Crontabs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\spool\cron\crontabs\
-        Recursive: True
+        Recursive: true
     -
         Name: Ubuntu WSL Apt Logs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\log\apt\
-        Recursive: True
+        Recursive: true
         FileMask: "*.log"
 
 # Documentation

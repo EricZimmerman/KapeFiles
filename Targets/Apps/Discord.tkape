@@ -2,19 +2,19 @@ Description: Discord Cache and LevelDB Files
 Author: Christian Johansen and Matt Dawson
 Version: 2.0
 Id: 5a44a0ef-db56-4103-8748-797432487028
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Discord Cache Files
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\discord\cache\
-        Recursive: True
+        Recursive: true
         Comment: "Gets cached data from Discord app"
     -
         Name: Discord Local Storage LevelDB Files
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\discord\local storage\leveldb\
-        Recursive: True
+        Recursive: true
         Comment: "Gets LevelDB database from Discord app"
 
 # Documentation

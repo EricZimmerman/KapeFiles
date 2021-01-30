@@ -2,7 +2,7 @@ Description: VNC Logs
 Author: Phill Moore
 Version: 1.1
 Id: b98dab2e-81f3-472e-a22a-05269ad16270
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: RealVNC Log

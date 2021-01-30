@@ -2,7 +2,7 @@ Description: Windows Application Event Log
 Author: Drew Ervin
 Version: 1.0
 Id: 2da16dbf-ea47-448e-a00f-fc442c3109ba
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Application Event Log XP

@@ -13,7 +13,7 @@ Processors:
 
 # Documentation
 # Updated to directly reference the system path
-# NOTE: When using the bitlocker related modules, specify --msource as JUST the drive letter and colon. 
+# NOTE: When using the bitlocker related modules, specify --msource as JUST the drive letter and colon.
 # DO NOT include the trailing slash or the command will error out.
 # DO this: --msource C:
 # NOT this: --msource C:\

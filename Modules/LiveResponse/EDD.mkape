@@ -8,7 +8,7 @@ ExportFormat: txt
 Processors:
     -
         Executable: EDD\EDDv300.exe
-        CommandLine:  /batch >> %destinationDirectory%
+        CommandLine: /batch >> %destinationDirectory%
         ExportFormat: txt
         ExportFile: EDD.txt
 

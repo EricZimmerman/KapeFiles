@@ -2,20 +2,20 @@ Description: Recycle Bin Info Files
 Author: Joshua Hickman
 Version: 1.0
 Id: 6205454f-fcaa-4ace-a7b5-33c4e40b156a
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Recycle Bin - Windows Vista+
         Category: FileDeletion
         Path: C:\$Recycle.Bin\
         FileMask: '$I*.*'
-        Recursive: True
+        Recursive: true
     -
         Name: RECYCLER - WinXP
         Category: FileDeletion
         Path: C:\RECYCLE*\
         FileMask: 'INFO2'
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # https://www.youtube.com/watch?v=Gkir-wGqG2c

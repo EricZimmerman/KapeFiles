@@ -12,7 +12,7 @@ Processors:
         CommandLine: evtparse -e %sourceFile% -t -s %computerName%
         ExportFormat: csv
         ExportFile: temp.tln
-        Append: True
+        Append: true
 
 # Documentation
 # https://github.com/keydet89/Tools/tree/master/exe
