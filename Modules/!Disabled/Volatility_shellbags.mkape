@@ -10,7 +10,7 @@ Processors:
         Executable: volatility_2.6_win64_standalone.exe
         CommandLine: -f %sourceDirectory%\memory.dmp shellbags --output=greptext --output-file %destinationDirectory%\volatility_shellbags.txt
         ExportFormat: greptext
-#
+
 # Documentation
 # https://github.com/volatilityfoundation/volatility
 # https://github.com/volatilityfoundation/volatility/wiki

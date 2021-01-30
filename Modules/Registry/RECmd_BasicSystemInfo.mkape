@@ -10,7 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\BasicSystemInfo.reb --nl false --csv %destinationDirectory% -q
         ExportFormat: csv
-#
+
 # Documentation
 # https://github.com/EricZimmerman/RECmd
 # https://binaryforay.blogspot.com/2015/05/introducing-recmd.html

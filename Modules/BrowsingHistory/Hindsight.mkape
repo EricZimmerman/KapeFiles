@@ -14,7 +14,7 @@ Processors:
         Executable: hindsight.exe
         CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f json
         ExportFormat: json
-#
+
 # Documentation
 # Hindsight - Internet history forensics for Google Chrome/Chromium
 # https://github.com/obsidianforensics/hindsight/releases
