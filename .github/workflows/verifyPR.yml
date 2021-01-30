@@ -8,4 +8,5 @@ jobs:
     - name: yaml-lint
       uses: ibiqlik/action-yamllint@v3
       with:
-        *.tkape *.mkape
+        file_or_dir: Targets/*.tkape *.mkape
+        file_or_dir: Modules/*.mkape
