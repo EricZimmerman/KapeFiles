@@ -15,6 +15,10 @@ Processors:
 
 # Documentation
 # https://github.com/keydet89/Tools/tree/master/exe
+# Place bodyfile.exe in Modules/bin/tln_tools
+# Add in key "computerName" using --mvars computerName:XXXX
+# 
+# The MFTECmd_$MFT_Bodyfile.mkape must be ran before this to create the bodyfile. This module with then convert the bodyfile into TLN format
+#
 # https://www.sans.org/blog/triage-collection-and-timeline-generation-with-kape/
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
-# The MFTECmd_$MFT_Bodyfile.mkape must be ran before this to create the bodyfile. This module with then convert the bodyfile into TLN format

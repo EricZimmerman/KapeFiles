@@ -495,7 +495,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Explorer\
         FileMask: thumbcache_*.db
 
-# USB Devices Logs
+# USB Devices Logs - .\Targets\Windows\USBDevicesLogs.tkape
     -
         Name: Setupapi.log XP
         Category: USBDevices

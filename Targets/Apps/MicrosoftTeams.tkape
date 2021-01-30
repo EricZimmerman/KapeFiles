@@ -1,19 +1,27 @@
 Description: Microsoft Teams
 Author: Matt Dawson
-Version: 1.0
+Version: 2.0
 Id: 7d449255-917e-4894-a46d-dcbeee2289b5
 RecreateDirectories: True
 Targets:
     -
         Name: Microsoft Teams IndexedDB Cache
         Category: Apps
-        Path: C:\Users\%user%\AppData\Roaming\Microsoft Teams\IndexedDB\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\IndexedDB\https_teams.microsoft.com_0.indexeddb.leveldb\
+        Recursive: true
         Comment: "LevelDB database which can contain inbound/outbound chat messages, call history and more"
     -
         Name: Microsoft Teams Local Storage Cache
         Category: Apps
-        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\Local Storage\
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\Local Storage\leveldb\
+        Recursive: true
         Comment: "LevelDB database which can contain meeting history, file transfer logs and more"
+    -
+        Name: Microsoft Teams Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\Cache\
+        Recursive: true
+        Comment: Chromium cache which can be viewed with Nirsoft's ChromeCacheView
     -
         Name: Microsoft Teams Config
         Category: Apps
@@ -23,3 +31,4 @@ Targets:
 
 # Documentation
 # https://cyberforensicator.com/2020/04/16/looking-at-microsoft-teams-from-a-dfir-perspective/
+# https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/microsoft-teams-and-skype-logging-privacy-issue/
