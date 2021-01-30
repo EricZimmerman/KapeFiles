@@ -2,7 +2,7 @@ Description: Scheduled tasks (*.job and XML)
 Author: Eric Zimmerman
 Version: 1.0
 Id: e5dc4367-2e6b-49bf-a90a-d4c1598bbe28
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: at .job
@@ -28,12 +28,12 @@ Targets:
         Name: XML
         Category: Persistence
         Path: C:\Windows\System32\Tasks\
-        Recursive: True
+        Recursive: true
     -
         Name: XML
         Category: Persistence
         Path: C:\Windows.old\Windows\System32\Tasks\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # http://windowsir.blogspot.com/2009/09/parsing-job-files.html

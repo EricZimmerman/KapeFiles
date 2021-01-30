@@ -2,24 +2,24 @@ Description: LNK Files and jump lists
 Author: Eric Zimmerman and Andrew Rathbun
 Version: 1.2
 Id: 5fc6820c-4d30-4a38-9e43-5e0b788a4b0c
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: LNK Files from Recent
         Category: LNKFiles
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
-        Recursive: True
+        Recursive: true
         Comment: Also includes automatic and custom jumplist directories
     -
         Name: LNK Files from Microsoft Office Recent
         Category: LNKFiles
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
-        Recursive: True
+        Recursive: true
     -
         Name: LNK Files from Recent (XP)
         Category: LNKFiles
         Path: C:\Documents and Settings\%user%\Recent\
-        Recursive: True
+        Recursive: true
     -
         Name: Desktop LNK Files XP
         Category: LNKFiles

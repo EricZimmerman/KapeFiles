@@ -3,14 +3,14 @@ Category: LiveResponse
 Author: piesecurity
 Version: 1.0
 Id: 12589aca-921f-42a0-8806-5174bfa511fd
-ExportFormat: txt 
+ExportFormat: txt
 Processors:
     -
         Executable: C:\Windows\System32\net.exe
         CommandLine: User
         ExportFormat: txt
         ExportFile: NetSystemInfo.txt
-        Append: True
+        Append: true
 
 # Documentation
 # https://docs.microsoft.com/en-us/windows/win32/winsock/net-exe-2

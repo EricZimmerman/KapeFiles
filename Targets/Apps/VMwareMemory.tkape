@@ -2,28 +2,28 @@ Description: VMware - Virtual Machine Memory
 Author: Andrew Rathbun
 Version: 1.0
 Id: 45945262-2e36-47c7-a36f-3cf4124dbe63
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: VMware (Fusion/Workstation/Server/Player)
         Category: Memory
         Path: C:\
         FileMask: '*.vmem'
-        Recursive: True
+        Recursive: true
         Comment: "Captures all raw memory from VMware virtual machines."
     -
         Name: VMware (Fusion/Workstation/Server/Player)
         Category: Memory
         Path: C:\
         FileMask: '*.vmss'
-        Recursive: True
+        Recursive: true
         Comment: "Captures all memory images from VMware virtual machines."
     -
         Name: VMware (Fusion/Workstation/Server/Player)
         Category: Memory
         Path: C:\
         FileMask: '*.vmsn'
-        Recursive: True
+        Recursive: true
         Comment: "Captures all memory images from VMware virtual machines."
 
 # Documentation

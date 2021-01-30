@@ -2,7 +2,7 @@ Description: Current Group Policy Enforcement
 Author: piesecurity
 Version: 1.0
 Id: e5595e9c-ebab-41db-a688-fdffe91f6fcb
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Local Group Policy INI Files
@@ -28,12 +28,12 @@ Targets:
         Name: Local Group Policy Files - Startup/Shutdown Scripts
         Category: Communication
         Path: C:\Windows\System32\grouppolicy\*\Scripts\
-        Recursive: True
+        Recursive: true
     -
         Name: Local Group Policy Files - Startup/Shutdown Scripts
         Category: Communication
         Path: C:\Windows.old\Windows\System32\grouppolicy\*\Scripts\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # https://medium.com/@grzegorztworek/gpo-group-policy-object-is-one-of-the-most-useful-features-of-the-windows-ecosystem-73b6eeab812

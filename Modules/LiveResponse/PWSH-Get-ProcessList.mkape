@@ -3,7 +3,7 @@ Category: LiveResponse
 Author: piesecurity
 Version: 1.0
 Id: d9bf9198-72e4-4f01-8ec9-e8ec4e322c06
-ExportFormat: csv 
+ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe

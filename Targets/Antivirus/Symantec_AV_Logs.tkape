@@ -2,23 +2,23 @@ Description: Symantec AV Logs
 Author: Brian Maloney
 Version: 1.2
 Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Symantec Endpoint Protection Logs (XP)
         Category: AntiVirus
         Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV\
-        Recursive: True
+        Recursive: true
     -
         Name: Symantec Endpoint Protection Logs
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\
-        Recursive: True
+        Recursive: true
     -
         Name: Symantec Endpoint Protection User Logs
         Category: AntiVirus
         Path: C:\Users\%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\
-        Recursive: True
+        Recursive: true
     -
         Name: Symantec Event Log Win7+
         Category: EventLogs
@@ -40,12 +40,12 @@ Targets:
         Name: Symantec Endpoint Protection Quarantine (XP)
         Category: AntiVirus
         Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine\
-        Recursive: True
+        Recursive: true
     -
         Name: Symantec Endpoint Protection Quarantine
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # N/A

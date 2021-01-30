@@ -12,7 +12,7 @@ Processors:
         CommandLine: -r %sourceFile% -p svc_tln -s %computerName%
         ExportFormat: txt
         ExportFile: temp.tln
-        Append: True
+        Append: true
 
 # Documentation
 # https://github.com/keydet89/RegRipper3.0

@@ -2,7 +2,7 @@ Description: ActivitiesCache.db collector
 Author: Lee Whitfield
 Version: 1.0
 Id: 8315040f-c9a4-455a-b02c-96372583f436
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: ActivitiesCache.db

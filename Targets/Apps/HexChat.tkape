@@ -2,13 +2,13 @@ Description: HexChat
 Author: Andrew Rathbun
 Version: 1.0
 Id: a26181fc-1931-4d48-9b5d-44f6f8f71ccc
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: HexChat Chat Logs
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\HexChat\logs\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # N/A

@@ -2,7 +2,7 @@ Description: Basic Collection
 Author: Phill Moore
 Version: 1.0
 Id: 83b99299-2d84-4844-af25-c727d3440b19
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Event Logs

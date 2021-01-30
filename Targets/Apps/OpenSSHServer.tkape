@@ -2,7 +2,7 @@ Description: OpenSSH Server Config and Logs
 Author: Matt Dawson
 Version: 1.0
 Id: 6c290fef-f9be-43af-a987-44709d8f7921
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: OpenSSH Server Config File

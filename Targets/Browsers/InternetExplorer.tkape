@@ -2,7 +2,7 @@ Description: Internet Explorer
 Author: Eric Zimmerman
 Version: 1.0
 Id: b1e1d79b-324d-4587-a002-cc81144588ff
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Index.dat History
@@ -38,27 +38,27 @@ Targets:
         Name: Local Internet Explorer folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Internet Explorer\
-        Recursive: True
+        Recursive: true
     -
         Name: Roaming Internet Explorer folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
-        Recursive: True
+        Recursive: true
     -
         Name: IE 9/10 History
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\History\
-        Recursive: True
+        Recursive: true
     -
         Name: IE 9/10 Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Cookies\
-        Recursive: True
+        Recursive: true
     -
         Name: IE 9/10 Download History
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
-        Recursive: True
+        Recursive: true
     -
         Name: IE 11 Metadata
         Category: Communications
@@ -67,7 +67,7 @@ Targets:
         Name: IE 11 Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download

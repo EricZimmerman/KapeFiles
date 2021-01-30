@@ -11,6 +11,6 @@ Processors:
         CommandLine: -h -s -d -c -accepteula
         ExportFormat: csv
         ExportFile: psinfo.csv
-        
+
 # Documentation
 # https://docs.microsoft.com/en-us/sysinternals/downloads/psinfo

@@ -2,7 +2,7 @@ Description: Freenet
 Author: Charlie Rubisoff
 Version: 1.0
 Id: dbf16082-0a99-4d3e-b24d-5fb20a1bd914
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Freenet
@@ -28,7 +28,7 @@ Targets:
         Name: Freenet
         Category: File Downloads
         Path: C:\Users\%user%\AppData\Local\Freenet\downloads\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # N/A

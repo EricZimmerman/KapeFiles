@@ -2,7 +2,7 @@ Description: Signal (Please view this tkape file for documentation on decryption
 Author: Matt Dawson
 Version: 1.0
 Id: bc021c91-a699-4265-9a7f-9c6792b1d823
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Signal Attachments cache
@@ -30,7 +30,7 @@ Targets:
         Comment: Stores attachment details, conversations, messages, and more
 
 # Documentation
-# To decrypt db.sqlite on Windows: 
+# To decrypt db.sqlite on Windows:
 # 1. Download https://sqlitebrowser.org/dl/ and open DB Browser for SQLCipher.exe
 # 2. Get the key from config.json
 # 3. Open the database from DB Browser/drag the file into the open window

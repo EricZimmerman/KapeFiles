@@ -2,7 +2,7 @@ Description: File system metadata
 Author: Eric Zimmerman
 Version: 1.0
 Id: 2bd97ef7-5fbf-4427-8ca2-ffb15d545b00
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: $MFT

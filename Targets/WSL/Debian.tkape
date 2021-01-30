@@ -2,7 +2,7 @@ Description: Debian on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 3629bafb-16b5-41de-988f-6961c6d3b6e1
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Debian WSL /etc/debian_version
@@ -68,30 +68,30 @@ Targets:
         Name: Debian WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".bash_history"
     -
         Name: Debian WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".bashrc"
     -
         Name: Debian WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".profile"
     -
         Name: Debian WSL User Crontabs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\var\spool\cron\crontabs\
-        Recursive: True
+        Recursive: true
     -
         Name: Debian WSL Apt Logs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\var\log\apt\
-        Recursive: True
+        Recursive: true
         FileMask: "*.log"
 
 # Documentation

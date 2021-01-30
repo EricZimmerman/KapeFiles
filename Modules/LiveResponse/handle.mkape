@@ -11,6 +11,6 @@ Processors:
         CommandLine: -a -u -accepteula
         ExportFormat: txt
         ExportFile: handles.txt
-        
+
 # Documentation
 # https://docs.microsoft.com/en-us/sysinternals/downloads/handle

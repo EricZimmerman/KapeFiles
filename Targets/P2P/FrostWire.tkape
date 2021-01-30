@@ -2,13 +2,13 @@ Description: FrostWire
 Author: Andrew Rathbun
 Version: 1.0
 Id: 7e78190f-e21e-4d55-ae8a-a84e130fb1b1
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: FrostWire Downloads
         Category: FileDownload
         Path: C:\Users\%user%\Documents\FrostWire\Torrent Data
-        Recursive: True
+        Recursive: true
         Comment: "Locates files downloaded that land in the default location as specified by FrostWire"
     -
         Name: FrostWire AppData

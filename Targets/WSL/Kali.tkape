@@ -2,7 +2,7 @@ Description: Kali on Windows Subsystem for Linux
 Author: Matt Dawson
 Version: 1.0
 Id: 6ea14af7-6217-4a39-9455-76ab5a1c0b2d
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Kali WSL /etc/debian_version
@@ -68,30 +68,30 @@ Targets:
         Name: Kali WSL .bash_history
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".bash_history"
     -
         Name: Kali WSL .bashrc
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".bashrc"
     -
         Name: Kali WSL .profile
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\
-        Recursive: True
+        Recursive: true
         FileMask: ".profile"
     -
         Name: Kali WSL User Crontabs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\spool\cron\crontabs\
-        Recursive: True
+        Recursive: true
     -
         Name: Kali WSL Apt Logs
         Category: Windows Subsystem for Linux
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\log\apt\
-        Recursive: True
+        Recursive: true
         FileMask: "*.log"
 
 # Documentation

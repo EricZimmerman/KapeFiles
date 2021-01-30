@@ -2,7 +2,7 @@ Description: File Explorer Replacements
 Author: Andrew Rathbun
 Version: 1.0
 Id: 8e1cb436-dada-413f-845d-f2ed0823cb3a
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Directory Opus
@@ -25,5 +25,5 @@ Targets:
         Category: Apps
         Path: XYplorer.tkape
 
-# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_file_managers. 
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_file_managers.
 # Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

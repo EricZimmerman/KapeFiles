@@ -2,7 +2,7 @@ Description: Webroot Antivirus
 Author: Drew Ervin
 Version: 1.0
 Id: c53c2b4e-075b-4162-b93e-aaf8c968e0b0
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
 
     -
