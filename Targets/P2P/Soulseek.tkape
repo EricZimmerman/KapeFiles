@@ -21,4 +21,3 @@ Targets:
 # Soulseek is a very popular file sharing client. It's most commonly used for sharing MP3's amongst music enthusiasts. However, any file type can be shared, naturally.
 # Logs are stored as .dat files. Open with your favorite text editor that's not named Notepad or Wordpad and you should have an easy enough time using Ctrl+F to search for relevant data.
 # Chats are stored in plaintext. These can be opened in any text editor and are human readable.
-

@@ -12,3 +12,6 @@ Targets:
         Name: Exchange TransportRoles log files
         Category: Logs
         Path: ExchangeTransport.tkape
+
+# Documentation
+# N/A

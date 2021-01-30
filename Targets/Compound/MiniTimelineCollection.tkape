@@ -16,3 +16,6 @@ Targets:
         Name: RegistryHives
         Category: Registry
         Path: RegistryHives.tkape
+
+# Documentation
+# N/A
