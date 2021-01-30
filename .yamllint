@@ -16,7 +16,7 @@ rules:
   comments-indentation:
     level: warning
   document-end: disable
-  document-start:
+  document-start: disable
     level: warning
   empty-lines: enable
   empty-values: disable
@@ -30,5 +30,5 @@ rules:
   octal-values: disable
   quoted-strings: disable
   trailing-spaces: enable
-  truthy:
+  truthy: {allowed-values: ["true", "false"]}
     level: warning
