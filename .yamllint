@@ -1,6 +1,6 @@
 yaml-files:
-#  - '*.yaml'
-#  - '*.yml'
+  - '*.yaml'
+  - '*.yml'
   - '*.tkape'
   - '*.mkape'
 
@@ -28,4 +28,5 @@ rules:
   quoted-strings: disable
   trailing-spaces: enable
   truthy:
+    check-keys: false
     level: warning
