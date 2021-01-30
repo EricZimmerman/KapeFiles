@@ -12,7 +12,7 @@ Processors:
         ExportFormat: txt
         ExportFile: temp.tln
         Append: True
-        
+
 # Documentation
 # https://github.com/mdegrazia/KAPE_Tools
 # https://www.kroll.com/en/insights/events/2020/webcast-express-artifact-analysis-timeline-development-kape

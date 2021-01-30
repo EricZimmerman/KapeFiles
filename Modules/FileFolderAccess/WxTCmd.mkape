@@ -9,7 +9,7 @@ FileMask: ActivitiesCache.db
 Processors:
     -
         Executable: WxTCmd.exe
-        CommandLine: -f %sourceFile% --csv %destinationDirectory% 
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
         ExportFormat: csv
 
 # Documentation

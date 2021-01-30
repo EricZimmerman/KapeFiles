@@ -11,7 +11,7 @@ Processors:
         CommandLine: -f %destinationDirectory%\temp_ascii.tln -c
         ExportFormat: csv
         ExportFile: 01_timeline.csv
-        
+
 # Documentation
 # https://github.com/keydet89/RegRipper3.0
 # https://az4n6.blogspot.com/2019/
