@@ -10,7 +10,7 @@ Processors:
         Executable: psteal.exe
         CommandLine: -z "UTC" --status_view none --source %sourceDirectory% -o l2tcsv -w %destinationDirectory%\timeline.csv
         ExportFormat: csv
-
+#
 # Documentation
 # https://plaso.readthedocs.io/en/latest/sources/user/Using-psteal.html
 # The Plaso executables are accessed via a symbolic link from the kape/bin folder to the plaso folder.
