@@ -50,7 +50,7 @@ Processors:
         Executable: RECmd_UserActivity.mkape
         CommandLine: ""
         ExportFormat: ""
-#
+
 # Documentation
 # https://github.com/EricZimmerman/RECmd
 # https://binaryforay.blogspot.com/2015/05/introducing-recmd.html

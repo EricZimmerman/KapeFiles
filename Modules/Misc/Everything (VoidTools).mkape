@@ -11,7 +11,7 @@ Processors:
         Executable: db2efu.exe
         CommandLine: "%SourceFile% %DestinationDirectory%\\everythingFileListing.efu"
         ExportFormat: efu
-#
+
 # Documentation
 # For those who don't know, VoidTools' Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
 # Should the download link above ever change, check on this page for a download link: https://www.voidtools.com/support/everything/indexes/

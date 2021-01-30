@@ -10,7 +10,7 @@ Processors:
         Executable: volatility_2.6_win64_standalone.exe
         CommandLine: -f %sourceDirectory%\memory.dmp timeliner --output=greptext --output-file %destinationDirectory%\volatility_timeliner.txt
         ExportFormat: greptext
-#
+
 # Documentation
 # https://github.com/volatilityfoundation/volatility
 # https://github.com/volatilityfoundation/volatility/wiki
