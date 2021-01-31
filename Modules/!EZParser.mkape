@@ -3,7 +3,7 @@ Category: Modules
 Author: Phill Moore
 Version: 1.2
 Id: f531e7cc-c9f3-4d04-881b-dbc89d1e7f38
-BinaryUrl: https://ericzimmerman.github.io/#!index.md
+BinaryUrl: https://ericzimmerman.github.io/
 ExportFormat: csv
 Processors:
     -
