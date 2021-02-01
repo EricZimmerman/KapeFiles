@@ -9,7 +9,7 @@ FileMask: SOFTWARE
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -d %sourceDirectory% --kn ROOT --nl false --json %destinationDirectory% -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf SOFTWARE_ROOT.json -q
         ExportFormat: json
 
 # Documentation

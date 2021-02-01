@@ -9,7 +9,7 @@ FileMask: SECURITY
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -d %sourceDirectory% --kn ROOT --nl false --json %destinationDirectory% -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf SECURITY_ROOT.json -q
         ExportFormat: json
 
 # Documentation
