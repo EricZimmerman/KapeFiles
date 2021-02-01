@@ -1,24 +1,42 @@
 Description: AnyDesk
-Author: Andrew Rathbun
-Version: 1.0
+Author: Andrew Rathbun and Scott Hanson
+Version: 1.1
 Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
 RecreateDirectories: true
 Targets:
     -
-        Name: AnyDesk Logs
+        Name: AnyDesk Logs - user profile
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
-        FileMask: 'ad.trace'
-        Comment: "Collects the ad.trace logfile for AnyDesk"
+        FileMask: '*.trace'
+        Comment: "Collects the trace logs for AnyDesk from user profile"
+    -
+        Name: AnyDesk Logs - programdata
+        Category: Communications
+        Path: C:\programdata\AnyDesk\
+        FileMask: '*.trace'
+        Comment: "Collects the trace logs for AnyDesk from programdata"
     -
         Name: AnyDesk Videos
         Category: Communications
         Path: C:\Users\%user%\Videos\AnyDesk\
         FileMask: '*.anydesk'
         Comment: "Collects any session recordings made by the user while using AnyDesk"
+    -
+        Name: AnyDesk Logs - user profile 2
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
+        FileMask: 'connection_trace.txt'
+        Comment: "Collects the connection trace log from user profile"
+    -
+        Name: AnyDesk Logs - programdata 2
+        Category: Communications
+        Path: C:\programdata\AnyDesk\
+        FileMask: 'connection_trace.txt'
+        Comment: "Collects the connection trace log from programdata"
 
 # Documentation
-# https://www.digitalforensics.com/blog/hello-team-of-teamviewer-is-calling-you-an-anthology-of-the-attack/
+# https://support.anydesk.com/Trace_Files
 # AnyDesk is a remote access tool similar to TeamViewer. A user can download and run AnyDesk without actually installing it and still generate the ad.trace log.
 # In regards to session recordings, note that it appears only the person who is remote connecting into another person's computer can record. The person being remoted into has to allow the recording to take place via a simple, intuitive setting while a remote session is active.
 # Session recordings will be stored in the .anydesk file format and they can only be played with AnyDesk.
