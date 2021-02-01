@@ -7,7 +7,7 @@ ExportFormat: txt
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine:  -Command "write 'Event Filter'; write ' '; Get-WMIObject -Namespace root\Subscription -Class __EventFilter; write ' '; write 'EventConsumer'; write ' '; Get-WMIObject -Namespace root\Subscription -Class __EventConsumer; write ' '; write 'FilterToConsumerBinding'; write ' '; Get-WMIObject -Namespace root\Subscription -Class __FilterToConsumerBinding"
+        CommandLine: -Command "write 'Event Filter'; write ' '; Get-WMIObject -Namespace root\Subscription -Class __EventFilter; write ' '; write 'EventConsumer'; write ' '; Get-WMIObject -Namespace root\Subscription -Class __EventConsumer; write ' '; write 'FilterToConsumerBinding'; write ' '; Get-WMIObject -Namespace root\Subscription -Class __FilterToConsumerBinding"
         ExportFormat: txt
         ExportFile: wmi-repository-auditing.txt
 
