@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-** KAPE version **
+**KAPE version**
 The version of KAPE you are currently using
 
 **Is your feature request related to a problem? Please describe.**
