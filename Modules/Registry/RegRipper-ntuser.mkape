@@ -3,7 +3,7 @@ Category: Registry
 Author: ZeArioch <https://{github,twitter}.com/ZeArioch>, Phill Moore
 Version: 1.1
 Id: ce3bf979-0d4d-4a31-8240-6be6f95610b7
-BinaryUrl: https://github.com/keydet89/RegRipper2.8/archive/master.zip
+BinaryUrl: https://github.com/keydet89/RegRipper3.0/archive/master.zip
 ExportFormat: txt
 FileMask: ntuser.dat
 Processors:
