@@ -1,27 +1,25 @@
-Description: 'EvtxECmd: process event log files'
+Description: 'EvtxECmd: Sync, then process event logs'
 Category: EventLogs
-Author: Eric Zimmerman
+Author: Andrew Rathbun
 Version: 1.0
-Id: 1b66f0e2-2ccf-467d-ae15-a2b3dc59df08
+Id: db70ea82-069a-42bb-9b58-68e9dae74c56
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
 ExportFormat: csv
 Processors:
     -
-        Executable: EvtxECmd\EvtxECmd.exe
-        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
-        ExportFormat: csv
+        Executable: EvtxECmd_Sync.mkape
+        CommandLine: ""
+        ExportFormat: ""
     -
-        Executable: EvtxECmd\EvtxECmd.exe
-        CommandLine: -d %sourceDirectory% --xml %destinationDirectory%
-        ExportFormat: xml
-    -
-        Executable: EvtxECmd\EvtxECmd.exe
-        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
-        ExportFormat: json
+        Executable: EvtxECmd_ProcessEventLogs.mkape
+        CommandLine: ""
+        ExportFormat: ""
 
 # Documentation
 # https://github.com/EricZimmerman/evtx
 # https://binaryforay.blogspot.com/2019/04/introducing-evtxecmd.html
 # https://www.youtube.com/watch?v=YvMg3p7O6ro
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
-# Be sure to run evtxecmd.exe --sync within your .\KAPE\Modules\bin\EvtxECmd directory to ensure you have the latest maps!
+# This Compound Module ensures you have the latest maps before parsing event logs
+# If you don't wnat to sync every time you parse event logs, simply run the EvtxECmd_ProcessEventLogs Module by itself
+

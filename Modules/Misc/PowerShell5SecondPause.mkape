@@ -1,0 +1,15 @@
+Description: "PowerShell: 5 Second Pause"
+Category: PowerShell
+Author: Andrew Rathbun
+Version: 1.0
+Id: 3b729407-6466-4623-869e-6c43f76c4716
+BinaryUrl: https://github.com/PowerShell/PowerShell/releases
+ExportFormat: ""
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: start-sleep 5
+        ExportFormat: ""
+
+# Documentation
+# All this Module does is give the --sync functions for RECmd, EVTXECmd, and KAPE time to execute successfully prior to performing tasks by Modules that follow
