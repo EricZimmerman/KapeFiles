@@ -1,0 +1,22 @@
+Description: Convert UserAssist keys
+Category: Registry
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 1495dc7f-e5ed-478b-a12b-0203b29aa0eb
+ExportFormat: csv
+
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Function Rot13([string]$str, $n=13) { $value=''; For ($index= 0;$index -lt $str.length;$index++){ $ch= [byte][char]($str.substring($index,1)); if ($ch-ge 97 -and $ch -le 109){$ch=$ch+ $n} else { if ($ch-ge 110 -and $ch -le 122){$ch=$ch- $n} else { if ($ch-ge 65 -and $ch -le 77){$ch=$ch+ $n} else { if ($ch-ge 78 -and $ch -le 90){$ch=$ch -$n} } } } $value=$value+ [char]$ch } Return $value }; $files = (ls %destinationDirectory%\*_RECmd_Batch_UserActivity_Output.csv).name; write $files; foreach ($file in $files) { get-content %destinationDirectory%\$file | foreach { if ($_ -match 'UserAssist' ) { $out = $_ -match '(([^,]*,){5})([^,]*)(,.*)'; $temp = Rot13 $matches[3]; $matches[1]+$temp+$matches[4] } else { $_ } } | Out-File %destinationDirectory%\$($file)_converted.csv}"
+        ExportFormat: csv
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/
+# UserAssist keys are Rot13 encoded. This script converts them into correct values.
+# Use the module after you run RECmd_UserActivity.mkape.
+# Output file is OriginalFilename_converted.csv.
+# The first part of the command is only for Rot13 conversion to omit the use of
+# an external PowerShell script. After $files... the search and replace is implemented.
+# All ValueName fields on UserAssist lines are then converted.
+# Rot13 function taken from https://behindthebits.blogspot.com/2014/12/rot13-in-powershell.html.
