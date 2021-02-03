@@ -13,7 +13,7 @@ Targets:
     -
         Name: AnyDesk Logs - programdata
         Category: Communications
-        Path: C:\programdata\AnyDesk\
+        Path: C:\ProgramData\AnyDesk\
         FileMask: '*.trace'
         Comment: "Collects the trace logs for AnyDesk from programdata"
     -
@@ -31,7 +31,7 @@ Targets:
     -
         Name: AnyDesk Logs - programdata 2
         Category: Communications
-        Path: C:\programdata\AnyDesk\
+        Path: C:\ProgramData\AnyDesk\
         FileMask: 'connection_trace.txt'
         Comment: "Collects the connection trace log from programdata"
 
