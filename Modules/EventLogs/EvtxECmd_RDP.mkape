@@ -1,4 +1,4 @@
-Description: 'EvtxECmd: process event log files'
+Description: 'EvtxECmd: process RDP-related event log files'
 Category: EventLogs
 Author: Mark Hallman
 Version: 1.0
