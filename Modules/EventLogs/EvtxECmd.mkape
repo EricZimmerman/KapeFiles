@@ -21,4 +21,4 @@ Processors:
 # https://www.youtube.com/watch?v=YvMg3p7O6ro
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # This Compound Module ensures you have the latest maps before parsing event logs
-# If you don't wnat to sync every time you parse event logs, simply run the EvtxECmd_ProcessEventLogs Module by itself
+# If you don't want to sync every time you parse event logs, simply run the EvtxECmd_ProcessEventLogs Module by itself
