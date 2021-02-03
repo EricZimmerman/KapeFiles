@@ -5,13 +5,13 @@ Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
 RecreateDirectories: true
 Targets:
     -
-        Name: AnyDesk Logs - user profile
+        Name: AnyDesk Logs - User Profile - *.trace
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
         FileMask: '*.trace'
         Comment: "Collects the trace logs for AnyDesk from user profile"
     -
-        Name: AnyDesk Logs - programdata
+        Name: AnyDesk Logs - ProgramData - *.trace
         Category: Communications
         Path: C:\ProgramData\AnyDesk\
         FileMask: '*.trace'
@@ -23,13 +23,13 @@ Targets:
         FileMask: '*.anydesk'
         Comment: "Collects any session recordings made by the user while using AnyDesk"
     -
-        Name: AnyDesk Logs - user profile 2
+        Name: AnyDesk Logs - User Profile - connection_trace.txt
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
         FileMask: 'connection_trace.txt'
         Comment: "Collects the connection trace log from user profile"
     -
-        Name: AnyDesk Logs - programdata 2
+        Name: AnyDesk Logs - ProgramData - connection_trace.txt
         Category: Communications
         Path: C:\ProgramData\AnyDesk\
         FileMask: 'connection_trace.txt'
