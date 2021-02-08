@@ -61,12 +61,6 @@ Be sure to point the BinaryUrl property to the download location in Module files
 
 All other info including requirements, etc. should be documented at the end of the Module in comment blocks.
 
-## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE DONE THE FOLLOWING:
-
-1. Generated a unique GUID for the Target or Module
-2. Place the file in the appropriate sub-folder in Targets or Modules. Use 'Misc' if a better category does not exist
-3. Verified KAPE parses the Target or Module cleanly via kape.exe --tlist . or kape.exe --mlist . (Check for any reported errors and correct as necessary)
-
-Thanks!!!
+## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE COMPLETED THE STEPS LISTED WITHIN THE PULL REQUEST TEMPLATE PRIOR TO SUBMISSION!
 
 Eric Zimmerman
