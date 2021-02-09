@@ -29,6 +29,10 @@ Targets:
         Category: Antivirus
         Path: Cybereason.tkape
     -
+        Name: Emsisoft
+        Category: Antivirus
+        Path: Emsisoft.tkape 
+    -
         Name: ESET
         Category: Antivirus
         Path: ESET.tkape
