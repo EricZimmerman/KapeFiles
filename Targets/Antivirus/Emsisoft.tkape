@@ -10,4 +10,3 @@ Targets:
         Path: C:\ProgramData\Emsisoft\Reports\
         FileMask: scan*.txt
         Comment: "Can contain file detection and quarantine info"
-        
