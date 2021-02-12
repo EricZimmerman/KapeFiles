@@ -1,11 +1,10 @@
 Description: 'RegRipper: parse all supported hives'
 Category: Registry
-Author: ZeArioch <https://{github,twitter}.com/ZeArioch>, Phill Moore
-Version: 1.0
+Author: ZeArioch <https://{github,twitter}.com/ZeArioch>, Phill Moore, Andreas Hunkeler (@Karneades)
+Version: 1.1
 Id: 76037ee9-0346-459a-a44a-1b67edc711c8
 BinaryUrl: https://github.com/keydet89/RegRipper3.0
 ExportFormat: txt
-FileMask: ""
 Processors:
     -
         Executable: RegRipper-sam.mkape
@@ -25,6 +24,10 @@ Processors:
         ExportFormat: ""
     -
         Executable: RegRipper-ntuser.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RegRipper-usrclass.mkape
         CommandLine: ""
         ExportFormat: ""
 

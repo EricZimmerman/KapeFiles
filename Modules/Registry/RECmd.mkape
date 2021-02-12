@@ -54,6 +54,10 @@ Processors:
         Executable: RECmd_UserActivity.mkape
         CommandLine: ""
         ExportFormat: ""
+    -
+        Executable: RECmd_UserClassesASEPs.mkape
+        CommandLine: ""
+        ExportFormat: ""
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
