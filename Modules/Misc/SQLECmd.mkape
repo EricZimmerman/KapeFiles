@@ -7,11 +7,11 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip
 ExportFormat: csv
 Processors:
     -
-        Executable: SQLECmd.exe
+        Executable: SQLECmd\SQLECmd.exe
         CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
         ExportFormat: csv
     -
-        Executable: SQLECmd.exe
+        Executable: SQLECmd\SQLECmd.exe
         CommandLine: -d %sourceDirectory% --json %destinationDirectory%
         ExportFormat: json
 
