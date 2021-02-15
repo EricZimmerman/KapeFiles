@@ -1,4 +1,4 @@
-Description: 'Sync EZ Tools'
+Description: 'Sync for new Maps, Batch Files, Targets and Modules'
 Category: Misc
 Author: Andrew Rathbun, Andreas Hunkeler (@Karneades)
 Version: 1.0
@@ -8,15 +8,19 @@ ExportFormat: ""
 Processors:
 
     -
-        Executable: EvtxECmd_Sync.mkape
+        Executable: Sync_EvtxECmd.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd_Sync.mkape
+        Executable: Sync_KAPE.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: SQLECmd_Sync.mkape
+        Executable: Sync_RECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Sync_SQLECmd.mkape
         CommandLine: ""
         ExportFormat: ""
 
