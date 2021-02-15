@@ -7,10 +7,6 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
 ExportFormat: csv
 Processors:
     -
-        Executable: Sync_EvtxECmd.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
         Executable: EvtxECmd_ProcessEventLogs.mkape
         CommandLine: ""
         ExportFormat: ""
