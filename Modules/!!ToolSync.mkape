@@ -1,0 +1,30 @@
+Description: 'Sync for new Maps, Batch Files, Targets and Modules'
+Category: Sync
+Author: Andrew Rathbun, Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 8d0a44a4-fa8e-443b-8f6e-8711ce2acd12
+BinaryUrl: See different tool Modules
+ExportFormat: ""
+Processors:
+
+    -
+        Executable: Sync_EvtxECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Sync_KAPE.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Sync_RECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Sync_SQLECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://github.com/EricZimmerman/
+# This Module ensures you have the latest RECmd Batch files, EVTXECmd Maps, SQLECmd Maps, and KAPE Targets/Modules.
+# Ensure you use the tool version which provides the sync option.
