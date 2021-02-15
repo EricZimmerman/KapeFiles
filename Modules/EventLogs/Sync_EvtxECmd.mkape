@@ -8,7 +8,7 @@ ExportFormat: ""
 Processors:
     -
         Executable: EvtxECmd\EvtxECmd.exe
-        CommandLine: --sync
+        CommandLine: --sync --debug
         ExportFormat: ""
 
 # Documentation
