@@ -1,17 +1,18 @@
-Description: 'Sync tools and plugins'
+Description: 'Sync EZ Tools'
 Category: Misc
 Author: Andrew Rathbun, Andreas Hunkeler (@Karneades)
 Version: 1.0
 Id: 8d0a44a4-fa8e-443b-8f6e-8711ce2acd12
-BinaryUrl: See different tool modules
+BinaryUrl: See different tool Modules
 ExportFormat: ""
 Processors:
-    -
-        Executable: RECmd_Sync.mkape
-        CommandLine: ""
-        ExportFormat: ""
+
     -
         Executable: EvtxECmd_Sync.mkape
+        CommandLine: ""
+        ExportFormat: ""
+-
+        Executable: RECmd_Sync.mkape
         CommandLine: ""
         ExportFormat: ""
     -
@@ -19,8 +20,7 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
 
-
 # Documentation
 # https://github.com/EricZimmerman/
-# This Module ensures you have the latest plugins, maps or reb files for various EZ tools and KAPE files.
+# This Module ensures you have the latest RECmd Batch files, EVTXECmd Maps, SQLECmd Maps, and KAPE Targets/Modules.
 # Ensure you use the tool version which provides the sync option.
