@@ -7,7 +7,7 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer
 ExportFormat: csv
 Processors:
     -
-        Executable: RECmd_Sync.mkape
+        Executable: Sync_RECmd.mkape
         CommandLine: ""
         ExportFormat: ""
     -
