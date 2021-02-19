@@ -2,7 +2,7 @@ Description: 'RECmd: Kroll'
 Category: Registry
 Author: Andrew Rathbun
 Version: 1.0
-Id: 8690f004-a406-40c9-b566-2fdf5f106209
+Id: 26e4a8f6-d745-4195-8b8e-563cf32a4952
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: csv
 Processors:
