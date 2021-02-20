@@ -9,6 +9,11 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\*\
         FileMask: todosqlite.db*
+    -
+        Name: Microsoft To Do - User Avatar
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\4c444a17ebb042fb92df97d00d1c802a\avatars\
+        FileMask: UserAvatar.jpg
 
 # Documentation
 # https://to-do.microsoft.com/tasks/
