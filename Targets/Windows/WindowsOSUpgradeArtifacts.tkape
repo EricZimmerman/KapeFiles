@@ -34,4 +34,4 @@ Targets:
 # Setupact.log appears to provide good historical information about a system at the time of OS Upgrade (i.e. W10 2004 upgrading to W10 20H2)
 # https://en.wikipedia.org/wiki/Windows_10_version_history will provide a history of when W10 updates have released. Assuming the target system had a user that was timely with their OS updates, one could plan on artifacts to reflect around the dates of OS update release dates
 # On my personal system, MigLog.xml was 245mb and setupact.log was 151mb, so be cognizant of the potentially large file size of these artifacts compared to other artifacts that store this same information
-# *_APPRAISER_HumanReadable.xml and FolderMoveLog.txt appear to have human readable and therefore potentially forensically interesting information located within. They aren't as large as the other files so they won't bloat any targeted collection 
+# *_APPRAISER_HumanReadable.xml and FolderMoveLog.txt appear to have human readable and therefore potentially forensically interesting information located within. They aren't as large as the other files so they won't bloat any targeted collection
