@@ -7,8 +7,8 @@ BinaryUrl: https://s3.amazonaws.com/cyb-us-prd-kape/kape.zip
 ExportFormat: ""
 Processors:
     -
-        Executable: kape.exe
-        CommandLine: --sync --debug
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "%kapeDirectory%\kape.exe --sync"
         ExportFormat: ""
 
 # Documentation
