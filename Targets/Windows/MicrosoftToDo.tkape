@@ -1,0 +1,32 @@
+Description: Microsoft To Do
+Author: Andrew Rathbun
+Version: 1.0
+Id: cb2ad0a7-690b-47da-89db-6cd7e10e0c2d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft To Do - SQLite Database of To Do tasks
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\*\
+        FileMask: todosqlite.db*
+    -
+        Name: Microsoft To Do - User Avatar
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\4c444a17ebb042fb92df97d00d1c802a\avatars\
+        FileMask: UserAvatar.jpg
+
+# Documentation
+# https://to-do.microsoft.com/tasks/
+# https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app
+# Microsoft To Do is a useful list-making app for keeping life organized
+# Thankfully, the tasks and tasks folders a user creates are stored in a SQLite database!
+# The hierarchy within Microsoft To Do comprises of the following: Group (Optional) -> Task Folders (List) -> Tasks -> Steps
+# A user can create a Monthly Expenses (i.e. Personal life) List and create a Task (i.e. bills to pay by end of month) and create steps within that Task (i.e. internet, utilities, cell phone, etc) which they can check off as they are completed
+# Within the Assignments table, one can see where the user assigned a Task to another user with whom the Task Folder (i.e. List, as it's called within the App). An example of this would be one person assigning another the above bills example task
+# Within the Groups table, there's a list of groups that the user created. Some examples could be Personal Life, Work, Family, etc, where the user can group together related Lists they've created to keep things better organized
+# Within the Task Folders table, you'll see the higher level folders the user created in which they will organize the Tasks they create
+# Within the Tasks table, you'll see Tasks that were created by the user
+# Within the Steps table, you'll see the steps that were assigned for each Task created
+# Within the Settings table, you'll see the various settings the user enabled or disabled within the App
+# Within the Members table, you'll see the list of Members that share Lists with each other and their associated Task Folder IDs which are shared between them
+# Within the Linked Entities table, you'll see items the user attached to a Task, i.e. images, files, etc
