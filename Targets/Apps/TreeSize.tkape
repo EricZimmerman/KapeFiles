@@ -1,0 +1,26 @@
+Description: TreeSize - Scan History
+Author: Andrew Rathbun
+Version: 1.0
+Id: b7e88f6b-3474-46b1-9c0b-1eed65dfc379
+RecreateDirectories: true
+Targets:
+    -
+        Name: TreeSize - ScanHistory.XML
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\JAM Software\TreeSize
+        FileMask: 'scanhistory.xml'
+        Comment: "Locates XML file that provides a list of previously scanned directories by the user."
+
+# Documentation
+# https://www.jam-software.com/treesize_free
+# TreeSize is a program similar to WinDirStat which allows the user to enumerate their computer's file system in a variety of ways
+# ScanHistory.XML will provide listings that look similar to this
+# <SCANS>
+# 	<Root path="\\HOSTNAME\C$\">
+# 		<Path>\\HOSTNAME\C$\</Path>
+# 		<Date>44148.3234845949</Date>
+# 		<Version>8.0.2.1505</Version>
+# 		<SizeData Size="210610089818" Allocated="187592699904" Files="678331"/>
+# 		<Freespace>814266826752</Freespace>
+# 	</Root>
+# For each scan ran, there will be an entry in this file
