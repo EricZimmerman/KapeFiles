@@ -16,26 +16,26 @@ Targets:
 # This has only been tested with Android at this time. I don't own an Apple device but if someone else does, feel free to edit this target file with iOS related information.
 # This target will recursively grab folders with a complete file path similar to this one: .\AppData\Local\Packages\Microsoft.YourPhone_8wekyb3d8bbwe\LocalCache\Indexed\GUID\System\Database\.
 # Inside this directory on my system were the following files
-#    photos.db
-#    phone.db
-#    photos.db-wal
-#    phone.db-wal
-#    settings.db-wal
-#    settings.db
-#    contacts.db-wal
-#    contacts.db
-#    deviceData.db-wal
-#    calling.db-shm
-#    contacts.db-shm
-#    deviceData.db-shm
-#    notifications.db-shm
-#    phone.db-shm
-#    photos.db-shm
-#    settings.db-shm
-#    calling.db-wal
-#    notifications.db-wal
 #    calling.db
-# Throw any of these files into a SQLite viewer such as SQLite Expert Pro to view the contents.
+#    calling.db-shm
+#    calling.db-wal
+#    contacts.db
+#    contacts.db-shm
+#    contacts.db-wal
+#    deviceData.db-shm
+#    deviceData.db-wal
+#    notifications.db-shm
+#    notifications.db-wal
+#    phone.db
+#    phone.db-shm
+#    phone.db-wal
+#    photos.db
+#    photos.db-shm
+#    photos.db-wal
+#    settings.db
+#    settings.db-shm
+#    settings.db-wal
+# Throw any of these files into a SQLite viewer such as SQLite Expert Pro or DB Browser for SQLite to view the contents.
 # A quick rundown:
 #    Photos.db will have filenames and blob files.
 #    Phone.db will contain all text messages on the device, including RCS chats, conversations, and file transfers, MMS messages, etc.
