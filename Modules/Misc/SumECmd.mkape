@@ -1,0 +1,16 @@
+Description: 'SumECmd: Process Microsoft User Access Logs'
+Category: SUMDatabase
+Author: Andrew Rathbun
+Version: 1.0
+Id: ac99af84-33b7-4f85-a9fa-146cd2fd6e31
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: SumECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
+        ExportFormat: csv
+
+# Documentation
+# https://advisory.kpmg.us/blog/2021/digital-forensics-incident-response.html
+# .\KAPE\Targets\Windows\LogFiles.tkape will capture the SUM Database which is located at C:\Windows\System32\LogFiles\SUM
