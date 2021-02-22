@@ -1,6 +1,6 @@
 Description: Dropbox Cloud Storage Files and Metadata
-Author: Chad Tilbury
-Version: 1.0
+Author: Chad Tilbury and Andrew Rathbun
+Version: 1.1
 Id: e8501b5d-2cfc-4693-923d-52edd2ddf3bc
 RecreateDirectories: true
 Targets:
@@ -33,6 +33,24 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: true
         Comment: "Required for offline decryption of Dropbox databases"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: home.db
+        Comment: "SQlite database which appears to keep track of the user's recent Dropbox activity"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: sync_history.db
+        Comment: "SQLite database which appears to keep track of the user's Drobox sync history"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\sync\
+        FileMask: nucleus.sqlite3*
+        Comment: "SQLite database which appears to contain a table for deleted files"
 
 # Documentation
 # https://www.marshall.edu/forensics/files/Treleven-Dropbox-Paper-FINAL.pdf
@@ -42,3 +60,4 @@ Targets:
 # https://www.researchgate.net/publication/342991973_Forensic_Analysis_of_Dropbox_Data_Remnants_on_Windows_10
 # https://www.atropos4n6.com/cloud-forensics/windows-10-artifacts-of-dropboxs-native-app-usage/
 # https://www.atropos4n6.com/cloud-forensics/artifacts-of-dropbox-usage-on-windows-10-part-2/
+# home.db, sync_history.db, and nucleus.sqlite* are SQLite databases. SQLECmd maps will be forthcoming! In the meantime, examine in DB Browser for SQLite
