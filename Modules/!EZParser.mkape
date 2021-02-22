@@ -55,6 +55,10 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
+        Executable: SumECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
         Executable: WxTCmd.mkape
         CommandLine: ""
         ExportFormat: ""
