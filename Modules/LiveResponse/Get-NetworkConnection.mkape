@@ -8,11 +8,11 @@ ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1' | ConvertTo-Csv -NoTypeInformation | Out-File -FilePath %destinationDirectory%\Get-NetworkConnection.csv"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1' | ConvertTo-Csv -NoTypeInformation | Out-File -FilePath '%destinationDirectory%\Get-NetworkConnection.csv'"
         ExportFormat: csv
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1' | ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\Get-NetworkConnection.json"
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\Get-NetworkConnection.ps1' | ConvertTo-Json  | Out-File -FilePath '%destinationDirectory%\Get-NetworkConnection.json'"
         ExportFormat: json
 
 # Documentation
