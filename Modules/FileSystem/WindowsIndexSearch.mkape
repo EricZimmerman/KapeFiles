@@ -1,0 +1,18 @@
+Description: 'Windows Index Search - Nirsoft'
+Category: FileSystem
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 701cb5fe-f241-4806-9339-33d7ed030b92
+BinaryUrl: https://www.nirsoft.net/utils/esedatabaseview.zip
+ExportFormat: csv
+FileMask: Windows.edb
+Processors:
+    -
+        Executable: ESEDatabaseView.exe
+        CommandLine: /table %sourceFile% * /scomma "%destinationDirectory%\WindowsIndexSearch_*.csv"
+        ExportFormat: csv
+
+# Documentation
+# Uses Nirsoft's ESEDatabaseView to export Windows index search tables to CSV
+# https://www.nirsoft.net/utils/ese_database_view.html
+# Other tool to parse and analyze Windows.edb files: https://github.com/moaistory/WinSearchDBAnalyzer
