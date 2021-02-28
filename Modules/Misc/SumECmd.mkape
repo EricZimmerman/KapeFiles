@@ -13,4 +13,6 @@ Processors:
 
 # Documentation
 # https://advisory.kpmg.us/blog/2021/digital-forensics-incident-response.html
+# https://twitter.com/EricRZimmerman/status/1363878700123643904?s=20
+# https://svch0st.medium.com/windows-user-access-logs-ual-9580f1100635
 # .\KAPE\Targets\Windows\LogFiles.tkape will capture the SUM Database which is located at C:\Windows\System32\LogFiles\SUM
