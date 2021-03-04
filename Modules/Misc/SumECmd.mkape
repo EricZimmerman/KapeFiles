@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: SumECmd.exe
-        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
+        CommandLine: -d %sourceDirectory%\Users\Windows\System32\LogFiles\SUM --csv %destinationDirectory%
         ExportFormat: csv
 
 # Documentation
@@ -16,3 +16,6 @@ Processors:
 # https://twitter.com/EricRZimmerman/status/1363878700123643904?s=20
 # https://svch0st.medium.com/windows-user-access-logs-ual-9580f1100635
 # .\KAPE\Targets\Windows\LogFiles.tkape will capture the SUM Database which is located at C:\Windows\System32\LogFiles\SUM
+# This Module is meant to work in conjunction with the LogFiles.tkape acquiring the necessary files for SumECmd to parse in one fell swoop. 
+# When running this Module by itself, make sure your Module Source is pointed to the root of a drive or a folder path with structure similar to what is listed within the CommandLine above, if possible. 
+# If that's not the case, then run the SumECmd tool by itself against your directory with a similar command as stated above or modify the path within the CommandLine of your local copy of this Module to make it fit your circumstances.
