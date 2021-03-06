@@ -1,6 +1,6 @@
 Description: SumatraPDF
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: c3a2d097-bca5-4ebe-83b2-db509c86883f
 RecreateDirectories: true
 Targets:
@@ -11,7 +11,12 @@ Targets:
         FileMask: SumatraPDF-settings.txt
         Recursive: false
         Comment: Settings file which contains information about previous user session
-
+    -
+        Name: SumatraPDF Cache
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\SumatraPDF\sumatrapdfcache
+        Recursive: false
+        Comment: Folder contains a PNG snapshot of each PDF file the user had open at the time of last application close
 
 # Documentation
 # https://www.sumatrapdfreader.org/settings/settings.html
