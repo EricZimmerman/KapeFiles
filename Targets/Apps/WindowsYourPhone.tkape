@@ -44,3 +44,4 @@ Targets:
 #    Calling.db will contain call history.
 #    Notifications.db will show the active notifications from the device.
 #    DeviceData.db will have the current wallpaper that's displayed on the device.
+# There is now a SQLECmd Map for this database: https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/Apps/WindowsYourPhone.tkape
