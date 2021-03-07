@@ -24,6 +24,7 @@ Targets:
 #    contacts.db-wal
 #    deviceData.db-shm
 #    deviceData.db-wal
+#    notifications.db
 #    notifications.db-shm
 #    notifications.db-wal
 #    phone.db
