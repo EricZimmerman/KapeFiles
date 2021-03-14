@@ -60,4 +60,5 @@ Targets:
 # https://www.researchgate.net/publication/342991973_Forensic_Analysis_of_Dropbox_Data_Remnants_on_Windows_10
 # https://www.atropos4n6.com/cloud-forensics/windows-10-artifacts-of-dropboxs-native-app-usage/
 # https://www.atropos4n6.com/cloud-forensics/artifacts-of-dropbox-usage-on-windows-10-part-2/
-# home.db, sync_history.db, and nucleus.sqlite* are SQLite databases. SQLECmd maps will be forthcoming! In the meantime, examine in DB Browser for SQLite
+# home.db, sync_history.db, and nucleus.sqlite* are SQLite databases. 
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Dropbox_Configurations.smap, https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Dropbox_FileCache.smap, and https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Dropbox_InstanceDB.smap
