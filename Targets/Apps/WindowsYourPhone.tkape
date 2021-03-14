@@ -24,6 +24,7 @@ Targets:
 #    contacts.db-wal
 #    deviceData.db-shm
 #    deviceData.db-wal
+#    notifications.db
 #    notifications.db-shm
 #    notifications.db-wal
 #    phone.db
@@ -39,8 +40,13 @@ Targets:
 # A quick rundown:
 #    Photos.db will have filenames and blob files.
 #    Phone.db will contain all text messages on the device, including RCS chats, conversations, and file transfers, MMS messages, etc.
-#    Contacts.db will contact all contact names, numbers, addresses, email addresses, etc.
+#    Contacts.db will contain all contact names, numbers, addresses, email addresses, etc.
 #    Settings.db will contain an enumerated list of installed apps on the device.
 #    Calling.db will contain call history.
 #    Notifications.db will show the active notifications from the device.
 #    DeviceData.db will have the current wallpaper that's displayed on the device.
+# There are now SQLECmd maps for this databases:
+#    https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_YourPhone_NotificationsDB.smap
+#    https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_YourPhone_PhoneDB-SMSMessages.smap
+#    https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_YourPhone_PhotosDB.smap
+#    https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_YourPhone_SettingsDB.smap

@@ -187,3 +187,5 @@ Targets:
 # https://www.sans.org/blog/google-chrome-forensics/
 # http://cyberforensicator.com/wp-content/uploads/2017/02/20160919.pdf
 # https://forensicswiki.xyz/wiki/index.php?title=Google_Chrome
+# https://dfir.blog/chrome-values-lookup-tables/
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Chrome_History.smap

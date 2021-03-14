@@ -51,6 +51,10 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
+        Executable: SQLECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
         Executable: SrumECmd.mkape
         CommandLine: ""
         ExportFormat: ""
