@@ -1,19 +1,34 @@
 Description: Firefox
-Author: Eric Zimmerman
-Version: 1.1
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.2
 Id: 28801734-b95a-47e7-b84f-4ebd0c104862
 RecreateDirectories: true
 Targets:
     -
-        Name: Places
+        Name: Addons
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
-        FileMask: places.sqlite*
+        FileMask: addons.sqlite*
+    -
+        Name: Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\weave\
+        FileMask: bookmarks.sqlite*
     -
         Name: Bookmarks
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\bookmarkbackups
         Recursive: true
+    -
+        Name: Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
+    -
+        Name: Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: firefox_cookies.sqlite*
     -
         Name: Downloads
         Category: Communications
@@ -25,40 +40,50 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: extensions.json
     -
+        Name: Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
+    -
         Name: Form history
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: formhistory.sqlite*
     -
-        Name: Cookies
+        Name: Permissions
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
-        FileMask: cookies.sqlite*
+        FileMask: permissions.sqlite*
+    -
+        Name: Places
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
+    -
+        Name: Protections
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: protections.sqlite*
+    -
+        Name: Search
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
     -
         Name: Signons
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: signons.sqlite*
     -
+        Name: Storage Sync
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: storage-sync.sqlite*
+    -
         Name: Webappstore
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: webappstore.sqlite*
-    -
-        Name: Favicons
-        Category: Communications
-        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
-        FileMask: favicons.sqlite*
-    -
-        Name: Addons
-        Category: Communications
-        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
-        FileMask: addons.sqlite*
-    -
-        Name: Search
-        Category: Communications
-        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
-        FileMask: search.sqlite*
     -
         Name: Password
         Category: Communications
