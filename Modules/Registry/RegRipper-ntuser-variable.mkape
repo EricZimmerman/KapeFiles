@@ -1,0 +1,21 @@
+Description: 'RegRipper: parse NTUSER hives using provided plugin name'
+Category: Registry
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: b1c7a758-664a-459d-82d5-3165772f21fc
+BinaryUrl: https://github.com/keydet89/RegRipper3.0/archive/master.zip
+ExportFormat: txt
+FileMask: ntuser.dat
+Processors:
+    -
+        Executable: regripper\rip.exe
+        CommandLine: -r %sourceFile% -p %ntuserPlugin%
+        ExportFormat: txt
+        ExportFile: regripper-ntuser-%ntuserPlugin%.txt
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/RegRipper3.0
+# Create a folder "regripper" within the "Modules\bin" KAPE folder
+# Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"
+# Provide a module variable called ntuserPlugin using --mvars
