@@ -95,6 +95,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Current Tabs
     -
+        Name: Chrome Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Download Metadata
+    -
         Name: Chrome Extension Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
@@ -153,7 +158,7 @@ Targets:
         Name: Chrome Quota Manager
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Quota Manager
+        FileMask: QuotaManager
     -
         Name: Chrome Reporting and NEL
         Category: Communications
