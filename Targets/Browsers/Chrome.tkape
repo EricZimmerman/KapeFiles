@@ -1,6 +1,6 @@
 Description: Chrome
-Author: Eric Zimmerman
-Version: 1.1
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.2
 Id: a56d0a8f-3229-489e-aea7-353d1f6f9639
 RecreateDirectories: true
 Targets:
@@ -65,11 +65,6 @@ Targets:
         Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
         FileMask: Top Sites*
     -
-        Name: Chrome bookmarks XP
-        Category: Communications
-        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
-        FileMask: Bookmarks*
-    -
         Name: Chrome Visited Links XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
@@ -99,6 +94,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Current Tabs
+    -
+        Name: Chrome Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Extension Cookies
     -
         Name: Chrome Favicons
         Category: Communications
@@ -140,10 +140,25 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Network Action Predictor
     -
+        Name: Chrome Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Persistent State
+    -
         Name: Chrome Preferences
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Preferences
+    -
+        Name: Chrome Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Quota Manager
+    -
+        Name: Chrome Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Reporting and NEL
     -
         Name: Chrome Shortcuts
         Category: Communications
@@ -155,15 +170,15 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Top Sites*
     -
+        Name: Chrome Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Trust Tokens*
+    -
         Name: Chrome SyncData Database
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sync Data
         FileMask: SyncData.sqlite3
-    -
-        Name: Chrome bookmarks
-        Category: Communications
-        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Bookmarks*
     -
         Name: Chrome Visited Links
         Category: Communications
