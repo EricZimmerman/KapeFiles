@@ -1,6 +1,6 @@
 Description: Antivirus
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
 RecreateDirectories: true
 Targets:
@@ -60,6 +60,10 @@ Targets:
         Name: RogueKiller
         Category: Antivirus
         Path: RogueKiller.tkape
+    -
+        Name: SecureAge
+        Category: Antivirus
+        Path: SecureAge.tkape
     -
         Name: SentinelOne
         Category: Antivirus
