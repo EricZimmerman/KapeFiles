@@ -19,7 +19,7 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\HitmanPro.Alert\
         FileMask: excalibur.db
-        Comment: "SQl Lite DB"
+        Comment: "SQLite DB"
 
 # Documentation
 # N/A
