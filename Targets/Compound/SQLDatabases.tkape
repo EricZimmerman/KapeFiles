@@ -58,7 +58,7 @@ Targets:
         Name: TeraCopy - History Databases
         Category: SQLDatabases
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\History
-        FileMask: *.db
+        FileMask: "*.db"
     -
         Name: TeraCopy - Main Database
         Category: SQLDatabases
