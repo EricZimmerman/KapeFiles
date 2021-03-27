@@ -27,6 +27,7 @@ Targets:
 
 # Documentation
 # https://isc.sans.edu/forums/diary/Windows+Error+Reporting+DFIR+Benefits+and+Privacy+Concerns/22536/
+# https://medium.com/dfir-dudes/amcache-is-not-alone-using-wer-files-to-hunt-evil-86bdfdb216d7
 # https://nasbench.medium.com/windows-forensics-analysis-windows-artifacts-part-i-c7ad81ada16c
 # https://www.sans.org/reading-room/whitepapers/forensics/windows-crash-dumps-remote-incident-identification-36012
 # http://journeyintoir.blogspot.com/2014/02/exploring-windows-error-reporting.html
