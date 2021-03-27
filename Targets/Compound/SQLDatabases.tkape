@@ -55,15 +55,15 @@ Targets:
 # Apps - TeraCopy - TeraCopy.tkape
 
     -
-        Name: TeraCopy
+        Name: TeraCopy - History Databases
         Category: SQLDatabases
-        Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
-        FileMask: todosqlite.db*
+        Path: C:\Users\%user%\AppData\Roaming\TeraCopy\History
+        FileMask: *.db
     -
-        Name: TeraCopy
+        Name: TeraCopy - Main Database
         Category: SQLDatabases
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
-        FileMask: todosqlite.db*
+        FileMask: main.db
 
 # Cloud Storage - Dropbox - Dropbox.tkape
 
