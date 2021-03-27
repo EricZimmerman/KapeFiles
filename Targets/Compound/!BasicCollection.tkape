@@ -1,6 +1,6 @@
 Description: Basic Collection
 Author: Phill Moore
-Version: 1.0
+Version: 1.1
 Id: 83b99299-2d84-4844-af25-c727d3440b19
 RecreateDirectories: true
 Targets:
@@ -25,9 +25,9 @@ Targets:
         Category: Evidence Of Execution
         Path: PowerShellConsole.tkape
     -
-        Name: RecycleBin
+        Name: RecycleBin InfoFiles
         Category: File Deletion
-        Path: RecycleBin.tkape
+        Path: RecycleBin_InfoFiles.tkape
     -
         Name: RegistryHives
         Category: Registry Hives
