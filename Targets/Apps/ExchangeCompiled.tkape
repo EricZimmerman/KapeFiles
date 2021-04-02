@@ -13,7 +13,7 @@ Targets:
         Comment: "Highly dependent on Exchange configuration"
 
 # Documentation
-# Microsoft Exchange CVE-2021-26855 - the *.compound files are modified XML files that point to the#
-# associated dll's and can be used to identify the filedep name. The *.compound files located to date have #
-# taken the name of the *.aspx file they are associated with, ex. Sample.aspx - - > Sample.aspx.########.compiled.#
+# Microsoft Exchange CVE-2021-26855
+# *.compound files are modified XML files associated with malicious dll's through their internal coding.
+# The *.compound files can be used to identify the filedep (the *.aspx file they are associated with, ex. Sample.aspx - - > Sample.aspx.########.compiled).
 # N/A
