@@ -1,0 +1,20 @@
+Description: Exchange Server Vulnerability Malicious *.Compiled Files
+Author: Dennis Reneau
+Version: 1.0
+Id: e7dc72be-942c-4fef-aa45-252bf2364b1e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Exchange Server Modified Compiled Files
+        Category: Apps
+        Path: \*\Windows\Microsoft.NET\Framework*\v*\Temporary ASP.NET Files\
+        Recursive: true
+        FileMask: '*.\b[a-zA-Z0-9]{8}\b.compiled'
+        Comment: "Highly dependent on Exchange configuration"
+   
+
+# Documentation
+# Microsoft Exchange CVE-2021-26855 - the *.compound files are modified XML files that point to the#
+# associated dll's and can be used to identify the filedep name. The *.compound files located to date have #
+# taken the name of the *.aspx file they are associated with, ex. Sample.aspx - - > Sample.aspx.########.compiled.#
+# N/A
