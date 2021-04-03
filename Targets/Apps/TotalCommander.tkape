@@ -86,3 +86,4 @@ Targets:
 # type=file;modify=20201021200840;size=65536; ThinPrint.evt
 #
 # Please note that each folder I travered made a new .tmp folder and had similar contents for each respective folder traversed
+# Hex -> ASCII, 0x747970653D translates to file= which appears to be the first 5 characters of each of these .tmp files
