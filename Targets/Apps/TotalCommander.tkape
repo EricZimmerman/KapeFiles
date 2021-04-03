@@ -1,6 +1,6 @@
 Description: Total Commander
 Author: Andrew Rathbun and Jessica Venturo
-Version: 1.1
+Version: 1.3
 Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
 RecreateDirectories: true
 Targets:
@@ -17,6 +17,30 @@ Targets:
         Recursive: true
         FileMask: 'totalcmd.log'
         Comment: "Locates log file associated with Total Commander. NOTE: this log file is NOT enabled by default and the filename can be modified."
+    -
+        Name: Total Commander - Temp Files Created During Folder Traversal
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'FTP*.tmp'
+        Comment: "Locates .tmp files which are created during the user's folder traversal and provide insight into contents of each folder traversed."
+    -
+        Name: Total Commander - FTP .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GHISLER\
+        FileMask: 'wcx_ftp.ini'
+        Comment: "Locates .ini file associated with Total Commander which stores useful FTP information."
+    -
+        Name: Total Commander - File Tree
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GHISLER\
+        FileMask: 'treeinfo*.wc'
+        Comment: "Locates a file that contains an exhaustive file tree of a user's file system."
+    -
+        Name: Total Commander - FTP Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'tcftp.log'
+        Comment: "Locates a file that contains the Total Commander FTP logs."
 
 # Documentation
 # Total Commander is a shareware Windows File Explorer replacement commonly used by threat actors during IR incidents.
@@ -50,3 +74,16 @@ Targets:
 #   10=C:\Program Files (x86)\	#02,BraveSoftware
 # The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc.
 # Within a user's NTUSER.DAT file, there will be a key with an address of: SOFTWARE\Ghisler\Total Commander. There will be a value for InstallDir which will list where TotalCommander is installed for that user.
+# wcx_ftp.ini will contain saved FTP connections that the user configured with Total Commander
+# .tmp files will only exist during an active Total Commander session. Once Total Commander is existed, they will be deleted. I'd suggest carving for them to see file/folder contents.
+# A preview of their contents can be seen below:
+#
+# Contents of C:\Users\%user%\AppData\Local\Temp\FTP418E.tmp
+# type=file;modify=20210327145254;size=65536; AppEvent.Evt
+# type=file;modify=20201021200345;size=65536; Internet.evt
+# type=file;modify=20201021160008;size=65536; SecEvent.Evt
+# type=file;modify=20210327145254;size=65536; SysEvent.Evt
+# type=file;modify=20201021200840;size=65536; ThinPrint.evt
+#
+# Please note that each folder I travered made a new .tmp folder and had similar contents for each respective folder traversed
+# Hex -> ASCII, 0x747970653D translates to file= which appears to be the first 5 characters of each of these .tmp files

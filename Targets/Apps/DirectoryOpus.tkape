@@ -1,6 +1,6 @@
 Description: Directory Opus
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 31a9022d-bd2e-4031-97c1-046b51bfcc7d
 RecreateDirectories: true
 Targets:
@@ -51,6 +51,11 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\GPSoftware\Directory Opus\Thumbnail Cache\
         Comment: "Locates .osd file which contains file paths related to the location of the backup settings files for Directory Opus."
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GPSoftware\Directory Opus\Logs\
+        Comment: "Locates .txt files that will be named with the IP address of the FTP server Directory Opus was used to connect to. All-activity.txt will simply be a combination of all other .txt files present in this directory."
 
 # Documentation
 # Directory Opus is the best Windows File Explorer replacement on the market, in my humble opinion.
