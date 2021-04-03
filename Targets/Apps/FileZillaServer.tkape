@@ -33,10 +33,10 @@ Targets:
 # </FileZillaServer>
 #
 # FileZilla Server.log will display the following information:
-# 
+#
 # (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> USER Andrew
 # (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> 331 Password required for andrew
-# (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> PASS 
+# (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> PASS
 # (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 230 Logged on
 # (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> CWD /EVT
 # (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 250 CWD successful. "/EVT" is current directory.
