@@ -1,0 +1,57 @@
+Description: Multi Commander
+Author: Andrew Rathbun
+Version: 1.0
+Id: 9a28ae40-1ff0-4e99-8ed0-ac60083c98b5
+RecreateDirectories: true
+Targets:
+    -
+        Name: Multi Commander - Application Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\MultiCommander*\
+        Recursive: true
+        Comment: "Locates the contents of the Application folder."
+    -
+        Name: Multi Commander - Config Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\MultiCommander*\Config\
+        Recursive: true
+        Comment: "Locates the contents of the Config folder."
+    -
+        Name: Multi Commander - Log Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\MultiCommander*\Logs\
+        Recursive: true
+        Comment: "Locates log file(s) related to user activity within Multi Commander."
+    -
+        Name: Multi Commander - UserData Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\MultiCommander*\UserData\
+        Recursive: true
+        Comment: "Locates the contents of the UserData folder."
+    -
+        Name: Multi Commander - Log File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\MultiCommander*\
+        Recursive: true
+        FileMask: '*MultiCommander.log'
+        Comment: "Locates log file(s) associated with Milti Commander. Commonly in YYYY-MM-DD (numbers)-MultiCommander.log naming convention."
+
+# Documentation
+# Multi Commander is a freeware Windows File Explorer replacement similar to Total Commander.
+# Application folder will have lots of standard XML files that ship with Multi Commander.
+# Config folder will have lots of XML files and folders related to Extensions and Scripts installed by the user.
+# Log folder will contain multiple .log files depending on which activity the user engaged in. During my testing, my Log folder contained the following:
+#
+# 2021-04-03-(2244)-FileOperations.log
+# 2021-04-03-(2244)-Filesystem.log
+# 2021-04-03-(2244)-FTP-192.168.131.123.log
+# 2021-04-03-(2244)-MultiCommander.log
+# 2021-04-03-(4048)-FileOperations.log
+# 2021-04-03-(4048)-Filesystem.log
+# 2021-04-03-(4048)-FTP-192.168.131.123.log
+# 2021-04-03-(4048)-MultiCommander.log
+# 2021-04-03-(15376)-FileOperations.log
+# 2021-04-03-(15376)-Filesystem.log
+# 2021-04-03-(15376)-MultiCommander.log
+#
+# UserData folder contains an ftpsite.xml file which contains all FTP configurations saved by the user.

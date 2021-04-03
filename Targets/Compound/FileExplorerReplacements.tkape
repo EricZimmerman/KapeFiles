@@ -1,6 +1,6 @@
 Description: File Explorer Replacements
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 8e1cb436-dada-413f-845d-f2ed0823cb3a
 RecreateDirectories: true
 Targets:
@@ -17,6 +17,10 @@ Targets:
         Category: Apps
         Path: FreeCommander.tkape
     -
+        Name: Multi Commander
+        Category: Apps
+        Path: MultiCommander.tkape
+    -
         Name: Total Commander
         Category: Apps
         Path: TotalCommander.tkape
@@ -28,3 +32,4 @@ Targets:
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_file_managers.
 # Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.
+# Use Everything, Directory Monitor Pro (not free), NirSoft's RegistryChangesView, etc to monitor what these applications do to the File System and DOCUMENT!
