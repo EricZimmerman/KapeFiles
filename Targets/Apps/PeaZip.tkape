@@ -23,7 +23,7 @@ Targets:
 # Bookmarks.txt appeared to contain entries for the default bookmarks that ship with PeaZip as well as user added bookmarks
 # Within this file, it stores the equivalent  to a Shellbags-esque timestamp for the first time the user navigated to the bookmark and the last time
 # The most recently visited timestamp is overwritten each time the user visits that bookmark and a number above the timestamps is incremented for each visits
-For instance, my Bookmarks.txt had this entry:
+# For instance, my Bookmarks.txt had this entry:
 # 4
 # 2021-03-28 15:37:36
 # 2021-03-28 11:02:20
