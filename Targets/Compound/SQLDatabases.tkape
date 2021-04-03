@@ -171,6 +171,7 @@ Targets:
 
 # Web Browsers - Chrome - Chrome.tkape
 
+    -
         Name: Chrome bookmarks XP
         Category: SQLDatabases
         Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
