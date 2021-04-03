@@ -1,6 +1,6 @@
 Description: Total Commander
 Author: Andrew Rathbun and Jessica Venturo
-Version: 1.1
+Version: 1.2
 Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
 RecreateDirectories: true
 Targets:
@@ -17,6 +17,24 @@ Targets:
         Recursive: true
         FileMask: 'totalcmd.log'
         Comment: "Locates log file associated with Total Commander. NOTE: this log file is NOT enabled by default and the filename can be modified."
+    -
+        Name: Total Commander - FTP .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GHISLER\
+        FileMask: 'wcx_ftp.ini'
+        Comment: "Locates .ini file associated with Total Commander which stores useful FTP information."
+    -
+        Name: Total Commander - File Tree
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GHISLER\
+        FileMask: 'treeinfo*.wc'
+        Comment: "Locates a file that contains an exhaustive file tree of a user's file system."
+    -
+        Name: Total Commander - FTP Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'tcftp.log'
+        Comment: "Locates a file that contains the Total Commander FTP logs."
 
 # Documentation
 # Total Commander is a shareware Windows File Explorer replacement commonly used by threat actors during IR incidents.
@@ -50,3 +68,4 @@ Targets:
 #   10=C:\Program Files (x86)\	#02,BraveSoftware
 # The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc.
 # Within a user's NTUSER.DAT file, there will be a key with an address of: SOFTWARE\Ghisler\Total Commander. There will be a value for InstallDir which will list where TotalCommander is installed for that user.
+# wcx_ftp.ini will contain saved FTP connections that the user configured with Total Commander
