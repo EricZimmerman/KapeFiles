@@ -1,0 +1,16 @@
+Description: SpeedCommander
+Author: Andrew Rathbun
+Version: 1.0
+Id: 237f2355-4ae1-4461-812f-2833003aabc3
+RecreateDirectories: true
+Targets:
+    -
+        Name: SpeedCommander - .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\SpeedProject\SpeedCommander 19\
+        Comment: "Locates folder where all configuration files reside"
+
+# Documentation
+# https://www.speedproject.com/
+# SpeedCommander is a shareware file manager similar to Total Commander.
+# SpeedCommander.xml will have the history of the left and right panel as well as any FTP servers the user connected to.
