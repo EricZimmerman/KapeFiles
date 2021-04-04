@@ -1,0 +1,16 @@
+Description: Midnight Commander
+Author: Andrew Rathbun
+Version: 1.0
+Id: c02a2310-8ec2-4c0f-8a8a-b20ac0820e46
+RecreateDirectories: true
+Targets:
+    -
+        Name: Midnight Commander -- All Configuation Files
+        Category: Apps
+        Path: C:\Users\%user%\Midnight Commander\
+        Comment: "Locates folder where all configuration files reside"
+
+# Documentation
+# https://midnight-commander.org/
+# Midnight Commander is a free, open course orthodox file manager similar to Norton Commander.
+# This folder is created upon install so it should be where all configuration files resides. I've not done extensive testing on this one due to the DOSness of the application.
