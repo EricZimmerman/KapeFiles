@@ -1,0 +1,24 @@
+Description: Q-Dir
+Author: Andrew Rathbun
+Version: 1.0
+Id: 1233adac-a6ec-4bba-abe6-c827ba5e27ea
+RecreateDirectories: true
+Targets:
+    -
+        Name: Q-Dir - .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Q-Dir\
+        FileMask: 'Q-Dir.ini'
+        Comment: "Locates .ini file associated with Q-Dir which stores useful user activity information."
+    -
+        Name: Q-Dir - .qdr file
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Q-Dir\
+        FileMask: 'start.qdr'
+        Comment: "Locates .qdr file associated with Q-Dir which stores useful user activity information, including the last 4 folders opened (encoded, unfortunately)."
+
+# Documentation
+# Q-Dir is a freeware Windows File Explorer replacement similar to Total Commander and other orthodox file managers.
+# Q-Dir has limited FTP functionality as of April 2021.
+# The .ini is not the most helpful. It appears everything is stored in a currently unknown encoding format.
+# Same story for start.qdr. However, this is where all the info the program stores at this time resides.
