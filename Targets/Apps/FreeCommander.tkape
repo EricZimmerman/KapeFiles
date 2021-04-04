@@ -1,6 +1,6 @@
 Description: FreeCommander XE
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 418ce15d-2400-4deb-b7bf-546a99095804
 RecreateDirectories: true
 Targets:
@@ -34,6 +34,18 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\FreeCommanderXE\Settings\Bkp_Settings*\
         Recursive: true
         Comment: "Locates an exact copy of the above files which will have a timestamped folder name, i.e. Bkp_Settings-YYYY-MM-DD HH-MM-SS."
+    -
+        Name: Free Commander - FTP Log
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'fc*.log'
+        Comment: "Locates log file(s) that have a default naming convention of fc_ftplog_20210403 but can be modified by the user."
+    -
+        Name: Free Commander - FTP Related Information
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\FreeCommander*\
+        Recursive: true
+        Comment: "Locates a folder that may be named randomly that contains more FTP related information as well as .tmp files that are created while the user is traversing folders during an active FTP session. These files are deleted upon program exit."
 
 # Documentation
 # Free Commander XE is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.
