@@ -1,6 +1,6 @@
 Description: Double Commander
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 80c608ac-0be4-4bbf-a09e-97d2f6cb90f4
 RecreateDirectories: true
 Targets:
@@ -16,6 +16,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\doublecmd\
         FileMask: 'doublecmd.xml'
         Comment: "Locates an .xml file that contains Shellbags-equivalent artifacts that are sorted in temporal order from top to bottom."
+    -
+        Name: Double Commander - FTP Log
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'doublecmd*.log'
+        Comment: "Locates log files that'll be named with the following naming convention: doublecmd_2021-04-03.log."
 
 # Documentation
 # Double Commander is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.
