@@ -1,16 +1,21 @@
 Description: Everything (VoidTools)
 Category: FileSystem
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: aa99e399-bd8d-4881-81e1-3633724d6738
 BinaryUrl: https://www.voidtools.com/db2efu.zip
-ExportFormat: efu
+ExportFormat: ""
 FileMask: Everything.db
 Processors:
+
     -
         Executable: db2efu.exe
         CommandLine: "%SourceFile% %DestinationDirectory%\\everythingFileListing.efu"
         ExportFormat: efu
+    -
+        Executable: db2efu.exe
+        CommandLine: "%SourceFile% %DestinationDirectory%\\everythingFileListing.csv"
+        ExportFormat: csv
 
 # Documentation
 # For those who don't know, VoidTools' Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
