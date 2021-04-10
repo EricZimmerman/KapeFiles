@@ -1,17 +1,17 @@
-Description: Parses System event log using Nirsoft FullEventLogView.exe
+Description: Parses all event logs using Nirsoft FullEventLogView.exe
 Category: EventLogs
-Author: Barrie Hill
+Author: Andrew Rathbun
 Version: 1.0
-Id: bb628207-56cc-4293-aa6a-2073d406c8cb
+Id: 123e00c7-b7d0-4e48-9a93-6c49c29d6e82
 BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
 ExportFormat: csv
-FileMask: System.evtx
+FileMask: "*.evtx"
 Processors:
     -
         Executable: FullEventLogView.exe
-        CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard System.evtx /scomma %destinationDirectory%\full_system_event_log.csv
+        CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /scomma %destinationDirectory%\all_event_logs.csv
         ExportFormat: csv
-##
+
 # Documentation
 # https://www.nirsoft.net/utils/full_event_log_view.html
 # Uses Nirsoft's FullEventLogView to export event logs to csv
