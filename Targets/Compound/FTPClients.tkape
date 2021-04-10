@@ -1,13 +1,17 @@
 Description: FTP Clients
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: b1f3e04d-6525-4a1a-9e19-82300ec1e3b7
 RecreateDirectories: true
 Targets:
     -
-        Name: FileZilla
+        Name: FileZilla Client
         Category: FTP
-        Path: FileZilla.tkape
+        Path: FileZillaClient.tkape
+    -
+        Name: FileZilla Server
+        Category: FTP
+        Path: FileZillaServer.tkape
     -
         Name: WinSCP
         Category: FTP
