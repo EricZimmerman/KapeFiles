@@ -1,0 +1,18 @@
+Description: Find PDF and PDF alternative documents
+Author: Andrew Rathbun
+Version: 1.0
+Id: 1bd73cdb-8220-426c-bd91-0d0554f0c8bc
+RecreateDirectories: true
+Targets:
+    -
+        Name: PDF and PDF-like Documents
+        Category: Documents
+        Path: C:\
+        FileMask: regex:*.+\.(pdf|xps|oxps)
+        Recursive: true
+        Comment: Covers all PDF and PDF-like document formats
+
+# Documentation
+# https://www.prepressure.com/pdf/basics/versus-other-formats
+# https://en.wikipedia.org/wiki/PDF#Alternatives
+# https://en.wikipedia.org/wiki/Open_XML_Paper_Specification
