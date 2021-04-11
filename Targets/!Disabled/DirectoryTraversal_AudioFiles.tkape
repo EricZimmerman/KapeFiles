@@ -1,0 +1,17 @@
+Description: Find audio files covering a multitude of formats
+Author: Andrew Rathbun
+Version: 1.0
+Id: 2be677d4-2edf-4ba5-b7c4-c90630527fa0
+RecreateDirectories: true
+Targets:
+    -
+        Name: Audio files
+        Category: Multimedia
+        Path: C:\
+        FileMask: regex:*.+\.(3gp|aa|aac|act|aiff|alac|amr|ape|au|awb|dss|dvf|flac|gsm|iklax|ivs|m4a|m4b|m4p|mmf|mp3|mpc|msv|nmf|ogg|oga|mogg|opus|ra|rm|raw|rf64|sln|tta|voc|vox|wav|wma|wv|webm)
+        Recursive: true
+        Comment: Covers most (if not all) audio file formats
+
+# Documentation
+# https://en.wikipedia.org/wiki/Audio_file_format
+# Please note, this Target only looks for file extensions. It does not check the file header of each file, so be wary of music files that were changed to a file extension not listed above, such as .pptx or .pdf

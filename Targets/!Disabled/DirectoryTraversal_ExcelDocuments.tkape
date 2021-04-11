@@ -1,0 +1,24 @@
+Description: Find Excel and Excel alternative documents
+Author: Andrew Rathbun
+Version: 1.0
+Id: 010e7a3b-2c62-4d6c-8fa0-34cdc6e32524
+RecreateDirectories: true
+Targets:
+    -
+        Name: Excel and Excel-like Documents
+        Category: Documents
+        Path: C:\
+        FileMask: regex:*.+\.(xls|xlsx|csv|tsv|xlt|xlm|xlsm|xltx|xltm|xlsb|xla|xlam|xll|xlw|ods|fodp|qpw)
+        Recursive: true
+        Comment: Covers all document file formats for Excel, OpenOffice, LibreOffice, Apache OpenOffice, WPS Office, SoftMaker Office, and more
+
+# Documentation
+# https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
+# https://en.wikipedia.org/wiki/Comparison_of_spreadsheet_software
+# https://en.wikipedia.org/wiki/OpenDocument
+# https://en.wikipedia.org/wiki/WordPerfect#WordPerfect_Office
+# https://en.wikipedia.org/wiki/PlanMaker
+# https://en.wikipedia.org/wiki/Apache_OpenOffice#File_formats
+# https://en.wikipedia.org/wiki/WPS_Office#File_format
+# https://en.wikipedia.org/wiki/OnlyOffice#Desktop_editors
+# https://en.wikipedia.org/wiki/Quattro_Pro#Characteristics
