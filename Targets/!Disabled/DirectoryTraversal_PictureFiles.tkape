@@ -10,7 +10,7 @@ Targets:
         Path: C:\
         FileMask: regex:*.+\.(ai|bmp|bpg|cdr|cpc|eps|exr|flif|gif|heif|ilbm|ima|jp2|j2k|jpf|jpm|jpg2|j2c|jpc|jpx|mj2jpeg|jpg|jxl|kra|ora|pcx|pgf|pgm|png|pnm|ppm|psb|psd|psp|svg|tga|tiff|webp|xaml|xcf)
         Recursive: true
-        Comment:
+        Comment:Covers most (if not all) picture file formats
 
 # Documentation
 # https://en.wikipedia.org/wiki/Image_file_formats
