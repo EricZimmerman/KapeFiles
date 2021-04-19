@@ -1,6 +1,6 @@
 Description: Windows OS Upgrade Artifacts
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: e223d74f-7f36-46e8-b4ec-6d46f695a717
 RecreateDirectories: true
 Targets:
@@ -24,6 +24,11 @@ Targets:
         Category: OS Upgrade
         Path: C:\Windows\Panther\Rollback
         FileMask: FolderMoveLog.txt
+    -
+        Name: Update Store.db
+        Category: OS Upgrade
+        Path: C:\ProgramData\USOPrivate\UpdateStore
+        FileMask: store.db
 
 # Documentation
 # https://cyberarms.wordpress.com/2012/08/30/windows-8-forensics-reset-and-refresh-artifacts/
@@ -35,3 +40,4 @@ Targets:
 # https://en.wikipedia.org/wiki/Windows_10_version_history will provide a history of when W10 updates have released. Assuming the target system had a user that was timely with their OS updates, one could plan on artifacts to reflect around the dates of OS update release dates
 # On my personal system, MigLog.xml was 245mb and setupact.log was 151mb, so be cognizant of the potentially large file size of these artifacts compared to other artifacts that store this same information
 # *_APPRAISER_HumanReadable.xml and FolderMoveLog.txt appear to have human readable and therefore potentially forensically interesting information located within. They aren't as large as the other files so they won't bloat any targeted collection
+# Store.db appears to be a SQLite database which stores a record of every Windows Update installed
