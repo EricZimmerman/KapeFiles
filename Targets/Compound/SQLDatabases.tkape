@@ -1,6 +1,6 @@
 Description: SQLDatabases Target for use with SQLECmd Module
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 61d2909c-dcf2-481f-9169-53ea0c2455ba
 RecreateDirectories: true
 Targets:
@@ -548,6 +548,14 @@ Targets:
         Category: SQLDatabases
         Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
         FileMask: ActivitiesCache.db*
+
+# Windows - Windows OS Upgrade Artifacts - WindowsOSUpgradeArtifacts.tkape
+
+    -
+        Name: Update Store.db
+        Category: OS Upgrade
+        Path: C:\ProgramData\USOPrivate\UpdateStore
+        FileMask: store.db
 
 # Documentation
 # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
