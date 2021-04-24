@@ -1,9 +1,18 @@
 Description: SQLDatabases Target for use with SQLECmd Module
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: 61d2909c-dcf2-481f-9169-53ea0c2455ba
 RecreateDirectories: true
 Targets:
+
+# Apps - 4K Video Downloader - 4KVideoDownloader.tkape
+
+    -
+        Name: 4K Video Downloader
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader
+        FileMask: "*.sqlite"
+        Comment: "Grabs database(s) that stores user download history"
 
 # Apps - Microsoft OneNote - MicrosoftOneNote.tkape
 
