@@ -155,7 +155,7 @@ Targets:
         Name: Google File Stream Metadata
         Category: SQLDatabases
         Path: C:\Users\%user%\AppData\Local\Google\Drive\*\TempData\*\change_buffer\
-        Recursive: True
+        Recursive: true
         Comment: "DB(s) with seemingly randomized filename(s) that track file system changes within Google Drive"
     -
         Name: Google File Stream Metadata
