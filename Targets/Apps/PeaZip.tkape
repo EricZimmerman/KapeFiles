@@ -8,7 +8,7 @@ Targets:
         Name: PeaZip Configuration Files
         Category: FileKnowledge
         Path: C:\Users\%user%\AppData\Roaming\PeaZip\
-        Recursive: True
+        Recursive: true
 
 # Documentation
 # N/A

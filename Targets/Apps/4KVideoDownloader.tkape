@@ -1,0 +1,16 @@
+Description: 4K Video Downloader
+Author: Andrew Rathbun
+Version: 1.0
+Id: e33d4392-459b-459e-82e0-d9c624adbfbc
+RecreateDirectories: true
+Targets:
+    -
+        Name: 4K Video Downloader
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader
+        FileMask: "*.sqlite"
+        Comment: "Grabs database(s) that stores user download history"
+
+# Documentation
+# https://www.4kdownload.com/products/product-videodownloader
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s):
