@@ -1,6 +1,6 @@
 Description: Symantec AV Logs
 Author: Brian Maloney
-Version: 1.2
+Version: 1.3
 Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
 RecreateDirectories: true
 Targets:
