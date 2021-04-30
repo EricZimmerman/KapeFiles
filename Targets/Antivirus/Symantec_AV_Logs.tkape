@@ -46,6 +46,16 @@ Targets:
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
         Recursive: true
+    -
+        Name: ccSubSDK Database
+        Category: AntiVirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\CmnClnt\ccSubSDK\
+        Recursive: true
+    -
+        Name: registrationInfo.xml
+        Category: AntiVirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\
+        FileMask: registrationInfo.xml
 
 # Documentation
-# N/A
+# https://malwaremaloney.blogspot.com/p/all-things-symantec.html
