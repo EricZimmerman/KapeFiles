@@ -1,6 +1,6 @@
 Description: Symantec AV Logs
 Author: Brian Maloney
-Version: 1.2
+Version: 1.3
 Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
 RecreateDirectories: true
 Targets:
@@ -46,6 +46,16 @@ Targets:
         Category: AntiVirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
         Recursive: true
+    -
+        Name: ccSubSDK Database
+        Category: AntiVirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\CmnClnt\ccSubSDK\
+        Recursive: true
+    -
+        Name: registrationInfo.xml
+        Category: AntiVirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\
+        FileMask: registrationInfo.xml
 
 # Documentation
-# N/A
+# https://malwaremaloney.blogspot.com/p/all-things-symantec.html
