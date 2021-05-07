@@ -5,12 +5,12 @@ Id: ec903d15-64b5-4484-8786-94b2ad90bfb7
 RecreateDirectories: true
 Targets:
     -
-        Name: System CryptnetUrlCache 
+        Name: System CryptnetUrlCache
         Category: FileKnowledge
         Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\
         Recursive: true
     -
-        Name: User CryptnetUrlCache 
+        Name: User CryptnetUrlCache
         Category: FileKnowledge
         Path: C:\Users\%user%\AppData\LocalLow\Microsoft\CryptnetUrlCache\
         Recursive: true
