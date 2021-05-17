@@ -1,0 +1,26 @@
+Description: Certutil
+Author: NVISO (@NVISOsecurity)
+Version: 1.0
+Id: ec903d15-64b5-4484-8786-94b2ad90bfb7
+RecreateDirectories: true
+Targets:
+    -
+        Name: System CryptnetUrlCache
+        Category: FileKnowledge
+        Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\
+        Recursive: true
+    -
+        Name: User CryptnetUrlCache
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\LocalLow\Microsoft\CryptnetUrlCache\
+        Recursive: true
+    -
+        Name: INetCache
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCache\IE\
+        Recursive: true
+
+# Documentation
+#https://blog.menasec.net/2019/03/initial-access-execution-evidences-for.html
+#https://thinkdfir.com/2020/07/30/certutil-download-artefacts/
+#https://github.com/Velocidex/velociraptor/blob/352fec8b9c285b57bb2cc12cb11dc1900f308921/artifacts/definitions/Windows/Forensics/CertUtil.yaml
