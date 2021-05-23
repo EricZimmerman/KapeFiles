@@ -566,6 +566,15 @@ Targets:
         Path: C:\ProgramData\USOPrivate\UpdateStore
         FileMask: store.db
 
+# Windows - Bitdefender Antivirus - Bitdefender.tkape
+    -
+        Name: Bitdefender SQLite DB Files
+        Category: Antivirus
+        Path: C:\Program Files*\Bitdefender*\
+        Recursive: true
+        FileMask: regex:*.+\.(db|db-wal|db-shm)
+        Comment: "Bitdefender SQLite databases"
+
 # Documentation
 # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
 # This Target will likely be updated often as more SQLECmd Maps are created

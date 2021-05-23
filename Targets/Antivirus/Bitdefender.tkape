@@ -15,7 +15,7 @@ Targets:
         Path: C:\ProgramData\Bitdefender\Desktop\Profiles\Logs\
         Recursive: true
     -
-        Name: Bitdefender DB Files
+        Name: Bitdefender SQLite DB Files
         Category: Antivirus
         Path: C:\Program Files*\Bitdefender*\
         Recursive: true
