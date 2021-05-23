@@ -1,6 +1,6 @@
 Description: Bitdefender Antivirus Data
 Author: Drew Ervin
-Version: 1.0
+Version: 1.1
 Id: e48c32bf-4069-4f79-acac-4ed181fa84c9
 RecreateDirectories: true
 Targets:
