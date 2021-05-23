@@ -14,6 +14,13 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Bitdefender\Desktop\Profiles\Logs\
         Recursive: true
+    -
+        Name: Bitdefender DB Files
+        Category: Antivirus
+        Path: C:\Program Files*\Bitdefender*\
+        Recursive: true
+        FileMask: regex:*.+\.(db|db-wal|db-shm)
+        Comment: "Bitdefender SQLite databases"
 
 # Documentation
 # N/A
