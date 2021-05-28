@@ -24,8 +24,20 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
         FileMask: '*.ost'
+    -
+        Name: PST (2013 or 2016)
+        Category: Communications
+        Path: C:\Users\%user%\Documents\Outlook Files\
+        FileMask: '*.pst'
+    -
+        Name: OST (2013 or 2016)
+        Category: Communications
+        Path: C:\Users\%user%\Documents\Outlook Files\
+        FileMask: '*.ost'
+
 
 # Documentation
+# https://support.microsoft.com/en-us/office/introduction-to-outlook-data-files-pst-and-ost-222eaf92-a995-45d9-bde2-f331f60e2790
 # https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
 # https://gist.github.com/richaarya/d336fec34c600cc8ab8a51195289c99a
 # https://www.nirsoft.net/outlook_office_software.html
