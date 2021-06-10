@@ -1,0 +1,20 @@
+Description: 'RegTime parse UsrClass hives into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 10d07e10-792f-482d-90e1-d2ab28a3074c
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/regtime.exe
+ExportFormat: txt
+FileMask: UsrClass.dat
+Processors:
+    -
+        Executable: tln_tools\regtime.exe
+        CommandLine: -m HKEY_UsrClass\ -r %sourceFile% -u %sourceFile% -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" and regtime.exe in the Modules\bin\tln_tools folder
+# Add in key "computerName" using --mvars computerName:XXXX

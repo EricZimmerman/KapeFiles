@@ -1,0 +1,18 @@
+Description: WinSCP
+Author: Andrew Rathbun
+Version: 1.0
+Id: acd134fb-6f0b-446e-a781-3a9b6411488d
+RecreateDirectories: true
+Targets:
+    -
+        Name: WinSCP (.ini file)
+        Category: Logs
+        Path: C:\
+        FileMask: 'WinSCP.ini'
+        Recursive: true
+
+# Documentation
+# https://az4n6.blogspot.com/2020/02/detecting-laterial-movment-with-winscp.html for more information
+# https://www.fireeye.com/blog/threat-research/2017/03/using_the_registryt.html
+# This will grab the .ini file which is a configuration file that can provide details about the FTP session
+# This file should be located in the same folder as WinSCP.exe

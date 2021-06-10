@@ -1,0 +1,18 @@
+Description: Display a running process list with a variety of fields
+Category: LiveResponse
+Author: piesecurity
+Version: 1.0
+Id: d9bf9198-72e4-4f01-8ec9-e8ec4e322c06
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WMIObject Win32_Process | Select-Object Name,ProcessID,Path,commandline,@{Label='Owner'; Expression={(Get-Process -PID $_.ProcessID -IncludeUserName).UserName}},CreationDate,ThreadCount,HandleCount,VirtualSize,Priority,@{Label='PriorityClass'; Expression={(Get-Process -PID $_.ProcessID).PriorityClass}},@{Label='Security ID'; Expression={$_.getownersid().SID}},@{Label='TotalProcessorTime'; Expression={(Get-Process -PID $_.ProcessID).TotalProcessorTime}},@{Label='Parent Path'; Expression={(Get-Process -PID $_.ParentProcessId).Path}},ParentProcessId,@{Label='Company'; Expression={(Get-Process -PID $_.ProcessID).Company}},@{Label='ProductVersion'; Expression={(Get-Process -PID $_.ProcessID).ProductVersion}},@{Label='Description'; Expression={(Get-Process -PID $_.ProcessID).Description}},@{Label='Product'; Expression={(Get-Process -PID $_.ProcessID).Product}},@{Label='FileVersion'; Expression={(Get-Process -PID $_.ProcessID).FileVersion}},@{Label='File Path SHA-256'; Expression={[System.BitConverter]::ToString( (New-Object System.Security.Cryptography.SHA256CryptoServiceProvider).ComputeHash([System.IO.File]::ReadAllBytes($_.Path))) -replace '-'}}  | Export-Csv -NoTypeInformation -Path %destinationDirectory%\PWSH-Get-ProcessList.csv "
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WMIObject Win32_Process | Select-Object Name,ProcessID,Path,commandline,@{Label='Owner'; Expression={(Get-Process -PID $_.ProcessID -IncludeUserName).UserName}},CreationDate,ThreadCount,HandleCount,VirtualSize,Priority,@{Label='PriorityClass'; Expression={(Get-Process -PID $_.ProcessID).PriorityClass}},@{Label='Security ID'; Expression={$_.getownersid().SID}},@{Label='TotalProcessorTime'; Expression={(Get-Process -PID $_.ProcessID).TotalProcessorTime}},@{Label='Parent Path'; Expression={(Get-Process -PID $_.ParentProcessId).Path}},ParentProcessId,@{Label='Company'; Expression={(Get-Process -PID $_.ProcessID).Company}},@{Label='ProductVersion'; Expression={(Get-Process -PID $_.ProcessID).ProductVersion}},@{Label='Description'; Expression={(Get-Process -PID $_.ProcessID).Description}},@{Label='Product'; Expression={(Get-Process -PID $_.ProcessID).Product}},@{Label='FileVersion'; Expression={(Get-Process -PID $_.ProcessID).FileVersion}},@{Label='File Path SHA-256'; Expression={[System.BitConverter]::ToString( (New-Object System.Security.Cryptography.SHA256CryptoServiceProvider).ComputeHash([System.IO.File]::ReadAllBytes($_.Path))) -replace '-'}}  |  ConvertTo-Json  | Out-File -FilePath %destinationDirectory%\PWSH-Get-ProcessList.json "
+        ExportFormat: json
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/

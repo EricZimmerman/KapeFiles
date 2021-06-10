@@ -1,19 +1,66 @@
-# KapeFiles
+<p align="center">
+  <a href="https://github.com/EricZimmerman/KapeFiles">
+    <img src="kapeLogo.png" alt="Logo" width="300" height="197">
+  </a>
+  
+  <h3 align="center">KAPE Files</h3>
+	
+  <p align="center">
+  <a href="LICENSE" alt="License">
+    <img src="https://img.shields.io/github/license/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="https://github.com/EricZimmerman/KapeFiles/issues" alt="Issues">
+    <img src="https://img.shields.io/github/issues/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="https://github.com/EricZimmerman/KapeFiles/graphs/contributors" alt="Contributors">
+    <img src="https://img.shields.io/github/contributors/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="https://github.com/EricZimmerman/KapeFiles/pulls?q=is%3Apr+is%3Aclosed" alt="Closed PRs">
+    <img src="https://img.shields.io/github/issues-pr-closed/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="https://github.com/EricZimmerman/KapeFiles/network/members/" alt="Forks">
+		<img src="https://img.shields.io/github/forks/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  <a href="https://github.com/EricZimmerman/KapeFiles/stargazers/" alt="Stars">
+		<img src="https://img.shields.io/github/stars/EricZimmerman/KapeFiles?style=flat-square" /></a>
+  
+  </p>
+  <p align="center">
+    Community-created Targets and Modules for use with KAPE
+    <br />
+    <a href="https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape">Download KAPE</a>
+    ·
+    <a href="https://github.com/EricZimmerman/KapeFiles/issues/new?labels=bug">Report a Bug</a>
+    ·
+    <a href="https://github.com/EricZimmerman/KapeFiles/issues/new?labels=enhancement">Request Feature</a>
+  </p>
+</p>
 
-This repository serves as a place for community created Targets and Modules for use with KAPE.
+# QUICK START
 
-Please send PRs should you come up with new targets or modules for inclusion in the project!
+KAPE is an efficient and highly configurable triage program that will target essentially any device or storage location, find forensically useful artifacts, and parse them within a few minutes. KAPE can be downloaded [HERE](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape).
 
-Please include binaries (if free to distribute) or at the very least, point the BinaryUrl property to the download location.
+For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#!index.md)!! This URL will always be the latest documentation.
 
-All other info including requirements, etc. should be documeted at the end of the module in comment blocks.
+It is also possible to attend KAPE training from Kroll instructors. Details can be found [HERE](training.md)!!
 
-## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE DONE THE FOLLOWING:
+### NOTE: We have clarified KAPE usage permissions for commercial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md).
 
-## 1. Generated a unique GUID for the target or module
-## 2. Verified KAPE parses the target or module cleanly via kape.exe --tlist or kape.exe --mlist. Check for any reported errors and correct as necessary
+# Downloading KapeFiles for KAPE
 
-Thanks!!!
+To download the latest files, click the "Sync with Github" button in gkape.exe or run `kape.exe --sync`
 
+# Contributing
+
+This repository serves as a place for community-created Targets and Modules for use with KAPE.
+
+Please send PRs should you come up with new Targets or Modules for inclusion in the project!
+
+## Targets
+
+If you need help with creating Targets, check out [this guide](https://ericzimmerman.github.io/KapeDocs/#!Pages\60-Tips-and-tricks.md#KAPE_Target_Creation). Also consult the [Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetGuide.guide), [Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetTemplate.template), [Compound Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetGuide.guide) or [Compound Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetTemplate.template) to ensure the Target(s) follow the same format.
+
+## Modules
+
+Be sure to point the BinaryUrl property to the download location in Module files!
+
+All other info including requirements, etc. should be documented at the end of the Module in comment blocks.
+
+## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE COMPLETED THE STEPS LISTED WITHIN THE PULL REQUEST TEMPLATE PRIOR TO SUBMISSION!
 
 Eric Zimmerman

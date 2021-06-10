@@ -1,0 +1,26 @@
+Description: Usenet Clients
+Author: Andrew Rathbun
+Version: 1.0
+Id: 2aef5440-16f8-4720-ae40-c2cad380da8d
+RecreateDirectories: true
+Targets:
+    -
+        Name: NewsbinPro
+        Category: FileDownload
+        Path: NewsbinPro.tkape
+    -
+        Name: Newsleecher
+        Category: FileDownload
+        Path: Newsleecher.tkape
+    -
+        Name: NZBGet
+        Category: FileDownload
+        Path: NZBGet.tkape
+    -
+        Name: SABnbzd
+        Category: FileDownload
+        Path: SABnbzd.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_Usenet_newsreaders.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

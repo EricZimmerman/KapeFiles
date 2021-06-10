@@ -1,0 +1,15 @@
+Description: MOF files (WMI)
+Author: Eric Zimmerman
+Version: 1.0
+Id: 4fc9820c-3d30-4a38-2e48-5e0b745a4b0c
+RecreateDirectories: true
+Targets:
+    -
+        Name: MOF files
+        Category: WMI
+        Path: C:\
+        Recursive: true
+        FileMask: '*.MOF'
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFPS_FOR508_v4.4_1-19.pdf

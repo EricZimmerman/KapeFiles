@@ -1,0 +1,25 @@
+Description: Collect Event logs, Trace logs, Windows Firewall and PowerShell console
+Author: Mike Cary
+Version: 1.0
+Id: 6e9f717f-01f8-4460-b552-a3a0ec7d7670
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Event Logs
+        Category: EventLogs
+        Path: EventLogs.tkape
+    -
+        Name: Event Trace Logs
+        Category: EventTraceLogs
+        Path: EventTraceLogs.tkape
+    -
+        Name: PowerShell Console Log
+        Category: PowerShellConsoleLog
+        Path: PowerShellConsole.tkape
+    -
+        Name: Windows Firewall Log
+        Category: WindowsFirewallLogs
+        Path: WindowsFirewall.tkape
+
+# Documentation
+# N/A

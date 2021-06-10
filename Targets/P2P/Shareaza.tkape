@@ -1,0 +1,19 @@
+Description: Shareaza
+Author: Andrew Rathbun
+Version: 1.0
+Id: 3d3203ae-e753-4c37-ac82-d67735972d44
+RecreateDirectories: true
+Targets:
+    -
+        Name: Shareaza Logs
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\Shareaza\
+        Recursive: true
+        Comment: "Locates Shareaza logs and copies them."
+
+# Documentation
+# https://www.researchgate.net/publication/222404106_Forensic_Investigation_of_Peer-to-Peer_File-Sharing_Networks
+# Shareaza is a file-sharing client which supports the gnutella, Gnutella2 (G2), eDonkey, BitTorrent, FTP, HTTP and HTTPS.
+# Logs are stored in .dat format and have to be viewed in a hex editor.
+# Searches.dat within the Data folder will contain information on searches conducted by the user as well as results displayed.
+# TKape was created for version 2.7.10.2.

@@ -1,0 +1,19 @@
+Description: MS SQL ErrorLogs
+Author: Troy Larson
+Version: 1.0
+Id: cb789cbf-bf4a-4491-b6d9-9e2d002bd85e
+RecreateDirectories: true
+Targets:
+    -
+        Name: MS SQL Errorlog
+        Category: SQL Exploitation
+        Path: C:\Program Files\Microsoft SQL Server\*\MSSQL\LOG\
+        FileMask: ERRORLOG
+    -
+        Name: MS SQL Errorlogs
+        Category: SQL Exploitation
+        Path: C:\Program Files\Microsoft SQL Server\*\MSSQL\LOG\
+        FileMask: ERRORLOG.*
+
+# Documentation
+# N/A

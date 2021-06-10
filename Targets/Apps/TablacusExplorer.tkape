@@ -1,0 +1,33 @@
+Description: Tablacus Explorer
+Author: Andrew Rathbun
+Version: 1.0
+Id: 0dc0d6c0-3385-4621-886e-0bda8f97cbc4
+RecreateDirectories: true
+Targets:
+    -
+        Name: Tablacus Explorer - remember.xml
+        Category: Logs
+        Path: C:\Users\%user%\AppData\Local\Temp\*\config
+        FileMask: 'remember.xml'
+        Recursive: true
+    -
+        Name: Tablacus Explorer - window.xml
+        Category: Logs
+        Path: C:\Users\%user%\AppData\Local\Temp\*\config
+        FileMask: 'window.xml'
+        Recursive: true
+    -
+        Name: Tablacus Explorer - window1.xml
+        Category: Logs
+        Path: C:\Users\%user%\AppData\Local\Temp\*\config
+        FileMask: 'window1.xml'
+        Recursive: true
+
+# Documentation
+# https://tablacus.github.io/explorer_en.html
+# Tablacus Explorer is a free, open-source orthodox file manager that is completely portable. No installation is needed. Therefore, the registry is not touched nor are there reliable file system locations for artifacts.
+# However, the .\AppData\Local\Temp\ directory may come in handy. I noticed that copies of the XML files in my local Tablacus Explorer folder were located there.
+# My folder path had dtemp-d2fffa101683078-60.dop in place of the asterisk, so I'm guessing that's randomized with each install. As a precaustion, I used an asterisk.
+# Window and Window1.xml will have information regarding to what the user had open in each window at the time.
+# Please note that Tablacus Explorer has an add-on for up to 9 tabs to be open at once.
+# Remember.xml is likely tied to the plugin "Remember folder view settings" that ships with Tablacus Explorer. It can be disabled at any time.

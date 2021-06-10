@@ -1,0 +1,106 @@
+Description: Antivirus
+Author: Andrew Rathbun
+Version: 1.2
+Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Avast
+        Category: Antivirus
+        Path: Avast.tkape
+    -
+        Name: AVG
+        Category: Antivirus
+        Path: AVG.tkape
+    -
+        Name: Avira
+        Category: Antivirus
+        Path: AviraAVLogs.tkape
+    -
+        Name: Bitdefender
+        Category: Antivirus
+        Path: Bitdefender.tkape
+    -
+        Name: ComboFix
+        Category: Antivirus
+        Path: ComboFix.tkape
+    -
+        Name: Cybereason
+        Category: Antivirus
+        Path: Cybereason.tkape
+    -
+        Name: Emsisoft
+        Category: Antivirus
+        Path: Emsisoft.tkape
+    -
+        Name: ESET
+        Category: Antivirus
+        Path: ESET.tkape
+    -
+        Name: FSecure
+        Category: Antivirus
+        Path: FSecure.tkape
+    -
+        Name: HitmanPro
+        Category: Antivirus
+        Path: HitmanPro.tkape
+    -
+        Name: Malwarebytes
+        Category: Antivirus
+        Path: Malwarebytes.tkape
+    -
+        Name: McAfee
+        Category: Antivirus
+        Path: McAfee.tkape
+    -
+        Name: McAfee ePO
+        Category: Antivirus
+        Path: McAfee_ePO.tkape
+    -
+        Name: RogueKiller
+        Category: Antivirus
+        Path: RogueKiller.tkape
+    -
+        Name: SecureAge
+        Category: Antivirus
+        Path: SecureAge.tkape
+    -
+        Name: SentinelOne
+        Category: Antivirus
+        Path: SentinelOne.tkape
+    -
+        Name: Sophos
+        Category: Antivirus
+        Path: Sophos.tkape
+    -
+        Name: SUPERAntiSpyware
+        Category: Antivirus
+        Path: SUPERAntiSpyware.tkape
+    -
+        Name: Symantec
+        Category: Antivirus
+        Path: Symantec_AV_Logs.tkape
+    -
+        Name: TotalAV
+        Category: Antivirus
+        Path: TotalAV.tkape
+    -
+        Name: TrendMicro
+        Category: Antivirus
+        Path: TrendMicro.tkape
+    -
+        Name: VIPRE
+        Category: Antivirus
+        Path: VIPRE.tkape
+    -
+        Name: Webroot
+        Category: Antivirus
+        Path: Webroot.tkape
+    -
+        Name: Windows Defender
+        Category: Antivirus
+        Path: WindowsDefender.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_antivirus_software.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

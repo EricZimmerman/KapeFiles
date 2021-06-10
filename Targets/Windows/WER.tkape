@@ -1,0 +1,34 @@
+Description: Windows Error Reporting
+Author: Troy Larson
+Version: 1.0
+Id: 03106a1c-e1f8-4075-abdb-f9c83078347d
+RecreateDirectories: true
+Targets:
+    -
+        Name: WER Files
+        Category: Executables
+        Path: C:\ProgramData\Microsoft\Windows\WER\
+        Recursive: true
+    -
+        Name: Crash Dumps
+        Category: SQL Exploitation
+        Path: C:\Users\%user%\AppData\Local\CrashDumps\
+        FileMask: '*.dmp'
+    -
+        Name: Crash Dumps
+        Category: SQL Exploitation
+        Path: C:\Windows\
+        FileMask: '*.dmp'
+    -
+        Name: Crash Dumps
+        Category: SQL Exploitation
+        Path: C:\Windows.old\Windows\
+        FileMask: '*.dmp'
+
+# Documentation
+# https://isc.sans.edu/forums/diary/Windows+Error+Reporting+DFIR+Benefits+and+Privacy+Concerns/22536/
+# https://medium.com/dfir-dudes/amcache-is-not-alone-using-wer-files-to-hunt-evil-86bdfdb216d7
+# https://nasbench.medium.com/windows-forensics-analysis-windows-artifacts-part-i-c7ad81ada16c
+# https://www.sans.org/reading-room/whitepapers/forensics/windows-crash-dumps-remote-incident-identification-36012
+# http://journeyintoir.blogspot.com/2014/02/exploring-windows-error-reporting.html
+# https://www.secjuice.com/windows-forensics-artifacts-2/

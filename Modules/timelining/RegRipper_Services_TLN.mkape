@@ -1,0 +1,21 @@
+Description: RegRipper parse services into TLN format
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 0b9786de-cd3f-48aa-82be-2c6547524f08
+BinaryUrl: https://github.com/keydet89/RegRipper3.0/archive/master.zip
+ExportFormat: txt
+FileMask: SYSTEM
+Processors:
+    -
+        Executable: regripper\rip.exe
+        CommandLine: -r %sourceFile% -p svc_tln -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/RegRipper3.0
+# Create a folder "regripper" within the "Modules\bin" KAPE folder
+# Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"
+# Add in key "computerName" using --mvars computerName:XXXX

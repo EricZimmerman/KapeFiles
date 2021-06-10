@@ -1,0 +1,15 @@
+Description: Torrent Files
+Author: Tony Knutson
+Version: 2.0
+Id: 082de7fa-17b4-4e10-a4e8-94ef2fb27ec2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Torrents
+        Category: FileDownload
+        Path: C:\
+        FileMask: '*.torrent'
+        Recursive: true
+
+# Documentation
+# N/A

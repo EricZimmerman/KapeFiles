@@ -1,0 +1,15 @@
+Description: NBTStat_NETBIOS_Sessions
+Category: LiveResponse
+Author: Mike Cary
+Version: 1.0
+Id: 340d77a6-a9bd-400b-b3b6-bdd5a2085e3c
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\nbtstat.exe
+        CommandLine: -s
+        ExportFormat: txt
+        ExportFile: netbios_sessions.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat

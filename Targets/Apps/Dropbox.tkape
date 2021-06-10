@@ -1,0 +1,94 @@
+Description: Dropbox Cloud Storage Files and Metadata
+Author: Chad Tilbury and Andrew Rathbun
+Version: 1.3
+Id: e8501b5d-2cfc-4693-923d-52edd2ddf3bc
+RecreateDirectories: true
+Targets:
+    -
+        Name: Dropbox User Files
+        Category: Apps
+        Path: C:\Users\%user%\Dropbox*\
+        Recursive: true
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
+        FileMask: info.json
+        Comment: "Getting individual files because folder may contain very large extraneous files"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: filecache.db*
+        Comment: "Getting individual files because folder may contain very large extraneous files"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: config.dbx
+        Comment: "Getting individual files because folder may contain very large extraneous files"
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption of Dropbox databases"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: home.db
+        Comment: "SQlite database which appears to keep track of the user's recent Dropbox activity"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: icon.db
+        Comment: "SQLite database which appears to keep track of icons in the user's Drobox sync history which can give an indication as to which files and folders are present"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: sync_history.db
+        Comment: "SQLite database which appears to keep track of the user's Drobox sync history"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\sync\
+        FileMask: nucleus.sqlite3*
+        Comment: "SQLite database which appears to contain a table for deleted files"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
+        FileMask: host.db
+        Comment: "SQLite database which contains the local path of the user's Dropbox folder encoded in BASE64. Decode each line separately, not together."
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
+        FileMask: host.dbx
+        Comment: "SQLite database which contains the local path of the user's Dropbox folder encoded in BASE64. Decode each line separately, not together."
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\sync\
+        FileMask: aggregation.dbx
+        Comment: "SQLite database which appears to contain snapshot table of the user's Dropbox contents in JSON with timestamps in UNIX Epoch"
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: avatarcache.db
+        Comment: "SQLite database which appears to contain the ID's of account(s) on the user's system where Dropbox is installed"
+
+# Documentation
+# https://www.marshall.edu/forensics/files/Treleven-Dropbox-Paper-FINAL.pdf
+# https://arxiv.org/pdf/1709.10395
+# https://digital-forensics.sans.org/summit-archives/Prague_Summit/Cloud_Storage_Forensics_Mattia_Eppifani.pdf
+# https://www.sans.org/blog/digital-forensics-dropbox/
+# https://www.researchgate.net/publication/342991973_Forensic_Analysis_of_Dropbox_Data_Remnants_on_Windows_10
+# https://www.atropos4n6.com/cloud-forensics/windows-10-artifacts-of-dropboxs-native-app-usage/
+# https://www.atropos4n6.com/cloud-forensics/artifacts-of-dropbox-usage-on-windows-10-part-2/
+# home.db, sync_history.db, and nucleus.sqlite* are SQLite databases.
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Dropbox_Configurations.smap, https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Dropbox_FileCache.smap, and https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Dropbox_InstanceDB.smap

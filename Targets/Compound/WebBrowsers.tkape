@@ -1,0 +1,38 @@
+Description: Web browser history, bookmarks, etc.
+Author: Eric Zimmerman
+Version: 1.0
+Id: e4ffb938-dcc0-4d91-9c77-3aa303d38512
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome
+        Category: Communications
+        Path: Chrome.tkape
+    -
+        Name: Edge
+        Category: Communications
+        Path: Edge.tkape
+    -
+        Name: Edge Chromium
+        Category: Communications
+        Path: EdgeChromium.tkape
+    -
+        Name: Firefox
+        Category: Communications
+        Path: Firefox.tkape
+    -
+        Name: Internet Explorer
+        Category: Communications
+        Path: InternetExplorer.tkape
+    -
+        Name: Opera
+        Category: Communications
+        Path: Opera.tkape
+    -
+        Name: Puffin Secure Browser
+        Category: Communications
+        Path: PuffinSecureBrowser.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_web_browsers.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

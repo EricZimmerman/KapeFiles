@@ -1,0 +1,71 @@
+Description: Eric Zimmerman Parsers
+Category: Modules
+Author: Phill Moore
+Version: 1.4
+Id: f531e7cc-c9f3-4d04-881b-dbc89d1e7f38
+BinaryUrl: https://ericzimmerman.github.io/
+ExportFormat: csv
+Processors:
+    -
+        Executable: AmcacheParser.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: AppCompatCacheParser.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: EvtxECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: JLECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: LECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: MFTECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RBCmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RecentFileCacheParser.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: RECmd_Kroll.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SBECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SQLECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SrumECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SumECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: WxTCmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://www.youtube.com/watch?v=GhCZfCzn2l0

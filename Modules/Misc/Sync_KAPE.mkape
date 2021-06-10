@@ -1,0 +1,15 @@
+Description: 'KAPE: Sync for new Targets/Modules'
+Category: KAPE
+Author: Andrew Rathbun, Sean Straw, and Isaiah Jensen
+Version: 1.1
+Id: 371e0944-8025-4690-9c79-15faafa561a9
+BinaryUrl: https://s3.amazonaws.com/cyb-us-prd-kape/kape.zip
+ExportFormat: ""
+Processors:
+    -
+        Executable: C:\Windows\System32\cmd.exe
+        CommandLine: /c "%kapeDirectory%\kape.exe" --sync
+        ExportFormat: ""
+
+# Documentation
+# This Module ensures you have the latest KAPE Targets and Modules prior to running any Modules

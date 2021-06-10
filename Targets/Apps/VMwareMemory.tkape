@@ -1,0 +1,31 @@
+Description: VMware - Virtual Machine Memory
+Author: Andrew Rathbun
+Version: 1.0
+Id: 45945262-2e36-47c7-a36f-3cf4124dbe63
+RecreateDirectories: true
+Targets:
+    -
+        Name: VMware (Fusion/Workstation/Server/Player)
+        Category: Memory
+        Path: C:\
+        FileMask: '*.vmem'
+        Recursive: true
+        Comment: "Captures all raw memory from VMware virtual machines."
+    -
+        Name: VMware (Fusion/Workstation/Server/Player)
+        Category: Memory
+        Path: C:\
+        FileMask: '*.vmss'
+        Recursive: true
+        Comment: "Captures all memory images from VMware virtual machines."
+    -
+        Name: VMware (Fusion/Workstation/Server/Player)
+        Category: Memory
+        Path: C:\
+        FileMask: '*.vmsn'
+        Recursive: true
+        Comment: "Captures all memory images from VMware virtual machines."
+
+# Documentation
+# https://crucialsecurity.wordpress.com/2011/05/23/virtual-machine-files-essential-to-forensic-investigations/
+# https://blog.salvationdata.com/2018/06/01/case-study-how-to-forensically-extract-evidence-data-from-a-virtual-machine/

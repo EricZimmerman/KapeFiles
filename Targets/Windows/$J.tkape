@@ -1,0 +1,29 @@
+Description: $J
+Author: Eric Zimmerman
+Version: 1.0
+Id: 2a9c6f80-250b-42a6-9d29-90cb0a20f7be
+RecreateDirectories: true
+Targets:
+    -
+        Name: $J
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $UsnJrnl:$J
+        AlwaysAddToQueue: true
+        SaveAsFileName: $J
+    -
+        Name: $Max
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $UsnJrnl:$Max
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Max
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
+# http://forensicinsight.org/wp-content/uploads/2013/07/F-INSIGHT-Advanced-UsnJrnl-Forensics-English.pdf
+# https://countuponsecurity.com/2017/05/25/digital-forensics-ntfs-change-journal/
+# http://journeyintoir.blogspot.com/2013/01/re-introducing-usnjrnl.html
+# https://tzworks.net/prototype_page.php?proto_id=5
+# http://az4n6.blogspot.com/2015/03/usn-journal-where-have-you-been-all-my.html
+# https://www.youtube.com/watch?v=1mwiShxREm8

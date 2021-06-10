@@ -1,0 +1,24 @@
+Description: MediaMonkey
+Author: Andrew Rathbun
+Version: 1.0
+Id: d37bb0d2-6870-4159-8823-e0943fc42ae2
+RecreateDirectories: true
+Targets:
+    -
+        Name: MediaMonkey - Media SQLite Database
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\MediaMonkey
+        FileMask: 'MM.DB'
+        Comment: "Locates SQLite DB that contains a complete enumeration of the user's media collection within MediaMonkey"
+    -
+        Name: MediaMonkey - MediaMonkey.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\MediaMonkey
+        FileMask: 'MediaMonkey.ini'
+        Comment: "Locates .ini file which contains information about the user's MediaMonkey application instance"
+
+# Documentation
+# https://www.mediamonkey.com/support/knowledge-base/mediamonkey-install-config/modifying-the-mediamonkey-db-and-ini-files/
+# MediaMonkey is a popular media organizing, tagging, and playing application for Windows
+# MM.DB contains information about any files added to a user's MediaMonkey library, including music and video files
+# MediaMonkey.ini will contain file paths pointing to where a user stores media that's being viewed within MediaMonkey

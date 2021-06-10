@@ -1,0 +1,30 @@
+Description: Shim SDB FIles
+Author: Troy Larson
+Version: 1.0
+Id: 99e82a85-e4d4-4139-930c-7eea9a45452f
+RecreateDirectories: true
+Targets:
+    -
+        Name: SDB Files
+        Category: Executables
+        Path: C:\Windows\apppatch\Custom\
+        FileMask: '*.sdb'
+    -
+        Name: SDB Files
+        Category: Executables
+        Path: C:\Windows.old\Windows\apppatch\Custom\
+        FileMask: '*.sdb'
+    -
+        Name: SDB Files x64
+        Category: Executables
+        Path: C:\Windows\apppatch\Custom\Custom64\
+        FileMask: '*.sdb'
+    -
+        Name: SDB Files x64
+        Category: Executables
+        Path: C:\Windows.old\Windows\apppatch\Custom\Custom64\
+        FileMask: '*.sdb'
+
+# Documentation
+# https://geoffchappell.com/studies/windows/win32/apphelp/sdb/index.htm?tx=54
+# https://docs.microsoft.com/en-us/windows/win32/devnotes/application-compatibility-database?redirectedfrom=MSDN

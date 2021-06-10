@@ -1,0 +1,20 @@
+Description: 'RegTime parse SYSTEM hive into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: a3a1c6c7-647f-445f-aefd-136802d4fd94
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/regtime.exe
+ExportFormat: txt
+FileMask: SYSTEM
+Processors:
+    -
+        Executable: tln_tools\regtime.exe
+        CommandLine: -m HKLM_SYSTEM\ -r %sourceFile% -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" and regtime.exe in the Modules\bin\tln_tools folder
+# Add in key "computerName" using --mvars computerName:XXXX

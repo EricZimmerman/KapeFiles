@@ -1,0 +1,24 @@
+Description: Trend Micro Data
+Author: Drew Ervin
+Version: 1.0
+Id: 73f8ccea-61cf-4993-aa26-e5cad4f8cc8f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Trend Micro Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Trend Micro\
+        Recursive: true
+    -
+        Name: Trend Micro Security Agent Report Logs
+        Category: Antivirus
+        Path: C:\Program Files*\Trend Micro\Security Agent\Report\
+        FileMask: '*.log'
+    -
+        Name: Trend Micro Security Agent Connection Logs
+        Category: Antivirus
+        Path: C:\Program Files*\Trend Micro\Security Agent\ConnLog\
+        FileMask: '*.log'
+
+# Documentation
+# N/A

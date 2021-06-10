@@ -1,0 +1,41 @@
+Description: Scheduled tasks (*.job and XML)
+Author: Eric Zimmerman
+Version: 1.0
+Id: e5dc4367-2e6b-49bf-a90a-d4c1598bbe28
+RecreateDirectories: true
+Targets:
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows\Tasks\
+        FileMask: '*.job'
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows.old\Windows\Tasks\
+        FileMask: '*.job'
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows\
+        FileMask: SchedLgU.txt
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows.old\Windows\
+        FileMask: SchedLgU.txt
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows\System32\Tasks\
+        Recursive: true
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows.old\Windows\System32\Tasks\
+        Recursive: true
+
+# Documentation
+# http://windowsir.blogspot.com/2009/09/parsing-job-files.html
+# https://www.sans.org/blog/windows-scheduler-at-job-forensics
+# https://forensicswiki.xyz/wiki/index.php?title=Windows_Job_File_Format

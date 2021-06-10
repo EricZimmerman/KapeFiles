@@ -1,0 +1,22 @@
+Description: 'SBECmd: process shellbags'
+Category: FileFolderAccess
+Author: Barrie Hill
+Version: 1.0
+Id: fe12cf94-dad8-4f1a-b09d-3e64614fe2de
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: SBECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
+        ExportFormat: csv
+
+# Documentation
+# https://www.sans.org/reading-room/whitepapers/forensics/windows-shellbag-forensics-in-depth-34545
+# https://binaryforay.blogspot.com/2017/09/shellbags-explorer-0950-released.html
+# https://www.youtube.com/watch?v=YvVemshnpKQ
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# ShellBags Explorer - For browsing shellbags data. Handles locked files.
+# https://f001.backblazeb2.com/file/EricZimmermanTools/ShellBagsExplorer.zip
+# SBECmd.exe must be in Modules\bin folder
+# Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module SBECmd

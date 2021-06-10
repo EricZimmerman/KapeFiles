@@ -1,0 +1,18 @@
+Description: qBittorrent
+Author: Banaanhangwagen
+Version: 1.0
+Id: 17956359-4d7b-4428-8207-2d745d7f6267
+RecreateDirectories: true
+Targets:
+    -
+        Name: TorrentClients - qBittorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\qBittorrent\
+        FileMask: '*.ini'
+    -
+        Name: TorrentClients - qBittorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\qBittorrent\logs\
+
+# Documentation
+# https://troy4n6.blogspot.com/2019/02/text-based-treasure-qbittorent-log-file.html

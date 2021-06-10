@@ -1,0 +1,21 @@
+Description: Dumps LevelDB Key/Value databases
+Category: Databases
+Author: Matt Dawson
+Version: 1.1
+Id: 3a88b531-705b-487d-933c-75ce0921a656
+BinaryUrl: https://github.com/mdawsonuk/LevelDBDumper/releases
+ExportFormat: csv
+Processors:
+    -
+        Executable: LevelDBDumper.exe
+        CommandLine: "-d %sourceDirectory% -o %destinationDirectory% -t csv -q --no-header --no-colour"
+        ExportFormat: csv
+        ExportFile: "LevelDBDumperOutput.log"
+    -
+        Executable: LevelDBDumper.exe
+        CommandLine: "-d %sourceDirectory% -o %destinationDirectory% -t json -q --no-header --no-colour"
+        ExportFormat: json
+        ExportFile: "LevelDBDumperOutput.log"
+
+# Documentation
+# https://github.com/mdawsonuk/LevelDBDumper

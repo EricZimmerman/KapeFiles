@@ -1,0 +1,15 @@
+Description: Avira Logs
+Author: Fabian Murer
+Version: 1.0
+Id: f977c6c9-378b-4812-a5ca-1f6c5fe57b18
+RecreateDirectories: true
+Targets:
+    -
+        Name: Avira Activity Logs
+        Category: AntiVirus
+        Path: C:\ProgramData\Avira\Antivirus\LOGFILES\
+        Recursive: true
+        Comment: "Collects the scan logs of Avira AntiVirus"
+
+# Documentation
+# N/A

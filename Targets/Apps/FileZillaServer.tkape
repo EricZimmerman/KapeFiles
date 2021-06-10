@@ -1,0 +1,59 @@
+Description: FileZilla Server Logs
+Author: Andrew Rathbun
+Version: 1.0
+Id: 1292ff24-aae0-4bab-8e11-d040c4aaf1b5
+RecreateDirectories: true
+Targets:
+    -
+        Name: FileZilla Server XML Log Files
+        Category: Logs
+        Path: C:\Users\%user%\AppData\Roaming\FileZilla Server\
+        FileMask: '*.xml*'
+    -
+        Name: FileZilla Log Files
+        Category: Logs
+        Path: C:\Program Files (x86)\FileZilla Server\Logs\
+        FileMask: '*.log*'
+
+# Documentation
+# https://www.sans.org/reading-room/whitepapers/forensics/evidence-data-exfiltration-containerised-applications-virtual-private-servers-38555
+# https://wiki.filezilla-project.org/Logs
+# https://www.hecfblog.com/2013/09/daily-blog-93-filezilla-artifacts.html
+# FileZilla Server Interface.xml will display the following information:
+#
+# <FileZillaServer>
+#     <Settings>
+#         <Item name="Last Server Address" type="string">localhost</Item>
+#         <Item name="Last Server Port" type="numeric">12345</Item>
+#         <Item name="Last Server Password" type="string" />
+#         <Item name="Always use last server" type="numeric">0</Item>
+#         <Item name="Start Minimized" type="numeric">0</Item>
+#     </Settings>
+# </FileZillaServer>
+#
+# FileZilla Server.log will display the following information:
+#
+# (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> USER Andrew
+# (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> 331 Password required for andrew
+# (000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)> PASS
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 230 Logged on
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> CWD /EVT
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 250 CWD successful. "/EVT" is current directory.
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> TYPE I
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 200 Type set to I
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> CWD /EVT
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 250 CWD successful. "/EVT" is current directory.
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> PASV
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 227 Entering Passive Mode (192,168,131,128,204,144)
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> TYPE I
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 200 Type set to I
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> RETR Internet.evt
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> PASV
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 227 Entering Passive Mode (192,168,131,128,255,124)
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 150 Opening data channel for file download from server of "/EVT/Internet.evt"
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> RETR AppEvent.Evt
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 150 Opening data channel for file download from server of "/EVT/AppEvent.Evt"
+# (000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 226 Successfully transferred "/EVT/AppEvent.Evt"
+# (000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)> 226 Successfully transferred "/EVT/Internet.evt"
+
+# The above example shows me downloading two test .EVT files to my host machine shortly after reconnecting to the FTP Server administered by FileZilla Server which was running within a Windows 10 VM.

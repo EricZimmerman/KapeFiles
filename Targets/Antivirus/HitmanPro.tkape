@@ -1,0 +1,25 @@
+Description: HitmanPro Antivirus Data
+Author: Drew Ervin
+Version: 1.0
+Id: db98e01b-bd07-4b40-a6ef-e75bdef39bb2
+RecreateDirectories: true
+Targets:
+    -
+        Name: HitmanPro Logs
+        Category: Antivirus
+        Path: C:\ProgramData\HitmanPro\Logs\
+        Recursive: true
+    -
+        Name: HitmanPro Alert Logs
+        Category: Antivirus
+        Path: C:\ProgramData\HitmanPro.Alert\Logs\
+        Recursive: true
+    -
+        Name: HitmanPro Database
+        Category: Antivirus
+        Path: C:\ProgramData\HitmanPro.Alert\
+        FileMask: excalibur.db
+        Comment: "SQLite DB"
+
+# Documentation
+# N/A

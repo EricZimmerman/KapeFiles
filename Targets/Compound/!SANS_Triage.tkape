@@ -1,0 +1,921 @@
+Description: SANS Triage Collection.
+Author: Mark Hallman
+Version: 1.1
+Id: 5dbe9218-fd3d-4d86-88aa-56001d38e7f5
+RecreateDirectories: true
+Targets:
+
+    # No Compound Targets used in this target.  That is intended to make this target "self documenting" for the SANS FOR500 Students.
+
+    # Event Logs - .\Targets\Windows\EventLogs.tkape
+    -
+        Name: Event logs XP
+        Category: EventLogs
+        Path: C:\Windows\System32\config\
+        FileMask: '*.evt'
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: '*.evtx'
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: '*.evtx'
+
+        # Evidence of Execution - .\Targets\Compound\EvidenceOfExecution.tkape and .\Targets\Logs\PowerShellConsole.tkape
+    -
+        Name: Prefetch
+        Category: Prefetch
+        Path: C:\Windows\prefetch\
+        FileMask: '*.pf'
+    -
+        Name: Prefetch
+        Category: Prefetch
+        Path: C:\Windows.old\Windows\prefetch\
+        FileMask: '*.pf'
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: RecentFileCache.bcf
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
+        FileMask: RecentFileCache.bcf
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve.LOG*
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
+        FileMask: Amcache.hve.LOG*
+    -
+        Name: Syscache
+        Category: Program Execution
+        Path: C:\System Volume Information\
+        FileMask: Syscache.hve
+    -
+        Name: Syscache transaction files
+        Category: Program Execution
+        Path: C:\System Volume Information\
+        FileMask: Syscache.hve.LOG*
+    -
+        Name: PowerShell Console Log
+        Category: PowerShellConsleLog
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
+        FileMask: ConsoleHost_history.txt
+
+        # File System - .\Targets\Compound\FileSystem.tkape
+    -
+        Name: $MFT
+        Category: FileSystem
+        Path: C:\
+        FileMask: $MFT
+        AlwaysAddToQueue: true
+    -
+        Name: $LogFile
+        Category: FileSystem
+        Path: C:\
+        FileMask: $LogFile
+        AlwaysAddToQueue: true
+    -
+        Name: $J
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $UsnJrnl:$J
+        AlwaysAddToQueue: true
+        SaveAsFileName: $J
+    -
+        Name: $Max
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $UsnJrnl:$Max
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Max
+    -
+        Name: $SDS
+        Category: FileSystem
+        Path: C:\
+        FileMask: $Secure:$SDS
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Secure_$SDS
+    -
+        Name: $Boot
+        Category: FileSystem
+        Path: C:\
+        FileMask: $Boot
+        AlwaysAddToQueue: true
+    -
+        Name: $T
+        Category: FileSystem
+        Path: C:\$Extend\$RmMetadata\$TxfLog\
+        FileMask: $Tops:$T
+        AlwaysAddToQueue: true
+        SaveAsFileName: $T
+
+        # LNK Files and JumpLists - .\Targets\Windows\LNKFilesAndJumpLists.tkape
+    -
+        Name: LNK files from Recent
+        Category: LNKFiles
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
+        Recursive: true
+        Comment: Also includes automatic and custom jumplist directories
+    -
+        Name: LNK files from Microsoft Office Recent
+        Category: LNKFiles
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Recursive: true
+    -
+        Name: LNK files from Recent (XP)
+        Category: LNKFiles
+        Path: C:\Documents and Settings\%user%\Recent\
+        Recursive: true
+    -
+        Name: Desktop LNK files XP
+        Category: LNKFiles
+        Path: C:\Documents and Settings\%user%\Desktop\
+        FileMask: '*.LNK'
+    -
+        Name: Desktop LNK files
+        Category: LNKFiles
+        Path: C:\Users\%user%\Desktop\
+        FileMask: '*.LNK'
+    -
+        Name: Restore point LNK files XP
+        Category: LNKFiles
+        Path: C:\System Volume Information\_restore*\RP*\
+        FileMask: '*.LNK'
+
+        # Recycle Bin and Recycler - .\Targets\Windows\RecycleBin_DataFiles.tkape and .\Targets\Windows\RecycleBin_InfoFiles.tkape
+    -
+        Name: Recycle Bin - Windows Vista+
+        Category: FileDeletion
+        Path: C:\$Recycle.Bin\
+        FileMask: '$R*.*'
+        Recursive: true
+    -
+        Name: RECYCLER - WinXP
+        Category: FileDeletion
+        Path: C:\RECYCLE*\
+        FileMask: 'D*.*'
+        Recursive: true
+    -
+        Name: Recycle Bin - Windows Vista+
+        Category: FileDeletion
+        Path: C:\$Recycle.Bin\
+        FileMask: '$I*.*'
+        Recursive: true
+    -
+        Name: RECYCLER - WinXP
+        Category: FileDeletion
+        Path: C:\RECYCLE*\
+        FileMask: 'INFO2'
+        Recursive: true
+
+        # System Registry Files - .\Targets\Windows\RegistryHivesSystem.tkape
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SAM.LOG*
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SAM.LOG*
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SECURITY.LOG*
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SECURITY.LOG*
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SYSTEM.LOG*
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SYSTEM.LOG*
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SAM
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SAM
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SECURITY
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SECURITY
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SOFTWARE
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SYSTEM
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: '*.LOG*'
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: '*.LOG*'
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SAM
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SAM
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SECURITY
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SECURITY
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SOFTWARE
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SYSTEM1
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SYSTEM1
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: System Restore Points Registry Hives (XP)
+        Category: Registry
+        Path: C:\System Volume Information\_restore*\RP*\snapshot\
+        FileMask: _REGISTRY_*
+
+        # User Registry Files - .\Targets\Windows\RegistryHivesUser.tkape
+    -
+        Name: NTUSER.DAT registry hive XP
+        Category: Registry
+        Path: C:\Documents and Settings\%user%\
+        FileMask: NTUSER.DAT
+    -
+        Name: NTUSER.DAT registry hive
+        Category: Registry
+        Path: C:\Users\%user%\
+        FileMask: NTUSER.DAT
+    -
+        Name: NTUSER.DAT registry transaction files
+        Category: Registry
+        Path: C:\Users\%user%\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: NTUSER.DAT DEFAULT registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: DEFAULT
+    -
+        Name: NTUSER.DAT DEFAULT registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: DEFAULT
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: DEFAULT.LOG*
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: DEFAULT.LOG*
+    -
+        Name: UsrClass.dat registry hive
+        Category: Registry
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
+        FileMask: UsrClass.dat
+    -
+        Name: UsrClass.dat registry transaction files
+        Category: Registry
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
+        FileMask: UsrClass.dat.LOG*
+
+        # System Level Artifacts
+
+        # Scheduled Tasks - .\Targets\Windows\ScheduledTasks.tkape
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows\Tasks\
+        FileMask: '*.job'
+    -
+        Name: at .job
+        Category: Persistence
+        Path: C:\Windows.old\Windows\Tasks\
+        FileMask: '*.job'
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows\
+        FileMask: SchedLgU.txt
+    -
+        Name: at SchedLgU.txt
+        Category: Persistence
+        Path: C:\Windows.old\Windows\
+        FileMask: SchedLgU.txt
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows\System32\Tasks\
+        Recursive: true
+    -
+        Name: XML
+        Category: Persistence
+        Path: C:\Windows.old\Windows\System32\Tasks\
+        Recursive: true
+
+        # System Resource Usage Monitor - .\Targets\Windows\SRUM.tkape
+    -
+        Name: SRUM
+        Category: Execution
+        Path: C:\Windows\System32\SRU\
+        Recursive: true
+    -
+        Name: SRUM
+        Category: Execution
+        Path: C:\Windows.old\Windows\System32\SRU\
+        Recursive: true
+
+        # Thumbcache.db - .\Targets\Windows\ThumbCache.tkape
+    -
+        Name: Thumbcache DB
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Explorer\
+        FileMask: thumbcache_*.db
+
+        # USB Devices Logs - .\Targets\Windows\USBDevicesLogs.tkape
+    -
+        Name: Setupapi.log XP
+        Category: USBDevices
+        Path: C:\Windows\
+        FileMask: setupapi.log
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows\inf\
+        FileMask: setupapi.dev.log
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows.old\Windows\inf\
+        FileMask: setupapi.dev.log
+    -
+        Name: WindowsIndexSearch
+        Category: FileKnowledge
+        Path: C:\programdata\microsoft\search\data\applications\windows\
+        FileMask: Windows.edb
+    -
+        Name: WBEM
+        Category: WBEM
+        Path: C:\Windows\System32\wbem\Repository\
+        Recursive: true
+    -
+        Name: WBEM
+        Category: WBEM
+        Path: C:\Windows.old\Windows\System32\wbem\Repository\
+        Recursive: true
+
+        # User Communication
+
+        # Outlook PST and OST files - .\Targets\Apps\OutlookPSTOST.tkape
+    -
+        Name: PST XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.pst'
+    -
+        Name: OST XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.ost'
+    -
+        Name: PST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.pst'
+    -
+        Name: OST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.ost'
+
+        # Skype - .\Targets\Apps\Skype.tkape
+    -
+        Name: main.db (App <v12)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        FileMask: main.db
+    -
+        Name: skype.db (App +v12)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        FileMask: skype.db
+    -
+        Name: main.db XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Skype\*\
+        FileMask: main.db
+    -
+        Name: main.db Win7+
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Skype\*\
+        FileMask: main.db
+    -
+        Name: s4l-[username].db (App +v8)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
+        FileMask: s4l-*.db
+    -
+        Name: leveldb (Skype for Desktop +v8)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
+        FileMask: '*.log'
+
+        # Web Browser Artifacts - .\Targets\Compound\WebBrowsers.tkape
+    -
+        Name: Chrome bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Preferences XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Shortcuts XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Visited Links XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome Extension Files
+        Category: Communication
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
+        Recursive: true
+    -
+        Name: Chrome Extension Files XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions\
+        Recursive: true
+    -
+        Name: Edge folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
+        Recursive: true
+    -
+        Name: WebcacheV01.dat
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+    -
+        Name: Firefox Places
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
+    -
+        Name: Firefox Downloads
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
+    -
+        Name: Firefox Form history
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
+    -
+        Name: Firefox Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
+    -
+        Name: Firefox Signons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
+    -
+        Name: Firefox Webappstore
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
+    -
+        Name: Firefox Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
+    -
+        Name: Firefox Addons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
+    -
+        Name: Firefox Search
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Firefox Places (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
+    -
+        Name: Firefox Downloads (XP)
+        Category: Communications (XP)
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
+    -
+        Name: Firefox Form history (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
+    -
+        Name: Firefox Cookies (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
+    -
+        Name: Forefox Signons (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
+    -
+        Name: Firefox Webappstore (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
+    -
+        Name: Firefox Favicons (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
+    -
+        Name: Firefox Addons (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
+    -
+        Name: Firefox Search  (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Index.dat History
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\History\History.IE5\
+        FileMask: index.dat
+    -
+        Name: Index.dat History subdirectory
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\History\History.IE5\*\
+        FileMask: index.dat
+    -
+        Name: Index.dat temp internet files
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Temporary Internet Files\Content.IE5\
+        FileMask: index.dat
+    -
+        Name: Index.dat cookies (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Cookies\
+        FileMask: index.dat
+    -
+        Name: Index.dat UserData (XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Microsoft\Internet Explorer\UserData\
+        FileMask: index.dat
+    -
+        Name: Index.dat Office XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Microsoft\Office\Recent\
+        FileMask: index.dat
+    -
+        Name: Index.dat Office
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        FileMask: index.dat
+    -
+        Name: Local Internet Explorer folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Internet Explorer\
+        Recursive: true
+    -
+        Name: Roaming Internet Explorer folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Internet Explorer\
+        Recursive: true
+    -
+        Name: IE 9/10 History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\History\
+        Recursive: true
+    -
+        Name: IE 9/10 Cache
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+        Recursive: true
+    -
+        Name: IE 9/10 Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Cookies\
+        Recursive: true
+    -
+        Name: IE 9/10 Download History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\IEDownloadHistory\
+        Recursive: true
+    -
+        Name: IE 11 Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
+    -
+        Name: IE 11 Cache
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCache\
+        Recursive: true
+    -
+        Name: IE 11 Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCookies\
+        Recursive: true
+
+        # Windows Timeline - .\Targets\Windows\WindowsTimeline.tkape
+    -
+        Name: ActivitiesCache.db
+        Category: FileFolderAccess
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db
+    -
+        Name: ActivitiesCache.db-shm
+        Category: FileFolderAccess
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db-shm
+    -
+        Name: ActivitiesCache.db-wal
+        Category: FileFolderAccess
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db-wal

@@ -1,0 +1,15 @@
+Description: uTorrent
+Author: Banaanhangwagen
+Version: 1.0
+Id: df8ed278-cd5e-4345-bb30-9b25182bf2d4
+RecreateDirectories: true
+Targets:
+    -
+        Name: TorrentClients - uTorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\uTorrent\
+        FileMask: '*.dat'
+
+# Documentation
+# https://robertpearsonblog.wordpress.com/2016/11/11/utorrent-and-windows-10-forensic-nuggets-of-info/
+# https://www.forensicfocus.com/articles/forensic-analysis-of-the-%CE%BCtorrent-peer-to-peer-client-in-windows/

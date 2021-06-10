@@ -1,0 +1,17 @@
+Description: 'TeraCopy log history'
+Author: Kevin Pagano
+Version: 1.0
+Id: 111ee9ac-f8b3-4026-a3c9-90f76b6b2cb4
+RecreateDirectories: true
+Targets:
+    -
+        Name: TeraCopy
+        Category: TeraCopy
+        Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
+        Recursive: true
+
+# Documentation
+# https://www.kraftkennedy.com/teracopy-forensics-finding-elusive-copy-log/
+# https://www.stark4n6.com/2018/11/teracopy-forensic-analysis-part-1.html
+# https://www.stark4n6.com/2018/11/teracopy-forensic-analysis-part-2.html
+# # The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_TeraCopy_History.smap and https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_TeraCopy_MainDB.smap

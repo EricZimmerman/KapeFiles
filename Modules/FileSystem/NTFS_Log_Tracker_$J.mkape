@@ -1,0 +1,20 @@
+Description: 'NTFS Log Tracker: process $J files'
+Category: FileSystem
+Author: Hyun Yi @hyuunnn
+Version: 1.0
+Id: adcf94a7-dde8-4eaf-855e-8072d7df1e14
+BinaryUrl: https://sites.google.com/site/forensicnote/ntfs-log-tracker/NTFS Log Tracker v1.6 CMD.zip
+ExportFormat: sqlite3
+FileMask: $J
+Processors:
+    -
+        Executable: NTFS Log Tracker v1.6 CMD\NTFS_Log_Tracker_CMD_V1.6.exe
+        CommandLine: -u %sourceFile% -o %destinationDirectory%
+        ExportFormat: sqlite3
+    -
+        Executable: NTFS Log Tracker v1.6 CMD\NTFS_Log_Tracker_CMD_V1.6.exe
+        CommandLine: -u %sourceFile% -o %destinationDirectory% -c
+        ExportFormat: csv
+
+# Documentation
+# https://sites.google.com/site/forensicnote/ntfs-log-tracker

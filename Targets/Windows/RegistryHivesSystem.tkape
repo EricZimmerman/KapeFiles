@@ -1,0 +1,217 @@
+Description: System level/related Registry hives
+Author: Eric Zimmerman / Mark Hallman
+Version: 1.0
+Id: 2b7f40fd-cd02-47da-87da-9966fa5d8159
+RecreateDirectories: true
+Targets:
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SAM.LOG*
+    -
+        Name: SAM registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SAM.LOG*
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SECURITY.LOG*
+    -
+        Name: SECURITY registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SECURITY.LOG*
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
+    -
+        Name: SOFTWARE registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SOFTWARE.LOG*
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SYSTEM.LOG*
+    -
+        Name: SYSTEM registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SYSTEM.LOG*
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SAM
+    -
+        Name: SAM registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SAM
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SECURITY
+    -
+        Name: SECURITY registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SECURITY
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SOFTWARE
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: SYSTEM
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: '*.LOG*'
+    -
+        Name: RegBack registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: '*.LOG*'
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SAM
+    -
+        Name: SAM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SAM
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SECURITY
+    -
+        Name: SECURITY registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SECURITY
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SOFTWARE
+    -
+        Name: SOFTWARE registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SOFTWARE
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SYSTEM
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows\System32\config\RegBack\
+        FileMask: SYSTEM1
+    -
+        Name: SYSTEM registry hive (RegBack)
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\RegBack\
+        FileMask: SYSTEM1
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT
+    -
+        Name: System Profile registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: System Profile registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\System32\config\systemprofile\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Local Service registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Local Service registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\LocalService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Network Service registry hive
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: Network Service registry transaction files
+        Category: Registry
+        Path: C:\Windows.old\Windows\ServiceProfiles\NetworkService\
+        FileMask: NTUSER.DAT.LOG*
+    -
+        Name: System Restore Points Registry Hives (XP)
+        Category: Registry
+        Path: C:\System Volume Information\_restore*\RP*\snapshot\
+        FileMask: _REGISTRY_*
+
+# Documentation
+# https://medium.com/@lucideus/windows-registry-forensic-analysis-part-1-windows-forensics-manual-2018-2cb4da210125
+# https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://www.youtube.com/watch?v=VYROU-ZwZX8

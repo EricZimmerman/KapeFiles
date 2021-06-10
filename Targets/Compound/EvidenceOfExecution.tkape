@@ -1,0 +1,25 @@
+Description: Evidence of execution related files
+Author: Eric Zimmerman
+Version: 1.0
+Id: 13ba1e33-4899-4843-adf0-c7e6a20d758a
+RecreateDirectories: true
+Targets:
+    -
+        Name: Prefetch
+        Category: Prefetch
+        Path: Prefetch.tkape
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: RecentFileCache.tkape
+    -
+        Name: Amcache
+        Category: ApplicationCompatability
+        Path: Amcache.tkape
+    -
+        Name: Syscache
+        Category: Syscache
+        Path: Syscache.tkape
+
+# Documentation
+# N/A

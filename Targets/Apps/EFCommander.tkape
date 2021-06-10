@@ -1,0 +1,16 @@
+Description: EF Commander
+Author: Andrew Rathbun
+Version: 1.0
+Id: e94a00dd-3206-4a2c-aa5c-a69f7a09b7b3
+RecreateDirectories: true
+Targets:
+    -
+        Name: EF Commander - .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\EFSoftware\
+        Comment: "Locates folder where all configuration files reside"
+
+# Documentation
+# http://www.efsoftware.com/cw/e.htm
+# EF Commander is a shareware file manager similar to Total Commander.
+# EFCW.INI will have the history of the left and right panel as well as any FTP servers the user connected to.

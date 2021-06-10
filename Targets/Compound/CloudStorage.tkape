@@ -1,0 +1,30 @@
+Description: Cloud Storage Contents and Metadata
+Author: Chad Tilbury and Andrew Rathbun
+Version: 1.1
+Id: 29984028-0f42-4922-8a3f-752341f5852c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Box
+        Category: Apps
+        Path: BoxDrive.tkape
+    -
+        Name: Dropbox
+        Category: Apps
+        Path: Dropbox.tkape
+    -
+        Name: Google Drive
+        Category: Apps
+        Path: GoogleDrive.tkape
+    -
+        Name: OneDrive
+        Category: Apps
+        Path: OneDrive.tkape
+    -
+        Name: SugarSync
+        Category: Apps
+        Path: SugarSync.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

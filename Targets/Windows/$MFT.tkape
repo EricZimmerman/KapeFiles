@@ -1,0 +1,22 @@
+Description: $MFT
+Author: Eric Zimmerman
+Version: 1.0
+Id: 2b3d01e2-25e1-4079-a630-6cb6e2069456
+RecreateDirectories: true
+Targets:
+    -
+        Name: $MFT
+        Category: FileSystem
+        Path: C:\
+        FileMask: $MFT
+        AlwaysAddToQueue: true
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
+# https://www.andreafortuna.org/2017/10/06/macb-times-in-windows-forensic-analysis/
+# https://www.andreafortuna.org/2018/06/04/using-mft-anomalies-to-spot-suspicious-files-in-forensic-analysis/
+# https://www.thedigitalforensics.com/windows-forensics/timestamp-in-ntfs-system
+# https://www.youtube.com/watch?v=OTea54BelTg
+# https://www.sciencedirect.com/topics/computer-science/master-file-table
+# https://www.tzworks.net/prototype_page.php?proto_id=46
+# https://www.youtube.com/watch?v=xW5UwDztkX4

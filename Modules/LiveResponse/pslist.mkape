@@ -1,0 +1,16 @@
+Description: Shows statistics for all running processes
+Category: LiveResponse
+Author: Andy Furnas
+Version: 1.0
+Id: fa3aa32a-0091-4650-9485-ad87891b8751
+BinaryUrl: https://download.sysinternals.com/files/PSTools.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: pslist.exe
+        CommandLine: -x -accepteula
+        ExportFormat: txt
+        ExportFile: pslist.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/sysinternals/downloads/pslist

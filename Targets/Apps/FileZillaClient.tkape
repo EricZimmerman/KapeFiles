@@ -1,0 +1,21 @@
+Description: FileZilla XML and SQLite Log Files
+Author: Dennis Reneau
+Version: 1.0
+Id: f7eaa0d5-0b15-4578-b411-ac4226e13a7f
+RecreateDirectories: true
+Targets:
+    -
+        Name: FileZilla XML Log Files
+        Category: Logs
+        Path: C:\Users\%user%\AppData\Roaming\FileZilla\
+        FileMask: '*.xml*'
+    -
+        Name: FileZilla SQLite3 Log Files
+        Category: Logs
+        Path: C:\Users\%user%\AppData\Roaming\FileZilla\
+        FileMask: '*.sqlite3*'
+
+# Documentation
+# https://www.sans.org/reading-room/whitepapers/forensics/evidence-data-exfiltration-containerised-applications-virtual-private-servers-38555
+# https://wiki.filezilla-project.org/Logs
+# https://www.hecfblog.com/2013/09/daily-blog-93-filezilla-artifacts.html

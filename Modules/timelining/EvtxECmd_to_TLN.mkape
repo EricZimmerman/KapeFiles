@@ -1,0 +1,18 @@
+Description: Convert Eric Zimmerman's EvtxECmd csv output to TLN output
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 44d3fdf4-a248-447f-ba71-b822a09cffc5
+BinaryUrl: https://github.com/mdegrazia/KAPE_Tools/raw/master/executables/evtxECmd_2_tln.exe
+ExportFormat: txt
+Processors:
+    -
+        Executable: tln_tools\evtxECmd_2_tln.exe
+        CommandLine: -f %destinationDirectory%\evtx_for_timeline.csv
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+# Documentation
+# https://github.com/mdegrazia/KAPE_Tools
+# https://www.kroll.com/en/insights/events/2020/webcast-express-artifact-analysis-timeline-development-kape

@@ -1,0 +1,23 @@
+Description: 'RECmd: InstalledSoftware'
+Category: Registry
+Author: Andrew Rathbun
+Version: 1.0
+Id: 82d89b1d-19c1-439b-a30d-2f8659adf691
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: RECmd\RECmd.exe
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\InstalledSoftware.reb --nl false --csv %destinationDirectory% -q
+        ExportFormat: csv
+
+# Documentation
+# https://github.com/EricZimmerman/RECmd
+# https://binaryforay.blogspot.com/2015/05/introducing-recmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/registry-explorer-recmd/
+# https://www.andreafortuna.org/2020/03/04/recmd-command-line-tool-for-windows-registry-analysis/
+# https://www.sans.org/blog/finding-registry-malware-persistence-with-recmd/
+# https://www.youtube.com/watch?v=tk9XsMHzPlM
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# Uses the InstalledSoftware.reb batch command file. This file should also be in same directory as RECmd.exe
+# Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.

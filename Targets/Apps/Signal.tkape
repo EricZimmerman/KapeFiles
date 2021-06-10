@@ -1,0 +1,42 @@
+Description: Signal (Please view this tkape file for documentation on decryption!)
+Author: Matt Dawson
+Version: 1.0
+Id: bc021c91-a699-4265-9a7f-9c6792b1d823
+RecreateDirectories: true
+Targets:
+    -
+        Name: Signal Attachments cache
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Signal\attachments.noindex\
+        Recursive: true
+        Comment: Profile pictures (and possibly attachments) for users who this individual has as contacts or has communicated with
+    -
+        Name: Signal Logs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Signal\logs\
+        Recursive: true
+        Comment: Logs for Signal. Most recent has the extension .log while old ones will have extension .log.0, .log.1 etc.
+    -
+        Name: Signal config.json
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Signal\
+        FileMask: "config.json"
+        Comment: config.json holds the db.sqlite SQLCipher raw key
+    -
+        Name: Signal Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Signal\sql\
+        FileMask: "db.sqlite"
+        Comment: Stores attachment details, conversations, messages, and more
+
+# Documentation
+# To decrypt db.sqlite on Windows:
+# 1. Download https://sqlitebrowser.org/dl/ and open DB Browser for SQLCipher.exe
+# 2. Get the key from config.json
+# 3. Open the database from DB Browser/drag the file into the open window
+# 4. Set the Password type from "Passphrase" to "Raw Key"
+# 5. Set Encryption Settings to "SQLCipher 4 defaults"
+# 6. Prefix the key from config.json with "0x" and paste it into the password field
+# https://www.bleepingcomputer.com/news/security/signal-desktop-leaves-message-decryption-key-in-plain-sight/
+# https://www.zetetic.net/sqlcipher/sqlcipher-api/#key
+# https://github.com/signalapp/Signal-Desktop/blob/master/ts/sql/Server.ts#L276

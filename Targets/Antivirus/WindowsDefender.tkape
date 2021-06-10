@@ -1,0 +1,39 @@
+Description: Windows Defender Data
+Author: Drew Ervin
+Version: 1.0
+Id: 061aa929-292b-4d7f-a4af-a3fe2673a3e5
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Microsoft AntiMalware\Support\
+        Recursive: true
+    -
+        Name: Windows Defender Event Logs
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\Logs\
+        FileMask: Microsoft-Windows-Windows Defender*.evtx
+    -
+        Name: Windows Defender Event Logs
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\Logs\
+        FileMask: Microsoft-Windows-Windows Defender*.evtx
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Support\
+        Recursive: true
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        Path: C:\Windows\Temp\
+        FileMask: MpCmdRun.log
+    -
+        Name: Windows Defender Logs
+        Category: Antivirus
+        Path: C:\Windows.old\Windows\Temp\
+        FileMask: MpCmdRun.log
+
+# Documentation
+# N/A

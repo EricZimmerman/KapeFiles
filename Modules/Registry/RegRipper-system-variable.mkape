@@ -1,0 +1,21 @@
+Description: 'RegRipper: parse SYSTEM hive using provided plugin name'
+Category: Registry
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 2eda739f-6af9-4b53-8d63-2c1154701a7c
+BinaryUrl: https://github.com/keydet89/RegRipper3.0/archive/master.zip
+ExportFormat: txt
+FileMask: SYSTEM
+Processors:
+    -
+        Executable: regripper\rip.exe
+        CommandLine: -r %sourceFile% -p %systemPlugin%
+        ExportFormat: txt
+        ExportFile: regripper-system-%systemPlugin%.txt
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/RegRipper3.0
+# Create a folder "regripper" within the "Modules\bin" KAPE folder
+# Place "rip.exe", "p2x5124.dll" and the "plugins" folder into "Modules\bin\regripper"
+# Provide a module variable using --mvars systemPlugin:pluginname

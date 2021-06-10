@@ -1,0 +1,59 @@
+Description: File Explorer Replacements
+Author: Andrew Rathbun
+Version: 1.3
+Id: 8e1cb436-dada-413f-845d-f2ed0823cb3a
+RecreateDirectories: true
+Targets:
+    -
+        Name: Directory Opus
+        Category: Apps
+        Path: DirectoryOpus.tkape
+    -
+        Name: Double Commander
+        Category: Apps
+        Path: DoubleCommander.tkape
+    -
+        Name: EF Commander
+        Category: Apps
+        Path: EFCommander.tkape
+    -
+        Name: FreeCommander XE
+        Category: Apps
+        Path: FreeCommander.tkape
+    -
+        Name: Midnight Commander
+        Category: Apps
+        Path: MidnightCommander.tkape
+    -
+        Name: Multi Commander
+        Category: Apps
+        Path: MultiCommander.tkape
+    -
+        Name: One Commander
+        Category: Apps
+        Path: OneCommander.tkape
+    -
+        Name: Q-Dir
+        Category: Apps
+        Path: Q-Dir.tkape
+    -
+        Name: SpeedCommander
+        Category: Apps
+        Path: SpeedCommander.tkape
+    -
+        Name: Tablacus Explorer
+        Category: Apps
+        Path: TablacusExplorer.tkape
+    -
+        Name: Total Commander
+        Category: Apps
+        Path: TotalCommander.tkape
+    -
+        Name: XYplorer
+        Category: Apps
+        Path: XYplorer.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_file_managers or https://alternativeto.net/software/total-commander/.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.
+# Use Everything, Directory Monitor Pro (not free, but use a trial if you don't want to pay), NirSoft's RegistryChangesView, etc to monitor what these applications do to the File System and DOCUMENT!

@@ -1,0 +1,20 @@
+Description: HeidiSQL
+Author: Hyun Yi @hyuunnn
+Version: 1.0
+Id: aac45152-ac7d-4a5e-9f51-523b45b0d9e6
+RecreateDirectories: true
+Targets:
+    -
+        Name: HeidiSQL Backup files (*.sql)
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\HeidiSQL\Backups\
+    -
+        Name: HeidiSQL (tabs.ini)
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\HeidiSQL\
+        FileMask: tabs.ini
+
+# Documentation
+# N/A
+# C:\Users\%user%\AppData\Roaming\HeidiSQL\Backups\query-tab-2020-12-14_13-09-19-655.sql
+# C:\Users\%user%\AppData\Roaming\HeidiSQL\tabs.ini

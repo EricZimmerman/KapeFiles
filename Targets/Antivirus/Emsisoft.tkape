@@ -1,0 +1,12 @@
+Description: Emsisoft Antivirus Logs
+Author: blueskycyber
+Version: 1.0
+Id: f810ea6e-eb10-4788-bff7-77bd83fe15d2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Emsisoft Scan Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Emsisoft\Reports\
+        FileMask: scan*.txt
+        Comment: "Can contain file detection and quarantine info"

@@ -1,0 +1,26 @@
+Description: Bitdefender Antivirus Data
+Author: Drew Ervin, Ahmed Elshaer
+Version: 1.1
+Id: e48c32bf-4069-4f79-acac-4ed181fa84c9
+RecreateDirectories: true
+Targets:
+    -
+        Name: Bitdefender Endpoint Security Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Bitdefender\Endpoint Security\Logs\
+        Recursive: true
+    -
+        Name: Bitdefender Internet Security Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Bitdefender\Desktop\Profiles\Logs\
+        Recursive: true
+    -
+        Name: Bitdefender SQLite DB Files
+        Category: Antivirus
+        Path: C:\Program Files*\Bitdefender*\
+        Recursive: true
+        FileMask: regex:*.+\.(db|db-wal|db-shm)
+        Comment: "Bitdefender SQLite databases"
+
+# Documentation
+# https://anelshaer.medium.com/browsing-history-in-bitdefender-dbs-2d63ba940f92

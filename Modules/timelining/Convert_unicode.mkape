@@ -1,0 +1,16 @@
+Description: Converts the temp timeline which is in Unicode to ASCII so it can be parsed by parse.exe
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 407a520e-b194-42ed-97b3-af159a912126
+BinaryUrl: https://github.com/mdegrazia/KAPE_Tools/raw/master/executables/unicode_2_ascii.exe
+ExportFormat: csv
+Processors:
+    -
+        Executable: tln_tools\unicode_2_ascii.exe
+        CommandLine: -f %destinationDirectory%\temp.tln -o %destinationDirectory%\temp_ascii.tln
+        ExportFormat: csv
+
+# Documentation
+# https://az4n6.blogspot.com/2019/08/triage-collection-and-timeline.html
+# https://www.kroll.com/-/media/kroll/pdfs/webinars/artifact-analysis-timelining-with-kape.pdf?la=en&hash=B6D61EF796311CA636461B502818D3F29A906C0D

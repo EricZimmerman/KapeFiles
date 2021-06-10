@@ -1,0 +1,15 @@
+Description: Ammyy Data
+Author: Drew Ervin
+Version: 1.0
+Id: 606ad937-c32e-49ba-9403-3f1ce501a012
+RecreateDirectories: true
+Targets:
+    -
+        Name: Ammyy Program Data
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Ammyy\
+        Recursive: true
+        Comment: "May not contain traditional log files, but presence of this folder may indicate historical usage"
+
+# Documentation
+# N/A

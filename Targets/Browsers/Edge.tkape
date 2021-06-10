@@ -1,0 +1,14 @@
+Description: Edge
+Author: Phill Moore
+Version: 1.0
+Id: c72bd45c-2a24-4df9-aa0b-3d7048c90337
+RecreateDirectories: true
+Targets:
+    -
+        Name: Edge folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
+        Recursive: true
+
+# Documentation
+# N/A

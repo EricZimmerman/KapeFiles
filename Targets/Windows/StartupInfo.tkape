@@ -1,0 +1,19 @@
+Description: StartupInfo XML Files
+Author: Hadar Yudovich
+Version: 1.0
+Id: 9bb477a3-fa6f-410d-8646-c3f987c147ce
+RecreateDirectories: true
+Targets:
+    -
+        Name: StartupInfo XML Files
+        Category: Persistence
+        Path: C:\Windows\System32\WDI\LogFiles\StartupInfo\
+        FileMask: '*.xml'
+    -
+        Name: StartupInfo XML Files
+        Category: Persistence
+        Path: C:\Windows.old\Windows\System32\WDI\LogFiles\StartupInfo\
+        FileMask: '*.xml'
+
+# Documentation
+# N/A

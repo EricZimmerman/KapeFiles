@@ -1,0 +1,14 @@
+Description: Office Document Cache
+Author: Banaanhangwagen
+Version: 1.0
+Id: 15e92d9c-b02d-4cdf-a86e-bafb3d25af5c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Office Document Cache
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Office\*\OfficeFileCache\
+        Recursive: true
+
+# Documentation
+# https://arsenalrecon.com/2019/10/the-office-document-cache-and-introducing-odc-recon-part-i/

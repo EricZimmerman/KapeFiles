@@ -1,0 +1,21 @@
+Description: Parses System event log using Nirsoft FullEventLogView.exe
+Category: EventLogs
+Author: Barrie Hill
+Version: 1.0
+Id: bb628207-56cc-4293-aa6a-2073d406c8cb
+BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
+ExportFormat: csv
+FileMask: System.evtx
+Processors:
+    -
+        Executable: FullEventLogView.exe
+        CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard System.evtx /scomma %destinationDirectory%\full_system_event_log.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/full_event_log_view.html
+# Uses Nirsoft's FullEventLogView to export event logs to csv
+# FullEventLogView.exe should be in the Modules\bin folder
+# Assumes the msource will include the drive letter. e.g. D:\kape\C
+# Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module SystemFullEventLogView
+# Example: .\kape.exe --msource C:\Windows\System32\winevt\Logs\ --mdest D:\kape\out --module SystemFullEventLogView

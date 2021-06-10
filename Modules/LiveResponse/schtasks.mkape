@@ -1,0 +1,21 @@
+Description: Displays all scheduled tasks
+Category: LiveResponse
+Author: Brian Maloney
+Version: 1.0
+Id: 66d26feb-6dd7-4b12-b88b-b43ee17cd2c7
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\schtasks.exe
+        CommandLine: /Query /V /FO CSV
+        ExportFormat: csv
+        ExportFile: scheduled_tasks.csv
+    -
+        Executable: C:\Windows\System32\schtasks.exe
+        CommandLine: /Query /XML
+        ExportFormat: xml
+        ExportFile: scheduled_tasks.csv
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows/win32/taskschd/schtasks
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks

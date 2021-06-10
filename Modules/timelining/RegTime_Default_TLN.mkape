@@ -1,0 +1,20 @@
+Description: 'RegTime parse DEFAULT hive into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: dcac0acd-7236-4b60-aa34-65a701d49481
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/regtime.exe
+ExportFormat: txt
+FileMask: DEFAULT
+Processors:
+    -
+        Executable: tln_tools\regtime.exe
+        CommandLine: -m HKLM_DEFAULT\ -r %sourceFile% -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" and regtime.exe in the Modules\bin\tln_tools folder
+# Add in key "computerName" using --mvars computerName:XXXX

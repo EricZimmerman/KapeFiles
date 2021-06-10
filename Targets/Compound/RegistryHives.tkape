@@ -1,0 +1,17 @@
+Description: System and user related Registry hives
+Author: Eric Zimmerman
+Version: 1.0
+Id: 76af6086-bd0b-429f-bfd7-4a8e8ff8138f
+RecreateDirectories: true
+Targets:
+    -
+        Name: System Registry Files
+        Category: Registry
+        Path: RegistryHivesSystem.tkape
+    -
+        Name: User Level Registry Files
+        Category: Registry
+        Path: RegistryHivesUser.tkape
+
+# Documentation
+# N/A

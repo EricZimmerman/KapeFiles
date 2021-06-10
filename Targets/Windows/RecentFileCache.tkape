@@ -1,0 +1,21 @@
+Description: RecentFileCache
+Author: Eric Zimmerman
+Version: 1.0
+Id: 0d93d3fc-1b09-4894-b21f-dddc7f269934
+RecreateDirectories: true
+Targets:
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: RecentFileCache.bcf
+    -
+        Name: RecentFileCache
+        Category: ApplicationCompatability
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
+        FileMask: RecentFileCache.bcf
+
+# Documentation
+# https://digital-forensics.sans.org/media/poster-windows-forensics-final.pdf
+# http://journeyintoir.blogspot.com/2013/12/revealing-recentfilecachebcf-file.html
+# https://www.youtube.com/watch?v=ZKlyu-HOvxY

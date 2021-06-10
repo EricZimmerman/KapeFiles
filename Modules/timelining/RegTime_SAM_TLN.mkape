@@ -1,0 +1,20 @@
+Description: 'RegTime parse SAM hive into TLN format'
+Category: Timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 3d749ad7-3bc6-4843-bcb7-0d9a71dd4c16
+BinaryUrl: https://github.com/keydet89/Tools/raw/master/exe/regtime.exe
+ExportFormat: txt
+FileMask: SAM
+Processors:
+    -
+        Executable: tln_tools\regtime.exe
+        CommandLine: -m HKLM_SAM\ -r %sourceFile% -s %computerName%
+        ExportFormat: txt
+        ExportFile: temp.tln
+        Append: true
+
+# Documentation
+# https://github.com/keydet89/Tools/tree/master/exe
+# Place "p2x5124.dll" and regtime.exe in the Modules\bin\tln_tools folder
+# Add in key "computerName" using --mvars computerName:XXXX

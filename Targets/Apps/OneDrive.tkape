@@ -1,0 +1,26 @@
+Description: Microsoft OneDrive Storage Files and Metadata
+Author: Chad Tilbury
+Version: 1.0
+Id: f3c680ca-0646-48cc-a471-5f484e22b1cf
+RecreateDirectories: true
+Targets:
+    -
+        Name: OneDrive User Files
+        Category: Apps
+        Path: C:\Users\%user%\OneDrive*\
+        Recursive: true
+        Comment: "Caution -- This target will collect OneDrive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
+    -
+        Name: OneDrive Metadata Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\logs\
+        Recursive: true
+    -
+        Name: OneDrive Metadata Settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\settings\
+        Recursive: true
+
+# Documentation
+# https://www.sans.org/blog/cloud-storage-acquisition-from-endpoint-devices/
+# https://www.forensicfocus.com/forums/general/onedrive-files-on-demand-windows-10-storage-sense-settings/

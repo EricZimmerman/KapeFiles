@@ -1,0 +1,27 @@
+Description: iTunes Backups
+Author: Tony Knutson
+Version: 2.0
+Id: 7b4a98d9-b36a-40be-bacc-ad0102b0a8c3
+RecreateDirectories: true
+Targets:
+    -
+        Name: iTunes Backup Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Apple\Mobilesync\Backup\
+        Recursive: true
+
+    -
+        Name: iTunes Backup Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Apple Computer\Mobilesync\Backup\
+        Recursive: true
+
+    -
+        Name: iTunes Backup Folder - iOS13
+        Category: Communications
+        Path: C:\Users\%user%\Apple\Mobilesync\Backup\
+
+# Documentation
+# https://cyberforensicator.com/2017/03/01/how-to-find-passwords-for-encrypted-itunes-backups/
+# https://farleyforensics.com/2019/04/14/forensic-analysis-of-itunes-backups/
+# https://www.digitalforensics.com/blog/itunes-backup-forensic-analysis/

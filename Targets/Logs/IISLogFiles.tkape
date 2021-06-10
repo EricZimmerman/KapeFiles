@@ -1,0 +1,34 @@
+Description: IIS Log Files
+Author: Troy Larson
+Version: 2.0
+Id: 701573f6-0ce1-454d-af41-612713e22af5
+RecreateDirectories: true
+Targets:
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\Windows\System32\LogFiles\W3SVC*\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\Windows.old\Windows\System32\LogFiles\W3SVC*\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\inetpub\logs\LogFiles\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\inetpub\logs\LogFiles\W3SVC*\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\Resources\Directory\*\LogFiles\Web\W3SVC*\
+        FileMask: '*.log'
+
+# Documentation
+# https://www.sumologic.com/blog/iis-log-files-location/

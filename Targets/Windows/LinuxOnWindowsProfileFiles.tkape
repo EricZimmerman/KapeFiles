@@ -1,0 +1,29 @@
+Description: Linux on Windows Profile Files
+Author: Troy Larson
+Version: 1.0
+Id: 9718a129-21f9-4354-a06f-2eddb112ab03
+RecreateDirectories: true
+Targets:
+    -
+        Name: .bash_history
+        Category: Windows Linux Profile
+        Path: C:\Users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\
+        FileMask: '.bash_history'
+    -
+        Name: .bash_logout
+        Category: Windows Linux Profile
+        Path: C:\Users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\
+        FileMask: '.bash_logout'
+    -
+        Name: .bashrc
+        Category: Windows Linux Profile
+        Path: C:\Users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\
+        FileMask: '.bashrc'
+    -
+        Name: .profile
+        Category: Windows Linux Profile
+        Path: C:\Users\%user%\AppData\Local\Packages\*\LocalState\rootfs\home\*\
+        FileMask: '.profile'
+
+# Documentation
+# N/A

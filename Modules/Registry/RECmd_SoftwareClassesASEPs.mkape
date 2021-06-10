@@ -1,0 +1,23 @@
+Description: 'RECmd: SoftwareClassesASEPs'
+Category: Registry
+Author: Andrew Rathbun
+Version: 1.0
+Id: 0e38b045-6512-41c2-962f-49a9da37b02f
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: RECmd\RECmd.exe
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\SoftwareClassesASEPs.reb --nl false --csv %destinationDirectory% -q
+        ExportFormat: csv
+
+# Documentation
+# https://github.com/EricZimmerman/RECmd
+# https://binaryforay.blogspot.com/2015/05/introducing-recmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/registry-explorer-recmd/
+# https://www.andreafortuna.org/2020/03/04/recmd-command-line-tool-for-windows-registry-analysis/
+# https://www.sans.org/blog/finding-registry-malware-persistence-with-recmd/
+# https://www.youtube.com/watch?v=tk9XsMHzPlM
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# Uses the SoftwareClassesASEPs.reb batch command file. This file should also be in same directory as RECmd.exe
+# Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.
