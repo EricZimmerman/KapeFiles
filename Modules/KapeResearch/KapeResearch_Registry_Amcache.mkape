@@ -1,15 +1,15 @@
-Description: 'RECmd: Convert UsrClass.dat registry hive to JSON for research'
+Description: 'RECmd: Convert Amcache.hve registry hive to JSON for research'
 Category: Registry
 Author: Andrew Rathbun
 Version: 1.0
-Id: 47442088-63d1-4f1d-9c7c-3ef47d100a13
+Id: b8e15fde-3af7-40ce-86da-b71fb95b3e14
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: json
-FileMask: UsrClass.dat
+FileMask: Amcache.hve
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn * --nl false --json %destinationDirectory% --jsonf UsrClass.json -q
+        CommandLine: -f %sourceFile% --kn * --nl false --json %destinationDirectory% --jsonf Amcache.json -q
         ExportFormat: json
 
 # Documentation
