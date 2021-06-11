@@ -1,11 +1,15 @@
 Description: 'RECmd: Convert registry hives to JSON for research'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: b99570f0-2fce-499d-b13a-d20cbb962f25
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: json
 Processors:
+    -
+        Executable: KapeResearch_Registry_Amcache.mkape
+        CommandLine: ""
+        ExportFormat: ""
     -
         Executable: KapeResearch_Registry_NTUSER.mkape
         CommandLine: ""
@@ -30,7 +34,6 @@ Processors:
         Executable: KapeResearch_Registry_UsrClass.mkape
         CommandLine: ""
         ExportFormat: ""
-
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
