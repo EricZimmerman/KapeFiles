@@ -1,0 +1,16 @@
+Description: 'BMC-Tools: RDP Bitmap Cache parser'
+Category: Remote Access
+Author: dingtoffee
+Version: 1.0
+Id: fcb0083d-11d7-4305-9577-2379cd243bd0
+BinaryUrl: https://github.com/dingtoffee/bmc-tools/blob/master/dist/bmc-tools.exe
+FileMask: "*.bmc"
+ExportFormat: ""
+Processors:
+    -
+        Executable: bmc-tools.exe
+        CommandLine: -s %sourceFile% -d %destinationDirectory% -b
+        ExportFormat: ""
+
+# Documentation
+# https://github.com/ANSSI-FR/bmc-tools
