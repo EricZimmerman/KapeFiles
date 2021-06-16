@@ -1,6 +1,6 @@
 Description: $T
-Author: Eric Zimmerman
-Version: 1.0
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.1
 Id: 8c568aa0-9a67-4035-9720-1423770bc29a
 RecreateDirectories: true
 Targets:
@@ -11,6 +11,15 @@ Targets:
         FileMask: $Tops:$T
         AlwaysAddToQueue: true
         SaveAsFileName: $T
+    -
+        Name: $T
+        Category: FileSystem
+        Path: C:\$Extend\$RmMetadata\$TxfLog\
+        FileMask: $T
+        AlwaysAddToQueue: true
+        SaveAsFileName: $T
+        Comment: "This is for the use case when you're running this Target against a mounted VHDX with these files already pulled from a live system. The above Target is looking for the files as an ADS whereas once they are already pulled they no longer match the ADS criteria and therefore are missed"
+
 
 # Documentation
 # TxF Old Page Stream (TOPS) file Used to store data that has been overwritten inside a currently active transaction
