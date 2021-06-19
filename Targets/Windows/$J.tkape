@@ -21,7 +21,7 @@ Targets:
     -
         Name: $J
         Category: FileSystem
-        Path: C:\
+        Path: C:\$Extend\
         FileMask: $J
         AlwaysAddToQueue: true
         SaveAsFileName: $J
@@ -29,7 +29,7 @@ Targets:
     -
         Name: $Max
         Category: FileSystem
-        Path: C:\
+        Path: C:\$Extend\
         FileMask: $Max
         AlwaysAddToQueue: true
         SaveAsFileName: $Max
