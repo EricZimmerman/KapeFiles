@@ -1,5 +1,5 @@
 Description: 'RECmd: Convert UsrClass.dat registry hive to JSON for research'
-Category: Registry
+Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
 Id: 47442088-63d1-4f1d-9c7c-3ef47d100a13

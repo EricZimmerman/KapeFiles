@@ -1,5 +1,5 @@
 Description: 'RECmd: Convert Amcache.hve registry hive to JSON for research'
-Category: Registry
+Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
 Id: b8e15fde-3af7-40ce-86da-b71fb95b3e14

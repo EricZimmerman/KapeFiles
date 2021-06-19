@@ -1,5 +1,5 @@
 Description: 'RECmd: Convert SYSTEM registry hive to JSON for research'
-Category: Registry
+Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
 Id: 97f567c7-4f9e-4136-a488-630838daf37a
