@@ -1,5 +1,5 @@
 Description: 'RECmd: Convert NTUSER.dat registry hive to JSON for research'
-Category: Registry
+Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
 Id: 64903403-bbf0-4bb5-bec0-023753f273d3
