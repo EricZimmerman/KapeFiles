@@ -1,0 +1,29 @@
+Description: Name of application/artifact here # Required
+Category: Misc # Required, this value will be the name of the folder where the parsed Module output is stored
+Author: FirstName LastName # Make sure you get credit for your work
+Version: 1.0 # Required, iterate as necessary
+Id: 0256a455-1248-4e30-8175-727679189ddd # Required, unique GUID is required for every KAPE Target/Module
+BinaryUrl: https://url.goes.here.com # Required
+ExportFormat: csv # Required, this is the default ExportFormat in the instance the user chooses a format that is not listed below, or simply chooses Default within gkape
+WaitTimeout: 0 # Optional, this specifies the number of minutes KAPE should wait for a Module to finish
+FileMask: FileName.exe # You can list file.exe here or do something similar to this using RegEx: regex:(2019|DSC|Log).+\.(jpg|txt)
+Processors:
+    -
+        Executable: Folder\binary.exe # This needs to match the exact name of the binary you're calling and, ideally, the name of the binary listed in BinaryUrl above
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% # This command will need to reflect the ExportFormat listed below. KAPE will execute this command when the user chooses CSV, for example
+        ExportFormat: csv # This needs to match the format the command above is exporting
+    -
+        Executable: Folder\binary.exe # Please note, this is effectively pointing to .\KAPE\Modules\bin\* where * is whatever you put in the Executable field. If you have a binary that is within a folder, you're going to want to make sure your Executable field looks something like this: Folder\binary.exe
+        CommandLine: -d %sourceDirectory% --xml %destinationDirectory% # https://ericzimmerman.github.io/KapeDocs/#!Pages\2.2-Modules.md#CommandLine is a great resource for creating command lines for Modules
+        ExportFormat: xml
+    -
+        Executable: Folder\binary.exe # If your binary is sitting at the root of .\KAPE\Modules\bin, then just list binary.exe here
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# https://ericzimmerman.github.io/KapeDocs/#!Pages\2.2-Modules.md
+# Include any and all documentation for your module, if any. If none, please include N/A instead. N/A is standard among all Targets/Modules without any documentation present and it makes it easy for one to search across all Targets/Modules that need documentation to be added.
+# Be sure to follow the steps within the Pull Request template to ensure there are no syntax errors prior to doing to Pull Request!
+# If there are any questions, just make an Issue on the KapeFiles repository and we'll get it figured out.
+# Please end all Modules with a blank new line below your last # line under Documentation. AKA hit enter once and save prior to doing a PR.
