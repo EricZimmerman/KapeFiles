@@ -1,0 +1,32 @@
+Description: mRemoteNG
+Author: Markus Einarsson (@einarssonm)
+Version: 1.0
+Id: 486c2b29-ae39-4418-8fb4-2d855e9387f9
+RecreateDirectories: true
+Targets:
+    -
+        Name: mRemoteNG Logs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\mRemoteNG\
+        FileMask: mRemoteNG.log
+        Comment: Contains log entries for remote connections
+    -
+        Name: mRemoteNG Connection Configuration and Backups
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\mRemoteNG\
+        FileMask: confCons.xml*
+        Comment: Contains connection config, often with obfuscated credentials
+    -
+        Name: mRemoteNG Program Settings
+        Category: Communications
+        Path: C:\Users\%user%\AppData\*\mRemoteNG\
+        Recursive: true
+        FileMask: user.config
+        Comment: Contains user-specific program settings
+
+# Documentation
+# https://mremoteng.org/
+# https://vk9-sec.com/exploiting-mremoteng/
+# mRemoteNG is an open source, multi-protocol, remote connections manager for Windows.
+# It handles connections for RDP, VNC, SSH, Telnet, rlogin and other protocols.
+# The stored credentials are encrypted with a static key and base64 encoded.
