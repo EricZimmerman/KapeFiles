@@ -1,0 +1,36 @@
+Description: Name of application/artifact here
+Category: Misc
+Author: FirstName LastName
+Version: 1.0
+Id: b61ccd7a-3f8a-4347-b5ac-21486aaa76c4
+BinaryUrl: https://url.goes.here.com
+ExportFormat: csv
+FileMask: FileName.exe
+Processors:
+    -
+        Executable: Module1.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Module2.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Module3.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Module4.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Module5.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Module6.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# N/A if no Documentation present. End with new line. Be sure to check out the CompoundModuleGuide.guide for more information!
