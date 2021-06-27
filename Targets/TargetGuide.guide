@@ -16,7 +16,7 @@ Targets:
         MinSize: 1000 # Optional, in bytes.
         MaxSize: 10000 # Optional, in bytes.
         Comment: "Locates all evidence to solve the case" # Optional, but it helps to give a brief overview of what is grabbed. Go into more detail in the Documentation section below.
-this test is not YAML compliant
+
 # Documentation
 # https://ericzimmerman.github.io/KapeDocs/#!Pages\2.1-Targets.md
 # Include any and all documentation for your artifact, if any. If none, please include N/A instead. N/A is standard among all Targets without any documentation present and it makes it easy for one to search across all Targets that need documentation to be added.

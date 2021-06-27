@@ -1,0 +1,17 @@
+Description: PortProxy configuration
+Category: LiveResponse
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: a7e6344e-2680-447f-223e-e79ad3aa0e65
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\netsh.exe
+        CommandLine: interface portproxy show all
+        ExportFormat: txt
+        ExportFile: netsh_portproxy.txt
+
+# Documentation
+#   https://www.fireeye.com/blog/threat-research/2019/01/bypassing-network-restrictions-through-rdp-tunneling.html
+#   https://adepts.of0x.cc/netsh-portproxy-code/
+#   https://www.dfirnotes.net/portproxy_detection/
