@@ -1,6 +1,6 @@
 Description: Kaseya Data
-Author: Drew Ervin
-Version: 1.0
+Author: Drew Ervin and Andrew Rathbun
+Version: 1.1
 Id: bb83f860-5a10-4471-821e-9ef4ab6f856c
 RecreateDirectories: true
 Targets:
@@ -52,6 +52,12 @@ Targets:
         Path: C:\Windows.old\Windows\Temp\
         FileMask: KASetup.log
         Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
+    -
+        Name: Kaseya Agent Edge Service Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\
+        Recursive: true
+        Comment: "https://www.huntress.com/blog/rapid-response-kaseya-vsa-mass-msp-ransomware-incident"
 
 # Documentation
 # N/A
