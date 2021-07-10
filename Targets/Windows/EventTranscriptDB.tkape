@@ -11,6 +11,7 @@ Targets:
         FileMask: 'EventTranscript.db*'
 
 # Documentation
+# https://github.com/rathbuna/EventTranscript.db-Research
 # https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript
 # Articles will be at the bottom of the landing page above, more to come!
 # Parse with SQLECmd using the SQLECmd Module
