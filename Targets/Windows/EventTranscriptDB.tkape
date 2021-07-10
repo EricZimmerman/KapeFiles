@@ -1,0 +1,16 @@
+Description: EventTranscript.db
+Author: Andrew Rathbun
+Version: 1.0
+Id: 4a5c1487-8894-4b7a-8fba-71a1824bb9ab
+RecreateDirectories: true
+Targets:
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+
+# Documentation
+# https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript
+# Articles will be at the bottom of the landing page above, more to come!
+# Parse with SQLECmd using the SQLECmd Module
