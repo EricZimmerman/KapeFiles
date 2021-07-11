@@ -57,6 +57,8 @@ If you need help with creating Targets, check out [this guide](https://ericzimme
 
 ## Modules
 
+If you need help with creating Modules, please consult the [Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleGuide.guide), [Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleTemplate.template), [Compound Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleGuide.guide) or [Compound Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleTemplate.template) to ensure the Module(s) follow the same format.
+
 Be sure to point the BinaryUrl property to the download location in Module files!
 
 All other info including requirements, etc. should be documented at the end of the Module in comment blocks.
