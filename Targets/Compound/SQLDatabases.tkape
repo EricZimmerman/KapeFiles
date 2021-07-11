@@ -574,7 +574,20 @@ Targets:
         Recursive: true
         FileMask: regex:*.+\.(db|db-wal|db-shm)
         Comment: "Bitdefender SQLite databases"
+        
+# Windows - EventTranscript.db - EventTranscriptDB.tkape
 
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+        
 # Documentation
 # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
 # This Target will likely be updated often as more SQLECmd Maps are created
