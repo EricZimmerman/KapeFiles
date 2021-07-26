@@ -14,5 +14,6 @@ Processors:
 
 # Documentation
 # https://github.com/keydet89/RegRipper3.0
+# https://github.com/mdegrazia/KAPE_Tools for any issues with this Module
 # Add in a Key with the name "dateRange", and set the variable to the desired date range in the fomart "mm/dd/yyyy-mm/dd/yyyy"
 # Must be run AFTER the mini timeline is generated
