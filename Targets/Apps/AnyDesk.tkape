@@ -1,6 +1,6 @@
 Description: AnyDesk
-Author: Andrew Rathbun and Scott Hanson
-Version: 1.1
+Author: Andrew Rathbun, Scott Hanson, and Nicole Jao
+Version: 1.2
 Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
 RecreateDirectories: true
 Targets:
@@ -33,7 +33,12 @@ Targets:
         Category: Communications
         Path: C:\ProgramData\AnyDesk\
         FileMask: 'connection_trace.txt'
-        Comment: "Collects the connection trace log from programdata"
+        Comment: "Collects the connection trace log from ProgramData"
+    -
+        Name: AnyDesk Logs - System User Account
+        Category: Communications
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\
+        Comment: "Collects the logs associated with the System user account"
 
 # Documentation
 # https://support.anydesk.com/Trace_Files
