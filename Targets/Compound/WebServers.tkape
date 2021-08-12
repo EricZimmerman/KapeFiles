@@ -1,0 +1,25 @@
+Description: Logs from all known web server applications and supporting services
+Author: Eric Capuano
+Version: 1.0
+Id: 38de27ae-5047-404b-a7e1-3c99071724d5
+RecreateDirectories: True
+Targets:
+    -
+        Name: Apache Access Logs
+        Category: Logs
+        Path: ApacheAccessLog.tkape # Required
+    -
+        Name: IIS Logs
+        Category: Logs
+        Path: IISLogFiles.tkape
+    -
+        Name: NGINX Logs
+        Category: Logs
+        Path: NGINXLogs.tkape
+    -
+        Name: MSSQL Error Logs
+        Category: Logs
+        Path: MSSQLErrorLog.tkape
+
+# Documentation
+# A target to run on systems that may be hosting web servers. Helpful in determining whether web application exploitation is a contributing factor.
