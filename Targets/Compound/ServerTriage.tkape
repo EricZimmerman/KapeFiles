@@ -7,7 +7,7 @@ Targets:
     -
         Name: WebServers
         Category: Compound
-        Path: WebServers.tkape # Required
+        Path: WebServers.tkape
     -
         Name: Exchange
         Category: Compound
