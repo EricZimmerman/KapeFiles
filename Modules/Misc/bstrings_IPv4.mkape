@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for IP version 4 addresses
+Category: KeywordSearches
+Author: Chris Kudless
+Version: 1.0
+Id: 86b15511-7b40-435f-a3a3-197ee32dc394
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+FileMask: "*.*"
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  --csv %destinationDirectory% --lr ipv4 --ro
+        ExportFormat: csv
+        ExportFile: IPv4-Addresses_%fileName%.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
