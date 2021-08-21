@@ -1,5 +1,5 @@
 Description: 'RECmd: Convert SECURITY registry hive to JSON for research'
-Category: Registry
+Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
 Id: 2ef7dd84-58b7-4d17-a5e8-fd39cda3be4b

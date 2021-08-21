@@ -1,6 +1,6 @@
 Description: Event Trace Logs
 Author: Mark Hallman
-Version: 1.0
+Version: 1.1
 Id: af494526-9e44-4548-9d29-f088eafa6f3d
 RecreateDirectories: true
 Targets:
@@ -49,6 +49,11 @@ Targets:
         Category: Event Trace Logs
         Path: C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\
         FileMask: energy-ntkl.etl
+    -
+        Name: Delivery Optimization Trace Logs
+        Category: Event Trace Logs
+        Path: C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\Logs\
+        FileMask: '*.etl*'
 
 # Documentation
 # https://www.youtube.com/watch?v=TUR-L9AtzQE

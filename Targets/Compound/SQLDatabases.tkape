@@ -1,6 +1,6 @@
 Description: SQLDatabases Target for use with SQLECmd Module
 Author: Andrew Rathbun
-Version: 1.2
+Version: 1.3
 Id: 61d2909c-dcf2-481f-9169-53ea0c2455ba
 RecreateDirectories: true
 Targets:
@@ -574,6 +574,19 @@ Targets:
         Recursive: true
         FileMask: regex:*.+\.(db|db-wal|db-shm)
         Comment: "Bitdefender SQLite databases"
+
+# Windows - EventTranscript.db - EventTranscriptDB.tkape
+
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
 
 # Documentation
 # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
