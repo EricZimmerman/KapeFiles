@@ -8,16 +8,16 @@ ExportFormat: json
 Processors:
     -
         Executable: SOFELK_Parser_EvtxECmd.mkape
-        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
-        ExportFormat: json
+        CommandLine: ""
+        ExportFormat: ""
     -
         Executable: SOFELK_Parser_LEcmd.mkape
-        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
-        ExportFormat: json
+        CommandLine: ""
+        ExportFormat: ""
     -
         Executable: SOFELK_Parser_MFTECmd.mkape
-        CommandLine: -f %sourceFile% --json %destinationDirectory%
-        ExportFormat: json
+        CommandLine: ""
+        ExportFormat: ""
 
 # Documentation
 # BLOG COMING
