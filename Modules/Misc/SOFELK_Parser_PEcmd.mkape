@@ -3,7 +3,7 @@ Category: SOF-ELK
 Author: Tony Knutson and Andrew Rathbun
 Version: 1.0
 Id: 5da0b20f-4dec-4f6e-8baf-0585f5b1f4d3
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip
 ExportFormat: json
 Processors:
     -
