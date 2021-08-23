@@ -2,13 +2,13 @@ Description: Parsing for SOF-ELK Instance
 Category: SOF-ELK
 Author: Tony Knutson and Andrew Rathbun
 Version: 1.0
-Id: 7e5e99c0-c97e-485a-baa9-3a284852bc69
-BinaryUrl: https://ericzimmerman.github.io/
+Id: 5da0b20f-4dec-4f6e-8baf-0585f5b1f4d3
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip
 ExportFormat: json
 Processors:
     -
-        Executable: EvtxECmd\EvtxECmd.exe
-        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
+        Executable: PECmd.exe
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
         ExportFormat: json
 
 # Documentation
