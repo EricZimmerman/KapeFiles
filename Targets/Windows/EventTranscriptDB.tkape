@@ -28,9 +28,9 @@ Targets:
 # In reference to the Office Diagnostic Logs, Windows appears to save a local copy of all diagnostic logs relating to the Microsoft Office applications. Here's what my folder looked like:
 #
 # C:\Users\%User%\AppData\Local\Temp\Diagnostics                                            2021-08-25 09:58:32
-# 
+#
 # Name                                                       Size Type                           Modified  Attr
-# 
+#
 # WINWORD                                                         File Folder              Thursday 14:16 -------
 #   App_16294744526865<truncated>0E30846.log              0 bytes Text Document              Friday 11:48 -a-----
 #   App_16294744526856<truncated>0E30846.log               550 KB Text Document              Friday 11:48 -a-----
