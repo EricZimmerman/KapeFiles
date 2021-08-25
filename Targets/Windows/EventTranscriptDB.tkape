@@ -1,4 +1,4 @@
-Description: EventTranscript.db
+Description: EventTranscript.db (and other files related to Telemetry and Diagnostic Data)
 Author: Andrew Rathbun and Josh Mitchell
 Version: 1.2
 Id: 4a5c1487-8894-4b7a-8fba-71a1824bb9ab
@@ -25,7 +25,7 @@ Targets:
 # https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript
 # Articles will be at the bottom of the landing page above, more to come!
 # Parse with SQLECmd using the SQLECmd Module
-# In reference to the Office Diagnostic Logs, here's what my my folder looked like:
+# In reference to the Office Diagnostic Logs, Windows appears to save a local copy of all diagnostic logs relating to the Microsoft Office applications. Here's what my folder looked like:
 #
 # C:\Users\%User%\AppData\Local\Temp\Diagnostics                                            2021-08-25 09:58:32
 # 
