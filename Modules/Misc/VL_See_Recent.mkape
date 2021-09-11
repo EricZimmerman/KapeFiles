@@ -10,6 +10,7 @@ Processors:
         Executable: VL_See_Recent.exe
         CommandLine: "%sourceDirectory% %destinationDirectory%"
         ExportFormat: txt
+
 # Documentation
 # https://github.com/northloopforensics/VL_See_Recent
 # Executable to parse recent file activity from the VLC vlc-qt-interface.ini file.
