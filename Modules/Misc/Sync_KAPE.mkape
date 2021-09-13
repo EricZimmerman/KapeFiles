@@ -1,7 +1,7 @@
 Description: 'KAPE: Sync for new Targets/Modules'
-Category: KAPE
+Category: KAPESyncSuccess
 Author: Andrew Rathbun, Sean Straw, and Isaiah Jensen
-Version: 1.1
+Version: 1.2
 Id: 371e0944-8025-4690-9c79-15faafa561a9
 BinaryUrl: https://s3.amazonaws.com/cyb-us-prd-kape/kape.zip
 ExportFormat: ""
