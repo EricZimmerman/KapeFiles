@@ -10,10 +10,12 @@ Processors:
         Executable: browsinghistoryview.exe
         CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory%\Users /VisitTimeFilterType 1 /ShowTimeInGMT 1 /scomma %destinationDirectory%\BrowsingHistory.csv
         ExportFormat: csv
+        ExportFile: NirSoftBrowsingHistoryViewConsoleOutput.txt
     -
         Executable: browsinghistoryview.exe
         CommandLine: /HistorySource 3 /HistorySourceFolder %sourceDirectory%\Users /VisitTimeFilterType 1 /ShowTimeInGMT 1 /sverhtml  %destinationDirectory%\BrowsingHistory.html
         ExportFormat: html
+        ExportFile: NirSoftBrowsingHistoryViewConsoleOutput.txt
 
 # Documentation
 # Uses Nirsoft's BrowsingHistoryView to export browsing history for all users to CSV
