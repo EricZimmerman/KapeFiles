@@ -10,6 +10,7 @@ Processors:
         Executable: SumECmd.exe
         CommandLine: -d %sourceDirectory%\Windows\System32\LogFiles\SUM --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: SumECmdConsoleLog.txt
 
 # Documentation
 # https://advisory.kpmg.us/blog/2021/digital-forensics-incident-response.html
