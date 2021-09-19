@@ -17,4 +17,4 @@ Targets:
 # https://github.com/EricZimmerman/Sum - be sure to follow the guide here for repairing the DB prior to parsing
 # https://github.com/brimorlabs/KStrike
 # https://docs.microsoft.com/en-us/windows-server/administration/user-access-logging/manage-user-access-logging
-# LogFile.tkape Target acquires this as well, but this is a more specific Target in that it ONLY grabs the SUM Database artifacts and nothing else, unlike LogFiles.tkape
+# LogFiles.tkape Target acquires this as well, but this is a more specific Target in that it ONLY grabs the SUM Database artifacts and nothing else, unlike LogFiles.tkape
