@@ -10,10 +10,12 @@ Processors:
         Executable: SQLECmd\SQLECmd.exe
         CommandLine: -d %sourceDirectory% --hunt --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: SQLECmdHuntResults.txt
     -
         Executable: SQLECmd\SQLECmd.exe
         CommandLine: -d %sourceDirectory% --hunt --json %destinationDirectory%
         ExportFormat: json
+        ExportFile: SQLECmdHuntResults.txt
 
 # Documentation
 # https://github.com/EricZimmerman/SQLECmd
