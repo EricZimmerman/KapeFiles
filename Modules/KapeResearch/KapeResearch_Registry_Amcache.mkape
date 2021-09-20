@@ -21,4 +21,4 @@ Processors:
 # https://www.youtube.com/watch?v=tk9XsMHzPlM
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.
-# This module will convert the entire content any registry hives into JSON, which is helpful for viewing all that the hives contain in an easily searchable way
+# This Module will convert the entire content any registry hives into JSON, which is helpful for viewing all that the hives contain in an easily searchable way

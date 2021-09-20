@@ -1,15 +1,15 @@
-Description: 'RECmd: Convert NTUSER.dat registry hive to JSON for research'
+Description: 'RECmd: Convert DEFAULT registry hive to JSON for research'
 Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
-Id: 64903403-bbf0-4bb5-bec0-023753f273d3
+Id: 380721d4-b47b-4654-8306-5bfda686b2e2
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: json
-FileMask: NTUSER.dat
+FileMask: DEFAULT
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf NTUSER_ROOT.json -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf DEFAULT.json -q
         ExportFormat: json
 
 # Documentation
@@ -22,4 +22,3 @@ Processors:
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.
 # This Module will convert the entire content any registry hives into JSON, which is helpful for viewing all that the hives contain in an easily searchable way
-# You will want to rename the hive to NTUSER_ROOT.json or similar. If you run all of the KapeResearch Modules at the same time, they will write over each other and you'll only end up with a single ROOT.json file
