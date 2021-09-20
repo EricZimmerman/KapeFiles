@@ -17,4 +17,4 @@ Processors:
 # https://www.youtube.com/watch?v=YvMg3p7O6ro
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # Be sure to run evtxecmd.exe --sync within your .\KAPE\Modules\bin\EvtxECmd directory to ensure you have the latest maps!
-# This module will convert any Event Logs into XML, which is helpful for viewing all of the data stored within the various Event Logs on a system
+# This Module will convert any Event Logs into XML, which is helpful for viewing all of the data stored within the various Event Logs on a system
