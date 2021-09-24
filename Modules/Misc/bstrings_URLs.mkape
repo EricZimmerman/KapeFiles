@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for URLs
+Category: KeywordSearches
+Author: Chris Kudless
+Version: 1.0
+Id: 2a7ec6bd-6228-4542-9b4b-002957b26661
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr url3986
+        ExportFormat: txt
+        ExportFile: URLs.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
