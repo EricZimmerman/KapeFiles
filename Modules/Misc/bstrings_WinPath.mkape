@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for Windows style paths
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: a9768e73-23ba-4d90-8b6d-ae26b15f207d
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr win_path
+        ExportFormat: txt
+        ExportFile: WinPath.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
