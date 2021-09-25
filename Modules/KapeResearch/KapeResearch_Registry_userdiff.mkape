@@ -1,15 +1,15 @@
-Description: 'RECmd: Convert UsrClass.dat Registry hive to JSON for research'
+Description: 'RECmd: Convert userdiff Registry hive to JSON for research'
 Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
-Id: 47442088-63d1-4f1d-9c7c-3ef47d100a13
+Id: a3c22935-eac7-41aa-8e6c-6261ad8d25ac
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: json
-FileMask: UsrClass.dat
+FileMask: userdiff
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf UsrClass.json -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf userdiff.json -q
         ExportFormat: json
 
 # Documentation

@@ -1,4 +1,4 @@
-Description: 'EvtxECmd: Convert log files to XML for research'
+Description: 'EvtxECmd: Convert Windows Event Log files (.evtx) to XML for research'
 Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0

@@ -1,15 +1,15 @@
-Description: 'RECmd: Convert UsrClass.dat Registry hive to JSON for research'
+Description: 'RECmd: Convert ELAM Registry hive to JSON for research'
 Category: KapeResearch
 Author: Andrew Rathbun
 Version: 1.0
-Id: 47442088-63d1-4f1d-9c7c-3ef47d100a13
+Id: 27f6f114-b5cf-46e0-b344-2998506535d7
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: json
-FileMask: UsrClass.dat
+FileMask: ELAM
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf UsrClass.json -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf ELAM.json -q
         ExportFormat: json
 
 # Documentation
