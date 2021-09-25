@@ -1,4 +1,4 @@
-Description: Use bstrings to GREP for URLs
+Description: Use bstrings to GREP for US Phone Numbers
 Category: KeywordSearches
 Author: Andrew Rathbun
 Version: 1.0
@@ -8,9 +8,9 @@ ExportFormat: txt
 Processors:
     -
         Executable: bstrings.exe
-        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr url3986
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr usPhone
         ExportFormat: txt
-        ExportFile: URLs.txt
+        ExportFile: USPhoneNumbers.txt
 
 # Documentation
 # https://github.com/EricZimmerman/bstrings
