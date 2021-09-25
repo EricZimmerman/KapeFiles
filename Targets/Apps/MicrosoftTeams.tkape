@@ -1,6 +1,6 @@
 Description: Microsoft Teams
 Author: Matt Dawson
-Version: 2.0
+Version: 3.0
 Id: 7d449255-917e-4894-a46d-dcbeee2289b5
 RecreateDirectories: true
 Targets:
@@ -28,11 +28,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\
         FileMask: "desktop-config.json"
         Comment: "JSON config file for Teams"
-    -
-        Name: Microsoft Teams Logs (Windows 11)
-        Category: Apps
-        Path: C:\Users\%User%\AppData\Local\Packages\MicrosoftTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\Logs
-        Comment: "Lots of log files for MS Teams"
     -
         Name: Microsoft Teams Logs (Windows 11)
         Category: Apps
