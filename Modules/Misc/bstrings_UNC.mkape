@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for UNC Paths
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: 6ecc1175-4ed4-4354-9ca2-9821260adc79
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr unc
+        ExportFormat: txt
+        ExportFile: UncPaths.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
