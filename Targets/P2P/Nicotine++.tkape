@@ -1,0 +1,80 @@
+Description: Nicotine++
+Author: Andrew Rathbun
+Version: 1.0
+Id: c0b393d5-865e-479d-ac50-fe892ac40e8e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Nicotine++ Logs
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\logs
+        Recursive: true
+        Comment: "Locates Nicotine++ chat logs, room logs, transfer logs, and debug logs (if enabled)"
+    -
+        Name: Nicotine++ Incomplete Downloads
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\incomplete
+        Recursive: true
+        Comment: "Locates files that did not finish downloading"
+    -
+        Name: Nicotine++ Buddyfiles.db
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddyfiles.db
+        Recursive: true
+        Comment: "Locates a DB that appears to include shared files from a user's buddy list"
+    -
+        Name: Nicotine++ Buddystreams.db
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddystreams.db
+        Recursive: true
+        Comment: "Locates a DB that appears to include shared files from a user's buddy list"
+    -
+        Name: Nicotine++ Buddymtimes.db
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddymtimes.db
+        Recursive: true
+        Comment: "Locates a DB that appears to enumerate which files the user is sharing to their buddy list, from a folder level"
+    -
+        Name: Nicotine++ Buddyfileindex.db
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddyfileindex.db
+        Recursive: true
+        Comment: "Locates a DB that appears to enumerate which files the user is sharing to their buddy list, from a file level"
+    -
+        Name: Nicotine++ Buddywordindex.db
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddywordindex.db
+        Recursive: true
+        Comment: "Unknown what this is for at this time"
+    -
+        Name: Nicotine++ Config Files
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\config
+        Recursive: true
+        Comment: "Locates config files"
+    -
+        Name: Nicotine++ User Shares
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\usershares
+        Recursive: true
+        Comment: "Locates a DB that appears to store a list of files per user that they are sharing within Nicotine++. Note: this requires the user to right-click -> browse files shared by that user"
+    -
+        Name: Nicotine++ Downloads.json
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine
+        FileMask: 'downloads.json*'
+        Comment: "Locates downloads.json"
+    -
+        Name: Nicotine++ Uploads.json
+        Category: FileDownload
+        Path: C:\Users\%User%\AppData\Roaming\nicotine
+        FileMask: 'uploads.json*'
+        Comment: "Locates uploads.json"
+
+# Documentation
+# https://en.wikipedia.org/wiki/Soulseek
+# https://nicotine-plus.github.io/nicotine-plus/
+# Soulseek is a very popular file sharing client. It's most commonly used for sharing MP3's amongst music enthusiasts. However, any file type can be shared, naturally.
+# Nicotine++ is simply a more modern GUI for Soulseek
+# Some logs, like with Soulseek, are stored as .dat files. Open with your favorite text editor that's not named Notepad or Wordpad and you should have an easy enough time using Ctrl+F to search for relevant data.
+# Chats are stored in plaintext. These can be opened in any text editor and are human readable.
