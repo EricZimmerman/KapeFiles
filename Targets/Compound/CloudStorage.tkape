@@ -21,6 +21,10 @@ Targets:
         Category: Apps
         Path: OneDrive.tkape
     -
+        Name: pCloudDatabase
+        Category: Apps
+        Path: pCloudDatabase.tkape
+    -
         Name: SugarSync
         Category: Apps
         Path: SugarSync.tkape
