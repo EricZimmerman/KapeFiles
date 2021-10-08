@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for SumoKoin Wallets
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: 0f7751f7-8b17-436f-9a79-a368915dbb61
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr sumokoin
+        ExportFormat: txt
+        ExportFile: SumoKoinWallets.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
