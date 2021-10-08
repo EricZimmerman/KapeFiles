@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for Bitlocker recovery keys
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: 139184fb-5b2e-4e4f-a9df-6da76f138841
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr bitlocker
+        ExportFormat: txt
+        ExportFile: BitlockerRecoveryKeys.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
