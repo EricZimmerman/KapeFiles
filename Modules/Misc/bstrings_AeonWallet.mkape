@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for Aeon Wallets
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: ca146854-4ce3-426b-8814-fd08b032126c
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr aeon
+        ExportFormat: txt
+        ExportFile: AeonWallets.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
