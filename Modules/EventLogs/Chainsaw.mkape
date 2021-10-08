@@ -1,18 +1,18 @@
 Description: Chainsaw - Rapidly Search and Hunt through Windows Event Logs
 Category: EventLogs
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: aeee475b-92d5-488b-b2ff-86a15976697e
 BinaryUrl: https://github.com/countercept/chainsaw
 ExportFormat: csv
 Processors:
     -
         Executable: Chainsaw\Chainsaw.exe
-        CommandLine: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --csv --full %sourceDirectory%
+        CommandLine: hunt --lateral-all --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --csv --lateral-all --full %sourceDirectory%
         ExportFormat: csv
     -
         Executable: Chainsaw\Chainsaw.exe
-        CommandLine: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --json --full %sourceDirectory%
+        CommandLine: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --json --lateral-all --full %sourceDirectory%
         ExportFormat: json
 
 # Documentation
