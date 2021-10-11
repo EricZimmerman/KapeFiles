@@ -43,7 +43,7 @@ It is also possible to attend KAPE training from Kroll instructors. Details can 
 
 # Downloading KapeFiles for KAPE
 
-To download the latest files, click the "Sync with Github" button in gkape.exe or run `kape.exe --sync`
+To download the latest files, click the "Sync with GitHub" button in gkape.exe or run `kape.exe --sync`
 
 # Contributing
 
