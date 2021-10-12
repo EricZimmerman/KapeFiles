@@ -7,11 +7,11 @@ BinaryUrl: https://sites.google.com/site/forensicnote/ntfs-log-tracker/NTFS Log 
 ExportFormat: sqlite3
 Processors:
     -
-        Executable: NTFS_Log_Tracker_$J.mkape
+        Executable: NTFSLogTracker_$J.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: NTFS_Log_Tracker_$LogFile.mkape
+        Executable: NTFSLogTracker_$LogFile.mkape
         CommandLine: ""
         ExportFormat: ""
 

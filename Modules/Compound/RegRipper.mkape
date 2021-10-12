@@ -7,27 +7,27 @@ BinaryUrl: https://github.com/keydet89/RegRipper3.0
 ExportFormat: txt
 Processors:
     -
-        Executable: RegRipper-sam.mkape
+        Executable: RegRipper_SAM.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper-security.mkape
+        Executable: RegRipper_SECURITY.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper-software.mkape
+        Executable: RegRipper_SOFTWARE.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper-system.mkape
+        Executable: RegRipper_SYSTEM.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper-ntuser.mkape
+        Executable: RegRipper_NTUser.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RegRipper-usrclass.mkape
+        Executable: RegRipper_UsrClass.mkape
         CommandLine: ""
         ExportFormat: ""
 

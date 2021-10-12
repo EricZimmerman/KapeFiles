@@ -16,4 +16,4 @@ Processors:
 # https://www.microsoft.com/en-us/download/details.aspx?id=24659
 # https://www.stevebunting.org/udpd4n6/forensics/logparser.htm
 # Uses Microsoft Log Parser
-# Point msource (Module Source) to the apache logs folder
+# Point msource (Module Source) to the Apache logs folder
