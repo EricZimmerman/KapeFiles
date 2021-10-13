@@ -1,0 +1,30 @@
+Description: 'MFTECmd: process $MFT files, then output file listing'
+Category: FileSystem
+Author: Andrew Rathbun
+Version: 1.0
+Id: 8bcb68fa-b62a-4347-b3cb-b00d72b2752d
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+FileMask: $MFT
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory% --fl
+        ExportFormat: csv
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory% --fl
+        ExportFormat: json
+
+# Documentation
+# https://github.com/EricZimmerman/MFTECmd
+# https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# This is the same as MFTECmd_$MFT.mkape, but it'll output a file listing that comprises of only the following columns:
+# Full Path (aka Parent Path and File Name combined from MFTECmd CSV Output)
+# Extension
+# Is Directory
+# File Size
+# Created0x10
+# Last Modified0x10
