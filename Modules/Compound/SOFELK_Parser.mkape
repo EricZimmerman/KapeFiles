@@ -1,7 +1,7 @@
 Description: Parsing for SOF-ELK Instance
 Category: SOF-ELK
 Author: Tony Knutson and Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: ae3ce0ae-1531-4916-a448-2fa2039fb714
 BinaryUrl: https://ericzimmerman.github.io/
 ExportFormat: json
@@ -16,6 +16,10 @@ Processors:
         ExportFormat: ""
     -
         Executable: SOFELK_Parser_MFTECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SOFELK_Parser_PECmd.mkape
         CommandLine: ""
         ExportFormat: ""
 
