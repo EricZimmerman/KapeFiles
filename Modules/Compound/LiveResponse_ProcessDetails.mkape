@@ -7,27 +7,27 @@ ExportFormat: txt
 FileMask: ""
 Processors:
     -
-        Executable: PWSH-Get-ProcessList.mkape
+        Executable: PowerShell_Get-InjectedThread.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: pslist.mkape
+        Executable: PowerShell_ProcessList_WMI.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: pstree.mkape
+        Executable: SysInternals_PsList.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: psservice.mkape
+        Executable: SysInternals_PsTree.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: handle.mkape
+        Executable: SysInternals_PsService.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Get-InjectedThread.mkape
+        Executable: SysInternals_Handle.mkape
         CommandLine: ""
         ExportFormat: ""
 

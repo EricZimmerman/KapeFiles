@@ -7,31 +7,31 @@ ExportFormat: txt
 FileMask: ""
 Processors:
     -
-        Executable: IPConfig.mkape
+        Executable: Windows_IPConfig.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: DNSCache.mkape
+        Executable: Windows_DNSCache.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: ARPCache.mkape
+        Executable: Windows_ARPCache.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RoutingTable.mkape
+        Executable: Windows_RoutingTable.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Netstat.mkape
+        Executable: Windows_NetStat.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: NBTStat_Netbios_Sessions.mkape
+        Executable: Windows_nbtstat_NetBIOSSessions.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: NBTStat_Netbios_Cache.mkape
+        Executable: Windows_nbtstat_NetBIOSCache.mkape
         CommandLine: ""
         ExportFormat: ""
 
