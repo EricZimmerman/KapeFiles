@@ -23,7 +23,6 @@ Targets:
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $J
-        AlwaysAddToQueue: true
         SaveAsFileName: $J
         Comment: "This is for the use case when you're running this Target against a mounted VHDX with these files already pulled from a live system. The above Targets are looking for the files as an ADS whereas once they are already pulled they no longer match the ADS criteria and therefore are missed"
     -
@@ -31,7 +30,6 @@ Targets:
         Category: FileSystem
         Path: C:\$Extend\
         FileMask: $Max
-        AlwaysAddToQueue: true
         SaveAsFileName: $Max
         Comment: "This is for the use case when you're running this Target against a mounted VHDX with these files already pulled from a live system. The above Targets are looking for the files as an ADS whereas once they are already pulled they no longer match the ADS criteria and therefore are missed"
 
