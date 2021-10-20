@@ -1,0 +1,39 @@
+Description: Windows Subsystem for Android (WSA)
+Author: Andrew Rathbun
+Version: 1.0
+Id: 0e0b5f71-6e93-444e-8109-7a0c902f8361
+RecreateDirectories: true
+Targets:
+    -
+        Name: Diagnostic Logs for WSA
+        Category: Windows Subsystem for Android
+        Path: C:\Users\%user%\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalState\diagnostics\logcat\
+        FileMask: "*.log"
+        Comment: "Filenames should be %timestamp%.log"
+    -
+        Name: App download artifacts (PNG)
+        Category: Windows Subsystem for Android
+        Path: C:\Users\%user%\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\
+        FileMask: "*.png"
+        Comment: "Will provide examiners with indicators of which apps were downloaded"
+    -
+        Name: App download artifacts (ICO)
+        Category: Windows Subsystem for Android
+        Path: C:\Users\%user%\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\
+        FileMask: "*.ico"
+        Comment: "Will provide examiners with indicators of which apps were downloaded WHEN since .ico files appear immediately when download of an application completes"
+    -
+        Name: Appcompatdb.json
+        Category: Windows Subsystem for Android
+        Path: C:\Users\%user%\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalState\
+        FileMask: "appcompatdb.json"
+        Comment: "Grabs the appcompatdb.json, unknown exactly what this is but further relevance could be uncovered after more research is conducted"
+    -
+        Name: userdata.vhdx
+        Category: Windows Subsystem for Android
+        Path: C:\Users\%user%\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\
+        FileMask: "userdata.vhdx"
+        Comment: "Grabs the user's data which appears to be stored in a VHDX"
+
+# Documentation
+# https://blogs.windows.com/windows-insider/2021/10/20/introducing-android-apps-on-windows-11-to-windows-insiders/
