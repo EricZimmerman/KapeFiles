@@ -17,6 +17,7 @@ Targets:
 
 # Documentation
 # https://www.datadigitally.com/2019/06/windows-10-sticky-notes-location.html
+# https://www.forensafe.com/blogs/stickynotes.html
 # Microsoft Sticky Notes is a useful feature in Windows operating systems versions 7+. However, the notes are stored differently depending on the version of Windows.
 # I have not yet tested the Stickynotes.snt for earlier versions of Windows. When I do, I will update this target with my results.
 # For Windows 10 version 1607 and later, use your favorite SQL tool to view the .sqlite, .sqlite-wal and .sqlite-shm files. You will notice notes will be stored in the Note database.
