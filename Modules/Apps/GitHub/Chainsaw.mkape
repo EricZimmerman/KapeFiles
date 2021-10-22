@@ -12,7 +12,7 @@ Processors:
         ExportFormat: csv
     -
         Executable: Chainsaw\Chainsaw.exe
-        CommandLine: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --json --lateral-all --full %sourceDirectory%
+        CommandLine: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --json output.json --lateral-all --full %sourceDirectory%
         ExportFormat: json
 
 # Documentation
