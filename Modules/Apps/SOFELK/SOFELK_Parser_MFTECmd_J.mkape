@@ -1,0 +1,16 @@
+Description: Parsing for SOF-ELK Instance
+Category: SOF-ELK
+Author: Tony Knutson and Andrew Rathbun
+Version: 1.0
+Id: a3c8f694-b20e-43aa-96e5-3a5df2379321
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: json
+FileMask: $J
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# https://aboutdfir.com/sof-elk-and-integration-with-kape/
