@@ -1,15 +1,9 @@
-Description: Microsoft OneDrive Storage Files and Metadata
+Description: Microsoft OneDrive Storage Metadata
 Author: Chad Tilbury
-Version: 1.0
-Id: f3c680ca-0646-48cc-a471-5f484e22b1cf
+Version: 1.1
+Id: 726ca098-6c5b-40e3-ade8-60730c5ec4f8
 RecreateDirectories: true
 Targets:
-    -
-        Name: OneDrive User Files
-        Category: Apps
-        Path: C:\Users\%user%\OneDrive*\
-        Recursive: true
-        Comment: "Caution -- This target will collect OneDrive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
     -
         Name: OneDrive Metadata Logs
         Category: Apps

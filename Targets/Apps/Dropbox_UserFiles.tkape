@@ -1,0 +1,21 @@
+Description: Dropbox Cloud Storage Files
+Author: Chad Tilbury
+Version: 1.0
+Id: 6ed5ecbe-af8c-46fd-b827-58228824ea34
+RecreateDirectories: true
+Targets:
+    -
+        Name: Dropbox User Files
+        Category: Apps
+        Path: C:\Users\%user%\Dropbox*\
+        Recursive: true
+        Comment: "Default storage location for Dropbox Personal and Business (when using wildcard), but can be user-defined. Check info.json file in user Dropbox metadata files to identify default folder."
+
+# Documentation
+# This target will also collect the ".dropbox.cache" folder located in the storage location
+# https://www.marshall.edu/forensics/files/Treleven-Dropbox-Paper-FINAL.pdf
+# https://arxiv.org/pdf/1709.10395
+# https://www.sans.org/blog/digital-forensics-dropbox/
+# https://www.researchgate.net/publication/342991973_Forensic_Analysis_of_Dropbox_Data_Remnants_on_Windows_10
+# https://www.atropos4n6.com/cloud-forensics/windows-10-artifacts-of-dropboxs-native-app-usage/
+# https://www.atropos4n6.com/cloud-forensics/artifacts-of-dropbox-usage-on-windows-10-part-2/

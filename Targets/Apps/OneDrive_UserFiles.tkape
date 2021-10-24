@@ -1,0 +1,18 @@
+Description: Microsoft OneDrive Storage Files
+Author: Chad Tilbury
+Version: 1.0
+Id: e222254a-518d-4ded-8566-60a4d3654a65
+RecreateDirectories: true
+Targets:
+    -
+        Name: OneDrive User Files
+        Category: Apps
+        Path: C:\Users\%user%\OneDrive*\
+        Recursive: true
+        Comment: "Caution -- This target will collect OneDrive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use or isolate system from network."
+
+# This target collects user OneDrive files from the default folders of OneDrive Personal and Business, but folders can be user-defined.  Check NTUSER.DAT\Software\Microsoft\OneDrive\Accounts\<Personal|Business> to see if locations have been changed.
+
+# Documentation
+# https://www.sans.org/blog/cloud-storage-acquisition-from-endpoint-devices/
+# https://www.forensicfocus.com/forums/general/onedrive-files-on-demand-windows-10-storage-sense-settings/

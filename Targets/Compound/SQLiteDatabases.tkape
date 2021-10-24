@@ -74,7 +74,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
         FileMask: main.db
 
-# Cloud Storage - Dropbox - Dropbox.tkape
+# Cloud Storage - Dropbox - Dropbox_Metadata.tkape
 
     -
         Name: Dropbox Metadata
@@ -143,7 +143,7 @@ Targets:
         FileMask: avatarcache.db
         Comment: "SQLite database which appears to contain the ID's of account(s) on the user's system where Dropbox is installed"
 
-# Cloud Storage - Google Drive - GoogleDrive.tkape
+# Cloud Storage - Google Drive - GoogleDrive_Metadata.tkape
 
     -
         Name: Google File Stream Metadata
