@@ -1,30 +1,22 @@
-Description: Box Cloud Storage Files and Metadata
+Description: Box Cloud Storage Files
 Author: Chad Tilbury
 Version: 1.0
-Id: 2e3bee53-24b6-4867-8510-7da07d353abc
+Id: 6c6cef0b-4213-4903-acc4-d85430226a19
 RecreateDirectories: true
 Targets:
     -
-        Name: Box User Files
+        Name: Box Drive User Files
         Category: Apps
         Path: C:\Users\%user%\Box\
         Recursive: true
-        Comment: "Caution! This target will collect Box Drive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use"
+        Comment: "Caution! This target will collect Box Drive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use or isolate system from network"
     -
         Name: Box Sync User Files
         Category: Apps
         Path: C:\Users\%user%\Box Sync\
         Recursive: true
-    -
-        Name: Box Drive Application Metadata
-        Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Box\Box\*\
-        Recursive: true
-    -
-        Name: Box Sync Application Metadata
-        Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Box Sync\*\
-        Recursive: true
+
+# This target collects Box user files from the default locations but folders can be user-defined.  Check Box_Streem logs (Box Drive) or sync_root_folder.txt (Box Sync) to see if locations have been changed.
 
 # Documentation
 # https://cyberforensicator.com/2018/04/21/cloud-forensics-box/

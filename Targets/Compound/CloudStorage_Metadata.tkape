@@ -1,33 +1,25 @@
-Description: Cloud Storage Contents and Metadata
+Description: Cloud Storage Metadata
 Author: Chad Tilbury and Andrew Rathbun
-Version: 1.1
-Id: 29984028-0f42-4922-8a3f-752341f5852c
+Version: 1.0
+Id: 136ca523-2f99-4203-bd66-6aa50fe8d3a8
 RecreateDirectories: true
 Targets:
     -
-        Name: Box
+        Name: Box Metadata
         Category: Apps
-        Path: BoxDrive.tkape
+        Path: BoxDrive_Metadata.tkape
     -
-        Name: Dropbox
+        Name: Dropbox Metadata
         Category: Apps
-        Path: Dropbox.tkape
+        Path: Dropbox_Metadata.tkape
     -
-        Name: Google Drive
+        Name: Google Drive Metadata
         Category: Apps
-        Path: GoogleDrive.tkape
+        Path: GoogleDrive_Metadata.tkape
     -
-        Name: OneDrive
+        Name: OneDrive Metadata
         Category: Apps
-        Path: OneDrive.tkape
-    -
-        Name: pCloudDatabase
-        Category: Apps
-        Path: pCloudDatabase.tkape
-    -
-        Name: SugarSync
-        Category: Apps
-        Path: SugarSync.tkape
+        Path: OneDrive_Metadata.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.
