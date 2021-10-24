@@ -8,7 +8,7 @@ ExportFormat: log
 Processors:
     -
         Executable: Loki/loki.exe
-        CommandLine: "--logfolder %destinationDirectory% --debug" 
+        CommandLine: "--logfolder %destinationDirectory% --debug"
         ExportFormat: log
 #
 # Documentation
