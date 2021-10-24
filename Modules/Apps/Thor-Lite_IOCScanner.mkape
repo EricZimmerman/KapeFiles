@@ -10,7 +10,7 @@ Processors:
         Executable: thor-lite/thor64-lite.exe
         CommandLine: "--quick --nothordb --processintegrity -o :hostname:\_:time:.csv -e %destinationDirectory%/THOR"
         ExportFormat: csv
-#
+
 # Docuemntation
 # HOW TO PLACE THE BINARY
 # 1. Download thor-lite using the link above. It's a free tool, but you must register for a license.
