@@ -25,4 +25,4 @@ Targets:
 # Here's an example of some information you'll see about PDFs that've been opened with SumatraPDF
 # OpenCount = 1
 # DecryptionKey = 8cfbabc34e8d846dffb53b90c9g2acb5es82d9c86f314cb5aa7a1adfc66f76e800000000000000000000000000000000
-DecryptionKey only exists if the user chooses to remember the password for a PDF that's password protected
+# DecryptionKey only exists if the user chooses to remember the password for a PDF that's password protected
