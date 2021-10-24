@@ -19,7 +19,7 @@ Targets:
     -
         Name: Dropbox User Files
         Category: Apps
-        Path: Dropbox_UserFiles.tkape    
+        Path: Dropbox_UserFiles.tkape
     -
         Name: Google Drive Metadata
         Category: Apps
