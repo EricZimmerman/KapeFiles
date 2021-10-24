@@ -10,7 +10,7 @@ Processors:
         Executable: loki/loki.exe
         CommandLine: "-l %destinationDirectory%/loki.txt"
         ExportFormat: txt
-#
+
 # Documentation
 # HOW TO PLACE THE BINARY
 # 1. Download loki using the link above. It's a free tool
