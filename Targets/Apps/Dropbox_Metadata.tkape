@@ -27,14 +27,14 @@ Targets:
         Category: FileSystem
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: true
-        Comment: "Required for offline decryption of Dropbox databases"       
+        Comment: "Required for offline decryption of Dropbox databases"
     -
         Name: Dropbox Metadata
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Dropbox\instance*\
         Recursive: true
         Comment: "instance folder holds multiple SQLite databases related to Dropbox activity and contents"
-      
+
 # Documentation
 # home.db: SQlite database which appears to keep track of the user's recent Dropbox activity
 # icon.db: SQLite database which appears to keep track of icons in the user's Dropbox sync history which can give an indication as to which files and folders are present
