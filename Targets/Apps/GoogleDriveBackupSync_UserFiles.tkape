@@ -11,9 +11,8 @@ Targets:
         Recursive: true
         Comment: "Older Google Drive Backup and Sync application only"
 
-
 # Documentation
-# Google Drive for Desktop (originally Google File Stream) stores user files in a virtualized "G:\My Drive" folder by default. This target will not collect files from those versions of Google Drive.  
+# Google Drive for Desktop (originally Google File Stream) stores user files in a virtualized "G:\My Drive" folder by default. This target will not collect files from those versions of Google Drive.
 # https://www.researchgate.net/publication/330319091_Cloud_Drives_Forensic_Artifacts_A_Google_Drive_Case
 # https://cyberforensicator.com/2018/10/19/cloud-forensics-google-drive/
 # https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics/
