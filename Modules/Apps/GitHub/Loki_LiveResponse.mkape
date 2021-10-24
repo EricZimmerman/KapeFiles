@@ -1,5 +1,5 @@
 Description: Loki - Simple IOC and Incident Response Scanner - Live Response
-Category: IOCs
+Category: LiveResponse
 Author: Georg Lauenstein
 Version: 1.0
 Id: e93f1052-4d8f-4b63-b680-2af845e95a98
@@ -8,9 +8,9 @@ ExportFormat: log
 Processors:
     -
         Executable: Loki/loki.exe
-        CommandLine: "--logfolder %destinationDirectory% --debug"
+        CommandLine: "-p %sourceDirectory% --logfolder %destinationDirectory% --debug"
         ExportFormat: log
-#
+
 # Documentation
 # HOW TO PLACE THE BINARY
 # 1. Download loki using the link above. It's a free tool
@@ -19,5 +19,3 @@ Processors:
 # 4. KAPE should now be able to find the executable in '<KAPE_working_directory>/Modules/bin/loki/loki.exe'
 # 5. Use 'loki.exe --help' for options
 # 6. More info here: https://www.nextron-systems.com/loki/
-# other scenario:
-# mounted image: "-p %sourceDirectory% --noprocscan --pesieveshellc --rootkit --intense --logfolder %destinationDirectory% --debug"
