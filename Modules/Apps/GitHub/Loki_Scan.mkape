@@ -6,7 +6,7 @@ Id: 3c715b0c-fec3-4f41-a762-74233e240760
 BinaryUrl: https://github.com/Neo23x0/Loki/releases/download/v0.44.2/loki_0.44.2.zip
 ExportFormat: log
 Processors:
--
+    -
         Executable: Loki\loki.exe
         CommandLine: "-p %sourceDirectory% --noprocscan --pesieveshellc --rootkit --intense --logfolder %destinationDirectory% --debug"
         ExportFormat: log
