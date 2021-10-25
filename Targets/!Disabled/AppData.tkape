@@ -9,3 +9,6 @@ Targets:
         Category: UserData
         Path: C:\Users\%user%\AppData\
         Recursive: true
+
+# Documentation:
+# N/A
