@@ -1,6 +1,6 @@
 Description: Slack
-Author: Andrew Rathbun
-Version: 1.0
+Author: Andrew Rathbun and Chad Tilbury
+Version: 1.1
 Id: 67ec52aa-1a0e-4dfa-8b9f-8d94de28b02f
 RecreateDirectories: true
 Targets:
@@ -10,6 +10,29 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Slack\IndexedDB\
         Recursive: true
         Comment: "Locates Slack logs and copies them"
+    -
+        Name: Slack LevelDB Files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Slack\Local Storage\leveldb
+        Recursive: true
+    -
+        Name: Slack Electron Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Slack\logs\
+        Recursive: true
+        Comment: "Current Slack application is based on Electron and additional logging can be found here."
+    -
+        Name: Slack Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Slack\Cache
+        Recursive: true
+        Comment: "Collects Slack cache files. This folder can be parsed like a Chrome Browser cache using a tool like Nirsoft ChromeCacheView"
+    -
+        Name: Slack Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Slack\storage\
+        Recursive: true
+        Comment: "User activity logs can be present including slack-downloads log"
 
 # Documentation
 # Slack is a popular chat/collaboration platform that is used by many organizations worldwide.
