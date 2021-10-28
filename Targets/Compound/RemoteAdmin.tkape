@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
 Author: Drew Ervin, Mathias Frank, Andrew Rathbun
-Version: 1.5
+Version: 1.6
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -47,6 +47,10 @@ Targets:
         Name: ScreenConnect (ConnectWise Control)
         Category: ApplicationLogs
         Path: ScreenConnect.tkape
+    -
+        Name: Supremo Remote Desktop Control
+        Category: ApplicationLogs
+        Path: SupremoRemoteDesktop.tkape
     -
         Name: TeamViewer
         Category: ApplicationLogs
