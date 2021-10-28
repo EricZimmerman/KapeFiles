@@ -20,5 +20,5 @@ Targets:
 # https://www.supremocontrol.com/
 # Supremo Remote Desktop is a Remote Access Tool similar to TeamViewer.
 # Supremo.00.Incoming.log is logging the incoming remote sessions.
-# Supremo.00.Client.log is logging application events such as program start and exit and the client-server-connections to the Supremo servers.
-# The Inbox is the destination folder for incoming transferred files and may contain evidences of malware when the software is misused for scams and other shenanigans.
+# Supremo.00.Client.log is logging application events such as program start/exit and the client-server-connections to the Supremo servers.
+# The Inbox is the destination folder for incoming transferred files and may contain evidence of malware when the software is misused for scams and other shenanigans.
