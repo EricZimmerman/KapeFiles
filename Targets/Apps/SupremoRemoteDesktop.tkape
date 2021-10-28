@@ -1,0 +1,24 @@
+Description: Supremo Remote Desktop Control Logs
+Author: Sandro Heckendorn
+Version: 1.0
+Id: 0d88cf87-bbc5-4bcf-bb4f-2bc9a3e300f0
+RecreateDirectories: true
+Targets:
+    -
+        Name: Supremo Connection Logs
+        Category: Communications
+        Path: C:\ProgramData\SupremoRemoteDesktop\Log
+        FileMask: '*.log'
+        Comment: "Includes Supremo.00.Client.log and Supremo.00.Incoming.log"
+    -
+        Name: Supremo File Transfer Inbox
+        Category: Communications
+        Path: C:\ProgramData\SupremoRemoteDesktop\Inbox
+        Comment: "Includes all files transferred to the inbox folder during a remote session"
+
+# Documentation
+# https://www.supremocontrol.com/
+# Supremo Remote Desktop is a Remote Access Tool similar to TeamViewer.
+# Supremo.00.Incoming.log is logging the incoming remote sessions.
+# Supremo.00.Client.log is logging application events such as program start/exit and the client-server-connections to the Supremo servers.
+# The Inbox is the destination folder for incoming transferred files and may contain evidence of malware when the software is misused for scams and other shenanigans.
