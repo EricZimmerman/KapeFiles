@@ -23,7 +23,7 @@ Targets:
         Name: OST (2013 or 2016)
         Category: Communications
         Path: C:\Users\%user%\Documents\Outlook Files\
-        FileMask: '*.ost'   
+        FileMask: '*.ost'
     -
         Name: PST
         Category: Communications
