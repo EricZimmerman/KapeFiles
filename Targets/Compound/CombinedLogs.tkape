@@ -1,7 +1,7 @@
 Description: Collect Event logs, Trace logs, Windows Firewall and PowerShell console
-Author: Mike Cary, Mark Hallman
+Author: Mike Cary, Mark Hallman added the USBDevicelogs target
 Version: 1.1
-Id: 0e63e299-2b0d-4860-8b17-5fc44b113f24
+Id: d4fdd600-15b1-4b78-bc77-88e724861d8d
 RecreateDirectories: true
 Targets:
     -
