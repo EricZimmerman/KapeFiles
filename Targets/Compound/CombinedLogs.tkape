@@ -1,7 +1,7 @@
 Description: Collect Event logs, Trace logs, Windows Firewall and PowerShell console
-Author: Mike Cary
-Version: 1.0
-Id: 6e9f717f-01f8-4460-b552-a3a0ec7d7670
+Author: Mike Cary, Mark Hallman
+Version: 1.1
+Id: 0e63e299-2b0d-4860-8b17-5fc44b113f24
 RecreateDirectories: true
 Targets:
     -
@@ -20,6 +20,10 @@ Targets:
         Name: Windows Firewall Log
         Category: WindowsFirewallLogs
         Path: WindowsFirewall.tkape
+    -
+        Name: USBDevicesLogs
+        Category: USB
+        Path: USBDevicesLogs.tkape
 
 # Documentation
-# N/A
+# v1.1 - Added the USBDevicelogs target 
