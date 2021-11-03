@@ -71,7 +71,7 @@ Targets:
     -
         Name: WindowsIndexSearch
         Category: FileKnowledge
-        Path: WindowsIndexSearch.tkape  
+        Path: WindowsIndexSearch.tkape
     -
         Name: WindowsTimeline
         Category: EvidenceOfExecution
