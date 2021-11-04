@@ -1,7 +1,7 @@
 Description: 'RECmd: Sync for new Maps'
-Category: Registry
+Category: KAPESync
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 3651465e-7165-4705-b7de-ae3006c05db0
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: ""
@@ -10,6 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: --sync --debug
         ExportFormat: ""
+        ExportFile: Sync_RECmd.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
