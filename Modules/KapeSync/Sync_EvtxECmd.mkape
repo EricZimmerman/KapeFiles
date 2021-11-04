@@ -1,7 +1,7 @@
 Description: 'EvtxECmd: Sync for new Maps'
-Category: EventLogs
+Category: KAPESync
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 43ed0fa4-9d29-44a5-9cfa-3db06e5b5a46
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
 ExportFormat: ""
@@ -10,6 +10,7 @@ Processors:
         Executable: EvtxECmd\EvtxECmd.exe
         CommandLine: --sync --debug
         ExportFormat: ""
+        ExportFile: Sync_EvtxECmd.txt
 
 # Documentation
 # https://github.com/EricZimmerman/evtx
