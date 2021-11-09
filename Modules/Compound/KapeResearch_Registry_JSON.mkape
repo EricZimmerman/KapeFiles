@@ -7,55 +7,55 @@ BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer
 ExportFormat: json
 Processors:
     -
-        Executable: KapeResearch_Registry_Amcache.mkape
+        Executable: KapeResearch_Registry_Amcache_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_BBI.mkape
+        Executable: KapeResearch_Registry_BBI_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_BCD-Template.mkape
+        Executable: KapeResearch_Registry_BCD-Template_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_COMPONENTS.mkape
+        Executable: KapeResearch_Registry_COMPONENTS_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_DEFAULT.mkape
+        Executable: KapeResearch_Registry_DEFAULT_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_DRIVERS.mkape
+        Executable: KapeResearch_Registry_DRIVERS_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_ELAM.mkape
+        Executable: KapeResearch_Registry_ELAM_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_NTUSER.mkape
+        Executable: KapeResearch_Registry_NTUSER_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_SAM.mkape
+        Executable: KapeResearch_Registry_SAM_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_SECURITY.mkape
+        Executable: KapeResearch_Registry_SECURITY_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_SOFTWARE.mkape
+        Executable: KapeResearch_Registry_SOFTWARE_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_SYSTEM.mkape
+        Executable: KapeResearch_Registry_SYSTEM_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: KapeResearch_Registry_UsrClass.mkape
+        Executable: KapeResearch_Registry_UsrClass_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
 
