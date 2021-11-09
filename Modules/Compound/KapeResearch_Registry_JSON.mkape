@@ -55,7 +55,19 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
+        Executable: KapeResearch_Registry_SysCache_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_userdiff_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
         Executable: KapeResearch_Registry_UsrClass_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_VSMIDK_JSON.mkape
         CommandLine: ""
         ExportFormat: ""
 
