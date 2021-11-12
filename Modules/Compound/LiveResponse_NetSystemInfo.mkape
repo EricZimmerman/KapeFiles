@@ -26,10 +26,6 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Windows_Net_File.mkape
-        CommandLine: ""
-        ExportFormat: ""
-    -
         Executable: Windows_Net_Session.mkape
         CommandLine: ""
         ExportFormat: ""
