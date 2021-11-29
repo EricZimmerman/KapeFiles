@@ -1,0 +1,15 @@
+Description: 'USBDeview - Nirsoft'
+Category: LiveResponse
+Author: NVISO (@NVISOsecurity)
+Version: 1.0
+Id: 9a23e756-3f18-4448-95c6-65d411f8c70b
+BinaryUrl: https://www.nirsoft.net/utils/usbdeview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: usbdeview.exe
+        CommandLine: /AddExportHeaderLine 1 /stab %destinationDirectory%\USBDeview.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/usb_devices_view.html
