@@ -1,0 +1,14 @@
+Description: msinfo
+Category: LiveResponse
+Author: NVISO (@NVISOsecurity)
+Version: 0.1
+Id: a282bf61-d47b-456c-8b37-a4d455c3e122
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\msinfo32.exe
+        CommandLine: /report %destinationDirectory%\msinfo.txt
+        ExportFormat: txt
+
+# Documentation
+# https://support.microsoft.com/en-us/topic/description-of-microsoft-system-information-msinfo32-exe-tool-10d335d8-5834-90b4-8452-42c58e61f9fc
