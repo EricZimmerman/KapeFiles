@@ -6,17 +6,17 @@ RecreateDirectories: true
 Targets:
     -
         Name: Cybereason Anti-Ransomware Logs
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\crs1\Logs
         Recursive: true
     -
         Name: Cybereason Sensor Communications and Anti-Malware Logs
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\apv2\Logs
         Recursive: true
     -
         Name: Cybereason Application Control and NGAV Logs
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\crb1\Logs
         Recursive: true
 

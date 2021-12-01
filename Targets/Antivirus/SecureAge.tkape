@@ -12,7 +12,7 @@ Targets:
 
 # Documentation
 # This Target should pull the following log files:
-# AntiVirus.log - will have a list of files that were scanned. Good for locating files as they appear on the file system that may no longer exist
+# Antivirus.log - will have a list of files that were scanned. Good for locating files as they appear on the file system that may no longer exist
 # clamd.log
 # SecureAPlus.log
 # UniversalAV.log

@@ -6,10 +6,10 @@ RecreateDirectories: true
 Targets:
     -
         Name: Avira Activity Logs
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\Avira\Antivirus\LOGFILES\
         Recursive: true
-        Comment: "Collects the scan logs of Avira AntiVirus"
+        Comment: "Collects the scan logs of Avira Antivirus"
 
 # Documentation
 # N/A
