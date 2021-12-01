@@ -1,0 +1,15 @@
+Description: gpresult
+Category: LiveResponse
+Author: NVISO (@NVISOsecurity)
+Version: 0.1
+Id: 4dc75767-5c10-4ec5-b5d6-ba332f92070f
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\gpresult.exe
+        CommandLine: /z
+        ExportFormat: txt
+        ExportFile: gpresult.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/gpresult
