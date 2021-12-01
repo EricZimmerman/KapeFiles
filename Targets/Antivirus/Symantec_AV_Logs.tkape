@@ -6,17 +6,17 @@ RecreateDirectories: true
 Targets:
     -
         Name: Symantec Endpoint Protection Logs (XP)
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV\
         Recursive: true
     -
         Name: Symantec Endpoint Protection Logs
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\
         Recursive: true
     -
         Name: Symantec Endpoint Protection User Logs
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\Users\%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\
         Recursive: true
     -
@@ -38,22 +38,22 @@ Targets:
         Comment: "Contains SEPM entries, documented here: https://support.symantec.com/us/en/article.tech196455.html"
     -
         Name: Symantec Endpoint Protection Quarantine (XP)
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine\
         Recursive: true
     -
         Name: Symantec Endpoint Protection Quarantine
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
         Recursive: true
     -
         Name: ccSubSDK Database
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\CmnClnt\ccSubSDK\
         Recursive: true
     -
         Name: registrationInfo.xml
-        Category: AntiVirus
+        Category: Antivirus
         Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\
         FileMask: registrationInfo.xml
 
