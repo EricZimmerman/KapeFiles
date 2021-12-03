@@ -36,4 +36,4 @@ Targets:
         FileMask: MpCmdRun.log
 
 # Documentation
-# N/A
+# https://knez.github.io/posts/how-to-extract-quarantine-files-from-windows-defender/
