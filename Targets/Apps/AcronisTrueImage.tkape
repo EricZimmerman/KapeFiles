@@ -22,6 +22,8 @@ Targets:
         Comment: "Copies out all scripts files"
 
 # Documentation
+# http://sersc.org/journals/index.php/IJAST/article/download/17649/8916/
+# https://core.ac.uk/download/pdf/214330118.pdf
 # Acronis True Image can be used to create full, incremental, and differential backups of any disk/volume on a user's system.
 # .\Acronis\TrueImageHome\Logs\ti_demon\ will contain logs that are prepended with ti_demon_ followed by what appears to be either a GUID or gibberish followed by a YYYY-MM-DD-HH-MM-SS timestamp prior to the .log file extension.
 # Every time a backup process is started, a log file is created following this naming convention.
