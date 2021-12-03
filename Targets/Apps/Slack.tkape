@@ -35,6 +35,7 @@ Targets:
         Comment: "User activity logs can be present including slack-downloads log"
 
 # Documentation
+# https://www.champlain.edu/Documents/LCDI/ApplicationAnalysis_S17.pdf
 # Slack is a popular chat/collaboration platform that is used by many organizations worldwide.
 # Within the IndexedDB folder, there will be another folder that does not appear to be server-specific like Mattermost. I'm in two Slack workspaces but separate folders do not appear to be created for each Slack workspace.
 # Within this folder, there will be a .log file for each Slack workspace. Slack must be exited properly in order for new logs to commit to this directory. My two log files were named .000039.log and .000041.log, respectively. This is where you should concentrate your analysis.
