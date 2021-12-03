@@ -30,6 +30,12 @@ Targets:
         Comment: Stores attachment details, conversations, messages, and more
 
 # Documentation
+# https://www.alexbilz.com/post/2021-06-07-forensic-artifacts-signal-desktop/
+# https://www.bleepingcomputer.com/news/security/signal-desktop-leaves-message-decryption-key-in-plain-sight/
+# https://blog.elcomsoft.com/2020/04/forensic-guide-to-imessage-whatsapp-telegram-signal-and-skype-data-acquisition/
+# https://www.linkedin.com/pulse/signal-desktop-digital-forensics-perspective-surya-teja-masanam/
+# https://www.zetetic.net/sqlcipher/sqlcipher-api/#key
+# https://github.com/signalapp/Signal-Desktop/blob/master/ts/sql/Server.ts#L276
 # To decrypt db.sqlite on Windows:
 # 1. Download https://sqlitebrowser.org/dl/ and open DB Browser for SQLCipher.exe
 # 2. Get the key from config.json
@@ -37,6 +43,3 @@ Targets:
 # 4. Set the Password type from "Passphrase" to "Raw Key"
 # 5. Set Encryption Settings to "SQLCipher 4 defaults"
 # 6. Prefix the key from config.json with "0x" and paste it into the password field
-# https://www.bleepingcomputer.com/news/security/signal-desktop-leaves-message-decryption-key-in-plain-sight/
-# https://www.zetetic.net/sqlcipher/sqlcipher-api/#key
-# https://github.com/signalapp/Signal-Desktop/blob/master/ts/sql/Server.ts#L276
