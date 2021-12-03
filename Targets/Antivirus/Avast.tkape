@@ -26,4 +26,5 @@ Targets:
         FileMask: index.xml
 
 # Documentation
-# N/A
+# https://businesshelp.avast.com/Content/Products/General_Help/LogLocations/
+BaseAntivirusLogs.htm
