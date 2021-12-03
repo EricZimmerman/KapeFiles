@@ -16,6 +16,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Notepad++\
         FileMask: "config.xml"
         Comment: "Retrieves config.xml which contains recently searched terms, replaced terms and recently opened documents"
+    -
+        Name: Notepad++ Session
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Roaming\Notepad++\
+        FileMask: "session.xml"
+        Comment: "Retrieves session.xml which contains session date"
 
 # Documentation
-# N/A
+# https://krknsec.com/2020/04/18/miscellaneous-windows-10-forensic-artifacts
