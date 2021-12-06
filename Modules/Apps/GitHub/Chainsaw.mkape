@@ -1,8 +1,8 @@
 Description: Chainsaw - Rapidly Search and Hunt through Windows Event Logs
 Category: EventLogs
 Author: Andrew Rathbun
-Version: 1.3
-Id: aeee475b-92d5-488b-b2ff-86a15976697e
+Version: 1.4
+Id: 1dad157c-e3ae-4ad7-97d4-4431ef595cbb
 BinaryUrl: https://github.com/countercept/chainsaw
 ExportFormat: csv
 Processors:
