@@ -1,0 +1,25 @@
+Description: Magnet RAM Capture Memory Acquisition
+Category: Memory
+Author: Doug Metz
+Version: 1.0
+Id: 23a35c17-15a8-4d7e-9029-083bc70bd4ef
+BinaryUrl: https://support.magnetforensics.com/
+ExportFormat: raw
+Processors:
+    -
+        Executable: MRC.exe
+        CommandLine: "/accepteula /go %destinationDirectory%\\memory.raw /silent"
+        ExportFormat: raw
+
+# Documentation
+# https://www.magnetforensics.com/resources/magnet-ram-capture
+
+# 1. Download Magnet RAM Capture using the link above; tested with version 1.2
+# 2. Rename the binary to MRC.exe 
+# 3. Place the binary into '<KAPE_working_directory>/Modules/bin'
+# KAPE should now be able to find the executable at '<KAPE_working_directory>/Modules/bin/MRC.exe'
+#
+#
+# Example usage:
+# kape.exe --tsource C: --tdest E:\Triage\ --target KapeTriage --vhdx triage --mdest E:\Triage\Memory --module MagnetRamCapture
+
