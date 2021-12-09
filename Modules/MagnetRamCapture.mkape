@@ -15,7 +15,7 @@ Processors:
 # https://www.magnetforensics.com/resources/magnet-ram-capture
 #
 # 1. Download Magnet RAM Capture using the link above; tested with version 1.2
-# 2. Rename the binary to MRC.exe 
+# 2. Rename the binary to MRC.exe
 # 3. Place the binary into '<KAPE_working_directory>/Modules/bin'
 # KAPE should now be able to find the executable at '<KAPE_working_directory>/Modules/bin/MRC.exe'
 #
