@@ -1,0 +1,17 @@
+Description: DC++
+Author: Andrew Rathbun
+Version: 1.0
+Id: 577569f8-e10f-4513-9c59-19d17a10eccb
+RecreateDirectories: true
+Targets:
+    -
+        Name: DC++ Chat Logs
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\DC++\Logs\
+        Recursive: true
+        Comment: "Locates DC++ hub/chat logs and copies them. Current as of version 0.868."
+
+# Documentation
+# DC++ is a popular file-sharing client that runs on the Direct Connect network.
+# DC++ is commonly used to share any file type with any users either directly or within chat rooms (hubs).
+# Hub/chat logs are plain text readable with your favorite text editor.

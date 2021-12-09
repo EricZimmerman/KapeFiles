@@ -1,0 +1,29 @@
+Description: Collect Event logs, Trace logs, Windows Firewall and PowerShell console
+Author: Mike Cary, Mark Hallman added the USBDevicelogs target
+Version: 1.1
+Id: d4fdd600-15b1-4b78-bc77-88e724861d8d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Event Logs
+        Category: EventLogs
+        Path: EventLogs.tkape
+    -
+        Name: Event Trace Logs
+        Category: EventTraceLogs
+        Path: EventTraceLogs.tkape
+    -
+        Name: PowerShell Console Log
+        Category: PowerShellConsoleLog
+        Path: PowerShellConsole.tkape
+    -
+        Name: Windows Firewall Log
+        Category: WindowsFirewallLogs
+        Path: WindowsFirewall.tkape
+    -
+        Name: USBDevicesLogs
+        Category: USB
+        Path: USBDevicesLogs.tkape
+
+# Documentation
+# v1.1 - Added the USBDevicelogs target

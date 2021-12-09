@@ -1,0 +1,30 @@
+Description: Obtain detached signature catalog files
+Author: Mike Pilkington
+Version: 1.0
+Id: 953b16e8-69ea-4967-9f9b-bcfa4f4fbe7b
+RecreateDirectories: true
+Targets:
+    -
+        Name: SignatureCatalog
+        Category: FileMetadata
+        Path: C:\Windows\System32\CatRoot\
+        Recursive: true
+    -
+        Name: SignatureCatalog
+        Category: FileMetadata
+        Path: C:\Windows.old\Windows\System32\CatRoot\
+        Recursive: true
+
+# Documentation
+# Validating digital signatures of an offline system can be problematic.
+# Microsoft relies mostly on detached signature files to sign Windows
+# executables.  Checking those on an offline system using sigcheck.exe
+# from SysInternals requires importing the target system's detached
+# signature files into the anlysis system.  To use with sigcheck, slightly
+# rename the collected GUID directories (keeping the names in a GUID format),
+# copy them to C:\Windows\System32\CatRoot of your analysis machine, restart
+# Cryptographic Services, then run sigcheck against the target system files.
+# This will import the target's signature files into the local analysis
+# machine's signature database and should accurately validate the target
+# system's files (which presumabley were collected with other KAPE modules).
+# Kudos to Troy Larson for providing this workaround technique.

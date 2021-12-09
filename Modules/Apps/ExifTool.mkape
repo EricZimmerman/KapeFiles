@@ -1,0 +1,16 @@
+Description: 'Exiftool: process files'
+Category: ExifData
+Author: Lee Whitfield/esecrpm
+Version: 1.1
+Id: 75c32df2-8dad-4bbc-9230-2c3749fd6e2a
+BinaryUrl: https://exiftool.org/exiftool-12.29.zip
+ExportFormat: csv
+Processors:
+   -
+      Executable: exiftool.exe
+      CommandLine: -r %sourceDirectory% -csv
+      ExportFormat: csv
+      ExportFile: exif.csv
+
+# Documentation
+# https://exiftool.org/

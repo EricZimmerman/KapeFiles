@@ -1,0 +1,20 @@
+Description: Name of application/artifact here # Required
+Author: Your name here # Required
+Version: 1.0 # Required
+Id: Unique GUID here # Required
+RecreateDirectories: True # Required
+Targets:
+    -
+        Name: Artifact name here # Required
+        Category: Category goes here # Required
+        Path: C:\ # Required
+        Recursive: True # Optional
+        FileMask: "filename.ext" # Optional
+        AlwaysAddToQueue: True # Optional
+        SaveAsFileName: output.csv # Optional
+        MinSize: 1000 # Optional
+        MaxSize: 10000 # Optional
+        Comment: "Locates all evidence to solve the case" # Optional
+
+# Documentation
+# Please delete all Required/Optional comments above and replace this line(s) with any link(s) to relevant blog posts, YouTube videos, etc. Add more lines as needed.

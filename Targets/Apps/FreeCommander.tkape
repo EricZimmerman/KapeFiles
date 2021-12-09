@@ -1,0 +1,56 @@
+Description: FreeCommander XE
+Author: Andrew Rathbun
+Version: 1.1
+Id: 418ce15d-2400-4deb-b7bf-546a99095804
+RecreateDirectories: true
+Targets:
+    -
+        Name: Free Commander - FreeCommander.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\FreeCommanderXE\Settings\
+        FileMask: 'FreeCommander.ini'
+        Comment: "Locates an .ini file that contains Shellbags-equivalent artifacts."
+    -
+        Name: Free Commander - FreeCommander.ftp.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\FreeCommanderXE\Settings\
+        FileMask: 'FreeCommander.ftp.ini'
+        Comment: "Locates an .ini file that contains the file path to the FTP log for Free Commander."
+    -
+        Name: Free Commander - FreeCommander.hist.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\FreeCommanderXE\Settings\
+        FileMask: 'FreeCommander.hist.ini'
+        Comment: "Locates an .ini file that contains Shellbags-equivalent artifacts that are sorted in temporal order from top to bottom for both left and right directory browsers."
+    -
+        Name: Free Commander - FreeCommander.fav.xml
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\FreeCommanderXE\Settings\
+        FileMask: 'FreeCommander.fav.xml'
+        Comment: "Locates an .xml file that contains favorited files/folder by the user."
+    -
+        Name: Free Commander - Backup Settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\FreeCommanderXE\Settings\Bkp_Settings*\
+        Recursive: true
+        Comment: "Locates an exact copy of the above files which will have a timestamped folder name, i.e. Bkp_Settings-YYYY-MM-DD HH-MM-SS."
+    -
+        Name: Free Commander - FTP Log
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'fc*.log'
+        Comment: "Locates log file(s) that have a default naming convention of fc_ftplog_20210403 but can be modified by the user."
+    -
+        Name: Free Commander - FTP Related Information
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\FreeCommander*\
+        Recursive: true
+        Comment: "Locates a folder that may be named randomly that contains more FTP related information as well as .tmp files that are created while the user is traversing folders during an active FTP session. These files are deleted upon program exit."
+
+# Documentation
+# Free Commander XE is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.
+# FreeCommander.ini contains some interesting artifacts including but not limited to: Path= (starting path when opening a browser window, sorted by Left and Right), PathLastUsed= (path last opened upon program exit), and [MainPanel] (will contain the last opened paths for both Left and Right directory browsers).
+# FreeCommander.ftp.ini contains a file path to the FTP log.
+# FreeCommander.hist.ini updates upon program exit and only records the last 30 folders browsed by the user. History0 is the most recent folder browsed whereas History29 is the least recent. Log continues to roll over after 30 entries.
+# In FreeCommander.fav.xml, the string <folder_item will be the beginning of a new entry which will include the file path of the file/folder that the user favorited.
+# Note: for the Backup Settings target above, you may only see a deduplicated version of that folder, I.E. there may only be one or two files. This is because the backup files are exactly the same as the current set of .ini and .xml files. If the user has a long history of using the program, there should be many more files as a result.

@@ -1,0 +1,60 @@
+Description: Outlook PST and OST files
+Author: Eric Zimmerman and Chad Tilbury
+Version: 1.1
+Id: f91909c4-bba1-40d6-a3bc-39d060843a09
+RecreateDirectories: true
+Targets:
+    -
+        Name: PST XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.pst'
+    -
+        Name: OST XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Microsoft\Outlook\
+        FileMask: '*.ost'
+    -
+        Name: PST (2013 or 2016)
+        Category: Communications
+        Path: C:\Users\%user%\Documents\Outlook Files\
+        FileMask: '*.pst'
+    -
+        Name: OST (2013 or 2016)
+        Category: Communications
+        Path: C:\Users\%user%\Documents\Outlook Files\
+        FileMask: '*.ost'
+    -
+        Name: PST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.pst'
+        Comment: "Outlook Data File: POP accounts, archives, older installations"
+    -
+        Name: OST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.ost'
+        Comment: "Offline Outlook Data File: M365, Exchange, IMAP"
+    -
+        Name: NST
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Outlook\
+        FileMask: '*.nst'
+        Comment: "Outlook Group Storage File: Group conversations and calendar"
+    -
+        Name: Outlook Attachment Temporary Storage
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\
+        Recursive: true
+        Comment: "Outlook temporary storage folder for user attachments"
+
+# This target only collects Outlook files from well known default folders.  File locations can be user-defined.  Review NTUSER\Software\Microsoft\Office\16.0\Outlook\Search to identify other potential locations.
+
+# Documentation
+# https://support.microsoft.com/en-us/office/introduction-to-outlook-data-files-pst-and-ost-222eaf92-a995-45d9-bde2-f331f60e2790
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://gist.github.com/richaarya/d336fec34c600cc8ab8a51195289c99a
+# https://www.nirsoft.net/outlook_office_software.html
+# https://www.eshlomo.us/windows-forensics-analysis-evidence/
+# https://www.meridiandiscovery.com/articles/email-attachment-timestamps-forensics-outlook/

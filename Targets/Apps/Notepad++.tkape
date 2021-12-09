@@ -1,0 +1,27 @@
+Description: Notepad++ Backups, recently searched/replaced terms and recently opened documents
+Author: Banaanhangwagen and Matt Dawson
+Version: 2.0
+Id: dc6c1009-2d0a-4ead-99f0-d1f3a5380751
+RecreateDirectories: true
+Targets:
+    -
+        Name: Notepad++ Unsaved Edits
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Roaming\Notepad++\backup\
+        Recursive: true
+        Comment: "Locates non-saved Notepad++ files and copies them."
+    -
+        Name: Notepad++ Config
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Roaming\Notepad++\
+        FileMask: "config.xml"
+        Comment: "Retrieves config.xml which contains recently searched terms, replaced terms and recently opened documents"
+    -
+        Name: Notepad++ Session
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Roaming\Notepad++\
+        FileMask: "session.xml"
+        Comment: "Retrieves session.xml which contains session date"
+
+# Documentation
+# https://krknsec.com/2020/04/18/miscellaneous-windows-10-forensic-artifacts

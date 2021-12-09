@@ -1,0 +1,15 @@
+Description: Windows Power Diagnostics
+Author: Andrew Rathbun
+Version: 1.0
+Id: eefa0401-8cae-4c65-84f4-c2bffd0805b7
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Power Diagnostics
+        Category: Diagnostics
+        Path: C:\ProgramData\Microsoft\Windows\Power Efficiency Diagnostics
+        Recursive: true
+
+# Documentation
+# https://www.tenforums.com/tutorials/5148-create-power-efficiency-diagnostics-report-windows-10-a.html
+# https://github.com/Chuyu-Team/Dism-Multi-language/issues/730

@@ -1,0 +1,27 @@
+Description: USB devices log files
+Author: Eric Zimmerman
+Version: 1.0
+Id: 07ee308f-c79a-47de-a431-c93ab34e4b66
+RecreateDirectories: true
+Targets:
+    -
+        Name: Setupapi.log XP
+        Category: USBDevices
+        Path: C:\Windows\
+        FileMask: setupapi.log
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows\inf\
+        FileMask: setupapi.dev.log
+    -
+        Name: Setupapi.log Win7+
+        Category: USBDevices
+        Path: C:\Windows.old\Windows\inf\
+        FileMask: setupapi.dev.log
+
+# Documentation
+# https://www.andreafortuna.org/2018/02/09/usb-devices-in-windows-forensic-analysis/
+# https://www.hecfblog.com/2013/08/daily-blog-66-understanding-artifacts.html
+# https://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html
+# https://www.13cubed.com/downloads/dfir_cheat_sheet.pdf

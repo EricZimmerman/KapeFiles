@@ -1,0 +1,214 @@
+Description: Chrome
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.2
+Id: a56d0a8f-3229-489e-aea7-353d1f6f9639
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Login Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Preferences XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Shortcuts XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Visited Links XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Download Metadata
+    -
+        Name: Chrome Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: Chrome Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Chrome Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Chrome Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Chrome Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Chrome Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: Chrome Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Chrome Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+
+# Documentation
+# https://nasbench.medium.com/web-browsers-forensics-7e99940c579a
+# https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/
+# https://www.sans.org/blog/google-chrome-forensics/
+# http://cyberforensicator.com/wp-content/uploads/2017/02/20160919.pdf
+# https://forensicswiki.xyz/wiki/index.php?title=Google_Chrome
+# https://dfir.blog/chrome-values-lookup-tables/
+# https://www.sans.org/blog/forensically-mining-new-nuggets-of-google-chrome/
+# https://digitalinvestigation.wordpress.com/tag/snss/
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Chrome_History.smap
+# For the files that aren't JSON or SQlite, aka Current Session, Current Tabs, Last Tabs, Last Session, see above links for clues on how to interpret that data

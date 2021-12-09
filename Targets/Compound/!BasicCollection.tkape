@@ -1,0 +1,54 @@
+Description: Basic Collection
+Author: Phill Moore
+Version: 1.1
+Id: 83b99299-2d84-4844-af25-c727d3440b19
+RecreateDirectories: true
+Targets:
+    -
+        Name: Event Logs
+        Category: Event Logs
+        Path: EventLogs.tkape
+    -
+        Name: Evidence of Execution
+        Category: Evidence of Execution
+        Path: EvidenceOfExecution.tkape
+    -
+        Name: File System
+        Category: File System
+        Path: FileSystem.tkape
+    -
+        Name: LNKFilesAndJumpLists
+        Category: File Access
+        Path: LNKFilesAndJumpLists.tkape
+    -
+        Name: PowerShellConsole
+        Category: Evidence Of Execution
+        Path: PowerShellConsole.tkape
+    -
+        Name: RecycleBin InfoFiles
+        Category: File Deletion
+        Path: RecycleBin_InfoFiles.tkape
+    -
+        Name: RegistryHives
+        Category: Registry Hives
+        Path: RegistryHives.tkape
+    -
+        Name: ScheduledTasks
+        Category: ScheduledTasks
+        Path: ScheduledTasks.tkape
+    -
+        Name: SRUM
+        Category: SRUM
+        Path: SRUM.tkape
+    -
+        Name: ThumbCache
+        Category: Thumbcache
+        Path: Thumbcache.tkape
+    -
+        Name: USBDevicesLogs
+        Category: USB
+        Path: USBDevicesLogs.tkape
+    -
+        Name: WindowsIndexSearch
+        Category: Search
+        Path: WindowsIndexSearch.tkape

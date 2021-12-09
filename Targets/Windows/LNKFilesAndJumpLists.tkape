@@ -1,0 +1,49 @@
+Description: LNK Files and jump lists
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.2
+Id: 5fc6820c-4d30-4a38-9e43-5e0b788a4b0c
+RecreateDirectories: true
+Targets:
+    -
+        Name: LNK Files from Recent
+        Category: LNKFiles
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
+        Recursive: true
+        Comment: Also includes automatic and custom jumplist directories
+    -
+        Name: LNK Files from Microsoft Office Recent
+        Category: LNKFiles
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Recursive: true
+    -
+        Name: LNK Files from Recent (XP)
+        Category: LNKFiles
+        Path: C:\Documents and Settings\%user%\Recent\
+        Recursive: true
+    -
+        Name: Desktop LNK Files XP
+        Category: LNKFiles
+        Path: C:\Documents and Settings\%user%\Desktop\
+        FileMask: '*.LNK'
+    -
+        Name: Desktop LNK Files
+        Category: LNKFiles
+        Path: C:\Users\%user%\Desktop\
+        FileMask: '*.LNK'
+    -
+        Name: Restore point LNK Files XP
+        Category: LNKFiles
+        Path: C:\System Volume Information\_restore*\RP*\
+        FileMask: '*.LNK'
+    -
+        Name: LNK Files from C:\ProgramData
+        Category: LNKFiles
+        Path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\
+        FileMask: '*.LNK'
+
+# Documentation
+# https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download
+# https://www.youtube.com/watch?v=g1zYCvzhBS4
+# https://belkasoft.com/forensic-analysis-of-lnk-files
+# http://windowsir.blogspot.com/2017/05/use-of-lnk-filesagain.html
+# https://dfir.pubpub.org/pub/wfuxlu9v

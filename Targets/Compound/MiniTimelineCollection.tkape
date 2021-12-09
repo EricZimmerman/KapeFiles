@@ -1,0 +1,21 @@
+Description: MFT, Registry and Event Logs to generate a mini timeline
+Author: Mari DeGrazia
+Version: 1.0
+Id: 02e131d6-7784-4302-9495-75536423e414
+RecreateDirectories: true
+Targets:
+    -
+        Name: Event Logs
+        Category: Event Logs
+        Path: EventLogs.tkape
+    -
+        Name: File System
+        Category: File System
+        Path: FileSystem.tkape
+    -
+        Name: RegistryHives
+        Category: Registry
+        Path: RegistryHives.tkape
+
+# Documentation
+# N/A

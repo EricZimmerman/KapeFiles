@@ -1,0 +1,25 @@
+Description: Box Cloud Storage Files
+Author: Chad Tilbury
+Version: 1.0
+Id: 6c6cef0b-4213-4903-acc4-d85430226a19
+RecreateDirectories: true
+Targets:
+    -
+        Name: Box Drive User Files
+        Category: Apps
+        Path: C:\Users\%user%\Box\
+        Recursive: true
+        Comment: "Caution! This target will collect Box Drive contents from the local drive AND on-demand cloud files. Ensure your scope of authority permits cloud collections before use or isolate system from network"
+    -
+        Name: Box Sync User Files
+        Category: Apps
+        Path: C:\Users\%user%\Box Sync\
+        Recursive: true
+
+# This target collects Box user files from the default locations but folders can be user-defined.  Check Box_Streem logs (Box Drive) or sync_root_folder.txt (Box Sync) to see if locations have been changed.
+
+# Documentation
+# https://cyberforensicator.com/2018/04/21/cloud-forensics-box/
+# https://dpmforensics.com/2017/03/12/cloud-forensics-box/
+# https://www.sans.org/blog/cloud-storage-acquisition-from-endpoint-devices
+# https://www.researchgate.net/publication/340816615_Forensic_Analysis_in_Cloud_Storage_with_Live_Forensics_in_Windows_Adrive_Case_Study

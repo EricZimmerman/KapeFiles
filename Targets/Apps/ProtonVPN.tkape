@@ -1,0 +1,19 @@
+Description: ProtonVPN
+Author: Andrew Rathbun
+Version: 1.0
+Id: 47dc8f4d-633d-4dcc-994d-2d62c3fa9c28
+RecreateDirectories: true
+Targets:
+    -
+        Name: ProtonVPN - Connection Logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\ProtonVPN\Logs
+        Comment: "Locates ProtonVPN connection logs."
+
+# Documentation
+# ProtonVPN is a VPN application made by the people who make ProtonMail.
+# Logs are stored at the above location and, while they don't provide much information that can be parsed, you will be able to see when the user was connected to ProtonVPN.
+# Logs appear to follow the following convention: app.YYYY.MM.DD.0.txt, although the 0 could increment if the log gets too large, presumably. One log per day.
+# When I tested connecting to VPN and then disconnecting shortly thereafter, I found the following entries in the app.txt file:
+# 2020-09-04 06:48:29.1233 INFO Connect requested
+# 2020-09-04 06:48:43.6800 INFO Disconnect requested

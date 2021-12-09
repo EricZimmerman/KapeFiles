@@ -1,0 +1,28 @@
+Description: SumatraPDF
+Author: Andrew Rathbun
+Version: 1.1
+Id: c3a2d097-bca5-4ebe-83b2-db509c86883f
+RecreateDirectories: true
+Targets:
+    -
+        Name: SumatraPDF Settings - SessionData
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\SumatraPDF
+        FileMask: SumatraPDF-settings.txt
+        Recursive: false
+        Comment: Settings file which contains information about previous user session
+    -
+        Name: SumatraPDF Cache
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\SumatraPDF\sumatrapdfcache
+        Recursive: false
+        Comment: Folder contains a PNG snapshot of each PDF file the user had open at the time of last application close
+
+# Documentation
+# https://www.sumatrapdfreader.org/settings/settings.html
+# In the above link, search for SessionData to warp to the applicable information you can find for what documents the user had opened within SumatraPDF at the last time of program exit
+# I've had 170+ PDFs opened at once with SumatraPDF and each of their full file paths were recorded within this file. Very useful!
+# Here's an example of some information you'll see about PDFs that've been opened with SumatraPDF
+# OpenCount = 1
+# DecryptionKey = 8cfbabc34e8d846dffb53b90c9g2acb5es82d9c86f314cb5aa7a1adfc66f76e800000000000000000000000000000000
+# DecryptionKey only exists if the user chooses to remember the password for a PDF that's password protected

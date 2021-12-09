@@ -1,0 +1,19 @@
+Description: Google Backup and Sync Storage Files
+Author: Chad Tilbury
+Version: 1.0
+Id: 6ebae21e-2323-4605-b258-38ea3a43b283
+RecreateDirectories: true
+Targets:
+    -
+        Name: Google Drive Backup and Sync User Files
+        Category: Apps
+        Path: C:\Users\%user%\Google Drive*\
+        Recursive: true
+        Comment: "Older Google Drive Backup and Sync application only"
+
+# Documentation
+# Google Drive for Desktop (originally Google File Stream) stores user files in a virtualized "G:\My Drive" folder by default. This target will not collect files from those versions of Google Drive.
+# https://www.researchgate.net/publication/330319091_Cloud_Drives_Forensic_Artifacts_A_Google_Drive_Case
+# https://cyberforensicator.com/2018/10/19/cloud-forensics-google-drive/
+# https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics/
+# https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics-2/

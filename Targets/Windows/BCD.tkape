@@ -1,0 +1,19 @@
+Description: Boot Configuration Files
+Author: Troy Larson
+Version: 1.0
+Id: eedec61a-bae4-4e96-a2cd-b6b30aa5a786
+RecreateDirectories: true
+Targets:
+    -
+        Name: BCD
+        Category: Registry
+        Path: C:\Boot\
+        FileMask: BCD
+    -
+        Name: BCD Logs
+        Category: Registry
+        Path: C:\Boot\
+        FileMask: 'BCD.LOG*'
+
+# Documentation
+# https://www.champlain.edu/Documents/LCDI/archive/Volume-shadow-Report_Redux.pdf

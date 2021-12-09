@@ -1,0 +1,15 @@
+Description: Autoruns reports Explorer shell extensions, toolbars, browser helper objects, Winlogon notifications, auto-start services, and much more.
+Category: LiveResponse
+Author: Andy Furnas, Encoding updates by piesecurity, Andreas Hunkeler (@Karneades)
+Version: 1.3
+Id: c95e71bd-7abb-48c3-abae-f48b9ff19dec
+BinaryUrl: https://download.sysinternals.com/files/Autoruns.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "& '%kapedirectory%\Modules\bin\autorunsc.exe' -a * -s -c -accepteula -nobanner -h * | Set-Content -Path %destinationDirectory%\autoruns.csv"
+        ExportFormat: csv
+
+# Documentation
+# https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns

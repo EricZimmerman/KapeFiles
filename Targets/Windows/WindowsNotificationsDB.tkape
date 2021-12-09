@@ -1,0 +1,21 @@
+Description: Windows 10 Notification DB
+Author: Hadar Yudovich
+Version: 1.0
+Id: a5c3308d-8941-43c4-a295-b906a59bc895
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows 10 Notification DB
+        Category: Notifications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: wpndatabase.db
+    -
+        Name: Windows 10 Notification DB
+        Category: Notifications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: appdb.dat
+
+# Documentation
+# https://www.swiftforensics.com/2016/06/prasing-windows-10-notification-database.html
+# https://www.hecfblog.com/2018/08/daily-blog-440-windows-10-notifications.html
+# https://inc0x0.com/2018/10/windows-10-notification-database/

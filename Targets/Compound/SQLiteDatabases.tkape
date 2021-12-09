@@ -1,0 +1,595 @@
+Description: SQLDatabases Target for use with SQLECmd Module
+Author: Andrew Rathbun
+Version: 1.3
+Id: 61d2909c-dcf2-481f-9169-53ea0c2455ba
+RecreateDirectories: true
+Targets:
+
+# Apps - 4K Video Downloader - 4KVideoDownloader.tkape
+
+    -
+        Name: 4K Video Downloader
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader
+        FileMask: "*.sqlite"
+        Comment: "Grabs database(s) that stores user download history"
+
+# Apps - Microsoft OneNote - MicrosoftOneNote.tkape
+
+    -
+        Name: Microsoft OneNote - FullTextSearchIndex
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\*\FullTextSearchIndex
+        Comment: "Grabs database(s) comprising of each OneNote notebook's text content"
+    -
+        Name: Microsoft OneNote - RecentNotebooks_SeenURLs
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\Notifications
+        FileMask: RecentNotebooks_SeenURLs
+        Comment: "Grabs a file that appears to record recently seen OneNote notebooks"
+    -
+        Name: Microsoft OneNote - AccessibilityCheckerIndex
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\AccessibilityCheckerIndex
+        Comment: "Grabs database(s) comprising of each OneNote notebook's version sync error history"
+    -
+        Name: Microsoft OneNote - User NoteTags
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\NoteTags
+        FileMask: "*LiveId.db"
+        Comment: "Grabs a database that stores the user specified tags within OneNote to be used application-wide"
+    -
+        Name: Microsoft OneNote - RecentSearches
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\RecentSearches
+        FileMask: RecentSearches.db
+        Comment: "Grabs a database that stores the user's recent searches within OneNote"
+
+# Apps - Microsoft Sticky Notes - MicrosoftStickyNotes.tkape
+
+    -
+        Name: Microsoft Sticky Notes - 1607 and later
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes*\LocalState\
+        FileMask: plum.sqlite*
+
+# Apps - Microsoft To Do - MicrosoftToDo.tkape
+
+    -
+        Name: Microsoft To Do - SQLite Database of To Do tasks
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\*\
+        FileMask: todosqlite.db*
+
+# Apps - TeraCopy - TeraCopy.tkape
+
+    -
+        Name: TeraCopy - History Databases
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\TeraCopy\History
+        FileMask: "*.db"
+    -
+        Name: TeraCopy - Main Database
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
+        FileMask: main.db
+
+# Cloud Storage - Dropbox - Dropbox_Metadata.tkape
+
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: filecache.db*
+        Comment: "Getting individual files because folder may contain very large extraneous files"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: config.dbx
+        Comment: "Getting individual files because folder may contain very large extraneous files"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: home.db
+        Comment: "SQlite database which appears to keep track of the user's recent Dropbox activity"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: icon.db
+        Comment: "SQLite database which appears to keep track of icons in the user's Drobox sync history which can give an indication as to which files and folders are present"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: sync_history.db
+        Comment: "SQLite database which appears to keep track of the user's Drobox sync history"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\sync\
+        FileMask: nucleus.sqlite3*
+        Comment: "SQLite database which appears to contain a table for deleted files"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
+        FileMask: host.db
+        Comment: "SQLite database which contains the local path of the user's Dropbox folder encoded in BASE64. Decode each line separately, not together."
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\
+        FileMask: host.dbx
+        Comment: "SQLite database which contains the local path of the user's Dropbox folder encoded in BASE64. Decode each line separately, not together."
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\sync\
+        FileMask: aggregation.dbx
+        Comment: "SQLite database which appears to contain snapshot table of the user's Dropbox contents in JSON with timestamps in UNIX Epoch"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: avatarcache.db
+        Comment: "SQLite database which appears to contain the ID's of account(s) on the user's system where Dropbox is installed"
+    -
+        Name: Dropbox Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Dropbox\*\
+        FileMask: avatarcache.db
+        Comment: "SQLite database which appears to contain the ID's of account(s) on the user's system where Dropbox is installed"
+
+# Cloud Storage - Google Drive - GoogleDrive_Metadata.tkape
+
+    -
+        Name: Google File Stream Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Drive\*\cloud_graph\
+        FileMask: cloud_graph.db
+        Comment: "Windows_GoogleDrive_CloudGraphDB.smap"
+    -
+        Name: Google File Stream Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Drive\*\TempData\*\change_buffer\
+        Recursive: true
+        Comment: "DB(s) with seemingly randomized filename(s) that track file system changes within Google Drive"
+    -
+        Name: Google File Stream Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Drive\*\
+        FileMask: snapshot.db
+        Comment: "Windows_GoogleDrive_SnapshotDB.smap"
+    -
+        Name: Google File Stream Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Drive\*\
+        FileMask: sync_config.db
+        Comment: "Windows_GoogleDrive_SyncConfigDB.smap"
+
+# FTP Clients - FileZilla - FileZilla.tkape
+
+    -
+        Name: FileZilla SQLite3 Log Files
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\FileZilla\
+        FileMask: '*.sqlite3*'
+
+# Web Browsers - Chrome - Chrome.tkape
+
+    -
+        Name: Chrome bookmarks XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Favicons XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Login Data XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Preferences XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Shortcuts XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Visited Links XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data XP
+        Category: SQLDatabases
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome bookmarks
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Download Metadata
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Download Metadata
+    -
+        Name: Chrome Extension Cookies
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: Chrome Favicons
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Login Data
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Media History
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Chrome Network Action Predictor
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Chrome Network Persistent State
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Preferences
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Quota Manager
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Chrome Reporting and NEL
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: Chrome Shortcuts
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Trust Tokens
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome SyncData Database
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Chrome Visited Links
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+
+# Web Browsers - Edge Chromium - EdgeChromium.tkape
+
+    -
+        Name: Edge bookmarks
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Edge Collections
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Collections
+        FileMask: collectionsSQLite
+    -
+        Name: Edge Cookies
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Edge Current Session
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Edge Current Tabs
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Edge Favicons
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Edge History
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: History*
+    -
+        Name: Edge Last Session
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Edge Last Tabs
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Edge Login Data
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Edge Media History
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Edge Network Action Predictor
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Edge Preferences
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Edge Shortcuts
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Edge Top Sites
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Edge SyncData Database
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Edge Bookmarks
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Edge Visited Links
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Edge Web Data
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Web Data*
+
+# Web Browsers - Firefox - Firefox.tkape
+
+    -
+        Name: Addons
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: addons.sqlite*
+    -
+        Name: Bookmarks
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\weave\
+        FileMask: bookmarks.sqlite*
+    -
+        Name: Cookies
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: cookies.sqlite*
+    -
+        Name: Cookies
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: firefox_cookies.sqlite*
+    -
+        Name: Downloads
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: downloads.sqlite*
+    -
+        Name: Favicons
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: favicons.sqlite*
+    -
+        Name: Form history
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: formhistory.sqlite*
+    -
+        Name: Permissions
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: permissions.sqlite*
+    -
+        Name: Places
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: places.sqlite*
+    -
+        Name: Protections
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: protections.sqlite*
+    -
+        Name: Search
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: search.sqlite*
+    -
+        Name: Signons
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: signons.sqlite*
+    -
+        Name: Storage Sync
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: storage-sync.sqlite*
+    -
+        Name: Webappstore
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
+        FileMask: webappstore.sqlite*
+
+# Windows - Windows Notifications - WindowsNotificationsDB.tkape
+
+    -
+        Name: Windows 10 Notification DB
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: wpndatabase.db
+    -
+        Name: Windows 10 Notification DB
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: appdb.dat
+
+# Windows - Windows Timeline - WindowsTimeline.tkape
+
+    -
+        Name: ActivitiesCache.db
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db*
+
+# Windows - Windows OS Upgrade Artifacts - WindowsOSUpgradeArtifacts.tkape
+
+    -
+        Name: Update Store.db
+        Category: OS Upgrade
+        Path: C:\ProgramData\USOPrivate\UpdateStore
+        FileMask: store.db
+
+# Windows - Bitdefender Antivirus - Bitdefender.tkape
+    -
+        Name: Bitdefender SQLite DB Files
+        Category: Antivirus
+        Path: C:\Program Files*\Bitdefender*\
+        Recursive: true
+        FileMask: regex:*.+\.(db|db-wal|db-shm)
+        Comment: "Bitdefender SQLite databases"
+
+# Windows - EventTranscript.db - EventTranscriptDB.tkape
+
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+
+# Documentation
+# This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
+# This Target will likely be updated often as more SQLECmd Maps are created
+# Despite not pointing to other .tkape files directly in the interest of only grabbing SQL databases, this Target is considered a Compound Target since it references many other Targets
+# Use with SQLECmd.mkape or SQLECmd-Hunt.mkape for best results

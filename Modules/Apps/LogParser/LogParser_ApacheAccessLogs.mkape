@@ -1,0 +1,19 @@
+Description: LogParser Apache Access Log
+Category: Webservers
+Author: Hadar Yudovich
+Version: 1.0
+Id: 631ac549-9ddf-48ea-b95b-ca4678230df6
+BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
+ExportFormat: csv
+FileMask: access.log
+Processors:
+    -
+        Executable: LogParser.exe
+        CommandLine: -i:ncsa -o:csv "select * into '%destinationDirectory%\access_log.csv' from '%sourceDirectory%\access.log'"
+        ExportFormat: csv
+
+# Documentation
+# https://www.microsoft.com/en-us/download/details.aspx?id=24659
+# https://www.stevebunting.org/udpd4n6/forensics/logparser.htm
+# Uses Microsoft Log Parser
+# Point msource (Module Source) to the Apache logs folder

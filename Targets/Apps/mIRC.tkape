@@ -1,0 +1,19 @@
+Description: mIRC
+Author: Andrew Rathbun
+Version: 1.0
+Id: 284ffb97-076c-4990-b10a-044d40ac1901
+RecreateDirectories: true
+Targets:
+    -
+        Name: mIRC Chat Logs (Vista+)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\mIRC\logs\
+        Recursive: true
+    -
+        Name: mIRC Chat Logs (2000/XP)
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\mIRC\logs\
+        Recursive: true
+
+# Documentation
+# https://ir3e.com/chapter-14-additional-im-clients/

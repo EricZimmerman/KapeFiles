@@ -1,0 +1,31 @@
+Description: LogParser Compound Module
+Category: Modules
+Author: Andrew Rathbun
+Version: 1.0
+Id: 60643e70-1f3d-4aa6-a08a-c907f69faaa5
+BinaryUrl: https://www.microsoft.com/en-us/download/confirmation.aspx?id=24659
+ExportFormat: csv
+Processors:
+    -
+        Executable: LogParser_ApacheAccessLogs.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: LogParser_DetailedNetworkShareAccess.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: LogParser_LogonLogoffEvents.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: LogParser_RDPUsageEvents.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: LogParser_SMBServerAnonymousLogons.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# N/A

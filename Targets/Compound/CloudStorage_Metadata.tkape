@@ -1,0 +1,26 @@
+Description: Cloud Storage Metadata
+Author: Chad Tilbury and Andrew Rathbun
+Version: 1.0
+Id: 136ca523-2f99-4203-bd66-6aa50fe8d3a8
+RecreateDirectories: true
+Targets:
+    -
+        Name: Box Metadata
+        Category: Apps
+        Path: BoxDrive_Metadata.tkape
+    -
+        Name: Dropbox Metadata
+        Category: Apps
+        Path: Dropbox_Metadata.tkape
+    -
+        Name: Google Drive Metadata
+        Category: Apps
+        Path: GoogleDrive_Metadata.tkape
+    -
+        Name: OneDrive Metadata
+        Category: Apps
+        Path: OneDrive_Metadata.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

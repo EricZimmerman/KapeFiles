@@ -1,0 +1,19 @@
+Description: Confluence Log Files
+Author: Eric Capuano
+Version: 1.0
+Id: 317b3814-b383-4bcf-97a2-3b3d1c5f8ca0
+RecreateDirectories: true
+Targets:
+    -
+        Name: Confluence Wiki Log Files
+        Category: Logs
+        Path: C:\Atlassian\Application Data\Confluence\logs\
+        FileMask: '*.log*'
+    -
+        Name: Confluence Wiki Log Files
+        Category: Logs
+        Path: C:\Program Files\Atlassian\Confluence\logs\
+        FileMask: '*.log'
+
+# Documentation
+# N/A

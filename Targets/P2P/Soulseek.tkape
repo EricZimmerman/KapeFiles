@@ -1,0 +1,24 @@
+Description: Soulseek
+Author: Andrew Rathbun
+Version: 1.1
+Id: c68061f4-9f79-4d7d-9e95-30636103ed19
+RecreateDirectories: true
+Targets:
+    -
+        Name: Soulseek Chat Logs
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\SoulseekQt\Soulseek Chat Logs\
+        Recursive: true
+        Comment: "Locates Soulseek chat logs and copies them. Chat logs are in plaintext. Current as of version 2019.7.22."
+    -
+        Name: Soulseek Search History/Shared Folders/Settings
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\SoulseekQt\1\
+        FileMask: '*.dat'
+        Comment: "Locates .dat file(s) containing: search history, active searches (search_record), current shared folders (shared_file_folder), and wish list items (wish_list_item)."
+
+# Documentation
+# https://en.wikipedia.org/wiki/Soulseek
+# Soulseek is a very popular file sharing client. It's most commonly used for sharing MP3's amongst music enthusiasts. However, any file type can be shared, naturally.
+# Logs are stored as .dat files. Open with your favorite text editor that's not named Notepad or Wordpad and you should have an easy enough time using Ctrl+F to search for relevant data.
+# Chats are stored in plaintext. These can be opened in any text editor and are human readable.

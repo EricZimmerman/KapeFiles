@@ -1,0 +1,49 @@
+Description: Skype
+Author: Eric Zimmerman, Matt Dawson
+Version: 4.0
+Id: d7b0b49c-16bb-4b32-9f57-2d918acaebbc
+RecreateDirectories: true
+Targets:
+    -
+        Name: main.db (App <v12)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        FileMask: main.db
+    -
+        Name: skype.db (App +v12)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\
+        FileMask: skype.db
+    -
+        Name: main.db XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Skype\*\
+        FileMask: main.db
+    -
+        Name: main.db Win7+
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Skype\*\
+        FileMask: main.db
+    -
+        Name: s4l-[username].db (App +v8)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\
+        FileMask: s4l-*.db
+    -
+        Name: leveldb (Skype for Desktop +v8)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\
+        Recursive: true
+    -
+        Name: Skype for Destkop v8+ Chromium Cache
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Skype for Desktop\Cache\
+        Recursive: true
+        Comment: Can be viewed with Nirsoft's ChromeCacheView
+
+# Documentation
+# https://bebinary4n6.blogspot.com/2019/07/analysis-of-skype-windows-10-app.html
+# https://bebinary4n6.blogspot.com/2019/07/skype-from-old-one-to-newest-one.html
+# https://blog.elcomsoft.com/2019/12/extracting-skype-histories-and-deleted-files-metadata-from-microsoft-account/
+# https://bebinary4n6.blogspot.com/2019/07/analysis-skype-app-for-windows-metro.html
+# https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/microsoft-teams-and-skype-logging-privacy-issue/

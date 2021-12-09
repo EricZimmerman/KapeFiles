@@ -1,0 +1,18 @@
+Description: $LogFile
+Author: Eric Zimmerman
+Version: 1.0
+Id: b98612e0-f679-400a-954f-c0b2bc86147b
+RecreateDirectories: true
+Targets:
+    -
+        Name: $LogFile
+        Category: FileSystem
+        Path: C:\
+        FileMask: $LogFile
+        AlwaysAddToQueue: true
+
+# Documentation
+# https://link.springer.com/chapter/10.1007/978-3-642-35515-8_18
+# https://digital-forensics.sans.org/summit-archives/DFIR_Summit/File-System-Journaling-Forensics-Theory-Procedures-and-Analysis-Impacts-David-Cowen-with-Matthew-Seyer.pdf
+# https://dfir.ru/2019/02/16/how-the-logfile-works/
+# https://countuponsecurity.com/tag/ntfs-logfile/

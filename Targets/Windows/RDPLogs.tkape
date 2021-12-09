@@ -1,0 +1,54 @@
+Description: RDP Logs
+Author: Drew Ervin
+Version: 1.0
+Id: 6fa6ac8c-d940-4658-9c61-fdad4cf6416b
+RecreateDirectories: true
+Targets:
+    -
+        Name: RemoteConnectionManager Event Logs
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-TerminalServices-RemoteConnectionManager*
+    -
+        Name: RemoteConnectionManager Event Logs
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-TerminalServices-RemoteConnectionManager*
+    -
+        Name: LocalSessionManager Event Logs
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-TerminalServices-LocalSessionManager*
+    -
+        Name: LocalSessionManager Event Logs
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-TerminalServices-LocalSessionManager*
+    -
+        Name: RDPClient Event Logs
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-TerminalServices-RDPClient*
+    -
+        Name: RDPClient Event Logs
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-TerminalServices-RDPClient*
+    -
+        Name: RDPCoreTS Event Logs
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-RemoteDesktopServices-RdpCoreTS*
+        Comment: "Can be used to correlate RDP logon failures by originating IP"
+    -
+        Name: RDPCoreTS Event Logs
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: Microsoft-Windows-RemoteDesktopServices-RdpCoreTS*
+        Comment: "Can be used to correlate RDP logon failures by originating IP"
+
+# Documentation
+# https://www.andreafortuna.org/2020/06/04/windows-forensic-analysis-some-thoughts-on-rdp-related-event-ids/
+# https://ponderthebits.com/2018/02/windows-rdp-related-event-logs-identification-tracking-and-investigation/
+# https://www.13cubed.com/downloads/rdp_flowchart.pdf
+# https://www.youtube.com/watch?v=myzG11BP3Sk

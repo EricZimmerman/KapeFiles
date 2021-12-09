@@ -1,0 +1,31 @@
+Description: TeamViewer Logs
+Author: Hadar Yudovich
+Version: 1.1
+Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
+RecreateDirectories: true
+Targets:
+    -
+        Name: TeamViewer Connection Logs
+        Category: Communications
+        Path: C:\Program Files*\TeamViewer\
+        FileMask: 'connections*.txt'
+        Comment: "Includes connections_incoming.txt and connections.txt"
+    -
+        Name: TeamViewer Application Logs
+        Category: ApplicationLogs
+        Path: C:\Program Files*\TeamViewer\
+        FileMask: 'TeamViewer*_Logfile*'
+        Comment: "Includes TeamViewer<version>_Logfile.log and TeamViewer<version>_Logfile_OLD.log"
+    -
+        Name: TeamViewer Configuration Files
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport\
+        Recursive: true
+        Comment: "Includes miscellaneous config files"
+
+# Documentation
+# https://www.champlain.edu/Documents/LCDI/archive/Team-Viewer-Forensics.pdf
+# https://svch0st.medium.com/writeup-magnet-user-summit-dfir-ctf-2019-activity-79cf149c04d7
+# https://www.systoolsgroup.com/forensics/teamviewer/
+# https://athenaforensics.co.uk/teamviewer-forensics/
+# https://medium.com/mii-cybersec/digital-forensic-artifact-of-teamviewer-application-cfd6290dc0a7

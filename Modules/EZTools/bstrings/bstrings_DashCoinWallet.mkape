@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for DashCoin Wallets
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: a759879b-0afa-4d20-b4f0-814aeee0d4b9
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr dashcoin
+        ExportFormat: txt
+        ExportFile: DashCoinWallets.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/

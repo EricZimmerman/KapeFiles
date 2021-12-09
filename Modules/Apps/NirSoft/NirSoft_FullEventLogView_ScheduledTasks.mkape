@@ -1,0 +1,21 @@
+Description: Parses TaskScheduler event log using Nirsoft FullEventLogView.exe
+Category: EventLogs
+Author: Hadar Yudovich
+Version: 1.0
+Id: 8e04da5a-7ee4-4ef6-a4e0-4c68aca39af0
+BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
+ExportFormat: csv
+FileMask: Microsoft-Windows-TaskScheduler%4Operational.evtx
+Processors:
+    -
+        Executable: FullEventLogView.exe
+        CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Microsoft-Windows-TaskScheduler%4Operational.evtx /scomma %destinationDirectory%\task_scheduler_event_log.csv
+        ExportFormat: csv
+
+# Documentation
+# Uses Nirsoft's FullEventLogView to export event logs to csv
+# https://www.nirsoft.net/utils/full_event_log_view.html
+# FullEventLogView.exe should be in the Modules\bin folder
+# Assumes the msource will include the drive letter. e.g. D:\kape\C
+# Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module SecurityFullEventLogView
+# Example: .\kape.exe --msource C:\Windows\System32\winevt\Logs\ --mdest D:\kape\out --module SecurityFullEventLogView

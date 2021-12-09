@@ -1,0 +1,19 @@
+Description: Chrome Extension Files
+Author: piesecurity
+Version: 1.0
+Id: e748b5e3-e279-4e4d-8083-74293e5b6cde
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome Extension Files
+        Category: Communication
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
+        Recursive: true
+    -
+        Name: Chrome Extension Files XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\Extensions\
+        Recursive: true
+
+# Documentation
+# N/A

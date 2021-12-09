@@ -1,0 +1,19 @@
+Description: 'SQLECmd: process SQLite databases'
+Category: SQLDatabases
+Author: Andrew Rathbun
+Version: 1.0
+Id: f9198051-4899-465d-aa5a-8291525d82b1
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: SQLECmd\SQLECmd.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: SQLECmd\SQLECmd.exe
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# https://github.com/EricZimmerman/SQLECmd

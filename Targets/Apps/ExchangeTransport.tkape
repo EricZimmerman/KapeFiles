@@ -1,0 +1,16 @@
+Description: Exchange Transport Log Files
+Author: Keith Twombley
+Version: 1.0
+Id: 9bc0a453-50ab-46e8-a424-09dc7022c4a4
+RecreateDirectories: true
+Targets:
+    -
+        Name: Exchange TransportRoles log files
+        Category: Logs
+        Path: C:\Program Files\Microsoft\Exchange Server\*\TransportRoles\Logs\
+        Recursive: true
+        FileMask: '*.log'
+        Comment: "Highly dependent on Exchange configuration"
+
+# Documentation
+# N/A

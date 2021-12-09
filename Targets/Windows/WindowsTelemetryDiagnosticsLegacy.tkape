@@ -1,0 +1,32 @@
+Description: Legacy Windows Telemetry and Diagnostics files (*.rbs)
+Author: Andrew Rathbun and Josh Mitchell
+Version: 1.0
+Id: 4bc4b0bc-9334-4ad8-a331-78c4751ea07d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Legacy .rbs files relating to Windows Telemetry and Diagnostics
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\
+        FileMask: 'events*.rbs'
+    -
+        Name: Legacy .rbs files relating to Windows Telemetry and Diagnostics
+        Category: SystemEvents
+        Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\
+        FileMask: 'events*.rbs'
+
+# Documentation
+# https://arxiv.org/pdf/2002.12506
+# https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript/eventtranscript-files-and-their-relation-diagtrack
+# These .rbs files should simply be opened in a text editor as they are effectively JSON files. These are very similar, if not, identical, to the JSON payloads included in EventTranscript.db
+# These files were present in Windows 10 between versions 1507 and 1809. 1709 is when EventTranscript.db came into play.
+# This Target should grab the following files:
+#
+# events00.rbs
+# events01.rbs
+# events10.rbs
+# events11.rbs
+# Events_Normal.rbs
+# Events_NormalCritical.rbs
+# Events_CostDeferred.rbs
+# Events_Realtime.rbs

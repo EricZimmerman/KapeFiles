@@ -1,0 +1,27 @@
+Description: SugarSync
+Author: Andrew Rathbun
+Version: 1.0
+Id: 91e7965c-d9ed-440e-93b7-65d7ebdb3584
+RecreateDirectories: true
+Targets:
+    -
+        Name: SugarSync Log File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\SugarSync\
+        FileMask: 'sc1.log'
+        Comment: "Locates a log file the gives a play-by-play of what the user synced when."
+    -
+        Name: SugarSync - Shared Folders (Default Location)
+        Category: Apps
+        Path: C:\Users\%user%\Documents\SugarSync Shared Folders\
+        Recursive: true
+    -
+        Name: SugarSync - My SugarSync (Default Location)
+        Category: Apps
+        Path: C:\Users\%user%\Documents\My SugarSync\
+        Recursive: true
+
+# Documentation
+# SugarSync is an online storage service similar to Google Drive, OneDrive, etc. I had never heard of it, but it's one of 4 online storage services listed as an option on Ninite as of October 2020.
+# The sc1.log file appears to be the only thing relevant for this application.
+# Please note, this is not like OneDrive, Google Drive, etc where there's a dedicated folder where what is stored in SugarSync resides locally on the system. The user can choose folders all around their system to sync to SugarSync as changes are made on their system.

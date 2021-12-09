@@ -1,0 +1,29 @@
+Description: EncapsulationLogging
+Author: Troy Larson
+Version: 1.0
+Id: 7c328d9b-4a10-459d-b8b3-36d81686bc74
+RecreateDirectories: true
+Targets:
+    -
+        Name: EncapsulationLogging
+        Category: Executables
+        Path: C:\Windows\Appcompat\Programs\
+        FileMask: EncapsulationLogging.hve
+    -
+        Name: EncapsulationLogging
+        Category: Executables
+        Path: C:\Windows.old\Windows\Appcompat\Programs\
+        FileMask: EncapsulationLogging.hve
+    -
+        Name: EncapsulationLogging Logs
+        Category: Executables
+        Path: C:\Windows\Appcompat\Programs\
+        FileMask: EncapsulationLogging.hve.log*
+    -
+        Name: EncapsulationLogging Logs
+        Category: Executables
+        Path: C:\Windows.old\Windows\Appcompat\Programs\
+        FileMask: EncapsulationLogging.hve.log*
+
+# Documentation
+# N/A

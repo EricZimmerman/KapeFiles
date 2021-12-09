@@ -1,0 +1,30 @@
+Description: Windows Application Event Log
+Author: Drew Ervin
+Version: 1.0
+Id: 2da16dbf-ea47-448e-a00f-fc442c3109ba
+RecreateDirectories: true
+Targets:
+    -
+        Name: Application Event Log XP
+        Category: EventLogs
+        Path: C:\Windows\System32\config\
+        FileMask: AppEvent.evt
+    -
+        Name: Application Event Log XP
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\config\
+        FileMask: AppEvent.evt
+    -
+        Name: Application Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: application.evtx
+    -
+        Name: Application Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: application.evtx
+
+# Documentation
+# https://countuponsecurity.com/2015/11/23/digital-forensics-supertimeline-event-logs-part-i/
+# https://www.jaiminton.com/cheatsheet/DFIR/

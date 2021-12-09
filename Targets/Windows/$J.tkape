@@ -1,0 +1,44 @@
+Description: $J
+Author: Eric Zimmerman and Andrew Rathbun
+Version: 1.1
+Id: 2a9c6f80-250b-42a6-9d29-90cb0a20f7be
+RecreateDirectories: true
+Targets:
+    -
+        Name: $J
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $UsnJrnl:$J
+        AlwaysAddToQueue: true
+        SaveAsFileName: $J
+    -
+        Name: $Max
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $UsnJrnl:$Max
+        AlwaysAddToQueue: true
+        SaveAsFileName: $Max
+    -
+        Name: $J
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $J
+        SaveAsFileName: $J
+        Comment: "This is for the use case when you're running this Target against a mounted VHDX with these files already pulled from a live system. The above Targets are looking for the files as an ADS whereas once they are already pulled they no longer match the ADS criteria and therefore are missed"
+    -
+        Name: $Max
+        Category: FileSystem
+        Path: C:\$Extend\
+        FileMask: $Max
+        SaveAsFileName: $Max
+        Comment: "This is for the use case when you're running this Target against a mounted VHDX with these files already pulled from a live system. The above Targets are looking for the files as an ADS whereas once they are already pulled they no longer match the ADS criteria and therefore are missed"
+
+# Documentation
+# https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
+# http://forensicinsight.org/wp-content/uploads/2013/07/F-INSIGHT-Advanced-UsnJrnl-Forensics-English.pdf
+# https://countuponsecurity.com/2017/05/25/digital-forensics-ntfs-change-journal/
+# http://journeyintoir.blogspot.com/2013/01/re-introducing-usnjrnl.html
+# https://tzworks.net/prototype_page.php?proto_id=5
+# http://az4n6.blogspot.com/2015/03/usn-journal-where-have-you-been-all-my.html
+# https://www.youtube.com/watch?v=1mwiShxREm8
+# https://github.com/rathbuna/DFIRMindMaps/tree/main/FileSystems/NTFS/%24J

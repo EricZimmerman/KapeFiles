@@ -1,0 +1,14 @@
+Description: SUPERAntiSpyware Data
+Author: Drew Ervin
+Version: 1.0
+Id: 0b2c9e30-8d85-43ea-aa26-b20503b8e1da
+RecreateDirectories: true
+Targets:
+    -
+        Name: SUPERAntiSpyware Logs
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Roaming\SUPERAntiSpyware\Logs\
+        Recursive: true
+
+# Documentation
+# N/A

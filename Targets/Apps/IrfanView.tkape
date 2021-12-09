@@ -1,0 +1,17 @@
+Description: IrfanView
+Author: Andrew Rathbun
+Version: 1.0
+Id: 20c9d7ae-4efc-4eb0-b1c5-99504e1f6aac
+RecreateDirectories: true
+Targets:
+    -
+        Name: IrfanView Configuration File
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\IrfanView\
+        FileMask: i_view32.ini
+
+# Documentation
+# N/A
+#
+# This .ini file appears to contain record of the last 15 files opened by the user
+# Additionally, this .ini file appears to contain the folder path the user will be presented with upon clicking on File -> Open within IrfanView

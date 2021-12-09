@@ -1,0 +1,29 @@
+Description: VIPRE Data
+Author: Drew Ervin
+Version: 1.0
+Id: 8af4ffd8-264e-4c7d-aa28-8cc4f543b01d
+RecreateDirectories: true
+Targets:
+    -
+        Name: VIPRE Business Agent Logs
+        Category: Antivirus
+        Path: C:\ProgramData\VIPRE Business Agent\Logs\
+        Recursive: true
+    -
+        Name: VIPRE Business User Logs (v7+)
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Roaming\VIPRE Business\
+        Recursive: true
+    -
+        Name: VIPRE Business User Logs (v5-v6)
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Roaming\GFI Software\AntiMalware\Logs\
+        Recursive: true
+    -
+        Name: VIPRE Business User Logs (up to v4)
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Roaming\Sunbelt Software\AntiMalware\Logs\
+        Recursive: true
+
+# Documentation
+# N/A

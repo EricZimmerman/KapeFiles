@@ -1,0 +1,41 @@
+Description: Microsoft Teams
+Author: Matt Dawson and Andrew Rathbun
+Version: 3.0
+Id: 7d449255-917e-4894-a46d-dcbeee2289b5
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft Teams IndexedDB Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\IndexedDB\https_teams.microsoft.com_0.indexeddb.leveldb\
+        Recursive: true
+        Comment: "LevelDB database which can contain inbound/outbound chat messages, call history and more"
+    -
+        Name: Microsoft Teams Local Storage Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\Local Storage\leveldb\
+        Recursive: true
+        Comment: "LevelDB database which can contain meeting history, file transfer logs and more"
+    -
+        Name: Microsoft Teams Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\Cache\
+        Recursive: true
+        Comment: Chromium cache which can be viewed with Nirsoft's ChromeCacheView
+    -
+        Name: Microsoft Teams Config
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Teams\
+        FileMask: "desktop-config.json"
+        Comment: "JSON config file for Teams"
+    -
+        Name: Microsoft Teams Logs (Windows 11)
+        Category: Apps
+        Path: C:\Users\%User%\AppData\Local\Packages\MicrosoftTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\Logs
+        Comment: "Lots of log files for MS Teams"
+
+# Documentation
+# https://cyberforensicator.com/2020/04/16/looking-at-microsoft-teams-from-a-dfir-perspective/
+# https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/microsoft-teams-and-skype-logging-privacy-issue/
+# https://netsecninja.github.io/analysis/2021/02/11/ms-teams-logs-activity.html
+# https://www.datadigitally.com/2020/09/microsoft-teams-artifacts-and-chat-logs.html

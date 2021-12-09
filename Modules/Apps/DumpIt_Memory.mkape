@@ -1,0 +1,15 @@
+Description: DumpIt Memory Acquisition
+Category: Memory
+Author: Doug Metz
+Version: 1.0
+Id: 7504551a-41b6-4287-ad8a-ee0a10a66f7d
+BinaryUrl: https://my.comae.com
+ExportFormat: dmp
+Processors:
+    -
+        Executable: DumpIt.exe
+        CommandLine: /O %destinationDirectory%/memdump.dmp /Q
+        ExportFormat: dmp
+
+# Documentation
+# https://blog.comae.io/your-favorite-memory-toolkit-is-back-f97072d33d5c

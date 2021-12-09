@@ -1,0 +1,16 @@
+Description: Symantec Logs
+Category: Antivirus
+Author: Brian Maloney
+Version: 1.1
+Id: 073300a3-2d16-4bf5-b332-b038b571e95f
+BinaryUrl: https://github.com/Beercow/SEPparser/raw/master/bin/SEPparser.exe
+ExportFormat: csv
+FileMask: ""
+Processors:
+    -
+        Executable: SEPparser.exe
+        CommandLine: -d  %sourceDirectory% -o %destinationDirectory% -k -l -hf -eb
+        ExportFormat: csv
+
+# Documentation
+# https://github.com/Beercow/SEPparser

@@ -1,0 +1,16 @@
+Description: Gathers Basic System Information Using the Net Command (members of local administrator group)
+Category: LiveResponse
+Author: Andreas Hunkeler (@Karneades)
+Version: 1.0
+Id: 730cf14e-2680-447f-9853-e79ad3aa0e65
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "$admin = (Get-LocalGroup -Name 'Admini*').name; net localgroup $admin"
+        ExportFormat: txt
+        ExportFile: NetSystemInfo.txt
+        Append: true
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/?view=powershell-5.1

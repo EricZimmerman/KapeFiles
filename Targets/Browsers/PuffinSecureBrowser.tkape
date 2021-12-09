@@ -1,0 +1,57 @@
+Description: Puffin Secure Browser
+Author: Andrew Rathbun
+Version: 1.0
+Id: 0adfdd1e-16e7-4b2e-808a-8643f42ebe16
+RecreateDirectories: true
+Targets:
+    -
+        Name: Puffin - data.db
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser
+        FileMask: data.db
+        Comment: "Grabs an important database file that contains browser history"
+    -
+        Name: Puffin - Autocomplete Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser
+        FileMask: autocompletes.dat
+        Comment: "Grabs a file that stores autocomplete data"
+    -
+        Name: Puffin - Password Forms Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser
+        FileMask: passwordForms.dat
+        Comment: "Grabs a file that stores some saved password data"
+    -
+        Name: Puffin - Password (Encrypted)
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser
+        FileMask: credential.dat
+        Comment: "Grabs a file that stores passwords in an encrypted format"
+    -
+        Name: Puffin - Subscription Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser
+        FileMask: subscription
+        Comment: "Grabs a file that stores the user's email address that's associated with their Puffin subscription"
+    -
+        Name: Puffin - Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser
+        FileMask: cookies.dat
+        Comment: "Grabs a file that stores information related to cookies"
+    -
+        Name: Puffin - Image Cache
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\PuffinSecureBrowser\image_cache
+        Recursive: true
+        Comment: "Grabs a directory that caches images from websites visited"
+
+# Documentation
+# Puffin is a secure web browser that takes a LOT of work to get set up. If your suspect is using this, they went out of their way to make this their browser of choice. I had to use a credit card/billing address, authorization codes sent to my fake email, sign in multiple times to activate the browser and my membership, etc. It was a pain.
+# As secure as Puffin claims to be, they store some stuff locally!
+# Data.db had evidence of tabs I had opened with the browser.
+# Autocompletes.dat stored some autocomplete data (email, etc) that I entered throughout the setup process.
+# passwordForms.dat stored the email in plaintext but the password itself is not in plain text.
+# "subscription" was a file without a file extension (viewable in a text editor) that showed the fake email I used to set up my trial with Puffin.
+# The image_cache folder will store what appears to be .JPG files but as .ci0 files. I was able to view all the images with IrfanView despite the proprietary file extension.

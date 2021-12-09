@@ -1,0 +1,65 @@
+Description: Composite target for files related to remote administration tools
+Author: Drew Ervin, Mathias Frank, Andrew Rathbun
+Version: 1.6
+Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Ammyy
+        Category: ApplicationLogs
+        Path: Ammyy.tkape
+    -
+        Name: AnyDesk
+        Category: ApplicationLogs
+        Path: AnyDesk.tkape
+    -
+        Name: Chrome Remote Desktop
+        Category: ApplicationLogs
+        Path: ApplicationEvents.tkape
+    -
+        Name: Kaseya
+        Category: ApplicationLogs
+        Path: Kaseya.tkape
+    -
+        Name: LogMeIn
+        Category: ApplicationLogs
+        Path: LogMeIn.tkape
+    -
+        Name: mRemoteNG
+        Category: ApplicationLogs
+        Path: mRemoteNG.tkape
+    -
+        Name: Radmin
+        Category: ApplicationLogs
+        Path: Radmin.tkape
+        Comment: "Radmin Server and Viewer Logs and Chats"
+    -
+        Name: RDP Cache
+        Category: ApplicationData
+        Path: RDPCache.tkape
+        Comment: "Contains data cached during recent RDP sessions"
+    -
+        Name: RDP Logs
+        Category: EventLogs
+        Path: RDPLogs.tkape
+        Comment: "Contains Windows Event Logs related to RDP"
+    -
+        Name: ScreenConnect (ConnectWise Control)
+        Category: ApplicationLogs
+        Path: ScreenConnect.tkape
+    -
+        Name: Supremo Remote Desktop Control
+        Category: ApplicationLogs
+        Path: SupremoRemoteDesktop.tkape
+    -
+        Name: TeamViewer
+        Category: ApplicationLogs
+        Path: TeamViewerLogs.tkape
+    -
+        Name: VNC
+        Category: ApplicationLogs
+        Path: VNCLogs.tkape
+
+# Documentation
+# For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software.
+# Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.

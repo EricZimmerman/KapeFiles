@@ -1,0 +1,16 @@
+Description: DensityScout
+Category: FileMetadata
+Author: Eric Zimmerman
+Version: 1.0
+Id: f93bd081-55cd-4c12-8a7f-280a0caeebf9
+BinaryUrl: https://www.cert.at/media/files/downloads/software/densityscout/files/densityscout_build_45_windows.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: densityscout.exe
+        CommandLine: -pe -p 0.1 -l 0.1 -d -r %sourceDirectory% -o %destinationDirectory%\DensityScout.txt
+        ExportFormat: txt
+
+# Documentation
+# https://www.cert.at/en/downloads/software/software-densityscout
+# https://www.sans.org/blog/finding-unknown-malware-with-densityscout/

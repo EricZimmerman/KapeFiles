@@ -1,0 +1,63 @@
+Description: Kaseya Data
+Author: Drew Ervin and Andrew Rathbun
+Version: 1.1
+Id: bb83f860-5a10-4471-821e-9ef4ab6f856c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Kaseya Live Connect Logs (XP)
+        Category: ApplicationLogs
+        Path: C:\Documents and Settings\%user%\Application Data\Kaseya\Log\
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Live Connect Logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Kaseya\Log\KaseyaLiveConnect\
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Agent Endpoint Service Logs (XP)
+        Category: ApplicationLogs
+        Path: C:\Documents and Settings\All Users\Application Data\Kaseya\Log\Endpoint\
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Agent Endpoint Service Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Kaseya\Log\Endpoint\
+        Recursive: true
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Agent Service Log
+        Category: ApplicationLogs
+        Path: C:\Program Files*\Kaseya\*\
+        FileMask: agentmon.log*
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229009708-Live-Connect-Log-File-Locations"
+    -
+        Name: Kaseya Setup Log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: KASetup.log
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
+    -
+        Name: Kaseya Setup Log
+        Category: ApplicationLogs
+        Path: C:\Windows\Temp\
+        FileMask: KASetup.log
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
+    -
+        Name: Kaseya Setup Log
+        Category: ApplicationLogs
+        Path: C:\Windows.old\Windows\Temp\
+        FileMask: KASetup.log
+        Comment: "https://helpdesk.kaseya.com/hc/en-gb/articles/229011448"
+    -
+        Name: Kaseya Agent Edge Service Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Kaseya\Log\KaseyaEdgeServices\
+        Recursive: true
+        Comment: "https://www.huntress.com/blog/rapid-response-kaseya-vsa-mass-msp-ransomware-incident"
+
+# Documentation
+# N/A

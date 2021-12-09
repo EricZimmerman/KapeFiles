@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for US Zip Codes
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: 73952996-479f-42c1-854f-01afad20b3de
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr zip
+        ExportFormat: txt
+        ExportFile: ZipCodes.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/

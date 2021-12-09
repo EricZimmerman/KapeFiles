@@ -1,0 +1,24 @@
+Description: F-Secure Antivirus Data
+Author: Drew Ervin
+Version: 1.0
+Id: 8bfd6f82-f867-4ce2-89ac-22802ff9a15f
+RecreateDirectories: true
+Targets:
+    -
+        Name: F-Secure Logs
+        Category: Antivirus
+        Path: C:\ProgramData\F-Secure\Log\
+        Recursive: true
+    -
+        Name: F-Secure User Logs
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Local\F-Secure\Log\
+        Recursive: true
+    -
+        Name: F-Secure Scheduled Scan Reports
+        Category: Antivirus
+        Path: C:\ProgramData\F-Secure\Antivirus\ScheduledScanReports\
+        Recursive: true
+
+# Documentation
+# https://community.f-secure.com/en/discussion/122488/removing-f-secure-log-files-from-internet-security

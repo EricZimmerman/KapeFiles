@@ -1,0 +1,17 @@
+Description: 'SQLECmd: Sync for new Maps'
+Category: KAPESync
+Author: Andrew Rathbun
+Version: 1.1
+Id: 6da27d9b-b3e2-4a21-9762-ce7058f5aac2
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip
+ExportFormat: ""
+Processors:
+    -
+        Executable: SQLECmd\SQLECmd.exe
+        CommandLine: --sync --debug
+        ExportFormat: ""
+        ExportFile: Sync_SQLECMD.txt
+
+# Documentation
+# https://github.com/EricZimmerman/SQLECmd
+# This Module ensures you have the latest Maps for SQLECmd prior to running SQLECmd

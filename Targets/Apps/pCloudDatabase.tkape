@@ -1,0 +1,31 @@
+Description: pCloud Database
+Author: Josh Hickman
+Version: 1.0
+Id: dc6750d8-ee91-45d4-9f53-fa3f8513ada3
+RecreateDirectories: True
+Targets:
+    -
+        Name: pCloud Database
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\pCloud\
+        FileMask: '*.db'
+        Recursive: False
+        Comment: "Database contains all files sync'd with pCloud account."
+    -
+        Name: pCloud Database WAL File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\pCloud\
+        FileMask: '*.db-wal'
+        Recursive: False
+        Comment: "Write-Ahead Log for pCloud database file."
+    -
+        Name: pCloud Database Shared Memory File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\pCloud\
+        FileMask: '*.db-shm'
+        Recursive: False
+        Comment: "Shared Memory for the pCloud database file."
+
+# Documentation
+# https://cyberforensicator.com/2018/05/05/cloud-forensics-pcloud-drive/
+# https://www.sciencedirect.com/science/article/pii/B9780128053034000137

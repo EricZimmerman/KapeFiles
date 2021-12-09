@@ -1,0 +1,89 @@
+Description: Total Commander
+Author: Andrew Rathbun and Jessica Venturo
+Version: 1.3
+Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
+RecreateDirectories: true
+Targets:
+    -
+        Name: Total Commander - .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GHISLER\
+        FileMask: 'wincmd.ini'
+        Comment: "Locates .ini file associated with Total Commander which stores useful user activity information."
+    -
+        Name: Total Commander - Log File
+        Category: Apps
+        Path: C:\
+        Recursive: true
+        FileMask: 'totalcmd.log'
+        Comment: "Locates log file associated with Total Commander. NOTE: this log file is NOT enabled by default and the filename can be modified."
+    -
+        Name: Total Commander - Temp Files Created During Folder Traversal
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'FTP*.tmp'
+        Comment: "Locates .tmp files which are created during the user's folder traversal and provide insight into contents of each folder traversed."
+    -
+        Name: Total Commander - FTP .ini File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\GHISLER\
+        FileMask: 'wcx_ftp.ini'
+        Comment: "Locates .ini file associated with Total Commander which stores useful FTP information."
+    -
+        Name: Total Commander - File Tree
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GHISLER\
+        FileMask: 'treeinfo*.wc'
+        Comment: "Locates a file that contains an exhaustive file tree of a user's file system."
+    -
+        Name: Total Commander - FTP Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: 'tcftp.log'
+        Comment: "Locates a file that contains the Total Commander FTP logs."
+
+# Documentation
+# Total Commander is a shareware Windows File Explorer replacement commonly used by threat actors during IR incidents.
+# This Target grabs the .ini file which provides some useful information very similar to Windows Shellbags.
+# It should be noted this .ini file is updated when Total Commander is exited.
+# Within the wincmd.ini file, you will notice the following fields:
+#  InstallDir - directory where Total Commander is installed
+#  Path listed for both Left and Right panes - in my testing, this is what folders were currently displayed in each respective pane upon exiting Total Commander
+#  RightHistory and LeftHistory - each of these provide a breadcrumb trail of the user's actions in each respective pain. For example, mine looked like this (0 is most recent):
+#   [RightHistory]
+#   0=C:\Users\%user%\Music\	#0
+#   1=C:\Users\%user%\	#08,Music
+#   2=C:\Users\	#01,%user%
+#   3=C:\	#04,Users
+#   4=C:\Program Files (x86)\Google\
+#   5=C:\Program Files (x86)\	#05,Google
+#   6=C:\Program Files (x86)\BraveSoftware\	#2,CrashReports
+#   7=C:\Program Files (x86)\	#02,BraveSoftware
+#   8=C:\	#2,Program Files (x86)
+#   [LeftHistory]
+#   0=C:\Users\%user%\Desktop\	#0
+#   1=C:\Users\%user%\	#03,Desktop
+#   2=C:\Users\	#01,%user%
+#   3=C:\	#04,Users
+#   4=C:\Program Files (x86)\Microsoft\
+#   5=C:\Program Files (x86)\	#07,Microsoft
+#   6=C:\	#2,Program Files (x86)
+#   7=C:\Program Files (x86)\	#0
+#   8=C:\Program Files (x86)\BraveSoftware\Brave-Browser\	#0
+#   9=C:\Program Files (x86)\BraveSoftware\	#01,Brave-Browser
+#   10=C:\Program Files (x86)\	#02,BraveSoftware
+# The totalcmd.log is the default filename by Total Commander for the log file which can track creation of folders, delete actions, archive packing and unpacking, etc.
+# Within a user's NTUSER.DAT file, there will be a key with an address of: SOFTWARE\Ghisler\Total Commander. There will be a value for InstallDir which will list where TotalCommander is installed for that user.
+# wcx_ftp.ini will contain saved FTP connections that the user configured with Total Commander
+# .tmp files will only exist during an active Total Commander session. Once Total Commander is existed, they will be deleted. I'd suggest carving for them to see file/folder contents.
+# A preview of their contents can be seen below:
+#
+# Contents of C:\Users\%user%\AppData\Local\Temp\FTP418E.tmp
+# type=file;modify=20210327145254;size=65536; AppEvent.Evt
+# type=file;modify=20201021200345;size=65536; Internet.evt
+# type=file;modify=20201021160008;size=65536; SecEvent.Evt
+# type=file;modify=20210327145254;size=65536; SysEvent.Evt
+# type=file;modify=20201021200840;size=65536; ThinPrint.evt
+#
+# Please note that each folder I traversed made a new .tmp folder and had similar contents for each respective folder traversed
+# Hex -> ASCII, 0x747970653D translates to file= which appears to be the first 5 characters of each of these .tmp files

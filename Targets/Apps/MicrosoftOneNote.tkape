@@ -1,0 +1,44 @@
+Description: Microsoft OneNote
+Author: Andrew Rathbun
+Version: 1.0
+Id: d528524b-12fd-493d-9e61-dd81dc7fa873
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft OneNote - FullTextSearchIndex
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\*\FullTextSearchIndex
+        Comment: "Grabs database(s) comprising of each OneNote notebook's text content"
+    -
+        Name: Microsoft OneNote - RecentNotebooks_SeenURLs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\Notifications
+        FileMask: RecentNotebooks_SeenURLs
+        Comment: "Grabs a file that appears to record recently seen OneNote notebooks"
+    -
+        Name: Microsoft OneNote - AccessibilityCheckerIndex
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\AccessibilityCheckerIndex
+        Comment: "Grabs database(s) comprising of each OneNote notebook's version sync error history"
+    -
+        Name: Microsoft OneNote - User NoteTags
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\NoteTags
+        FileMask: "*LiveId.db"
+        Comment: "Grabs a database that stores the user specified tags within OneNote to be used application-wide"
+    -
+        Name: Microsoft OneNote - RecentSearches
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\RecentSearches
+        FileMask: RecentSearches.db
+        Comment: "Grabs a database that stores the user's recent searches within OneNote"
+
+# Documentation
+# https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app
+# Microsoft OneNote is an awesome note-taking application that helps people organize their lives
+# Thankfully, Microsoft stores a lot of the information within OneNote locally within SQLite databases!
+# FullTextSearchIndex will have a database for each active OneNote notebook on the user's system. This will comprise of the entire text contents of each respective notebook
+# RecentNotebooks_SeenURLs showed URLs for two OneNote notebooks that I share with others externally, so likely these are OneNote notebooks I've accessed via the OneNote web app, as a result
+# AccessibilityCheckerIndex appears to provide a history of sync issues within the user's OneNote notebooks, i.e. page conflicts
+# NoteTags appears to provide the user-specified Tags that are used within OneNote application-wide
+# RecentSearches.db did not populate any data on my system, but I included the artifact here in case it does on another system

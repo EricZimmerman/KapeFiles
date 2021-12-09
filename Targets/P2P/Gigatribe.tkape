@@ -1,0 +1,27 @@
+Description: Gigatribe Files
+Author: Linus Nissi
+Version: 2.0
+Id: 64726d74-1a68-463a-bb26-929054a20b71
+RecreateDirectories: true
+Targets:
+    -
+        Name: Gigatribe Files Windows Vista/7/8/10
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\Shalsoft\
+        Recursive: true
+        Comment: "Locates Gigatribe files and copies them"
+    -
+        Name: Gigatribe Files Windows XP
+        Category: FileDownload
+        Path: C:\Documents and Settings\%user%\*\Application Data\Gigatribe\
+        Recursive: true
+        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and Settings\<username>\Lokala Inställningar\Application Data\Gigatribe
+    -
+        Name: Gigatribe Files Windows XP
+        Category: FileDownload
+        Path: C:\Documents and Settings\%user%\*\Application Data\Shalsoft\
+        Recursive: true
+        Comment: Locates Gigatribe files and copies them. Different path depending on the Operating System language. In Swedish the location is C:\Documents and Settings\<username>\Lokala Inställningar\Application Data\Shalsoft
+
+# Documentation
+# N/A

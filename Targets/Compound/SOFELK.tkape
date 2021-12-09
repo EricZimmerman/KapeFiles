@@ -1,0 +1,31 @@
+Description: SOF-ELK related files of interest
+Author: Tony Knutson and Andrew Rathbun
+Version: 1.1
+Id: bf220343-d374-4257-835f-b74ee8a47f78
+RecreateDirectories: true
+Targets:
+    -
+        Name: EventLogs
+        Category: Targets
+        Path: EventLogs.tkape
+    -
+        Name: EvidenceOfExecution
+        Category: Targets
+        Path: EvidenceOfExecution.tkape
+    -
+        Name: FileSystem
+        Category: Targets
+        Path: FileSystem.tkape
+    -
+        Name: LNKFilesAndJumpLists
+        Category: Targets
+        Path: LNKFilesAndJumpLists.tkape
+    -
+        Name: Prefetch
+        Category: Targets
+        Path: Prefetch.tkape
+
+# Documentation
+# https://aboutdfir.com/sof-elk-and-integration-with-kape/
+# https://github.com/philhagen/sof-elk/blob/main/doc/kape_support.md
+# Use with SOFELK_Parser.mkape

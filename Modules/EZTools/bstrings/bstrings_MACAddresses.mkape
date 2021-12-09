@@ -1,0 +1,19 @@
+Description: Use bstrings to GREP for MAC Addresses
+Category: KeywordSearches
+Author: Andrew Rathbun
+Version: 1.0
+Id: b24a8be2-f3e6-463f-89f6-97b1e405ddf0
+BinaryUrl: https://github.com/EricZimmerman/bstrings
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings.exe
+        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr mac
+        ExportFormat: txt
+        ExportFile: MacAddress.txt
+
+# Documentation
+# https://github.com/EricZimmerman/bstrings
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://binaryforay.blogspot.com/search?q=bstrings
+# https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/

@@ -1,0 +1,20 @@
+Description: Microsoft OneDrive Storage Metadata
+Author: Chad Tilbury
+Version: 1.1
+Id: 726ca098-6c5b-40e3-ade8-60730c5ec4f8
+RecreateDirectories: true
+Targets:
+    -
+        Name: OneDrive Metadata Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\logs\
+        Recursive: true
+    -
+        Name: OneDrive Metadata Settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\settings\
+        Recursive: true
+
+# Documentation
+# https://www.sans.org/blog/cloud-storage-acquisition-from-endpoint-devices/
+# https://www.forensicfocus.com/forums/general/onedrive-files-on-demand-windows-10-storage-sense-settings/

@@ -1,0 +1,19 @@
+Description: 'NTFS Log Tracker: process all files'
+Category: FileSystem
+Author: Hyun Yi @hyuunnn
+Version: 1.0
+Id: 094e8964-ea15-4be1-869d-7b8fa1b55ada
+BinaryUrl: https://sites.google.com/site/forensicnote/ntfs-log-tracker/NTFS Log Tracker v1.6 CMD.zip
+ExportFormat: sqlite3
+Processors:
+    -
+        Executable: NTFSLogTracker_$J.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: NTFSLogTracker_$LogFile.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://sites.google.com/site/forensicnote/ntfs-log-tracker

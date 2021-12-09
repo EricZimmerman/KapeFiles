@@ -1,0 +1,26 @@
+Description: Sophos Data
+Author: Drew Ervin
+Version: 1.0
+Id: a50e5204-878e-4b5d-82fb-e6148d976bf7
+RecreateDirectories: true
+Targets:
+    -
+        Name: Sophos Logs (XP)
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\Sophos\Sophos *\Logs\
+        Recursive: true
+        Comment: "Includes Anti-Virus, Client Firewall, Data Control, Device Control, Endpoint Defense, Network Threat Detection, Management Communications System, Patch Control, Tamper Protection"
+    -
+        Name: Sophos Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Sophos\Sophos *\Logs\
+        Recursive: true
+        Comment: "Includes Anti-Virus, Client Firewall, Data Control, Device Control, Endpoint Defense, Network Threat Detection, Management Communications System, Patch Control, Tamper Protection"
+    -
+        Name: Sophos Application Events
+        Category: Antivirus
+        Path: ApplicationEvents.tkape
+        Comment: "Event source: Sophos Anti-Virus"
+
+# Documentation
+# https://support.sophos.com/support/s/article/KB-000033591?language=en_US

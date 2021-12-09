@@ -1,0 +1,17 @@
+Description: Recycle Bin DataAndInfo
+Author: Mark Hallman / Joshua Hickman
+Version: 2.0
+Id: afac78f5-a5bc-475d-9c67-649456dc4dc2
+RecreateDirectories: true
+Targets:
+    -
+        Name: RecycleBin_InfoFiles
+        Category: FileDeletion
+        Path: RecycleBin_InfoFiles.tkape
+    -
+        Name: RecycleBin_DataFiles
+        Category: FileDeletion
+        Path: RecycleBin_DataFiles.tkape
+
+# Documentation
+# N/A

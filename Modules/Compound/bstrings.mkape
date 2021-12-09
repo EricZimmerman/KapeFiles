@@ -1,0 +1,55 @@
+Description: Run all bstrings Modules
+Category: Modules
+Author: Andrew Rathbun
+Version: 1.0
+Id: 5a564195-2de6-422b-904e-312cf2303d2f
+BinaryUrl: https://ericzimmerman.github.io/
+ExportFormat: txt
+Processors:
+    -
+        Executable: bstrings_Bitlocker.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_CreditCards.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_Email.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_IPv4.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_MACAddresses.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_SSN.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_UNC.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_URLs.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_USPhone.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_WinPath.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: bstrings_ZipCodes.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# N/A

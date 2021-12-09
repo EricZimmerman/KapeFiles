@@ -1,0 +1,21 @@
+Description: VNC Logs
+Author: Phill Moore
+Version: 1.1
+Id: b98dab2e-81f3-472e-a22a-05269ad16270
+RecreateDirectories: true
+Targets:
+    -
+        Name: RealVNC Log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\RealVNC\
+        FileMask: vncserver.log
+        Comment: "https://www.realvnc.com/en/connect/docs/logging.html#logging"
+    -
+        Name: RealVNC Application Logs
+        Category: EventLogs
+        Path: ApplicationEvents.tkape
+        Comment: "Contains RealVNC entries, event source: VNC Server"
+
+# Documentation
+# https://www.semanticscholar.org/paper/Tracing-VNC-And-RDP-Protocol-Artefacts-on-Windows-Kerai/20467cee88102cffcc2b856b93fc0bb7a58fd499
+# https://www.hackingarticles.in/capture-vnc-session-remote-pc-using-settoolkit/

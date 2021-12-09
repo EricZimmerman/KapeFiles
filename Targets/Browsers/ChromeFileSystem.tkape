@@ -1,0 +1,14 @@
+Description: Chrome HTML5 File System Contents
+Author: Chad Tilbury
+Version: 1.0
+Id: a135eb84-5407-4590-a3e8-02564ebc5fa9
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome HTML5 File System Folder
+        Category: Communication
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\File System\
+        Recursive: true
+
+# Documentation
+# N/A

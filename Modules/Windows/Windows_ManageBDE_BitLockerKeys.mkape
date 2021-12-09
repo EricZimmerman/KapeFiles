@@ -1,0 +1,20 @@
+Description: Collect BitLocker recovery key for a volume
+Category: VolumeInformation
+Author: troyla@microsoft.com
+Version: 1.1
+Id: d30abed8-35f3-4fb6-ba47-5ffdad46c912
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\manage-bde.exe
+        CommandLine: -protectors -get %sourceDriveLetter%
+        ExportFormat: txt
+        ExportFile: BitLocker-key.txt
+
+# Documentation
+# Updated to directly reference the system path
+# NOTE: When using the bitlocker related modules, specify --msource as JUST the drive letter and colon.
+# DO NOT include the trailing slash or the command will error out.
+# DO this: --msource C:
+# NOT this: --msource C:\
+# If using targets and not specifying msource, make sure --tsource also uses the same format (no trailing slash)

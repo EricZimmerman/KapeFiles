@@ -1,0 +1,20 @@
+Description: LogFiles (includes SUM)
+Author: Fabian Murer
+Version: 1.0
+Id: 67c9bb8d-342b-4380-a110-565317fce014
+RecreateDirectories: true
+Targets:
+    -
+        Name: LogFiles
+        Category: Logs
+        Path: C:\Windows\System32\LogFiles\
+        Recursive: true
+    -
+        Name: LogFiles
+        Category: Logs
+        Path: C:\Windows.old\Windows\System32\LogFiles\
+        Recursive: true
+
+# Documentation
+# https://digital-forensics.sans.org/community/papers/gcfa/forensic-analysis-windows-2000-server-iis-oracle_112
+# https://advisory.kpmg.us/blog/2021/digital-forensics-incident-response.html

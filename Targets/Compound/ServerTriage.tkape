@@ -1,0 +1,33 @@
+Description: A compound target for gathering artifacts common to servers.
+Author: Eric Capuano
+Version: 1.0
+Id: 9bea625c-00bd-4389-a0a5-f648e8e267ce
+RecreateDirectories: True
+Targets:
+    -
+        Name: WebServers
+        Category: Compound
+        Path: WebServers.tkape
+    -
+        Name: Exchange
+        Category: Compound
+        Path: Exchange.tkape
+    -
+        Name: Confluence
+        Category: Apps
+        Path: ConfluenceLogs.tkape
+    -
+        Name: FileZilla Server
+        Category: Apps
+        Path: FileZillaServer.tkape
+    -
+        Name: OpenSSH Server
+        Category: Apps
+        Path: OpenSSHServer.tkape
+    -
+        Name: ManageEngine
+        Category: Logs
+        Path: ManageEngineLogs.tkape
+
+# Documentation
+# A target to run on generic servers when their role is unknown. Includes common server applications.

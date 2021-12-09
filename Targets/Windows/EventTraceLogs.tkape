@@ -1,0 +1,59 @@
+Description: Event Trace Logs
+Author: Mark Hallman
+Version: 1.1
+Id: af494526-9e44-4548-9d29-f088eafa6f3d
+RecreateDirectories: true
+Targets:
+    -
+        Name: WDI Trace Logs 1
+        Category: Event Trace Logs
+        Path: C:\Windows\System32\WDI\LogFiles\
+        FileMask: '*.etl*'
+    -
+        Name: WDI Trace Logs 1
+        Category: Event Trace Logs
+        Path: C:\Windows.old\Windows\System32\WDI\LogFiles\
+        FileMask: '*.etl*'
+    -
+        Name: WDI Trace Logs 2
+        Category: Event Trace Logs
+        Path: C:\Windows\System32\WDI\{*\
+        Recursive: true
+    -
+        Name: WDI Trace Logs 2
+        Category: Event Trace Logs
+        Path: C:\Windows.old\Windows\System32\WDI\{*\
+        Recursive: true
+    -
+        Name: WMI Trace Logs
+        Category: Event Trace Logs
+        Path: C:\Windows\System32\LogFiles\WMI\
+        Recursive: true
+    -
+        Name: WMI Trace Logs
+        Category: Event Trace Logs
+        Path: C:\Windows.old\Windows\System32\LogFiles\WMI\
+        Recursive: true
+    -
+        Name: SleepStudy Trace Logs
+        Category: Event Trace Logs
+        Path: C:\Windows\System32\SleepStudy\
+        Recursive: true
+    -
+        Name: SleepStudy Trace Logs
+        Category: Event Trace Logs
+        Path: C:\Windows.old\Windows\System32\SleepStudy\
+        Recursive: true
+    -
+        Name: Energy-NTKL Trace Logs
+        Category: Event Trace Logs
+        Path: C:\ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\
+        FileMask: energy-ntkl.etl
+    -
+        Name: Delivery Optimization Trace Logs
+        Category: Event Trace Logs
+        Path: C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\Logs\
+        FileMask: '*.etl*'
+
+# Documentation
+# https://www.youtube.com/watch?v=TUR-L9AtzQE

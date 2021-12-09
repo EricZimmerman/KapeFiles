@@ -1,0 +1,64 @@
+Description: EventTranscript.db (and other files related to Telemetry and Diagnostic Data)
+Author: Andrew Rathbun and Josh Mitchell
+Version: 1.2
+Id: 4a5c1487-8894-4b7a-8fba-71a1824bb9ab
+RecreateDirectories: true
+Targets:
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+    -
+        Name: Microsoft Office Diagnostic Logs
+        Category: SystemEvents
+        Path: C:\Users\%User%\AppData\Local\Temp\Diagnostics
+        Recursive: true
+
+# Documentation
+# https://github.com/rathbuna/EventTranscript.db-Research
+# https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript
+# Articles will be at the bottom of the landing page above, more to come!
+# Parse with SQLECmd using the SQLECmd Module
+# In reference to the Office Diagnostic Logs, Windows appears to save a local copy of all diagnostic logs relating to the Microsoft Office applications. Here's what my folder looked like:
+#
+# C:\Users\%User%\AppData\Local\Temp\Diagnostics                                            2021-08-25 09:58:32
+#
+# Name                                                       Size Type                           Modified  Attr
+#
+# WINWORD                                                         File Folder              Thursday 14:16 -------
+#   App_16294744526865<truncated>0E30846.log              0 bytes Text Document              Friday 11:48 -a-----
+#   App_16294744526856<truncated>0E30846.log               550 KB Text Document              Friday 11:48 -a-----
+# POWERPNT                                                 550 KB File Folder                Friday 11:47 -------
+#   App_16298983260878<truncated>94BD8E2.log                16 MB Text Document               Today 09:32 -a-----
+#   App_16298926295936<truncated>94BD8E2.log                16 MB Text Document               Today 07:57 -a-----
+#   App_16298370840678<truncated>94BD8E2.log              15.9 MB Text Document               Today 09:32 -a-----
+#   App_16298327947274<truncated>94BD8E2.log              15.9 MB Text Document               Today 07:57 -a-----
+#   App_16298327947254<truncated>94BD8E2.log              15.9 MB Text Document           Yesterday 16:31 -a-----
+#   App_16298295664166<truncated>CC35333.log                16 MB Text Document           Yesterday 14:26 -a-----
+#   App_16298260444586<truncated>CC35333.log                16 MB Text Document           Yesterday 13:27 -a-----
+# OUTLOOK                                                  111 MB File Folder                 Today 09:32 -------
+#   App_16298998096623<truncated>5BD0FE2.log              0 bytes Text Document               Today 09:56 -a-----
+#   App_16298998096609<truncated>5BD0FE2.log              42.2 KB Text Document               Today 09:56 -a-----
+#   App_16298931987652<truncated>BA5D49E.log                16 MB Text Document               Today 08:06 -a-----
+#   App_16298931987641<truncated>BA5D49E.log                16 MB Text Document               Today 08:06 -a-----
+#   App_16298166036404<truncated>7D1EAED.log                16 MB Text Document           Yesterday 10:50 -a-----
+#   App_16297511145952<truncated>7D1EAED.log                16 MB Text Document              Monday 16:38 -a-----
+#   App_16297332925446<truncated>7D1EAED.log              15.9 MB Text Document           Yesterday 10:50 -a-----
+#   App_16297332925437<truncated>7D1EAED.log              15.9 MB Text Document              Monday 16:38 -a-----
+#   App_16296613371535<truncated>C3CB304.log                16 MB Text Document              Sunday 15:42 -a-----
+# ONENOTE                                                  112 MB File Folder                 Today 09:56 -------
+#   App_16298372199314<truncated>07F5822.log              0 bytes Text Document           Yesterday 16:34 -a-----
+#   App_16298356395583<truncated>07F5822.log               223 KB Text Document           Yesterday 16:34 -a-----
+#   App_16298356395573<truncated>07F5822.log              15.9 MB Text Document           Yesterday 16:33 -a-----
+#   App_16298318147570<truncated>528945A.log                16 MB Text Document           Yesterday 15:03 -a-----
+#   App_16298318147559<truncated>528945A.log                16 MB Text Document           Yesterday 15:03 -a-----
+#   App_16298201007240<truncated>6E29303.log              1.03 MB Text Document           Yesterday 11:54 -a-----
+#   App_16297545277071<truncated>17DEEE1.log                 4 MB Text Document           Yesterday 08:21 -a-----
+#   App_16297389490701<truncated>17DEEE1.log              15.9 MB Text Document           Yesterday 06:49 -a-----
+# EXCEL                                                   69.2 MB File Folder             Yesterday 16:33 -------

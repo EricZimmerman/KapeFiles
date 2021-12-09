@@ -1,0 +1,25 @@
+Description: Recycle Bin Data Files
+Author: Joshua Hickman, Andreas Hunkeler (@Karneades)
+Version: 1.1
+Id: bb5785ec-0e6e-42f9-97ca-94ef12720827
+RecreateDirectories: true
+Targets:
+    -
+        Name: Recycle Bin - Windows Vista+
+        Category: FileDeletion
+        Path: C:\$Recycle.Bin\
+        FileMask: '$R*'
+        Recursive: true
+    -
+        Name: RECYCLER - WinXP
+        Category: FileDeletion
+        Path: C:\RECYCLE*\
+        FileMask: 'D*'
+        Recursive: true
+
+# Documentation
+# https://www.youtube.com/watch?v=Gkir-wGqG2c
+# https://www.andreafortuna.org/2019/09/26/windows-forensics-analysis-of-recycle-bin-artifacts/
+# https://www.blackbagtech.com/blog/examining-the-windows-10-recycle-bin/
+# https://www.sans.org/security-resources/posters/windows-forensics-evidence-of/75/download
+# https://dereknewton.com/2010/06/recycle-bin-forensics-in-windows-7-and-vista/

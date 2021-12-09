@@ -1,0 +1,19 @@
+Description: SecureAge Antivirus Logs
+Author: Andrew Rathbun
+Version: 1.0
+Id: 3876be71-fd3d-4455-bb70-80541370f2a0
+RecreateDirectories: true
+Targets:
+    -
+        Name: SecureAge Antvirus Logs
+        Category: Antivirus
+        Path: C:\ProgramData\SecureAge Technology\SecureAge\log\
+        Recursive: true
+
+# Documentation
+# This Target should pull the following log files:
+# Antivirus.log - will have a list of files that were scanned. Good for locating files as they appear on the file system that may no longer exist
+# clamd.log
+# SecureAPlus.log
+# UniversalAV.log
+# whitelist.log

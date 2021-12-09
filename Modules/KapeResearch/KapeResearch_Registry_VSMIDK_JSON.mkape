@@ -1,0 +1,24 @@
+Description: 'RECmd: Convert VSMIDK Registry hive to JSON for research'
+Category: KapeResearch
+Author: Andrew Rathbun
+Version: 1.0
+Id: 031191d2-aca8-48b1-82e5-df138f0af6ca
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+ExportFormat: json
+FileMask: VSMIDK
+Processors:
+    -
+        Executable: RECmd\RECmd.exe
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf VSMIDK.json -q
+        ExportFormat: json
+
+# Documentation
+# https://github.com/EricZimmerman/RECmd
+# https://binaryforay.blogspot.com/2015/05/introducing-recmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/registry-explorer-recmd/
+# https://www.andreafortuna.org/2020/03/04/recmd-command-line-tool-for-windows-registry-analysis/
+# https://www.sans.org/blog/finding-registry-malware-persistence-with-recmd/
+# https://www.youtube.com/watch?v=tk9XsMHzPlM
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.
+# This Module will convert the entire content any registry hives into JSON, which is helpful for viewing all that the hives contain in an easily searchable way

@@ -1,0 +1,65 @@
+Description: Kape Triage collections that will collect most of the files needed for a DFIR Investigation.  This module pulls evidence from File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, SUM data, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, Jump Lists, 3rd party remote access software logs, 3rd party antivirus software logs, Windows 10 Timeline database, and $I Recycle Bin data files.
+Author: Scott Downie
+Version: 4.0
+Id: a745b730-d6b7-4cb7-9847-4e896d9f3c52
+RecreateDirectories: true
+Targets:
+    -
+        Name: Antivirus
+        Category: Targets
+        Path: Antivirus.tkape
+    -
+        Name: EventLogs
+        Category: Targets
+        Path: EventLogs.tkape
+    -
+        Name: EvidenceOfExecution
+        Category: Targets
+        Path: EvidenceOfExecution.tkape
+    -
+        Name: FileSystem
+        Category: Targets
+        Path: FileSystem.tkape
+    -
+        Name: LNKFilesAndJumpLists
+        Category: Targets
+        Path: LNKFilesAndJumpLists.tkape
+    -
+        Name: PowerShellConsole
+        Category: Targets
+        Path: PowerShellConsole.tkape
+    -
+        Name: RecycleBin_InfoFiles
+        Category: Targets
+        Path: RecycleBin_InfoFiles.tkape
+    -
+        Name: RegistryHives
+        Category: Targets
+        Path: RegistryHives.tkape
+    -
+        Name: RemoteAccess
+        Category: Targets
+        Path: RemoteAdmin.tkape
+    -
+        Name: ScheduledTasks
+        Category: Targets
+        Path: ScheduledTasks.tkape
+    -
+        Name: SRUM
+        Category: Targets
+        Path: SRUM.tkape
+    -
+        Name: SUM
+        Category: Targets
+        Path: SUM.tkape
+    -
+        Name: WebBrowsers
+        Category: Targets
+        Path: WebBrowsers.tkape
+    -
+        Name: WindowsTimeline
+        Category: Targets
+        Path: WindowsTimeline.tkape
+
+# Documentation
+# N/A

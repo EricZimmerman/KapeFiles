@@ -1,0 +1,39 @@
+Description: Gathers Basic System Information Using the Net Command
+Category: LiveResponse
+Author: piesecurity, Andreas Hunkeler (@Karneades)
+Version: 1.1
+Id: be86ac26-4eea-4bcb-b5ae-9686ad0557c4
+ExportFormat: txt
+Processors:
+    -
+        Executable: Windows_Net_User.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_Net_LocalGroup.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetUserAdministrators.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_Net_Accounts.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_Net_File.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_Net_Session.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_Net_Use.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_Net_Start.mkape
+        CommandLine: ""
+        ExportFormat: ""

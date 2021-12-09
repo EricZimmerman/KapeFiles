@@ -1,0 +1,83 @@
+Description: 'RECmd: Convert Registry hives to JSON for research'
+Category: KapeResearch
+Author: Andrew Rathbun
+Version: 1.2
+Id: b99570f0-2fce-499d-b13a-d20cbb962f25
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+ExportFormat: json
+Processors:
+    -
+        Executable: KapeResearch_Registry_Amcache_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_BBI_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_BCD-Template_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_COMPONENTS_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_DEFAULT_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_DRIVERS_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_ELAM_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_NTUSER_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_SAM_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_SECURITY_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_SOFTWARE_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_SYSTEM_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_SysCache_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_userdiff_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_UsrClass_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: KapeResearch_Registry_VSMIDK_JSON.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://github.com/EricZimmerman/RECmd
+# https://binaryforay.blogspot.com/2015/05/introducing-recmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/registry-explorer-recmd/
+# https://www.andreafortuna.org/2020/03/04/recmd-command-line-tool-for-windows-registry-analysis/
+# https://www.sans.org/blog/finding-registry-malware-persistence-with-recmd/
+# https://www.youtube.com/watch?v=tk9XsMHzPlM
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.
+# This Module will convert the entire content of any Registry hives into JSON, which is helpful for viewing all that the hives contain in an easily searchable way

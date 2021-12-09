@@ -1,0 +1,25 @@
+Description: Google Drive Metadata
+Author: Chad Tilbury
+Version: 1.1
+Id: 2bfd54a5-175f-48ad-a1bc-7be1dc0465e7
+RecreateDirectories: true
+Targets:
+    -
+        Name: Google Drive Backup and Sync Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Google\Drive\
+        Recursive: true
+        Comment: "Older version of Google Drive"
+    -
+        Name: Google Drive for Desktop Metadata
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Google\DriveFS\
+        Recursive: true
+        Comment: "Metadata folder the same for both newer Google Drive for Desktop and older Google File Stream application"
+
+# Documentation
+# Log files from the DriveFS directory can be parsed using https://toolbox.googleapps.com/apps/loggershark/
+# https://www.researchgate.net/publication/330319091_Cloud_Drives_Forensic_Artifacts_A_Google_Drive_Case
+# https://cyberforensicator.com/2018/10/19/cloud-forensics-google-drive/
+# https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics/
+# https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics-2/

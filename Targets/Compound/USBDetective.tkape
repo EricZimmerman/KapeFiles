@@ -1,0 +1,29 @@
+Description: Collects files that can be input into USB Detective for parsing
+Author: Kevin Pagano
+Version: 1.0
+Id: 6c3f8a69-f529-4201-a00e-067f6db7be8e
+RecreateDirectories: True
+Targets:
+    -
+        Name: USBDevicesLogs
+        Category: USB
+        Path: USBDevicesLogs.tkape
+    -
+        Name: RegistryHives
+        Category: Registry Hives
+        Path: RegistryHives.tkape
+    -
+        Name: Event Logs
+        Category: Event Logs
+        Path: EventLogs.tkape
+    -
+        Name: LNKFilesAndJumplists
+        Category: File Access
+        Path: LNKFilesAndJumplists.tkape
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: Amcache.tkape
+
+# Documentation
+# For more information on USB Detective go here: https://usbdetective.com/features/

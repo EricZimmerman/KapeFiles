@@ -1,0 +1,31 @@
+Description: Parsing for SOF-ELK Instance
+Category: SOF-ELK
+Author: Tony Knutson and Andrew Rathbun
+Version: 1.2
+Id: ae3ce0ae-1531-4916-a448-2fa2039fb714
+BinaryUrl: https://ericzimmerman.github.io/
+ExportFormat: json
+Processors:
+    -
+        Executable: SOFELK_Parser_EvtxECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SOFELK_Parser_LEcmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SOFELK_Parser_MFTECmd_MFT.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SOFELK_Parser_MFTECmd_J.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SOFELK_Parser_PECmd.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://aboutdfir.com/sof-elk-and-integration-with-kape/

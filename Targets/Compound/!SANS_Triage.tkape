@@ -1,0 +1,96 @@
+Description: SANS Triage Collection
+Author: Mark Hallman
+Version: 1.2
+Id: 1bfbd59d-6c58-4eeb-9da7-1d9612b79964
+RecreateDirectories: true
+Targets:
+    -
+        Name: Antivirus
+        Category: Antivirus
+        Path: Antivirus.tkape
+    -
+        Name: CloudStorage_Metadata
+        Category: Apps
+        Path: CloudStorage_Metadata.tkape
+    -
+        Name: CombinedLogs
+        Category: WindowsLogs
+        Path: EventLogs.tkape
+    -
+        Name: EvidenceOfExecution
+        Category: EvidenceOfExecution
+        Path: EvidenceOfExecution.tkape
+    -
+        Name: FileSystem
+        Category: FileSystem
+        Path: FileSystem.tkape
+    -
+        Name: LNKFilesAndJumpLists
+        Category: LNKFiles
+        Path: LNKFilesAndJumpLists.tkape
+    -
+        Name: MessagingClients
+        Category: MessagingClients
+        Path: MessagingClients.tkape
+    -
+        Name: RecycleBin_InfoFiles
+        Category: RecycleBin_InfoFiles
+        Path: RecycleBin_InfoFiles.tkape
+    -
+        Name: RegistryHives
+        Category: Registry
+        Path: RegistryHives.tkape
+    -
+        Name: RemoteAccess
+        Category: ApplicationLogs
+        Path: RemoteAdmin.tkape
+    -
+        Name: ScheduledTasks
+        Category: ScheduledTasks
+        Path: ScheduledTasks.tkape
+    -
+        Name: SRUM
+        Category: Execution
+        Path: SRUM.tkape
+    -
+        Name: SUM
+        Category: Logs
+        Path: SUM.tkape
+    -
+        Name: ThumbCache
+        Category: FileKnowledge
+        Path: Thumbcache.tkape
+    -
+        Name: WBEM
+        Category: WBEM
+        Path: WBEM.tkape
+    -
+        Name: WebBrowsers
+        Category: Communications
+        Path: WebBrowsers.tkape
+    -
+        Name: WindowsIndexSearch
+        Category: FileKnowledge
+        Path: WindowsIndexSearch.tkape
+    -
+        Name: WindowsTimeline
+        Category: EvidenceOfExecution
+        Path: WindowsTimeline.tkape
+
+# Some additional artifacts would be candidates for inclusion in this triage target but because they have the potential to return large amounts of data, they have been omitted.
+# Additional targets include (make sure to get spacing correct if un-commenting):
+#    -
+#        Name: Recycle Bin Data Files
+#        Category: FileDeletion
+#        Path: RecycleBin_DataFiles.tkape
+#    -
+#        Name: Outlook PST and OST Files
+#        Category: Communications
+#        Path: OutlookPSTOST.tkape
+#	 -
+#        Name: Cloud Storage User Files
+#        Category: Apps
+#        Path: CloudStorage_All.tkape
+
+# You can easily determine the number and size of files that will be returned by running the target with the KAPE simulate flag (--sim).
+# Example: kape.exe --tsource c: --tdest D:\Temp\ --target CloudStorage_All --sim

@@ -1,0 +1,43 @@
+Description: Collect Win7+ RDP related Event logs
+Author: Mark Hallman
+Version: 1.0
+Id: 2e79fc64-816c-439a-8b7f-93dd59bf2711
+RecreateDirectories: true
+Targets:
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: System.evtx
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: System.evtx
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Security.evtx
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: Security.evtx
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\Logs\Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
+        FileMask: Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
+    -
+        Name: Event logs Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\Logs\
+        FileMask: Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx
+
+# Documentation
+# https://medium.com/@lucideus/introduction-to-event-log-analysis-part-1-windows-forensics-manual-2018-b936a1a35d8a
+# https://medium.com/@lucideus/event-log-analysis-part-2-windows-forensics-manual-2018-75710851e323
+# https://www.digitalforensics.com/blog/forensic-analysis-of-windows-event-logs-windows-files-activities-audit/
+# https://youtu.be/Xw536W7kbDQ
+# https://www.youtube.com/watch?v=myzG11BP3Sk

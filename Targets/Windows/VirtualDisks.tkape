@@ -1,0 +1,33 @@
+Description: Virtual Disks
+Author: Phill Moore
+Version: 1.0
+Id: 283fd2b7-b914-4683-85b4-40dd3fefecbb
+RecreateDirectories: true
+Targets:
+    -
+        Name: VHD
+        Category: Disk Images
+        Path: C:\
+        FileMask: '*.VHD'
+        Recursive: true
+    -
+        Name: VHDX
+        Category: Disk Images
+        Path: C:\
+        FileMask: '*.VHDX'
+        Recursive: true
+    -
+        Name: VDI
+        Category: Disk Images
+        Path: C:\
+        FileMask: '*.VDI'
+        Recursive: true
+    -
+        Name: VMDK
+        Category: Disk Images
+        Path: C:\
+        FileMask: '*.VMDK'
+        Recursive: true
+
+# Documentation
+# N/A

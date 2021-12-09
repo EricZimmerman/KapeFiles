@@ -1,0 +1,14 @@
+Description: McAfee ePO Log Files
+Author: Doug Metz
+Version: 1.0
+Id: 8e893785-6bf2-4990-a783-35b0f5e1b442
+RecreateDirectories: true
+Targets:
+    -
+        Name: McAfee ePO Logs
+        Category: Antivirus
+        Path: C:\ProgramData\McAfee\Endpoint Security\Logs\
+        Recursive: true
+
+# Documentation
+# N/A

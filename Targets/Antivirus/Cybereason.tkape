@@ -1,0 +1,24 @@
+Description: Cybereason Sensor/Detection Logs
+Author: piesecurity
+Version: 1.0
+Id: 73ddfac4-a50a-4fcf-9fa2-7eb360cfd896
+RecreateDirectories: true
+Targets:
+    -
+        Name: Cybereason Anti-Ransomware Logs
+        Category: Antivirus
+        Path: C:\ProgramData\crs1\Logs
+        Recursive: true
+    -
+        Name: Cybereason Sensor Communications and Anti-Malware Logs
+        Category: Antivirus
+        Path: C:\ProgramData\apv2\Logs
+        Recursive: true
+    -
+        Name: Cybereason Application Control and NGAV Logs
+        Category: Antivirus
+        Path: C:\ProgramData\crb1\Logs
+        Recursive: true
+
+# Documentation
+# N/A

@@ -1,0 +1,61 @@
+Description: Symantec AV Logs
+Author: Brian Maloney
+Version: 1.3
+Id: 5e750ea2-f6dc-4981-88d1-636ce042aa0d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Symantec Endpoint Protection Logs (XP)
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV\
+        Recursive: true
+    -
+        Name: Symantec Endpoint Protection Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\
+        Recursive: true
+    -
+        Name: Symantec Endpoint Protection User Logs
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\
+        Recursive: true
+    -
+        Name: Symantec Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\logs\
+        FileMask: Symantec Endpoint Protection Client.evtx
+        Comment: "Symantec specific Windows event log"
+    -
+        Name: Symantec Event Log Win7+
+        Category: EventLogs
+        Path: C:\Windows.old\Windows\System32\winevt\logs\
+        FileMask: Symantec Endpoint Protection Client.evtx
+        Comment: "Symantec specific Windows event log"
+    -
+        Name: Symantec Endpoint Protection Manager (SEPM) Application Events
+        Category: EventLogs
+        Path: ApplicationEvents.tkape
+        Comment: "Contains SEPM entries, documented here: https://support.symantec.com/us/en/article.tech196455.html"
+    -
+        Name: Symantec Endpoint Protection Quarantine (XP)
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine\
+        Recursive: true
+    -
+        Name: Symantec Endpoint Protection Quarantine
+        Category: Antivirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\
+        Recursive: true
+    -
+        Name: ccSubSDK Database
+        Category: Antivirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\CmnClnt\ccSubSDK\
+        Recursive: true
+    -
+        Name: registrationInfo.xml
+        Category: Antivirus
+        Path: C:\ProgramData\Symantec\Symantec Endpoint Protection\*\Data\
+        FileMask: registrationInfo.xml
+
+# Documentation
+# https://malwaremaloney.blogspot.com/p/all-things-symantec.html

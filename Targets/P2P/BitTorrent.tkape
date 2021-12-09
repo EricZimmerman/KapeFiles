@@ -1,0 +1,17 @@
+Description: BitTorrent
+Author: Banaanhangwagen
+Version: 1.0
+Id: ea203900-3f49-4ebf-a213-21d82ccae5db
+RecreateDirectories: true
+Targets:
+    -
+        Name: TorrentClients - BitTorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Roaming\BitTorrent\
+        FileMask: '*.dat'
+
+# Documentation
+# https://www.researchgate.net/publication/288858418_Investigation_of_Artifacts_Left_by_BitTorrent_Client_on_the_Local_Computer_Operating_under_Windows_81
+# https://www.sans.org/reading-room/whitepapers/legal/bittorrent-digital-contraband-36887
+# https://www.sciencedirect.com/science/article/abs/pii/S1742287610000770
+# https://www.sciencedirect.com/science/article/pii/S1742287614000152

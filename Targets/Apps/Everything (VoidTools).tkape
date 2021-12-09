@@ -1,0 +1,32 @@
+Description: Everything (VoidTools)
+Author: Andrew Rathbun
+Version: 1.1
+Id: d63046dd-1d8c-4f4f-acd0-4c1ea3415b0f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Everything (VoidTools)
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Local\Everything\
+        FileMask: Everything.db
+        Comment: "Copies out Everything.db"
+    -
+        Name: Everything (VoidTools) - Run History
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Everything\
+        FileMask: Run History.csv
+        Comment: "Copies out a CSV containing the history of items ran from Everything's search results window"
+    -
+        Name: Everything (VoidTools) - Search History
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Everything\
+        FileMask: Search History.csv
+        Comment: "Copies out a CSV containing the history of items searched for within Everything with timestamps"
+
+# Documentation
+# For those who don't know, VoidTools' Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
+# Everything must have been exited completely in order for the Everything.db file to have been committed to disk. So for initial installs, it won't commit until the first exit.
+# Everything creates a searchable index almost instantly on any system its installed on. Everything.db is what this index is stored in.
+# This target pulls the Everything.db which can then be converted with the Everything (VoidTools) Module to provide a readable list of every file located on a system using a text editor or the Everything tool itself.
+# The Search History and Run History are not enabled by default. They can be enabled within Options -> History.
+# Timestamps within the CSV files can be converted with CyberChef with this particular recipe: https://gchq.github.io/CyberChef/#recipe=From_UNIX_Timestamp('Nanoseconds%20(ns)')

@@ -1,0 +1,21 @@
+Description: ActivitiesCache.db collector
+Author: Lee Whitfield
+Version: 1.0
+Id: 8315040f-c9a4-455a-b02c-96372583f436
+RecreateDirectories: true
+Targets:
+    -
+        Name: ActivitiesCache.db
+        Category: FileFolderAccess
+        Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
+        FileMask: ActivitiesCache.db*
+
+# Documentation
+# https://www.group-ib.com/blog/windows10_timeline_for_forensics
+# https://kacos2000.github.io/WindowsTimeline/WindowsTimeline.pdf
+# https://medium.com/@soji256/list-of-windows-10-timeline-analysis-articles-c61595b49e0d
+# https://www.cellebrite.com/en/blog/exploring-the-windows-activity-timeline-part-1-the-high-points/
+# https://www.andreafortuna.org/2019/10/03/some-forensic-thoughts-about-windows-10-timeline/
+# https://salt4n6.com/2018/05/03/windows-10-timeline-forensic-artefacts/
+# https://cyberforensicator.com/2018/05/08/wxtcmd-windows-10-timeline-parser/
+# There is a SQLECmd map for the ActivitiesCache.db database: https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_ActivitiesCache.smap
