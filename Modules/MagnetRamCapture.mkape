@@ -22,4 +22,3 @@ Processors:
 #
 # Example usage:
 # kape.exe --tsource C: --tdest E:\Triage\ --target KapeTriage --vhdx triage --mdest E:\Triage\Memory --module MagnetRamCapture
-
