@@ -44,7 +44,7 @@ Targets:
 # Documentation
 # home.db: SQlite database tracking some of a user's recent Dropbox activity
 # icon.db: SQLite database tracking of icons in the user's Dropbox sync history which can give an indication as to which files and folders are present
-# sync_history.db: SQLite database containing recent synchronization events including usage activity 
+# sync_history.db: SQLite database containing recent synchronization events including usage activity
 # nucleus.sqlite3: SQLite database tracking names of local and cloud-only files
 # aggregation.dbx: SQLite database that can contain a snapshot table of the user's Dropbox contents in JSON with timestamps in UNIX Epoch
 # avatarcache.db: SQLite database which appears to contain the ID's of account(s) on the user's system where Dropbox is installed
