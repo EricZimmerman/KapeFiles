@@ -210,5 +210,6 @@ Targets:
 # https://dfir.blog/chrome-values-lookup-tables/
 # https://www.sans.org/blog/forensically-mining-new-nuggets-of-google-chrome/
 # https://digitalinvestigation.wordpress.com/tag/snss/
+# https://dfir.blog/cookies-database-moving-in-chrome-96/
 # The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Chrome_History.smap
 # For the files that aren't JSON or SQlite, aka Current Session, Current Tabs, Last Tabs, Last Session, see above links for clues on how to interpret that data
