@@ -22,4 +22,4 @@ Targets:
         Path: Syscache.tkape
 
 # Documentation
-# N/A
+# ShimCache is not included in this Compound Target, as that would require pulling the entire SYSTEM Registry Hive. To ensure the ShimCache is pulled and parsed, use RegistryHivesSystem.tkape and parse with AppCompatCacheParser.mkape
