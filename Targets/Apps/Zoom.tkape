@@ -26,12 +26,12 @@ Targets:
         FileMask: "*"
         Comment: "Zoom recording artifacts"
     -
-        Name: Zoom plugin (Outlook) 
+        Name: Zoom plugin (Outlook)
         Category: Apps
-        Path:  C:\Users\%user%\AppData\Roaming\Zoom Plugin
+        Path: C:\Users\%user%\AppData\Roaming\Zoom Plugin
         FileMask: "*.json"
-        Comment: "Zoom plugin artifacts"       
-        
+        Comment: "Zoom plugin artifacts"
+
 # Documentation
 # https://support.zoom.us/hc/en-us/articles/201512326-Troubleshooting-log-for-Windows
 # https://www.sans.org/posters/windows-third-party-apps-forensics-poster/
