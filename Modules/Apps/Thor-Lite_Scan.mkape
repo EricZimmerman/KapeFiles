@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: thor-lite\thor64-lite.exe
-        CommandLine: "-a Filescan -p %sourceDirectory% -e %destinationDirectory%\THOR"
+        CommandLine: "-a Filescan -p %sourceDirectory% -e %destinationDirectory%\\THOR"
         ExportFormat: csv
 
 # Docuemntation
@@ -23,4 +23,3 @@ Processors:
 #
 # This Module is meant to run against a mounted image rather than a live running system
 # You are welcome to add --quick, --intense, or --soft to this command for your specific use case
-
