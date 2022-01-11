@@ -9,17 +9,16 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Apple\Mobilesync\Backup\
         Recursive: true
-
     -
         Name: iTunes Backup Folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Apple Computer\Mobilesync\Backup\
         Recursive: true
-
     -
         Name: iTunes Backup Folder - iOS13
         Category: Communications
         Path: C:\Users\%user%\Apple\Mobilesync\Backup\
+        Recursive: true
 
 # Documentation
 # https://cyberforensicator.com/2017/03/01/how-to-find-passwords-for-encrypted-itunes-backups/
