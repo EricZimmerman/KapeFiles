@@ -35,6 +35,7 @@ Targets:
 # https://blog.elcomsoft.com/2020/04/forensic-guide-to-imessage-whatsapp-telegram-signal-and-skype-data-acquisition/
 # https://www.linkedin.com/pulse/signal-desktop-digital-forensics-perspective-surya-teja-masanam/
 # https://www.zetetic.net/sqlcipher/sqlcipher-api/#key
+# https://www.forensafe.com/blogs/signal.html
 # https://github.com/signalapp/Signal-Desktop/blob/master/ts/sql/Server.ts#L276
 # To decrypt db.sqlite on Windows:
 # 1. Download https://sqlitebrowser.org/dl/ and open DB Browser for SQLCipher.exe

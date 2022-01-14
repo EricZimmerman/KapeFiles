@@ -36,5 +36,6 @@ Targets:
 # https://support.zoom.us/hc/en-us/articles/201512326-Troubleshooting-log-for-Windows
 # https://www.sans.org/posters/windows-third-party-apps-forensics-poster/
 # https://www.sciencedirect.com/science/article/pii/S2666281721000019
+# https://www.forensafe.com/blogs/zoom.html
 # This target includes some "irrelevant" artifacts like DLLs, and exes
 # We collect everything to hopefully avoid missing crucial artifacts
