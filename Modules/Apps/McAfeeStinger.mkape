@@ -1,4 +1,4 @@
-Description: McAfeeStinger scanner 
+Description: McAfeeStinger scanner
 Category: LiveResponse
 Author: Georg Lauenstein
 Version: 1.0
@@ -8,7 +8,7 @@ ExportFormat: html
 Processors:
     -
         Executable: McAfeeStinger\stinger32.exe
-        CommandLine: "--SILENT --SCANPATH=%sourceDirectory% --NOREGISTRY --NOPROCESS --RPTALL --REPORTPATH= %destinationDirectory%" 
+        CommandLine: "--SILENT --SCANPATH=%sourceDirectory% --NOREGISTRY --NOPROCESS --RPTALL --REPORTPATH= %destinationDirectory%"
         ExportFormat: html
 # Documentation
 # Create a folder "McAfeeStinger" within the "Modules\bin" KAPE folder
