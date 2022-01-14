@@ -3,7 +3,7 @@
 Please include a summary of the change and (if applicable) which issue is fixed.
 
 ## Checklist:
-Please replace every instance of `[ ]` with `[X]`
+Please replace every instance of `[ ]` with `[X]` OR click on the checkboxes after you submit your PR
 
 - [ ] I have generated a unique `GUID` for my Target(s)/Module(s)
 - [ ] I have placed the Target(s)/Module(s) in an appropriate subfolder in Targets or Modules. If one doesn't exist, I have either added it to the `Misc` folder or created a relevant subfolder **with justification**
