@@ -10,5 +10,6 @@ Processors:
         Executable: log4j2-scan.exe
         CommandLine: "--all-drives --scan-log4j1 --scan-logback --report-dir %destinationDirectory%"
         ExportFormat: csv
+
 # Documentation
 # Check GitHub for additional options during scan
