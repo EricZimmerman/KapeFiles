@@ -18,4 +18,5 @@ Targets:
 # https://www.andreafortuna.org/2019/10/03/some-forensic-thoughts-about-windows-10-timeline/
 # https://salt4n6.com/2018/05/03/windows-10-timeline-forensic-artefacts/
 # https://cyberforensicator.com/2018/05/08/wxtcmd-windows-10-timeline-parser/
+# https://www.forensafe.com/blogs/wintimeline.html
 # There is a SQLECmd map for the ActivitiesCache.db database: https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_ActivitiesCache.smap
