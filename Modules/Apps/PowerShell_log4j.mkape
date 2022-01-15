@@ -1,0 +1,14 @@
+Description: Find every Folder related to log4j core .jar extensions
+Category: LiveResponse
+Author: Jochen Meyer, Georg Lauenstein
+Version: 1.0
+Id: 94c6d3c1-25bc-4948-b626-f5f455f56b6a
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-ChildItem C:\ -Force -Recurse -ErrorAction SilentlyContinue -Attributes !Directory | Where-Object { $_.Name -like '*log4j*'} | ForEach{ $_.FullName | Out-File -FilePath %destinationDirectory%\$env:COMPUTERNAME.txt -Append}"
+        ExportFormat: txt
+
+# Documentation
+# N/A

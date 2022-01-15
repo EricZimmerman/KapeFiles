@@ -1,0 +1,19 @@
+Description: McAfeeStinger scanner
+Category: LiveResponse
+Author: Georg Lauenstein
+Version: 1.0
+Id: c49d14fe-5b77-46d9-a058-ab90d5cc2edd
+BinaryUrl: https://www.mcafee.com/enterprise/en-us/downloads/free-tools/terms-of-use.html?url=https://downloadcenter.mcafee.com/products/mcafee-avert/Stinger/stinger32.exe
+ExportFormat: html
+Processors:
+    -
+        Executable: McAfeeStinger\stinger32.exe
+        CommandLine: "--SILENT --SCANPATH=%sourceDirectory% --NOREGISTRY --NOPROCESS --RPTALL --REPORTPATH= %destinationDirectory%"
+        ExportFormat: html
+
+# Documentation
+# Create a folder "McAfeeStinger" within the "Modules\bin" KAPE folder
+# Place "stinger32.exe" file into "Modules\bin\McAfeeStinger"
+# Release Infos: https://www.mcafee.com/enterprise/de-de/downloads/free-tools/stinger.html
+# Change Infos: https://downloadcenter.mcafee.com/products/mcafee-avert/stinger/readme.txt
+# More Options for Commandline: https://community.mcafee.com/t5/Malware/Stinger-command-line-options-silent-log/m-p/404506/highlight/true#M30492

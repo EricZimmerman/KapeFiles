@@ -1,0 +1,15 @@
+Description: Vulnerability scanner and mitigation patch for Log4j2 CVE-2021-44228
+Category: LiveResponse
+Author: Georg Lauenstein
+Version: 1.0
+Id: 625db471-45bd-4b3b-a60f-97a376168a94
+BinaryUrl: https://github.com/logpresso/CVE-2021-44228-Scanner
+ExportFormat: csv
+Processors:
+    -
+        Executable: log4j2-scan.exe
+        CommandLine: "--all-drives --scan-log4j1 --scan-logback --report-dir %destinationDirectory%"
+        ExportFormat: csv
+
+# Documentation
+# Check GitHub for additional options during scan
