@@ -12,6 +12,7 @@ Targets:
         AlwaysAddToQueue: true
 
 # Documentation
+# https://docs.microsoft.com/en-us/windows/win32/fileio/master-file-table
 # https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
 # https://www.andreafortuna.org/2017/10/06/macb-times-in-windows-forensic-analysis/
 # https://www.andreafortuna.org/2018/06/04/using-mft-anomalies-to-spot-suspicious-files-in-forensic-analysis/
