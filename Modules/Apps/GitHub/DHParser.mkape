@@ -1,13 +1,13 @@
 Description: Retrieve Defender DetectionHistory threat data into JSON
 Category: Antivirus
 Author: Jordan Klepser
-Version: 1.0 
-Id: 0256a455-1248-4e30-8175-727679189ddd # Required, unique GUID is required for every KAPE Target/Module
+Version: 1.0
+Id: 0256a455-1248-4e30-8175-727679189ddd
 BinaryUrl: https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/dhparser.exe
-ExportFormat: json 
+ExportFormat: json
 Processors:
     -
-        Executable: dhparser.exe # If your binary is sitting at the root of .\KAPE\Modules\bin, then just list binary.exe here
+        Executable: dhparser.exe
         CommandLine: -rgf %sourceDirectory% -o %destinationDirectory% -s
         ExportFormat: json
 
