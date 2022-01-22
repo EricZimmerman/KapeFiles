@@ -34,6 +34,7 @@ Targets:
         Comment: "This is for the use case when you're running this Target against a mounted VHDX with these files already pulled from a live system. The above Targets are looking for the files as an ADS whereas once they are already pulled they no longer match the ADS criteria and therefore are missed"
 
 # Documentation
+# https://docs.microsoft.com/en-us/windows/win32/fileio/change-journal-records
 # https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf
 # http://forensicinsight.org/wp-content/uploads/2013/07/F-INSIGHT-Advanced-UsnJrnl-Forensics-English.pdf
 # https://countuponsecurity.com/2017/05/25/digital-forensics-ntfs-change-journal/
