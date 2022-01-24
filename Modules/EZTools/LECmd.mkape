@@ -1,22 +1,22 @@
 Description: 'LECmd: process .lnk files'
 Category: FileFolderAccess
 Author: Eric Zimmerman
-Version: 1.0
+Version: 1.1
 Id: 1b66f0e2-2ccf-449c-ae02-a1b3dc59df08
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/LECmd.zip
 ExportFormat: csv
 Processors:
     -
         Executable: LECmd.exe
-        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q --mp
         ExportFormat: csv
     -
         Executable: LECmd.exe
-        CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q --mp
         ExportFormat: html
     -
         Executable: LECmd.exe
-        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q --mp
         ExportFormat: json
 
 # Documentation
