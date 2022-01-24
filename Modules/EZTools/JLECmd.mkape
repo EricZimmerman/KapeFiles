@@ -8,15 +8,15 @@ ExportFormat: csv
 Processors:
     -
         Executable: JLECmd.exe
-        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory% -q --mp
         ExportFormat: csv
     -
         Executable: JLECmd.exe
-        CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --html %destinationDirectory% -q --mp
         ExportFormat: html
     -
         Executable: JLECmd.exe
-        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory% -q --mp
         ExportFormat: json
 
 # Documentation
