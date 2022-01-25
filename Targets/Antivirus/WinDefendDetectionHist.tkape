@@ -1,6 +1,6 @@
 Description: 'Windows Defender Threat DetectionHistory files'
 Author: Jordan Klepser
-Version: 1.0
+Version: 1.0.1
 Id: a780af32-cb91-4e32-b946-0546cc123930
 RecreateDirectories: false
 Targets:
