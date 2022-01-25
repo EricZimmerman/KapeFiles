@@ -1,0 +1,16 @@
+Description: Retrieve Defender DetectionHistory threat data into JSON
+Category: Antivirus
+Author: Jordan Klepser
+Version: 1.1
+Id: 0256a455-1248-4e30-8175-727679189ddd
+BinaryUrl: https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/dhparser.exe
+ExportFormat: json
+Processors:
+    -
+        Executable: dhparser.exe
+        CommandLine: -rgf %sourceDirectory% -o %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/README.md
+# https://www.sans.org/blog/uncovering-windows-defender-real-time-protection-history-with-dhparser/

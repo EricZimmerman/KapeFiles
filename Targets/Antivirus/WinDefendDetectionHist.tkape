@@ -1,0 +1,14 @@
+Description: 'Windows Defender Threat DetectionHistory files'
+Author: Jordan Klepser
+Version: 1.1
+Id: a780af32-cb91-4e32-b946-0546cc123930
+RecreateDirectories: false
+Targets:
+    -
+        Name: DetectionHistory
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Scans\History\Service\DetectionHistory\*\
+        Recursive: true
+
+# Documentation
+# https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/README.md
