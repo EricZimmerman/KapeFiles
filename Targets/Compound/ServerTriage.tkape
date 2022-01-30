@@ -30,4 +30,4 @@ Targets:
         Path: ManageEngineLogs.tkape
 
 # Documentation
-# A target to run on generic servers when their role is unknown. Includes common server applications.
+# A Target to run on generic servers when their role is unknown. Includes common server applications.
