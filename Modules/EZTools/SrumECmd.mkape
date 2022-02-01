@@ -1,14 +1,14 @@
 Description: 'SrumECmd: SRUM Parser'
 Category: SRUMDatabase
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: a0fac3f5-ee99-4973-b3ea-4cffc87da48d
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip
 ExportFormat: csv
 Processors:
     -
         Executable: SrumECmd.exe
-        CommandLine: -d %sourceDirectory% -k --csv %destinationDirectory%
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
         ExportFormat: csv
         ExportFile: SrumECmdConsoleLog.txt
 
