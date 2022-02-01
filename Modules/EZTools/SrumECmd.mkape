@@ -1,5 +1,5 @@
 Description: 'SrumECmd: SRUM Parser'
-Category: SystemActivity
+Category: SRUMDatabase
 Author: Andrew Rathbun
 Version: 1.0
 Id: a0fac3f5-ee99-4973-b3ea-4cffc87da48d
@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: SrumECmd.exe
-        CommandLine: -d %sourceDirectory% -k --csv %destinationDirectory%
+        CommandLine: -d %sourceDirectory% -r %sourceDirectory% --csv %destinationDirectory%
         ExportFormat: csv
         ExportFile: SrumECmdConsoleLog.txt
 
