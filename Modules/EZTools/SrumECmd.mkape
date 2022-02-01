@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: SrumECmd.exe
-        CommandLine: -d %sourceDirectory% -r %sourceDirectory% --csv %destinationDirectory%
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
         ExportFormat: csv
         ExportFile: SrumECmdConsoleLog.txt
 
