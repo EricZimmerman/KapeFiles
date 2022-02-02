@@ -1,7 +1,7 @@
 Description: Brave Browser
 Author: Cassie Doemel
 Version: 1.0
-Id: 3801a96f-f402-41fd-8bde-e04e9ea7c7c2 # Required
+Id: 3801a96f-f402-41fd-8bde-e04e9ea7c7c2
 RecreateDirectories: true
 Targets:
     -
