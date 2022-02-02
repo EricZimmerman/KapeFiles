@@ -1,0 +1,21 @@
+Description: MZCacheView
+Category: BrowserCache
+Author: Andrew Rathbun
+Version: 1.0
+Id: c38de7b8-4844-4521-93e9-47f5b54fd202
+BinaryUrl: https://www.nirsoft.net/utils/mzcacheview.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: MZCacheView.exe
+        CommandLine: %sourceDirectory% /scomma %destinationDirectory%\MZCacheView.csv
+        ExportFormat: csv
+    -
+        Executable: MZCacheView.exe
+        CommandLine: %sourceDirectory% /sverhtml %destinationDirectory%\MZCacheView.html
+        ExportFormat: html
+
+# Documentation
+# https://www.nirsoft.net/utils/mozilla_cache_viewer.html
+# Unfortunately, with how the tool is in its current state, you must point the msource to the respective cache folder for where the browser cache resides
+# Firefox - C:\Users\%user%\AppData\Local\Mozilla\Firefox\Profiles\*\
