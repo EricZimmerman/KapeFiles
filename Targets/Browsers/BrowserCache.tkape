@@ -33,6 +33,10 @@ Targets:
         Name: Edge WebcacheV01.dat
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WebCache\
-
+    -
+        Name: Brave Cache Folder
+        Category: Communications
+        Path: C:\Users\%users%\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Cache\Cache_Data
+        Recursive: true
 # Documentation
 # N/A
