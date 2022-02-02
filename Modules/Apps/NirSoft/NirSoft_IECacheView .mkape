@@ -1,0 +1,22 @@
+Description: IECacheView
+Category: BrowserCache
+Author: Andrew Rathbun
+Version: 1.0
+Id: 24a0b3fa-81cf-4a08-bcbe-79488dba66e8
+BinaryUrl: https://www.nirsoft.net/utils/iecacheview.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: IECacheView.exe
+        CommandLine: %sourceDirectory% /scomma %destinationDirectory%\IECacheView.csv
+        ExportFormat: csv
+    -
+        Executable: IECacheView.exe
+        CommandLine: %sourceDirectory% /sverhtml %destinationDirectory%\IECacheView.html
+        ExportFormat: html
+
+# Documentation
+# https://www.nirsoft.net/utils/ie_cache_viewer.html
+# Unfortunately, with how the tool is in its current state, you must point the msource to the respective cache folder for where the browser cache resides
+# IE 9/10 - C:\Users\%user%\AppData\Local\Microsoft\Windows\Temporary Internet Files\
+# IE 11 - C:\Users\%user%\AppData\Local\Microsoft\Windows\INetCache\
