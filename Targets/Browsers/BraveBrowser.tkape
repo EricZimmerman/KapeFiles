@@ -2,15 +2,15 @@ Description: Brave Browser
 Author: Cassie Doemel
 Version: 1.0
 Id: 3801a96f-f402-41fd-8bde-e04e9ea7c7c2 # Required
-RecreateDirectories: True
-Targets:   
+RecreateDirectories: true
+Targets:
     -
         Name: Bookmarks
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
         FileMask: Bookmarks*
     -
-        Name: Cookies 
+        Name: Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
         FileMask: Cookies*
@@ -108,7 +108,7 @@ Targets:
         Comment: Contains additional preferences data
 # Documentation
 # https://www.forensafe.com/blogs/brave.html
-# While Brave is Webkit/Chrome based, when compared to Chrome: 
+# While Brave is Webkit/Chrome based, when compared to Chrome:
 #        Does not appear to create Extension Cookies or Media History files
 #        Has Unknowns: Safe Browsing Cookies & TransportSecurity
 #        Adds: Secure Preferences & publisher_info_db
