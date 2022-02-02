@@ -34,10 +34,10 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
         FileMask: Favicons*
-    -        
-        Name: History 
+    -
+        Name: History
         Category: Communications
-        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\        
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
         FileMask: History*
     -
         Name: Sessions Folder
@@ -78,7 +78,7 @@ Targets:
         Name: Shortcuts
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
-        FileMask: Shortcuts*           
+        FileMask: Shortcuts*
     -
         Name: Publisher Info DB/Brave Rewards
         Category: Communications
@@ -105,8 +105,7 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
         FileMask: Secure Preferences*
-        Comment: Contains additional preferences data 
-
+        Comment: Contains additional preferences data
 # Documentation
 # https://www.forensafe.com/blogs/brave.html
 # While Brave is Webkit/Chrome based, when compared to Chrome: 
