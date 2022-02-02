@@ -106,6 +106,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
         FileMask: Secure Preferences*
         Comment: Contains additional preferences data
+        
 # Documentation
 # https://www.forensafe.com/blogs/brave.html
 # While Brave is Webkit/Chrome based, when compared to Chrome:
