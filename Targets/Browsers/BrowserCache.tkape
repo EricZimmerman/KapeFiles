@@ -38,5 +38,6 @@ Targets:
         Category: Communications
         Path: C:\Users\%users%\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Cache\Cache_Data
         Recursive: true
+
 # Documentation
 # N/A
