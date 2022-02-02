@@ -9,7 +9,7 @@ FileMask: SYSTEM
 Processors:
     -
         Executable: AppCompatCacheParser.exe
-        CommandLine: -f %sourceFile% --csv %destinationDirectory% --mp
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
         ExportFormat: csv
 
 # Documentation
