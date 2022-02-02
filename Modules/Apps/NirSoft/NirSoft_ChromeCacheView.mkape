@@ -1,0 +1,25 @@
+Description: ChromeCacheView
+Category: BrowserCache
+Author: Andrew Rathbun
+Version: 1.0
+Id: 79585cbc-2098-4da5-8bb3-563eee02fd52
+BinaryUrl: https://www.nirsoft.net/utils/chromecacheview.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: ChromeCacheView.exe
+        CommandLine: %sourceDirectory% /scomma %destinationDirectory%\ChromeCacheView.csv
+        ExportFormat: csv
+    -
+        Executable: ChromeCacheView.exe
+        CommandLine: %sourceDirectory% /sverhtml %destinationDirectory%\ChromeCacheView.html
+        ExportFormat: html
+
+# Documentation
+# https://www.nirsoft.net/utils/chrome_cache_view.html
+# Unfortunately, with how the tool is in its current state, you must point the msource to the respective cache folder for where the browser cache resides
+# Edge Chromium - C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\Default\Cache\Cache_Data
+# Chrome - C:\Users\%user%\AppData\Local\Google\Chrome\User Data\Default\Cache\Cache_Data
+# Opera - C:\Users\%user%\AppData\Local\Opera Software\Opera Stable\Cache
+# Vivaldi - C:\Users\%user%\AppData\Local\Vivaldi\User Data\Default\Cache
+# Yandex - C:\Users\%user%\AppData\Local\Yandex\YandexBrowser\User Data\Default\Cache
