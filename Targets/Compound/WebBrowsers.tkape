@@ -32,6 +32,10 @@ Targets:
         Name: Puffin Secure Browser
         Category: Communications
         Path: PuffinSecureBrowser.tkape
+    -
+        Name: Brave Browser
+        Category: Communications
+        Path: BraveBrowser.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_web_browsers.
