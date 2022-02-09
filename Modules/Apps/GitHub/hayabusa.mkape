@@ -1,0 +1,17 @@
+Description: hayabusa
+Category: EventLogs
+Author: Georg Lauenstein
+Version: 1.0
+Id: 9696412c-c973-4fd4-a426-06318011b8ba
+ExportFormat: csv
+Processors:
+    -
+        Executable: hayabusa\hayabusa.exe
+        CommandLine: -d %sourceDirectory% --utc --quiet -o %destinationDirectory%\hayabusa.csv
+        ExportFormat: csv
+
+# Documentation
+# Create a folder "hayabusa" within the "Modules\bin" KAPE folder
+# Place "zip archive" file into "Modules\bin\hayabusa" and unpack
+# You can delete all except: "config"; "rules" and the "hayabusa.exe"
+# https://github.com/Yamato-Security/hayabusa
