@@ -9,13 +9,13 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Opera Software\Opera Stable
         Recursive: true
-        Comment: "Grabs entire contents of the Opera AppData\Local folder"
+        Comment: Grabs entire contents of the Opera AppData\Local folder
     -
         Name: Opera - Roaming Folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\Opera Software\Opera Stable
         Recursive: true
-        Comment: “Grabs entire contents of the Opera AppData\Roaming folder”
+        Comment: Grabs entire contents of the Opera AppData\Roaming folder
 
 # Documentation
 # https://kb.digital-detective.net/display/BF/Opera
