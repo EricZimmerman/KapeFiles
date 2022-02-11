@@ -1,0 +1,116 @@
+Description: Brave Browser
+Author: Cassie Doemel
+Version: 1.0
+Id: 3801a96f-f402-41fd-8bde-e04e9ea7c7c2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: History*
+    -
+        Name: Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Sessions\
+        Recursive: false
+    -
+        Name: Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Publisher Info DB/Brave Rewards
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: publisher_info_db*
+        Comment: SQLite Database related to "Brave Rewards" containing an event_log table
+    -
+        Name: Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Visited Links*
+    -
+        Name: Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\
+        FileMask: Secure Preferences*
+        Comment: Contains additional preferences data
+
+# Documentation
+# https://www.forensafe.com/blogs/brave.html
+# While Brave is Webkit/Chrome based, when compared to Chrome:
+#        Does not appear to create Extension Cookies or Media History files
+#        Has Unknowns: Safe Browsing Cookies & TransportSecurity
+#        Adds: Secure Preferences & publisher_info_db
+# Brave Rewards - publisher_info_db - https://github.com/brave/brave-browser/issues/9655
