@@ -1,4 +1,4 @@
-Description: Move-KAPEConsoleHost_history.ps1 - Moves the ConsoleHost_history.txt file into the Modules output for better visibility. 
+Description: Move-KAPEConsoleHost_history.ps1 - Moves the ConsoleHost_history.txt file into the Modules output for better visibility
 Category: PowerShellHistory
 Author: Andrew Rathbun and Matt Arbaugh
 Version: 1.0
