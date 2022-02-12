@@ -588,8 +588,8 @@ Targets:
         Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
         FileMask: 'EventTranscript.db*'
 
-    # Documentation
-    # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
-    # This Target will likely be updated often as more SQLECmd Maps are created
-    # Despite not pointing to other .tkape files directly in the interest of only grabbing SQL databases, this Target is considered a Compound Target since it references many other Targets
-    # Use with SQLECmd.mkape or SQLECmd-Hunt.mkape for best results
+# Documentation
+# This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
+# This Target will likely be updated often as more SQLECmd Maps are created
+# Despite not pointing to other .tkape files directly in the interest of only grabbing SQL databases, this Target is considered a Compound Target since it references many other Targets
+# Use with SQLECmd.mkape or SQLECmd-Hunt.mkape for best results
