@@ -2,7 +2,7 @@ Description: Snip & Sketch Cached Images
 Author: Kevin Pagano
 Version: 1.0
 Id: b881c3bb-58b1-4e63-be1a-8159794e5a4b
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Snip & Sketch
