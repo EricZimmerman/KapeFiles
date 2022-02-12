@@ -5,7 +5,7 @@ Id: 61d2909c-dcf2-481f-9169-53ea0c2455ba
 RecreateDirectories: true
 Targets:
 
-# Apps - 4K Video Downloader - 4KVideoDownloader.tkape
+    # Apps - 4K Video Downloader - 4KVideoDownloader.tkape
 
     -
         Name: 4K Video Downloader
@@ -14,7 +14,7 @@ Targets:
         FileMask: "*.sqlite"
         Comment: "Grabs database(s) that stores user download history"
 
-# Apps - Microsoft OneNote - MicrosoftOneNote.tkape
+    # Apps - Microsoft OneNote - MicrosoftOneNote.tkape
 
     -
         Name: Microsoft OneNote - FullTextSearchIndex
@@ -45,7 +45,7 @@ Targets:
         FileMask: RecentSearches.db
         Comment: "Grabs a database that stores the user's recent searches within OneNote"
 
-# Apps - Microsoft Sticky Notes - MicrosoftStickyNotes.tkape
+    # Apps - Microsoft Sticky Notes - MicrosoftStickyNotes.tkape
 
     -
         Name: Microsoft Sticky Notes - 1607 and later
@@ -53,7 +53,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes*\LocalState\
         FileMask: plum.sqlite*
 
-# Apps - Microsoft To Do - MicrosoftToDo.tkape
+    # Apps - Microsoft To Do - MicrosoftToDo.tkape
 
     -
         Name: Microsoft To Do - SQLite Database of To Do tasks
@@ -61,7 +61,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\*\
         FileMask: todosqlite.db*
 
-# Apps - TeraCopy - TeraCopy.tkape
+    # Apps - TeraCopy - TeraCopy.tkape
 
     -
         Name: TeraCopy - History Databases
@@ -74,7 +74,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
         FileMask: main.db
 
-# Cloud Storage - Dropbox - Dropbox_Metadata.tkape
+    # Cloud Storage - Dropbox - Dropbox_Metadata.tkape
 
     -
         Name: Dropbox Metadata
@@ -143,7 +143,7 @@ Targets:
         FileMask: avatarcache.db
         Comment: "SQLite database which appears to contain the ID's of account(s) on the user's system where Dropbox is installed"
 
-# Cloud Storage - Google Drive - GoogleDrive_Metadata.tkape
+    # Cloud Storage - Google Drive - GoogleDrive_Metadata.tkape
 
     -
         Name: Google File Stream Metadata
@@ -170,7 +170,7 @@ Targets:
         FileMask: sync_config.db
         Comment: "Windows_GoogleDrive_SyncConfigDB.smap"
 
-# FTP Clients - FileZilla - FileZilla.tkape
+    # FTP Clients - FileZilla - FileZilla.tkape
 
     -
         Name: FileZilla SQLite3 Log Files
@@ -178,7 +178,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\FileZilla\
         FileMask: '*.sqlite3*'
 
-# Web Browsers - Chrome - Chrome.tkape
+    # Web Browsers - Chrome - Chrome.tkape
 
     -
         Name: Chrome bookmarks XP
@@ -366,7 +366,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Web Data*
 
-# Web Browsers - Edge Chromium - EdgeChromium.tkape
+    # Web Browsers - Edge Chromium - EdgeChromium.tkape
 
     -
         Name: Edge bookmarks
@@ -464,7 +464,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Web Data*
 
-# Web Browsers - Firefox - Firefox.tkape
+    # Web Browsers - Firefox - Firefox.tkape
 
     -
         Name: Addons
@@ -537,7 +537,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Mozilla\Firefox\Profiles\*\
         FileMask: webappstore.sqlite*
 
-# Windows - Windows Notifications - WindowsNotificationsDB.tkape
+    # Windows - Windows Notifications - WindowsNotificationsDB.tkape
 
     -
         Name: Windows 10 Notification DB
@@ -550,7 +550,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
         FileMask: appdb.dat
 
-# Windows - Windows Timeline - WindowsTimeline.tkape
+    # Windows - Windows Timeline - WindowsTimeline.tkape
 
     -
         Name: ActivitiesCache.db
@@ -558,7 +558,7 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\ConnectedDevicesPlatform\*\
         FileMask: ActivitiesCache.db*
 
-# Windows - Windows OS Upgrade Artifacts - WindowsOSUpgradeArtifacts.tkape
+    # Windows - Windows OS Upgrade Artifacts - WindowsOSUpgradeArtifacts.tkape
 
     -
         Name: Update Store.db
@@ -566,7 +566,7 @@ Targets:
         Path: C:\ProgramData\USOPrivate\UpdateStore
         FileMask: store.db
 
-# Windows - Bitdefender Antivirus - Bitdefender.tkape
+    # Windows - Bitdefender Antivirus - Bitdefender.tkape
     -
         Name: Bitdefender SQLite DB Files
         Category: Antivirus
@@ -575,7 +575,7 @@ Targets:
         FileMask: regex:*.+\.(db|db-wal|db-shm)
         Comment: "Bitdefender SQLite databases"
 
-# Windows - EventTranscript.db - EventTranscriptDB.tkape
+    # Windows - EventTranscript.db - EventTranscriptDB.tkape
 
     -
         Name: EventTranscript.db
@@ -588,8 +588,8 @@ Targets:
         Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
         FileMask: 'EventTranscript.db*'
 
-# Documentation
-# This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
-# This Target will likely be updated often as more SQLECmd Maps are created
-# Despite not pointing to other .tkape files directly in the interest of only grabbing SQL databases, this Target is considered a Compound Target since it references many other Targets
-# Use with SQLECmd.mkape or SQLECmd-Hunt.mkape for best results
+    # Documentation
+    # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
+    # This Target will likely be updated often as more SQLECmd Maps are created
+    # Despite not pointing to other .tkape files directly in the interest of only grabbing SQL databases, this Target is considered a Compound Target since it references many other Targets
+    # Use with SQLECmd.mkape or SQLECmd-Hunt.mkape for best results
