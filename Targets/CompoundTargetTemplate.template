@@ -2,7 +2,7 @@ Description: Name of application/artifact here # Required
 Author: Your name here # Required
 Version: 1.0 # Required
 Id: Unique GUID here # Required
-RecreateDirectories: True # Required
+RecreateDirectories: true # Required
 Targets:
     -
         Name: CompoundTarget1 # Required

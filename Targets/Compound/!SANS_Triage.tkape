@@ -87,10 +87,10 @@ Targets:
 #        Name: Outlook PST and OST Files
 #        Category: Communications
 #        Path: OutlookPSTOST.tkape
-#	 -
+#    -
 #        Name: Cloud Storage User Files
 #        Category: Apps
 #        Path: CloudStorage_All.tkape
-
+#
 # You can easily determine the number and size of files that will be returned by running the target with the KAPE simulate flag (--sim).
 # Example: kape.exe --tsource c: --tdest D:\Temp\ --target CloudStorage_All --sim
