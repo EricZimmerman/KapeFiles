@@ -7,7 +7,7 @@ Targets:
     -
         Name: Apache Access Logs
         Category: Logs
-        Path: ApacheAccessLog.tkape # Required
+        Path: ApacheAccessLog.tkape
     -
         Name: IIS Logs
         Category: Logs
