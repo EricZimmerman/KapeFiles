@@ -1,0 +1,16 @@
+Description: Get-ChainsawSigmaRules.ps1 - Update Sigma Rules that Chainsaw relies on
+Category: ChainsawSync
+Author: Andrew Rathbun
+Version: 1.0
+Id: b3fc53a5-4f10-431d-903a-65700bf16e2f
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Get-ChainsawSigmaRules.ps1
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Get-ChainsawSigmaRules.ps1'"
+        ExportFormat: txt
+
+# Documentation
+# https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Get-ChainsawSigmaRules.ps1
+# Use this to ensure Chainsaw is working with the most updated Sigma Rules!
