@@ -14,4 +14,3 @@ Targets:
 # I have seen reference to malicious binaries associated with a user in this log
 # Sample log entry
 # <![LOG[Add RecentlyUsedApp: <evil.exe DOMAIN\username>]LOG]!><time="12:22:13.679+300" date="02-27-2022" component="AssetAdvisor" context="" type="1" thread="5564" file="aa_recentlyusedapps.cpp:235">
-
