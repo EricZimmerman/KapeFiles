@@ -12,4 +12,4 @@ Processors:
         ExportFormat: csv
 
 # Documentation
-# Use this to extract SUM data and repair with SumECmd
+# Use this to make a copy of the SUM DB with PowerShell, repair with esentutl.exe, and extract SUM data with SumECmd
