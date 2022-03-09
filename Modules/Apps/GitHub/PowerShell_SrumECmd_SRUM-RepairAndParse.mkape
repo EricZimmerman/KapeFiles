@@ -12,4 +12,4 @@ Processors:
         ExportFormat: csv
 
 # Documentation
-# Use this to extract SRUM data and repair with SrumECmd
+# Use this to make a copy of the SRUM DB with PowerShell, repair with esentutl.exe, and extract SUM data with SrumECmd
