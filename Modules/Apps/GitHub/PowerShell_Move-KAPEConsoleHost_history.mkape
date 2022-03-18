@@ -1,0 +1,17 @@
+Description: Move-KAPEConsoleHost_history.ps1 - Moves the ConsoleHost_history.txt file into the Modules output for better visibility
+Category: PowerShellHistory
+Author: Andrew Rathbun and Matt Arbaugh
+Version: 1.0
+Id: e57584ec-0c9a-49cf-9ac5-7d42c7570fae
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Move-KAPEConsoleHost_history.ps1
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Move-KAPEConsoleHost_history.ps1' -InputDir '%sourceDirectory%' -Destination %destinationDirectory%"
+        ExportFormat: txt
+
+# Documentation
+# https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Move-KAPEConsoleHost_history.ps1
+# Use this to ensure the ConsoleHost_history.txt file for each user doesn't get forgotten about!
+# This script will copy all instances of ConsoleHost_history.txt from your specified Source Directory and place a copy in the following structure: %destinationDirectory%\PowerShellHistory\%User%\ConsoleHost_history.txt

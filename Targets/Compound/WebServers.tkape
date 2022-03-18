@@ -2,12 +2,12 @@ Description: Logs from all known web server applications and supporting services
 Author: Eric Capuano
 Version: 1.0
 Id: 38de27ae-5047-404b-a7e1-3c99071724d5
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: Apache Access Logs
         Category: Logs
-        Path: ApacheAccessLog.tkape # Required
+        Path: ApacheAccessLog.tkape
     -
         Name: IIS Logs
         Category: Logs

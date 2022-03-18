@@ -2,7 +2,7 @@ Description: Collects files that can be input into USB Detective for parsing
 Author: Kevin Pagano
 Version: 1.0
 Id: 6c3f8a69-f529-4201-a00e-067f6db7be8e
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: USBDevicesLogs

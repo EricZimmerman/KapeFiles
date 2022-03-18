@@ -2,7 +2,7 @@ Description: Messaging and communication apps
 Author: Gregor Wegberg
 Version: 1.0
 Id: c6d3b238-0be7-4764-afa7-9224e46097c0
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: IRC Clients

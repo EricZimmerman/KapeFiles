@@ -83,6 +83,7 @@ Targets:
         Name: Chrome Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        Recursive: true
         FileMask: Cookies*
     -
         Name: Chrome Current Session
