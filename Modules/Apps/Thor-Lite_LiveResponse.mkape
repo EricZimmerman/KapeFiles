@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: thor-lite\thor64-lite.exe
-        CommandLine: "--quick --nothordb --processintegrity -o :hostname:\_:time:.csv -e %destinationDirectory%\\THOR"
+        CommandLine: "--quick --nothordb --processintegrity --lookback 30 --showdeleted -o :hostname:\_:time:.csv -e %destinationDirectory%\\THOR"
         ExportFormat: csv
 
 # Docuemntation
@@ -23,3 +23,4 @@ Processors:
 #
 # Currently configured to run "--quick" option which "selects the most relevant file paths only"
 # Remove "--quick" for a full scan which will take much longer. (~2min versus 23min on test system)
+# for Filescan use "Thor-Lite_Scan.mkape"
