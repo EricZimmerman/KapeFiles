@@ -57,11 +57,21 @@ Please send PRs should you come up with new Targets or Modules for inclusion in 
 
 ## Targets
 
-If you need help with creating Targets, check out [this guide](https://ericzimmerman.github.io/KapeDocs/#!Pages\60-Tips-and-tricks.md#KAPE_Target_Creation). Also consult the [Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetGuide.guide), [Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetTemplate.template), [Compound Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetGuide.guide) or [Compound Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetTemplate.template) to ensure the Target(s) follow the same format.
+If you need help with creating Targets, check out the following resources:  
+* [Official KAPE Documentation - Tips and Tricks](https://ericzimmerman.github.io/KapeDocs/#!Pages\60-Tips-and-tricks.md#KAPE_Target_Creation)
+* [Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetGuide.guide)
+* [Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetTemplate.template)
+* [Compound Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetGuide.guide)
+* [Compound Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetTemplate.template)
 
 ## Modules
 
-If you need help with creating Modules, please consult the [Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleGuide.guide), [Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleTemplate.template), [Compound Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleGuide.guide) or [Compound Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleTemplate.template) to ensure the Module(s) follow the same format.
+If you need help with creating Modules, please check out the following resources:
+
+* [Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleGuide.guide)
+* [Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleTemplate.template)
+* [Compound Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleGuide.guide)
+* [Compound Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleTemplate.template)
 
 Be sure to point the BinaryUrl property to the download location in Module files!
 
