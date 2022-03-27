@@ -45,6 +45,7 @@ Targets:
 # https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html
 # https://medium.com/mii-cybersec/digital-forensic-artifact-of-anydesk-application-c9b8cfb23ab5
 # https://www.forensafe.com/blogs/anydesk.html
+# https://www.iblue.team/incident-response-1/anydesk-remote-access
 # AnyDesk is a remote access tool similar to TeamViewer. A user can download and run AnyDesk without actually installing it and still generate the ad.trace log.
 # In regards to session recordings, note that it appears only the person who is remote connecting into another person's computer can record. The person being remoted into has to allow the recording to take place via a simple, intuitive setting while a remote session is active.
 # Session recordings will be stored in the .anydesk file format and they can only be played with AnyDesk.
