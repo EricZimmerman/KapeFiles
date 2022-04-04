@@ -1,14 +1,14 @@
 Description: Thor Lite, an IOC and YARA scanner written in Golang
 Category: IOCs
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 60a5a5bd-2484-4f5d-8440-8dbce197b026
 BinaryUrl: https://www.nextron-systems.com/thor-lite/
 ExportFormat: csv
 Processors:
     -
         Executable: thor-lite\thor64-lite.exe
-        CommandLine: "-a Filescan -p %sourceDirectory% -e %destinationDirectory%\\THOR"
+        CommandLine: "-a Filescan --intense --norescontrol --nosoft --cross-platform --max_file_size_intense 10000000000 --alldrives -p %sourceDirectory% -e %destinationDirectory%\\THOR"
         ExportFormat: csv
 
 # Docuemntation
@@ -21,5 +21,7 @@ Processors:
 # 6. Be sure to include your '.lic' license file in the 'thor-lite'
 # 7. For more options check: https://thor-manual.nextron-systems.com/en/latest/index.html
 #
-# This Module is meant to run against a mounted image rather than a live running system
+# This Module is meant to run against a mounted image or offline files rather than a live running system
+# https://thor-manual.nextron-systems.com/en/latest/usage/special-scan-modes.html#forensic-lab-license provides guidance for this Module's command
+# 10000000000 translates to 9.3GB, so feel free to adjust as necessary
 # You are welcome to add --quick, --intense, or --soft to this command for your specific use case
