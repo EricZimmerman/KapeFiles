@@ -1,0 +1,15 @@
+Description: Splashtop
+Author: Andrew Rathbun
+Version: 1.0
+Id: 99092053-1dd0-4414-a648-2a7e2220df00
+RecreateDirectories: true
+Targets:
+    -
+        Name: Splashtop Log Files
+        Category: Software
+        Path: C:\Program Files*\Splashtop\Splashtop Remote\Server\log
+        Recursive: true
+        Comment: "Collects logs for Splashtop"
+
+# Documentation
+# N/A
