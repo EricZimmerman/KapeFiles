@@ -1,0 +1,16 @@
+Description: Thor, an IOC and YARA scanner written in Golang - Upgrade
+Category: IOCs
+Author: Andrew Rathbun
+Version: 1.0
+Id: aaff8e82-a5c1-42e0-b3f0-1c35c6932e12
+BinaryUrl: https://www.nextron-systems.com/thor/
+ExportFormat: ""
+Processors:
+    -
+        Executable: thor\thor-util.exe
+        CommandLine: "upgrade --techpreview"
+        ExportFormat: ""
+
+# Documentation
+# https://thor-manual.nextron-systems.com/en/latest/usage/beforeyoubegin.html?highlight=upgrade#upgrade-thor-and-update-the-signatures
+# This Module is specifically for those with a Lab license, which is meant for running against mounted images, offline files, etc

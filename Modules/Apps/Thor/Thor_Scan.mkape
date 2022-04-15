@@ -1,0 +1,18 @@
+Description: Thor, an IOC and YARA scanner written in Golang - Lab Scan
+Category: IOCs
+Author: Andrew Rathbun
+Version: 1.0
+Id: d399005e-6acc-42d2-981e-d9d4b9cecbd0
+BinaryUrl: https://www.nextron-systems.com/thor/
+ExportFormat: ""
+Processors:
+    -
+        Executable: thor\thor64.exe
+        CommandLine: "--lab -p %sourceDirectory% --alldrives -e %destinationDirectory%\\Thor --max_file_size 1000000000"
+        ExportFormat: ""
+
+# Documentation
+# https://www.nextron-systems.com/thor/
+#
+# This Module is specifically for those with a Lab license, which is meant for running against mounted images, offline files, etc
+# 1000000000 means bytes, aka 1000mb, so feel free to change that as you see fit
