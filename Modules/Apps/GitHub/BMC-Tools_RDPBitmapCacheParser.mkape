@@ -4,7 +4,7 @@ Author: dingtoffee
 Version: 1.0
 Id: fcb0083d-11d7-4305-9577-2379cd243bd0
 BinaryUrl: https://github.com/dingtoffee/bmc-tools/blob/master/dist/bmc-tools.exe
-FileMask: "*.bmc"
+FileMask: "*.*"
 ExportFormat: ""
 Processors:
     -
