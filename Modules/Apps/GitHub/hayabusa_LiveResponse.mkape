@@ -3,6 +3,7 @@ Category: EventLogs
 Author: Georg Lauenstein
 Version: 1.0
 Id: fedb5c4c-de8d-40e2-ad7c-3b590ccd5d4d
+BinaryUrl: https://github.com/Yamato-Security/hayabusa
 ExportFormat: csv
 Processors:
     -
@@ -14,4 +15,3 @@ Processors:
 # Create a folder "hayabusa" within the "Modules\bin" KAPE folder
 # Place "zip archive" file into "Modules\bin\hayabusa" and unpack
 # You can delete all except: "config"; "rules" and the "hayabusa.exe"
-# https://github.com/Yamato-Security/hayabusa
