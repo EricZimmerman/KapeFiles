@@ -1,6 +1,6 @@
 Description: Recycle Bin Data Files
-Author: Joshua Hickman, Andreas Hunkeler (@Karneades)
-Version: 1.1
+Author: Joshua Hickman, Andreas Hunkeler (@Karneades), Brian Maloney
+Version: 1.2
 Id: bb5785ec-0e6e-42f9-97ca-94ef12720827
 RecreateDirectories: true
 Targets:
@@ -9,6 +9,11 @@ Targets:
         Category: FileDeletion
         Path: C:\$Recycle.Bin\
         FileMask: '$R*'
+        Recursive: true
+    -
+        Name: Recycle Bin - Windows Vista+
+        Category: FileDeletion
+        Path: C:\$Recycle.Bin\*\$R*\
         Recursive: true
     -
         Name: RECYCLER - WinXP
