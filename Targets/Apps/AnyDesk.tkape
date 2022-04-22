@@ -1,6 +1,6 @@
 Description: AnyDesk
 Author: Andrew Rathbun, Scott Hanson, and Nicole Jao
-Version: 1.2
+Version: 1.3
 Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
 RecreateDirectories: true
 Targets:
@@ -9,13 +9,25 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
         FileMask: '*.trace'
-        Comment: "Collects the trace logs for AnyDesk from user profile"
+        Comment: "Collects the trace logs for AnyDesk from a user profile"
     -
         Name: AnyDesk Logs - ProgramData - *.trace
         Category: Communications
         Path: C:\ProgramData\AnyDesk\
         FileMask: '*.trace'
-        Comment: "Collects the trace logs for AnyDesk from programdata"
+        Comment: "Collects the trace logs for AnyDesk from ProgramData"
+    -
+        Name: AnyDesk Logs - User Profile - *.conf
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\AnyDesk\
+        FileMask: '*.conf'
+        Comment: "Collects the conf logs for AnyDesk from a user profile"
+    -
+        Name: AnyDesk Logs - ProgramData - *.conf
+        Category: Communications
+        Path: C:\ProgramData\AnyDesk\
+        FileMask: '*.conf'
+        Comment: "Collects the conf logs for AnyDesk from ProgramData"
     -
         Name: AnyDesk Videos
         Category: Communications
