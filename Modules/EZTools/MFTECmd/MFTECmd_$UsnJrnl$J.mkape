@@ -1,0 +1,20 @@
+Description: 'MFTECmd: process $UsnJrnl$J files'
+Category: FileSystem
+Author: Thomas DIOT
+Version: 1.0
+Id: 33f1bdef-dd58-40ba-9983-27e6e45b93e8
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+FileMask: $UsnJrnl$J
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory%
+        ExportFormat: json
+# Documentation
+# Some tools, such as Velociraptor, collect the UsnJrnl artefact as $UsnJrnl$J
+# And not as $J as does KAPE and is expected by the MFTECmd_$J module.
