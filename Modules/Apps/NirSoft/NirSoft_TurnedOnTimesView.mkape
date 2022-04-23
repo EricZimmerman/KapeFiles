@@ -1,0 +1,17 @@
+Description: 'Uses Nirsoft TurnedOnTimesViewtime to determine time ranges the system was turned on'
+Category: EventLogs
+Author: Thomas DIOT
+Version: 1.0
+Id: 95549abe-f13a-4c8c-bccb-8dbb7fdbe83a
+BinaryUrl: https://www.nirsoft.net/utils/turnedontimesview.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: turnedontimesview\TurnedOnTimesView.exe
+        CommandLine: /RunAsAdmin /Source 3 /ExternalFolder %sourceDirectory%\Windows\System32\winevt\Logs /scomma %destinationDirectory%\TurnedOnTimes.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/computer_turned_on_times.html
+# TurnedOnTimesViewtime execution may produce an empty CSV output.
+# In such case, the "New Event Log API" should be turned off ("UseNewEventLogAPI=0" in the "TurnedOnTimesView.cfg" config file).
