@@ -3,7 +3,7 @@ Category: SRUM
 Author: Matthew Arbaugh
 Version: 1.0
 Id: a03a3be0-0101-42cc-a639-484ab24e0018
-BinaryUrl:
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/SRUM-Repair.ps1
 ExportFormat: csv
 Processors:
     -
