@@ -14,6 +14,6 @@ Processors:
         Executable: EvtxHussar\EvtxHussar11_amd64.exe
         CommandLine: -r %sourceDirectory% -f JSON -o %destinationDirectory% -d
         ExportFormat: json
-        
+
 # Documentation
 # https://github.com/yarox24/EvtxHussar
