@@ -15,7 +15,7 @@ Targets:
         Path: C:\ProgramData\ESET\ESET NOD32 Antivirus\Logs\
         Recursive: true
         Comment: "Parser available at https://github.com/laciKE/EsetLogParser"
-     -
+    -
         Name: ESET NOD32 AV Logs
         Category: Antivirus
         Path: C:\ProgramData\ESET\ESET Security\Logs
