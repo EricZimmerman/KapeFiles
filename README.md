@@ -47,9 +47,7 @@ To download the latest files, click the "Sync with GitHub" button in gkape.exe o
 
 # Contributing
 
-This repository serves as a place for community-created Targets and Modules for use with KAPE.
-
-Please send PRs should you come up with new Targets or Modules for inclusion in the project!
+This repository serves as a place for community-created Targets and Modules for use with KAPE. Please see [CONTRIBUTING.md](https://github.com/EricZimmerman/KapeFiles/blob/master/CONTRIBUTING.md) for guidance on contributing to this repository.
 
 ## Ongoing Projects
 
