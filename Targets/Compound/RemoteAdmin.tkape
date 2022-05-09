@@ -48,6 +48,10 @@ Targets:
         Category: ApplicationLogs
         Path: ScreenConnect.tkape
     -
+        Name: Splashtop
+        Category: ApplicationLogs
+        Path: Splashtop.tkape
+    -
         Name: Supremo Remote Desktop Control
         Category: ApplicationLogs
         Path: SupremoRemoteDesktop.tkape
