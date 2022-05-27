@@ -1,6 +1,6 @@
 Description: Everything (VoidTools)
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: d63046dd-1d8c-4f4f-acd0-4c1ea3415b0f
 RecreateDirectories: true
 Targets:
@@ -22,6 +22,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Everything\
         FileMask: Search History.csv
         Comment: "Copies out a CSV containing the history of items searched for within Everything with timestamps"
+    -
+        Name: Everything (VoidTools) - .ini file
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Everything\
+        FileMask: Everything.ini
+        Comment: "Copies out the .ini file for Everything"
 
 # Documentation
 # For those who don't know, VoidTools' Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/
