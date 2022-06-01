@@ -1,0 +1,21 @@
+Description: Office Diagnostics
+Author: teddy-ROxPin
+Version: 1.0
+Id: 5ef604c2-e76b-40a0-9150-6b6715f2ebd7
+RecreateDirectories: true
+Targets:
+    -
+        Name: Office Diagnostics
+        Category: Execution
+        Path: C:\Users\%user%\AppData\Local\Diagnostics\
+        FileMask: "PCW.debugreport.xml"
+        Comment: "Payloads for CVE-2022-30190 ('Follina') will be in this log"
+    -
+        Name: Office Elevated Diagnostics
+        Category: Execution
+        Path: C:\Users\%user%\AppData\Local\ElevatedDiagnostics\
+        FileMask: "PCW.debugreport.xml"
+        Comment: "Payloads for CVE-2022-30190 ('Follina') will be in this log"
+
+# Documentation
+# https://twitter.com/nas_bench/status/1531718490494844928?cxt=HHwWgIC-ncH24MEqAAAA
