@@ -12,7 +12,7 @@ The Antivirus folder contains Targets for various antivirus vendors and their an
 
 ### Apps
 
-The Apps folder contains Targets for all third-party applications. 
+The Apps folder contains Targets for all third-party applications.
 
 ### Browsers
 
@@ -20,7 +20,7 @@ The Browsers folder contains Targets for web browsers.
 
 ### Compound
 
-The Compund folder contains Targets that point to other Targets. 
+The Compund folder contains Targets that point to other Targets.
 
 ### Logs
 
@@ -32,4 +32,4 @@ The P2P folder contains Targets for various P2P applications.
 
 ### Windows
 
-The Windows folder contains Targets for Windows/NTFS-related artifacts. 
+The Windows folder contains Targets for Windows/NTFS-related artifacts.
