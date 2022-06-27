@@ -1,6 +1,6 @@
 Description: ESET Antivirus Data
 Author: Drew Ervin
-Version: 1.1
+Version: 1.2
 Id: 14ac7bff-2d77-4582-8558-73cf75805aaa
 RecreateDirectories: true
 Targets:
@@ -20,6 +20,12 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\ESET\ESET Security\Logs
         Recursive: true
+    -
+        Name: ESET Remote Administrator Logs
+        Category: Antivirus
+        Path: C:\ProgramData\ESET\RemoteAdministrator\Agent\EraAgentApplicationData\Logs
+        Comment: "Remote Administrator logs include information on tasks executed on the target."
 
 # Documentation
-# N/A
+# Remote Administrator log information: https://help.eset.com/protect_admin/80/en-US/fs_agent_connection_troubleshooting.html
+
