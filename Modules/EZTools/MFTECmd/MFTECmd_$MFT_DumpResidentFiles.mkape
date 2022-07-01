@@ -1,0 +1,20 @@
+Description: 'MFTECmd: process $MFT files, then dump resident files within the $MFT'
+Category: FileSystem
+Author: Andrew Rathbun
+Version: 1.0
+Id: 4b9ba0a9-1453-438f-94c7-8344bed6ad82
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+FileMask: $MFT
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory% --dr
+        ExportFormat: csv
+
+# Documentation
+# https://github.com/EricZimmerman/MFTECmd
+# https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# Use this Module to dump all resident files that currently reside within a given $MFT into .\%destinationDirectory%\Resident
