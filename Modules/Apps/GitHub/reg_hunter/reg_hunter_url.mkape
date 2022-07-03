@@ -1,0 +1,15 @@
+Description: Execute Reghunter URL module to find URLs
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: 36786dd5-da30-4acc-a055-c22f79e744e2
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --url --outfile %destinationDirectory%\reg_hunter_url.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/
