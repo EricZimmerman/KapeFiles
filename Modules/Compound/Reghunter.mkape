@@ -44,7 +44,7 @@ Processors:
     -
         Executable: reg_hunter_unc.mkape
         CommandLine: ""
-        ExportFormat: ""	
+        ExportFormat: ""
     -
         Executable: reg_hunter_url.mkape
         CommandLine: ""
