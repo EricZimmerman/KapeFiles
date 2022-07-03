@@ -3,6 +3,7 @@ Category: Registry
 Author: Georg Lauenstein
 Version: 1.0
 Id: 736f9493-2b95-4002-8fb1-7d6eb8834b0d
+BinaryUrl: https://github.com/theflakes/reg_hunter/
 ExportFormat: json
 Processors:
     -
