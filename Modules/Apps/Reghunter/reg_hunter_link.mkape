@@ -7,7 +7,7 @@ ExportFormat: json
 Processors:
     -
         Executable: Reghunter\reg_hunter-64.exe
-        CommandLine: -a --link --outfile %destinationDirectory%\reg_hunter_binary.json
+        CommandLine: -a --link --outfile %destinationDirectory%\reg_hunter_link.json
         ExportFormat: json
 
 # Documentation
