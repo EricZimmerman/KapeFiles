@@ -53,3 +53,6 @@ Processors:
         Executable: reg_hunter_suspicious.mkape
         CommandLine: ""
         ExportFormat: ""
+
+# Documentation
+# N/A
