@@ -1,7 +1,7 @@
 Description: Chainsaw - Rapidly Search and Hunt through Windows Event Logs
 Category: EventLogs
 Author: Andrew Rathbun
-Version: 1.4
+Version: 1.5
 Id: 1dad157c-e3ae-4ad7-97d4-4431ef595cbb
 BinaryUrl: https://github.com/countercept/chainsaw
 ExportFormat: csv
@@ -12,11 +12,12 @@ Processors:
         ExportFormat: csv
     -
         Executable: Chainsaw\Chainsaw.exe
-        CommandLine: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --json output.json --lateral-all --full --ignore-errors %sourceDirectory%
+        CommandLine: hunt %sourceDirectory% --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --json --output %destinationDirectory%\chainsaw-output.json --lateral-all --full --ignore-errors
         ExportFormat: json
 
 # Documentation
 # https://github.com/countercept/chainsaw
-# As of 1.02, Chainsaw does not allow for outputting to a different directory other than where Chainsaw.exe resides, which should be .\KAPE\Modules\bin\chainsaw\Chainsaw.exe
+# Releases Page: https://github.com/countercept/chainsaw/releases
+# Versions of Chainsaw prior to 1.1.7 do not allow for outputting JSON formatted files to a different directory other than where Chainsaw.exe resides, which should be .\KAPE\Modules\bin\chainsaw\Chainsaw.exe
 # Version 1.1+ of this Module ensures the Sigma rules located in .\KAPE\Modules\bin\chainsaw\sigma_rules are loaded and used during the scan.
 # https://github.com/SigmaHQ/sigma/tree/master/rules/windows has a lot of Sigma rules that appear to be included with Chainsaw
