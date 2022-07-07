@@ -17,7 +17,6 @@ Processors:
 
 # Documentation
 # https://github.com/countercept/chainsaw
-# Releases Page: https://github.com/countercept/chainsaw/releases
 # Versions of Chainsaw prior to 1.1.7 do not allow for outputting JSON formatted files to a different directory other than where Chainsaw.exe resides, which should be .\KAPE\Modules\bin\chainsaw\Chainsaw.exe
 # Version 1.1+ of this Module ensures the Sigma rules located in .\KAPE\Modules\bin\chainsaw\sigma_rules are loaded and used during the scan.
 # https://github.com/SigmaHQ/sigma/tree/master/rules/windows has a lot of Sigma rules that appear to be included with Chainsaw
