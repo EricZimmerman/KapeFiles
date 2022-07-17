@@ -1,9 +1,9 @@
 Description: DumpIt Memory Acquisition
 Category: Memory
 Author: Doug Metz
-Version: 1.0
+Version: 1.1
 Id: 7504551a-41b6-4287-ad8a-ee0a10a66f7d
-BinaryUrl: https://my.comae.com
+BinaryUrl: https://www.magnetforensics.com/blog/how-to-get-started-with-comae/
 ExportFormat: dmp
 Processors:
     -
@@ -12,4 +12,5 @@ Processors:
         ExportFormat: dmp
 
 # Documentation
-# https://blog.comae.io/your-favorite-memory-toolkit-is-back-f97072d33d5c
+# Comae/DumpIt was rolled into Magnet Idea Lab Info on downloading can be found in this blog:
+# https://www.magnetforensics.com/blog/how-to-get-started-with-comae/
