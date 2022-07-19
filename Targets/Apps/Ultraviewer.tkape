@@ -2,7 +2,7 @@ Description: UltraViewer
 Author: Ryan McVicar
 Version: 1.0
 Id: 992869b7-f262-4058-98d4-623ca2383a66
-RecreateDirectories: true 
+RecreateDirectories: true
 Targets:
     -
         Name: UltraViewer Logs
@@ -17,8 +17,7 @@ Targets:
         Path: C:\Program Files*\UltraViewer\UltraViewerService_log.txt
         Recursive: true
         AlwaysAddToQueue: true
-        Comment: "UltraViewer Service log file"        
-       
+        Comment: "UltraViewer Service log file"
 
 # Documentation
 # Information on UltraViewer logs can be found here: https://www.ultraviewer.net/en/200000026-summary-of-ultraviewer-s-security-information.html granted it is sparse.
