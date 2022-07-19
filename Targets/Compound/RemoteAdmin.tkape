@@ -60,6 +60,10 @@ Targets:
         Category: ApplicationLogs
         Path: TeamViewerLogs.tkape
     -
+        Name: UltraViewer
+        Category: ApplicationLogs
+        Path: UltraViewer.tkape
+    -
         Name: VNC
         Category: ApplicationLogs
         Path: VNCLogs.tkape
