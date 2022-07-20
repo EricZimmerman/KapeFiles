@@ -21,3 +21,7 @@ Processors:
 #
 # Example usage:
 # kape.exe --tsource C: --tdest E:\Triage\ --target KapeTriage --vhdx triage --mdest E:\Triage\Memory --module MagnetRamCapture
+#
+# Bug: Spaces in the destinationDirectory will cause MRC to fail to collect/crash.
+#       Workarounds include modifying this module to include the destination path manually (with quotes) or
+#       avoid spaces in the mdest parameter
