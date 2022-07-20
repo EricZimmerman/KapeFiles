@@ -8,7 +8,7 @@ ExportFormat: raw
 Processors:
     -
         Executable: MRC.exe
-        CommandLine: "/accepteula /go %destinationDirectory%\\memory.raw /silent"
+        CommandLine: "/accepteula /go %destinationDirectory%\memory.raw /silent"
         ExportFormat: raw
 
 # Documentation
