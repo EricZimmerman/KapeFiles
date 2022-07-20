@@ -1,0 +1,15 @@
+Description: Named Pipes List
+Category: LiveResponse
+Author: nov3m3br
+Version: 1.0
+Id: 5a9ce674-0d3c-4c9a-9f53-d0130bb4aafb
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-ChildItem -Path '\\.\pipe\' |  Sort Length | Format-Table FullName, Length, IsReadOnly, Exists, CreationTime, LastAccessTime"
+        ExportFormat: txt
+        ExportFile: pipes.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes

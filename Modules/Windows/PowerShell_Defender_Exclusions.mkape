@@ -1,0 +1,15 @@
+Description: Windows Defender Exclusions
+Category: LiveResponse
+Author: nov3mb3r
+Version: 1.0
+Id: 5a9ce674-0d3c-4c9a-9f53-d0130bb4aafb
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\Windows Defender\Exclusions'"
+        ExportFormat: txt
+        ExportFile: defenderexclusions.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/scripting/samples/working-with-registry-entries?view=powershell-7.2
