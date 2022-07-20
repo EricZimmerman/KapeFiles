@@ -1,7 +1,7 @@
 Description: Magnet RAM Capture Memory Acquisition
 Category: Memory
 Author: Doug Metz
-Version: 1.0
+Version: 1.1
 Id: 23a35c17-15a8-4d7e-9029-083bc70bd4ef
 BinaryUrl: https://support.magnetforensics.com/
 ExportFormat: raw
