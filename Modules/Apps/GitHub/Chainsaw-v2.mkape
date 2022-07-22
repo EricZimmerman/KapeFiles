@@ -1,0 +1,23 @@
+Description: Chainsaw - Rapidly Search and Hunt through Windows Event Logs
+Category: EventLogs
+Author: Andrew Rathbun
+Version: 2.0
+Id: e5912d52-6b31-4480-9255-8c5433326d85
+BinaryUrl: https://github.com/countercept/chainsaw
+ExportFormat: csv
+Processors:
+    -
+        Executable: Chainsaw\Chainsaw.exe
+        CommandLine: hunt %sourceDirectory% --rule "%kapeDirectory%\Modules\bin\chainsaw\rules" --sigma "%kapeDirectory%\Modules\bin\chainsaw\sigma" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mappings\sigma-event-logs-all.yml" --csv --output %destinationDirectory% --full --skip-errors
+        ExportFormat: csv
+    -
+        Executable: Chainsaw\Chainsaw.exe
+        CommandLine: hunt %sourceDirectory% --rule "%kapeDirectory%\Modules\bin\chainsaw\rules" --sigma "%kapeDirectory%\Modules\bin\chainsaw\sigma" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mappings\sigma-event-logs-all.yml" --json --output %destinationDirectory%\chainsaw-output.json --skip-errors
+        ExportFormat: json
+
+# Documentation
+# https://github.com/countercept/chainsaw
+# Versions of Chainsaw 2.0 and above, have changed rule directories.  The Chainsaw.exe should reside .\KAPE\Modules\bin\chainsaw\Chainsaw.exe.  Internal rules have
+# been moved into .\KAPE\Modules\bin\chainsaw\rules, sigma rules have moved to .\KAPE\Modules\bin\chainsaw\sigma, and the mapping file has moved under
+# .\KAPE\Modules\bin\chainsaw\mappings\
+# https://github.com/SigmaHQ/sigma/tree/master/rules/windows has a lot of Sigma rules that appear to be included with Chainsaw
