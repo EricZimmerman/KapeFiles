@@ -17,7 +17,7 @@ Processors:
 
 # Documentation
 # https://github.com/countercept/chainsaw
-# Versions of Chainsaw 2.0 and above, have changed rule directories.  The Chainsaw.exe should reside .\KAPE\Modules\bin\chainsaw\Chainsaw.exe.  Internal rules have 
+# Versions of Chainsaw 2.0 and above, have changed rule directories.  The Chainsaw.exe should reside .\KAPE\Modules\bin\chainsaw\Chainsaw.exe.  Internal rules have
 # been moved into .\KAPE\Modules\bin\chainsaw\rules, sigma rules have moved to .\KAPE\Modules\bin\chainsaw\sigma, and the mapping file has moved under
 # .\KAPE\Modules\bin\chainsaw\mappings\
 # https://github.com/SigmaHQ/sigma/tree/master/rules/windows has a lot of Sigma rules that appear to be included with Chainsaw
