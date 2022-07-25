@@ -15,6 +15,10 @@ Targets:
         Category: Remote Access
         Path: C:\Program Files*\UltraViewer\UltraViewerService_log.txt
         Comment: "UltraViewer Service log file"
-
+    -
+        Name: UltraViewer Logs
+        Category: Remote Access
+        Path: C:\Program Files*\UltraViewer\ConnectionLog.Log
+        Comment: "UltraViewer Service level connection log"
 # Documentation
 # Information on UltraViewer logs can be found here: https://www.ultraviewer.net/en/200000026-summary-of-ultraviewer-s-security-information.html granted it is sparse.
