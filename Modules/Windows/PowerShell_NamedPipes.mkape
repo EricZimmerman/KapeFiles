@@ -1,8 +1,8 @@
 Description: Named Pipes List
 Category: LiveResponse
-Author: nov3m3br
+Author: nov3mb3r
 Version: 1.0
-Id: 5a9ce674-0d3c-4c9a-9f53-d0130bb4aafb
+Id: f1f5f93d-d03b-45f4-bf72-7b8f9dc7ac23
 ExportFormat: txt
 Processors:
     -
