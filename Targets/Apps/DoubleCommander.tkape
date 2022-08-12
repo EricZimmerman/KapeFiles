@@ -37,6 +37,11 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\doublecmd\
         FileMask: 'pixmaps.txt'
+    -
+        Name: Double Commander - shortcuts.scf
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'shortcuts.scf'
 
 # Documentation
 # Double Commander is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.
