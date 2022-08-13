@@ -1,0 +1,20 @@
+Description: Hayabusa a timeline generator for Windows event logs - Logon Summary
+Category: EventLogs
+Author: Georg Lauenstein
+Version: 1.0
+Id: 2dd36453-d175-4b54-b98f-9cdf492859ce
+ExportFormat: csv
+Processors:
+    -
+        Executable: hayabusa\hayabusa.exe
+        CommandLine: --live-analysis --European-time --quiet -U --logon-summary
+        ExportFormat: csv
+        ExportFile: hayabusa_logon.csv
+# Documentation
+# Create a folder "hayabusa" within the "Modules\bin" KAPE folder
+# Place "zip archive" file into "Modules\bin\hayabusa" and unpack
+# rename hayabusa-1.4.3-win-x64.exe or hayabusa-1.4.3-win-x86.exe to hayabusa.exe
+# You can delete all except: "config"; "rules" and the "hayabusa.exe"
+# Check version with: hayabusa.exe --version
+# Update Rules with: hayabusa.exe --update-rules
+# Setup for European Time format. Check options for more: hayabusa.exe -h

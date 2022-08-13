@@ -1,0 +1,20 @@
+Description: Hayabusa a timeline generator for Windows event logs - Event Statistics
+Category: EventLogs
+Author: Georg Lauenstein
+Version: 1.0
+Id: f3fb3648-1ccb-458c-80e2-261818803bda
+ExportFormat: csv
+Processors:
+    -
+        Executable: hayabusa\hayabusa.exe
+        CommandLine: --live-analysis -s
+        ExportFormat: csv
+        ExportFile: hayabusa_statistics.csv
+# Documentation
+# Create a folder "hayabusa" within the "Modules\bin" KAPE folder
+# Place "zip archive" file into "Modules\bin\hayabusa" and unpack
+# rename hayabusa-1.4.3-win-x64.exe or hayabusa-1.4.3-win-x86.exe to hayabusa.exe
+# You can delete all except: "config"; "rules" and the "hayabusa.exe"
+# Check version with: hayabusa.exe --version
+# Update Rules with: hayabusa.exe --update-rules
+# Setup for European Time format. Check options for more: hayabusa.exe -h
