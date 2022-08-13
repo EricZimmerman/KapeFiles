@@ -2,7 +2,7 @@ Description: Hayabusa a timeline generator for Windows event logs - Offline
 Category: EventLogs
 Author: Georg Lauenstein
 Version: 1.1
-Id: 9696412c-c973-4fd4-a426-06318011b8ba
+Id: 49f9cd2d-3da5-4349-a9aa-c2b450582ccc
 BinaryUrl: https://github.com/Yamato-Security/hayabusa/releases
 ExportFormat: csv
 Processors:
