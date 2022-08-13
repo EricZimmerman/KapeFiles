@@ -1,0 +1,14 @@
+Description: Hayabusa a timeline generator for Windows event logs - Event Statistics
+Category: EventLogs
+Author: Georg Lauenstein
+Version: 1.0
+Id: f3fb3648-1ccb-458c-80e2-261818803bda
+ExportFormat: csv
+Processors:
+    -
+        Executable: hayabusa\hayabusa.exe
+        CommandLine: --live-analysis -s
+        ExportFormat: csv
+        ExportFile: hayabusa_statistics.csv
+# Documentation
+# https://github.com/Yamato-Security/hayabusa
