@@ -3,7 +3,7 @@ Category: EventLogs
 Author: Mark Hallman
 Version: 1.1
 Id: d6ddc918-feb1-47b6-8e51-e9c50936ec75
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxECmd.zip
 ExportFormat: csv
 Processors:
     -
