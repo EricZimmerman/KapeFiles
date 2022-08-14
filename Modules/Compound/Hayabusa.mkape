@@ -1,0 +1,29 @@
+Description: Hayabusa a timeline generator for Windows event logs
+Category: EventLogs
+Author: Andrew Rathbun
+Version: 1.0
+Id: 0976ccf9-b7f8-4e5d-9bf7-96ba3b051db8
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: hayabusa_EventStatistics.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: hayabusa_LiveResponse.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: hayabusa_LogonSummary.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# Create a folder "hayabusa" within the "Modules\bin" KAPE folder
+# Place "zip archive" file into "Modules\bin\hayabusa" and unpack
+# rename hayabusa-1.4.3-win-x64.exe or hayabusa-1.4.3-win-x86.exe to hayabusa.exe
+# You can delete all except: "config"; "rules" and the "hayabusa.exe"
+# Check version with: hayabusa.exe --version
+# Update Rules with: hayabusa.exe --update-rules
+# Setup for European Time format. Check options for more: hayabusa.exe -h
