@@ -4,6 +4,7 @@ Version: 1.0
 Id: 1ad35449-19a6-4e90-855e-elb4bfb2748b
 RecreateDirectories: true
 Targets:
+    
     -
         Name: Google Earth My Places file
         Category: Apps
@@ -25,7 +26,7 @@ Targets:
         Filemask: 'myplaces.kml'
         Comment: "File which holds favorited locations"
 
-
+    -
         Name: Google Earth My Places Backup file (XP)
         Category: Apps
         Path: C:\Documents and Settings\%user%\Application Data\Google\GoogleEarth
