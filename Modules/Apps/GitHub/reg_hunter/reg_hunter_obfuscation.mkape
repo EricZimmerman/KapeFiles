@@ -1,0 +1,15 @@
+Description: Execute Reghunter Obfuscation module to find obfuscated values
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: 576ca9cd-30bf-4db2-98a6-7bdd36a9bb13
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --obfuscation --outfile %destinationDirectory%\reg_hunter_obfuscation.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/

@@ -3,12 +3,12 @@ Category: Registry
 Author: Andrew Rathbun
 Version: 1.0
 Id: 3ef19b6e-3489-44ee-a5fa-0245fd54ecd1
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -d %sourceDirectory% --bn BatchExamples\SystemASEPs.reb --nl false --csv %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\SystemASEPs.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
 
 # Documentation

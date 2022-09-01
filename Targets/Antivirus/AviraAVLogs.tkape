@@ -1,6 +1,6 @@
 Description: Avira Logs
-Author: Fabian Murer
-Version: 1.0
+Author: Fabian Murer and Dhiral Panjwani
+Version: 1.1
 Id: f977c6c9-378b-4812-a5ca-1f6c5fe57b18
 RecreateDirectories: true
 Targets:
@@ -10,6 +10,17 @@ Targets:
         Path: C:\ProgramData\Avira\Antivirus\LOGFILES\
         Recursive: true
         Comment: "Collects the scan logs of Avira Antivirus"
+    -
+        Name: Avira Security Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Avira\Security\Logs
+        Recursive: true
+    -
+        Name: Avira VPN Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Avira\VPN
+        Recursive: true
+        Comment: "Collects the VPN logs"
 
 # Documentation
 # N/A

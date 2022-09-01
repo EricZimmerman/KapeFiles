@@ -1,0 +1,21 @@
+Description: OneDrive and other files used with OneDriveExplorer
+Author: Brian Maloney
+Version: 1.0
+Id: 9783ccfe-42c2-440b-82c6-428afc5d9a61
+RecreateDirectories: true
+Targets:
+    -
+        Name: OneDrive Metadata
+        Category: Apps
+        Path: OneDrive_Metadata.tkape
+    -
+        Name: User Related Registry hives
+        Category: Registry
+        Path: RegistryHivesUser.tkape
+    -
+        Name: Recycle Bin DataAndInfo
+        Category: FileDeletion
+        Path: RecycleBin.tkape
+
+# Documentation
+# N/A

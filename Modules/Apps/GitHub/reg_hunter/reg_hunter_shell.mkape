@@ -1,0 +1,15 @@
+Description: Execute Reghunter Shell module to find command shells (cmd.exe, powershell.exe, ...)
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: de0ced67-fa0d-4bf0-9022-27b2a2457917
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --shell --outfile %destinationDirectory%\reg_hunter_shell.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/

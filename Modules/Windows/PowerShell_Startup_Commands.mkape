@@ -1,0 +1,15 @@
+Description: Commands on Startup
+Category: LiveResponse
+Author: nov3mb3r
+Version: 1.0
+Id: 67733d63-8052-4abf-b85e-450bbd368e36
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-CimInstance -Class Win32_StartupCommand | Format-Table -Property Name, Command, User, Location -Wrap"
+        ExportFormat: txt
+        ExportFile: startup.txt
+
+# Documentation
+# N/A

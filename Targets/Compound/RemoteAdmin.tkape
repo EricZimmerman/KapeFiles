@@ -44,6 +44,11 @@ Targets:
         Path: RDPLogs.tkape
         Comment: "Contains Windows Event Logs related to RDP"
     -
+        Name: Remote Utilities
+        Category: ApplicationLogs
+        Path: RemoteUtilities_app.tkape
+        Comment: "Contains logs related to the App RemoteUtilities"
+    -
         Name: ScreenConnect (ConnectWise Control)
         Category: ApplicationLogs
         Path: ScreenConnect.tkape
@@ -59,6 +64,10 @@ Targets:
         Name: TeamViewer
         Category: ApplicationLogs
         Path: TeamViewerLogs.tkape
+    -
+        Name: UltraViewer
+        Category: ApplicationLogs
+        Path: UltraViewer.tkape
     -
         Name: VNC
         Category: ApplicationLogs

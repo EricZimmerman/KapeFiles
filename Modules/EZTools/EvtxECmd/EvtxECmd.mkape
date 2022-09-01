@@ -3,7 +3,7 @@ Category: EventLogs
 Author: Eric Zimmerman
 Version: 1.0
 Id: 1b66f0e2-2ccf-467d-ae15-a2b3dc59df08
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxExplorer.zip
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/EvtxECmd.zip
 ExportFormat: csv
 Processors:
     -

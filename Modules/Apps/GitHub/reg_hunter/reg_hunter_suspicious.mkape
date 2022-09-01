@@ -1,0 +1,15 @@
+Description: Execute Reghunter Suspicious module to find various suspicious substrings (e.g. iex, invoke-expression, etc.)
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: 92bbd283-8446-46db-b0d2-eb8068c627fd
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --suspicious --outfile %destinationDirectory%\reg_hunter_suspicious.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/

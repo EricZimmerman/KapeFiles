@@ -2,7 +2,7 @@ Description: Startup Folders
 Author: Jason Ballard
 Version: 1.0
 Id: 95408ecb-0adb-4a13-8b3d-a36e7f70b6b6
-RecreateDirectories: True
+RecreateDirectories: true
 Targets:
     -
         Name: User startup folders

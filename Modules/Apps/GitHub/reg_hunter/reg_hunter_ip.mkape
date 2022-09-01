@@ -1,0 +1,15 @@
+Description: Execute Reghunter IP module to search for IP adresses
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: 52d50dcf-eae7-4b9b-9828-2f4caec860bf
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --binary --ip %destinationDirectory%\reg_hunter_ip.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/

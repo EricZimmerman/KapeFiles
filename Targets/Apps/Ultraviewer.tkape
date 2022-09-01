@@ -1,0 +1,24 @@
+Description: UltraViewer
+Author: Ryan McVicar
+Version: 1.1
+Id: 992869b7-f262-4058-98d4-623ca2383a66
+RecreateDirectories: true
+Targets:
+    -
+        Name: UltraViewer Logs
+        Category: Remote Access
+        Path: C:\Users\%user%\AppData\Roaming\UltraViewer
+        Recursive: true
+        Comment: "Includes all files related to UltraViewer chat, connections, and recordings"
+    -
+        Name: UltraViewer Logs
+        Category: Remote Access
+        Path: C:\Program Files*\UltraViewer\UltraViewerService_log.txt
+        Comment: "UltraViewer Service log file"
+    -
+        Name: UltraViewer Logs
+        Category: Remote Access
+        Path: C:\Program Files*\UltraViewer\ConnectionLog.Log
+        Comment: "UltraViewer Service level connection log"
+# Documentation
+# Information on UltraViewer logs can be found here: https://www.ultraviewer.net/en/200000026-summary-of-ultraviewer-s-security-information.html granted it is sparse.
