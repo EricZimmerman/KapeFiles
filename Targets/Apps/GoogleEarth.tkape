@@ -10,21 +10,18 @@ Targets:
         Path: C:\Users\%user%\AppData\LocalLow\Google\GoogleEarth
         FileMask: 'myplaces.kml'
         Comment: "File which holds favorited locations"
-
     -
         Name: Google Earth My Places Backup file
         Category: Apps
         Path: C:\Users\%user%\AppData\LocalLow\Google\GoogleEarth
         FileMask: 'myplaces.backup.kml'
         Comment: "Backup file which holds favorited locations"
-
     -
         Name: Google Earth My Places file (XP)
         Category: Apps
         Path: C:\Documents and Settings\%user%\Application Data\Google\GoogleEarth
         FileMask: 'myplaces.kml'
         Comment: "File which holds favorited locations"
-
     -
         Name: Google Earth My Places Backup file (XP)
         Category: Apps
