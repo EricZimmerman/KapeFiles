@@ -9,7 +9,7 @@ FileMask: UsrClass.dat
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf UsrClass.json -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf UsrClass.json
         ExportFormat: json
 
 # Documentation
