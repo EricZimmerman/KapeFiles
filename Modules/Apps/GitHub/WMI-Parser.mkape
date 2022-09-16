@@ -1,0 +1,23 @@
+Description: WMI-Parser - parses the WMI object database looking for persistence
+Category: WMI
+Author: Andrew Rathbun
+Version: 1.0
+Id: ab1d6a09-450a-464a-aebc-7f415035404d
+BinaryUrl: https://github.com/woanware/wmi-parser/releases/download/v0.0.2/wmi-parser.v0.0.2.zip
+ExportFormat: ""
+FileMask: OBJECTS.DATA
+Processors:
+    -
+        Executable: wmi-parser\wmi-parser.exe
+        CommandLine: -i %sourceFile% -o %destinationDirectory%
+        ExportFormat: ""
+
+# Documentation
+# https://github.com/woanware/wmi-parser
+# Make sure the following files are in your .\KAPE\Modules\bin\wmi-parser folder:
+# CsvHelper.dll
+# FluentCommandLineParser.dll
+# readme.pdf
+# wmi-parser.exe
+# wmi-parser.exe.config
+# All of the above files are located in the ZIP file in the BinaryUrl link above
