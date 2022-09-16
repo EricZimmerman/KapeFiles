@@ -14,7 +14,7 @@ Processors:
 # Documentation
 # Create a folder "hayabusa" within the "Modules\bin" KAPE folder
 # Place "zip archive" file into "Modules\bin\hayabusa" and unpack
-# rename hayabusa-1.4.3-win-x64.exe or hayabusa-1.4.3-win-x86.exe to hayabusa.exe
+# rename the hayabusa executable to hayabusa.exe
 # You can delete all except: "config"; "rules" and the "hayabusa.exe"
 # Check version with: hayabusa.exe --version
 # Update Rules with: hayabusa.exe --update-rules
