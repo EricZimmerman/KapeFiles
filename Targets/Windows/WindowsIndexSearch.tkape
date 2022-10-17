@@ -1,6 +1,6 @@
 Description: Windows Index Search
 Author: Mark Hallman
-Version: 1.0
+Version: 1.1
 Id: 9828b927-f955-464a-80fb-a48ce0101236
 RecreateDirectories: true
 Targets:
@@ -8,7 +8,11 @@ Targets:
         Name: WindowsIndexSearch
         Category: FileKnowledge
         Path: C:\programdata\microsoft\search\data\applications\windows\
-        FileMask: Windows.edb
+    -
+        Name: GatherLogs
+        Category: FileKnowledge
+        Path: C:\programdata\microsoft\search\data\applications\windows\GatherLogs\
+        Recursive: true
 
 # Documentation
 # https://www.forensafe.com/blogs/winsearchindex.html
