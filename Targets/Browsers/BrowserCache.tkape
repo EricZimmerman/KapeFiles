@@ -1,6 +1,6 @@
 Description: Browser Caches
 Author: Bjorn Vanhaeren
-Version: 1.0
+Version: 1.1
 Id: bbb89525-6b8d-41f6-acdf-a4f513455703
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,11 @@ Targets:
         Name: Chrome Cache Folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chromium Edge Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Cache\
         Recursive: true
     -
         Name: Firefox Cache Folder

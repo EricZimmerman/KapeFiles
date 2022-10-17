@@ -1,0 +1,14 @@
+Description: Edge HTML5 File System Contents
+Author: Chad Tilbury
+Version: 1.0
+Id: 1f8b52a8-0501-43ce-ab26-0a28d53be763
+RecreateDirectories: true
+Targets:
+    -
+        Name: Edge HTML5 File System Folder
+        Category: Communication
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\File System\
+        Recursive: true
+
+# Documentation
+# N/A
