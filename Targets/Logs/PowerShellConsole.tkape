@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: PowerShell Console Log
-        Category: PowerShellConsleLog
+        Category: PowerShellConsoleLog
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
         FileMask: ConsoleHost_history.txt
 
