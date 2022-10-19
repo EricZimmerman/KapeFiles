@@ -10,11 +10,11 @@ Targets:
         Path: Prefetch.tkape
     -
         Name: RecentFileCache
-        Category: ApplicationCompatability
+        Category: ApplicationCompatibility
         Path: RecentFileCache.tkape
     -
         Name: Amcache
-        Category: ApplicationCompatability
+        Category: ApplicationCompatibility
         Path: Amcache.tkape
     -
         Name: Syscache
