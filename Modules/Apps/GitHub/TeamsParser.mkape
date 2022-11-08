@@ -1,0 +1,16 @@
+Description: Forensic open-source parser that allows extracting the messages, comments, posts, contacts, calendar entries and reactions from a Microsoft Teams IndexedDB LevelDB database.
+Category: Databases
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: a099aa6f-fbd7-48a2-a4cb-da41100d2755
+BinaryUrl: https://github.com/lxndrblz/forensicsim/releases/download/v0.5.0/ms_teams_parser.exe
+ExportFormat: json
+Processors:
+    -
+        Executable: TeamsParser/ms_teams_parser.exe
+        CommandLine: -f %sourceDirectory% -o %destinationDirectory%\Results.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/lxndrblz/forensicsim/
+# Example: CommandLine: -f "C:\Users\ConexionInversa\Downloads\harver\forensicsim-main\testdata\John Doe\IndexedDB\https_teams.microsoft.com_0.indexeddb.leveldb" -o "C:\Users\ConexionInversa\Downloads\harver\Results.json"
