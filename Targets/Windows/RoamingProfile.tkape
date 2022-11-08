@@ -1,0 +1,381 @@
+Description: User Related Registry Hives, LNK files, etc
+Author: Scott Downie
+Version: 1.0
+Id: ffa5fb2a-403c-11ed-b878-0242ac120002
+RecreateDirectories: true
+Targets:
+    -
+        Name: NTUSER.DAT registry hive
+        Category: Registry
+        Path: C:\
+        FileMask: NTUSER.DAT
+        Recursive: true
+    -
+        Name: NTUSER.DAT registry transaction files
+        Category: Registry
+        Path: C:\
+        FileMask: NTUSER.DAT.LOG*
+        Recursive: true
+    -
+        Name: NTUSER.DAT DEFAULT registry hive
+        Category: Registry
+        Path: C:\
+        FileMask: DEFAULT
+        Recursive: true
+    -
+        Name: NTUSER.DAT DEFAULT transaction files
+        Category: Registry
+        Path: C:\
+        FileMask: DEFAULT.LOG*
+        Recursive: true
+    -
+        Name: UsrClass.dat registry hive
+        Category: Registry
+        Path: C:\
+        FileMask: UsrClass.dat
+        Recursive: true
+    -
+        Name: UsrClass.dat registry transaction files
+        Category: Registry
+        Path: C:\
+        FileMask: UsrClass.dat.LOG*
+        Recursive: true
+    -
+        Name: LNK Files
+        Category: LNKFiles
+        Path: C:\
+        FileMask: '*.LNK'
+        Recursive: true
+    -
+        Name: Word Autosave Location
+        Category: FileKnowledge
+        Path: C:\AppData\Roaming\Microsoft\Word\
+    -
+        Name: Excel Autosave Location
+        Category: ApplicationCompatibility
+        Path: C:\AppData\Roaming\Microsoft\Word\
+    -
+        Name: Powerpoint Autosave Location
+        Category: FileKnowledge
+        Path: C:\AppData\Roaming\Microsoft\Word\
+    -
+        Name: Publisher Autosave Location
+        Category: FileKnowledge
+        Path: C:\AppData\Roaming\Microsoft\Word\
+    -
+        Name: Publisher Autosave Location
+        Category: FileKnowledge
+        Path: C:\*\AppData\Roaming\Microsoft\Word\
+    -
+        Name: Office Document Cache
+        Category: FileKnowledge
+        Path: C:\AppData\Local\Microsoft\Office\*\OfficeFileCache\
+    -
+        Name: Office Document Cache
+        Category: FileKnowledge
+        Path: C:\*\AppData\Local\Microsoft\Office\*\OfficeFileCache\
+    -
+        Name: Chrome bookmarks
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome bookmarks
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Cookies
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Chrome Cookies
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Chrome Current Session
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Session
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Current Tabs
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Current Tabs
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Download Metadata
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Download Metadata
+    -
+        Name: Chrome Download Metadata
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Download Metadata
+    -
+        Name: Chrome Extension Cookies
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: Chrome Extension Cookies
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: Chrome Favicons
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome Favicons
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome History
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome History
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Last Session
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Session
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Last Tabs
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Last Tabs
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Sessions Folder
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Chrome Sessions Folder
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Chrome Login Data
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Login Data
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Media History
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Chrome Media History
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Chrome Network Action Predictor
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Chrome Network Action Predictor
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Chrome Network Persistent State
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Network Persistent State
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Preferences
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Preferences
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Quota Manager
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Chrome Quota Manager
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Chrome Reporting and NEL
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: Chrome Reporting and NEL
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: Chrome Shortcuts
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Shortcuts
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Top Sites
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Top Sites
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Trust Tokens
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome Trust Tokens
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome SyncData Database
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Chrome SyncData Database
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Chrome Visited Links
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Visited Links
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Web Data
+        Category: Communications
+        Path: C:\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome Web Data
+        Category: Communications
+        Path: C:\*\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\*\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: Edge folder
+        Category: Communications
+        Path: C:\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
+        Recursive: true
+    -
+        Name: Edge folder
+        Category: Communications
+        Path: C:\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\
+        Recursive: true
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\
+        FileMask: Amcache.hve
+        Recursive: true
+    -
+        Name: Amcache transaction files
+        Category: ApplicationCompatibility
+        Path: C:\
+        FileMask: Amcache.hve.LOG*
+        Recursive: true
+    -
+        Name: LNK Files from Recent
+        Category: LNKFiles
+        Path: C:\AppData\Roaming\Microsoft\Windows\Recent\
+        Recursive: true
+    -
+        Name: LNK Files from Recent
+        Category: LNKFiles
+        Path: C:\*\AppData\Roaming\Microsoft\Windows\Recent\
+        Recursive: true
+    -
+        Name: LNK Files from Microsoft Office Recent
+        Category: LNKFiles
+        Path: C:\AppData\Roaming\Microsoft\Office\Recent\
+        Recursive: true
+    -
+        Name: LNK Files from Microsoft Office Recent
+        Category: LNKFiles
+        Path: C:\*\AppData\Roaming\Microsoft\Office\Recent\
+        Recursive: true
+    -
+        Name: Desktop LNK Files
+        Category: LNKFiles
+        Path: C:\
+        FileMask: '*.LNK'
+        Recursive: true
+
+# Documentation
+# N/A

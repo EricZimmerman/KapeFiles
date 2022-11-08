@@ -9,7 +9,7 @@ FileMask: ELAM
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf ELAM.json -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf ELAM.json
         ExportFormat: json
 
 # Documentation

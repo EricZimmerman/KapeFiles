@@ -1,0 +1,16 @@
+Description: zircolite - Update Zircolite rules
+Category: EventLogs
+Author: Andrew Rathbun
+Version: 1.0
+Id: 19461b7a-a558-4662-93e6-63e6a126dca9
+BinaryUrl: https://github.com/wagga40/Zircolite/releases/download/2.9.7/zircolite_win10_x64_2.9.7.7z
+ExportFormat: json
+Processors:
+    -
+        Executable: zircolite\zircolite_win10.exe
+        CommandLine: -U
+        ExportFormat: json
+
+# Documentation
+# https://github.com/wagga40/Zircolite/tree/master/docs
+# See Zircolite_Scan Module for more installation instructions
