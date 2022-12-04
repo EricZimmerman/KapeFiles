@@ -1,7 +1,7 @@
 Description: Hayabusa a timeline generator for Windows event logs - Update Rules
 Category: EventLogs
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: cd547400-e8cb-4339-9a50-818327fe059b
 BinaryUrl: https://github.com/Yamato-Security/hayabusa/releases
 ExportFormat: ""
@@ -18,4 +18,4 @@ Processors:
 # You can delete all except: "config"; "rules" and the "hayabusa.exe"
 # Check version with: hayabusa.exe --version
 # Update Rules with: hayabusa.exe --update-rules
-# Setup for European Time format. Check options for more: hayabusa.exe -h
+# Setup for RFC-3339 Time format. Check options for more: hayabusa.exe -h
