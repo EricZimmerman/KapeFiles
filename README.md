@@ -55,6 +55,8 @@ This repository serves as a place for community-created Targets and Modules for 
 
 Please see [CONTRIBUTING.md](https://github.com/EricZimmerman/KapeFiles/blob/master/CONTRIBUTING.md) for guidance on contributing to this repository.
 
+**NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE COMPLETED THE STEPS LISTED WITHIN THE PULL REQUEST TEMPLATE PRIOR TO SUBMISSION!**
+
 ## Support
 
 If you need support with KAPE, please consider the following options:
@@ -91,6 +93,8 @@ Be sure to point the BinaryUrl property to the download location in Module files
 
 All other info including requirements, etc. should be documented at the end of the Module in comment blocks.
 
-## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE COMPLETED THE STEPS LISTED WITHIN THE PULL REQUEST TEMPLATE PRIOR TO SUBMISSION!
+## KAPE Manual
+
+The official KAPE Manual can be found [here](https://ericzimmerman.github.io/KapeDocs/#!index.md).
 
 Eric Zimmerman
