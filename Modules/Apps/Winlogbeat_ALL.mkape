@@ -14,5 +14,5 @@ Processors:
 
 # Documentation
 # Uses Winlogbeat to parse EVTX to JSON: https://www.elastic.co/guide/en/beats/winlogbeat/current/index.html
-# Parses EVTX file one by one, due to limitation in the way files can be specified to Winlogbeat. 
+# Parses EVTX file one by one, due to limitation in the way files can be specified to Winlogbeat
 # The "Winlogbeat_Windows_single_EVTX_to_JSON.yml" configuration file can be retrieved from: https://gist.github.com/Qazeer/48e5895a958b32c223e6d0e92e2182ac
