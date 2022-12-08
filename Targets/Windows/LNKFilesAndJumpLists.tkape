@@ -16,6 +16,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
         Recursive: true
     -
+        Name: Start Menu LNK Files
+        Category: LNKFiles
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+        FileMask: '*.LNK'
+    -
         Name: LNK Files from Recent (XP)
         Category: LNKFiles
         Path: C:\Documents and Settings\%user%\Recent\
