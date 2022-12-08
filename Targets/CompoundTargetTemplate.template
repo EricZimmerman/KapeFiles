@@ -16,19 +16,19 @@ Targets:
     -
         Name: CompoundTarget3
         Category: Category
-        Path: CompoundTarget1.tkape
+        Path: CompoundTarget3.tkape
     -
         Name: CompoundTarget4
         Category: Category
-        Path: CompoundTarget2.tkape
+        Path: CompoundTarget4.tkape
     -
         Name: CompoundTarget5
         Category: Category
-        Path: CompoundTarget1.tkape
+        Path: CompoundTarget5.tkape
     -
         Name: CompoundTarget6
         Category: Category
-        Path: CompoundTarget2.tkape
+        Path: CompoundTarget6.tkape
 
 # Documentation
 # Please delete all Required/Optional comments above. N/A if no Documentation present. End with new line.
