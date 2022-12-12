@@ -1,6 +1,6 @@
 Description: Scheduled Task XMLs Parser
 Category: LiveResponse
-Author: Vikas Singh
+Author: Vikas Singh(@vikas891)
 Version: 1.0
 Id: ed6df81d-a90a-44ca-b322-1e02e72342dc
 ExportFormat: csv
@@ -11,4 +11,7 @@ Processors:
         ExportFormat: csv
 
 # Documentation
-# N/A
+# Module Source: DIR containing the Scheduled Tasks XML files
+# For e.g. for a triage image mounted as E Drive, E:\C:\Windows\system32\Tasks
+# More information below:
+# https://vikas-singh.notion.site/Parse-Scheduled-Tasks-XMLs-36ec152e7d2a4d269bba6c9565c3b5cd
