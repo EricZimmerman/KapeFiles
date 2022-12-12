@@ -17,6 +17,6 @@ Targets:
         Path: C:\ProgramData\Splashtop\Temp\log
         Recursive: true
         Comment: "Collects logs for Splashtop"
-        
+
 # Documentation
 # N/A
