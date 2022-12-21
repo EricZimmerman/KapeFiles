@@ -10,7 +10,7 @@ Processors:
         Executable: WebBrowserPassView.exe
         CommandLine: /scomma %destinationDirectory%\WebBrowserPassView.csv
         ExportFormat: csv
-               
+
 # Documentation
 # WebBrowserPassView is a password recovery tool that reveals the passwords stored by the following Web browsers: Internet Explorer (Version 4.0 - 11.0), Mozilla Firefox (All Versions), Google Chrome, Safari, and Opera. This tool can be used to recover your lost/forgotten password of any Website, including popular Web sites, like Facebook, Yahoo, Google, and GMail, as long as the password is stored by your Web Browser.
 # **Do not download** from the following location httpx://www.nirsoft.net/toolsdownload/webbrowserpassview.zip
