@@ -3,7 +3,7 @@ Category: BrowsingPass
 Author: Pedro Sanchez Cordero (conexioninversa)
 Version: 1.0
 Id: a216d646-cbac-45bb-8340-e0168baac683
-BinaryUrl: https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip
+BinaryUrl: https://www.nirsoft.net/protected_downloads/passreccommandline.zip
 ExportFormat: csv
 Processors:
     -
