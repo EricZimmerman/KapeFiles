@@ -1,0 +1,16 @@
+Description: 'NirSoft_WebBrowserDownloads- Nirsoft'
+Category: BrowsingDownloads
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: 03f66bb3-0583-4371-a817-b39d9a2e4990
+BinaryUrl: https://www.nirsoft.net/utils/browserdownloadsview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: BrowserDownloadsView.exe
+        CommandLine: /scomma %destinationDirectory%\BrowserDownloadsView.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/web_browser_downloads_view.html
+
