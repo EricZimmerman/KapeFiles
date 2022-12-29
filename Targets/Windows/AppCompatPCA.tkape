@@ -1,0 +1,19 @@
+Description: AppCompat PCA Folder
+Author: Andrew Rathbun
+Version: 1.0
+Id: fa6b3393-1bb9-4c2a-aa35-fa138d2d090a
+RecreateDirectories: true
+Targets:
+    -
+        Name: AppCompat PCA Folder
+        Category: AppCompat
+        Path: C:\Windows\appcompat\pca
+
+# Documentation
+# Credit to rancio#4162 on the Digital Forensics Discord Server who noticed this artifact - https://discord.com/channels/427876741990711298/427936091220344833/1057680326484299786
+# This artifact appears to be on Windows 11 only and will comprise of the following files:
+# C:\Windows\appcompat\pca\PcaAppLaunchDic.txt
+# C:\Windows\appcompat\pca\PcaGeneralDb1.txt
+# C:\Windows\appcompat\pca\PcaGeneralDb0.txt
+# PcaAppLaunchDic.txt appears to contain reliable timestamps for evidence of last execution in the format of FILE PATH | TIMESTAMP
+# I've tested and validated this on my own Windows 11 Pro system where the timestamps updates in real-time upon execution of a given application
