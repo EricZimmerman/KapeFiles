@@ -1,0 +1,15 @@
+Description: .NET CLR UsageLogs
+Author: Matias Davaro
+Version: 1.0
+Id: f127a2a3-d86f-4ede-96e7-52193db822ad
+RecreateDirectories: true
+Targets:
+    -
+        Name: .NET CLR UsageLogs
+        Category: .NET CLR UsageLogs
+        Path: C:\Users\%user%\AppData\Local\Microsoft\CLR_*\UsageLogs
+        Recursive: true
+
+# Documentation
+# https://bohops.com/2021/03/16/investigating-net-clr-usage-log-tampering-techniques-for-edr-evasion/
+# https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html
