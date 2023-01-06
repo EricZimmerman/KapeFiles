@@ -24,5 +24,6 @@ Processors:
 # https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
 # https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
 # Every FILE record is checked when using this Module. The output will be exported into the FileSystem output folder via the data displayed in the console that is exported to a text file
 # Debug messages in KAPE is always recommend for troubleshooting purposes and more verbose messaging that can prove to be helpful in Modules like this one (and many others)
