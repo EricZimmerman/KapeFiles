@@ -21,6 +21,7 @@ Processors:
 # https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
 # https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
 # This is the same as MFTECmd_$MFT.mkape, but it'll output a file listing that comprises of only the following columns:
 # Full Path (aka Parent Path and File Name combined from MFTECmd CSV Output)
 # Extension

@@ -17,4 +17,5 @@ Processors:
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # https://binaryforay.blogspot.com/search?q=bstrings
 # https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
+# https://leanpub.com/eztoolsmanuals
 # Can be used to generate a single list of IP addresses from one or multiple data sources. Create a copy of the output file, open the copy in your favorite text editor, sort alphabetically, deduplicate, delete any logging data from the output, and use your favorite IP Geolocate tool to ID noteworthy IPs.
