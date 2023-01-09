@@ -7,7 +7,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE | Select Index, ServiceName, Description, MacAddress, @{Name='IpAddress';Expression={$_.IpAddress -join '; '}}, @{Name='DefaultIPGateway';Expression={$_.DefaultIPGateway -join '; '}}, DnsHostname, DnsDomain, DhcpEnabled, DhcpServer, DHCPLeaseObtained | Sort-Object Index | Export-Csv %destinationDirectory%\Network_Configuration.csv "
+        CommandLine: -Command "Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE | Select Index, ServiceName, Description, MacAddress, @{Name='IpAddress';Expression={$_.IpAddress -join '; '}}, @{Name='DefaultIPGateway';Expression={$_.DefaultIPGateway -join '; '}}, DnsHostname, DnsDomain, DhcpEnabled, DhcpServer, DHCPLeaseObtained | Sort-Object Index | Export-Csv %destinationDirectory%\Network_Configuration.csv"
         ExportFormat: csv
 
 # Documentation
