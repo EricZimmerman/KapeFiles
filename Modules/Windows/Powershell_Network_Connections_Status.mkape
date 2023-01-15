@@ -1,0 +1,14 @@
+Description: Extract Network Connections details via powershell
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: a47d0af8-842a-4e22-8fba-94688e2dc097
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetTCPConnection | select Local*, Remote*, State, @{n='ProcessName';e={(Get-Process -Id $_.OwningProcess).ProcessName}}, @{n='ProcessPath';e={(Get-Process -Id $_.OwningProcess).Path}} | Export-Csv %destinationDirectory%\Network_Connection_Status.csv -NoTypeInformation"
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-nettcpconnection?view=windowsserver2022-ps
