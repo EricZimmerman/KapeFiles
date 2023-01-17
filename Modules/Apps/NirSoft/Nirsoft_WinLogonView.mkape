@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: winlogonview.exe
-        CommandLine: /scomma %destinationDirectory%\winlogonview.csv  /sort "User Name" /sort "Logon Time"
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_winlogonview.csv  /sort "User Name" /sort "Logon Time"
         ExportFormat: csv
 
 # Documentation
