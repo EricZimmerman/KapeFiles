@@ -1,0 +1,16 @@
+Description: 'NirSoft_WhatInStartup - Nirsoft'
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: a62b184e-b03f-4f77-a893-a9aded790c7b
+BinaryUrl: https://www.nirsoft.net/utils/WhatInStartup.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: WhatInStartup.exe
+        CommandLine: /stext %destinationDirectory%\Nirsoft_WhatInStartup.txt
+        ExportFormat: txt
+
+# Documentation
+# https://www.nirsoft.net/utils/WhatInStartup.html
+# This utility displays the list of all applications that are loaded automatically when Windows starts up. For each application, the following information is displayed: Startup Type (Registry/Startup Folder), Command-Line String, Product Name, File Version, Company Name, Location in the Registry or file system, and more.
