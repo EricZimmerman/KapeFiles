@@ -8,7 +8,7 @@ ExportFormat: txt
 Processors:
     -
         Executable: BluetoothView.exe
-        CommandLine: /stext %destinationDirectory%\BluetoothView.txt
+        CommandLine: /stext %destinationDirectory%\Nirsoft_BluetoothView.txt
         ExportFormat: txt
 
 # Documentation
