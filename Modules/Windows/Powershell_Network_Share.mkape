@@ -1,0 +1,14 @@
+Description: Extract the list of network shares
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: 88e299af-9689-4b8d-ba2d-62e47949ad59
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-SMBShare | select name, volume, path, description | Export-Csv -Path %destinationDirectory%\Network_Share.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/smbshare/get-smbshare?view=windowsserver2022-ps
