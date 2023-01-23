@@ -1,0 +1,15 @@
+Description: Gathers detailed list of local users
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: 4148dff7-fba3-40e1-a253-a743550ed398
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject -Class Win32_UserAccount | Select-Object AccountType, Caption, Domain, Name, FullName, InstallDate, SID, Status | Export-Csv -Path %destinationDirectory%\Local_User_List.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-useraccount
+# https://www.eightforums.com/threads/user-accounts-view-detailed-information-about-in-windows.50502/
