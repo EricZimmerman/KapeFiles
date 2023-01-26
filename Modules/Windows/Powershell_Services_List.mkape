@@ -1,0 +1,14 @@
+Description: Retrieves basic information about active running services. It replaces the command net start.
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: fc09e7c4-8af0-4177-8824-a69ad0aa10bf
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-Service | Where-Object {$_.Status -eq 'Running'} | Select-Object -Property Name, DisplayName, Status  | Export-Csv -Path %destinationDirectory%\Services.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.3
