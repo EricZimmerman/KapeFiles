@@ -1,0 +1,14 @@
+Description: Retrieves the Server Message Block (SMB) client directory mappings. It replaces the command net use.
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: 36092684-5d40-4159-baed-822b7eaaf0a0
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-SMBMapping | Select LocalPath, RemotePath, Status  | Export-Csv -Path %destinationDirectory%\Net_Use.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/smbshare/get-smbmapping?view=windowsserver2022-ps
