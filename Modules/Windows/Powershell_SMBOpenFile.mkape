@@ -1,0 +1,14 @@
+Description: Retrieves basic information about the files that are open via SMB
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: f93f31dc-2979-4279-b1f7-a4771b7ed1fa
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-SMBOpenFile | Select FileId, SessionId, Path, ShareRelativePath, ClientComputerName, ClientUsername | Export-Csv -Path %destinationDirectory%\Net_Files.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/smbshare/get-smbopenfile?view=windowsserver2022-ps
