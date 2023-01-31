@@ -3,7 +3,7 @@ Category: EventLogs
 Author: Andrew Rathbun
 Version: 2.0
 Id: e5912d52-6b31-4480-9255-8c5433326d85
-BinaryUrl: https://github.com/WithSecureLabs/chainsaw/releases/download/v2.0.0/chainsaw_x86_64-pc-windows-msvc.zip
+BinaryUrl: https://github.com/WithSecureLabs/chainsaw/releases/download/v2.3.1/chainsaw_all_platforms+rules+examples.zip
 ExportFormat: csv
 Processors:
     -
@@ -19,7 +19,10 @@ Processors:
 # https://github.com/WithSecureLabs/chainsaw
 # Versions of Chainsaw 2.0 and above have changed rule directories
 # The Chainsaw executable should reside in .\KAPE\Modules\bin\chainsaw\Chainsaw.exe
+# PLEASE NOTE: You may have to rename the Windows executable to Chainsaw.exe manually
+# You should also be able to remove the EVTX ATTACK SAMPLES and other non-Windows binaries if you want to save space in your KAPE instance
 # Internal rules have been moved into .\KAPE\Modules\bin\chainsaw\rules, Sigma rules have moved to .\KAPE\Modules\bin\chainsaw\sigma, and the mapping file has moved under .\KAPE\Modules\bin\chainsaw\mappings\
 # https://github.com/SigmaHQ/sigma/tree/master/rules/windows has a lot of Sigma rules that appear to be included with Chainsaw
 # Command used for Chainsaw V1: hunt --rules "%kapeDirectory%\Modules\bin\chainsaw\sigma_rules" --mapping "%kapeDirectory%\Modules\bin\chainsaw\mapping_files\sigma-mapping.yml" --csv %destinationDirectory% --lateral-all --full --ignore-errors %sourceDirectory%
 # Chainsaw V1 Module deleted 8/23/2022 upon release of Chainsaw V2 - https://github.com/EricZimmerman/KapeFiles/commit/91ab91b6a42c64b8e9ad6aed482ba1fe80fe6944
+# Use this script with KAPE to download new Sigma rules for Chainsaw - https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Get-ChainsawSigmaRules.ps1 using the following Module: https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/Apps/GitHub/PowerShell_Get-ChainsawSigmaRules.mkape
