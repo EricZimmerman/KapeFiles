@@ -72,6 +72,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\rootfs\
         Recursive: true
         FileMask: ".profile"
+    -
+        Name: openSUSE WSL ext4.vhdx
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.openSUSE*Leap*\LocalState\
+        FileMask: "ext4.vhdx"
 
 # Documentation
-# N/A
+# https://christopherkibble.com/posts/wsl-vhdx-recovery/

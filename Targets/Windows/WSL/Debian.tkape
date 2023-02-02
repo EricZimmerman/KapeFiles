@@ -93,7 +93,13 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\rootfs\var\log\apt\
         Recursive: true
         FileMask: "*.log"
+    -
+        Name: Debian WSL ext4.vhdx
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\TheDebianProject.DebianGNULinux_*\LocalState\
+        FileMask: "ext4.vhdx"
 
 # Documentation
 # https://blog.1234n6.com/2017/10/further-forensicating-of-windows.html
 # https://medium.com/@tho.le/linux-forensics-some-useful-artifacts-74497dca1ab2
+# https://christopherkibble.com/posts/wsl-vhdx-recovery/
