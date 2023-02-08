@@ -1,0 +1,16 @@
+Description: 'NirSoft_BluetoothView - Nirsoft'
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: e1816e7e-ff9b-430c-8650-b5650f68028b
+BinaryUrl: https://www.nirsoft.net/utils/bluetoothview.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: BluetoothView.exe
+        CommandLine: /stext %destinationDirectory%\Nirsoft_BluetoothView.txt
+        ExportFormat: txt
+
+# Documentation
+# https://www.nirsoft.net/utils/bluetooth_viewer.html
+# BluetoothView is a small utility that runs in the background, and monitor the activity of Bluetooth devices around you. For each detected Bluetooth device, it displays the following information: Device Name, Bluetooth Address, Major Device Type, Minor Device Type, First Detection Time, Last Detection Time, and more.

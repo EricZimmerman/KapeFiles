@@ -24,5 +24,6 @@ Processors:
 # https://binaryforay.blogspot.com/2019/04/introducing-evtxecmd.html
 # https://www.youtube.com/watch?v=YvMg3p7O6ro
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
 # Be sure to run evtxecmd.exe --sync within your .\KAPE\Modules\bin\EvtxECmd directory to ensure you have the latest maps!
 # Alternatively, run the !!ToolSync Module to keep all your Maps, Batch Files, and Targets/Modules updated!

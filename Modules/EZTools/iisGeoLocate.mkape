@@ -13,6 +13,7 @@ Processors:
 
 # Documentation
 # https://github.com/EricZimmerman/iisGeolocate
+# https://leanpub.com/eztoolsmanuals
 # Make sure you have these files in the following locations:
 # .\KAPE\Modules\bin\iisGeolocate\GeoLite2-City.mmdb
 # .\KAPE\Modules\bin\iisGeolocate\iisGeolocate.exe

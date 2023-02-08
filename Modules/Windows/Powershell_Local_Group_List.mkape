@@ -1,0 +1,14 @@
+Description: Gathers detailed list of local groups
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: 0472b243-8739-4dee-991d-19940ce5bbda
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command " Get-LocalGroup | Select Name, SID, Description | Export-Csv -Path %destinationDirectory%\Local_Group_List.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.localaccounts/get-localgroupmember?view=powershell-5.1

@@ -99,7 +99,7 @@ Targets:
         Name: Chrome Download Metadata
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Download Metadata
+        FileMask: DownloadMetadata
     -
         Name: Chrome Extension Cookies
         Category: Communications

@@ -1,0 +1,17 @@
+Description: Scheduled Task XMLs Parser
+Category: LiveResponse
+Author: Vikas Singh(@vikas891)
+Version: 1.0
+Id: ed6df81d-a90a-44ca-b322-1e02e72342dc
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command $ListOfTasks = $ListOfTasks = (Get-ChildItem -File -Path %sourceDirectory% -Recurse).fullname;$ListOfTasks | foreach { $ModifiedTime = (gci -Path $_).LastWriteTimeUtc.toString('yyyy-MM-ddTHH:mm:ss');$xmlFile = [xml](get-content "$_");$Date = $xmlFile.ChildNodes.RegistrationInfo.Date;$Author = $xmlFile.ChildNodes.RegistrationInfo.Author;$Description = $xmlFile.ChildNodes.RegistrationInfo.Description ;$URI = $xmlFile.ChildNodes.RegistrationInfo.URI;$Principals = $xmlFile.ChildNodes.Principals.Principal.UserId;$LogonType = $xmlFile.ChildNodes.Principals.Principal.LogonType;$Enabled = $xmlFile.ChildNodes.Settings.Enabled;$Action = $xmlFile.ChildNodes.Actions.Exec.Command;$Arguments = $xmlFile.ChildNodes.Actions.Exec.Arguments;$ComHandler_ClassID = $xmlFile.ChildNodes.Actions.ComHandler.ClassId; $ComHandler_Data = [string]$xmlFile.ChildNodes.Actions.ComHandler.Data.'#cdata-section';$xmlFile.ChildNodes[1] |ForEach-Object { [PSCustomObject]@{TaskFile_LastModifiedTime = $ModifiedTime;Registration_Date = $Date;Author = $Author ;  Description = $Description ; Task_Name = $URI ;  Principals_UserContext = $Principals;  LogonType = $LogonType  ; Enabled = $Enabled   ; Action_Arguments = $Action + ' ' + $Arguments;ComHandler_ClassID = $ComHandler_ClassID; ComHandler_Data = $ComHandler_Data; } } } 2> $NULL | Export-Csv -Path %destinationDirectory%\Parsed_Tasks_XML.csv -NoTypeInformation
+        ExportFormat: csv
+
+# Documentation
+# Module Source: DIR containing the Scheduled Tasks XML files
+# For e.g. for a triage image mounted as E Drive, E:\C:\Windows\system32\Tasks
+# More information below:
+# https://vikas-singh.notion.site/Parse-Scheduled-Tasks-XMLs-36ec152e7d2a4d269bba6c9565c3b5cd

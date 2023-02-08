@@ -5,7 +5,7 @@ Version: 1.1
 Id: 5ef67a6b-5895-46bb-af2a-3339a3227e25
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
 ExportFormat: csv
-FileMask: '$UsnJrnl%3A$J|$J'
+FileMask: '$UsnJrnl%3A$J|$J|UsnJrnl-J'
 Processors:
     -
         Executable: MFTECmd.exe
@@ -22,4 +22,5 @@ Processors:
 # https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
 # https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
 # KAPE collects the UsnJrnl artefact as "$J" while some tools, such as Velociraptor, collect it as "$UsnJrnl$J".

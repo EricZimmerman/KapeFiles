@@ -93,6 +93,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\rootfs\var\log\apt\
         Recursive: true
         FileMask: "*.log"
+    -
+        Name: Kali WSL ext4.vhdx
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\KaliLinux.54290C8133FEE_*\LocalState\
+        FileMask: "ext4.vhdx"
 
 # Documentation
-# N/A
+# https://christopherkibble.com/posts/wsl-vhdx-recovery/

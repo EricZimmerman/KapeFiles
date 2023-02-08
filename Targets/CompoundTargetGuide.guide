@@ -17,19 +17,19 @@ Targets:
     -
         Name: CompoundTarget3
         Category: Category
-        Path: CompoundTarget1.tkape
+        Path: CompoundTarget3.tkape
     -
         Name: CompoundTarget4
         Category: Category
-        Path: CompoundTarget2.tkape
+        Path: CompoundTarget4.tkape
     -
         Name: CompoundTarget5
         Category: Category
-        Path: CompoundTarget1.tkape
+        Path: CompoundTarget5.tkape
     -
         Name: CompoundTarget6
         Category: Category
-        Path: CompoundTarget2.tkape
+        Path: CompoundTarget6.tkape
 
 # Documentation
 # Include any and all documentation for your artifact, if any. If none, please include N/A instead. N/A is standard among all Targets without any documentation present and it makes it easy for one to search across all Targets that need documentation to be added.

@@ -1,0 +1,16 @@
+Description: 'NirSoft_AlternateStreamView - Nirsoft'
+Category: FileSystem
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: aaa08c93-0dcf-433a-b655-362d9cbce9cb
+BinaryUrl: https://www.nirsoft.net/utils/alternatestreamview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: AlternateStreamView.exe
+        CommandLine: /scomma %destinationDirectory%\AlternateStreamView.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/alternatestreamview-x64.zip
+# AlternateStreamView is a small utility that allows you to scan your NTFS drive, and find all hidden alternate streams stored in the file system
