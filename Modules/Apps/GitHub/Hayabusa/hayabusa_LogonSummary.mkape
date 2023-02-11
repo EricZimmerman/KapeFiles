@@ -9,6 +9,7 @@ Processors:
     -
         Executable: hayabusa\hayabusa.exe
         CommandLine: logon-summary -l -o %destinationDirectory%\hayabusa_logon_summary.csv
+        ExportFormat: csv
 
 # Documentation
 # Create a folder "hayabusa" within the "Modules\bin" KAPE folder
