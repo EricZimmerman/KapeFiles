@@ -9,7 +9,6 @@ Processors:
     -
         Executable: hayabusa\hayabusa.exe
         CommandLine: metrics -d %sourceDirectory%  -o %destinationDirectory%\hayabusa_statistics.csv
-        ExportFormat: csv
 
 # Documentation
 # Create a folder "hayabusa" within the "Modules\bin" KAPE folder
