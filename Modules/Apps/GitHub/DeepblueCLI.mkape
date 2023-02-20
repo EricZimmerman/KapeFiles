@@ -1,4 +1,4 @@
-Description: Launches sans deepbluecli against collected windows event logs
+Description: Launches SANS DeepBlueCLI against collected Windows Event Logs
 Category: EventLogs
 Author: Garrett Martin
 Version: 1.0
@@ -17,4 +17,3 @@ Processors:
 # Place the contents from github into "Modules\bin\DeepBlueCLI"
 # Acquire Process-Deepbluecli from https://github.com/grrttmrtn1/Process-Deepbluecli
 # place Process-Deepbluecli.ps1 in Modules\bin
-
