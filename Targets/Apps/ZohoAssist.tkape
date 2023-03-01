@@ -1,6 +1,6 @@
 Description: Zoho Assist artifacts
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: c4013577-f69b-4c7b-9893-73ab34faa35e
 RecreateDirectories: true
 Targets:
@@ -30,6 +30,24 @@ Targets:
         Recursive: true
         FileMask: "*.conf"
         Comment: "Grabs all .conf files present in this folder (Connection/Proxy/Settings)"
+    -
+        Name: Zoho Assist log files in Program Files*
+        Category: Apps
+        Path: C:\Program Files*\ZohoMeeting\UnAttended\ZohoMeeting\logs
+        Recursive: true
+        Comment: "Zoho Assist log files in Program Files*"
+    -
+        Name: Zoho Assist .conf files in  Program Files*
+        Category: Apps
+        Path: C:\Program Files*\ZohoMeeting\UnAttended\ZohoMeeting
+        FileMask: "*.conf"
+        Comment: "Grabs all .conf files present in this folder (Service/Settings)"
+    -
+        Name: Zoho Assist .txt files in  Program Files*
+        Category: Apps
+        Path: C:\Program Files*\ZohoMeeting\UnAttended\ZohoMeeting
+        FileMask: "*.txt"
+        Comment: "Grabs all .txt files present in this folder (Service/Settings)"
 
 # Documentation
 # https://www.zoho.com/assist/kb/logs.html
