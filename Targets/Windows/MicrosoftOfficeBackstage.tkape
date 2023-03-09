@@ -10,6 +10,5 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Office\*\BackstageinAppNavCache\
         Recursive: true
 
-
 # Documentation
 # https://www.hecfblog.com/2018/10/daily-blog-510-office-2016-backstage.html
