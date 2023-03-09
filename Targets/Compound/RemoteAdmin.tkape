@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
 Author: Drew Ervin, Mathias Frank, Andrew Rathbun
-Version: 1.7
+Version: 1.8
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -72,6 +72,10 @@ Targets:
         Name: VNC
         Category: ApplicationLogs
         Path: VNCLogs.tkape
+    -
+        Name: ZohoAssist
+        Category: ApplicationLogs
+        Path: ZohoAssist.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software.
