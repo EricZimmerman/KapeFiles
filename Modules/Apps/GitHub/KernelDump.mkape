@@ -2,7 +2,7 @@ Description: This script allows you to dump the Kernel part of the ram without u
 Category: LiveResponse
 Author: Pedro Sanchez Cordero (conexioninversa)
 Version: 1.0
-Id: adc74c31-6617-4ae3-b3b3-962b8a5c7cc1
+Id: d0c41676-d348-439b-9f08-4af87c1c447d
 BinaryUrl: https://raw.githubusercontent.com/conexioninversa/Forensics/master/KernelDump.ps1
 ExportFormat: FileSystem
 Processors:
