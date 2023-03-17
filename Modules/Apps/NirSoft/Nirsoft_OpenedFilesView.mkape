@@ -1,0 +1,18 @@
+Description: 'NirSoft_OpenedFilesView.exe - Nirsoft'
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: 18e756b8-48ac-4ba9-861e-21099f9833a6
+BinaryUrl: https://www.nirsoft.net/utils/ofview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: OpenedFilesView.exe
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_OpenedFilesView.csv /sort "Process name"
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/opened_files_view.html
+# OpenedFilesView displays the list of all opened files on your system. For each opened file, additional information is displayed: handle value, read/write/delete access, file position, the process that opened the file, and more...
+# Optionally, you can also close one or more opened files, or close the process that opened these files.
+# This utility is especially useful if you try to delete/move/open a file
