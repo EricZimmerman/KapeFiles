@@ -1,0 +1,16 @@
+Description: 'NirSoft_WifiHistoryView - Nirsoft'
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: 816c1e88-419e-421e-b117-9c4112c2232f
+BinaryUrl: https://www.nirsoft.net/utils/wifi_history_view.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: WifiHistoryView.exe
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_WifiHistoryView.csv
+        ExportFormat: txt
+
+# Documentation
+# https://www.nirsoft.net/utils/wifi_history_view.html
+# WifiHistoryView is a simple tool for Windows 11/10/8/7/Vista that displays the history of connections to wireless networks on your computer.
