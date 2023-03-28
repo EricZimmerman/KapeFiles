@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: hayabusa\hayabusa.exe
-        CommandLine: logon-summary -l -d %sourceDirectory% --RFC-3339 --quiet -U -o %destinationDirectory%\hayabusa_offline_logon_summary.csv
+        CommandLine: logon-summary -d %sourceDirectory% --RFC-3339 --quiet -U -o %destinationDirectory%\hayabusa_offline_logon_summary.csv
         ExportFormat: csv
 
 # Documentation
