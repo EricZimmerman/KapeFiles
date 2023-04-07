@@ -29,6 +29,11 @@ Targets:
         Category: Logs
         Path: C:\Resources\Directory\*\LogFiles\Web\W3SVC*\
         FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\Windows\system32\LogFiles\HTTPERR\
+        FileMask: '*.log'
 
 # Documentation
 # https://www.sumologic.com/blog/iis-log-files-location/
