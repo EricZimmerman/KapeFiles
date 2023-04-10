@@ -1,0 +1,19 @@
+Description: BackstageParser
+Category: FileKnowledge
+Author: Brian Maloney
+Version: 1.0
+Id: 5bc7c7b9-36c2-4eb9-8e1e-376962496765
+BinaryUrl: https://github.com/Beercow/BackstageParser/releases/latest
+ExportFormat: csv
+Processors:
+    -
+        Executable: BackstageParser.exe
+        CommandLine: -d %sourceDirectory%\C\Users\ -oc -o %destinationDirectory%\Backstage.csv
+        ExportFormat: csv
+    -
+        Executable: BackstageParser.exe
+        CommandLine: -d %sourceDirectory%\C\Users\ -oj -o %destinationDirectory%\Backstage.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/ArsenalRecon/BackstageParser

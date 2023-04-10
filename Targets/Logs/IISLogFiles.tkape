@@ -29,6 +29,13 @@ Targets:
         Category: Logs
         Path: C:\Resources\Directory\*\LogFiles\Web\W3SVC*\
         FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\Windows\system32\LogFiles\HTTPERR\
+        FileMask: '*.log'
 
 # Documentation
 # https://www.sumologic.com/blog/iis-log-files-location/
+# http://journeyintoir.blogspot.com/2014/07/ (Section starting with: "In addition to the IIS logs in the W3SVC1 folder, the HTTP.sys error loggingx...")
+# https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc786081(v=ws.10)

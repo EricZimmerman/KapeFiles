@@ -1,6 +1,6 @@
 Description: AnyDesk
 Author: Andrew Rathbun, Scott Hanson, and Nicole Jao
-Version: 1.3
+Version: 1.4
 Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
 RecreateDirectories: true
 Targets:
@@ -51,6 +51,12 @@ Targets:
         Category: Communications
         Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\AnyDesk\
         Comment: "Collects the logs associated with the System user account"
+    -
+        Name: AnyDesk Chat Logs - User Profile
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\AnyDesk\chat
+        FileMask: '*.txt'
+        Comment: "Collects chat logs associated with the user profile"
 
 # Documentation
 # https://support.anydesk.com/Trace_Files
@@ -58,6 +64,7 @@ Targets:
 # https://medium.com/mii-cybersec/digital-forensic-artifact-of-anydesk-application-c9b8cfb23ab5
 # https://www.forensafe.com/blogs/anydesk.html
 # https://www.iblue.team/incident-response-1/anydesk-remote-access
+# https://www.linkedin.com/posts/mohamed-adil-re_github-mohamed-adil-cyberanydesk-velociraptorir-log-collector-activity-7039113200994287616-ig-e
 # AnyDesk is a remote access tool similar to TeamViewer. A user can download and run AnyDesk without actually installing it and still generate the ad.trace log.
 # In regards to session recordings, note that it appears only the person who is remote connecting into another person's computer can record. The person being remoted into has to allow the recording to take place via a simple, intuitive setting while a remote session is active.
 # Session recordings will be stored in the .anydesk file format and they can only be played with AnyDesk.
