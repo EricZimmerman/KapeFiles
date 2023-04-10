@@ -1,0 +1,16 @@
+Description: Gathers detailed list of local admin users
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: d5d3ebba-e95b-456b-90e9-97c18f95d43c
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command " Get-LocalGroupMember -Group "Administrators" | Select Name, SID, PrincipalSource, Description | Export-Csv -Path %destinationDirectory%\Local_Admin_List.csv -NoTypeInformation "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.localaccounts/get-localgroupmember?view=powershell-5.1
+# https://activedirectorypro.com/find-local-administrators-on-all-computers/
+# https://powershellguru.com/get-localgroupmember/
