@@ -1,0 +1,15 @@
+Description: DWAgent Log Files
+Author: Ron Rader
+Version: 1.0
+Id: e78d2652-df47-4edc-a0ea-4835c322ad48
+RecreateDirectories: true
+Targets:
+    -
+        Name: DWAgent Log Files
+        Category: Logs
+        Path: C:\ProgramData\DWAgent*\
+        FileMask: '*.log*'
+
+# Documentation
+# https://www.dwservice.net/en/faq.html
+# https://github.com/AG7GN/dwservice/blob/master/README.md
