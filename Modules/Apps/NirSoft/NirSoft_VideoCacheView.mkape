@@ -1,7 +1,7 @@
 Description: 'VideoCacheView - Nirsoft'
-Category: BrowsingCache
+Category: LiveResponse
 Author: Pedro Sanchez Cordero (conexioninversa)
-Version: 1.0
+Version: 1.1
 Id: 51c1f91a-7338-427a-9032-ec6ff08050c2
 BinaryUrl: https://www.nirsoft.net/utils/videocacheview-x64.zip
 ExportFormat: csv
