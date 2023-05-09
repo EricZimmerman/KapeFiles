@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: BrowserDownloadsView.exe
-        CommandLine:  /DownloadsSource 3 /SourceFolder %sourceDirectory%\Users /ShowTimeInGMT /scomma %destinationDirectory%\BrowserDownloadsView.csv
+        CommandLine: /DownloadsSource 3 /SourceFolder %sourceDirectory%\Users /ShowTimeInGMT /scomma %destinationDirectory%\BrowserDownloadsView.csv
         ExportFormat: csv
 
 # Documentation
