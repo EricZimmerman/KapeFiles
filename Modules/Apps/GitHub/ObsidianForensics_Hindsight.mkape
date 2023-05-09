@@ -1,7 +1,7 @@
 Description: 'Hindsight - Chrome browser parsing'
-Category: BrowsingHistory
+Category: WebBrowsers
 Author: Mike Cary
-Version: 1.1
+Version: 1.2
 Id: d9661ea6-3369-41d0-8807-904f00edcbf4
 BinaryUrl: https://github.com/obsidianforensics/hindsight/releases
 ExportFormat: xlsx

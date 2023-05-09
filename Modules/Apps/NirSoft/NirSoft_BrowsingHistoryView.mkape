@@ -1,7 +1,7 @@
 Description: 'Browsing History View - Nirsoft'
-Category: BrowsingHistory
+Category: WebBrowsers
 Author: Mike Cary
-Version: 1.0
+Version: 1.1
 Id: 53d5bea2-b3d3-4a60-8844-be898390adc1
 BinaryUrl: https://www.nirsoft.net/utils/browsinghistoryview-x64.zip
 ExportFormat: csv

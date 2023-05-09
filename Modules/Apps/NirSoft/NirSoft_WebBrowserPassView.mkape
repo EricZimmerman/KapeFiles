@@ -1,7 +1,7 @@
 Description: 'WebBrowserPassView - Nirsoft'
-Category: BrowsingPass
+Category: LiveResponse
 Author: Pedro Sanchez Cordero (conexioninversa)
-Version: 1.0
+Version: 1.1
 Id: a216d646-cbac-45bb-8340-e0168baac683
 BinaryUrl: https://www.nirsoft.net/protected_downloads/passreccommandline.zip
 ExportFormat: csv
