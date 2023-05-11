@@ -39,12 +39,12 @@ Targets:
         Category: EventLogs
         Path: C:\Windows\System32\winevt\Logs\
         FileMask: Microsoft-Windows-RemoteDesktopServices-RdpCoreTS%4Operational.evtx
-     -
+    -
         Name: Event logs Win7+
         Category: EventLogs
         Path: C:\Windows.old\Windows\System32\winevt\Logs\
         FileMask: Microsoft-Windows-RemoteDesktopServices-RdpCoreTS%4Operational.evtx
-   -
+    -
         Name: Event logs Win7+
         Category: EventLogs
         Path: C:\Windows\System32\winevt\Logs\
@@ -54,12 +54,12 @@ Targets:
         Category: EventLogs
         Path: C:\Windows.old\Windows\System32\winevt\Logs\
         FileMask: Microsoft-Windows-TerminalServices-RemoteConnectionManager%4Operational.evtx
-   -
+    -
         Name: Event logs Win7+
         Category: EventLogs
         Path: C:\Windows\System32\winevt\Logs\
         FileMask: Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx
-   -
+    -
         Name: Event logs Win7+
         Category: EventLogs
         Path: C:\Windows.old\Windows\System32\winevt\Logs\
