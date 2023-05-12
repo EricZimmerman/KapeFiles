@@ -1,6 +1,6 @@
 Description: ESET Antivirus Data
-Author: Drew Ervin
-Version: 1.2
+Author: Drew Ervin, Phill Moore
+Version: 1.3
 Id: 14ac7bff-2d77-4582-8558-73cf75805aaa
 RecreateDirectories: true
 Targets:
@@ -25,6 +25,16 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\ESET\RemoteAdministrator\Agent\EraAgentApplicationData\Logs
         Comment: "Remote Administrator logs include information on tasks executed on the target."
+    -
+        Name: Local User Quarantine
+        Category: Antivirus
+        Path: C:\Users\%user%\AppData\Local\ESET\ESET Security\Quarantine\
+        Recursive: true
+    -
+        Name: SYSTEM user quarantine
+        Category: Antivirus
+        Path: C:\\Windows\System32\config\systemprofile\AppData\Local\ESET\ESET Security\Quarantine\
+        Recursive: true
 
 # Documentation
 # Remote Administrator log information: https://help.eset.com/protect_admin/80/en-US/fs_agent_connection_troubleshooting.html
