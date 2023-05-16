@@ -1,6 +1,6 @@
-Description: Kape Triage collections that will collect most of the files needed for a DFIR Investigation.  This module pulls evidence from File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, SUM data, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, Jump Lists, 3rd party remote access software logs, 3rd party antivirus software logs, Windows 10 Timeline database, and $I Recycle Bin data files.
+Description: Kape Triage collections that will collect most of the files needed for a DFIR Investigation.  This module pulls evidence from File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, SUM data, Cloud metadata, WER, WBEM, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, Jump Lists, 3rd party remote access software logs, 3rd party antivirus software logs, Windows 10 Timeline database, and $I Recycle Bin data files.
 Author: Scott Downie
-Version: 4.0
+Version: 4.1
 Id: a745b730-d6b7-4cb7-9847-4e896d9f3c52
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,10 @@ Targets:
         Name: Antivirus
         Category: Targets
         Path: Antivirus.tkape
+    -
+        Name: CloudStorage_Metadata
+        Category: Targets
+        Path: CloudStorage_Metadata.tkape
     -
         Name: EventLogs
         Category: Targets
@@ -52,6 +56,14 @@ Targets:
         Name: SUM
         Category: Targets
         Path: SUM.tkape
+    -
+        Name: WER
+        Category: Targets
+        Path: WER.tkape
+    -
+        Name: WBEM
+        Category: Targets
+        Path: WBEM.tkape
     -
         Name: WebBrowsers
         Category: Targets

@@ -1,0 +1,13 @@
+Description: Calls Kape Triage
+Author: Phill Moore
+Version: 1.0
+Id: c044913c-d4f8-4d8f-8942-94b6518b60ed
+RecreateDirectories: true
+Targets:
+    -
+        Name: KapeTriage
+        Category: Triage
+        Path: KapeTriage.tkape
+
+# Documentation:
+# N/A
