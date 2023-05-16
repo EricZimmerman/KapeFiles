@@ -1,4 +1,4 @@
-Description: SIDR - A tool designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems. 
+Description: SIDR - Windows index search parser, designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems
 Category: LiveResponse
 Author: Georg Lauenstein (sure[secure])
 Version: 1.0
