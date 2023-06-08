@@ -19,4 +19,5 @@ Targets:
         Comment: "Collects logs for Splashtop"
 
 # Documentation
-# N/A
+# https://jsac.jpcert.or.jp/archive/2023/pdf/JSAC2023_1_1_yamashige-nakatani-tanaka_en.pdf
+# https://www.synacktiv.com/en/publications/legitimate-rats-a-comprehensive-forensic-analysis-of-the-usual-suspects
