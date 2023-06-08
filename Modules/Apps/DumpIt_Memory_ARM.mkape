@@ -1,7 +1,7 @@
 Description: DumpIt Memory Acquisition for Windows ARM
 Category: Memory
 Author: Doug Metz
-Version: 1.1
+Version: 1.2
 Id: 35094815-a594-415d-b48f-7437511ea3d1
 BinaryUrl: https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/
 ExportFormat: dmp
