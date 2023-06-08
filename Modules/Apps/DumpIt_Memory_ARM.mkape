@@ -8,7 +8,7 @@ ExportFormat: dmp
 Processors:
     -
         Executable: DumpIt_arm.exe
-        CommandLine: /O %destinationDirectory%/memdump.dmp /Q
+        CommandLine: /O %destinationDirectory%\memdump.dmp /Q
         ExportFormat: dmp
 
 # Documentation
