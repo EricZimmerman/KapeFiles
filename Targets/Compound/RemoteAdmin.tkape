@@ -49,6 +49,11 @@ Targets:
         Path: RemoteUtilities_app.tkape
         Comment: "Contains logs related to the App RemoteUtilities"
     -
+        Name: RustDesk
+        Category: ApplicationLogs
+        Path: RustDesk.tkape
+        Comment: "Contains logs related to RustDesk"
+    -
         Name: ScreenConnect (ConnectWise Control)
         Category: ApplicationLogs
         Path: ScreenConnect.tkape
