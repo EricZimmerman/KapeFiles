@@ -29,6 +29,10 @@ Targets:
         Category: Antivirus
         Path: Cybereason.tkape
     -
+        Name: Cylance
+        Category: Antivirus
+        Path: Cylance.tkape
+    -
         Name: Emsisoft
         Category: Antivirus
         Path: Emsisoft.tkape
