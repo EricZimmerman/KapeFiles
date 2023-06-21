@@ -5,7 +5,7 @@ Id: 83411cbd-a6b2-4a9e-90e0-eec9bcd160a3
 RecreateDirectories: true
 Targets:
     -
-        Name: Cylance Programdata Logs
+        Name: Cylance ProgramData Logs
         Category: Antivirus
         Path: C:\ProgramData\Cylance\Desktop
         Recursive: true
@@ -21,4 +21,4 @@ Targets:
         Recursive: true
 
 # Documentation
-# Use SQLcmd to process the chp.db log.
+# Use SQLECmd to process the chp.db log
