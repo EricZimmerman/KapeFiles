@@ -1,0 +1,24 @@
+Description: Cylance Antivirus Logs
+Author: Ron Rader
+Version: 1.0
+Id: 83411cbd-a6b2-4a9e-90e0-eec9bcd160a3
+RecreateDirectories: true
+Targets:
+    -
+        Name: Cylance ProgramData Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Cylance\Desktop
+        Recursive: true
+    -
+        Name: Cylance Optics Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Cylance\Optics\Log
+        Recursive: true
+    -
+        Name: Cylance Program Files Logs
+        Category: Antivirus
+        Path: C:\Program Files\Cylance\Desktop\log
+        Recursive: true
+
+# Documentation
+# Use SQLECmd to process the chp.db log
