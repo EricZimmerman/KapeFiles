@@ -1,15 +1,14 @@
 Description: 'thumbcache_viewer_cmd.exe: process Windows Thumbcache files'
 Category: FileKnowledge
-Author: Dennis Reneau
-Version: 1.0
+Author: Dennis Reneau, Kevin Pagano
+Version: 2.0
 Id: 8896483c-563a-4a28-ad8a-07ba74a54a63
-BinaryUrl: https://github.com/thumbcacheviewer/thumbcacheviewer/releases/download/v1.0.1.7/thumbcache_viewer_cmd.zip
+BinaryUrl: https://github.com/thumbcacheviewer/thumbcacheviewer/releases/download/v1.0.1.8/thumbcache_viewer_cmd.zip
 ExportFormat: html
-FileMask: "*.db"
 Processors:
     -
         Executable: thumbcache_viewer_cmd.exe
-        CommandLine: -o %destinationDirectory%\ThumbCache_Results -w -c -z %sourceFile%
+        CommandLine: -o %destinationDirectory%\ThumbCache_Results -w -c -z -d %sourceDirectory%
         ExportFormat: html
         ExportFile: thumbcache_results.csv
 
@@ -19,3 +18,4 @@ Processors:
 # Executable author Eric Kutcher.
 # Point msource (Module Source) to the Thumbcache folder or use the Target/Module option of KAPE.
 # Options  -w HTML Report | -c CSV Report | -z Exclude 0 byte files | -n Prevent Thumbnail extraction | -o Output
+# 2023-06-27 Updated by Kevin Pagano: Updated binary URL, changed source to directory for parsing to HMTL properly if more than DB one file
