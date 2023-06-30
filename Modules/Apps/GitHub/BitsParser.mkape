@@ -8,7 +8,7 @@ ExportFormat: json
 Processors:
     -
         Executable: BitsParser.exe
-        CommandLine: -i %sourceDirectory%C\ProgramData\Microsoft\Network\Downloader\qmgr.db -o %destinationDirectory%\BitsParser_Results.json
+        CommandLine: -i %sourceDirectory%\C\ProgramData\Microsoft\Network\Downloader\qmgr.db -o %destinationDirectory%\BitsParser_Results.json
         ExportFormat: json
 
 # Documentation
