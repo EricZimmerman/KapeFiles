@@ -1,9 +1,15 @@
-Description: WindowsApps
+Description: AppXPackages
 Author: Nisarg Suthar
 Version: 1.0
 Id: cda2c952-8d98-456b-8572-019b1c71359e
 RecreateDirectories: true
 Targets:
+    -
+        Name: WindowsApps for AppX
+        Category: Apps
+        Path: C:\Program Files\WindowsApps\Deleted*\
+        Recursive: true
+        Comment: "Locates all the user AppX package directories which were installed through Microsoft Store and updated/uninstalled by the user."
     -
         Name: SystemApps for AppX
         Category: Apps
