@@ -13,6 +13,16 @@ Targets:
         Name: TorrentClients - qBittorrent
         Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\qBittorrent\logs\
+    -
+        Name: TorrentClients - qBittorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\qBittorrent\GeoDB\
+        Comment: "Locate .mmdb file for network peer connection analysis."
+    -
+        Name: TorrentClients - qBittorrent
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\qBittorrent\BT_backup\
+        Comment: "Locate active (in-progress) torrent files."
 
 # Documentation
 # https://troy4n6.blogspot.com/2019/02/text-based-treasure-qbittorent-log-file.html
