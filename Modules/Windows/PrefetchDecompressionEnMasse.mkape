@@ -3,7 +3,7 @@ Category: ProgramExecution
 Author: Nisarg Suthar
 Version: 1.0
 Id: 857e3887-7d80-47da-9d0f-93e7187938cb
-BinaryUrl: https://github.com/nisargsuthar/w10pfdecomp.py/releases/tag/v1.0
+BinaryUrl: https://github.com/nisargsuthar/w10pfdecomp.py/releases/download/v1.2/w10pfdecomp.exe
 ExportFormat: pf
 FileMask: "*.pf"
 Processors:
