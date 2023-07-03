@@ -1,6 +1,6 @@
 Description: TeamViewer Logs
-Author: Hadar Yudovich
-Version: 1.1
+Author: Hadar Yudovich, Sam Smoker
+Version: 2.0
 Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
 RecreateDirectories: true
 Targets:
@@ -16,6 +16,12 @@ Targets:
         Path: C:\Program Files*\TeamViewer\
         FileMask: 'TeamViewer*_Logfile*'
         Comment: "Includes TeamViewer<version>_Logfile.log and TeamViewer<version>_Logfile_OLD.log"
+    -
+        Name: TeamViewer Application User Logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\TeamViewer\
+        FileMask: 'TeamViewer*_Logfile*'
+        Comment: "Alternate location for TeamViewer<version>_Logfile.log"
     -
         Name: TeamViewer Configuration Files
         Category: ApplicationLogs
