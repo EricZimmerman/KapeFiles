@@ -25,8 +25,9 @@ Targets:
     -
         Name: AppRepository for AppX
         Category: Apps
-        Path: C:\ProgramData\Microsoft\Windows\AppRepository\Packages\StateRepository-*.srd
+        Path: C:\ProgramData\Microsoft\Windows\AppRepository\Packages\
         Recursive: true
+        FileMask: StateRepository-*.srd
         Comment: "Locates the StateRepository .srd databases."
     -
         Name: ProgramData Packages for AppX
