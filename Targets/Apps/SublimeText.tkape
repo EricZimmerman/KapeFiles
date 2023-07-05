@@ -1,15 +1,21 @@
 Description: Sublime Text 2/3 Auto Save Session
-Author: Mathias Frank
-Version: 1.0
+Author: Mathias Frank and Nisarg Suthar
+Version: 1.1
 Id: c1a64d12-bdf3-4ebe-a715-719bd6f2ddad
 RecreateDirectories: true
 Targets:
     -
         Name: SublimeText 2/3 Auto Save Session
         Category: Text Editor
-        Path: C:\Users\%user%\AppData\Roaming\Sublime Text*\Settings
+        Path: C:\Users\%user%\AppData\Roaming\Sublime Text*\Settings\
         FileMask: Session.sublime_session
         Comment: "Sublime Text 2/3 stores unsaved (temporary) files and its content in its Session.sublime_session file"
+    -
+        Name: SublimeText 4 Auto Save Session
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Roaming\Sublime Text*\Local\
+        FileMask: *.sublime_session
+        Comment: "Sublime Text 4 stores unsaved (temporary) files and its content in its .sublime_session files"
 
 # Documentation
 # https://superuser.com/questions/894021/where-does-sublime-text-store-its-un-saved-windows
