@@ -14,7 +14,7 @@ Targets:
         Name: SublimeText 4 Auto Save Session
         Category: Text Editor
         Path: C:\Users\%user%\AppData\Roaming\Sublime Text*\Local\
-        FileMask: *.sublime_session
+        FileMask: '*.sublime_session'
         Comment: "Sublime Text 4 stores unsaved (temporary) files and its content in its .sublime_session files"
 
 # Documentation
