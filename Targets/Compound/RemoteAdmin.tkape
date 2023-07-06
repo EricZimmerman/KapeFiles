@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
 Author: Drew Ervin, Mathias Frank, Andrew Rathbun
-Version: 1.8
+Version: 1.9
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -16,6 +16,10 @@ Targets:
         Name: Chrome Remote Desktop
         Category: ApplicationLogs
         Path: ApplicationEvents.tkape
+    -
+        Name: DWAgent
+        Category: ApplicationLogs
+        Path: DWAgent.tkape
     -
         Name: Kaseya
         Category: ApplicationLogs
