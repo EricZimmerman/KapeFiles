@@ -1,0 +1,14 @@
+Description: PowerShell 7 Runtime Config
+Author: Andrew Rathbun
+Version: 1.0
+Id: 41963eda-a586-464f-aee3-1473e38ddd85
+RecreateDirectories: true
+Targets:
+    -
+        Name: PowerShell 7 Config JSON
+        Category: PowerShell
+        Path: C:\Program Files\PowerShell\7
+        FileMask: 'powershell.config.json'
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_powershell_config?view=powershell-7.3

@@ -1,19 +1,20 @@
-Description: Use bstrings to GREP for Bitlocker recovery keys
+Description: Use bstrings to GREP for Monero Wallets
 Category: KeywordSearches
-Author: Andrew Rathbun
-Version: 1.0
+Author: Andrew Rathbun, Georg Lauenstein
+Version: 1.2
 Id: 139184fb-5b2e-4e4f-a9df-6da76f138841
-BinaryUrl: https://github.com/EricZimmerman/bstrings
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip
 ExportFormat: txt
 Processors:
     -
         Executable: bstrings.exe
-        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr bitlocker
+        CommandLine: -d %sourceDirectory% -o '%destinationDirectory%' --lr monero
         ExportFormat: txt
-        ExportFile: BitlockerRecoveryKeys.txt
+        ExportFile: MoneroWallets.txt
 
 # Documentation
 # https://github.com/EricZimmerman/bstrings
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # https://binaryforay.blogspot.com/search?q=bstrings
 # https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
+# https://leanpub.com/eztoolsmanuals

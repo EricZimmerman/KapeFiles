@@ -31,7 +31,9 @@
   </p>
 </p>
 
-# QUICK START
+# KapeFiles
+
+## KAPE Overview
 
 KAPE is an efficient and highly configurable triage program that will target essentially any device or storage location, find forensically useful artifacts, and parse them within a few minutes. KAPE can be downloaded [HERE](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape).
 
@@ -39,17 +41,30 @@ For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#
 
 It is also possible to attend KAPE training from Kroll instructors. Details can be found [HERE](training.md)!!
 
-### NOTE: We have clarified KAPE usage permissions for commercial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md).
+## KAPE License
 
-# Downloading KapeFiles for KAPE
+NOTE: We have clarified KAPE usage permissions for commercial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md).
 
-To download the latest files, click the "Sync with GitHub" button in gkape.exe or run `kape.exe --sync`
+## Downloading KapeFiles for KAPE
 
-# Contributing
+To download the latest files, click the `Sync with GitHub` button in gkape.exe or run `kape.exe --sync`
 
-This repository serves as a place for community-created Targets and Modules for use with KAPE.
+## Contributing
 
-Please send PRs should you come up with new Targets or Modules for inclusion in the project!
+This repository serves as a place for community-created Targets and Modules for use with KAPE. 
+
+Please see [CONTRIBUTING.md](https://github.com/EricZimmerman/KapeFiles/blob/master/CONTRIBUTING.md) for guidance on contributing to this repository.
+
+**NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE COMPLETED THE STEPS LISTED WITHIN THE PULL REQUEST TEMPLATE PRIOR TO SUBMISSION!**
+
+## Support
+
+If you need support with KAPE, please consider the following options:
+
+ * For general questions/discussion, please consider starting a [discussion](https://github.com/EricZimmerman/KapeFiles/discussions)
+ * For bugs, please consider raising an [Issue](https://github.com/EricZimmerman/KapeFiles/issues)
+ * For help with Targets, check the [Targets](https://github.com/EricZimmerman/KapeFiles#targets) section below
+ * For help with Modules, check the [Modules](https://github.com/EricZimmerman/KapeFiles#modules) section below
 
 ## Ongoing Projects
 
@@ -57,16 +72,29 @@ Please send PRs should you come up with new Targets or Modules for inclusion in 
 
 ## Targets
 
-If you need help with creating Targets, check out [this guide](https://ericzimmerman.github.io/KapeDocs/#!Pages\60-Tips-and-tricks.md#KAPE_Target_Creation). Also consult the [Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetGuide.guide), [Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetTemplate.template), [Compound Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetGuide.guide) or [Compound Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetTemplate.template) to ensure the Target(s) follow the same format.
+If you need help with creating Targets, check out the following resources:
+
+* [Official KAPE Documentation - Tips and Tricks](https://ericzimmerman.github.io/KapeDocs/#!Pages\60-Tips-and-tricks.md#KAPE_Target_Creation)
+* [Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetGuide.guide)
+* [Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/TargetTemplate.template)
+* [Compound Target Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetGuide.guide)
+* [Compound Target Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Targets/CompoundTargetTemplate.template)
 
 ## Modules
 
-If you need help with creating Modules, please consult the [Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleGuide.guide), [Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleTemplate.template), [Compound Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleGuide.guide) or [Compound Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleTemplate.template) to ensure the Module(s) follow the same format.
+If you need help with creating Modules, please check out the following resources:
+
+* [Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleGuide.guide)
+* [Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/ModuleTemplate.template)
+* [Compound Module Guide](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleGuide.guide)
+* [Compound Module Template](https://github.com/EricZimmerman/KapeFiles/blob/master/Modules/CompoundModuleTemplate.template)
 
 Be sure to point the BinaryUrl property to the download location in Module files!
 
 All other info including requirements, etc. should be documented at the end of the Module in comment blocks.
 
-## NOTE: BEFORE INITIATING A PR, PLEASE ENSURE YOU HAVE COMPLETED THE STEPS LISTED WITHIN THE PULL REQUEST TEMPLATE PRIOR TO SUBMISSION!
+## KAPE Manual
+
+The official KAPE Manual can be found [here](https://ericzimmerman.github.io/KapeDocs/#!index.md).
 
 Eric Zimmerman

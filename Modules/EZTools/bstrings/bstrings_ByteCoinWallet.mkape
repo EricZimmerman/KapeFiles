@@ -1,14 +1,14 @@
 Description: Use bstrings to GREP for ByteCoin Wallets
 Category: KeywordSearches
-Author: Andrew Rathbun
+Author: Andrew Rathbun, Georg Lauenstein
 Version: 1.0
 Id: 210ca497-ecc6-4084-b8c0-f9dd3aec2d2f
-BinaryUrl: https://github.com/EricZimmerman/bstrings
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip
 ExportFormat: txt
 Processors:
     -
         Executable: bstrings.exe
-        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr bytecoin
+        CommandLine: -d %sourceDirectory% -o '%destinationDirectory%' --lr bytecoin
         ExportFormat: txt
         ExportFile: ByteCoinWallets.txt
 
@@ -17,3 +17,4 @@ Processors:
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # https://binaryforay.blogspot.com/search?q=bstrings
 # https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
+# https://leanpub.com/eztoolsmanuals

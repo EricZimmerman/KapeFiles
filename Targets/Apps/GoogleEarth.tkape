@@ -1,0 +1,33 @@
+Description: Google Earth
+Author: Guus Beckers
+Version: 1.0
+Id: 1ad35449-19a6-4e90-855e-elb4bfb2748b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Google Earth My Places file
+        Category: Apps
+        Path: C:\Users\%user%\AppData\LocalLow\Google\GoogleEarth
+        FileMask: 'myplaces.kml'
+        Comment: "File which holds favorited locations"
+    -
+        Name: Google Earth My Places Backup file
+        Category: Apps
+        Path: C:\Users\%user%\AppData\LocalLow\Google\GoogleEarth
+        FileMask: 'myplaces.backup.kml'
+        Comment: "Backup file which holds favorited locations"
+    -
+        Name: Google Earth My Places file (XP)
+        Category: Apps
+        Path: C:\Documents and Settings\%user%\Application Data\Google\GoogleEarth
+        FileMask: 'myplaces.kml'
+        Comment: "File which holds favorited locations"
+    -
+        Name: Google Earth My Places Backup file (XP)
+        Category: Apps
+        Path: C:\Documents and Settings\%user%\Application Data\Google\GoogleEarth
+        FileMask: 'myplaces.backup.kml'
+        Comment: "Backup file which holds favorited locations"
+
+# Documentation
+# https://support.google.com/earth/answer/166438?hl=en

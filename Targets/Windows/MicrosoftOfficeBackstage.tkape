@@ -1,0 +1,14 @@
+Description: Microsoft Office Backstage
+Author: Brian Maloney
+Version: 1.0
+Id: 43e3486e-1a21-4f8f-a493-499d6fdc9eb7
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft Office Backstage
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Office\*\BackstageinAppNavCache\
+        Recursive: true
+
+# Documentation
+# https://www.hecfblog.com/2018/10/daily-blog-510-office-2016-backstage.html

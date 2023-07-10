@@ -9,7 +9,7 @@ FileMask: BCD-Template
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf BCD-Template.json -q
+        CommandLine: -f %sourceFile% --kn ROOT --nl false --json %destinationDirectory% --jsonf BCD-Template.json
         ExportFormat: json
 
 # Documentation

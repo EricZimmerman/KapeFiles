@@ -3,12 +3,12 @@ Category: Registry
 Author: Andrew Rathbun
 Version: 1.0
 Id: 63e39ae3-63c3-44c8-86ac-fb7ac4365d7b
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -d %sourceDirectory% --bn BatchExamples\SoftwareWoW6432ASEPs.reb --nl false --csv %destinationDirectory% -q
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\SoftwareWoW6432ASEPs.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
 
 # Documentation
@@ -19,5 +19,6 @@ Processors:
 # https://www.sans.org/blog/finding-registry-malware-persistence-with-recmd/
 # https://www.youtube.com/watch?v=tk9XsMHzPlM
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
 # Uses the SoftwareWoW6432ASEPs.reb batch command file. This file should also be in same directory as RECmd.exe
 # Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.

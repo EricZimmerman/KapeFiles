@@ -1,0 +1,15 @@
+Description: Extract SRUM data and repair with SrumECmd
+Category: SRUM
+Author: Matthew Arbaugh
+Version: 1.0
+Id: a03a3be0-0101-42cc-a639-484ab24e0018
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/SRUM-Repair.ps1
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\SRUM-Repair.ps1' -TargetPath %sourceDirectory% -OutputPath %destinationDirectory% -Kape"
+        ExportFormat: csv
+
+# Documentation
+# Use this to make a copy of the SRUM DB with PowerShell, repair with esentutl.exe, and extract SUM data with SrumECmd

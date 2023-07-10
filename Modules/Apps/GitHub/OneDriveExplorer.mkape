@@ -1,0 +1,25 @@
+Description: 'OneDriveExplorer: process OneDrive .dat and .previous.dat files'
+Category: FileKnowledge
+Author: Brian Maloney
+Version: 1.1
+Id: 6a2d7872-9eeb-4614-9090-b61a9ada2bba
+BinaryUrl: https://github.com/Beercow/OneDriveExplorer/releases/download/v2022.06.17/OneDriveExplorer.exe
+ExportFormat: csv
+Processors:
+    -
+        Executable: OneDriveExplorer.exe
+        CommandLine: -d %sourceDirectory% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: OneDriveExplorer.exe
+        CommandLine: -d %sourceDirectory% --html %destinationDirectory%
+        ExportFormat: html
+    -
+        Executable: OneDriveExplorer.exe
+        CommandLine: -d %sourceDirectory% --json %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# https://github.com/Beercow/OneDriveExplorer
+# https://www.sans.org/blog/recreating-onedrive-s-folder-structure-from-usercid-dat/
+# As of version v2022.06.17, if you would like to parse ODL logs add -l to the command

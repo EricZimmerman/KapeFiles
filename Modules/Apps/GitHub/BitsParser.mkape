@@ -1,0 +1,19 @@
+Description: Tool to parse Windows Background Intelligent Transfer Service database files
+Category: GitHub
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: acdc62ed-b1a1-426f-8d5e-e53687284410
+BinaryUrl: https://github.com/conexioninversa/BitsParser/blob/master/BitsParser.exe
+ExportFormat: json
+Processors:
+    -
+        Executable: BitsParser.exe
+        CommandLine: -i %sourceDirectory%\C\ProgramData\Microsoft\Network\Downloader\qmgr.db -o %destinationDirectory%\BitsParser_Results.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/fireeye/BitsParser
+# By default BitsParser will process files in the %ALLUSERSPROFILE%\Microsoft\Network\Downloader. The script can be used with offline files from alternate operating systems.
+# By default BitsParser will only parse and output active jobs and files. To carve deleted entries from the database use --carvedb. To carve entries from all file types, including transaction logs, use --carveall
+# https://www.sans.org/reading-room/whitepapers/forensics/bits-forensics-39195
+# https://cyberforensicator.com/2019/05/12/using-mitre-attck-for-forensics-bits-jobs-t1197/

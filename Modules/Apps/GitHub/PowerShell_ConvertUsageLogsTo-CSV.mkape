@@ -1,0 +1,17 @@
+Description: ConvertUsageLogsTo-CSV.ps1 - Export the Usage Logs file(s) into a single CSV file.
+Category: ProgramExecution
+Author: Thomas DIOT (Qazeer)
+Version: 1.0
+Id: 6fb52c8b-f325-4c08-b9cc-5aa11285b161
+BinaryUrl: https://gist.github.com/Qazeer/6c655627962f034aa2b6e92594770ee2
+ExportFormat: CSV
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\ConvertUsageLogsTo-CSV.ps1' -InputDir '%sourceDirectory%' -Destination %destinationDirectory%"
+        ExportFormat: CSV
+
+# Documentation
+# https://gist.github.com/Qazeer/6c655627962f034aa2b6e92594770ee2
+# Convert Usage Logs file(s) from the specified Source Directory into a single CSV file.
+# Original script and KAPE module to copy the ConsoleHost_history.txt files from Andrew Rathbun and Matt Arbaugh.

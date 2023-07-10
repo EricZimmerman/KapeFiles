@@ -1,0 +1,22 @@
+Description: Remote Utilities
+Author: Ryan McVicar
+Version: 1.0
+Id: 55733479-dd80-4958-a0a8-0d1c1392f494
+RecreateDirectories: true
+Targets:
+    -
+        Name: RemoteUtilities Connection Logs
+        Category: Remote Access
+        Path: C:\Program Files*\Remote Utilities - Host\Logs
+        FileMask: "rut_log_*.html"
+        Comment: "Includes connection log files"
+    -
+        Name: RemoteUtilities Install Log
+        Category: Remote Access
+        Path: C:\ProgramData\Remote Utilities
+        FileMask: "install.log"
+        Comment: "Includes Install log file"
+
+# Documentation
+# Information on RemoteUtilities logs can be found here: https://www.remoteutilities.com/support/docs/host-log/
+# Information on the different Connection Modes is available here: https://www.remoteutilities.com/support/docs/connection-modes/

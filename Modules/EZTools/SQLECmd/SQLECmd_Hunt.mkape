@@ -19,6 +19,7 @@ Processors:
 
 # Documentation
 # https://github.com/EricZimmerman/SQLECmd
+# https://leanpub.com/eztoolsmanuals
 # Hunt mode should be used to help identify SQLite databases within a dataset (check console window to see which SQLite databases don't have a Map)
 # Hunt mode should also be used to parse SQLite databases which do not follow a strict naming convention, i.e. %timestamp%.SQLite
 # An example of a SQLECmd Map that will require Hunt mode every time is Windows_TeraCopy_History.smap

@@ -1,0 +1,21 @@
+Description: 'Events-Ripper: parse all supported events'
+Category: EventLogs
+Author: Brian Maloney
+Version: 1.0
+Id: 710ebfee-8703-4e9c-8d60-40970f180264
+BinaryUrl: https://github.com/keydet89/Events-Ripper/archive/master.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: Events-Ripper_eventFile.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Events-Ripper_All.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://github.com/keydet89/Events-Ripper
+# Create a folder "Events-Ripper" within the "Modules\bin" KAPE folder
+# unpack "zip archive" file into "Modules\bin\Events-Ripper"

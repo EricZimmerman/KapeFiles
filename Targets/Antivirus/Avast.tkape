@@ -1,6 +1,6 @@
 Description: Avast Antivirus Data
-Author: Drew Ervin
-Version: 1.0
+Author: Drew Ervin and Dhiral Panjwani
+Version: 1.1
 Id: 8b625ea2-fafa-46be-8ba1-15efd1de2a53
 RecreateDirectories: true
 Targets:
@@ -24,6 +24,17 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Avast Software\Avast\Chest\
         FileMask: index.xml
+    -
+        Name: Avast Persistent Data Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Avast Software\Persistent Data\Avast\Logs
+        Recursive: true
+    -
+        Name: Avast Icarus Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Avast Software\Icarus\Logs
+        Recursive: true
 
 # Documentation
 # https://businesshelp.avast.com/Content/Products/General_Help/LogLocations/BaseAntivirusLogs.htm
+# https://forensafe.com/blogs/windows_avast.html

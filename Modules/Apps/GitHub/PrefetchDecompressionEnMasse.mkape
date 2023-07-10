@@ -1,0 +1,16 @@
+Description: Prefetch Decompression En Masse
+Category: ProgramExecution
+Author: Nisarg Suthar
+Version: 1.0
+Id: 857e3887-7d80-47da-9d0f-93e7187938cb
+BinaryUrl: https://github.com/nisargsuthar/PrefetchDecompressionEnMasse/releases/download/v1.3/PrefetchDecompressionEnMasse.exe
+ExportFormat: pf
+FileMask: "*.pf"
+Processors:
+    -
+        Executable: PrefetchDecompressionEnMasse.exe
+        CommandLine: "%sourceDirectory% %destinationDirectory%"
+        ExportFormat: pf
+
+# Documentation
+# N/A

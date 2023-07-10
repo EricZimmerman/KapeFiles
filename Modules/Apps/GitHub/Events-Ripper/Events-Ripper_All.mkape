@@ -1,0 +1,18 @@
+Description: 'Events-Ripper: All'
+Category: EventLogs
+Author: Brian Maloney
+Version: 1.0
+Id: 934ca346-2bbd-4aed-b91b-96729cf1ca8c
+BinaryUrl: https://github.com/keydet89/Events-Ripper/archive/master.zip
+ExportFormat: txt
+Processors:
+    -
+        Executable: Events-Ripper\erip.exe
+        CommandLine: -f %destinationDirectory%\events.txt -a
+        ExportFormat: txt
+        ExportFile: Events-Ripper_ALL.txt
+
+# Documentation
+# https://github.com/keydet89/Events-Ripper
+# Create a folder "Events-Ripper" within the "Modules\bin" KAPE folder
+# unpack "zip archive" file into "Modules\bin\Events-Ripper"

@@ -1,0 +1,15 @@
+Description: Execute Reghunter Link module for hunting symbolic links
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: 736f9493-2b95-4002-8fb1-7d6eb8834b0d
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --link --outfile %destinationDirectory%\reg_hunter_link.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/

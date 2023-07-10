@@ -1,14 +1,14 @@
 Description: Use bstrings to GREP for US Social Security numbers
 Category: KeywordSearches
-Author: Andrew Rathbun
-Version: 1.0
+Author: Andrew Rathbun, Georg Lauenstein
+Version: 1.1
 Id: f3b374af-0ba5-4c43-8816-ca0a70c9a31b
-BinaryUrl: https://github.com/EricZimmerman/bstrings
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip
 ExportFormat: txt
 Processors:
     -
         Executable: bstrings.exe
-        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr ssn
+        CommandLine: -d %sourceDirectory% -o '%destinationDirectory%' --lr ssn
         ExportFormat: txt
         ExportFile: SSN.txt
 
@@ -17,3 +17,4 @@ Processors:
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # https://binaryforay.blogspot.com/search?q=bstrings
 # https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
+# https://leanpub.com/eztoolsmanuals

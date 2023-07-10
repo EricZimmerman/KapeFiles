@@ -1,0 +1,20 @@
+Description: 'Windows Hello 2 Hashcat'
+Category: Windows
+Author: Kevin Pagano
+Version: 1.0
+Id: 07a020cc-ef74-4746-bcf9-04c6575ec4a4
+BinaryUrl: https://github.com/Banaanhangwagen/WINHELLO2hashcat
+ExportFormat: txt
+Processors:
+    -
+        Executable: WINHELLO2hashcat.exe
+        CommandLine: --windows %sourceDirectory%
+        ExportFormat: txt
+        ExportFile: winhello_hash.txt
+
+# Documentation
+# WINHELLO2hashcat - Extracts "hash" from Windows Hello PIN for cracking in Hashcat
+# https://github.com/Banaanhangwagen/WINHELLO2hashcat
+# Make sure to have the python package "dpapick3" per the requirements for the .py
+# You will need to package the .py to .exe for running in KAPE via https://pypi.org/project/auto-py-to-exe/
+# It is recommended to collect with KAPE Target first and then parse the Windows directory as input

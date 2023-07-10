@@ -1,0 +1,23 @@
+Description: Splashtop
+Author: Andrew Rathbun, Yogesh Khatri
+Version: 1.0
+Id: 940c768b-b32c-4b4b-82d7-68385ff470c8
+
+RecreateDirectories: true
+Targets:
+    -
+        Name: Splashtop Log Files
+        Category: Software
+        Path: C:\Program Files*\Splashtop\Splashtop Remote\Server\log
+        Recursive: true
+        Comment: "Collects logs for Splashtop"
+    -
+        Name: Splashtop Log Files in ProgramData
+        Category: Software
+        Path: C:\ProgramData\Splashtop\Temp\log
+        Recursive: true
+        Comment: "Collects logs for Splashtop"
+
+# Documentation
+# https://jsac.jpcert.or.jp/archive/2023/pdf/JSAC2023_1_1_yamashige-nakatani-tanaka_en.pdf
+# https://www.synacktiv.com/en/publications/legitimate-rats-a-comprehensive-forensic-analysis-of-the-usual-suspects

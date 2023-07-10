@@ -1,0 +1,17 @@
+Description: SIDR - Windows index search parser, designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems
+Category: LiveResponse
+Author: Georg Lauenstein (sure[secure])
+Version: 1.0
+Id: fcc4bbdd-44ab-4e8f-8a37-d35a9dced850
+BinaryUrl: https://github.com/strozfriedberg/sidr
+ExportFormat: csv
+Processors:
+    -
+        Executable: sidr.exe
+        CommandLine: -f csv %sourceDirectory% -o %destinationDirectory%
+        ExportFormat: csv
+
+# Documentation
+# https://github.com/strozfriedberg/sidr
+# https://www.aon.com/cyber-solutions/aon_cyber_labs/windows-search-index-the-forensic-artifact-youve-been-searching-for/
+# https://github.com/AndrewRathbun/DFIRArtifactMuseum/tree/main/Windows%2FWindowsSearchDB

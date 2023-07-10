@@ -1,6 +1,6 @@
 Description: Microsoft Edge Chromium Artifacts
-Author: Chad Tilbury
-Version: 1.0
+Author: Chad Tilbury and Andrew Rathbun
+Version: 1.1
 Id: 2844dba2-fb47-466c-8d57-dab2bc02294f
 RecreateDirectories: true
 Targets:
@@ -110,6 +110,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: true
         Comment: "Required for offline DPAPI decryption"
+    -
+        Name: Edge Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of Edge Chromium SQLite DBs organized by version #. In testing, there were 3 previous versions of Edge Chromium separated into different folders"
 
 # Documentation
 # https://www.dataforensics.org/microsoft-edge-browser-forensics/

@@ -1,0 +1,15 @@
+Description: Process Commandline
+Category: LiveResponse
+Author: nov3mb3r
+Version: 1.0
+Id: 92039073-8cb7-4b82-86de-1911fd8e317a
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject Win32_Process | Select-Object Name,  ProcessId, CommandLine | Sort Name | Format-Table -Wrap"
+        ExportFormat: txt
+        ExportFile: processcmdline.txt
+
+# Documentation
+# https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-wmiobject?view=powershell-5.1

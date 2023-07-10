@@ -3,7 +3,7 @@ Category: Misc # Required, this value will be the name of the folder where the p
 Author: FirstName LastName # Make sure you get credit for your work
 Version: 1.0 # Required, iterate as necessary
 Id: 0256a455-1248-4e30-8175-727679189ddd # Required, unique GUID is required for every KAPE Target/Module
-BinaryUrl: https://url.goes.here.com # Required
+BinaryUrl: https://url.goes.here.com
 ExportFormat: csv # Required, this is the default ExportFormat in the instance the user chooses a format that is not listed below, or simply chooses Default within gkape
 WaitTimeout: 0 # Optional, this specifies the number of minutes KAPE should wait for a Module to finish
 FileMask: FileName.exe # You can list file.exe here or do something similar to this using RegEx: regex:(2019|DSC|Log).+\.(jpg|txt)

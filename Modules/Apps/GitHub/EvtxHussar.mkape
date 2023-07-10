@@ -1,0 +1,19 @@
+Description: EvtxHussar
+Category: EventLogs
+Author: Andrew Rathbun
+Version: 1.0
+Id: baeb5700-a62f-4b8f-b47a-3a9c8545cbe3
+BinaryUrl: https://github.com/yarox24/EvtxHussar/releases
+ExportFormat: csv
+Processors:
+    -
+        Executable: EvtxHussar\EvtxHussar.exe
+        CommandLine: -r %sourceDirectory% -f CSV -o %destinationDirectory% -d
+        ExportFormat: csv
+    -
+        Executable: EvtxHussar\EvtxHussar.exe
+        CommandLine: -r %sourceDirectory% -f JSON -o %destinationDirectory% -d
+        ExportFormat: json
+
+# Documentation
+# https://github.com/yarox24/EvtxHussar

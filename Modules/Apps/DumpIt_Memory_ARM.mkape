@@ -1,0 +1,15 @@
+Description: DumpIt Memory Acquisition for Windows ARM
+Category: Memory
+Author: Doug Metz
+Version: 1.2
+Id: 35094815-a594-415d-b48f-7437511ea3d1
+BinaryUrl: https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/
+ExportFormat: dmp
+Processors:
+    -
+        Executable: DumpIt_arm.exe
+        CommandLine: /O %destinationDirectory%\memdump.dmp /Q
+        ExportFormat: dmp
+
+# Documentation
+# The Comae Toolkit includes versions of DumpIt for x86, x64 and ARM. Rename the DumpIt.exe for ARM to DumpIt_arm.exe and save in /modules/bin

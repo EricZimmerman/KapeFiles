@@ -1,6 +1,6 @@
 Description: Double Commander
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: 80c608ac-0be4-4bbf-a09e-97d2f6cb90f4
 RecreateDirectories: true
 Targets:
@@ -22,6 +22,26 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\doublecmd\
         FileMask: 'doublecmd*.log'
         Comment: "Locates log files that'll be named with the following naming convention: doublecmd_2021-04-03.log."
+    -
+        Name: Double Commander - multiarc.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'multiarc.ini'
+    -
+        Name: Double Commander - session.ini
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'session.ini'
+    -
+        Name: Double Commander - pixmaps.txt
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'pixmaps.txt'
+    -
+        Name: Double Commander - shortcuts.scf
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\doublecmd\
+        FileMask: 'shortcuts.scf'
 
 # Documentation
 # Double Commander is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.

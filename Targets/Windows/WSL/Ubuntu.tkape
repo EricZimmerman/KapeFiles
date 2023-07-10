@@ -88,6 +88,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\rootfs\var\log\apt\
         Recursive: true
         FileMask: "*.log"
+    -
+        Name: Ubuntu WSL ext4.vhdx
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu*\LocalState\
+        FileMask: "ext4.vhdx"
 
 # Documentation
-# N/A
+# https://christopherkibble.com/posts/wsl-vhdx-recovery/

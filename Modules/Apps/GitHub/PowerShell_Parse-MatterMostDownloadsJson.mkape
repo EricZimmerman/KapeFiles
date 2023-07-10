@@ -1,0 +1,15 @@
+Description: Parse-MatterMostDownloadsJson.ps1 - Parses Downloads.json artifact for MatterMost
+Category: Downloads
+Author: Andrew Rathbun
+Version: 1.0
+Id: cb794d78-a91a-4119-95b5-3a3b844d3fbe
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Parse-MatterMostDownloadsJson.ps1
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Parse-MatterMostDownloadsJson.ps1' -folderPath '%sourceDirectory%' -outputPath %destinationDirectory%"
+        ExportFormat: csv
+
+# Documentation
+# https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Parse-MatterMostDownloadsJson.ps1

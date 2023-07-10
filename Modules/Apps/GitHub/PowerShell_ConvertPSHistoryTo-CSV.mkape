@@ -1,0 +1,17 @@
+Description: ConvertPSHistoryTo-CSV.ps1 - Export the ConsoleHost_history.txt file(s) into a single CSV file.
+Category: ProgramExecution
+Author: Thomas DIOT (Qazeer)
+Version: 1.0
+Id: bab1fd35-90f6-45b7-913b-32ac71b45ea7
+BinaryUrl: https://gist.github.com/Qazeer/a0c1c14bb1eae233c1147d1d9dfb3e93
+ExportFormat: CSV
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\ConvertPSHistoryTo-CSV.ps1' -InputDir '%sourceDirectory%' -Destination %destinationDirectory%"
+        ExportFormat: CSV
+
+# Documentation
+# https://gist.github.com/Qazeer/a0c1c14bb1eae233c1147d1d9dfb3e93
+# Convert ConsoleHost_history.txt files from the specified Source Directory into a single CSV file.
+# Original script and KAPE module to copy the ConsoleHost_history.txt files from Andrew Rathbun and Matt Arbaugh.

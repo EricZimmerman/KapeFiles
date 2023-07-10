@@ -13,4 +13,5 @@ Processors:
         ExportFile: SrumECmdConsoleLog.txt
 
 # Documentation
+# https://leanpub.com/eztoolsmanuals
 # https://github.com/EricZimmerman/Srum/blob/master/README.md will show you how to repair the SRUDB.dat prior to successfully parsing.

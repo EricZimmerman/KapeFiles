@@ -1,0 +1,18 @@
+Description: Nirsoft_AppResourcesUsageView Nirsoft
+Category: Databases
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: 917b36bd-ad2b-4910-a9ab-3b95aa2436a7
+BinaryUrl: https://www.nirsoft.net/utils/appresourcesusageview.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: AppResourcesUsageView.exe
+        CommandLine: \%sourceDirectory%\C\Windows\System32\SRU\SRUDB.dat /scomma %destinationDirectory%\Nirsoft_SRUDB_Results.csv
+        ExportFormat: csv
+
+# Documentation
+# extracts and displays the application resources usage information stored in the SRUDB.dat database of Windows 10 and Windows 11.
+# The application resources usage data is automatically collected by Windows operating systems and includes the following information: Record ID, Timestamp, Application, User, Cycle Time (Foreground/Background), Face Time, Context Switches (Foreground/Background), Bytes Read/Written (Foreground/Background), Read/Write Operations Count (Foreground/Background)
+# https://www.nirsoft.net/utils/app_resources_usage_view.html
+# Must set msource to users directory of triage to be parsed

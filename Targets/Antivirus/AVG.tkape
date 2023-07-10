@@ -1,6 +1,6 @@
 Description: AVG Antivirus Data
-Author: Kirtan Shah
-Version: 1.0
+Author: Kirtan Shah and Dhiral Panjwani
+Version: 1.1
 Id: b0a4112d-e7f6-4e47-a186-7459cf8b3ab4
 RecreateDirectories: true
 Targets:
@@ -24,6 +24,23 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\AVG\Antivirus\report
         Recursive: true
+    -
+        Name: AVG Persistent Logs
+        Category: Antivirus
+        Path: C:\ProgramData\AVG\Persistent Data\Antivirus\Logs
+        Recursive: true
+    -
+        Name: AVG FileInfo DB
+        Category: Antivirus
+        Path: C:\ProgramData\AVG\Antivirus
+        FileMask: FileInfo2.db
+        Recursive: true
+    -
+        Name: AVG lsdbj2 JSON
+        Category: Antivirus
+        Path: C:\ProgramData\AVG\Antivirus
+        FileMask: lsdb2.json
 
 # Documentation
 # https://businesshelp.avast.com/Content/Products/General_Help/LogLocations/BaseAntivirusLogs.htm
+# https://forensafe.com/blogs/windows_avg.html

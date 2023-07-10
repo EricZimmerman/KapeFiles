@@ -1,0 +1,15 @@
+Description: Extract Dns Cache via PowerShell
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: 8a0625dc-7f86-4c50-9daf-c99070b46ff2
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-DnsClientCache | Select-Object Entry, Name, Status, Type, TimeToLive, Data | Export-Csv -NoTypeInformation -Path %destinationDirectory%\DnsCache.csv "
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/dnsclient/get-dnsclientcache?view=windowsserver2022-ps
+# https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml - for Status code see the section Resource Record (RR) TYPEs

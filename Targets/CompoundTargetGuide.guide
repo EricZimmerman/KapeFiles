@@ -3,7 +3,7 @@ Description: Name of application/artifact here # Required, this will be visible 
 Author: Your name here # Required
 Version: 1.0 # Required, increment as revisions are made.
 Id: Unique GUID here # Required, generate within gKape by double clicking on a Target or Module, then click Generate GUID button at bottom of popup window, paste GUID here.
-RecreateDirectories: True # Required, true means the folder structure of the artifacts will be created within the user-specified Target Destination directory. If an artifact is buried 10 folders deep on the suspect's system, it will be buried 10 folders deep within the Target Destination folder.
+RecreateDirectories: true # Required, true means the folder structure of the artifacts will be created within the user-specified Target Destination directory. If an artifact is buried 10 folders deep on the suspect's system, it will be buried 10 folders deep within the Target Destination folder.
 Targets:
     -
         Name: CompoundTarget1 # Required
@@ -17,19 +17,19 @@ Targets:
     -
         Name: CompoundTarget3
         Category: Category
-        Path: CompoundTarget1.tkape
+        Path: CompoundTarget3.tkape
     -
         Name: CompoundTarget4
         Category: Category
-        Path: CompoundTarget2.tkape
+        Path: CompoundTarget4.tkape
     -
         Name: CompoundTarget5
         Category: Category
-        Path: CompoundTarget1.tkape
+        Path: CompoundTarget5.tkape
     -
         Name: CompoundTarget6
         Category: Category
-        Path: CompoundTarget2.tkape
+        Path: CompoundTarget6.tkape
 
 # Documentation
 # Include any and all documentation for your artifact, if any. If none, please include N/A instead. N/A is standard among all Targets without any documentation present and it makes it easy for one to search across all Targets that need documentation to be added.

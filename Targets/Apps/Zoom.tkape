@@ -8,21 +8,21 @@ Targets:
         Name: Zoom client logs
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Zoom\logs
-        Recursive: True
+        Recursive: true
         FileMask: "*"
         Comment: "Zoom client artifacts"
     -
         Name: Zoom client logs (Windows XP)
         Category: Apps
         Path: C:\Documents and Settings\%user%\Application Data\Zoom\
-        Recursive: True
+        Recursive: true
         FileMask: "*"
         Comment: "Zoom client artifacts (Windows XP)"
     -
         Name: Zoom client recordings
         Category: Apps
         Path: C:\Users\%user%\Documents\Zoom\
-        Recursive: True
+        Recursive: true
         FileMask: "*"
         Comment: "Zoom recording artifacts"
     -

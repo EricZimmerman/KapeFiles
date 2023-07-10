@@ -1,6 +1,6 @@
 Description: RDP Cache Files
 Author: Hadar Yudovich
-Version: 1.0
+Version: 1.1
 Id: 527a5de1-fb71-4efd-9701-89a30ea908e3
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,10 @@ Targets:
         Name: RDP Cache Files
         Category: FileSystem
         Path: C:\Users\%user%\AppData\Local\Microsoft\Terminal Server Client\Cache\
+    -
+        Name: Windows.old RDP Cache Files
+        Category: FileSystem
+        Path: C:\Windows.old\Users\%user%\AppData\Local\Microsoft\Terminal Server Client\Cache\
     -
         Name: RDP Cache Files
         Category: FileSystem

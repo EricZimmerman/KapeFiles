@@ -1,14 +1,14 @@
 Description: Use bstrings to GREP for IPv4 addresses
 Category: KeywordSearches
-Author: Chris Kudless
-Version: 1.1
+Author: Chris Kudless, Georg Lauenstein
+Version: 1.2
 Id: 86b15511-7b40-435f-a3a3-197ee32dc394
-BinaryUrl: https://github.com/EricZimmerman/bstrings
+BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/bstrings.zip
 ExportFormat: txt
 Processors:
     -
         Executable: bstrings.exe
-        CommandLine: -d %sourceDirectory%  %destinationDirectory% --lr ipv4 --ro
+        CommandLine: -d %sourceDirectory% -o '%destinationDirectory%' --lr ipv4 --ro
         ExportFormat: txt
         ExportFile: IPv4-Addresses.txt
 
@@ -17,4 +17,5 @@ Processors:
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # https://binaryforay.blogspot.com/search?q=bstrings
 # https://www.sans.org/posters/eric-zimmerman-tools-cheat-sheet/
+# https://leanpub.com/eztoolsmanuals
 # Can be used to generate a single list of IP addresses from one or multiple data sources. Create a copy of the output file, open the copy in your favorite text editor, sort alphabetically, deduplicate, delete any logging data from the output, and use your favorite IP Geolocate tool to ID noteworthy IPs.

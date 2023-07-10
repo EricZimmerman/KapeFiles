@@ -1,0 +1,18 @@
+Description: 'Events-Ripper: Events File'
+Category: EventLogs
+Author: Brian Maloney
+Version: 1.0
+Id: c05546e4-0caa-487e-8a65-cc52116d9b8c
+BinaryUrl: https://github.com/keydet89/Events-Ripper/archive/master.zip
+ExportFormat: txt
+FileMask: "*.evtx"
+Processors:
+    -
+        Executable: Events-Ripper\wevtx.bat
+        CommandLine: '%sourceFile% %destinationDirectory%\events.txt'
+        ExportFormat: txt
+
+# Documentation
+# https://github.com/keydet89/Events-Ripper
+# Create a folder "Events-Ripper" within the "Modules\bin" KAPE folder
+# unpack "zip archive" file into "Modules\bin\Events-Ripper"

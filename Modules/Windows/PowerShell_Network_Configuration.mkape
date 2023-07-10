@@ -1,0 +1,14 @@
+Description: Extract Network Configuration via PowerShell
+Category: LiveResponse
+Author: Vito Alfano
+Version: 1.0
+Id: 634139bf-238a-4891-95e9-5d1b9c4e137d
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE | Select Index, ServiceName, Description, MacAddress, @{Name='IpAddress';Expression={$_.IpAddress -join '; '}}, @{Name='DefaultIPGateway';Expression={$_.DefaultIPGateway -join '; '}}, DnsHostname, DnsDomain, DhcpEnabled, DhcpServer, DHCPLeaseObtained | Sort-Object Index | Export-Csv %destinationDirectory%\Network_Configuration.csv"
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netipconfiguration?view=windowsserver2022-ps

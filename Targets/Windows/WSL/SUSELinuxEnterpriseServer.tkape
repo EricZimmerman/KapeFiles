@@ -72,6 +72,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\
         Recursive: true
         FileMask: ".profile"
+    -
+        Name: SUSE Linux Enterprise Server WSL ext4.vhdx
+        Category: Windows Subsystem for Linux
+        Path: C:\Users\%user%\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\
+        FileMask: "ext4.vhdx"
 
 # Documentation
-# N/A
+# https://christopherkibble.com/posts/wsl-vhdx-recovery/

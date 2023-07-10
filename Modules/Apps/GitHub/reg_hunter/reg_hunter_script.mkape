@@ -1,0 +1,15 @@
+Description: Execute Reghunter Script module to find script files
+Category: Registry
+Author: Georg Lauenstein
+Version: 1.0
+Id: 44485205-d803-4fb3-b4b5-8fe050bb0cda
+BinaryUrl: https://github.com/theflakes/reg_hunter/
+ExportFormat: json
+Processors:
+    -
+        Executable: Reghunter\reg_hunter-64.exe
+        CommandLine: -a --script --outfile %destinationDirectory%\reg_hunter_script.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/theflakes/reg_hunter/

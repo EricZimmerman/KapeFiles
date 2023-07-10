@@ -1,0 +1,18 @@
+Description: Execute-Winlogbeat.ps1 - Recursively process the source directory to execute Winlogbeat once on all EVTX files found.
+Category: EventLogs
+Author: Thomas DIOT (Qazeer)
+Version: 1.0
+Id: e4ff9d06-2548-43b4-b037-7d7f1d37cfea
+BinaryUrl: https://gist.github.com/Qazeer/4936ec6c9fa511500f9496d0ceacab22
+ExportFormat: JSON
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Execute-Winlogbeat.ps1' -WinlogbeatBinary '%kapeDirectory%\\Modules\\bin\\Winlogbeat\\winlogbeat.exe' -InputDir '%sourceDirectory%' -OutputDir '%destinationDirectory%'"
+        ExportFormat: JSON
+
+# Documentation
+# Recursively process the source directory to execute Winlogbeat once on all EVTX files found.
+# Execute-Winlogbeat.ps1 is basically a wrapper to make Winlogbeat recursive, with out a predefined set of EVTX files to look for.
+# https://gist.github.com/Qazeer/4936ec6c9fa511500f9496d0ceacab22
+# Winlogbeat (https://www.elastic.co/fr/downloads/beats/winlogbeat) full folder must be placed under "%kapeDirectory%\Modules\bin\Winlogbeat".

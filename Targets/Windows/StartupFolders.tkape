@@ -1,0 +1,21 @@
+Description: Startup Folders
+Author: Jason Ballard
+Version: 1.0
+Id: 95408ecb-0adb-4a13-8b3d-a36e7f70b6b6
+RecreateDirectories: true
+Targets:
+    -
+        Name: User startup folders
+        Category: Persistence
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+    -
+        Name: System-wide startup folder
+        Category: Persistence
+        Path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+
+# Documentation
+# https://attack.mitre.org/techniques/T1547/001/
+# These programs will be executed under the context of the user and will have the account's associated permissions level.
+# This is a fairly common persistence mechanism
+# Placing a program or .lnk (shortcut) file in the System-wide startup folder will cause each program to execute when a user logs in, regardless of which user.
+# Placing a program or .lnk (shortcut) file in a user startup folder will cause that program to execute when that specific user logs in.

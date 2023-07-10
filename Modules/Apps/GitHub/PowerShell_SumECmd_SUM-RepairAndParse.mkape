@@ -1,0 +1,15 @@
+Description: Extract SUM data and repair with SumECmd
+Category: SUM
+Author: Matthew Arbaugh
+Version: 1.0
+Id: 92cc0f6c-4e41-4b1f-b250-4b016724f1c8
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/SUM-Repair.ps1
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\SUM-Repair.ps1' -TargetPath %sourceDirectory% -OutputPath %destinationDirectory% -Kape"
+        ExportFormat: csv
+
+# Documentation
+# Use this to make a copy of the SUM DB with PowerShell, repair with esentutl.exe, and extract SUM data with SumECmd
