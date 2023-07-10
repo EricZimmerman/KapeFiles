@@ -34,8 +34,19 @@ Targets:
         Category: Antivirus
         Path: C:\Windows.old\Windows\Temp\
         FileMask: MpCmdRun.log
+    -
+        Name: DetectionHistory
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Scans\History\Service\DetectionHistory\*\
+        Recursive: true
+    -
+        Name: Windows Defender Quarantine
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Quarantine\
+        Recursive: true
 
 # Documentation
 # https://knez.github.io/posts/how-to-extract-quarantine-files-from-windows-defender/
 # https://www.crowdstrike.com/blog/how-to-use-microsoft-protection-logging-for-forensic-investigations/
+# https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/README.md
 # https://forensafe.com/blogs/windows_defender.html
