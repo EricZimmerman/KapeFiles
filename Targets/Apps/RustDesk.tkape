@@ -1,6 +1,6 @@
 Description: RustDesk
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 849299a3-7d74-4006-bdfa-3525d7a2bd94
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,11 @@ Targets:
         Name: RustDesk logs
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\RustDesk\
+        Comment: "Collects all log files related to RustDesk"
+    -
+        Name: RustDesk logs
+        Category: Communications
+        Path: C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\RustDesk\log\server
         Comment: "Collects all log files related to RustDesk"
 
 # Documentation
