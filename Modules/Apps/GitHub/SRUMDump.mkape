@@ -8,7 +8,7 @@ ExportFormat: xlsx
 Processors:
     -
         Executable: srum_dump2.exe
-        CommandLine: --SRUM_INFILE %sourceDirectory%\Windows\System32\sru\SRUDB.dat --XLSX_OUTFILE %destinationDirectory%\sdrum_dump_result.xlsx --REG_HIVE %sourceDirectory%\Windows\System32\config\SOFTWARE --quiet 
+        CommandLine: --SRUM_INFILE %sourceDirectory%\Windows\System32\sru\SRUDB.dat --XLSX_OUTFILE %destinationDirectory%\sdrum_dump_result.xlsx --REG_HIVE %sourceDirectory%\Windows\System32\config\SOFTWARE --quiet
         ExportFormat: xlsx
 
 # Documentation
