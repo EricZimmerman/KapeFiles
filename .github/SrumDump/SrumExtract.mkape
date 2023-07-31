@@ -1,0 +1,16 @@
+Description: 'Extraction of the SRUM database'
+Category: SystemActivity
+Author: Vito Alfano
+Version: 1.0
+Id: 74ee622c-2fb2-11ee-be56-0242ac120002
+BinaryUrl: https://github.com/MarkBaggett/srum-dump/releases/download/2.5/srum_dump2.exe
+ExportFormat: xlsx
+Processors:  
+    -
+        Executable: srumdump/srum_dump2.exe
+        CommandLine: --SRUM_INFILE %sourceDirectory%\Windows\System32\sru\SRUDB.dat --XLSX_OUTFILE %destinationDirectory%\sdrum_dump_result.xlsx --REG_HIVE %sourceDirectory%\Windows\System32\config\SOFTWARE --quiet
+        ExportFormat: xlsx
+
+# Documentation
+# https://github.com/MarkBaggett/srum-dump
+# Remember to download srum_dump2.exe within Kape/Modules/bin/srumdump folder
