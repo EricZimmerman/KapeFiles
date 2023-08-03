@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: hayabusa\hayabusa.exe
-        CommandLine: csv-timeline --live_analysis --profile standard --min-level medium --quiet --UTC -o %destinationDirectory%\hayabusa_events_live_system.csv
+        CommandLine: csv-timeline --live-analysis --profile standard --min-level medium --quiet --UTC -o %destinationDirectory%\hayabusa_events_live_system.csv
         ExportFormat: csv
 
 # Documentation
