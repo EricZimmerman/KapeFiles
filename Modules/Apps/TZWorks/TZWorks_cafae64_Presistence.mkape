@@ -1,4 +1,4 @@
-Description: 'Using cafae64.exe to parse out Presistence Related Artifacts found in SOFTWARE, SYSTEM and User Hives from associated NTUSER.dat registry hive. The parser lists most of the key usually used by malicious applications to achieve persistence on hosts.'
+Description: 'Using cafae64.exe to parse out Persistence Related Artifacts found in SOFTWARE, SYSTEM and User Hives from associated NTUSER.dat registry hive. The parser lists most of the key usually used by malicious applications to achieve persistence on hosts.'
 Category: Registry_Artifacts
 Author: Ajith Ravindran
 Version: 0.1
@@ -11,7 +11,7 @@ Processors:
         Executable: cafae64.exe
         CommandLine: -hive %sourceFile% -persistence -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
-        ExportFile: Presistence_Parsed.csv
+        ExportFile: Persistence_Parsed.csv
         Append: true
 
 # Documentation
