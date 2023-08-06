@@ -1,0 +1,17 @@
+Description: 'Using usp64.exe to parse various artifacts generated on a Windows host whenever a plug and play device is connected on to the host.'
+Category: USB_Usage
+Author: Ajith Ravindran
+Version: 0.1
+Id: cda733f0-7bd1-4fec-81a5-330d179a0d01
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=13
+ExportFormat: csv
+Processors:
+    -
+        Executable: usp64.exe
+        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -enumdir %sourceDirectory% -num_subdirs 4 -filter "setupapi.dev.log|SYSTEM|SOFTWARE|NTUSER.DAT|system.evtx|Microsoft-Windows-DriverFrameworks-UserMode%4Operational.evtx|Microsoft-Windows-Kernel-PnP%4Configuration.evtx|Microsoft-Windows-Partition%4Diagnostic.evtx"
+        ExportFormat: csv
+        ExportFile: USBArtifacts_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

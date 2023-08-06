@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse Userassist from NTUSER.DAT. Userassist tracks execution of GUI based executables and links opened in Explorer '
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: b904f46a-25b4-42d9-bfd0-13680ee335bf
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -userassist -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Userassist_Parser.csv
+        Append: true
+
+# Documentation
+# N/A

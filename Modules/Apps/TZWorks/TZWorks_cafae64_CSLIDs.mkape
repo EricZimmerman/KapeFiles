@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse Class Identifiers (CSLIDs) from SOFTWARE registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 58287d3d-c6a4-451c-8dab-38e5c926ae5e
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SOFTWARE
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -clsid -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: CSLIDs_Parsed.csv
+
+# Documentation
+# N/A

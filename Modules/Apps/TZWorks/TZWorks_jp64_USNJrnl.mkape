@@ -1,0 +1,17 @@
+Description: 'Using jp64.exe to parse the Windows Journal File $USNJRNL:$J from the host.'
+Category: File_Accessed
+Author: Ajith Ravindran
+Version: 0.1
+Id: 46b6d413-86f1-4336-b28d-49e16e41032d
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=12
+ExportFormat: csv
+FileMask: $MFT
+Processors:
+    -
+        Executable: jp64.exe
+        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -a -file %sourceDirectory%\\$Extend\$J -mftfile %sourceFile%
+        ExportFormat: csv
+        ExportFile: USNJrnl_Parsed.csv
+
+# Documentation
+# N/A

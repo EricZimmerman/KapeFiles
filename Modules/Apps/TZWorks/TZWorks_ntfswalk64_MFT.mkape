@@ -1,0 +1,17 @@
+Description: 'Using ntfswalk64.exe to parse the Master File Table $MFT from the host.'
+Category: File_Accessed
+Author: Ajith Ravindran
+Version: 0.1
+Id: 2ead153f-47a3-4c44-9081-2635e8d7e5ce
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=12
+ExportFormat: csv
+FileMask: $MFT
+Processors:
+    -
+        Executable: ntfswalk64.exe
+        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -mftfile %sourceFile%
+        ExportFormat: csv
+        ExportFile: MFT_Parsed.csv
+
+# Documentation
+# N/A

@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse SYSTEM hive and extract the timezone information of the host'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 2c08affe-abd9-4c0c-b089-66367aeea667
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SYSTEM
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -timezone -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: System_Timezone.csv
+
+# Documentation
+# N/A

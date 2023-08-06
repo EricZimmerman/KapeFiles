@@ -1,0 +1,18 @@
+Description: 'Using tac64.exe to parse Windows Timeline ActivitiesCache files from C:\Users\<useracct>\AppData\Local\ConnectedDevicesPlatform\L.<useracct>\ActivitiesCache.db folder. The parsed output lists a history from the most recent tasks to a few weeks ago (up to 30 days) showing a chronology of actions taken by the user'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: e48e85b4-f3e2-4941-9a9e-79299cf57647
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=41
+ExportFormat: csv
+FileMask: ActivitiesCache.db
+Processors:
+    -
+        Executable: tac64.exe
+        CommandLine: -db %sourceFile% -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: ActivitiesCache_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

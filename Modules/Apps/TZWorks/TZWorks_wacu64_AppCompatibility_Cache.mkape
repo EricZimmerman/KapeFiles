@@ -1,0 +1,18 @@
+Description: 'Using wacu64.exe to parse ShimCache/AppCompat Cache from the host. Application Compatibility Cache is used by the Windows to provide backward compatibility so that legacy applications can run on the newer version of the OS. Artifact confirms presence of an executable on the host, but it may or may not be executed.'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 96dfc2f5-8027-45eb-ac57-db5584b2d2fb
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=29
+ExportFormat: csv
+FileMask: SYSTEM
+Processors:
+    -
+        Executable: wacu64.exe
+        CommandLine: -hive %sourceFile% -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: AppCompatibility_Cache_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

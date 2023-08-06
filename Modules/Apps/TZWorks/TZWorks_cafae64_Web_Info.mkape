@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse out Searching/Browsing related Artifacts found in User Hives and SOFTWARE Hives'
+Category: Browser_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 0a2ec0cf-a559-4225-b04e-decc2c668820
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: (NTUSER.DAT|SOFTWARE)
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -web -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Web_Info_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

@@ -1,0 +1,17 @@
+Description: 'Using evtwalk64.exe to parse Windows Event Logs from C:\Windows\System32\winevt\logs\ folder to extract Clock changes/time update related events'
+Category: Win_EventLogs
+Author: Ajith Ravindran
+Version: 0.1
+Id: b2d3e22e-9ce9-4dae-851a-59ed1281606d
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=25
+FileMask: Security.evtx
+ExportFormat: csv
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceFile% -time -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: EventLogs_Parsed_TimeUpdate.csv
+
+# Documentation
+# N/A

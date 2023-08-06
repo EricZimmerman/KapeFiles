@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse information about the devices on the system from SYSTEM registry hive (HKLM\SYSTEM\CurrentControlSet\Enum)'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: d71417fd-d876-43e1-a6de-f5f0da38d81c
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SYSTEM
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -devices -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Devices_Parsed.csv
+
+# Documentation
+# N/A

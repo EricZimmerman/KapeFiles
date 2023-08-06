@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse NTUSER.DAT hive and extract information related to the application used to open a file with a specific extension.'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 19db48b2-091d-4179-901c-67d61b702ae0
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -open_with  -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: OpenWith_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

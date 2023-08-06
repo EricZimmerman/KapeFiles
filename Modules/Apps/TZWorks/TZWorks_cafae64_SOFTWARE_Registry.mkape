@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse all available artifacts from SOFTWARE registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: f9aa63d4-8058-4e58-aae8-073ce621fab8
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SOFTWARE
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -all_software -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: SOFTWARE_Registry_Parsed.csv
+
+# Documentation
+# N/A

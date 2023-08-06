@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse out Run keys found in SOFTWARE Hives. Run keys are usually used by malicious applications to achieve persistence on hosts.'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: f08a4f58-230b-4ad5-a364-8a5093bf0898
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SOFTWARE
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -runkeys -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Runkeys_Parsed.csv
+
+# Documentation
+# N/A

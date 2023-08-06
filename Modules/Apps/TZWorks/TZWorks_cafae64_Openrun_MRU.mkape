@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse Last Visited MRU from NTUSER.DAT'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 11aab96d-8bdd-46c0-93a1-0a61e7148363
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -openrun_mru -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Openrun_MRU.csv
+        Append: true
+
+# Documentation
+# N/A

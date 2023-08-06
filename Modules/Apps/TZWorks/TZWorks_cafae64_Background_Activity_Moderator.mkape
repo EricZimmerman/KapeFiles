@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse Background/Desktop Activity Moderator keys from the host'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: a64c09d5-9f5c-41c1-9ca2-219ac3211c88
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SYSTEM
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -bam -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Background_Activity_Moderator_Parsed.csv
+
+# Documentation
+# N/A

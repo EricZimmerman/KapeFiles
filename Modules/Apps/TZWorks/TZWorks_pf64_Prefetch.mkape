@@ -1,0 +1,17 @@
+Description: 'Using pf64.exe to parse Prefetch files from C:\Windows\Prefetch folder. Prefetch files, while tracking GUI AND Command Line based executions; it captures the number times the application was executed, last 8 timestamps of executions and the files and directories accessed by the application for upto 1st 10 seconds'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 3e90ee36-7b19-4787-a8af-438d15e6e417
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=1
+ExportFormat: csv
+Processors:
+    -
+        Executable: pf64.exe
+        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -pf_path -enumdir %sourceDirectory% -num_subdirs 2 -filter "*.pf"
+        ExportFormat: csv
+        ExportFile: Prefetch_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

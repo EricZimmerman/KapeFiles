@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse MUICache from USRCLASS.DAT'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 5721a241-43fb-433f-92f1-be7d21d43da2
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: USRCLASS.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -muicache -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: MUIcache_Parser.csv
+        Append: true
+
+# Documentation
+# N/A

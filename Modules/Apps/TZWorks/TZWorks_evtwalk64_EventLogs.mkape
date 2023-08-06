@@ -1,0 +1,18 @@
+Description: 'Using evtwalk64.exe to parse Windows Event Logs from C:\Windows\System32\winevt\logs\ folder'
+Category: Win_EventLogs
+Author: Ajith Ravindran
+Version: 0.1
+Id: e05a0444-912e-4488-8f8b-b6048a3d8b0c
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=25
+FileMask: (*.evtx)
+ExportFormat: csv
+Processors:
+    -
+        Executable: evtwalk64.exe
+        CommandLine: -log %sourceFile% -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: EventLogs_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

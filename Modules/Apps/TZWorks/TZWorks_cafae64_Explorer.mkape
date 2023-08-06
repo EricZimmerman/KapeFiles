@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse Desktop related keys (Explorer) related information from SOFTWARE registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 69c174c5-3593-4e3f-a5b4-d7d4c80762ed
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SOFTWARE
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -explorer -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Explorer_Parsed.csv
+
+# Documentation
+# N/A

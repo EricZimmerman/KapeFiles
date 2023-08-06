@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse all available artifacts from NTUSER.DAT and USRCLASS.DAT registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 59e955a4-360c-43f4-ba86-fc611b5bc03c
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: (NTUSER.DAT|USRCLASS.DAT)
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -all_user -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: USER_Registry_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

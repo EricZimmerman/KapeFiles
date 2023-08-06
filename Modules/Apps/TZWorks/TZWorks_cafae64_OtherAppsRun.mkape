@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse and list recently executed applications from Users NTUSER.DAT registry hive'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 990d2bc9-1282-4f93-b303-655905851a8d
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -otherapps_run -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: OtherAppsRun.csv
+        Append: true
+
+# Documentation
+# N/A

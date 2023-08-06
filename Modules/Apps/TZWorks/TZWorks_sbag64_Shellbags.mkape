@@ -1,0 +1,18 @@
+Description: 'Using sbag64.exe to parse Shellbags from NTUSER.DAT and USRCLASS.DAT. Shellbags can be used to identify files accessed, deleted by the user; storage devices - internal, external or network - where the remote folders were located. The ShellNoRoam\BagXxx key(s) has data for local folders, and the Shell\BagXxx key(s) has data for the remote folders.'
+Category: File_Accessed
+Author: Ajith Ravindran
+Version: 0.1
+Id: 52b151d4-cf93-4616-8e88-b9efe05aee91
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: (NTUSER.DAT|USRCLASS.DAT)
+ExportFormat: csv
+Processors:
+    -
+        Executable: sbag64.exe
+        CommandLine: -hive %sourceFile% -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Shellbags_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

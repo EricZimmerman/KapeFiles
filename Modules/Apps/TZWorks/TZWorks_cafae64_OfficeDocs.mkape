@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse NTUSER.DAT hive and extract information from keys associated with Office Documents'
+Category: File_Accessed
+Author: Ajith Ravindran
+Version: 0.1
+Id: d29e4ef5-900f-4cb5-a245-b4fe3cedf83d
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -office_docs  -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: OfficeDocs_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse RecentDocs from NTUSER.DAT'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 08507dbb-7a81-4097-aca2-06e76e116496
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -recent_docs -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Recent_Docs_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

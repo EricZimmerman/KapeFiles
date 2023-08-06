@@ -1,0 +1,16 @@
+Description: 'Using lp64.exe to parse Windows Shortcut files from %APPDATA%\Microsoft\Windows\Recent\ folder. .LNK files can be used to determine the 1st and last time a file or folder was accessed; .LNK files also track the Machine ID and MAC address on the host where the LNK file was created along with the drive type and the drive serial number.'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 9382dfec-555e-409a-bc8f-99144bcd5ac6
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=20
+ExportFormat: csv
+Processors:
+    -
+        Executable: lp64.exe
+        CommandLine: -cmdfile -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -enumdir %sourceDirectory% -num_subdirs 7 -filter "*.lnk"
+        ExportFormat: csv
+        ExportFile: Shortcuts_Parsed.csv
+
+# Documentation
+# N/A

@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse out System Restore Related Artifacts found in SOFTWARE and SYSTEM Hives'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: a5530924-7ddb-4a50-b5b4-2496093ceac7
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: (SYSTEM|SOFTWARE)
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -restore -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: System_Restore_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

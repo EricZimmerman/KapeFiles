@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse all available artifacts from SAM registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 4fd35c85-df08-4bdd-8a1c-b803083ec953
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SAM
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -all_sam -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: SAM_Registry_Parsed.csv
+
+# Documentation
+# N/A

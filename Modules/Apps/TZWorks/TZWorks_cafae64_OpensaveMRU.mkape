@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse NTUSER.DAT hive to rather the recently opened or saved files from an "Open/Save As" shell dialog box'
+Category: File_Accessed
+Author: Ajith Ravindran
+Version: 0.1
+Id: 3c2ce769-ed17-4551-b234-7dd458269f37
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: NTUSER.DAT
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -opensave_mru -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: OpensaveMRU_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

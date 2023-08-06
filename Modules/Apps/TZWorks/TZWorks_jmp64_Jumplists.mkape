@@ -1,0 +1,18 @@
+Description: 'Using jmp64.exe to parse Windows Jumplists from %APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations and %APPDATA%\Microsoft\Windows\Recent\CustomDestinations. Jumplists provides an indication of recent items accessed by each application.'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: 43789728-fc3e-4695-980d-29a46e04ff0b
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=20
+FileMask: regex:(*.automaticDestinations-ms|*.customDestinations-ms)
+ExportFormat: csv
+Processors:
+    -
+        Executable: jmp64.exe
+        CommandLine: -cmdfile -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -enumdir %sourceDirectory% -num_subdirs 8 -filter "*.automaticDestinations-ms|*.customDestinations-ms"
+        ExportFormat: csv
+        ExportFile: Jumplists_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

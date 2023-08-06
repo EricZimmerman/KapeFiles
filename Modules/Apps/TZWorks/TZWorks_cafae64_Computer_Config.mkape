@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse Computer configurations from SOFTWARE, SYSTEM and User (NTUSER.DAT and USRCLASS.DAT) registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 6c3fc9c9-4c95-475d-b354-d7007f3910ae
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: (SOFTWARE|SYSTEM|NTUSER.DAT|USRCLASS.DAT)
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -computer -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Computer_Config_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A

@@ -1,0 +1,17 @@
+Description: 'Using mala64.exe to parse the Windows NTFS file systems transactional log $LogFile from the host.'
+Category: File_Accessed
+Author: Ajith Ravindran
+Version: 0.1
+Id: 23b0b934-b01e-4b73-83cb-3eea74dc5e91
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=46
+ExportFormat: csv
+FileMask: $MFT
+Processors:
+    -
+        Executable: mala64.exe
+        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -log %sourceDirectory%\\$LogFile  -mftfile %sourceFile%
+        ExportFormat: csv
+        ExportFile: Logfile_Parsed.csv
+
+# Documentation
+# N/A

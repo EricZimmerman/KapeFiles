@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse Codecs from SOFTWARE registry hive'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: c04e9e74-486e-4876-9580-171fa31ec20f
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SOFTWARE
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -codecs -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: CODECS_Parsed.csv
+
+# Documentation
+# N/A

@@ -1,0 +1,17 @@
+Description: 'Using cafae64.exe to parse out Shimcache related artifacts from the SYSTEM Hives'
+Category: Program_Execution
+Author: Ajith Ravindran
+Version: 0.1
+Id: f1c2c8a8-8fe8-4a92-b668-125b3d06d804
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: SYSTEM
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -shimcache -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Shimcache_Parsed.csv
+
+# Documentation
+# N/A

@@ -1,0 +1,18 @@
+Description: 'Using cafae64.exe to parse out information about each service on the system, stored in SOFTWARE and SYSTEM Hives'
+Category: Registry_Artifacts
+Author: Ajith Ravindran
+Version: 0.1
+Id: 67f9b054-ed69-493b-906b-455d6efd8776
+BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=19
+FileMask: (SYSTEM|SOFTWARE)
+ExportFormat: csv
+Processors:
+    -
+        Executable: cafae64.exe
+        CommandLine: -hive %sourceFile% -services -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        ExportFormat: csv
+        ExportFile: Services_Parsed.csv
+        Append: true
+
+# Documentation
+# N/A
