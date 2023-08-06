@@ -11,4 +11,6 @@ Processors:
         CommandLine: -cmdfile -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -enumdir %sourceDirectory% -num_subdirs 7 -filter "*.lnk"
         ExportFormat: csv
         ExportFile: Shortcuts_Parsed.csv
-##
+
+# Documentation
+# N/A

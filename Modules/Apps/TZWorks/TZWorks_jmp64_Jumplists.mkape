@@ -13,4 +13,6 @@ Processors:
         ExportFormat: csv
         ExportFile: Jumplists_Parsed.csv
         Append: true
-##
+
+# Documentation
+# N/A

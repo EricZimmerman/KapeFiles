@@ -12,4 +12,6 @@ Processors:
         CommandLine: -hive %sourceFile% -devices -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
         ExportFile: Devices_Parsed.csv
-##
+
+# Documentation
+# N/A

@@ -12,4 +12,6 @@ Processors:
         ExportFormat: csv
         ExportFile: USBArtifacts_Parsed.csv
         Append: true
-##
+
+# Documentation
+# N/A

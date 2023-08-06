@@ -12,4 +12,6 @@ Processors:
         CommandLine: -hive %sourceFile% -installed_sw -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
         ExportFile: Installed_SW_Parsed.csv
-##
+
+# Documentation
+# N/A

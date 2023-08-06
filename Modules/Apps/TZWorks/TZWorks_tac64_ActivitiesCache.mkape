@@ -13,4 +13,6 @@ Processors:
         ExportFormat: csv
         ExportFile: ActivitiesCache_Parsed.csv
         Append: true
-##
+
+# Documentation
+# N/A

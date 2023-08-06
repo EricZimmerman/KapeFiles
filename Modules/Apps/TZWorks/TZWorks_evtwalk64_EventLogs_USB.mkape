@@ -13,4 +13,6 @@ Processors:
         ExportFormat: csv
         ExportFile: EventLogs_Parsed_USB.csv
         Append: true
-##
+
+# Documentation
+# N/A

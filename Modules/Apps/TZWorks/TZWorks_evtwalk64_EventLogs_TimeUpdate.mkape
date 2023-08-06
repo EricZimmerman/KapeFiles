@@ -12,4 +12,6 @@ Processors:
         CommandLine: -log %sourceFile% -time -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
         ExportFile: EventLogs_Parsed_TimeUpdate.csv
-##
+
+# Documentation
+# N/A

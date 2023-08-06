@@ -13,4 +13,6 @@ Processors:
         ExportFormat: csv
         ExportFile: Userassist_Parser.csv
         Append: true
-##
+
+# Documentation
+# N/A

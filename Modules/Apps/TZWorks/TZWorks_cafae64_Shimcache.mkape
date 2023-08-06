@@ -12,4 +12,6 @@ Processors:
         CommandLine: -hive %sourceFile% -shimcache -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
         ExportFile: Shimcache_Parsed.csv
-##
+
+# Documentation
+# N/A

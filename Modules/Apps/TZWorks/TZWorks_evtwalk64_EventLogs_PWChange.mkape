@@ -12,4 +12,6 @@ Processors:
         CommandLine: -log %sourceFile% -pw -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
         ExportFile: EventLogs_Parsed_PWChange.csv
-##
+
+# Documentation
+# N/A

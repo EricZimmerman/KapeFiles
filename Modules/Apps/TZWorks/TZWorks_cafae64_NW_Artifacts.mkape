@@ -14,4 +14,6 @@ Processors:
         ExportFile: NW_Artifacts_Parsed.csv
         Append: true
 
-##
+
+# Documentation
+# N/A
