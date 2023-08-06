@@ -4,7 +4,7 @@ Author: Ajith Ravindran
 Version: 0.1
 Id: 43789728-fc3e-4695-980d-29a46e04ff0b
 BinaryUrl: https://tzworks.com/prototype_page.php?proto_id=20
-#FileMask: regex:(*.automaticDestinations-ms|*.customDestinations-ms)
+FileMask: regex:(*.automaticDestinations-ms|*.customDestinations-ms)
 ExportFormat: csv
 Processors:
     -

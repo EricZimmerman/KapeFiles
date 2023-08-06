@@ -9,7 +9,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: cafae64.exe
-        CommandLine:  -hive %sourceFile% -services -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
+        CommandLine: -hive %sourceFile% -services -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace
         ExportFormat: csv
         ExportFile: Services_Parsed.csv
         Append: true

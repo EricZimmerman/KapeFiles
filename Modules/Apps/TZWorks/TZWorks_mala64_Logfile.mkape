@@ -9,7 +9,7 @@ FileMask: $MFT
 Processors:
     -
         Executable: mala64.exe
-        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -log %sourceDirectory%\\$LogFile  -mftfile %sourceFile% 
+        CommandLine: -csv -dateformat dd-mm-yyyy -pair_datetime -no_whitespace -log %sourceDirectory%\\$LogFile  -mftfile %sourceFile%
         ExportFormat: csv
         ExportFile: Logfile_Parsed.csv
 
