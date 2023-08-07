@@ -57,6 +57,10 @@ Targets:
         Category: Logs
         Path: SUM.tkape
     -
+        Name: WER
+        Category: WER
+        Path: WER.tkape
+    -
         Name: ThumbCache
         Category: FileKnowledge
         Path: Thumbcache.tkape
