@@ -1,6 +1,6 @@
-Description: Windows Server DNS
+Description: Windows Server
 Author: Zawadi Done
-Version: 1.0
+Version: 1.1
 Id: 2f6dc2b4-cbdf-4a11-807d-da2f885daafd
 RecreateDirectories: true
 Targets:
@@ -14,6 +14,11 @@ Targets:
         Name: DNS files
         Category: DNS
         Path: C:\Windows\System32\dns\
+        Recursive: true
+    -
+        Name: DHCP files
+        Category: DHCP
+        Path: C:\Windows\System32\dhcp
         Recursive: true
 
 # Documentation
