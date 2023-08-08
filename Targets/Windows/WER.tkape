@@ -10,6 +10,11 @@ Targets:
         Path: C:\ProgramData\Microsoft\Windows\WER\
         Recursive: true
     -
+        Name: WER Files
+        Category: Executables
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WER\
+        Recursive: true
+    -
         Name: Crash Dumps
         Category: SQL Exploitation
         Path: C:\Users\%user%\AppData\Local\CrashDumps\
