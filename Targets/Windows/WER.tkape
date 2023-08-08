@@ -1,6 +1,6 @@
 Description: Windows Error Reporting
 Author: Troy Larson
-Version: 1.0
+Version: 1.1
 Id: 03106a1c-e1f8-4075-abdb-f9c83078347d
 RecreateDirectories: true
 Targets:
