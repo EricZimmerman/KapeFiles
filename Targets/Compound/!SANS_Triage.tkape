@@ -1,6 +1,6 @@
 Description: SANS Triage Collection
 Author: Mark Hallman
-Version: 1.3
+Version: 1.4
 Id: 1bfbd59d-6c58-4eeb-9da7-1d9612b79964
 RecreateDirectories: true
 Targets:
