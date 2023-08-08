@@ -17,6 +17,10 @@ Targets:
         Category: WindowsLogs
         Path: CombinedLogs.tkape
     -
+        Name: GroupPolicy
+        Category: GroupPolicy
+        Path: GroupPolicy.tkape
+    -
         Name: EvidenceOfExecution
         Category: EvidenceOfExecution
         Path: EvidenceOfExecution.tkape
