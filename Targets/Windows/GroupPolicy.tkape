@@ -1,14 +1,24 @@
 Description: Current Group Policy Enforcement
 Author: piesecurity
-Version: 1.0
+Version: 1.1
 Id: e5595e9c-ebab-41db-a688-fdffe91f6fcb
 RecreateDirectories: true
 Targets:
     -
-        Name: Local Group Policy INI Files
+        Name: Group Policy Files
         Category: Communication
         Path: C:\Windows\System32\grouppolicy\
-        FileMask: '*.ini'
+        Recursive: true
+    -
+        Name: Computer Group Policy files
+        Category: Communication
+        Path: C:\ProgramData\Microsoft\Group Policy\History\
+        Recursive: true
+    -
+        Name: User Group Policy files
+        Category: Communication
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Group Policy\History
+        Recursive: true
     -
         Name: Local Group Policy INI Files
         Category: Communication
@@ -37,3 +47,4 @@ Targets:
 
 # Documentation
 # https://medium.com/@grzegorztworek/gpo-group-policy-object-is-one-of-the-most-useful-features-of-the-windows-ecosystem-73b6eeab812
+# https://learn.microsoft.com/en-us/troubleshoot/windows-server/group-policy/remove-this-item-if-it-is-no-longer-applied-option
