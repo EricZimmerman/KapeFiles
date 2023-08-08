@@ -13,7 +13,7 @@ Targets:
         Name: Windows log files
         Category: Misc
         Path: C:\system32\logfiles\*\
-        Filemask: '*.txt'
+        FileMask: '*.txt'
         Recursive: true
     -
         Name: Network setting files
