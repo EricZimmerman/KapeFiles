@@ -1,6 +1,6 @@
 Description: VNC Logs
 Author: Phill Moore
-Version: 1.1
+Version: 1.2
 Id: b98dab2e-81f3-472e-a22a-05269ad16270
 RecreateDirectories: true
 Targets:
@@ -11,10 +11,22 @@ Targets:
         FileMask: vncserver.log
         Comment: "https://www.realvnc.com/en/connect/docs/logging.html#logging"
     -
+        Name: RealVNC Log
+        Category: ApplicationLogs
+        Path: C:\ProgramData\RealVNC-Service
+        FileMask: vncserver.log
+        Comment: "https://help.realvnc.com/hc/en-us/articles/360002254238-All-About-Logging-"
+    -
         Name: RealVNC Application Logs
         Category: EventLogs
         Path: ApplicationEvents.tkape
         Comment: "Contains RealVNC entries, event source: VNC Server"
+    -
+        Name: TightVNC Application Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\TightVNC\Server\Logs
+        Comment: "https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1160&context=adf"
+
 
 # Documentation
 # https://www.semanticscholar.org/paper/Tracing-VNC-And-RDP-Protocol-Artefacts-on-Windows-Kerai/20467cee88102cffcc2b856b93fc0bb7a58fd499
