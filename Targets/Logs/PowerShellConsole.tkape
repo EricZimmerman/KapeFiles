@@ -8,10 +8,11 @@ Targets:
         Name: PowerShell Console Log
         Category: PowerShellConsoleLog
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
-        FileMask: ConsoleHost_history.txt
+        FileMask: '*_history.txt'
 
 # Documentation
 # https://community.sophos.com/malware/b/blog/posts/powershell-command-history-forensics
 # https://darizotas.blogspot.com/2018/10/forensics-powershell-artifacts.html
 # https://digital-forensics.sans.org/media/DFPS_FOR508_v4.4_1-19.pdf
 # https://www.forensafe.com/blogs/powershell.html
+# https://learn.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.3#command-history
