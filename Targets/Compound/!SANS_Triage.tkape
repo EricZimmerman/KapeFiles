@@ -73,6 +73,10 @@ Targets:
         Category: WBEM
         Path: WBEM.tkape
     -
+        Name: BITS
+        Category: BITS
+        Path: BITS.tkape
+    -
         Name: WebBrowsers
         Category: Communications
         Path: WebBrowsers.tkape
