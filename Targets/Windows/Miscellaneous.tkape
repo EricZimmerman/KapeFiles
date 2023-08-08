@@ -1,0 +1,25 @@
+Description: Windows Miscellaneous
+Author: Zawadi Done
+Version: 1.0
+Id: aeacb435-8929-4414-b1ee-24d4f7273ea5
+RecreateDirectories: true
+Targets:
+    -
+        Name: Error logging
+        Category: Misc
+        Path: C:\windows\
+        FileMask: PFRO.log
+    -
+        Name: Windows log files
+        Category: Misc
+        Path: C:\system32\logfiles\*\
+        Filemask: '*.txt'
+        Recursive: true
+    -
+        Name: Network setting files
+        Category: Misc
+        Path: C:\system32\drivers\etc
+        Recursive: true
+
+# Documentation
+# N/A
