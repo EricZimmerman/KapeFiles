@@ -1,4 +1,4 @@
-Description: Gathers Basic System Information Using Powershell (Replacing the command net)
+Description: Gathers Basic System Information Using PowerShell (Replacing the command net)
 Category: LiveResponse
 Author: Vito Alfano & piesecurity
 Version: 1.1
@@ -6,11 +6,11 @@ Id: 0b43fe8e-a9aa-42ae-8de6-5ccfb772bdc9
 ExportFormat: csv
 Processors:
     -
-        Executable: Powershell_User_List.mkape
+        Executable: PowerShell_User_List.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Powershell_Local_Group_List.mkape
+        Executable: PowerShell_Local_Group_List.mkape
         CommandLine: ""
         ExportFormat: ""
     -
@@ -22,18 +22,18 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Powershell_SMBOpenFile.mkape
+        Executable: PowerShell_SMBOpenFile.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Powershell_SMBSession.mkape
+        Executable: PowerShell_SMBSession.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Powershell_SMBMapping.mkape
+        Executable: PowerShell_SMBMapping.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: Powershell_Services_List.mkape
+        Executable: PowerShell_Services_List.mkape
         CommandLine: ""
         ExportFormat: ""
