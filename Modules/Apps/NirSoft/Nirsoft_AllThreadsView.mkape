@@ -3,7 +3,7 @@ Category: LiveResponse
 Author: Pedro Sanchez Cordero (conexioninversa)
 Version: 1.0
 Id: 612d92e7-c80f-41c4-b47d-ca7a1456117a
-BinaryUrl: https://www.nirsoft.net/utils/allthreadsview-x64.zip
+BinaryUrl: https://www.nirsoft.net/utils/allthreadsview-x64.zip 
 ExportFormat: csv
 Processors:
     -
