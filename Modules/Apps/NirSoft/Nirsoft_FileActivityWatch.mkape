@@ -1,0 +1,16 @@
+Description: FileActivityWatch is a tool for Windows that displays information about every read/write/delete operation of files occurs on your system. For every file, FileActivityWatch displays the number of read/write bytes, number of read/write/delete operations, first and last read/write timestamp, and the name/ID of the process responsible for the file operation.
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: b766fc10-179e-431b-a3bd-062537dfd294
+BinaryUrl: https://www.nirsoft.net/utils/fileactivitywatch-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: FileActivityWatch.exe
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_FileActivityWatch.csv
+        ExportFormat: csv
+
+# Documentation
+# tool for Windows that displays information about every read/write/delete operation of files occurs on your system. For every file, FileActivityWatch displays the number of read/write bytes, number of read/write/delete operations, first and last read/write timestamp, and the name/ID of the process responsible for the file operation.
+# https://www.nirsoft.net/utils/file_activity_watch.html
