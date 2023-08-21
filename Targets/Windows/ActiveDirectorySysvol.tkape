@@ -1,14 +1,9 @@
-Description: Active Directory
+Description: Active Directory Sysvol
 Author: Zawadi Done
 Version: 1.0
-Id: 18335b99-64bb-4888-8c24-c895b6cd239d
+Id: fa98e781-d828-4076-9721-dfbfde4d7739
 RecreateDirectories: true
 Targets:
-    -
-        Name: NTDS
-        Category: Active Directory
-        Path: C:\Windows\NTDS
-        Recursive: true
     -
         Name: SYSVOL
         Category: Active Directory
@@ -16,6 +11,5 @@ Targets:
         Recursive: true
 
 # Documentation
-# https://www.netwrix.com/ntds_dit_security_active_directory.html
 # https://www.thehacker.recipes/ad/movement/credentials/dumping/ntds
 # https://www.minitool.com/lib/sysvol.html

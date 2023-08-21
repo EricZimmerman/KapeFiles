@@ -1,0 +1,14 @@
+Description: Active Directory NTDS
+Author: Zawadi Done
+Version: 1.1
+Id: 18335b99-64bb-4888-8c24-c895b6cd239d
+RecreateDirectories: true
+Targets:
+    -
+        Name: NTDS
+        Category: Active Directory
+        Path: C:\Windows\NTDS
+        Recursive: true
+
+# Documentation
+# https://www.thehacker.recipes/ad/movement/credentials/dumping/ntds
