@@ -1,4 +1,4 @@
-Description: WinDefThreatsView is tool for Windows 10 that displays the list of all threats detected by Windows Defender Antivirus and allows you to easily set the default action (Allow, Quarantine, Clean, Remove, Block, or No Action) for multiple threats at once
+Description: WinDefThreatsView is a tool for Windows 10 that displays the list of all threats detected by Windows Defender Antivirus and allows you to set the default action easily (Allow, Quarantine, Clean, Remove, Block, or No Action) for multiple threats at once
 Category: EventLogs
 Author: Pedro Sanchez Cordero (conexioninversa)
 Version: 1.0
