@@ -1,0 +1,15 @@
+Description: Active Directory Sysvol
+Author: Zawadi Done
+Version: 1.0
+Id: fa98e781-d828-4076-9721-dfbfde4d7739
+RecreateDirectories: true
+Targets:
+    -
+        Name: SYSVOL
+        Category: Active Directory
+        Path: C:\Windows\SYSVOL
+        Recursive: true
+
+# Documentation
+# https://www.thehacker.recipes/ad/movement/credentials/dumping/ntds
+# https://www.minitool.com/lib/sysvol.html
