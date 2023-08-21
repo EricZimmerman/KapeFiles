@@ -1,4 +1,4 @@
-Description: Active Directory
+Description: Active Directory NTDS
 Author: Zawadi Done
 Version: 1.0
 Id: 18335b99-64bb-4888-8c24-c895b6cd239d
@@ -8,11 +8,6 @@ Targets:
         Name: NTDS
         Category: Active Directory
         Path: C:\Windows\NTDS
-        Recursive: true
-    -
-        Name: SYSVOL
-        Category: Active Directory
-        Path: C:\Windows\SYSVOL
         Recursive: true
 
 # Documentation
