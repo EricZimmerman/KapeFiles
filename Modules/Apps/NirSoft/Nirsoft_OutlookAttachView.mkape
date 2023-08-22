@@ -1,0 +1,15 @@
+Description: OutlookAttachView scans all messages stored in your Outlook, and displays the list of all attached files that it finds. You can easily select one or more attachments and save all of them into the desired folder, as well as you can delete unwanted large attachments that take too much disk space in your mailbox
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: 4f79e886-44fd-454d-a6f1-a6662b0c2adf
+BinaryUrl: https://www.nirsoft.net/utils/outlookattachview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: OutlookAttachView.exe
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_OutlookAttachView.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/outlook_attachment.html
