@@ -1,0 +1,15 @@
+Description: Scans your Outlook mailbox, and display a general statistics about the users that you communicate via emails. For each user/email, the following information is displayed The number of outgoing messages that you sent to the user (separated by to/cc/bcc), the number of incoming message that the user sent to you, the total size of messages sent by the user, the email client software used by this user, and the time range that you send/received emails with the specified user
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: bc72b840-08e9-4763-aaf6-7e9de3c013c2
+BinaryUrl: https://www.nirsoft.net/utils/outlookstatview-x64.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: OutlookStatView .exe
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_OutlookStatView.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/outlook_statistics.html

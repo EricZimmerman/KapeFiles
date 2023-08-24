@@ -1,0 +1,20 @@
+Description: Tool to LolDriverScan is a GoLang tool that allows users to discover vulnerable drivers on their system. This tool fetches the loldrivers.io list from their APIs and scans the system for any vulnerable drivers This project is implemented in Go and does not require elevated privileges to run
+Category: GitHub
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: 3bbc7869-7eba-4b43-8bbe-9721f0034191
+BinaryUrl: https://github.com/FourCoreLabs/LolDriverScan/releases/tag/v1.2
+ExportFormat: json
+Processors:
+    -
+        Executable: loldriverscan.exe
+        CommandLine: -json %destinationDirectory%\loldriverscan_Results.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/conexioninversa/LolDriverScan
+# Scans the system for vulnerable drivers
+# Provides verbose output for detailed information
+# Supports JSON output for easy integration with other tools
+# No elevated privileges are required
+# If it does not find vulnerable drivers it will not store logs
