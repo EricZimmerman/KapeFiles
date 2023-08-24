@@ -1,6 +1,6 @@
 Description: Windows Error Reporting
 Author: Troy Larson
-Version: 1.0
+Version: 1.1
 Id: 03106a1c-e1f8-4075-abdb-f9c83078347d
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,11 @@ Targets:
         Name: WER Files
         Category: Executables
         Path: C:\ProgramData\Microsoft\Windows\WER\
+        Recursive: true
+    -
+        Name: WER Files
+        Category: Executables
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\WER\
         Recursive: true
     -
         Name: Crash Dumps

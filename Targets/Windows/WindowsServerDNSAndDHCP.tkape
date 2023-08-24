@@ -1,0 +1,27 @@
+Description: Windows Server DNS and DHCP log files
+Author: Zawadi Done
+Version: 1.1
+Id: 2f6dc2b4-cbdf-4a11-807d-da2f885daafd
+RecreateDirectories: true
+Targets:
+    -
+        Name: DNS Netlogon files
+        Category: DNS
+        Path: C:\Windows\System32\config\
+        FileMask: 'netlogon.*'
+        Recursive: true
+    -
+        Name: DNS files
+        Category: DNS
+        Path: C:\Windows\System32\dns\
+        Recursive: true
+    -
+        Name: DHCP files
+        Category: DHCP
+        Path: C:\Windows\System32\dhcp
+        Recursive: true
+
+# Documentation
+# https://windowstechno.com/what-is-netlogon/
+# https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/verify-srv-dns-records-have-been-created
+# https://www.oreilly.com/library/view/windows-server-2008/9780735624375/ch19s06.html
