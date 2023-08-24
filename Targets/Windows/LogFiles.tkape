@@ -19,7 +19,6 @@ Targets:
         Category: Misc
         Path: C:\windows\
         FileMask: PFRO.log
-    -
 
 # Documentation
 # https://digital-forensics.sans.org/community/papers/gcfa/forensic-analysis-windows-2000-server-iis-oracle_112
