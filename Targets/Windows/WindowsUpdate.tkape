@@ -23,5 +23,5 @@ Targets:
         FileMask: 'CBS*.log'
         Recursive: true
 
-#Documentation
-#https://learn.microsoft.com/en-us/windows/deployment/update/windows-update-logs
+# Documentation
+# https://learn.microsoft.com/en-us/windows/deployment/update/windows-update-logs
