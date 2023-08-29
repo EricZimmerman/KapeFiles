@@ -8,7 +8,7 @@ ExportFormat: csv
 Processors:
     -
         Executable: hayabusa\hayabusa.exe
-        CommandLine: metrics -d %sourceDirectory% --UTC -o %destinationDirectory%\hayabusa_event_statistics.csv
+        CommandLine: eid-metrics -d %sourceDirectory% --UTC -o %destinationDirectory%\hayabusa_event_statistics.csv
         ExportFormat: csv
 
 # Documentation
