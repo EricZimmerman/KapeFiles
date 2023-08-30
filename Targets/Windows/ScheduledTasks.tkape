@@ -1,6 +1,6 @@
 Description: Scheduled tasks (*.job and XML)
 Author: Eric Zimmerman
-Version: 1.0
+Version: 1.1
 Id: e5dc4367-2e6b-49bf-a90a-d4c1598bbe28
 RecreateDirectories: true
 Targets:
@@ -32,6 +32,11 @@ Targets:
     -
         Name: XML
         Category: Persistence
+        Path: C:\Windows\syswow64\Tasks\
+        Recursive: true
+    -
+        Name: XML
+        Category: Persistence
         Path: C:\Windows.old\Windows\System32\Tasks\
         Recursive: true
 
@@ -40,3 +45,4 @@ Targets:
 # https://www.sans.org/blog/windows-scheduler-at-job-forensics
 # https://forensicswiki.xyz/wiki/index.php?title=Windows_Job_File_Format
 # https://www.forensafe.com/blogs/taskschd.html
+# https://stmxcsr.com/persistence/scheduled-tasks.html

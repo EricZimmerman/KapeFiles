@@ -1,6 +1,6 @@
 Description: PowerShell Console Log File
 Author: Mike Cary
-Version: 1.0
+Version: 1.1
 Id: efa4332a-89eb-430c-ab61-006a9e6620d7
 RecreateDirectories: true
 Targets:
@@ -8,10 +8,11 @@ Targets:
         Name: PowerShell Console Log
         Category: PowerShellConsoleLog
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
-        FileMask: ConsoleHost_history.txt
+        FileMask: '*_history.txt'
 
 # Documentation
 # https://community.sophos.com/malware/b/blog/posts/powershell-command-history-forensics
 # https://darizotas.blogspot.com/2018/10/forensics-powershell-artifacts.html
 # https://digital-forensics.sans.org/media/DFPS_FOR508_v4.4_1-19.pdf
 # https://www.forensafe.com/blogs/powershell.html
+# https://learn.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.3#command-history

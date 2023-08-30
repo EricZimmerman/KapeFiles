@@ -1,0 +1,15 @@
+Description: DNSDataView This utility is alternative to the NSLookup tool that comes with Windows operating system. It allows you to easily retrieve the DNS records (MX, NS, A, SOA) of the specified domains. You can use the default DNS server of your Internet connection, or use any other DNS server that you specify. After retrieving the DNS records for the desired domains
+Category: LiveResponse
+Author: Pedro Sanchez Cordero (conexioninversa)
+Version: 1.0
+Id: c65bf3f4-6165-4f90-a968-d02f21bcb2f4
+BinaryUrl: https://www.nirsoft.net/utils/dnsdataview.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: DNSDataView.exe
+        CommandLine: /scomma %destinationDirectory%\Nirsoft_DNSDataView.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/outlook_attachment.html

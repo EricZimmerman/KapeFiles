@@ -1,0 +1,20 @@
+Description: Windows Push Notification Service
+Author: Zawadi Done
+Version: 1.0
+Id: 49545136-dddd-4255-a5b5-c977bb72fded
+RecreateDirectories: true
+Targets:
+    -
+        Name: WNS
+        Category: WNS
+        Path: C:\Users\%user\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: appdb.dat
+    -
+        Name: WNS
+        Category: WNS
+        Path: C:\Users\%user\AppData\Local\Microsoft\Windows\Notifications\
+        FileMask: wpndatabase.db
+
+# Documentation
+# https://forensafe.com/blogs/winnotifications.html
+# https://learn.microsoft.com/en-us/windows/apps/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview

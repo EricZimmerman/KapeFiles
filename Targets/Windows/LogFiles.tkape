@@ -1,6 +1,6 @@
 Description: LogFiles (includes SUM)
 Author: Fabian Murer
-Version: 1.0
+Version: 1.1
 Id: 67c9bb8d-342b-4380-a110-565317fce014
 RecreateDirectories: true
 Targets:
@@ -14,6 +14,11 @@ Targets:
         Category: Logs
         Path: C:\Windows.old\Windows\System32\LogFiles\
         Recursive: true
+    -
+        Name: Error logging
+        Category: Misc
+        Path: C:\windows\
+        FileMask: PFRO.log
 
 # Documentation
 # https://digital-forensics.sans.org/community/papers/gcfa/forensic-analysis-windows-2000-server-iis-oracle_112

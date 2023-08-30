@@ -1,0 +1,15 @@
+Description: Windows Drivers
+Author: Zawadi Done
+Version: 1.0
+Id: fc56e4eb-c9e6-481f-9f57-6b24ba8bcbfb
+RecreateDirectories: true
+Targets:
+    -
+        Name: Drivers
+        Category: Drivers
+        Path: C:\Windows\system32\drivers\
+        FileMask: '*.sys'
+        Recursive: true
+
+# Documentation
+# N/A
