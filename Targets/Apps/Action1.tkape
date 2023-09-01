@@ -1,0 +1,16 @@
+Description: Action1 Application Logs
+Author: Andrew Skatoff @DFIR_TNT
+Version: 1.0
+Id: 9cdf145a-c67e-45cd-bdec-1bcfeb2d50b1
+RecreateDirectories: true
+Targets:
+    -
+        Name: Action1 Client Application logs
+        Category: ApplicationLogs
+        Path: C:\Windows\Action1\logs
+        FileMask: '*.log'
+        Comment: "Contains Application Log entries such as service start and incomming connections, and deployed scripts/jobs."
+
+# Documentation
+# https://dfirtnt.wordpress.com/2023/08/23/rmm-action1-client-side-evidence/
+# https://www.bleepingcomputer.com/news/security/hackers-start-abusing-action1-rmm-in-ransomware-attacks/
