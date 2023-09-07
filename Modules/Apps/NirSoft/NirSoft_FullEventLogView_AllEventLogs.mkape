@@ -1,11 +1,10 @@
 Description: Parses all event logs using Nirsoft FullEventLogView.exe
 Category: EventLogs
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 123e00c7-b7d0-4e48-9a93-6c49c29d6e82
 BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
 ExportFormat: csv
-FileMask: "*.evtx"
 Processors:
     -
         Executable: FullEventLogView.exe
