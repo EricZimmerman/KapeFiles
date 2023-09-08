@@ -5,11 +5,11 @@ Id: 5e2c322f-616c-42e4-9cd7-4546cf2412e6
 RecreateDirectories: true
 Targets:
     -
-        Name: Action1 RMM Client Application logs
+        Name: Level RMM Client Application logs
         Category: ApplicationLogs
         Path: C:\Program Files\Level
         FileMask: '*.log'
-        Comment: "Contains Application Log entries such as service start and incomming connections."
+        Comment: "Contains Application Log entries such as service start and incoming connections."
 
 # Documentation
 # https://www.crowdstrike.com/blog/analysis-of-intrusion-campaign-targeting-telecom-and-bpo-companies/
