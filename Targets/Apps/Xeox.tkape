@@ -1,0 +1,15 @@
+Description: Xeox Application Logs
+Author: Andrew Skatoff @DFIR_TNT
+Version: 1.0
+Id: 5e2c322f-616c-42e4-9cd7-4546cf2412e6
+RecreateDirectories: true
+Targets:
+    -
+        Name: Xeox RMM Client Application logs
+        Category: ApplicationLogs
+        Path: C:\Program Files\Xeox
+        FileMask: '*.log'
+        Comment: "Contains Application Log entries such as service start and incomming connections."
+
+# Documentation
+# https://dfirtnt.wordpress.com/2023/08/01/rmm-xeox-client-side-evidence/

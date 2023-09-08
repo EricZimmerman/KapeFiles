@@ -5,6 +5,10 @@ Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
     -
+        Name: Action1
+        Category: ApplicationLogs
+        Path: Action1.tkape
+    -
         Name: Ammyy
         Category: ApplicationLogs
         Path: Ammyy.tkape
@@ -24,6 +28,10 @@ Targets:
         Name: Kaseya
         Category: ApplicationLogs
         Path: Kaseya.tkape
+    -
+        Name: Level
+        Category: ApplicationLogs
+        Path: Level.tkape
     -
         Name: LogMeIn
         Category: ApplicationLogs
@@ -81,6 +89,10 @@ Targets:
         Name: VNC
         Category: ApplicationLogs
         Path: VNCLogs.tkape
+    -
+        Name: Xeox
+        Category: ApplicationLogs
+        Path: Xeox.tkape
     -
         Name: ZohoAssist
         Category: ApplicationLogs
