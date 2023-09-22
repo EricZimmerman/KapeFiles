@@ -40,7 +40,7 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\GHISLER\
         FileMask: 'tcDirFrq.txt'
-        Comment: "Locates a file that contains a frequently accessed folder listing."        
+        Comment: "Locates a file that contains a frequently accessed folder listing."
     -
         Name: Total Commander - FTP Logs
         Category: Apps
@@ -105,4 +105,3 @@ Targets:
 # 22,C:\Windows\
 # 14,c:\Temp\
 # 12,C:\
-
