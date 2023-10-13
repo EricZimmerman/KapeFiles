@@ -1,0 +1,14 @@
+Description: Edge Chromium Extension Files
+Author: cardinsou
+Version: 1.0
+Id: 20b17ef1-c9eb-4c16-b373-31e5af9bc066
+RecreateDirectories: true
+Targets:
+    -
+        Name: Edge Chromium Extension Files
+        Category: Communication
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Extensions\
+        Recursive: true
+
+# Documentation
+# N/A
