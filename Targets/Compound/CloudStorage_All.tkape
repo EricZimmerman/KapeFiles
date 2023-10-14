@@ -5,33 +5,17 @@ Id: 63c7ff1e-0fcb-45ae-9d72-29bf8458b6db
 RecreateDirectories: true
 Targets:
     -
-        Name: Box Metadata
-        Category: Apps
-        Path: BoxDrive_Metadata.tkape
-    -
         Name: Box User Files
         Category: Apps
         Path: BoxDrive_UserFiles.tkape
-    -
-        Name: Dropbox Metadata
-        Category: Apps
-        Path: Dropbox_Metadata.tkape
     -
         Name: Dropbox User Files
         Category: Apps
         Path: Dropbox_UserFiles.tkape
     -
-        Name: Google Drive Metadata
-        Category: Apps
-        Path: GoogleDrive_Metadata.tkape
-    -
         Name: Google Drive Backup and Sync User Files
         Category: Apps
         Path: GoogleDriveBackupSync_UserFiles.tkape
-    -
-        Name: OneDrive Metadata
-        Category: Apps
-        Path: OneDrive_Metadata.tkape
     -
         Name: OneDrive User Files
         Category: Apps
@@ -44,6 +28,10 @@ Targets:
         Name: SugarSync
         Category: Apps
         Path: SugarSync.tkape
+    -
+        Name: CloudStorage Metadata
+        Category: Apps
+        Path: CloudStorage_Metadata.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.
