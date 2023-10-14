@@ -1,6 +1,6 @@
 Description: Cloud Storage Metadata
-Author: Chad Tilbury and Andrew Rathbun
-Version: 1.0
+Author: Chad Tilbury and Andrew Rathbun, Eric Capuano
+Version: 1.1
 Id: 136ca523-2f99-4203-bd66-6aa50fe8d3a8
 RecreateDirectories: true
 Targets:
@@ -20,6 +20,10 @@ Targets:
         Name: OneDrive Metadata
         Category: Apps
         Path: OneDrive_Metadata.tkape
+    -
+        Name: Rclone Conf File
+        Category: Apps
+        Path: RcloneConf.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.

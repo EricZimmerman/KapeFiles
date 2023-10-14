@@ -1,0 +1,17 @@
+Description: Rclone config file
+Author: Eric Capuano
+Version: 1.0
+Id: 639f9e55-1ee1-4af4-be7c-e6303ffb4b0c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Rclone Config
+        Category: Apps
+        Path: C:\
+        FileMask: 'rclone.conf'
+        Recursive: true
+
+# Documentation
+# Rclone is a popular exfil tool that supports many cloud storage services
+#
+# https://research.nccgroup.com/2021/05/27/detecting-rclone-an-effective-tool-for-exfiltration/
