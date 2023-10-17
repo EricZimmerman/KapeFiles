@@ -1,0 +1,25 @@
+Description: MSIX/APPX App Hives
+Author: Zach Stanford / Mari DeGrazia
+Version: 1.0
+Id: 932a7d2b-3cb7-4e35-ab89-60dfa1e55c8e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Registry.dat MSIX Hive
+        Category: Registry
+        Path: C:\Users\%user%\AppData\Local\Packages\*\SystemAppData\Helium\
+        FileMask: Registry.dat*
+    -
+        Name: User.dat MSIX Hive
+        Category: Registry
+        Path: C:\Users\%user%\AppData\Local\Packages\*\SystemAppData\Helium\
+        FileMask: User.dat*
+    -
+        Name: UserClasses.dat MSIX Hive
+        Category: Registry
+        Path: C:\Users\%user%\AppData\Local\Packages\*\SystemAppData\Helium\
+        FileMask: UserClasses.dat*
+
+# Documentation
+# https://www.zerofox.com/blog/the-registry-hives-you-may-be-msix-ing-registry-redirection-with-ms-msix/
+# https://github.com/ydkhatri/Appx-Analysis/blob/master/winapps_appx_mus_2019.pdf
