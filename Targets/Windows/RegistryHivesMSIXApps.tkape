@@ -19,7 +19,7 @@ Targets:
         Category: Registry
         Path: C:\Users\%user%\AppData\Local\Packages\*\SystemAppData\Helium\
         FileMask: UserClasses.dat*
-  
+
 # Documentation
 # https://www.zerofox.com/blog/the-registry-hives-you-may-be-msix-ing-registry-redirection-with-ms-msix/
 # https://github.com/ydkhatri/Appx-Analysis/blob/master/winapps_appx_mus_2019.pdf
