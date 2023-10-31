@@ -1,0 +1,15 @@
+Description: ImgBurn
+Author: Chuck Whitson
+Version: 1.0
+Id: c70e3466-0ef7-48cc-aa24-a142266ed96e
+RecreateDirectories: true
+Targets:
+    -
+        Name: ImgBurn - Application Log File
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\ImgBurn\Log Files\
+        FileMask: ImgBurn.log
+        Comment: "Contains the ImgBurn application log file."
+
+# Documentation
+# https://forum.imgburn.com/topic/14632-where-can-i-find-the-imgburn-log

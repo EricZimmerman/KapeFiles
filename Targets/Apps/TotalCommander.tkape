@@ -1,6 +1,6 @@
 Description: Total Commander
-Author: Andrew Rathbun and Jessica Venturo
-Version: 1.3
+Author: Andrew Rathbun, Jessica Venturo and Chuck Whitson
+Version: 1.4
 Id: ae5bfc3d-cc1c-41ec-a11a-19233ae82877
 RecreateDirectories: true
 Targets:
@@ -35,6 +35,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\GHISLER\
         FileMask: 'treeinfo*.wc'
         Comment: "Locates a file that contains an exhaustive file tree of a user's file system."
+    -
+        Name: Total Commander - Frequent Directory Listing
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\GHISLER\
+        FileMask: 'tcDirFrq.txt'
+        Comment: "Locates a file that contains a frequently accessed folder listing."
     -
         Name: Total Commander - FTP Logs
         Category: Apps
@@ -87,3 +93,15 @@ Targets:
 #
 # Please note that each folder I traversed made a new .tmp folder and had similar contents for each respective folder traversed
 # Hex -> ASCII, 0x747970653D translates to file= which appears to be the first 5 characters of each of these .tmp files
+
+# Total Commander - Frequent Directory Listing
+# New in version 11.x
+# Per author Christian Ghisler:
+# https://www.ghisler.ch/board/viewtopic.php?p=430396&sid=cdebdb47cc6181223341b124c31a6374#p430396
+# Example / Documentation:
+# The first line is the date stamp when the tcDirFrq.txt file is created, which occurs when Total Commander is closed
+# <N>,<FOLDER> where <N> is the number of times the folder was accessed and <FOLDER> is the folder path
+# 20230809
+# 22,C:\Windows\
+# 14,c:\Temp\
+# 12,C:\
