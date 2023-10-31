@@ -1,0 +1,15 @@
+Description: A Target to collect files that are currently open in Notepad (Windows 11+)
+Author: Andrew Rathbun
+Version: 1.0
+Id: 53e3b402-e53e-4841-bba0-56e98c53cf5b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Notepad Session Files
+        Category: Windows Notepad
+        Path: C:\Users\%user%Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\LocalState\TabState
+        FileMask: "*.bin"
+        Comment: "Contains .bin files which consist of the files opened in each tab in Windows Notepad"
+
+# Documentation
+# N/A
