@@ -105,6 +105,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Web Data*
     -
+        Name: Edge WebAssistDatabase
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: WebAssistDatabase*
+    -
         Name: Windows Protect Folder
         Category: FileSystem
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
