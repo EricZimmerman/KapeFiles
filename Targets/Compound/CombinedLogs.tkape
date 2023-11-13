@@ -1,6 +1,6 @@
-Description: Collect Event logs, Trace logs, Windows Firewall and PowerShell console
-Author: Mike Cary, Mark Hallman added the USBDevicelogs target
-Version: 1.1
+Description: Collect Event logs, Trace logs, Windows Firewall, PowerShell console logs, and .NET CLR UsageLogs
+Author: Mike Cary, Mark Hallman added the USBDevicelogs target, Thomas DIOT (Qazeer) added the .NET CLR UsageLogs target
+Version: 1.2
 Id: d4fdd600-15b1-4b78-bc77-88e724861d8d
 RecreateDirectories: true
 Targets:
@@ -24,6 +24,11 @@ Targets:
         Name: USBDevicesLogs
         Category: USB
         Path: USBDevicesLogs.tkape
+    -
+        Name: .NET CLR UsageLogs
+        Category: .NET CLR UsageLogs
+        Path: NETCLRUsageLogs.tkape
 
 # Documentation
 # v1.1 - Added the USBDevicelogs target
+# v1.2 - Added the .NET CLR UsageLogs target
