@@ -1,45 +1,84 @@
 Description: Steam
-Author: Nisarg Suthar
-Version: 1.0
+Author: Nisarg Suthar, SolitudePy
+Version: 1.1
 Id: 945e447d-7fd0-4458-99a0-898f8ce63267
 RecreateDirectories: true
 Targets:
     -
         Name: Steam Game Image files
         Category: Apps
-        Path: C:\Program Files*\Steam\appcache\librarycache\
+        Path: C:\Program Files\Steam\appcache\librarycache\
         Recursive: true
         Comment: "Locates the directory containing image resources of installed/uninstalled games."
     -
         Name: Steam Login Metadata file
         Category: Apps
-        Path: C:\Program Files*\Steam\config\
+        Path: C:\Program Files\Steam\config\
         Recursive: true
         FileMask: loginusers.vdf
         Comment: "Locates file containing Steam username and persona name."
     -
         Name: Steam Friend List and Username History file
         Category: Apps
-        Path: C:\Program Files*\Steam\userdata\*\config\
+        Path: C:\Program Files\Steam\userdata\*\config\
         Recursive: true
         FileMask: localconfig.vdf
         Comment: "Locates file containing Steam Friend List and Username History."
     -
         Name: Steam User Avatar files
         Category: Apps
-        Path: C:\Program Files*\Steam\config\avatarcache\
+        Path: C:\Program Files\Steam\config\avatarcache\
         Recursive: true
         Comment: "Locates the directory containing avatar cache."
     -
         Name: Steam Game Tray Icon files
         Category: Apps
-        Path: C:\Program Files*\Steam\steam\games\
+        Path: C:\Program Files\Steam\steam\games\
         Recursive: true
         Comment: "Locates the directory containing game icons appearing from tray menu."
     -
         Name: Steam Startup Times Log file
         Category: Apps
-        Path: C:\Program Files*\Steam\logs\
+        Path: C:\Program Files\Steam\logs\
+        Recursive: true
+        FileMask: bootstrap_log.txt
+        Comment: "Locates the directory containing log for Steam startup times."
+    -
+        Name: Steam Game Image files
+        Category: Apps
+        Path: C:\Program Files (x86)\Steam\appcache\librarycache\
+        Recursive: true
+        Comment: "Locates the directory containing image resources of installed/uninstalled games."
+    -
+        Name: Steam Login Metadata file
+        Category: Apps
+        Path: C:\Program Files (x86)\Steam\config\
+        Recursive: true
+        FileMask: loginusers.vdf
+        Comment: "Locates file containing Steam username and persona name."
+    -
+        Name: Steam Friend List and Username History file
+        Category: Apps
+        Path: C:\Program Files (x86)\Steam\userdata\*\config\
+        Recursive: true
+        FileMask: localconfig.vdf
+        Comment: "Locates file containing Steam Friend List and Username History."
+    -
+        Name: Steam User Avatar files
+        Category: Apps
+        Path: C:\Program Files (x86)\Steam\config\avatarcache\
+        Recursive: true
+        Comment: "Locates the directory containing avatar cache."
+    -
+        Name: Steam Game Tray Icon files
+        Category: Apps
+        Path: C:\Program Files (x86)\Steam\steam\games\
+        Recursive: true
+        Comment: "Locates the directory containing game icons appearing from tray menu."
+    -
+        Name: Steam Startup Times Log file
+        Category: Apps
+        Path: C:\Program Files (x86)\Steam\logs\
         Recursive: true
         FileMask: bootstrap_log.txt
         Comment: "Locates the directory containing log for Steam startup times."
