@@ -14,6 +14,17 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\WhatsApp\Local Storage\leveldb
         Comment: "Copies the Local Storage leveldb of WhatsApp. Contains phone model and name of user, plus encrypted base64 strings which can be viewed with LevelDBDumper"
+    -
+        Name: Microsoft Store WhatsApp Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalCache\Roaming\WhatsApp\Cache
+        Comment: "Copies the cache of WhatsApp. Can be opened with Chrome Cache Viewer for viewing embedded thumbnails and other image artefacts, as well as extracting .enc message files or other files"
+    -
+        Name: Microsoft Store WhatsApp Local Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalCache\Roaming\WhatsApp\Local Storage\leveldb
+        Comment: "Copies the Local Storage leveldb of WhatsApp. Contains phone model and name of user, plus encrypted base64 strings which can be viewed with LevelDBDumper"
+
 
 # Documentation
 # https://belkasoft.com/whatsapp_forensics_on_computers
