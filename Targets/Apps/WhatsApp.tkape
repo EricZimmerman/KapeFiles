@@ -1,6 +1,6 @@
 Description: WhatsApp Local Files
-Author: Matt Dawson
-Version: 1.0
+Author: Matt Dawson, SolitudePy
+Version: 1.1
 Id: a6f739e3-21fc-4942-9272-26d567f014da
 RecreateDirectories: true
 Targets:
