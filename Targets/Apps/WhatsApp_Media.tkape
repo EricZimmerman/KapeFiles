@@ -7,12 +7,12 @@ Targets:
     -
         Name: Microsoft Store WhatsApp Desktop Profile Pictures
         Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\profilePictures
+        Path: C:\Users\%user%\AppData\Local\Packages\*WhatsAppDesktop*\LocalState\profilePictures
         Comment: "Copies the local store of contacts profile pictures, simply open with a photos software"
     -
         Name: Microsoft Store WhatsApp Shared Media
         Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\shared\transfers
+        Path: C:\Users\%user%\AppData\Local\Packages\*WhatsAppDesktop*\LocalState\shared\transfers
         Recursive: true
         FileMask: regex:.*\.(jpg|mp4|pdf|webp)
         Comment: "Copies the shared media, can get very large."

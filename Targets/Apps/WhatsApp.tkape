@@ -17,12 +17,12 @@ Targets:
     -
         Name: Microsoft Store WhatsApp Cache
         Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalCache\Roaming\WhatsApp\Cache
+        Path: C:\Users\%user%\AppData\Local\Packages\*WhatsAppDesktop*\LocalCache\Roaming\WhatsApp\Cache
         Comment: "Copies the cache of WhatsApp. Can be opened with Chrome Cache Viewer for viewing embedded thumbnails and other image artefacts, as well as extracting .enc message files or other files"
     -
         Name: Microsoft Store WhatsApp Local Storage
         Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalCache\Roaming\WhatsApp\Local Storage\leveldb
+        Path: C:\Users\%user%\AppData\Local\Packages\*WhatsAppDesktop*\LocalCache\Roaming\WhatsApp\Local Storage\leveldb
         Comment: "Copies the Local Storage leveldb of WhatsApp. Contains phone model and name of user, plus encrypted base64 strings which can be viewed with LevelDBDumper"
 
 
