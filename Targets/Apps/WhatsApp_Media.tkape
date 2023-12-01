@@ -1,0 +1,22 @@
+Description: WhatsApp Shared Media Files
+Author: SolitudePy
+Version: 1.0
+Id: b148236d-1064-42c4-bbb2-f08ad7aa8530
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft Store WhatsApp Desktop Profile Pictures
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\*WhatsAppDesktop*\LocalState\profilePictures
+        Comment: "Copies the local store of contacts profile pictures, simply open with a photos software"
+    -
+        Name: Microsoft Store WhatsApp Shared Media
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\*WhatsAppDesktop*\LocalState\shared\transfers
+        Recursive: true
+        FileMask: regex:.*\.(jpg|mp4|pdf|webp)
+        Comment: "Copies the shared media, can get very large."
+
+
+# Documentation
+# Whatsapp Desktop saves shared media locally, simply open it with a media software.
