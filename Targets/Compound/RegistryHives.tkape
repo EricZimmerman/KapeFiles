@@ -12,6 +12,10 @@ Targets:
         Name: User Level Registry Files
         Category: Registry
         Path: RegistryHivesUser.tkape
+    -
+        Name: MSIX Application Registry Files
+        Category: Registry
+        Path: RegistryHivesMSIXApps.tkape
 
 # Documentation
 # Please note, this Compound Target does NOT include the RegistryHivesOther Target on purpose. While they are technically Registry hives, they are not currently identified as being forensically significant.
