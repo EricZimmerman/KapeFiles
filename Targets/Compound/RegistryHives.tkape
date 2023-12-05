@@ -1,6 +1,6 @@
 Description: System and user related Registry hives
 Author: Eric Zimmerman
-Version: 1.1
+Version: 1.2
 Id: 76af6086-bd0b-429f-bfd7-4a8e8ff8138f
 RecreateDirectories: true
 Targets:
@@ -12,6 +12,10 @@ Targets:
         Name: User Level Registry Files
         Category: Registry
         Path: RegistryHivesUser.tkape
+    -
+        Name: MSIX Application Registry Files
+        Category: Registry
+        Path: RegistryHivesMSIXApps.tkape
 
 # Documentation
 # Please note, this Compound Target does NOT include the RegistryHivesOther Target on purpose. While they are technically Registry hives, they are not currently identified as being forensically significant.
