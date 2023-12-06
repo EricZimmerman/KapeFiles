@@ -7,7 +7,7 @@ Targets:
     -
         Name: Notepad Session Files
         Category: Windows Notepad
-        Path: C:\Users\%user%\Local\AppData\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\LocalState\TabState
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\LocalState\TabState
         FileMask: "*.bin"
         Comment: "Contains .bin files which consist of the files opened in each tab in Windows Notepad"
 
