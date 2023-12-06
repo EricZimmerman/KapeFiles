@@ -1,6 +1,6 @@
 Description: Google Drive Metadata
-Author: Chad Tilbury
-Version: 1.1
+Author: Chad Tilbury, @amgdgocha
+Version: 1.2
 Id: 2bfd54a5-175f-48ad-a1bc-7be1dc0465e7
 RecreateDirectories: true
 Targets:
@@ -8,12 +8,14 @@ Targets:
         Name: Google Drive Backup and Sync Metadata
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Google\Drive\
+        IsDirectory: true
         Recursive: true
         Comment: "Older version of Google Drive"
     -
         Name: Google Drive for Desktop Metadata
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Google\DriveFS\
+        IsDirectory: true
         Recursive: true
         Comment: "Metadata folder the same for both newer Google Drive for Desktop and older Google File Stream application"
 
