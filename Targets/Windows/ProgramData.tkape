@@ -5,9 +5,10 @@ Id:  4f1c3500-57cf-4c34-9ede-434c193a2c77
 RecreateDirectories: true
 Targets:
     -
-        Name: Perflogs
+        Name: ProgramData
         Category: Application Data
         Path: C:\ProgramData\
         Recursive: true
 
+# Documentation
 # N/A
