@@ -1,0 +1,14 @@
+Description: MegaSync Data Collection
+Author: Vito Alfano
+Version: 1.0
+Id: a6c7f66e-b37c-4895-98c3-4eb9775623cf
+RecreateDirectories: true
+Targets:
+    -
+        Name: MegaSync Folder
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Mega Limited\MEGAsync\
+        Recursive: true
+
+# Documentation
+# N/A
