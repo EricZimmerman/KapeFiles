@@ -1,0 +1,14 @@
+Description: Users folders Dump
+Author: Vito Alfano
+Version: 1.0
+Id: 0eb51e6a-1286-42fe-bfdc-401356003395
+RecreateDirectories: true
+Targets:
+    -
+        Name: Users
+        Category: Application
+        Path: C:\Users\%user%\
+        Recursive: true
+
+# Documentation
+# N/A
