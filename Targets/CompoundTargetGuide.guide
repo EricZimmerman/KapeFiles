@@ -9,7 +9,7 @@ Targets:
         Name: CompoundTarget1 # Required
         Category: Category # Required, it is recommended to use the Category referenced within the Target file itself to keep things consistent.
         Path: CompoundTarget1.tkape # Required, needs to exactly match the filename of the Target you're referencing, regardless of where the Target resides. KAPE will find it as long as it exists within the Targets folder.
-        Comments: "Comments go here" # Optional, and rarely used in Compound Targets, this won't be included in examples below.
+        Comment: "Comments go here" # Optional, and rarely used in Compound Targets, this won't be included in examples below.
     -
         Name: CompoundTarget2
         Category: Category

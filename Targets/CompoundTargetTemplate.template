@@ -8,7 +8,7 @@ Targets:
         Name: CompoundTarget1 # Required
         Category: Category # Required
         Path: CompoundTarget1.tkape # Required
-        Comments: "Comments go here" # Optional
+        Comment: "Comments go here" # Optional
     -
         Name: CompoundTarget2
         Category: Category
