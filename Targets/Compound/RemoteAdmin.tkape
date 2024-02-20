@@ -41,6 +41,10 @@ Targets:
         Category: ApplicationLogs
         Path: mRemoteNG.tkape
     -
+        Name: NetMonitor
+        Category: ApplicationLogs
+        Path: NetMonitorforEmployeesProfessional.tkape
+    -
         Name: Radmin
         Category: ApplicationLogs
         Path: Radmin.tkape
