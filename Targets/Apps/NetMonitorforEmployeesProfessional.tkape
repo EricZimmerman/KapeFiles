@@ -1,0 +1,54 @@
+Description: Net Monitor for Employees Pro
+Author: Tristan PINCEAUX - CERT CWATCH - ALMOND
+Version: 1.0
+Id: f944d8e5-e7c6-49ac-9c26-b1360fa518cc
+RecreateDirectories: true
+Targets:
+    -
+        Name: Net Monitor Server Logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Net Monitor for Employees Pro\log\%user%\
+        Recursive: true
+        Comment: "Contains Net Monitor server logs"
+
+    -
+        Name: Net Monitor Server Data
+        Category: Communication
+        Path: C:\ProgramData\Net Monitor for Employees Pro\data\
+        Recursive: true
+        Comment: "Contains Net Monitor server data - Indicates what have been seen as the attacker"
+
+    -
+        Name: Net Monitor Server Config
+        Category: Apps
+        Path: C:\ProgramData\Net Monitor for Employees Pro\config\
+        Recursive: true
+        Comment: "Contains Net Monitor server config"
+
+    -
+        Name: Net Monitor Server Temp Folder
+        Category: Apps
+        Path: C:\ProgramData\Net Monitor for Employees Pro\tmp\
+        Recursive: true
+
+    -
+        Name: Net Monitor Client Logs
+        Category: ApplicationLogs
+        Path: C:\Program Files*\Net Monitor for Employees Pro\log\
+        Recursive: true
+        Comment: "Contains Net Monitor client logs"
+
+    -
+        Name: Net Monitor Client Config
+        Category: ApplicationLogs
+        Path: C:\Program Files*\Net Monitor for Employees Pro\config\
+        Recursive: true
+        Comment: "Contains Net Monitor client config"
+
+# Documentation
+# https://networklookout.com/
+# https://networklookout.com/doc/NetMonitorForEmployees.pdf
+# Net Monitor for employees is a monitoring software for office, that allows live screen monitoring and employee activity tracking.
+# It can be used as remote access tool, to control applications and processes, to fetch and drop files on target, and to deploy further malicious binaries.
+# It can also be used as a keylogger to collect further credentials on compromised targets.
+# We have seen this tool used in financial scam and data theft.
