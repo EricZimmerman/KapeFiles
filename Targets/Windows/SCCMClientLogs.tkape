@@ -5,7 +5,7 @@ Id: 700413f8-703b-44fb-9192-8830ac84b6b0
 RecreateDirectories: true
 Targets:
     -
-        Name: SCCM Client Log Files 
+        Name: SCCM Client Log Files
         Category: Logs
         Path: C:\Windows\CCM\Logs
 
