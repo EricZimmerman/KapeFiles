@@ -3,7 +3,7 @@ Category: FileSystem
 Author: Hyun Yi @hyuunnn and Vito Alfano
 Version: 1.1
 Id: 74ee5d04-2fb2-11ee-be56-0242ac120002
-BinaryUrl: https://drive.google.com/file/d/12Xzp0GW9KqaejFrK7ewGYzKWNEjRgP1P/view?usp=drive_web
+BinaryUrl: https://sites.google.com/site/forensicnote/ntfs-log-tracker/
 ExportFormat: sqlite3
 FileMask: $J
 Processors:
