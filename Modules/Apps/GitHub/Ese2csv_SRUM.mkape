@@ -13,6 +13,6 @@ Processors:
 
 # Documentation
 # https://github.com/MarkBaggett/ese-analyst
-# Create a folder "ese-analyst" within the "Modules\bin" KAPE folder
-# Place both files "ese2csv.exe" and "srudb_plugin.py" into "Modules\bin\ese-analyst"
-# When using this module, the module source should be set to OS drive root directory (e.g. C:\), because parameters use abosulte paths
+# Create a folder "ese-analyst" within the ".\KAPE\Modules\bin" folder
+# Place both files "ese2csv.exe" and "srudb_plugin.py" into ".\KAPE\Modules\bin\ese-analyst"
+# When using this Module, the Module source should be set to OS drive root directory (e.g. C:\), because parameters use absolute paths
