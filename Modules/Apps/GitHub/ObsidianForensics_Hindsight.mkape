@@ -12,7 +12,7 @@ Processors:
         ExportFormat: xlsx
     -
         Executable: hindsight.exe
-        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f json
+        CommandLine: -i %sourceDirectory% -o %destinationDirectory%\Hindsight_output -f jsonl
         ExportFormat: json
 
 # Documentation
