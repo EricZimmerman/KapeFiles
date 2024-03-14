@@ -73,7 +73,7 @@ Targets:
         Category: SQLDatabases
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
         FileMask: main.db
-    
+
     # Apps - Notion - Notion.tkape
     -
         Name: Notion Local Storage
