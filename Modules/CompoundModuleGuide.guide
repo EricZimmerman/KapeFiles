@@ -2,8 +2,7 @@ Description: Name of application/artifact here # Required, this should be higher
 Category: Misc # Required, this value will be the name of the folder where the parsed Module output is stored
 Author: FirstName LastName # Make sure you get credit for your work
 Version: 1.0 # Required, iterate as necessary
-Id: 62308e3b-5e67-4612-b472-24e0c85fccfe # Required, unique GUID is required for every KAPE Target/Module
-BinaryUrl: https://url.goes.here.com # Required
+Id: Unique GUID here # Required, generate within gKape by double clicking on a Target or Module, then click Generate GUID button at bottom of popup window, paste GUID here. Or, run kape.exe --guidBinaryUrl: https://url.goes.here.com # Required
 ExportFormat: csv # Required
 FileMask: FileName.exe # For a Compound Module, this shouldn't matter as each individual Module will have its own filemask that the Module will be looking for when executing commands listed within the Module
 Processors:
