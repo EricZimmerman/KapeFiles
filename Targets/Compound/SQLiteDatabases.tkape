@@ -74,6 +74,13 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\TeraCopy\
         FileMask: main.db
 
+    # Apps - Notion - Notion.tkape
+    -
+        Name: Notion Local Storage
+        Category: App
+        Path: C:\Users\%user%\AppData\Roaming\Notion
+        FileMask: 'notion.db'
+
     # Cloud Storage - Dropbox - Dropbox_Metadata.tkape
 
     -

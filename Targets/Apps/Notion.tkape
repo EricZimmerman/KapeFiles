@@ -1,0 +1,24 @@
+Description: Notion Note-Taking App
+Author: Thomas Burnette
+Version: 1.0
+Id: 95afe81f-6301-4a7f-996b-c69443e7c2d9
+RecreateDirectories: true
+Targets:
+    -
+        Name: Notion Local Storage
+        Category: App
+        Path: C:\Users\%user%\AppData\Roaming\Notion
+        FileMask: 'notion.db'
+        Comment: "Local storage file containing all pages, databases, users, etc."
+    -
+        Name: Notion Custom Dictionary
+        Category: App
+        Path: C:\Users\%user%\AppData\Roaming\Notion\Partitions\notion
+        FileMask: 'Custom Dictionary.txt'
+
+# Documentation
+# https://www.notion.so/
+# Notion is a freemium productivity and note-taking app. It includes organizational tools such as task management, project tracking, to-do lists, and bookmarking.
+# When using the Notion app for Windows, Notion stores all pages, users, databases, etc. in a SQLite database, notion.db.
+# This includes creation and modification timestamps for all entries.
+# Additionally, Notion stores the user's Custom Dictionary in a text file.
