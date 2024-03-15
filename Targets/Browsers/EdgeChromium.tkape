@@ -18,6 +18,7 @@ Targets:
         Name: Edge Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        Recursive: true
         FileMask: Cookies*
     -
         Name: Edge Current Session
