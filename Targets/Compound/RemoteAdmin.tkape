@@ -25,6 +25,10 @@ Targets:
         Category: ApplicationLogs
         Path: DWAgent.tkape
     -
+        Name: ISLOnline
+        Category: ApplicationLogs
+        Path: ISLOnline.tkape
+    -
         Name: Kaseya
         Category: ApplicationLogs
         Path: Kaseya.tkape
