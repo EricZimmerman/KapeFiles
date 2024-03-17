@@ -1,6 +1,6 @@
 Description: Cloud Storage Contents and Metadata
 Author: Chad Tilbury and Andrew Rathbun
-Version: 1.3
+Version: 1.4
 Id: 63c7ff1e-0fcb-45ae-9d72-29bf8458b6db
 RecreateDirectories: true
 Targets:
@@ -32,6 +32,10 @@ Targets:
         Name: CloudStorage Metadata
         Category: Apps
         Path: CloudStorage_Metadata.tkape
+    -
+        Name: Idrive Backup
+        Category: Apps
+        Path: Idrive.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.
