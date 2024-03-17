@@ -80,6 +80,12 @@ Targets:
         Category: App
         Path: C:\Users\%user%\AppData\Roaming\Notion
         FileMask: 'notion.db'
+    # Apps - Idrive - Idrive.tkape
+    -
+        Name: IDrive Backed Up Files
+        Category: App
+        Path: C:\ProgramData\IDrive\IBCOMMON\*\LDBNEW\*\
+        FileMask: '*.idbs'
 
     # Cloud Storage - Dropbox - Dropbox_Metadata.tkape
 
