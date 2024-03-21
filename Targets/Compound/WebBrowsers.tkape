@@ -36,6 +36,14 @@ Targets:
         Name: Brave Browser
         Category: Communications
         Path: BraveBrowser.tkape
+    -
+        Name: Yandex Browser
+        Category: Communications
+        Path: Yandex.tkape
+    -
+        Name: Vivaldi Browser
+        Category: Communications
+        Path: Vivaldi.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_web_browsers.
