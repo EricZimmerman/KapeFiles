@@ -53,6 +53,5 @@ Targets:
         Recursive: true
         Comment: "Grabs the VSCode logs. Further analysis is needed to determine which logs are junk, and which can be vital."
 
-
 # Documentation
 # N/A
