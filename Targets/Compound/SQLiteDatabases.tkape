@@ -61,6 +61,14 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\*\
         FileMask: todosqlite.db*
 
+    # Apps - Robo-FTP - Robo-FTP.tkape
+
+    -
+        Name: Robo-FTP Jobs
+        Category: Apps
+        Path: C:\Program Files\Robo-FTP *\ProgramData\
+        FileMask: "SchedulerService.sqlite"
+
     # Apps - TeraCopy - TeraCopy.tkape
 
     -
