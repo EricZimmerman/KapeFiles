@@ -1,5 +1,5 @@
 Description: ADTimeline.ps1 - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
-Category: Github
+Category: GitHub
 Author: Tristan PINCEAUX - CERT CWATCH - ALMOND
 Version: 1.0
 Id: 6666cc62-821f-4b13-b13a-03c768b40f71
