@@ -12,13 +12,13 @@ Processors:
         ExportFormat: csv, log, xml
 
 # Documentation
-# ADtimeline is a powershell script created by the ANSSI (French Cybersecurity Agency). 
+# ADtimeline is a PowerShell script created by the ANSSI (French Cybersecurity Agency).
 # You can use the output of this script to determine persistance, sensitives accounts, suspicious activities...
-# You need to run this script on a live domain controller. 
-# This script will generate four files : 
+# You need to run this script on a live domain controller.
+# This script will generate four files:
 # - timeline_%DOMAINFQDN%.csv: The timeline generated with the AD replication metadata of objects retrieved.
 # - logfile_%DOMAINFQDN%.log: Script log file. You will also find various information on the domain.
 # - ADobjects_%DOMAINFQDN%.xml: Objects of interest retrieved via LDAP.
-# - gcADobjects_%DOMAINFQDN%.xml: Objects of interest retrieved via the Global Catalog. 
+# - gcADobjects_%DOMAINFQDN%.xml: Objects of interest retrieved via the Global Catalog.
 # https://github.com/ANSSI-FR/ADTimeline
 # https://www.first.org/resources/papers/amsterdam2019/AD_Timeline_FIRST_TC.pdf
