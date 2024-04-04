@@ -8,6 +8,6 @@ Targets:
         Name: RDP Jumplist Files
         Category: FileSystem
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.RemoteDesktop_8wekyb3d8bbwe\
-		
+	
 # Documentation
 # https://www.zerofox.com/blog/remote-desktop-application-vs-mstsc-forensics-the-rdp-artifacts-you-might-be-missing/
