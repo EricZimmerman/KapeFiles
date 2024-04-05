@@ -4,12 +4,12 @@ Author: Tristan PINCEAUX - CERT CWATCH - ALMOND
 Version: 1.0
 Id: 6666cc62-821f-4b13-b13a-03c768b40f71
 BinaryUrl: https://raw.githubusercontent.com/ANSSI-FR/ADTimeline/master/ADTimeline.ps1
-ExportFormat: csv, log, xml
+ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
         CommandLine: "-ep bypass & '%kapeDirectory%\\Modules\\bin\\ADTimeline.ps1'; Move-Item timeline_*.csv -Destination %destinationDirectory%; Move-Item logfile_*.log -Destination %destinationDirectory%; Move-Item ADobjects_*.xml -Destination %destinationDirectory%; Move-Item gcADobjects_*.xml -Destination %destinationDirectory% "
-        ExportFormat: csv, log, xml
+        ExportFormat: csv
 
 # Documentation
 # ADtimeline is a PowerShell script created by the ANSSI (French Cybersecurity Agency).
