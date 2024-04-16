@@ -201,6 +201,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: true
         Comment: "Required for offline decryption"
+    -
+        Name: Chrome Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of Chrome SQLite DBs organized by version #."
 
 # Documentation
 # https://nasbench.medium.com/web-browsers-forensics-7e99940c579a
