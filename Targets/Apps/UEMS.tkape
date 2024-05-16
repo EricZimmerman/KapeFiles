@@ -18,12 +18,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\VirtualStore\Program Files (x86)\ManageEngine\UEMS_Agent\logs
         Recursive: true
         FileMask: '*.log'
-        Comment: "Collects Users logs for UEMS"
+        Comment: "Collects User logs for UEMS"
 
 # Documentation
 # https://www.manageengine.com/unified-endpoint-management-security.html
-# UEMS Manage Engine Agent is a remote acces tool part of the ManageEngine suite. 
-# We have observed this tool being deployed in recent Cactus ransomware Campaign :
+# UEMS Manage Engine Agent is a remote access tool in the ManageEngine suite.
+# We have observed this tool being deployed in a recent Cactus ransomware Campaign:
 # https://arcticwolf.com/resources/blog/qlik-sense-exploited-in-cactus-ransomware-campaign/
 # https://www.bleepingcomputer.com/news/security/cactus-ransomware-exploiting-qlik-sense-flaws-to-breach-networks/
 # https://www.cybersecuritydive.com/news/cactus-ransomware-qlik-sense-cves/714578/
