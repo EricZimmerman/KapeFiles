@@ -90,6 +90,10 @@ Targets:
         Category: ApplicationLogs
         Path: TeamViewerLogs.tkape
     -
+        Name: UEMS
+        Category: ApplicationLogs
+        Path: UEMS.tkape
+    -
         Name: UltraViewer
         Category: ApplicationLogs
         Path: UltraViewer.tkape
