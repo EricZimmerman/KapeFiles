@@ -1,0 +1,14 @@
+Description: RDP Jumplist Files
+Author: Vito Alfano
+Version: 1.0
+Id: da62b852-7af2-4882-ac83-ff3e142da2ef
+RecreateDirectories: true
+Targets:
+    -
+        Name: RDP Jumplist Files
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.RemoteDesktop_8wekyb3d8bbwe\
+        Recursive: true
+
+# Documentation
+# https://www.zerofox.com/blog/remote-desktop-application-vs-mstsc-forensics-the-rdp-artifacts-you-might-be-missing/
