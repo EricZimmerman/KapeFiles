@@ -20,7 +20,7 @@ The Browsers folder contains Targets for web browsers.
 
 ### Compound
 
-The Compund folder contains Targets that point to other Targets.
+The Compound folder contains Targets that point to other Targets.
 
 ### Logs
 
