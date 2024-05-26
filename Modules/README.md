@@ -8,7 +8,7 @@ The Apps folder contains Modules for all third-party applications.
 
 ### Compound
 
-The Compund folder contains Modules that point to other Modules.
+The Compound folder contains Modules that point to other Modules.
 
 ### EZTools
 
