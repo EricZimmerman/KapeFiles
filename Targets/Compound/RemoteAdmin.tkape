@@ -41,6 +41,10 @@ Targets:
         Category: ApplicationLogs
         Path: LogMeIn.tkape
     -
+        Name: MeshAgent
+        Category: ApplicationLogs
+        Path: MeshAgent.tkape
+    -
         Name: mRemoteNG
         Category: ApplicationLogs
         Path: mRemoteNG.tkape
