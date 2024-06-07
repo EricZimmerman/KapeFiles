@@ -19,7 +19,6 @@ Targets:
         FileMask: "*.log"
         Comment: "Grabs all .log files present in this folder"
 
-
 # Documentation
 # https://github.com/Ylianst/MeshAgent
 # https://ylianst.github.io/MeshCentral/meshcentral/agents/
