@@ -1,0 +1,25 @@
+Description: MeshAgent log and configuration files
+Author: Geir Olav Skei, Atea IRT
+Version: 1.0
+Id: a96457f4-a65e-42bb-8bc8-6ac3df680689
+RecreateDirectories: true
+Targets:
+    -
+        Name: MeshAgent .msh (configuration) file
+        Category: Apps
+        Path: C:\Program Files\Mesh Agent\
+        Recursive: true
+        FileMask: "*.msh"
+        Comment: "Grabs all .msh (config) files present in this folder"
+    -
+        Name: MeshAgent log file
+        Category: Logs
+        Path: C:\Program Files\Mesh Agent\
+        Recursive: true
+        FileMask: "*.log"
+        Comment: "Grabs all .log files present in this folder"
+
+# Documentation
+# https://github.com/Ylianst/MeshAgent
+# https://ylianst.github.io/MeshCentral/meshcentral/agents/
+# https://meshcentral.com/
