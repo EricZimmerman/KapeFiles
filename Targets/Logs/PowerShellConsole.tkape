@@ -14,7 +14,7 @@ Targets:
         Category: PowerShellConsoleLog
         Path: C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\
         FileMask: '*_history.txt'
-   -
+    -
         Name: PowerShell Console Log WOW64 Systemprofile
         Category: PowerShellConsoleLog
         Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\
