@@ -1,6 +1,6 @@
 Description: PowerShell Console Log File
-Author: Mike Cary
-Version: 1.1
+Author: Mike Cary, 2thewes
+Version: 1.2
 Id: efa4332a-89eb-430c-ab61-006a9e6620d7
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,16 @@ Targets:
         Name: PowerShell Console Log
         Category: PowerShellConsoleLog
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\
+        FileMask: '*_history.txt'
+    -
+        Name: PowerShell Console Log Systemprofile
+        Category: PowerShellConsoleLog
+        Path: C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\
+        FileMask: '*_history.txt'
+    -
+        Name: PowerShell Console Log WOW64 Systemprofile
+        Category: PowerShellConsoleLog
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\
         FileMask: '*_history.txt'
 
 # Documentation
