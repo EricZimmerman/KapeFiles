@@ -1,6 +1,6 @@
 Description: Certutil
-Author: NVISO (@NVISOsecurity)
-Version: 1.0
+Author: NVISO (@NVISOsecurity), 2thewes
+Version: 1.1
 Id: ec903d15-64b5-4484-8786-94b2ad90bfb7
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,11 @@ Targets:
         Name: System CryptnetUrlCache
         Category: FileKnowledge
         Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\
+        Recursive: true
+    -
+        Name: System WOW64 CryptnetUrlCache
+        Category: FileKnowledge
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\
         Recursive: true
     -
         Name: User CryptnetUrlCache
