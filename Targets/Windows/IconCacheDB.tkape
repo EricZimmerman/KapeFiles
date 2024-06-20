@@ -1,0 +1,14 @@
+Description: IconCache.db files
+Author: Herbert Bärschneider @SEC Consult
+Version: 1.0
+Id: 4e447ad0-4fda-44f6-9f82-1ae9ac47a8d4
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows IconCache DB
+        Category: IconCache
+        Path: C:\Users\%user%\AppData\Local\
+        FileMask: IconCache.db
+
+# Documentation
+# https://www.sciencedirect.com/science/article/abs/pii/S1742287614000607

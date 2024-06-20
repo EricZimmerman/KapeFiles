@@ -7,12 +7,12 @@ Targets:
     -
         Name: WNS
         Category: WNS
-        Path: C:\Users\%user\AppData\Local\Microsoft\Windows\Notifications\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
         FileMask: appdb.dat
     -
         Name: WNS
         Category: WNS
-        Path: C:\Users\%user\AppData\Local\Microsoft\Windows\Notifications\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\Notifications\
         FileMask: wpndatabase.db
 
 # Documentation

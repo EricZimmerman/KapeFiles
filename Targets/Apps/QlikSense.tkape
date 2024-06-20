@@ -1,0 +1,46 @@
+Description: Qlik Sense
+Author: Abdelkarim CHORFI - CERT CWATCH - ALMOND
+Version: 1.0
+Id: 6e979be3-4913-4d16-a508-cc3284194c2b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Qlik Sense Logs
+        Category: Software
+        Path: C:\ProgramData\Qlik\Sense\Log\Proxy
+        Recursive: true
+        FileMask: '*.txt'
+        Comment: "Collects the proxy logs for Qlik Sense"
+
+    -
+        Name: Qlik Sense Logs
+        Category: Software
+        Path: C:\ProgramData\Qlik\Sense\Log\Proxy
+        Recursive: true
+        FileMask: '*.log'
+        Comment: "Collects the proxy logs for Qlik Sense"
+
+    -
+        Name: Qlik Sense Logs
+        Category: Software
+        Path: C:\ProgramData\Qlik\Sense\Log\Scheduler
+        Recursive: true
+        FileMask: '*.txt'
+        Comment: "Collects the scheduler logs for Qlik Sense"
+    -
+        Name: Qlik Sense Logs
+        Category: Software
+        Path: C:\ProgramData\Qlik\Sense\Log\Scheduler
+        Recursive: true
+        FileMask: '*.log'
+        Comment: "Collects the scheduler logs for Qlik Sense"
+
+# Documentation
+# Qlik Sense is a powerful business intelligence solution that enables users to visualize and analyze complex data.
+# We have seen three vulnerabilities (CVE-2023-41266, CVE-2023-41265, and CVE-2023-48365) exploited on exposed Qlik solution in a recent Cactus Ransomware Campaign:
+# https://www.cybersecuritydive.com/news/cactus-ransomware-qlik-sense-cves/714578/
+# https://arcticwolf.com/resources/blog/qlik-sense-exploited-in-cactus-ransomware-campaign/
+# https://www.shadowserver.org/what-we-do/network-reporting/critical-vulnerable-compromised-qlik-sense-special-report/
+# You can find details on the full exploit here:
+# https://www.praetorian.com/blog/qlik-sense-technical-exploit/
+# https://www.praetorian.com/blog/doubleqlik-bypassing-the-original-fix-for-cve-2023-41265/

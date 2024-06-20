@@ -41,6 +41,10 @@ Targets:
         Category: ApplicationLogs
         Path: LogMeIn.tkape
     -
+        Name: MeshAgent
+        Category: ApplicationLogs
+        Path: MeshAgent.tkape
+    -
         Name: mRemoteNG
         Category: ApplicationLogs
         Path: mRemoteNG.tkape
@@ -89,6 +93,10 @@ Targets:
         Name: TeamViewer
         Category: ApplicationLogs
         Path: TeamViewerLogs.tkape
+    -
+        Name: UEMS
+        Category: ApplicationLogs
+        Path: UEMS.tkape
     -
         Name: UltraViewer
         Category: ApplicationLogs

@@ -33,7 +33,7 @@ Targets:
     -
         Name: SYSTEM user quarantine
         Category: Antivirus
-        Path: C:\\Windows\System32\config\systemprofile\AppData\Local\ESET\ESET Security\Quarantine\
+        Path: C:\Windows\System32\config\systemprofile\AppData\Local\ESET\ESET Security\Quarantine\
         Recursive: true
 
 # Documentation
