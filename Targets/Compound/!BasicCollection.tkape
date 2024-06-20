@@ -6,15 +6,15 @@ RecreateDirectories: true
 Targets:
     -
         Name: Event Logs
-        Category: Event Logs
+        Category: EventLogs
         Path: EventLogs.tkape
     -
         Name: Evidence of Execution
-        Category: Evidence of Execution
+        Category: EvidenceOfExecution
         Path: EvidenceOfExecution.tkape
     -
         Name: File System
-        Category: File System
+        Category: FileSystem
         Path: FileSystem.tkape
     -
         Name: LNKFilesAndJumpLists
@@ -22,11 +22,11 @@ Targets:
         Path: LNKFilesAndJumpLists.tkape
     -
         Name: PowerShellConsole
-        Category: Evidence Of Execution
+        Category: EvidenceOfExecution
         Path: PowerShellConsole.tkape
     -
         Name: RecycleBin InfoFiles
-        Category: File Deletion
+        Category: FileDeletion
         Path: RecycleBin_InfoFiles.tkape
     -
         Name: RegistryHives

@@ -6,42 +6,42 @@ RecreateDirectories: true
 Targets:
     -
         Name: Group Policy Files
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\System32\grouppolicy\
         Recursive: true
     -
         Name: Computer Group Policy files
-        Category: Communication
+        Category: Communications
         Path: C:\ProgramData\Microsoft\Group Policy\History\
         Recursive: true
     -
         Name: User Group Policy files
-        Category: Communication
+        Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Group Policy\History
         Recursive: true
     -
         Name: Local Group Policy INI Files
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\System32\grouppolicy\
         FileMask: '*.ini'
     -
         Name: Local Group Policy Files - Registry Policy Files
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\System32\grouppolicy\
         FileMask: '*.pol'
     -
         Name: Local Group Policy Files - Registry Policy Files
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\System32\grouppolicy\
         FileMask: '*.pol'
     -
         Name: Local Group Policy Files - Startup/Shutdown Scripts
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\System32\grouppolicy\*\Scripts\
         Recursive: true
     -
         Name: Local Group Policy Files - Startup/Shutdown Scripts
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\System32\grouppolicy\*\Scripts\
         Recursive: true
 

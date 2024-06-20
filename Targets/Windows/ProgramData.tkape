@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: ProgramData
-        Category: Application Data
+        Category: ApplicationData
         Path: C:\ProgramData\
         Recursive: true
 

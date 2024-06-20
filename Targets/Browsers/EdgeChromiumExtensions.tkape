@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: Edge Chromium Extension Files
-        Category: Communication
+        Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Extensions\
         Recursive: true
 

@@ -6,19 +6,19 @@ RecreateDirectories: true
 Targets:
    -
       Name: Keepass User Config
-      Category: App
+      Category: Apps
       Path: C:\Users\%user%\AppData\Roaming\KeePass\
       FileMask: "*.xml"
       Comment: "Collecting Keepass User Configuration File"
    -
       Name: Keepass Config Xml
-      Category: App
+      Category: Apps
       Path: C:\Program Files\KeePass Password Safe*\
       FileMask: "*.xml"
       Comment: "Collecting Keepass Configuration File"
    -
       Name: Keepass Application Details
-      Category: App
+      Category: Apps
       Path: C:\Program Files\KeePass Password Safe*\
       FileMask: "*.config"
       Comment: "Collecting Keepass Application Details"

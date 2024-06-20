@@ -6,12 +6,12 @@ RecreateDirectories: true
 Targets:
    -
       Name: Keepass Local Ini
-      Category: App
+      Category: Apps
       Path: C:\Users\%user%\AppData\Local\KeePassXC\
       FileMask: "*.ini"
    -
       Name: Keepass Roaming Ini
-      Category: App
+      Category: Apps
       Path: C:\Users\%user%\AppData\Roaming\KeePassXC\
       FileMask: "*.ini"
 

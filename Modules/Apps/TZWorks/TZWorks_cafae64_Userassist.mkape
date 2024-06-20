@@ -1,5 +1,5 @@
 Description: 'Using cafae64.exe to parse Userassist from NTUSER.DAT. Userassist tracks execution of GUI based executables and links opened in Explorer '
-Category: Program_Execution
+Category: ProgramExecution
 Author: Ajith Ravindran
 Version: 0.1
 Id: b904f46a-25b4-42d9-bfd0-13680ee335bf

@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: Edge HTML5 File System Folder
-        Category: Communication
+        Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\File System\
         Recursive: true
 
