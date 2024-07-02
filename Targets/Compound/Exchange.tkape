@@ -1,6 +1,6 @@
 Description: Exchange Log Files
 Author: Keith Twombley
-Version: 1.0
+Version: 1.1
 Id: 1b54aafe-5074-4d45-b129-29107ce7f863
 RecreateDirectories: true
 Targets:
@@ -12,6 +12,10 @@ Targets:
         Name: Exchange TransportRoles log files
         Category: Logs
         Path: ExchangeTransport.tkape
+    -
+        Name: Exchange Setup log file
+        Category: Logs
+        Path: ExchangeSetupLog.tkape
 
 # Documentation
 # N/A
