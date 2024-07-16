@@ -1,0 +1,14 @@
+Description: Microsoft Safety Scanner
+Author: Geir Olav Skei
+Version: 1.0
+Id: 8e425594-c433-4017-adcd-f5bbcde12492
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Safety Scanner Logs
+        Category: Antivirus
+        Path: C:\Windows\Debug\
+        FileMask: msert.log
+
+# Documentation
+# https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download
