@@ -44,6 +44,11 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Microsoft\Windows Defender\Quarantine\
         Recursive: true
+    -
+        Name: Windows Defender Detections.log
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Scans\History\Service\
+        FileMask: Detections.log
 
 # Documentation
 # https://knez.github.io/posts/how-to-extract-quarantine-files-from-windows-defender/
