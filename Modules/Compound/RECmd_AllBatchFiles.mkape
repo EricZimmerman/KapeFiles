@@ -1,7 +1,7 @@
 Description: 'RECmd: All RECmd Batch Output'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: f2c9c95d-375e-4fb7-b069-7e9b95ea6db5
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RegistryExplorer_RECmd.zip
 ExportFormat: csv
@@ -23,7 +23,7 @@ Processors:
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: RECmd_Kroll.mkape
+        Executable: RECmd_DFIRBatch.mkape
         CommandLine: ""
         ExportFormat: ""
     -
