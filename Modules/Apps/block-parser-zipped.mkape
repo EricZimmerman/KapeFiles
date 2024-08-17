@@ -1,14 +1,15 @@
 Description: Block Parser Zipped
 Category: EventLogs
-Author: Phill Moore
-Version: 1.0
+Author: Phill Moore, Reece394
+Version: 1.1
 Id: cb817a29-bab0-4051-ac7d-7019d6e2ac65
 BinaryUrl: https://github.com/randomaccess3/block-parser
+FileMask: "Microsoft-Windows-PowerShell%4Operational.evtx"
 ExportFormat: zip
 Processors:
     -
         Executable: block-parser.exe
-        CommandLine: -o %destinationDirectory% -z "%sourceDirectory%\Windows\system32\winevt\logs\Microsoft-Windows-PowerShell%4Operational.evtx
+        CommandLine: -o %destinationDirectory% -z %sourceFile%
         ExportFormat: zip
 
 # Documentation
