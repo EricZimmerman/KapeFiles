@@ -9,7 +9,7 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Session\
         Recursive: true
-        Comment: "Telegram app folder structure"
+        Comment: "Session App Folder"
     
 
 # 
