@@ -10,5 +10,5 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Session\
         Recursive: true
         Comment: "Session App Folder"
+
 #
-# 
