@@ -1,4 +1,4 @@
-Description: Module to extract a copy of WinSCP encrypted credentials 
+Description: Module to extract a copy of WinSCP encrypted credentials
 Category: Live Response
 Author: Vito Alfano
 Version: 1.0
@@ -13,5 +13,3 @@ Processors:
 # Documentation
 # https://xmcyber.com/blog/extracting-encrypted-credentials-from-common-tools-2/
 # https://github.com/XMCyber/XMCredentialsDecryptor
-
-
