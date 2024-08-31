@@ -10,7 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\AllRegExecutablesFoundOrRun.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: RECmdConsoleLog.txt
+        ExportFile: %d%_AllRegExecutablesFoundOrRun_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
