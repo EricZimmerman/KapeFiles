@@ -10,7 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\SystemASEPs.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: SystemASEPs_RECmdConsoleLog_%d%.txt
+        ExportFile: SystemASEPs_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd

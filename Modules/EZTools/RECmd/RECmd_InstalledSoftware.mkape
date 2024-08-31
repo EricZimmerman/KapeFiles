@@ -10,7 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\InstalledSoftware.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: InstalledSoftware_RECmdConsoleLog_%d%.txt
+        ExportFile: InstalledSoftware_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
