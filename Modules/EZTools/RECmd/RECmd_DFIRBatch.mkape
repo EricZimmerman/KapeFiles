@@ -10,7 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\DFIRBatch.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: %d%_DFIRBatch_RECmdConsoleLog.txt
+        ExportFile: DFIRBatch_RECmdConsoleLog_%d%.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
