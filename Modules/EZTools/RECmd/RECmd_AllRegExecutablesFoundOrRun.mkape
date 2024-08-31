@@ -1,7 +1,7 @@
 Description: 'RECmd: AllRegExecutablesFoundOrRun'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 23cfcb78-60bb-4b2a-a7a4-b256f42fb83b
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
@@ -10,6 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\AllRegExecutablesFoundOrRun.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd

@@ -1,7 +1,7 @@
 Description: 'RECmd: InstalledSoftware'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 82d89b1d-19c1-439b-a30d-2f8659adf691
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
@@ -10,6 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\InstalledSoftware.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
