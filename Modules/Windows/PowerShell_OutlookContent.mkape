@@ -1,0 +1,12 @@
+Description: Retrieves user accounts and copies Outlook opened files history, saving the results to a directory.
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 9342e84c-483f-4f85-80c1-1c1d7e7df7c6
+ExportFormat: ""
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "$users = (gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*' | ?{$_.PSChildName -match $PatternSID} | Select @{name='SID';expression={$_.PSChildName}},@{name='UserHive';expression={\"$($_.ProfileImagePath)\ntuser.dat\"}},@{name='Username';expression={$_.ProfileImagePath -replace '^(.*[\\\/])',''}}).Username; New-Item -ItemType Directory -Path '%destinationDirectory%\Outlook Opened Files History' | Out-Null; foreach($user in $users){ New-Item -ItemType Directory -Path \"%destinationDirectory%\Outlook Opened Files History\$user\" | Out-Null; Copy-Item -Path \"C:\Users\$user\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\" -Destination \"%destinationDirectory%\Outlook Opened Files History\$user\" -ErrorAction SilentlyContinue -Recurse -Force }"
+        ExportFormat: ""

@@ -1,0 +1,19 @@
+Description: Program Compatibility Assistant (PCA) - Windows 11
+Author: Max Zabuty
+Version: 1.0
+Id: e1b8f7de-9f9e-4d6c-a67c-1e437fdf0c14
+RecreateDirectories: true
+Targets:
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows\appcompat\pca\
+        FileMask: PcaAppLaunchDic.txt
+    -
+        Name: Amcache
+        Category: ApplicationCompatibility
+        Path: C:\Windows\appcompat\pca\
+        FileMask: PcaGeneralDb*
+
+# Documentation
+# https://github.com/Psmths/windows-forensic-artifacts/blob/main/execution/program-compatibility-assistant.md

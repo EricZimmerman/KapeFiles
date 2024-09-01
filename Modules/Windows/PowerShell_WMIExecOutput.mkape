@@ -1,0 +1,12 @@
+Description: Searches for residues of WMIExec files in the Windows folder that contain the actual output, and copies them to a specified directory.
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: e1b8f7de-9f9e-4d6c-a67c-1e437fdf0c14
+ExportFormat: ""
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "New-Item -ItemType Directory -Path '%destinationDirectory%\WmiExec Output Files' | Out-Null; $destinationDirectory = '%destinationDirectory%\WmiExec Output Files'; $pattern = '__\d+\.\d+'; $filesToCopy = Get-ChildItem -Path $env:windir -File | Where-Object { $_.Name -match $pattern }; if ($filesToCopy.Count -ne 0) { New-Item -Path $destinationDirectory -ItemType Directory -Force | Out-Null; foreach ($file in $filesToCopy) { $fileName = $file.Name; $fileFullName = $file.FullName; $destinationPath = Join-Path -Path $destinationDirectory -ChildPath $fileName; Copy-Item -Path $fileFullName -Destination $destinationPath -Force } }"
+        ExportFormat: ""

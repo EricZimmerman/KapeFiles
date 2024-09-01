@@ -1,0 +1,14 @@
+Description: Processes list including the services running them
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 021ed07e-f2ea-4ec7-9eba-bc1e1576aa46
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "tasklist /svc /FO csv  | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Process_Including_Services.csv'"
+        ExportFormat: csv
+
+# Documentation
+# https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tasklist

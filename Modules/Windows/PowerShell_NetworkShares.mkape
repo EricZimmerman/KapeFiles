@@ -1,0 +1,18 @@
+Description: Displaying Network Shares
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: e4442a99-ec52-425d-aa53-ef1ee179ef45
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject —Class Win32_Share | Select Name,Path,Description | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Network Shares.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject —Class Win32_Share | Select Name,Path,Description | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Network Shares.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-share

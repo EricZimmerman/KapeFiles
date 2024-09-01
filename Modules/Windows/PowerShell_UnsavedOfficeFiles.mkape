@@ -1,0 +1,12 @@
+Description: Retrieves user accounts and copies unsaved Office files
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 7b3d9f40-4a5c-4722-b3a2-f8a7f3c2a35f
+ExportFormat: ""
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "$users = (gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*' | ?{$_.PSChildName -match $PatternSID} | Select @{name='SID';expression={$_.PSChildName}},@{name='UserHive';expression={\"$($_.ProfileImagePath)\ntuser.dat\"}},@{name='Username';expression={$_.ProfileImagePath -replace '^(.*[\\\/])',''}}).Username; New-Item -ItemType Directory -Path '%destinationDirectory%\Unsaved Office Files' | Out-Null; foreach($user in $users){ New-Item -ItemType Directory -Path \"%destinationDirectory%\Unsaved Office Files\$user\" | Out-Null; Copy-Item -Path \"C:\Users\$user\AppData\Local\Microsoft\Office\UnsavedFiles\" -Destination \"%destinationDirectory%\Unsaved Office Files\$user\" -ErrorAction SilentlyContinue -Recurse -Force }"
+        ExportFormat: ""

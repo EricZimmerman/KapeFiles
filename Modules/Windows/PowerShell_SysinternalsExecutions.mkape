@@ -1,0 +1,17 @@
+Description: Retrieves user accounts and related Sysinternals executables executions
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 6cfe5e12-34bc-4d85-a3b5-7c2d8f5e5f3d
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "$users = gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*' | ?{$_.PSChildName -match $PatternSID} | Select @{name='SID';expression={$_.PSChildName}},@{name='UserHive';expression={\"$($_.ProfileImagePath)\ntuser.dat\"}},@{name='Username';expression={$_.ProfileImagePath -replace '^(.*[\\\/])',''}}; $bins = @(); foreach ($user in $users) { $sid = $user.SID; $username = $user.Username; $bins += Get-ChildItem -Path Registry::HKU\$sid\Software\Sysinternals -ErrorAction SilentlyContinue | Select @{name='SID';expression={$sid}},@{name='Username';expression={$username}},@{name='Executable';expression={$_.PSChildName}} }; $bins | Export-Csv -NoTypeInformation -Encoding UTF8 -Path '%destinationDirectory%\SysinternalsExecutions.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "$users = gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*' | ?{$_.PSChildName -match $PatternSID} | Select @{name='SID';expression={$_.PSChildName}},@{name='UserHive';expression={\"$($_.ProfileImagePath)\ntuser.dat\"}},@{name='Username';expression={$_.ProfileImagePath -replace '^(.*[\\\/])',''}}; $bins = @(); foreach ($user in $users) { $sid = $user.SID; $username = $user.Username; $bins += Get-ChildItem -Path Registry::HKU\$sid\Software\Sysinternals -ErrorAction SilentlyContinue | Select @{name='SID';expression={$sid}},@{name='Username';expression={$username}},@{name='Executable';expression={$_.PSChildName}} }; $bins | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\SysinternalsExecutions.json' "
+        ExportFormat: json
