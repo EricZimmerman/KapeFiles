@@ -10,3 +10,6 @@ Processors:
         CommandLine: >
             -Command "$users = (gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*' | ?{$_.PSChildName -match $PatternSID} | Select @{name='SID';expression={$_.PSChildName}},@{name='UserHive';expression={\"$($_.ProfileImagePath)\ntuser.dat\"}},@{name='Username';expression={$_.ProfileImagePath -replace '^(.*[\\\/])',''}}).Username; New-Item -ItemType Directory -Path '%destinationDirectory%\Outlook Opened Files History' | Out-Null; foreach($user in $users){ New-Item -ItemType Directory -Path \"%destinationDirectory%\Outlook Opened Files History\$user\" | Out-Null; Copy-Item -Path \"C:\Users\$user\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\" -Destination \"%destinationDirectory%\Outlook Opened Files History\$user\" -ErrorAction SilentlyContinue -Recurse -Force }"
         ExportFormat: ""
+		
+# Documentation
+# https://www.slipstick.com/outlook/securetemp-files-folder/

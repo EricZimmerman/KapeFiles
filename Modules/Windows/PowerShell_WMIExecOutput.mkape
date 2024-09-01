@@ -10,3 +10,7 @@ Processors:
         CommandLine: >
             -Command "New-Item -ItemType Directory -Path '%destinationDirectory%\WmiExec Output Files' | Out-Null; $destinationDirectory = '%destinationDirectory%\WmiExec Output Files'; $pattern = '__\d+\.\d+'; $filesToCopy = Get-ChildItem -Path $env:windir -File | Where-Object { $_.Name -match $pattern }; if ($filesToCopy.Count -ne 0) { New-Item -Path $destinationDirectory -ItemType Directory -Force | Out-Null; foreach ($file in $filesToCopy) { $fileName = $file.Name; $fileFullName = $file.FullName; $destinationPath = Join-Path -Path $destinationDirectory -ChildPath $fileName; Copy-Item -Path $fileFullName -Destination $destinationPath -Force } }"
         ExportFormat: ""
+		
+# Documentation
+# https://github.com/OneScripter/WmiExec
+# https://www.crowdstrike.com/blog/how-to-detect-and-prevent-impackets-wmiexec/

@@ -10,3 +10,6 @@ Processors:
         CommandLine: >
             -Command "$users = (gp 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*' | ?{$_.PSChildName -match $PatternSID} | Select @{name='SID';expression={$_.PSChildName}},@{name='UserHive';expression={\"$($_.ProfileImagePath)\ntuser.dat\"}},@{name='Username';expression={$_.ProfileImagePath -replace '^(.*[\\\/])',''}}).Username; New-Item -ItemType Directory -Path '%destinationDirectory%\Unsaved Office Files' | Out-Null; foreach($user in $users){ New-Item -ItemType Directory -Path \"%destinationDirectory%\Unsaved Office Files\$user\" | Out-Null; Copy-Item -Path \"C:\Users\$user\AppData\Local\Microsoft\Office\UnsavedFiles\" -Destination \"%destinationDirectory%\Unsaved Office Files\$user\" -ErrorAction SilentlyContinue -Recurse -Force }"
         ExportFormat: ""
+		
+# Documentation
+# https://learn.microsoft.com/en-us/office/troubleshoot/word/recover-lost-unsaved-corrupted-document
