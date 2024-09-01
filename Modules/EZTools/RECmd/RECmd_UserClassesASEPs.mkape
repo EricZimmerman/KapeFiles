@@ -1,7 +1,7 @@
 Description: 'RECmd: UserClassesASEPs'
 Category: Registry
 Author: Andreas Hunkeler (@Karneades)
-Version: 1.0
+Version: 1.1
 Id: df3d2d54-dda9-49fb-a427-c9d8348b375d
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
@@ -10,6 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\UserClassesASEPs.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: UserClassesASEPs_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
