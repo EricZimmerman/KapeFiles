@@ -1,0 +1,18 @@
+Description: Drivers List
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 81690a49-c71f-4913-9fb9-430ffa47b413
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject -Class Win32_SystemDriver | Select DisplayName,Name,Description,State,PathName,ServiceType | Export-Csv -NoTypeInformation -Path '%destinationDirectory%\Drivers.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-WmiObject -Class Win32_SystemDriver | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Drivers.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-systemdriver

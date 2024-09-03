@@ -1,0 +1,15 @@
+Description: Collects Domain Information
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 38eedacb-191a-43cf-aaf1-ff183c63c2e9
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\nltest.exe
+        CommandLine: /trusted_domains
+        ExportFormat: txt
+        ExportFile: DomainInformation.txt
+
+# Documentation
+# https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731935(v=ws.11)

@@ -1,0 +1,15 @@
+Description: Gets Kerberos Tickets
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: e9af32c1-2a2c-4d96-9798-f6829681da83
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\klist.exe
+        CommandLine: ""
+        ExportFormat: txt
+        ExportFile: KerberosTickets.txt
+
+# Documentation
+# https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/klist
