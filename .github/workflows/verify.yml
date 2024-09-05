@@ -4,6 +4,15 @@ jobs:
   lintAllTheThings:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install yamllint
+        run: pip install yamllint
+      - name: Run yamllint on Targets
+        run: yamllint Targets/**/*.tkape
+      - name: Run yamllint on Modules
+        run: yamllint Modules/**/*.mkape
+        
