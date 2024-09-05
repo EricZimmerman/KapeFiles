@@ -12,6 +12,6 @@ jobs:
       - name: Install yamllint
         run: pip install yamllint
       - name: Run yamllint on Targets
-        run: yamllint -r Targets # -r flag = recursive
+        run: yamllint Targets/**/*.tkape
       - name: Run yamllint on Modules
-        run: yamllint -r Modules # -r flag = recursive
+        run: yamllint Modules/**/*.mkape 
