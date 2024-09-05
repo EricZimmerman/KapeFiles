@@ -13,7 +13,8 @@ Targets:
         Name: ManageEngine ADSelfService Plus Log Files
         Category: Logs
         Path: C:\ManageEngine\ADSelfService Plus\logs\
-        Recursive: true
+        Recursive: true 
+
 
 # Documentation
 # https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-259a
