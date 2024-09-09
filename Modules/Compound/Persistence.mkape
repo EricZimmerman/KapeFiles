@@ -21,3 +21,6 @@ Processors:
         Executable: PowerShell_AccessibilityFeatures.mkape
         CommandLine: ""
         ExportFormat: ""
+
+# Documentation:
+# N/A
