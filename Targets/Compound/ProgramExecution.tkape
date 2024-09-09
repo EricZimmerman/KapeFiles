@@ -52,6 +52,6 @@ Targets:
         Name: .NET CLR UsageLogs
         Category: .NET CLR UsageLogs
         Path: NETCLRUsageLogs.tkape
-		
+
 # Documentation
 # Collecting different artifacts related to program execution on the host
