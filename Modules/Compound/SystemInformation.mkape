@@ -1,0 +1,54 @@
+Description: Parsing all information for System Information Category
+Category: System Information
+Author: Max Zabuty
+Version: 1
+Id: 223ac60b-b5be-4f79-8e16-4f16b1597f3c
+ExportFormat: json
+Processors:
+    -
+        Executable: PowerShell_SystemInformation.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Processes.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_ProcessesIncludingServices.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Drivers.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetworkShares.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_ActiveDrives.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_LocalUsers.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_LocalGroups.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_klist.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_nltest.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Defender_Exclusions.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation:
+# N/A

@@ -1,0 +1,14 @@
+Description: Hosts file
+Author: Max Zabuty
+Version: 1.0
+Id: 6f045c9b-5d0c-42ec-ab09-050b9853a5e9
+RecreateDirectories: true
+Targets:
+    -
+        Name: HostsFile
+        Category: HostsFile
+        Path: C:\Windows\System32\drivers\etc\
+        FileMask: 'Hosts'
+
+# Documentation
+# N/A

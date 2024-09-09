@@ -1,15 +1,18 @@
 Description: Named Pipes List
-Category: LiveResponse
-Author: nov3mb3r
+Category: Network Activity
+Author: Max Zabuty
 Version: 1.0
 Id: f1f5f93d-d03b-45f4-bf72-7b8f9dc7ac23
-ExportFormat: txt
+ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "Get-ChildItem -Path '\\.\pipe\' |  Sort Length | Format-Table FullName, Length, IsReadOnly, Exists, CreationTime, LastAccessTime"
-        ExportFormat: txt
-        ExportFile: pipes.txt
+        CommandLine: -Command "Get-ChildItem -Path '\\.\pipe\' |  Sort Length | Select FullName, Length, IsReadOnly, Exists, CreationTime, LastAccessTime | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Named Pipes.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-ChildItem -Path '\\.\pipe\' |  Sort Length | Select FullName, Length, IsReadOnly, Exists, CreationTime, LastAccessTime | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Named Pipes.json'"
+        ExportFormat: json
 
 # Documentation
 # https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes
