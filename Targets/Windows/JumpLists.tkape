@@ -1,0 +1,20 @@
+Description: Jump lists
+Author: Max Zabuty
+Version: 1
+Id: 2e354bdc-e418-438e-8439-c21c83c64e11
+RecreateDirectories: true
+Targets:
+    -
+        Name: JumpLists from CustomDestinations
+        Category: JumpLists
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\
+        Recursive: true
+    -
+        Name: JumpLists from CustomDestinations
+        Category: JumpLists
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations\
+        Recursive: true
+
+# Documentation
+# https://www.forensafe.com/blogs/jumplist.html
+# https://dfir.pubpub.org/pub/wfuxlu9v/release/1

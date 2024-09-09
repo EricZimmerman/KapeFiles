@@ -1,14 +1,18 @@
 Description: Retrieves basic information about active SMB sessions. It replaces the command net use.
-Category: LiveResponse
-Author: Vito Alfano
+Category: Network Activity
+Author: Vito Alfano, Max Zabuty
 Version: 1.0
 Id: 3d38b9bb-64dd-440e-9a01-8db0feceb3a7
 ExportFormat: csv
 Processors:
     -
         Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-        CommandLine: -Command "Get-SMBSession | Select SessionId, ClientComputerName, ClientUserName, NumOpens  | Export-Csv -Path %destinationDirectory%\Net_Sessions.csv -NoTypeInformation "
+        CommandLine: -Command "Get-SMBSession | Select SessionId, ClientComputerName, ClientUserName, NumOpens  | Export-Csv -NoTypeInformation -Encoding UTF8 -Path '%destinationDirectory%\SMB Session.csv' "
         ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-SMBSession | Select SessionId, ClientComputerName, ClientUserName, NumOpens | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath 'SMB Session.json'"
+        ExportFormat: json
 
 # Documentation
 # https://learn.microsoft.com/en-us/powershell/module/smbshare/get-smbsession?view=windowsserver2022-ps

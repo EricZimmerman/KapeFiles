@@ -1,0 +1,22 @@
+Description: Parses the Recycle Bin, gathering details about deleted files and exports the results in CSV and JSON formats. (Time in UTC)
+Category: FileDeletion
+Author: Max Zabuty
+Version: 1.0
+Id: 3d845a61-5f0e-4d4f-bf57-b0e77b6b5db1
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "$shell = New-Object -ComObject Shell.Application; $recycleBin = $Shell.Namespace(0xA); $recycled = @(); $recycleBin.Items() | % { $originalPath = $_.ExtendedProperty('{9B174B33-40FF-11D2-A27E-00C04FC30871} 2'); $originalPath = (Join-Path -Path $originalPath -ChildPath $_.Name); $recycledPath = $_.Path; if (Test-Path $recycledPath -PathType Container) { $fileType = 'Directory' } else { $fileType = 'File' }; $sha1 = (Get-FileHash -Algorithm SHA1 -Path $recycledPath -ErrorAction SilentlyContinue).Hash; $removalDate = $_.ExtendedProperty('{9B174B33-40FF-11D2-A27E-00C04FC30871} 3'); $recycleSid = $recycledPath.Split('\\')[2]; $objSID = New-Object System.Security.Principal.SecurityIdentifier($recycleSid); $userName = $objSID.Translate([System.Security.Principal.NTAccount]).Value; $properties = [ordered]@{ 'Removal Date' = $removalDate; 'Username' = $userName; 'Recycle Bin Path' = $recycledPath; 'Original Path' = $originalPath; 'File Name' = $_.Name; 'File Type' = $fileType; 'SHA1' = $sha1 }; $recycled += New-Object psobject -Property $properties }; [System.Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null; [System.GC]::Collect(); [System.GC]::WaitForPendingFinalizers(); $shell = $null; $recycled | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\RecycleBin.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "$shell = New-Object -ComObject Shell.Application; $recycleBin = $Shell.Namespace(0xA); $recycled = @(); $recycleBin.Items() | % { $originalPath = $_.ExtendedProperty('{9B174B33-40FF-11D2-A27E-00C04FC30871} 2'); $originalPath = (Join-Path -Path $originalPath -ChildPath $_.Name); $recycledPath = $_.Path; if (Test-Path $recycledPath -PathType Container) { $fileType = 'Directory' } else { $fileType = 'File' }; $sha1 = (Get-FileHash -Algorithm SHA1 -Path $recycledPath -ErrorAction SilentlyContinue).Hash; $removalDate = $_.ExtendedProperty('{9B174B33-40FF-11D2-A27E-00C04FC30871} 3'); $recycleSid = $recycledPath.Split('\\')[2]; $objSID = New-Object System.Security.Principal.SecurityIdentifier($recycleSid); $userName = $objSID.Translate([System.Security.Principal.NTAccount]).Value; $properties = [ordered]@{ 'Removal Date' = $removalDate; 'Username' = $userName; 'Recycle Bin Path' = $recycledPath; 'Original Path' = $originalPath; 'File Name' = $_.Name; 'File Type' = $fileType; 'SHA1' = $sha1 }; $recycled += New-Object psobject -Property $properties }; [System.Runtime.InteropServices.Marshal]::ReleaseComObject($shell) | Out-Null; [System.GC]::Collect(); [System.GC]::WaitForPendingFinalizers(); $shell = $null; $recycled | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\RecycleBin.json'"
+        ExportFormat: json
+
+# Documentation
+# https://forensafe.com/blogs/recycleBin.html
+# https://learn.microsoft.com/en-us/windows/win32/com/component-object-model--com--portal
+# https://www.devhut.net/vba-shell-application-deep-dive/

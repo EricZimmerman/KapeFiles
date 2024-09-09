@@ -1,5 +1,5 @@
 Description: TCP Established Connections including DNSCache and process information
-Category: LiveResponse
+Category: Network Activity
 Author: Max Zabuty
 Version: 1.0
 Id: e2c9b4f3-5e2a-4bce-bbcf-8b473b3bb167
