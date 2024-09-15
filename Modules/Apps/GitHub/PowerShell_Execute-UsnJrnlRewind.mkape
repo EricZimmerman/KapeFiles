@@ -1,0 +1,20 @@
+Description: Execute-UsnJrnlRewind.ps1 - Execute usnjrnl_rewind.exe on MFT and UsnJrnl CSV from MFTEcmd to "rewind" the UsnJrnl and add their full path to UsnJrnl entries. Works on the module destination directory.
+Category: FileSystem
+Author: CyberCX-DFIR, Thomas DIOT (Qazeer)
+Version: 1.0
+Id: 82db8f91-7131-4c8e-a2d6-48cb52336ff9
+BinaryUrl: https://gist.github.com/Qazeer/2b90b93dfc21e0987e73302703e4b9e0
+ExportFormat: CSV
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "& '%kapeDirectory%\\Modules\\bin\\Execute-UsnJrnlRewind.ps1' -UsnJrnlRewindBinary '%kapeDirectory%\\Modules\\bin\\usnjrnl_rewind.exe' -InputDir '%destinationDirectory%' -OutputDir '%destinationDirectory%'"
+        ExportFormat: CSV
+
+# Documentation
+# Process the module destinationDirectory\Filesystem folder to rewind the UsnJrnl following an execution of the MFTEcmd_$MFT and MFTEcmd_$J KAPE modules.
+# Execute-UsnJrnlRewind.ps1 is a simple wrapper to usnjrnl_rewind.exe that finds and executes usnjrnl_rewind.exe on MFT and UsnJrnl CSV found in the specified folder.
+# CyberCX NTFS Usnjrnl Rewind: https://cybercx.com.au/blog/ntfs-usnjrnl-rewind/
+# Original usnjrnl_rewind.py: https://github.com/CyberCX-DFIR/usnjrnl_rewind
+# Execute-UsnJrnlRewind.ps1 wrapper: https://gist.github.com/Qazeer/2b90b93dfc21e0987e73302703e4b9e0
+# usnjrnl_rewind.exe (https://github.com/Qazeer/usnjrnl_rewind_compiled/releases) must be placed under "%kapeDirectory%\Modules\bin\usnjrnl_rewind.exe".
