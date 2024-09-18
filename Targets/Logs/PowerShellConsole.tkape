@@ -1,5 +1,5 @@
 Description: PowerShell Console Log File
-Author: Mike Cary, 2thewes
+Author: Mike Cary, 2thewes, Vikas Singh
 Version: 1.2
 Id: efa4332a-89eb-430c-ab61-006a9e6620d7
 RecreateDirectories: true
@@ -19,8 +19,19 @@ Targets:
         Category: PowerShellConsoleLog
         Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\
         FileMask: '*_history.txt'
+    -
+        Name: PowerShell ISE - AutoSave Files
+        Category: PowerShellConsoleLog
+        Path: C:\Users\%user%\AppData\Local\Microsoft_Corporation\powershell_ise.exe_StrongName*\*\AutoSaveFiles\
+        FileMask: '*.ps1'
+    -
+        Name: PowerShell ISE - User Config
+        Category: PowerShellConsoleLog
+        Path: C:\Users\%user%\AppData\Local\Microsoft_Corporation\powershell_ise.exe_StrongName*\*\
+        FileMask: '*.config'
 
 # Documentation
+# https://vikas-singh.notion.site/PowerShell-Command-History-Forensics-81a35c4f0b824c2b95c28f98134d49a4?pvs=4
 # https://community.sophos.com/malware/b/blog/posts/powershell-command-history-forensics
 # https://darizotas.blogspot.com/2018/10/forensics-powershell-artifacts.html
 # https://digital-forensics.sans.org/media/DFPS_FOR508_v4.4_1-19.pdf
