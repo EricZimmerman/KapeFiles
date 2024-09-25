@@ -1,0 +1,29 @@
+Description: eMule
+Author: Fábio Melo Pfeifer
+Version: 1.0
+Id: dd4d5575-46aa-4618-9ecf-f8f9d7271b0c
+RecreateDirectories: true
+Targets:
+    -
+        Name: eMule Logs and Configuration Files
+        Category: FileDownload
+        Path: C:\Users\%user%\AppData\Local\eMule\
+        Recursive: true
+        Comment: "Locates eMule logs and configuration files and copies them."
+
+    -
+        Name: eMule part.met files
+        Category: FileDownload
+        Path: C:\
+        FileMask: '*.part.met'
+        Recursive: true
+        Comment: "Locates eMule *.part.met files and copies them."
+
+# Documentation
+# https://www.researchgate.net/publication/269080208_Identificacao_de_Artefatos_Periciais_do_eMule
+# eMule is a file-sharing client which supports the eDonkey protocol.
+# Logs are stored in .met format and must be viewed in a hex editor or parsed using a specific parser.
+# known.met within the configuration folder will contain information on downloaded and uploaded files.
+# AC_SearchStrings.dat contains searches conducted by the user.
+# A .part.met file contains information about a current download.
+# TKape was created for version 0.50a.
