@@ -201,6 +201,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
         Recursive: true
         Comment: "Required for offline decryption"
+    -
+        Name: SYSTEM Chrome History
+        Category: Communications
+        Path: C:\Windows\system32\config\systemprofile\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
 
 # Documentation
 # https://nasbench.medium.com/web-browsers-forensics-7e99940c579a
