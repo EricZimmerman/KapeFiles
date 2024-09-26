@@ -3,7 +3,7 @@ Category: SUM
 Author: Matthew Arbaugh
 Version: 1.0
 Id: 92cc0f6c-4e41-4b1f-b250-4b016724f1c8
-BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/SUM-Repair.ps1
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/KAPE/SUM-Repair.ps1
 ExportFormat: csv
 Processors:
     -
