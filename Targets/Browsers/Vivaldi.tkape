@@ -1,0 +1,99 @@
+Description: Vivaldi Artifacts
+Author: Sebastian Søgaard
+Version: 1.0
+Id: 27893cda-f3c7-47df-aacd-2682d49a19e5
+RecreateDirectories: true
+Targets:
+    -
+        Name: Vivaldi Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Vivaldi Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        Recursive: true
+        FileMask: Network Persistent State
+    -
+        Name: Vivaldi Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Vivaldi History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: History*
+    -
+        Name: Vivaldi Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Vivaldi Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Vivaldi Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Vivaldi Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Vivaldi Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Vivaldi Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Vivaldi Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Vivaldi Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Vivaldi User Tracking
+        Category: Communications
+        Path: C:\Users\%user%\
+        FileMask: .vivaldi_reporting_data*
+    -
+        Name: Vivaldi Calendar
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Calendar*
+    -
+        Name: Vivaldi Contacts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Contacts*
+    -
+        Name: Vivaldi Notes
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: Notes*
+    -
+        Name: Vivaldi Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Vivaldi\User Data\*\
+        FileMask: DownloadMetadata*
+
+
+# Documentation
+# For vivaldi user tracking, see here: https://vivaldi.com/blog/how-we-count-our-users/
+# Vivaldi is Chromium, so the same artifacts can be found, however Vivaldi has a few unique ones
+# Like "Notes"

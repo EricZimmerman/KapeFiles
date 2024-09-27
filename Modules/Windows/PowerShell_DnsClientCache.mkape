@@ -1,0 +1,18 @@
+Description: Displaying DNS Client Cache
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: 0bec8e98-4111-4d91-a774-0b8d50eaf430
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-DnsClientCache | Select Entry,Name,Type,Status,Section,TimeToLive,DataLength,Data | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\DNS Client Cache.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-DnsClientCache | Select Entry,Name,Type,Status,Section,TimeToLive,DataLength,Data | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\DNS Client Cache.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netneighbor?view=windowsserver2022-ps

@@ -2,7 +2,7 @@ Description: Name of application/artifact here # Required
 Category: Misc # Required, this value will be the name of the folder where the parsed Module output is stored
 Author: FirstName LastName # Make sure you get credit for your work
 Version: 1.0 # Required, iterate as necessary
-Id: 0256a455-1248-4e30-8175-727679189ddd # Required, unique GUID is required for every KAPE Target/Module
+Id: Unique GUID here # Required, generate within gKape by double clicking on a Target or Module, then click Generate GUID button at bottom of popup window, paste GUID here. Or, run kape.exe --guid
 BinaryUrl: https://url.goes.here.com
 ExportFormat: csv # Required, this is the default ExportFormat in the instance the user chooses a format that is not listed below, or simply chooses Default within gkape
 WaitTimeout: 0 # Optional, this specifies the number of minutes KAPE should wait for a Module to finish

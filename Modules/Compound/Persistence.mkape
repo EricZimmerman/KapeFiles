@@ -1,0 +1,26 @@
+Description: Parsing all Persistence category
+Category: Persistence
+Author: Max Zabuty
+Version: 1
+Id: 8da4a739-5367-47ca-ab84-12f4a0f8e0de
+ExportFormat: json
+Processors:
+    -
+        Executable: Windows_schtasks.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: SysInternals_Autoruns.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_WMIProviders.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_AccessibilityFeatures.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation:
+# N/A

@@ -1,0 +1,64 @@
+Description: ISLOnline Remote Access Tool
+Author: Thomas Burnette
+Version: 1.0
+Id: cf494b12-b096-43cf-99a7-c8031fc801b1
+RecreateDirectories: true
+Targets:
+    -
+        Name: ISLOnline Logs - Sessions - *.out
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\ISL Online Cache\ISL Light Client\*\
+        FileMask: 'ISLClient.out'
+        Comment: "Collects client session logs for one or more sessions"
+    -
+        Name: ISLOnline Logs - Session Configurations
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\ISL Online Cache\ISL Light Client\*\conf\
+        FileMask: '*'
+        Comment: "Configurations for ISL Light sessions"
+    -
+        Name: ISL AlwaysOn Logs - Sessions List
+        Category: Communications
+        Path: C:\Program Files (x86)\ISL Online\ISL AlwaysOn\
+        FileMask: 'session.xml'
+        Comment: "Collects an xml file listing all sessions for ISL AlwaysOn (Unattended Access)"
+    -
+        Name: ISL AlwaysOn Logs - Sessions
+        Category: Communications
+        Path: C:\Program Files (x86)\ISL Online\ISL AlwaysOn\sessions\*\
+        FileMask: 'trace.out'
+        Comment: "Detailed log for each session for ISL AlwaysOn (Unattended Access)"
+    -
+        Name: ISL AlwaysOn - App Logs
+        Category: Communications
+        Path: C:\Program Files (x86)\ISL Online\ISL AlwaysOn\
+        FileMask: '*.out'
+        Comment: "Application logs containg various artifacts."
+    -
+        Name: ISL Light Logs - Sessions
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\ISL Online Cache\ISL Light\*\
+        FileMask: 'trace.out'
+        Comment: "Collects client session logs for one or more sessions"
+    -
+        Name: ISL AlwaysOn - Email Configuration
+        Category: Communications
+        Path: C:\Program Files (x86)\ISL Online\ISL AlwaysOn\status\
+        FileMask: 'tray'
+        Comment: "This file includes the email of the logged in user for ISL AlwaysOn (Unattended Access)"
+    -
+        Name: ISL AlwaysOn - Configuration
+        Category: Communications
+        Path: C:\Program Files (x86)\ISL Online\ISL AlwaysOn\
+        FileMask: 'StaticConfiguration.ini'
+        Comment: "Configuration information (port, http/htpps) for ISL AlwaysOn (Unattended Access)"
+
+# Documentation
+# https://www.islonline.com/us/enus/
+# https://www.anomali.com/blog/anomali-cyber-watch-earth-kitsune-uses-chrome-native-messaging-for-persistence-wip26-targets-middle-east-telco-from-abused-clouds-azerbaijan-sponsored-group-geofenced-its-payloads-to-armenian-ips
+# https://www.bleepingcomputer.com/news/security/coinbase-cyberattack-targeted-employees-with-fake-sms-alert/
+# ISL Online is a remote access tool with several methods of connecting to clients. ISL Light allows for installed or run once clients.
+# ISL AlwaysOn allows for unattended access to clients and requires elevated privileges to install the ISL Online client.
+# Forensic artifacts vary based on method of use.
+# One of the most common methods of connecting to a client is to ask them to navigate to islonline.net and enter a connection code which will then download a single use ISL client.
+# The most useful artifacts are ISLClient.out, trace.out, and session.xml. With these files you can identify how many sessions occured, when they occurred, as well as what took place (ie. file transfers in or out)

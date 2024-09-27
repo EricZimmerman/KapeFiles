@@ -1,0 +1,18 @@
+Description: Active Drives List
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: 74d3505a-ec0f-4092-b121-6796583af8e0
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-PSDrive | Select Name,Provider,Root,CurrentLocation | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Active Drives.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-PSDrive | Select Name,Provider,Root,CurrentLocation | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Active Drives.csv'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-psdrive?view=powershell-7.4

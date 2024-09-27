@@ -1,0 +1,30 @@
+Description: Collecting Wi-Fi Profiles and Passwords
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: e4d8433b-506b-4053-8226-e2c4938ccba2
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "(netsh wlan show profiles) | Select-String '\:(.+)$' | ForEach-Object {
+                        $name=$_.Matches.Groups[1].Value.Trim();
+                        $profileDetails=(netsh wlan show profile name=$name key=clear);
+                        $password=($profileDetails | Select-String 'Key Content\W+\:(.+)$').Matches.Groups[1].Value.Trim();
+                        [PSCustomObject]@{ SSID=$name; PASSWORD=$password }
+                    } | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Wi-Fi Profiles.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "(netsh wlan show profiles) | Select-String '\:(.+)$' | ForEach-Object {
+                        $name=$_.Matches.Groups[1].Value.Trim();
+                        $profileDetails=(netsh wlan show profile name=$name key=clear);
+                        $password=($profileDetails | Select-String 'Key Content\W+\:(.+)$').Matches.Groups[1].Value.Trim();
+                        [PSCustomObject]@{ SSID=$name; PASSWORD=$password }
+                    } | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Wi-Fi Profiles.json'"
+        ExportFormat: json
+
+# Documentation
+# N/A

@@ -1,0 +1,19 @@
+Description: Recent Folders LNK files
+Author: Max Zabuty
+Version: 1
+Id: 103c8de7-3303-41ea-98d5-35ea1a3ae1ae
+RecreateDirectories: true
+Targets:
+    -
+        Name: LNK Files from Recent
+        Category: File and Folder Usage
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Recent\
+        Recursive: true
+    -
+        Name: LNK Files from Microsoft Office Recent
+        Category: File and Folder Usage
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Office\Recent\
+        Recursive: true
+
+# Documentation
+# https://www.cybertriage.com/artifact/windows-recents-folder-artifact/

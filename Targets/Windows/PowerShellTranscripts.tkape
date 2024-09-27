@@ -1,11 +1,16 @@
 Description: PowerShell Transcripts
 Author: Andrew Rathbun and Chad Tilbury
-Version: 1.0
+Version: 1.1
 Id: 316cd490-7a40-4518-aade-1de070191f3d
 RecreateDirectories: true
 Targets:
     -
         Name: PowerShell Transcripts - Default Location
+        Category: PowerShellTranscripts
+        Path: C:\Users\%user%\Documents\
+        FileMask: 'PowerShell_transcript.*.txt'
+    -
+        Name: PowerShell Transcripts - Observed Location
         Category: PowerShellTranscripts
         Path: C:\Users\%user%\Documents\20*\
         FileMask: 'PowerShell_transcript.*.txt'
@@ -26,9 +31,11 @@ Targets:
         FileMask: 'PowerShell_transcript.*.txt'
 
 # Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.host/start-transcript
 # https://lazyadmin.nl/powershell/start-transcript/
 # https://www.stigviewer.com/stig/windows_10/2021-03-10/finding/V-230220
 # https://www.itprotoday.com/powershell/how-use-automatic-powershell-transcription
+# https://artefacts.help/windows_powershell_transcript.html
 # These logs appears when auditing is turned on via Group Policy or Start-Transcript is used during PowerShell execution
 # As more locations are observed, they will be added here
-# Example location (default): c:\users\name\documents\20220301\PowerShell_transcript.DEVICENAME.qp9EOTN2.20220301132612.txt
+# Example location: C:\Users\USERNAME\Documents\20220301\PowerShell_transcript.DEVICENAME.qp9EOTN2.20220301132612.txt

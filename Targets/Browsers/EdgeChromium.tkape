@@ -17,7 +17,7 @@ Targets:
     -
         Name: Edge Cookies
         Category: Communications
-        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Network
         FileMask: Cookies*
     -
         Name: Edge Current Session

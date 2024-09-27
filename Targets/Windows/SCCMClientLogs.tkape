@@ -1,0 +1,18 @@
+Description: SCCM Client Log Files
+Author: Andrew Rathbun
+Version: 1.0
+Id: 700413f8-703b-44fb-9192-8830ac84b6b0
+RecreateDirectories: true
+Targets:
+    -
+        Name: SCCM Client Log Files
+        Category: Logs
+        Path: C:\Windows\CCM\Logs
+
+# Documentation
+# https://learn.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/about-log-files#locating-log-files
+# Previous version of this Target: https://github.com/EricZimmerman/KapeFiles/commit/2199b6b7749b2f066e9f54a16626160279ab7948
+#
+# I have seen reference to malicious binaries associated with a user in a log found in this folder
+# Sample log entry:
+# <![LOG[Add RecentlyUsedApp: <evil.exe DOMAIN\username>]LOG]!><time="12:22:13.679+300" date="02-27-2022" component="AssetAdvisor" context="" type="1" thread="5564" file="aa_recentlyusedapps.cpp:235">

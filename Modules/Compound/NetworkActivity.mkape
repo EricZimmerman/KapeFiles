@@ -1,0 +1,66 @@
+Description: Parsing all information for Network Activity Category
+Category: Network Activity
+Author: Max Zabuty
+Version: 1
+Id: 8da4a739-5367-47ca-ab84-12f4a0f8e0de
+ExportFormat: json
+Processors:
+    -
+        Executable: PowerShell_SMBMapping.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_SMBOpenFile.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_SMBSession.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetNeighbor.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_TCPConnections.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetworkAdapters.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetworkIPAddresses.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetworkIPConfiguration.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_DnsClientCache.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_nbtstat_NetBIOSCache.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Windows_nbtstat_NetBIOSSessions.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: Powershell_Wireless_Network_Connections.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NamedPipes.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_NetRoute.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation:
+# N/A

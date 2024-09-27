@@ -10,6 +10,8 @@ Targets:
         Path: C:\Windows\appcompat\pca
 
 # Documentation
+# https://aboutdfir.com/new-windows-11-pro-22h2-evidence-of-execution-artifact/
+# https://blog.sygnia.co/diving-into-the-new-windows-11-pca-artifact
 # Credit to rancio#4162 on the Digital Forensics Discord Server who noticed this artifact - https://discord.com/channels/427876741990711298/427936091220344833/1057680326484299786
 # This artifact appears to be on Windows 11 only and will comprise of the following files:
 # C:\Windows\appcompat\pca\PcaAppLaunchDic.txt

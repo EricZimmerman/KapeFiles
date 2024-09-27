@@ -1,0 +1,24 @@
+Description: ADTimeline.ps1 - The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest.
+Category: GitHub
+Author: Tristan PINCEAUX - CERT CWATCH - ALMOND
+Version: 1.0
+Id: 6666cc62-821f-4b13-b13a-03c768b40f71
+BinaryUrl: https://raw.githubusercontent.com/ANSSI-FR/ADTimeline/master/ADTimeline.ps1
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: "-ep bypass & '%kapeDirectory%\\Modules\\bin\\ADTimeline.ps1'; Move-Item timeline_*.csv -Destination %destinationDirectory%; Move-Item logfile_*.log -Destination %destinationDirectory%; Move-Item ADobjects_*.xml -Destination %destinationDirectory%; Move-Item gcADobjects_*.xml -Destination %destinationDirectory% "
+        ExportFormat: csv
+
+# Documentation
+# ADtimeline is a PowerShell script created by the ANSSI (French Cybersecurity Agency).
+# You can use the output of this script to determine persistance, sensitives accounts, suspicious activities...
+# You need to run this script on a live domain controller.
+# This script will generate four files:
+# - timeline_%DOMAINFQDN%.csv: The timeline generated with the AD replication metadata of objects retrieved.
+# - logfile_%DOMAINFQDN%.log: Script log file. You will also find various information on the domain.
+# - ADobjects_%DOMAINFQDN%.xml: Objects of interest retrieved via LDAP.
+# - gcADobjects_%DOMAINFQDN%.xml: Objects of interest retrieved via the Global Catalog.
+# https://github.com/ANSSI-FR/ADTimeline
+# https://www.first.org/resources/papers/amsterdam2019/AD_Timeline_FIRST_TC.pdf

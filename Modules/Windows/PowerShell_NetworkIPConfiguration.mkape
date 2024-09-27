@@ -1,0 +1,20 @@
+Description: Collecting Network IP Configuration and Parsing Specific Fields
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: 76a02001-2a44-4e19-a3f7-14d2352f678d
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "Get-NetIPConfiguration | Select-Object InterfaceAlias,InterfaceIndex,InterfaceDescription,@{name='NetProfile';expression={$_.NetProfile.Name}},@{name='IPv4Address';expression={$_.IPv4Address -join ','}},@{name='IPv4DefaultGateway';expression={$_.IPv4DefaultGateway -join ','}},@{name='DNSServer';expression={$_.DNSServer -join ','}} | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Network IP Configuration.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "Get-NetIPConfiguration | Select-Object InterfaceAlias,InterfaceIndex,InterfaceDescription,@{name='NetProfile';expression={$_.NetProfile.Name}},@{name='IPv4Address';expression={$_.IPv4Address -join ','}},@{name='IPv4DefaultGateway';expression={$_.IPv4DefaultGateway -join ','}},@{name='DNSServer';expression={$_.DNSServer -join ','}} | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Network IP Configuration.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netipconfiguration?view=windowsserver2022-ps

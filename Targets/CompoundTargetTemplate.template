@@ -1,14 +1,14 @@
 Description: Name of application/artifact here # Required
 Author: Your name here # Required
 Version: 1.0 # Required
-Id: Unique GUID here # Required
+Id: 89a28b16-15b1-476a-bd17-e3ba2602d5e0 # Required
 RecreateDirectories: true # Required
 Targets:
     -
         Name: CompoundTarget1 # Required
         Category: Category # Required
         Path: CompoundTarget1.tkape # Required
-        Comments: "Comments go here" # Optional
+        Comment: "Comments go here" # Optional
     -
         Name: CompoundTarget2
         Category: Category

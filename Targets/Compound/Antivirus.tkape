@@ -61,6 +61,10 @@ Targets:
         Category: Antivirus
         Path: McAfee_ePO.tkape
     -
+        Name: Microsoft Safety Scanner
+        Category: Antivirus
+        Path: MicrosoftSafetyScanner.tkape
+    -
         Name: RogueKiller
         Category: Antivirus
         Path: RogueKiller.tkape

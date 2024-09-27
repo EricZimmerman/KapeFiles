@@ -1,11 +1,11 @@
 Description: 'MFTECmd: process $J / $UsnJrnl$J files'
 Category: FileSystem
-Author: Eric Zimmerman, Thomas DIOT
-Version: 1.1
+Author: Eric Zimmerman, Thomas DIOT, Reece394
+Version: 1.2
 Id: 5ef67a6b-5895-46bb-af2a-3339a3227e25
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
 ExportFormat: csv
-FileMask: '$UsnJrnl%3A$J|$J|UsnJrnl-J'
+FileMask: '$UsnJrnl%3A$J|$J|UsnJrnl-J|$UsnJrnl_*.bin'
 Processors:
     -
         Executable: MFTECmd.exe

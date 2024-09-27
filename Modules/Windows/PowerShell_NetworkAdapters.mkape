@@ -1,0 +1,18 @@
+Description: Collecting Network Adapters Information
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: 15ab571c-1fde-433e-a9b7-9132542ff07f
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetAdapter | Select Name, Status, MacAddress, PhysicalMediaType, DriverName, DriverInformation, DriverVersion, DriverDescription, SystemName, PnPDeviceID | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Network Adapters.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetAdapter | Select Name, Status, MacAddress, PhysicalMediaType, DriverName, DriverInformation, DriverVersion, DriverDescription, SystemName, PnPDeviceID | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Network Adapters.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/netadapter/get-netadapter?view=windowsserver2022-ps

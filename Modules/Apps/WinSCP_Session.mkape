@@ -1,0 +1,15 @@
+Description: Module to extract a copy of WinSCP encrypted credentials
+Category: Live Response
+Author: Vito Alfano
+Version: 1.0
+Id: e00dac99-3a59-4c59-911c-95eda1769250
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\cmd.exe
+        CommandLine: /c reg export "HKEY_CURRENT_USER\Software\Martin Prikryl\WinSCP 2\Sessions" %destinationDirectory%\winscp2_sessions_key.txt
+        ExportFormat: txt
+
+# Documentation
+# https://xmcyber.com/blog/extracting-encrypted-credentials-from-common-tools-2/
+# https://github.com/XMCyber/XMCredentialsDecryptor

@@ -1,0 +1,14 @@
+Description: Perflogs Folder Copy
+Author: Vito Alfano
+Version: 1.0
+Id: b87302c9-fe0e-4d07-9f9f-64c5b73c80a2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Perflogs
+        Category: Application
+        Path: C:\PerfLogs\
+        Recursive: true
+
+# Documentation
+# N/A

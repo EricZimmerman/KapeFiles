@@ -1,0 +1,15 @@
+Description: Module to extract a copy of MobaXterm encrypted master password
+Category: Live Response
+Author: Vito Alfano
+Version: 1.0
+Id: 4ca41e3e-918e-419f-b7cf-22a8cdb1da0f
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\cmd.exe
+        CommandLine: /c reg export "HKEY_CURRENT_USER\Software\Mobatek\MobaXterm\M" %destinationDirectory%\Mobaterm_MasterPass_key.txt
+        ExportFormat: txt
+
+# Documentation
+# https://xmcyber.com/blog/extracting-encrypted-credentials-from-common-tools-2/
+# https://github.com/XMCyber/XMCredentialsDecryptor

@@ -1,7 +1,7 @@
 Description: 'RECmd: RECmd_Batch_MC'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 8690f004-a406-40c9-b566-2fdf5f106209
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
@@ -10,6 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\RECmd_Batch_MC.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: RECmd_Batch_MC_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd

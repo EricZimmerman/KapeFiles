@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
-Author: Drew Ervin, Mathias Frank, Andrew Rathbun
-Version: 1.9
+Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore
+Version: 2.0
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -25,6 +25,14 @@ Targets:
         Category: ApplicationLogs
         Path: DWAgent.tkape
     -
+        Name: ISLOnline
+        Category: ApplicationLogs
+        Path: ISLOnline.tkape
+    -
+        Name: ITarian
+        Category: ApplicationLogs
+        Path: ITarian.tkape
+    -
         Name: Kaseya
         Category: ApplicationLogs
         Path: Kaseya.tkape
@@ -37,9 +45,17 @@ Targets:
         Category: ApplicationLogs
         Path: LogMeIn.tkape
     -
+        Name: MeshAgent
+        Category: ApplicationLogs
+        Path: MeshAgent.tkape
+    -
         Name: mRemoteNG
         Category: ApplicationLogs
         Path: mRemoteNG.tkape
+    -
+        Name: NetMonitor
+        Category: ApplicationLogs
+        Path: NetMonitorforEmployeesProfessional.tkape
     -
         Name: Radmin
         Category: ApplicationLogs
@@ -81,6 +97,10 @@ Targets:
         Name: TeamViewer
         Category: ApplicationLogs
         Path: TeamViewerLogs.tkape
+    -
+        Name: UEMS
+        Category: ApplicationLogs
+        Path: UEMS.tkape
     -
         Name: UltraViewer
         Category: ApplicationLogs

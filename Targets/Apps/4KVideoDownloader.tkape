@@ -1,6 +1,6 @@
 Description: 4K Video Downloader
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: e33d4392-459b-459e-82e0-d9c624adbfbc
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,12 @@ Targets:
         Name: 4K Video Downloader
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader
+        FileMask: "*.sqlite"
+        Comment: "Grabs database(s) that stores user download history"
+    -
+        Name: 4K Video Downloader+
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\4kdownload.com\4K Video Downloader+\4K Video Downloader+
         FileMask: "*.sqlite"
         Comment: "Grabs database(s) that stores user download history"
 

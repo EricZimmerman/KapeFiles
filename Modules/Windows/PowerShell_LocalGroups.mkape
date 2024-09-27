@@ -1,0 +1,18 @@
+Description: Local Groups List
+Category: LiveResponse
+Author: Max Zabuty
+Version: 1.0
+Id: e753b244-382b-4143-976e-1968c5b38973
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-LocalGroup | select * | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Local Groups.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-LocalGroup | select * | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Local Groups.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.localaccounts/get-localgroup?view=powershell-5.1

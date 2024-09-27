@@ -1,0 +1,57 @@
+Description: Visual Studio Code artifacts
+Author: Sebastian Søgaard
+Version: 1.0
+Id: f90fe4ce-b349-4010-8d41-3b7b8273e5fe
+RecreateDirectories: true
+Targets:
+    -
+        Name: VSCode Opened Files
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\History\*\
+        Recursive: true
+        Comment: "Grabs the files in the VSCode history. These are files the user has opened with VSCode"
+    -
+        Name: VSCode Workspaces
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\
+        FileMask: storage.json*
+        Comment: "Grabs the file containing information about the users workspaces"
+    -
+        Name: VSCode User extensions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\CachedExtensions\
+        FileMask: user*
+        Comment: "Grabs the files relating to the users installed extensions"
+    -
+        Name: VSCode User settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\
+        FileMask: settings.json*
+        Comment: "Grabs the file containing the settings the user has set."
+    -
+        Name: VSCode User Preferences
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\
+        FileMask: preferences*
+        Comment: "Grabs the file containing the preferences the user has set."
+    -
+        Name: VSCode Network Cookies
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\Network\
+        FileMask: Cookies*
+        Comment: "Grabs the cookie files. Same format as Chromium Cookies"
+    -
+        Name: VSCode Network Persistent State
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\Network\
+        FileMask: Network Persistent State*
+        Comment: "Grabs the Network Persistent State file. Same format as in  Chromium"
+    -
+        Name: VSCode Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\logs\
+        Recursive: true
+        Comment: "Grabs the VSCode logs. Further analysis is needed to determine which logs are junk, and which can be vital."
+
+# Documentation
+# N/A

@@ -2,7 +2,7 @@ Description: Name of application/artifact here
 Category: Misc
 Author: FirstName LastName
 Version: 1.0
-Id: b61ccd7a-3f8a-4347-b5ac-21486aaa76c4
+Id: eb5a737f-cfa1-483b-a452-3bd1efc4dbea # Change this, and delete this comment before merging, please
 BinaryUrl: https://url.goes.here.com
 ExportFormat: csv
 FileMask: FileName.exe
