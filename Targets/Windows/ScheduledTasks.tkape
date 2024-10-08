@@ -1,6 +1,6 @@
 Description: Scheduled tasks (*.job and XML)
-Author: Eric Zimmerman
-Version: 1.1
+Author: Eric Zimmerman, Reece394
+Version: 1.2
 Id: e5dc4367-2e6b-49bf-a90a-d4c1598bbe28
 RecreateDirectories: true
 Targets:
@@ -39,6 +39,36 @@ Targets:
         Category: Persistence
         Path: C:\Windows.old\Windows\System32\Tasks\
         Recursive: true
+    -
+        Name: PowerShell Scheduled_Jobs
+        Category: Persistence
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs\
+        Recursive: true
+    -
+        Name: PowerShell Scheduled_Jobs Output
+        Category: Persistence
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs\*\Output\*\
+        Recursive: true
+    -
+        Name: PowerShell Scheduled_Jobs Systemprofile
+        Category: Persistence
+        Path: C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs\
+        Recursive: true
+    -
+        Name: PowerShell Scheduled_Jobs Output Systemprofile
+        Category: Persistence
+        Path: C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs\*\Output\*\
+        Recursive: true
+    -
+        Name: PowerShell Scheduled_Jobs WOW64 Systemprofile
+        Category: Persistence
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs\
+        Recursive: true
+    -
+        Name: PowerShell Scheduled_Jobs Output WOW64 Systemprofile
+        Category: Persistence
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs\*\Output\*\
+        Recursive: true
 
 # Documentation
 # http://windowsir.blogspot.com/2009/09/parsing-job-files.html
@@ -46,3 +76,6 @@ Targets:
 # https://forensicswiki.xyz/wiki/index.php?title=Windows_Job_File_Format
 # https://www.forensafe.com/blogs/taskschd.html
 # https://stmxcsr.com/persistence/scheduled-tasks.html
+# https://www.cybertriage.com/blog/windows-scheduled-tasks-for-dfir-investigations/
+# https://learn.microsoft.com/en-us/powershell/module/psscheduledjob/about/about_scheduled_jobs
+# https://learn.microsoft.com/en-us/powershell/module/psscheduledjob/about/about_scheduled_jobs_troubleshooting
