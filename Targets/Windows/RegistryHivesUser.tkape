@@ -8,12 +8,12 @@ Targets:
         Name: NTUSER.DAT registry hive XP
         Category: Registry
         Path: C:\Documents and Settings\%user%\
-        FileMask: NTUSER.DAT
+        FileMask: NTUSER.DAT*
     -
         Name: NTUSER.DAT registry hive
         Category: Registry
         Path: C:\Users\%user%\
-        FileMask: NTUSER.DAT
+        FileMask: NTUSER.DAT*
     -
         Name: NTUSER.DAT registry transaction files
         Category: Registry
@@ -43,7 +43,7 @@ Targets:
         Name: UsrClass.dat registry hive
         Category: Registry
         Path: C:\Users\%user%\AppData\Local\Microsoft\Windows\
-        FileMask: UsrClass.dat
+        FileMask: UsrClass.dat*
     -
         Name: UsrClass.dat registry transaction files
         Category: Registry
