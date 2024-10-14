@@ -7,11 +7,11 @@ Targets:
     -
         Name: User startup folders
         Category: Persistence
-        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
     -
         Name: System-wide startup folder
         Category: Persistence
-        Path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+        Path: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
 # Documentation
 # https://attack.mitre.org/techniques/T1547/001/
