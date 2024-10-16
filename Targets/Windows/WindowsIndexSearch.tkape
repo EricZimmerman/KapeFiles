@@ -1,6 +1,6 @@
 Description: Windows Index Search
-Author: Mark Hallman
-Version: 1.1
+Author: Mark Hallman, Reece394
+Version: 1.2
 Id: 9828b927-f955-464a-80fb-a48ce0101236
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,15 @@ Targets:
         Name: WindowsIndexSearch
         Category: FileKnowledge
         Path: C:\programdata\microsoft\search\data\applications\windows\
+    -
+        Name: WindowsIndexSearch - User
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Search\Data\Applications\S-1*\
+    -
+        Name: GatherLogs - User
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Search\Data\Applications\S-1*\GatherLogs\
+        Recursive: true
     -
         Name: GatherLogs
         Category: FileKnowledge
@@ -18,6 +27,7 @@ Targets:
 # https://www.forensafe.com/blogs/winsearchindex.html
 # https://github.com/strozfriedberg/sidr
 # https://www.aon.com/cyber-solutions/aon_cyber_labs/windows-search-index-the-forensic-artifact-youve-been-searching-for/
+# https://jkindon.com/windows-search-in-server-2019-and-multi-session-windows-10/
 #
 # Beginning from Windows Vista until Windows 10, Windows stores the Search
 # index inside an Extensible Storage Engine (ESE) database located at
