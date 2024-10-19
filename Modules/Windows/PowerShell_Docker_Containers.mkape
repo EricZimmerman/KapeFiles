@@ -22,7 +22,6 @@ Processors:
 
       while ($retryCount -lt $maxRetries) {
           try {
-              # Use Set-Content to write the combined data to the file
               Set-Content -Path $filePath -Value $dockerOutput -Encoding UTF8 -Force;
               Write-Host 'Docker details have been successfully written to: ' $filePath -ForegroundColor Green;
               break;
