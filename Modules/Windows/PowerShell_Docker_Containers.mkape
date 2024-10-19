@@ -1,18 +1,12 @@
 Description: Docker Container Details
 Category: LiveResponse
 Author: DReneau
-Version: 1.0
+Version: 1.1
 Id: 87bf8201-6256-45ad-8b2b-a6034235db53
 ExportFormat: txt
 Processors:
-  - Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-    CommandLine: |
-      $filePath = '%destinationDirectory%\docker_container_info.txt';
-
-      $dockerOutput = (docker version | Out-String).TrimEnd() + [System.Environment]::NewLine + [System.Environment]::NewLine +
-                      (docker ps --all --format 'ID: {{.ID}} | Name: {{.Names}} | Image: {{.Image}} | Size: {{.Size}} | Status: {{.Status}} | Command: {{.Command}}' | Out-String).TrimEnd();
-
-      Set-Content -Path $filePath -Value $dockerOutput -Encoding UTF8;
+  - Executable: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+    CommandLine: "$filePath = '%destinationDirectory%\\docker_container_info.txt'; $dockerOutput = (docker version | Out-String).TrimEnd() + [System.Environment]::NewLine + [System.Environment]::NewLine + (docker ps --all --format 'ID: {{.ID}} | Name: {{.Names}} | Image: {{.Image}} | Size: {{.Size}} | Status: {{.Status}} | Command: {{.Command}}' | Out-String).TrimEnd(); Set-Content -Path $filePath -Value $dockerOutput -Encoding UTF8;"
     ExportFormat: txt
 
 # Documentation
