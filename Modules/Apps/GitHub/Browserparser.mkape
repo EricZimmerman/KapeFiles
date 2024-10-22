@@ -16,4 +16,6 @@ Processors:
         ExportFormat: json
 
 # Documentation
-# N/A
+# Parses Cookies, Downloads, Favicons, History, Searches, Shortcuts and Visited Links from Chromium-based browsers
+# Parses Bookmarks, Cookies, Downloads, Extensions, Favicons, Notifications, Form history, History, Inputhistory, Logins, metadata and permissions from Firefox browsers
+# More artifacts may be added in the future
