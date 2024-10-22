@@ -1,0 +1,19 @@
+Description: Parse most artifacts in a browser to CSV or JSON
+Category: WebBrowsers
+Author: Sebastian Søgaard
+Version: 1.0
+Id: c91c1c99-f979-4c68-bcad-57f1a4afc878
+BinaryUrl: https://github.com/seba7236/BrowserParser/releases/
+ExportFormat: csv
+Processors:
+    -
+        Executable: Browserparser\browserparser.exe
+        CommandLine: --csv %sourceDirectory% %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: Browserparser\browserparser.exe
+        CommandLine: --json %sourceDirectory% %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# N/A
