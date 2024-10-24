@@ -6,8 +6,8 @@ Id: 7d18d1ad-13b5-435c-a5f1-063093e39646
 BinaryUrl: https://github.com/AbdulRhmanAlfaifi/CryptnetURLCacheParser/releases/tag/1.1/CryptnetUrlCacheParser.exe
 ExportFormat: csv
 Processors:
-  - Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-    CommandLine: "& \"%kapeDirectory%\\Modules\\bin\\CryptnetUrlCacheParser.exe\" -o \"%destinationDirectory%\\Certutil_Parsed.csv\""
+  - Executable: CryptnetUrlCacheParser.exe
+    CommandLine: "-o \"%destinationDirectory%\\Certutil_Parsed.csv\""
     ExportFormat: csv
 
 # Documentation
