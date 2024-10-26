@@ -1,0 +1,37 @@
+Description: Ollama-AI Parsers
+Category: Modules
+Author: DReneau
+Version: 1.0
+Id: 4e934950-54e4-4c6d-a1de-cb24e3872f5e
+ExportFormat: txt
+Processors:
+    -
+        Executable: PowerShell_Ollama_AI_Blobs.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Ollama_AI_Keys.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Ollama_AI_Manifests.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Ollama_AI_Models.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Docker_Containers.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: PowerShell_Ollama_AI_cve-2024-37032.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# https://www.youtube.com/watch?v=aHhQvxwkuuw
+# Ollama is used for self-hosted AI inference, and it supports many models out of the box.
+# Ollama serves as the backend for common AI projects such as OpenWebUI, among others.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module ollama-ai
