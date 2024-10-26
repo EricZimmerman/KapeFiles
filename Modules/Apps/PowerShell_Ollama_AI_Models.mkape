@@ -11,9 +11,9 @@ Processors:
     ExportFormat: CSV
 
 # Documentation
-# Yaml will identify Ollama models and identify if they are downloaded from official Ollama repo or not.
+# Yaml will identify Ollama models and identify if they are downloaded from the official Ollama repo or not.
 # https://ollama.com/blog | https://github.com/ollama/ollama | https://hub.docker.com/r/ollama/ollama
 # Ollama is used for self-hosted AI inference, and it supports many models out of the box.
 # Ollama serves as the backend for common AI projects such as OpenWebUI, among others.
 # The code will identify the installed Models, the Model Integrity hash and the Ollama PrivateKey.
-#.\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module powershell_ollama_ai_models
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module powershell_ollama_ai_models
