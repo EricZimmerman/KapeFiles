@@ -15,5 +15,5 @@ Processors:
 # Ollama is used for self-hosted AI inference, and it supports many models out of the box.
 # Ollama serves as the backend for common AI projects such as OpenWebUI, among others.
 # The code will identify the installed Models, the Model Integrity hash and the Ollama PrivateKey.
-#.\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module powershell_ollama_ai_manifests
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module powershell_ollama_ai_manifests
 # https://www.wiz.io/blog/probllama-ollama-vulnerability-cve-2024-37032
