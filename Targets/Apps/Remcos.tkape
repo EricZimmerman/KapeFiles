@@ -40,7 +40,7 @@ Targets:
         Comment: "Remco RAT logs.dat custom path - contains debug data and logs relative to the keylogging module"
 
     -
-        Name: Remco RAT custom path 
+        Name: Remco RAT custom path
         Category: ApplicationLogs
         Path: C:\ProgramData\remcos
         FileMask: 'logs*.dat*'
@@ -77,7 +77,7 @@ Targets:
 # Documentation
 # Remcos RAT is a lightweight, fast, and highly customizable Remote Administration Tool with a wide array of functionalities.
 # This tool permits keylogging and surveillance (including audio recording and screenshots) and is frequently used by threat actors such as FIN7.
-# This target collects all known path where this tool was installed during previous campaigns.  
+# This target collects all known path where this tool was installed during previous campaigns.
 # https://www.splunk.com/en_us/blog/security/splunk-fin7-tool-detections-remcos.html
 # https://redcanary.com/threat-detection-report/trends/rmm-tools/
 # https://www.cyfirma.com/research/exploiting-document-templates-stego-campaign-deploying-remcos-rat-and-agent-tesla/
