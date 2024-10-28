@@ -6,15 +6,15 @@ Id: 23f770d6-43b7-4657-a7cb-a6d79d772918
 ExportFormat: txt
 Processors:
     -
-        Executable: powershell_openwebui_account_parser.mkape
+        Executable: PowerShell_OpenWebUI_Account_Parser.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: powershell_openwebui_chat_parser.mkape
+        Executable: PowerShell_OpenWebUI_Chat_Parser.mkape
         CommandLine: ""
         ExportFormat: ""
     -
-        Executable: powershell_openwebui_document_parser.mkape
+        Executable: PowerShell_OpenWebUI_Document_Parser.mkape
         CommandLine: ""
         ExportFormat: ""
     -
