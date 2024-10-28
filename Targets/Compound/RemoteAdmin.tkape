@@ -72,6 +72,11 @@ Targets:
         Path: RDPLogs.tkape
         Comment: "Contains Windows Event Logs related to RDP"
     -
+        Name: Remcos RAT
+        Category: ApplicationLogs
+        Path: Remcos.tkape
+        Comment: "Contains logs related to Remcos RAT"
+    -
         Name: Remote Utilities
         Category: ApplicationLogs
         Path: RemoteUtilities_app.tkape
