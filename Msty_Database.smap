@@ -1,0 +1,111 @@
+Description: Msty Database Tables
+Author: DReneau
+Email: dareneau@gmail.com
+Id: 8bb1ab82-653d-4279-b69c-b69f645b985e
+Version: 1.1
+CSVPrefix: Msty
+FileName: msty.db
+IdentifyQuery: SELECT count(*) FROM sqlite_master WHERE type='table' AND (name='api_keys' OR name='app_settings' OR name='chat_messages' OR name='chats' OR name='knowledge_stacks');
+IdentifyValue: 5
+Queries:
+    - 
+        Name: API Keys
+        Query: |
+            SELECT 
+            id AS ID,
+            name AS Name,
+            key AS Key,
+            provider AS Provider,
+            created_at AS CreatedAt,
+            key_hint AS KeyHint,
+            models AS Models,
+            extras AS Extras,
+            save_in_keychain AS SaveInKeychain
+            FROM api_keys
+        BaseFileName: ApiKeys
+
+    - 
+        Name: App Settings
+        Query: |
+            SELECT 
+            key AS Key,
+            value AS Value
+            FROM app_settings
+        BaseFileName: AppSettings
+
+    - 
+        Name: Chat Messages
+        Query: |
+            SELECT 
+            id AS MessageID,
+            chat_id AS ChatID,
+            text AS Text,
+            config AS Config,
+            role AS Role,
+            sync_buddy_id AS SyncBuddyID,
+            refinement_prompt AS RefinementPrompt,
+            parent_id AS ParentID,
+            branch_parent_id AS BranchParentID,
+            model_name AS ModelName,
+            attachments AS Attachments,
+            extras AS Extras,
+            refinement_active_id AS RefinementActiveID,
+            created_at AS CreatedAt,
+            knowledge_stack_attachment AS KnowledgeStackAttachment,
+            knowledge_stack_query_results AS KnowledgeStackQueryResults,
+            real_time_data_sources AS RealTimeDataSources,
+            delve_parent_chat_id AS DelveParentChatID,
+            delve_info AS DelveInfo,
+            prompt_response_metrics AS PromptResponseMetrics
+            FROM chat_messages
+        BaseFileName: ChatMessages
+
+    - 
+        Name: Chats
+        Query: |
+            SELECT 
+            id AS ChatID,
+            title AS Title,
+            model_vendor AS ModelVendor,
+            model_name AS ModelName,
+            config AS Config,
+            parent_chat_id AS ParentChatID,
+            created_at AS CreatedAt,
+            chat_session_id AS ChatSessionID,
+            extras AS Extras,
+            delve_parent_chat_id AS DelveParentChatID,
+            delve_info AS DelveInfo,
+            prompt_response_metrics AS PromptResponseMetrics
+            FROM chats
+        BaseFileName: Chats
+
+    - 
+        Name: Knowledge Stacks
+        Query: |
+            SELECT 
+            id AS StackID,
+            title AS Title,
+            status AS Status,
+            files AS Files,
+            notes AS Notes,
+            youtube_links AS YouTubeLinks,
+            directories AS Directories,
+            obsidian_vaults AS ObsidianVaults,
+            vector_info AS VectorInfo,
+            config AS Config,
+            tags AS Tags,
+            is_bookmarked AS IsBookmarked,
+            created_at AS CreatedAt,
+            updated_at AS UpdatedAt,
+            compose_stats AS ComposeStats,
+            reranking AS ReRanking,
+            composed_at AS ComposedAt
+            FROM knowledge_stacks
+        BaseFileName: KnowledgeStacks
+
+# Documentation
+# https://msty.app/
+# https://docs.msty.app/getting-started/onboarding
+# https://github.com/cloudstack-llc/msty-docs
+# Msty is a front end UI used to host local language models. Msty is developed by Cloudstack, LLC.
+# Use SQLECmd in conjunction with the MstyDatabase KAPE Target.
