@@ -1,4 +1,4 @@
-Description: Msty is a UI to interact with large language models (LLMs).
+Description: Msty is a UI to interact with large language models (LLMs)
 Author: DReneau
 Version: 1.0
 Id: ee102f02-b8f3-4d4f-8a0c-b6b357405e64
@@ -9,10 +9,10 @@ Targets:
         Category: FileKnowledge
         Path: C:\Users\%user%\AppData\Roaming\Msty\
         FileMask: '*.db'
-        Comment: Msty dabase includes api keys, chat messages, chat session, knowledge stack, etc.
+        Comment: Msty database includes API keys, chat messages, chat sessions, knowledge stack, etc.
 
 # Documentation
 # https://msty.app/
 # https://docs.msty.app/getting-started/onboarding
 # https://github.com/cloudstack-llc/msty-docs
-# Msty is a front end UI used to host local language models. Msty is developed by Cloudstack, LLC.
+# Msty is a front-end UI used to host local language models. Msty is developed by Cloudstack, LLC.
