@@ -1,0 +1,37 @@
+Description: Amazon Photos (Amazon Cloud Drive)
+Author: DReneau
+Version: 1.0
+Id: c64b24b5-f7a0-4d39-af99-72fe54b2ffcf
+RecreateDirectories: true
+Targets:
+  -
+    Name: AmazonPhotos Cloud Database
+    Category: FileKnowledge
+    Path: C:\Users\%user%\AppData\Roaming\Amazon Cloud Drive\
+    FileMask: "amzn1.account.*-cloud.db"
+    Comment: "AmazonPhotos files uploaded to the cloud (Amazon Alexa)."
+  -
+    Name: AmazonPhotos  Uploads Database
+    Category: FileKnowledge
+    Path: C:\Users\%user%\AppData\Roaming\Amazon Cloud Drive\
+    FileMask: "amzn1.account.*-uploads.db"
+    Comment: "AmazonPhotos uploaded file listing and hashes."
+  -
+    Name: AmazonPhotos Download Database
+    Category: FileKnowledge
+    Path: C:\Users\%user%\AppData\Roaming\Amazon Cloud Drive\
+    FileMask: "amzn1.account.*-download.db"
+    Comment: "AmazonPhotos downloaded file listing and hashes."
+  -
+    Name: AmazonPhotos Settings
+    Category: FileKnowledge
+    Path: C:\Users\%user%\AppData\Roaming\Amazon Cloud Drive\
+    FileMask: "amzn1.account.*-settings.json"
+    Comment: "AmazonPhotos downloaded file listing and hashes."
+
+# Documentation
+# https://www.sciencedirect.com/science/article/abs/pii/S1742287613000352
+# https://www.amazon.com/gp/help/customer/display.html?nodeId=201376470
+# Amazon Photos is used to upload (backup) photos and videos to the Amazon Cloud Drive.
+# The Amazon Cloud Drive interface features file listing and tree structure (as with Windows Explorer).
+# Uploads are completed using ‘Upload Files’ button. Downloads are completed using the ‘Download’ button.
