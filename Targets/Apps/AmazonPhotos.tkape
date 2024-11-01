@@ -27,7 +27,7 @@ Targets:
     Category: FileKnowledge
     Path: C:\Users\%user%\AppData\Roaming\Amazon Cloud Drive\
     FileMask: "amzn1.account.*-settings.json"
-    Comment: "AmazonPhotos downloaded file listing and hashes."
+    Comment: "AmazonPhotos settings."
 
 # Documentation
 # https://www.sciencedirect.com/science/article/abs/pii/S1742287613000352
