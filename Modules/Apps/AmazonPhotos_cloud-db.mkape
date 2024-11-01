@@ -1,0 +1,25 @@
+Description: Parses the Amazon Photos cloud database for nodes and settings
+Category: CloudServices
+Author: DRneau
+Version: 1.0
+Id: 487dc169-3c9d-4f41-ab8b-3f3020fed597
+BinaryUrl: https://sqlite.org/2023/sqlite-tools-win32-x86-3410000.zip
+ExportFormat: csv
+FileMask: "amzn1.account.*-cloud.db"
+Processors:
+  -
+    Executable: sqlite3.exe
+    CommandLine: -header -separator "," %sourceFile% "SELECT id AS 'ID', name AS 'Name', kind AS 'Kind', parents AS 'Parents', labels AS 'Labels', childAssetTypeInfo AS 'ChildAssetTypeInfo', assetType AS 'AssetType', createdDate AS 'CreatedDate', modifiedDate AS 'ModifiedDate', isRoot AS 'IsRoot', isShared AS 'IsShared', restricted AS 'Restricted', createdBy AS 'CreatedBy', description AS 'Description', eTagResponse AS 'ETagResponse', status AS 'Status', purge_reason AS 'PurgeReason', protectedFolder AS 'ProtectedFolder', version AS 'Version', content_date AS 'ContentDate', content_type AS 'ContentType', content_extension AS 'ContentExtension', content_md5 AS 'ContentMD5', content_size AS 'ContentSize', content_version AS 'ContentVersion' FROM nodes"
+    ExportFile: Amazon_Nodes_%fileName%.csv
+    ExportFormat: csv
+  -
+    Executable: sqlite3.exe
+    CommandLine: -header -separator "," %sourceFile% "SELECT name AS 'Name', type AS 'Type', value AS 'Value' FROM settings"
+    ExportFile: Amazon_Settings_%fileName%.csv
+    ExportFormat: csv
+
+# Documentation
+# Parses the Amazon cloud database to retrieve details from 'nodes' and 'settings' tables.
+# Amazon Photos uses this data to manage and share cloud-stored photos and files.
+# Uses sqlite3.exe to parse the database and exports results in CSV format.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module amazonphotos_cloud-db

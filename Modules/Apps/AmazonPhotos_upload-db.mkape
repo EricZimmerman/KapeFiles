@@ -1,0 +1,25 @@
+Description: Parses the Amazon Photos upload database for backup and upload details
+Category: CloudServices
+Author: DReneau
+Version: 1.0
+Id: 219e3d68-c4cb-45f4-871b-66a279728f1e
+BinaryUrl: https://sqlite.org/2023/sqlite-tools-win32-x86-3410000.zip
+ExportFormat: csv
+FileMask: "amzn1.account.*-uploads.db"
+Processors:
+  -
+    Executable: sqlite3.exe
+    CommandLine: -header -separator "," %sourceFile% "SELECT id AS 'ID', schedule_path AS 'SchedulePath', relative_path AS 'RelativePath', node_id AS 'NodeID', local_name AS 'LocalName', cloud_name AS 'CloudName', relative_parent_path AS 'RelativeParentPath', file_id AS 'FileID', modified_date AS 'ModifiedDate', size AS 'Size', status AS 'Status', status_changed AS 'StatusChanged', error_code AS 'ErrorCode', target_type AS 'TargetType', version AS 'Version', node_parents AS 'NodeParents', content_version AS 'ContentVersion', schedule_id AS 'ScheduleID' FROM backup"
+    ExportFile: Amazon_Backup_%fileName%.csv
+    ExportFormat: csv
+  -
+    Executable: sqlite3.exe
+    CommandLine: -header -separator "," %sourceFile% "SELECT id AS 'ID', node_id AS 'NodeID', type AS 'Type', path AS 'Path', edited_path AS 'EditedPath', upload_root AS 'UploadRoot', upload_type AS 'UploadType', photo_library_path AS 'PhotoLibraryPath', created_date AS 'CreatedDate', modified_date AS 'ModifiedDate', added AS 'Added', size AS 'Size', status AS 'Status', status_changed AS 'StatusChanged', retries AS 'Retries', next_retry AS 'NextRetry', retry_reason AS 'RetryReason', retry_timer_start AS 'RetryTimerStart', error_code AS 'ErrorCode', destination_node_id AS 'DestinationNodeID', local_id AS 'LocalID', parent_id AS 'ParentID', local_id_created AS 'LocalIDCreated', schedule_id AS 'ScheduleID', is_visible AS 'IsVisible', content_type AS 'ContentType' FROM uploads"
+    ExportFile: Amazon_Uploads_%fileName%.csv
+    ExportFormat: csv
+
+# Documentation
+# Parses the Amazon cloud database to retrieve details from 'backup' and 'uploads' tables.
+# Amazon Photos uses this data to manage and share cloud-stored photos and files.
+# Uses sqlite3.exe to parse the database and exports results in CSV format.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module amazonphotos_upload-db

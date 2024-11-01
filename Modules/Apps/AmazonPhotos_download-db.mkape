@@ -1,0 +1,20 @@
+Description: Parses the Amazon Photos download database for details
+Category: CloudServices
+Author: DReneau
+Version: 1.0
+Id: b4fa272b-9288-45ae-935b-63f70ded1b8a
+BinaryUrl: https://sqlite.org/2023/sqlite-tools-win32-x86-3410000.zip
+ExportFormat: csv
+FileMask: "amzn1.account.*-download.db"
+Processors:
+  -
+    Executable: sqlite3.exe
+    CommandLine: -header -separator "," %sourceFile% "SELECT id AS 'ID', node_id AS 'NodeID', node_kind AS 'NodeKind', path AS 'Path', size AS 'Size', md5 AS 'MD5', created_date AS 'CreatedDate', modified_date AS 'ModifiedDate', status AS 'Status', status_changed AS 'StatusChanged', added AS 'Added', retries AS 'Retries', next_retry AS 'NextRetry', retry_reason AS 'RetryReason', error_code AS 'ErrorCode', parent_path AS 'ParentPath', is_expanded AS 'IsExpanded', is_visible AS 'IsVisible' FROM downloads"
+    ExportFile: Amazon_Downloads_%fileName%.csv
+    ExportFormat: csv
+
+# Documentation
+# Parses the Amazon download database to retrieve details from 'downloads' table.
+# Amazon Photos uses this data to manage and share cloud-stored photos and files.
+# Uses sqlite3.exe to parse the database and exports results in CSV format.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module amazonphotos_download-db
