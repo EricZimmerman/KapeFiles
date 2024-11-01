@@ -1,0 +1,25 @@
+Description: Amazon Photos Database Parsers
+Category: CloudServices
+Author: DReneau
+Version: 1.0
+Id: 3e70be70-f90d-4a89-a912-39adfd68647a
+ExportFormat: txt
+Processors:
+    -
+        Executable: AmazonPhotos_cloud-db.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: AmazonPhotos_download-db.mkape
+        CommandLine: ""
+        ExportFormat: ""
+    -
+        Executable: AmazonPhotos_upload-db.mkape
+        CommandLine: ""
+        ExportFormat: ""
+
+# Documentation
+# Parses the Amazon cloud, download, and uploads databases.
+# Amazon Photos uses this data to manage cloud-stored photos and files.
+# Uses sqlite3.exe to parse the database and exports results in CSV format.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module amazonphotos
