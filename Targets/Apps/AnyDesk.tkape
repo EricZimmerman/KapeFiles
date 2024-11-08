@@ -1,6 +1,6 @@
 Description: AnyDesk
 Author: Andrew Rathbun, Scott Hanson, and Nicole Jao
-Version: 1.4
+Version: 1.5
 Id: 6c3736f5-39e2-4cce-9af8-02c76c09b91c
 RecreateDirectories: true
 Targets:
@@ -57,6 +57,18 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\AnyDesk\chat
         FileMask: '*.txt'
         Comment: "Collects chat logs associated with the user profile"
+    -
+        Name: AnyDesk File Transfer Logs - Running in portable mode
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\AnyDesk
+        FileMask: 'file_transfer_trace.txt'
+        Comment: "Collects file transfer logs that occur when running in portable mode"
+    -
+        Name: AnyDesk File Transfer Logs - Installed as a Service
+        Category: Communications
+        Path: C:\ProgramData\AnyDesk\
+        FileMask: 'file_transfer_trace.txt'
+        Comment: "Collects file transfer logs that occur when running as an installed service"
 
 # Documentation
 # https://support.anydesk.com/Trace_Files
@@ -71,3 +83,12 @@ Targets:
 # In regards to session recordings, note that it appears only the person who is remote connecting into another person's computer can record. The person being remoted into has to allow the recording to take place via a simple, intuitive setting while a remote session is active.
 # Session recordings will be stored in the .anydesk file format and they can only be played with AnyDesk.
 # In regards to file transfers, the person remoting into a computer can choose whatever files they want to drop wherever on the user's system. Therefore, there isn't a specified folder for file transfers that occur during an AnyDesk remote session.
+# In regards to file_transfer_trace.txt, this file logs files being transferred and whether they were transferred successfully or cancelled. It will log the amount of MB transferred before being cancelled or successfully finishing.
+# When AnyDesk is installed as a service, and a file transfer occurs, and then AnyDesk is uninstalled, the file_transfer_trace.txt will still persist despite all the other above artifacts being deleted. File transfer times are recorded in UTC.
+# Example of file_transfer_trace.txt below:
+# File Manager	2024-11-08, 16:30	start 	upload  	'kibana-8.13.4-windows-x86_64.zip' (~0 B out of 443.99 MiB)
+# File Manager	2024-11-08, 16:30	cancel	upload  	'kibana-8.13.4-windows-x86_64.zip' (~222.07 MiB out of 443.99 MiB)
+# File Manager	2024-11-08, 16:30	start 	upload  	'elasticsearch-8.13.4-windows-x86_64.zip' (~0 B out of 399.78 MiB)
+# File Manager	2024-11-08, 16:30	start 	upload  	'kibana-8.13.4-windows-x86_64.zip' (~0 B out of 443.99 MiB)
+# File Manager	2024-11-08, 16:30	finish	upload  	'elasticsearch-8.13.4-windows-x86_64.zip' (~399.78 MiB out of 399.78 MiB)
+# File Manager	2024-11-08, 16:30	finish	upload  	'kibana-8.13.4-windows-x86_64.zip' (~443.99 MiB out of 443.99 MiB)
