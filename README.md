@@ -39,8 +39,6 @@ KAPE is an efficient and highly configurable triage program that will target ess
 
 For thorough documentation, go [HERE](https://ericzimmerman.github.io/KapeDocs/#!index.md)!! This URL will always be the latest documentation.
 
-It is also possible to attend KAPE training from Kroll instructors. Details can be found [HERE](training.md)!!
-
 ## KAPE License
 
 NOTE: We have clarified KAPE usage permissions for commercial applications. See details [here](https://ericzimmerman.github.io/KapeDocs/#!Pages\50-Frequently-asked-questions.md).
