@@ -8,17 +8,17 @@ Targets:
         Name: Syncthing Configuration and Certificates
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\Syncthing\
-        Comment: "Folder storing SyncThing configuration and certificates"
+        Comment: "Folder storing Syncthing configuration and certificates"
     -
         Name: Syncthing Cache and Storage
         Category: Apps
         Path: C:\Users\%user%\AppData\Local\SyncTrazor\
         Comment: "Folder storing session and storage cache"
     -
-        Name: Synthing Logs
+        Name: Syncthing Logs
         Category: ApplicationLogs
         Path: C:\Users\%user%\AppData\Roaming\SyncTrazor\
-        Comment: "Folder storing SyncThing session logs"
+        Comment: "Folder storing Syncthing session logs"
 
 # Documentation
 # https://syncthing.net/
