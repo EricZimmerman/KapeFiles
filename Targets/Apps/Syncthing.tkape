@@ -1,0 +1,29 @@
+Description: Syncthing Configuration and Logs
+Author: Vito Alfano
+Version: 1.0
+Id: 2ff816bf-c087-48ef-bed4-a148178f51e2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Syncthing Configuration and Certificates
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Syncthing\
+		Recursive: true
+        Comment: "Folder storing SyncThing configuration and certificates"
+    -
+        Name: Syncthing Cache and Storage
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\SyncTrazor\
+		Recursive: true
+        Comment: "Folder storing session and storage cache"
+    -
+        Name: ScreenConnect User Config
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\SyncTrazor\
+		Recursive: true
+        Comment: "Foder storing SyncThing session logs"
+
+# Documentation
+# https://syncthing.net/
+# https://docs.syncthing.net/
+# https://www.bleepingcomputer.com/news/security/ukraine-says-hackers-abuse-syncthing-tool-to-steal-data/
