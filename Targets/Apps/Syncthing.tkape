@@ -5,23 +5,20 @@ Id: 2ff816bf-c087-48ef-bed4-a148178f51e2
 RecreateDirectories: true
 Targets:
     -
-        Name: Syncthing Configuration and Certificates
-        Category: ApplicationLogs
+        Name: Mozilla Thunderbird Install Date
+        Category: Apps
         Path: C:\Users\%user%\AppData\Local\Syncthing\
-	Recursive: true
         Comment: "Folder storing SyncThing configuration and certificates"
     -
         Name: Syncthing Cache and Storage
-        Category: ApplicationLogs
+        Category: Apps
         Path: C:\Users\%user%\AppData\Local\SyncTrazor\
-	Recursive: true
         Comment: "Folder storing session and storage cache"
     -
-        Name: ScreenConnect User Config
+        Name: Synthing Logs
         Category: ApplicationLogs
         Path: C:\Users\%user%\AppData\Roaming\SyncTrazor\
-	Recursive: true
-        Comment: "Foder storing SyncThing session logs"
+        Comment: "Folder storing SyncThing session logs"
 
 # Documentation
 # https://syncthing.net/
