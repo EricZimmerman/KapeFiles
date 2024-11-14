@@ -1,0 +1,21 @@
+Description: 'Chainsaw: Dump $MFT files'
+Category: FileSystem
+Author: Reece394
+Version: 1.0
+Id: 47e20c2d-eef3-4902-a80d-48aca1329fec
+BinaryUrl: https://github.com/WithSecureLabs/chainsaw/releases/latest/download/chainsaw_all_platforms+rules+examples.zip
+ExportFormat: json
+FileMask: $MFT|*.mft|mft.bin
+Processors:
+    -
+        Executable: Chainsaw\Chainsaw.exe
+        CommandLine: dump %sourceFile% --json --output %destinationDirectory%\%d%_MFT_Output.json
+        ExportFormat: json
+
+# Documentation
+# https://github.com/WithSecureLabs/chainsaw
+# Versions of Chainsaw 2.0 and above have changed rule directories
+# The Chainsaw executable should reside in .\KAPE\Modules\bin\chainsaw\Chainsaw.exe
+# PLEASE NOTE: You may have to rename the Windows executable to Chainsaw.exe manually
+# As of posting 11/14/2024 you have to build Chainsaw from source to get $MFT filename support. This will change after v2.10.1.
+# Prior versions only support MFT files named with .mft or .bin file extensions. 
