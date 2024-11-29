@@ -1,0 +1,21 @@
+Description: Soft Perfect Network Scanner Output
+Author: CERT CWATCH - ALMOND
+Version: 1.0
+Id: 0b5e2e0e-c5d7-4fa8-8ae7-6a257291bb57
+RecreateDirectories: true
+Targets:
+    -
+        Name: Netscan XML default output
+        Category: Apps
+        Path: C:\
+        FileMask: 'netscan.xml'
+        Recursive: true
+
+# Documentation
+# SoftPerfect Network Scanner 'Netscan' is a lightweight scanning tool commonly leveraged by threat actors.
+# By default, it creates an XML file named 'netscan.xml'.
+# This file stores credentials in use and a cache of previously scanned machines.
+# Retrieving this file from compromised systems can provide a quick advantage during incident response by swiftly identifying the affected scope.
+# https://almond.eu/wp-content/uploads/Almond-x-Amossys-8Base.pdf
+# https://www.softperfect.com/products/networkscanner/
+# https://www.protect.airbus.com/blog/uncovering-cyber-intruders-netscan/
