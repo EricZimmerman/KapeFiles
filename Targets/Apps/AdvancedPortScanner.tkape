@@ -1,0 +1,31 @@
+Description: Advanced Port Scanner Artifacts
+Author: Reece394
+Version: 1.0
+Id: 234332ea-77ca-4169-84ac-da28069fff84
+RecreateDirectories: true
+Targets:
+    -
+        Name: Advanced Port Scanner Aliases
+        Category: Apps
+        Path: C:\
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+        Recursive: true
+
+    -
+        Name: Advanced Port Scanner Comments
+        Category: Apps
+        Path: C:\
+        FileMask: 'advanced_port_scanner_Comments.bin'
+        Recursive: true
+
+    -
+        Name: Advanced Port Scanner MAC
+        Category: Apps
+        Path: C:\
+        FileMask: 'advanced_port_scanner_MAC.bin'
+        Recursive: true
+
+# Documentation
+# Advanced Port Scanner is a scanning tool commonly leveraged by threat actors.
+# After closing the program it writes three files the most important of which is advanced_port_scanner_MAC.bin which contains a list of IPs and System Names the Program Scanned.
+# https://www.advanced-port-scanner.com/
