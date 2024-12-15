@@ -1,9 +1,25 @@
 Description: Web browser history, bookmarks, etc.
 Author: Eric Zimmerman
-Version: 1.0
+Version: 1.1
 Id: e4ffb938-dcc0-4d91-9c77-3aa303d38512
 RecreateDirectories: true
 Targets:
+    -
+        Name: 360 Secure Browser
+        Category: Communications
+        Path: 360SecureBrowser.tkape
+    -
+        Name: Arc Browser
+        Category: Communications
+        Path: Arc.tkape
+    -
+        Name: Brave Browser
+        Category: Communications
+        Path: BraveBrowser.tkape
+    -
+        Name: CocCoc Browser
+        Category: Communications
+        Path: CocCoc.tkape
     -
         Name: Chrome
         Category: Communications
@@ -33,17 +49,21 @@ Targets:
         Category: Communications
         Path: PuffinSecureBrowser.tkape
     -
-        Name: Brave Browser
+        Name: QQ Browser
         Category: Communications
-        Path: BraveBrowser.tkape
+        Path: QQBrowser.tkape
     -
-        Name: Yandex Browser
+        Name: UCBrowser
         Category: Communications
-        Path: Yandex.tkape
+        Path: UCBrowser.tkape
     -
         Name: Vivaldi Browser
         Category: Communications
         Path: Vivaldi.tkape
+    -
+        Name: Yandex Browser
+        Category: Communications
+        Path: Yandex.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_web_browsers.
