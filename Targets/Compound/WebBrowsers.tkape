@@ -17,13 +17,13 @@ Targets:
         Category: Communications
         Path: BraveBrowser.tkape
     -
-        Name: CocCoc Browser
-        Category: Communications
-        Path: CocCoc.tkape
-    -
         Name: Chrome
         Category: Communications
         Path: Chrome.tkape
+    -
+        Name: CocCoc Browser
+        Category: Communications
+        Path: CocCoc.tkape
     -
         Name: Edge
         Category: Communications
