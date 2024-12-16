@@ -1,0 +1,145 @@
+Description: QQ Browser
+Author: Reece394
+Version: 1.0
+Id: b499a098-129e-409c-a54d-e2b22b1849a3
+RecreateDirectories: true
+Targets:
+    -
+        Name: QQ Browser Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: QQ Browser Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: QQ Browser Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Current Session
+    -
+        Name: QQ Browser Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: QQ Browser Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: QQ Browser Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: QQ Browser Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: QQ Browser History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: History*
+    -
+        Name: QQ Browser Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Last Session
+    -
+        Name: QQ Browser Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: QQ Browser Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: QQ Browser Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Login Data*
+    -
+        Name: QQ Browser Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Media History*
+    -
+        Name: QQ Browser Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: QQ Browser Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        Recursive: true
+        FileMask: Network Persistent State
+    -
+        Name: QQ Browser Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Preferences
+    -
+        Name: QQ Browser Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: QQ Browser Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        Recursive: true
+        FileMask: Reporting and NEL
+    -
+        Name: QQ Browser Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: QQ Browser Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: QQ Browser Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        Recursive: true
+        FileMask: Trust Tokens*
+    -
+        Name: QQ Browser SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\Sync Data
+        Recursive: true
+    -
+        Name: QQ Browser Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: QQ Browser Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: QQ Browser Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Tencent\QQBrowser\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of QQ Browser SQLite DBs organized by version #."
+
+# Documentation
+# https://browser.qq.com/
