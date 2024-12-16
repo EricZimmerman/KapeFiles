@@ -1,0 +1,21 @@
+Description: Network Scanner Tools
+Author: Reece394
+Version: 1.0
+Id: 07b4d985-3314-4814-b200-4d5ef92f455c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Advanced IP Scanner
+        Category: Apps
+        Path: AdvancedIPScanner.tkape
+    -
+        Name: Advanced Port Scanner
+        Category: Apps
+        Path: AdvancedPortScanner.tkape
+    -
+        Name: Soft Perfect Network Scanner
+        Category: Apps
+        Path: SoftPerfectNetscan.tkape
+
+# Documentation
+# N/A
