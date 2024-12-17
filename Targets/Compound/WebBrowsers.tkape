@@ -1,6 +1,6 @@
 Description: Web browser history, bookmarks, etc.
 Author: Eric Zimmerman
-Version: 1.1
+Version: 1.2
 Id: e4ffb938-dcc0-4d91-9c77-3aa303d38512
 RecreateDirectories: true
 Targets:
@@ -52,6 +52,10 @@ Targets:
         Name: QQ Browser
         Category: Communications
         Path: QQBrowser.tkape
+    -
+        Name: Supermium
+        Category: Communications
+        Path: Supermium.tkape
     -
         Name: UCBrowser
         Category: Communications
