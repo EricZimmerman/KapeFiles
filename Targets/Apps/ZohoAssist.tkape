@@ -52,3 +52,20 @@ Targets:
 # Documentation
 # https://www.zoho.com/assist/kb/logs.html
 # https://www.linkedin.com/pulse/wheres-my-logs-uems-zoho-meeting-edition-geir-olav-skei-ua2rf
+# Logs appear to be in local time, NOT UTC
+#
+# Examples of files that can be found:
+# C:\Users\%user%\AppData\Local\ZohoMeeting\Connection.conf
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\ACServer.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\Connect.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\LogFile1.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\LogFile2.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\LogFile3.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\LogFileTemp.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\ScreenSharingModule.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\SessionAuditReport_XXXXXXXXX.log - This file will have a play-by-play of applications opened, similar to: TIMESTAMP - Foreground Active Window 	: The WinSCP window was opened
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\SockUtil.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\UIApp.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\log\ZAAudioClient.log
+# C:\Users\%user%\AppData\Local\ZohoMeeting\Settings 2.conf
+# C:\Users\%user%\AppData\Local\ZohoMeeting\Settings.conf
