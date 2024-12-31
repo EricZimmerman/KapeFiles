@@ -10,6 +10,10 @@ Processors:
         Executable: hayabusa\hayabusa.exe
         CommandLine: csv-timeline -d %sourceDirectory% --profile standard -w --quiet --UTC -o %destinationDirectory%\hayabusa_events_offline.csv
         ExportFormat: csv
+    -
+        Executable: hayabusa\hayabusa.exe
+        CommandLine: json-timeline -d %sourceDirectory% --profile standard -w --quiet --UTC -o %destinationDirectory%\hayabusa_events_offline.jsonl -L
+        ExportFormat: json
 
 # Documentation
 # Create a folder "hayabusa" within the "Modules\bin" KAPE folder
