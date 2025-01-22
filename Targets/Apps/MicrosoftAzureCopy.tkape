@@ -1,0 +1,21 @@
+Description: Microsoft Azure Copy
+Author: Chuck Whitson
+Version: 1.0
+Id: 57a25748-2828-4a7f-bda5-1b4f793716d2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Azure Copy - User Profile - *.log
+        Category: Apps
+        Path: C:\Users\%user%\.azcopy\
+        FileMask: '*.log'
+        Comment: "Collects session and transfer logs for Microsoft Azure Copy from a user profile"
+    -
+        Name: Azure Copy - Plans - *.ste*
+        Category: Apps
+        Path: C:\Users\%user%\.azcopy\plans\
+        FileMask: '*.ste*'
+        Comment: "Collects the plans for Microsoft Azure Copy from a user profile"
+
+# Documentation
+# https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-configure#log-and-plan-files
