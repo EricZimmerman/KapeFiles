@@ -1,0 +1,147 @@
+Description: WaveBrowser
+Author: Kalil Olsen
+Version: 1.0
+Id: 8a6987d1-2688-4b12-b9cc-386db9b5bed9
+RecreateDirectories: true
+Targets:
+    -
+        Name: WaveBrowser bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: WaveBrowser Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: WaveBrowser Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Current Session
+    -
+        Name: WaveBrowser Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: WaveBrowser Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: WaveBrowser Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: WaveBrowser Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: WaveBrowser History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: History*
+    -
+        Name: WaveBrowser Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Last Session
+    -
+        Name: WaveBrowser Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: WaveBrowser Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: WaveBrowser Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Login Data
+    -
+        Name: WaveBrowser Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Media History*
+    -
+        Name: WaveBrowser Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: WaveBrowser Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: WaveBrowser Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Preferences
+    -
+        Name: WaveBrowser Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: WaveBrowser Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: WaveBrowser Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: WaveBrowser Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: WaveBrowser Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: WaveBrowser SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: WaveBrowser Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: WaveBrowser Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: WaveBrowser Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of WaveBrowser SQLite DBs organized by version #."
+    -
+        Name: SYSTEM WaveBrowser History
+        Category: Communications
+        Path: C:\Windows\system32\config\systemprofile\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: History*
+
+# Documentation
+# Chromium-based browser typically deployed with grayware.
