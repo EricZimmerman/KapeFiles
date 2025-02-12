@@ -65,6 +65,10 @@ Targets:
         Category: Communications
         Path: Vivaldi.tkape
     -
+        Name: WaveBrowser
+        Category: Communications
+        Path: WaveBrowser.tkape
+    -
         Name: Yandex Browser
         Category: Communications
         Path: Yandex.tkape
