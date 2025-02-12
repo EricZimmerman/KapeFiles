@@ -144,4 +144,4 @@ Targets:
         FileMask: History*
 
 # Documentation
-# Chromium based browser typically deployed with grayware.
+# Chromium-based browser typically deployed with grayware.
