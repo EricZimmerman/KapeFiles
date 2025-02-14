@@ -1,0 +1,31 @@
+Description: SimpleHelp Remote Access Client
+Author: Chuck Whitson
+Version: 1.0
+Id: 68522452-ae3c-405c-8258-b088b6fa65e0
+RecreateDirectories: true
+Targets:
+    -
+        Name: SimpleHelp - ProgramData - JWrapper Logs
+        Category: Apps
+        Path: C:\ProgramData\JWrapper-Remote Access\logs\
+        Comment: "Collects application and connectivity logs"
+    -
+        Name: SimpleHelp - ProgramData - SimpleHelp Logs
+        Category: Apps
+        Path: C:\ProgramData\SimpleHelp\logs\
+        Comment: "Collects application and connectivity logs"
+    -
+        Name: SimpleHelp - User AppData - Technician Console Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\JWrapper-SimpleHelp Technician\logs\
+        Comment: "Collects technician console logs"
+
+# Documentation
+# SimpleHelp is an RMM tool that has known vulnerabilities in version 5.5.7 and earlier.
+# These vulnerabilities, discovered in early January 2025, allow for upload / download of files as well as privileged escalation and have been known to be exploited by TAs.
+# See: CVE-2024-57726, CVE-2024-57727, and CVE-2024-57728
+#
+# https://simple-help.com/kb---locating-the-remote-access-service-installation-folder#locating-service-logs
+# https://simple-help.com/kb---locating-the-simplehelp-technician-app-installation-folder#technician-console-logs
+# https://www.bleepingcomputer.com/news/security/hackers-exploiting-flaws-in-simplehelp-rmm-to-breach-networks/
+# https://www.horizon3.ai/attack-research/disclosures/critical-vulnerabilities-in-simplehelp-remote-support-software/
