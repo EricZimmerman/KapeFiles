@@ -1,5 +1,5 @@
 Description: 'Using cafae64.exe to parse out Shimcache related artifacts from the SYSTEM Hives'
-Category: Program_Execution
+Category: ProgramExecution
 Author: Ajith Ravindran
 Version: 0.1
 Id: f1c2c8a8-8fe8-4a92-b668-125b3d06d804

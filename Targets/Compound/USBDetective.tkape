@@ -14,7 +14,7 @@ Targets:
         Path: RegistryHives.tkape
     -
         Name: Event Logs
-        Category: Event Logs
+        Category: EventLogs
         Path: EventLogs.tkape
     -
         Name: LNKFilesAndJumplists

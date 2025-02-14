@@ -13,7 +13,7 @@ Targets:
 
     -
         Name: Net Monitor Server Data
-        Category: Communication
+        Category: Communications
         Path: C:\ProgramData\Net Monitor for Employees Pro\data\
         Recursive: true
         Comment: "Contains Net Monitor server data - Indicates what have been seen as the attacker"

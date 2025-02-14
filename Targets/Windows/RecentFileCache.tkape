@@ -6,12 +6,12 @@ RecreateDirectories: true
 Targets:
     -
         Name: RecentFileCache
-        Category: ApplicationCompatability
+        Category: ApplicationCompatibility
         Path: C:\Windows\AppCompat\Programs\
         FileMask: RecentFileCache.bcf
     -
         Name: RecentFileCache
-        Category: ApplicationCompatability
+        Category: ApplicationCompatibility
         Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: RecentFileCache.bcf
 

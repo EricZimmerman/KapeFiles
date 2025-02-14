@@ -6,13 +6,13 @@ RecreateDirectories: true
 Targets:
     -
         Name: Notion Local Storage
-        Category: App
+        Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Notion
         FileMask: 'notion.db'
         Comment: "Local storage file containing all pages, databases, users, etc."
     -
         Name: Notion Custom Dictionary
-        Category: App
+        Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Notion\Partitions\notion
         FileMask: 'Custom Dictionary.txt'
 

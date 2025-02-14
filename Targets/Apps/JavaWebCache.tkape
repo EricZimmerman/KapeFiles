@@ -6,52 +6,52 @@ RecreateDirectories: true
 Targets:
     -
         Name: Java WebStart Cache User Level - Default
-        Category: Communication
+        Category: Communications
         Path: C:\Users\%user%\AppData\Local\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache User Level - IE Protected Mode
-        Category: Communication
+        Category: Communications
         Path: C:\Users\%user%\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\System32\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\System32\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level - IE Protected Mode
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\System32\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level - IE Protected Mode
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\System32\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level (SysWow64)
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level (SysWow64)
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\SysWOW64\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level (SysWow64) - IE Protected Mode
-        Category: Communication
+        Category: Communications
         Path: C:\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -
         Name: Java WebStart Cache System level (SysWow64) - IE Protected Mode
-        Category: Communication
+        Category: Communications
         Path: C:\Windows.old\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\
         FileMask: '*.idx'
     -

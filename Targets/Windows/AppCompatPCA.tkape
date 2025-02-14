@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: AppCompat PCA Folder
-        Category: AppCompat
+        Category: ApplicationCompatibility
         Path: C:\Windows\appcompat\pca
 
 # Documentation

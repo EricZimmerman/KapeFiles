@@ -1,5 +1,5 @@
 Description: 'Using jmp64.exe to parse Windows Jumplists from %APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations and %APPDATA%\Microsoft\Windows\Recent\CustomDestinations. Jumplists provides an indication of recent items accessed by each application.'
-Category: Program_Execution
+Category: ProgramExecution
 Author: Ajith Ravindran
 Version: 0.1
 Id: 43789728-fc3e-4695-980d-29a46e04ff0b

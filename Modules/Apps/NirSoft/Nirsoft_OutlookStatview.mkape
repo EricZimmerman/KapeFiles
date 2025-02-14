@@ -7,7 +7,7 @@ BinaryUrl: https://www.nirsoft.net/utils/outlookstatview-x64.zip
 ExportFormat: csv
 Processors:
     -
-        Executable: OutlookStatView .exe
+        Executable: OutlookStatView.exe
         CommandLine: /scomma %destinationDirectory%\Nirsoft_OutlookStatView.csv
         ExportFormat: csv
 
