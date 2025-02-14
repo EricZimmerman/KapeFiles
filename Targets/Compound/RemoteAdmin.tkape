@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
-Author: Drew Ervin, Mathias Frank, Andrew Rathbun
-Version: 1.9
+Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore
+Version: 2.1
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -29,6 +29,10 @@ Targets:
         Category: ApplicationLogs
         Path: ISLOnline.tkape
     -
+        Name: ITarian
+        Category: ApplicationLogs
+        Path: ITarian.tkape
+    -
         Name: Kaseya
         Category: ApplicationLogs
         Path: Kaseya.tkape
@@ -53,6 +57,10 @@ Targets:
         Category: ApplicationLogs
         Path: NetMonitorforEmployeesProfessional.tkape
     -
+        Name: QuickAssist
+        Category: ApplicationLogs
+        Path: QuickAssist.tkape
+    -
         Name: Radmin
         Category: ApplicationLogs
         Path: Radmin.tkape
@@ -67,6 +75,11 @@ Targets:
         Category: EventLogs
         Path: RDPLogs.tkape
         Comment: "Contains Windows Event Logs related to RDP"
+    -
+        Name: Remcos RAT
+        Category: ApplicationLogs
+        Path: Remcos.tkape
+        Comment: "Contains logs related to Remcos RAT"
     -
         Name: Remote Utilities
         Category: ApplicationLogs

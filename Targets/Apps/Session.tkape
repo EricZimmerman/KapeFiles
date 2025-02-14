@@ -1,0 +1,15 @@
+Description: Session Desktop
+Author: Vito Alfano
+Version: 1.0
+Id: c6633dbf-caea-48dc-90a0-25add823134d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Session App Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Session\
+        Recursive: true
+        Comment: "Session App Folder"
+
+# Documentation
+# N/A

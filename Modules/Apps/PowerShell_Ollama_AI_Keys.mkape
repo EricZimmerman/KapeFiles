@@ -1,0 +1,18 @@
+Description: Ollama-AI Private-Public Key Finder
+Category: PowerShell
+Author: DReneau
+Version: 1.0
+Id: f5a65250-42bd-4c11-80dd-4ab621e0c8b8
+ExportFormat: TXT
+Processors:
+  -
+    Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    CommandLine: "$users = Get-ChildItem -Path '%SourceDirectory%\\Users' -Directory; foreach ($user in $users) { $ollamaPath = Join-Path $user.FullName '.ollama'; $privateKeyPath = Join-Path $ollamaPath 'id_*'; $publicKeyPath = Join-Path $ollamaPath '*.pub'; if (Test-Path $ollamaPath) { $privateKey = Get-ChildItem -Path $privateKeyPath -Exclude *.pub | ForEach-Object { $content = Get-Content -Path $_.FullName -Raw; [PSCustomObject]@{ Name = $_.Name; FilePath = $_.FullName; KeyLocated = $content } }; $privateKeyOutput = $privateKey | ForEach-Object { 'Name: ' + $_.Name + [System.Environment]::NewLine + [System.Environment]::NewLine + 'FilePath: ' + $_.FilePath + [System.Environment]::NewLine + [System.Environment]::NewLine + 'Key: ' + $_.KeyLocated + [System.Environment]::NewLine + [System.Environment]::NewLine }; Set-Content -Path '%destinationDirectory%\\ollama_privatekey.txt' -Value $privateKeyOutput -Encoding UTF8; if (Test-Path $publicKeyPath) { $publicKey = Get-ChildItem -Path $publicKeyPath | ForEach-Object { $pubContent = Get-Content -Path $_.FullName -Raw; 'Name: ' + $_.Name + [System.Environment]::NewLine + [System.Environment]::NewLine + 'FilePath: ' + $_.FullName + [System.Environment]::NewLine + [System.Environment]::NewLine + 'Key: ' + $pubContent + [System.Environment]::NewLine + [System.Environment]::NewLine }; Set-Content -Path '%destinationDirectory%\\ollama_publickey.txt' -Value $publicKey -Encoding UTF8 } } }"
+    ExportFormat: TXT
+
+# Documentation
+# https://ollama.com/blog | https://github.com/ollama/ollama | https://hub.docker.com/r/ollama/ollama
+# Ollama is used for self-hosted AI inference, and it supports many models out of the box.
+# Ollama serves as the backend for common AI projects such as OpenWebUI, among others.
+# The code will identify the installed Models, the Model Integrity hash and the Ollama PrivateKey.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module powershell_ollama_ai_keys

@@ -3,7 +3,7 @@ Category: Downloads
 Author: Andrew Rathbun
 Version: 1.0
 Id: cb794d78-a91a-4119-95b5-3a3b844d3fbe
-BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Parse-MatterMostDownloadsJson.ps1
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/KAPE/Parse-MatterMostDownloadsJson.ps1
 ExportFormat: csv
 Processors:
     -

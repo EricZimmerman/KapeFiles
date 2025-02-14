@@ -1,0 +1,18 @@
+Description: Displaying ARP Table using PowerShell
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: f25cbff9-fb0c-406b-ba70-c61709c102ae
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetNeighbor | ?{$_.AddressFamily -eq 'IPv4'} | Select InterfaceAlias,IPAddress,LinkLayerAddress,State | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\ARP Table.csv' "
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetNeighbor | ?{$_.AddressFamily -eq 'IPv4'} | Select InterfaceAlias,IPAddress,LinkLayerAddress,State | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\ARP Table.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netneighbor?view=windowsserver2022-ps

@@ -1,0 +1,19 @@
+Description: Ollama-AI Installed LLM's
+Category: PowerShell
+Author: DReneau
+Version: 1.0
+Id: d165b496-55d9-480a-a592-b80dd50e2e14
+ExportFormat: CSV
+Processors:
+  -
+    Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    CommandLine: "$users = Get-ChildItem -Path '%SourceDirectory%\\Users' -Directory; foreach ($user in $users) { $ollamaPath = Join-Path $user.FullName '.ollama'; if (Test-Path $ollamaPath) { $outputPath = '%destinationDirectory%\\ollama_models_identified.csv'; Remove-Item $outputPath -ErrorAction SilentlyContinue; $manifestsPath = Join-Path $ollamaPath 'models\\manifests'; $legitPath = Join-Path $manifestsPath 'registry.ollama.ai\\library'; $allModels = Get-ChildItem -Path $manifestsPath -Directory -Recurse | Where-Object { $_.Name -notin @('registry.ollama.ai', 'library') -and (Get-ChildItem -Path $_.FullName -File -ErrorAction SilentlyContinue | Where-Object { $_.Extension -eq '' }) } | ForEach-Object { $modelName = $_.Name; $modelFile = Get-ChildItem -Path $_.FullName -File -ErrorAction SilentlyContinue | Select-Object -First 1; $isLegit = if ($_.FullName -match [regex]::Escape($legitPath)) { 'Ollama Repo' } else { 'Non Ollama Repo' }; if ($modelFile -and (Test-Path $modelFile.FullName)) { try { $jsonContent = Get-Content -Path $modelFile.FullName -Raw -ErrorAction Stop | ConvertFrom-Json; $modelIntegrity = ($jsonContent.layers | Where-Object { $_.mediaType -eq 'application/vnd.ollama.image.model' }).digest; $sizeInGB = '{0:N1} GB' -f (($jsonContent.layers | Measure-Object -Property size -Sum).Sum / 1GB); $modifiedDate = (Get-Item $modelFile.FullName).LastWriteTime.ToString('g'); } catch { $modelIntegrity = 'Parsing Error'; $sizeInGB = 'Unknown'; $modifiedDate = 'Unknown'; } } else { $modelIntegrity = 'Not Found'; $sizeInGB = 'Unknown'; $modifiedDate = 'Unknown'; $modelFile = 'Access Denied' }; [PSCustomObject]@{ Name = $modelName; Sha = $modelIntegrity.Split(':')[1]; Size = $sizeInGB; Modified = $modifiedDate; Path = $modelFile.FullName; 'Source' = $isLegit } }; $allModels | Export-Csv -Path $outputPath -NoTypeInformation -Force } }"
+    ExportFormat: CSV
+
+# Documentation
+# Yaml will identify Ollama models and identify if they are downloaded from the official Ollama repo or not.
+# https://ollama.com/blog | https://github.com/ollama/ollama | https://hub.docker.com/r/ollama/ollama
+# Ollama is used for self-hosted AI inference, and it supports many models out of the box.
+# Ollama serves as the backend for common AI projects such as OpenWebUI, among others.
+# The code will identify the installed Models, the Model Integrity hash and the Ollama PrivateKey.
+# .\kape.exe --msource c:\ --mdest k:\case-12345\Kape\mout --module powershell_ollama_ai_models

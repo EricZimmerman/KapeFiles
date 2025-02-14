@@ -1,0 +1,20 @@
+Description: Collecting Network Routing Table Information
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: f1eaaf30-3b13-4c0e-836c-071f7a668948
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "Get-NetRoute | Select-Object DestinationPrefix, NextHop, InterfaceAlias, RouteMetric, Protocol, InterfaceIndex, AddressFamily | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Network Routing Table.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: >
+            -Command "Get-NetRoute | Select-Object DestinationPrefix, NextHop, InterfaceAlias, RouteMetric, Protocol, InterfaceIndex, AddressFamily | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Network Routing Table.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netroute?view=windowsserver2022-ps

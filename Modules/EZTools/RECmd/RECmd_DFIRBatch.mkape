@@ -1,15 +1,16 @@
-Description: 'RECmd: Kroll'
+Description: 'RECmd: DFIR'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.2
 Id: 26e4a8f6-d745-4195-8b8e-563cf32a4952
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
 Processors:
     -
         Executable: RECmd\RECmd.exe
-        CommandLine: -d %sourceDirectory% --bn BatchExamples\Kroll_Batch.reb --nl false --csv %destinationDirectory%
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\DFIRBatch.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: DFIRBatch_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
@@ -20,5 +21,5 @@ Processors:
 # https://www.youtube.com/watch?v=tk9XsMHzPlM
 # https://www.youtube.com/watch?v=GhCZfCzn2l0
 # https://leanpub.com/eztoolsmanuals
-# Uses the Kroll batch command file. This file should reside within KAPE\Module\bin\RECmd\BatchExamples.
+# Uses the DFIR batch command file. This file should reside within KAPE\Module\bin\RECmd\BatchExamples.
 # Note: --nl false replays transaction logs. If you don't want to replay transaction logs, change to --nl true.

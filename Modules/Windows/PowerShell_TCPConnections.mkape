@@ -1,0 +1,18 @@
+Description: TCP Established Connections including DNSCache and process information
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: e2c9b4f3-5e2a-4bce-bbcf-8b473b3bb167
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "$connections = @(); if($PSVersionTable.PSVersion.Major -lt 5){ Get-NetTCPConnection | % { $connections += New-Object psobject -Property ([ordered]@{ 'State'=$_.State; 'DNSCache'=(Get-DnsClientCache -Data $_.RemoteAddress -ea 0).Entry; 'RemoteAddress'=$_.RemoteAddress; 'RemotePort'=$_.RemotePort }) } } else{ Get-NetTCPConnection | % { $connections += New-Object psobject -Property ([ordered]@{ 'State'=$_.State; 'DNSCache'=(Get-DnsClientCache -Data $_.RemoteAddress -ea 0).Entry; 'UserName'=(gps -Id $_.OwningProcess -IncludeUserName).UserName; 'Process Name'=(gps -Id $_.OwningProcess).Name; 'Process Path'=(gps -Id $_.OwningProcess).Path; 'OwningProcess'=$_.OwningProcess; 'LocalAddress'=$_.LocalAddress; 'LocalPort'=$_.RemotePort; 'RemoteAddress'=$_.RemoteAddress; 'RemotePort'=$_.LocalPort }) } }; $connections | Export-Csv -NoTypeInformation -Path '%destinationDirectory%\TCPConnections.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "$connections = @(); if($PSVersionTable.PSVersion.Major -lt 5){ Get-NetTCPConnection | % { $connections += New-Object psobject -Property ([ordered]@{ 'State'=$_.State; 'DNSCache'=(Get-DnsClientCache -Data $_.RemoteAddress -ea 0).Entry; 'RemoteAddress'=$_.RemoteAddress; 'RemotePort'=$_.RemotePort }) } } else{ Get-NetTCPConnection | % { $connections += New-Object psobject -Property ([ordered]@{ 'State'=$_.State; 'DNSCache'=(Get-DnsClientCache -Data $_.RemoteAddress -ea 0).Entry; 'UserName'=(gps -Id $_.OwningProcess -IncludeUserName).UserName; 'Process Name'=(gps -Id $_.OwningProcess).Name; 'Process Path'=(gps -Id $_.OwningProcess).Path; 'OwningProcess'=$_.OwningProcess; 'LocalAddress'=$_.LocalAddress; 'LocalPort'=$_.RemotePort; 'RemoteAddress'=$_.RemoteAddress; 'RemotePort'=$_.LocalPort }) } }; $connections | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\TCPConnections.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-nettcpconnection?view=windowsserver2022-ps

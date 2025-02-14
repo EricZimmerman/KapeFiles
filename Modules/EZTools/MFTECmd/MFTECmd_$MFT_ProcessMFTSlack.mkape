@@ -9,12 +9,12 @@ FileMask: $MFT
 Processors:
     -
         Executable: MFTECmd.exe
-        CommandLine: -f %sourceFile% --csv %destinationDirectory% -NEWSWITCH
+        CommandLine: -f %sourceFile% --csv %destinationDirectory% --rs
         ExportFormat: csv
         ExportFile: MFTFileSlack.txt
     -
         Executable: MFTECmd.exe
-        CommandLine: -f %sourceFile% --json %destinationDirectory% -NEWSWITCH
+        CommandLine: -f %sourceFile% --json %destinationDirectory% --rs
         ExportFormat: json
         ExportFile: MFTFileSlack.txt
 

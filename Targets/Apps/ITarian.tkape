@@ -1,0 +1,29 @@
+Description: ITarian RMM
+Author: Phill Moore
+Version: 1.0
+Id: aa387dbf-3326-a9c7-4d61-7d62197341a3
+RecreateDirectories: true
+Targets:
+    -
+        Name: ITarian
+        Category: Apps
+        Path: C:\Program Files\ITarian\Endpoint Manager\rmmlogs
+        Comment: ""
+    -
+        Name: ITarian
+        Category: Apps
+        Path: C:\Program Files (x86)\ITarian\Endpoint Manager\rmmlogs
+        Comment: ""
+    -
+        Name: Comodo
+        Category: Apps
+        Path: C:\Program Files\Comodo\Endpoint Manager\rmmlogs
+        Comment: ""
+    -
+        Name: ITarian
+        Category: Apps
+        Path: C:\Program Files (x86)\Comodo\Endpoint Manager\rmmlogs
+        Comment: ""
+
+# Documentation
+# https://russianpanda.com/The-Abuse-of-ITarian-RMM-by-Dolphin-Loader

@@ -1,0 +1,18 @@
+Description: A Module to parse Certutil activity
+Category: Windows
+Author: DReneau
+Version: 1.0
+Id: 7d18d1ad-13b5-435c-a5f1-063093e39646
+BinaryUrl: https://github.com/AbdulRhmanAlfaifi/CryptnetURLCacheParser/releases/tag/1.1/CryptnetUrlCacheParser.exe
+ExportFormat: csv
+Processors:
+  - Executable: CryptnetUrlCacheParser.exe
+    CommandLine: "-o \"%destinationDirectory%\\Certutil_Parsed.csv\""
+    ExportFormat: csv
+
+# Documentation
+# https://u0041.co/posts/articals/certutil-artifacts-analysis/
+# https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/certutil
+# https://thinkdfir.com/2020/07/30/certutil-download-artefacts/
+# Certutil is a Windows utility used by threat actors to download arbitrary files/tools using Land Binary (LOLBin)  techniques.
+# Certutil can also be used to base64 encode/decode and calculate file hashes.

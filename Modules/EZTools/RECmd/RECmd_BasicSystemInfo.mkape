@@ -1,7 +1,7 @@
 Description: 'RECmd: BasicSystemInfo'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: e6da3300-447a-4912-9689-7d0679cae71b
 BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
 ExportFormat: csv
@@ -10,6 +10,7 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\BasicSystemInfo.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
+        ExportFile: BasicSystemInfo_RECmdConsoleLog.txt
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd

@@ -1,6 +1,6 @@
 Description: Cloud Storage Metadata
 Author: Chad Tilbury and Andrew Rathbun, Eric Capuano
-Version: 1.1
+Version: 1.2
 Id: 136ca523-2f99-4203-bd66-6aa50fe8d3a8
 RecreateDirectories: true
 Targets:
@@ -17,6 +17,10 @@ Targets:
         Category: Apps
         Path: GoogleDrive_Metadata.tkape
     -
+        Name: MegaSync Data Collection
+        Category: Apps
+        Path: Megasync.tkape
+    -
         Name: OneDrive Metadata
         Category: Apps
         Path: OneDrive_Metadata.tkape
@@ -24,6 +28,10 @@ Targets:
         Name: Rclone Conf File
         Category: Apps
         Path: RcloneConf.tkape
+    -
+        Name: FreeFileSync
+        Category: Apps
+        Path: FreeFileSync.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.

@@ -3,7 +3,7 @@ Category: ChainsawSync
 Author: Andrew Rathbun
 Version: 1.0
 Id: b3fc53a5-4f10-431d-903a-65700bf16e2f
-BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/Get-ChainsawSigmaRules.ps1
+BinaryUrl: https://github.com/AndrewRathbun/DFIRPowerShellScripts/blob/main/KAPE/Get-ChainsawSigmaRules.ps1
 ExportFormat: txt
 Processors:
     -

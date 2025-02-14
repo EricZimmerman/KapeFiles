@@ -1,0 +1,142 @@
+Description: CocCoc Browser
+Author: Reece394
+Version: 1.0
+Id: 423349b1-9ab2-4aa1-8dc2-d96a55a58029
+RecreateDirectories: true
+Targets:
+    -
+        Name: CocCoc Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: CocCoc Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: CocCoc Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Current Session
+    -
+        Name: CocCoc Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: CocCoc Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: CocCoc Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: CocCoc Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: CocCoc History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: History*
+    -
+        Name: CocCoc Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Last Session
+    -
+        Name: CocCoc Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: CocCoc Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: CocCoc Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Login Data*
+    -
+        Name: CocCoc Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Media History*
+    -
+        Name: CocCoc Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: CocCoc Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: CocCoc Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Preferences
+    -
+        Name: CocCoc Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: CocCoc Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: CocCoc Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: CocCoc Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: CocCoc Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: CocCoc SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\Sync Data
+        Recursive: true
+    -
+        Name: CocCoc Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: CocCoc Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: CocCoc Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\CocCoc\Browser\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of CocCoc SQLite DBs organized by version #."
+
+# Documentation
+# https://coccoc.com/

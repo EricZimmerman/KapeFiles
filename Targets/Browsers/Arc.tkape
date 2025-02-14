@@ -1,0 +1,84 @@
+Description: Arc Browser
+Author: Reece394
+Version: 1.0
+Id: f094335b-ec3c-4be8-9f80-e74e758da16e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Arc Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\Network
+        FileMask: Cookies*
+    -
+        Name: Arc Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Arc History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: History*
+    -
+        Name: Arc Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Arc Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Login Data*
+    -
+        Name: Arc Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Arc Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Arc Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Arc Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Arc SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\Sync Data
+        Recursive: true
+    -
+        Name: Arc Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Arc Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Arc Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Arc JSON Files
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc
+        FileMask: Storable*.json
+    -
+        Name: Arc PLIST Files
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local
+        FileMask: com*.plist
+
+# Documentation
+# https://arc.net/

@@ -1,9 +1,9 @@
 Description: Chainsaw - Rapidly Search and Hunt through Windows Event Logs
 Category: EventLogs
 Author: Andrew Rathbun
-Version: 2.0
+Version: 2.1
 Id: e5912d52-6b31-4480-9255-8c5433326d85
-BinaryUrl: https://github.com/WithSecureLabs/chainsaw/releases/download/v2.3.1/chainsaw_all_platforms+rules+examples.zip
+BinaryUrl: https://github.com/WithSecureLabs/chainsaw/releases/latest/download/chainsaw_all_platforms+rules+examples.zip
 ExportFormat: csv
 Processors:
     -

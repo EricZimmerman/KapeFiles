@@ -207,6 +207,11 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\Snapshots\*\
         Recursive: true
         Comment: "Grabs folder that appears to have snapshots of Chrome SQLite DBs organized by version #."
+    -
+        Name: SYSTEM Chrome History
+        Category: Communications
+        Path: C:\Windows\system32\config\systemprofile\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: History*
 
 # Documentation
 # https://nasbench.medium.com/web-browsers-forensics-7e99940c579a

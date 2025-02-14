@@ -1,0 +1,18 @@
+Description: Collecting Network IP Address Information
+Category: Network Activity
+Author: Max Zabuty
+Version: 1.0
+Id: 85d5e5cb-630c-4e70-9153-738e30c9d973
+ExportFormat: csv
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetIPAddress | Select IPAddress,InterfaceAlias,AddressFamily,Type,PrefixLength,PrefixOrigin,SuffixOrigin,AddressState | Export-Csv -Encoding UTF8 -NoTypeInformation -Path '%destinationDirectory%\Network IP Addresses.csv'"
+        ExportFormat: csv
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -Command "Get-NetIPAddress | Select IPAddress,InterfaceAlias,AddressFamily,Type,PrefixLength,PrefixOrigin,SuffixOrigin,AddressState | ConvertTo-Json | Out-File -Encoding UTF8 -FilePath '%destinationDirectory%\Network IP Addresses.json'"
+        ExportFormat: json
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netipaddress?view=windowsserver2022-ps
