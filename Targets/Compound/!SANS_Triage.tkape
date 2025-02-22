@@ -1,6 +1,6 @@
 Description: SANS Triage Collection
 Author: Mark Hallman
-Version: 1.4
+Version: 1.5
 Id: 1bfbd59d-6c58-4eeb-9da7-1d9612b79964
 RecreateDirectories: true
 Targets:
@@ -29,6 +29,10 @@ Targets:
         Category: FileSystem
         Path: FileSystem.tkape
     -
+        Name: FTPClients
+        Category: FTP
+        Path: FTPClients.tkape
+    -
         Name: LNKFilesAndJumpLists
         Category: LNKFiles
         Path: LNKFilesAndJumpLists.tkape
@@ -36,6 +40,10 @@ Targets:
         Name: MessagingClients
         Category: MessagingClients
         Path: MessagingClients.tkape
+    -
+        Name: NetworkScanner
+        Category: Apps
+        Path: NetworkScanner.tkape
     -
         Name: RecycleBin_InfoFiles
         Category: RecycleBin_InfoFiles

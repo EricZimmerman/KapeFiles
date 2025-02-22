@@ -1,5 +1,5 @@
 Description: 'Using cafae64.exe to parse and list recently executed applications from Users NTUSER.DAT registry hive'
-Category: Program_Execution
+Category: ProgramExecution
 Author: Ajith Ravindran
 Version: 0.1
 Id: 990d2bc9-1282-4f93-b303-655905851a8d

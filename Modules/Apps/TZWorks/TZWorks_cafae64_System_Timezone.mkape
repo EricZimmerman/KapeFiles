@@ -1,5 +1,5 @@
 Description: 'Using cafae64.exe to parse SYSTEM hive and extract the timezone information of the host'
-Category: Program_Execution
+Category: ProgramExecution
 Author: Ajith Ravindran
 Version: 0.1
 Id: 2c08affe-abd9-4c0c-b089-66367aeea667

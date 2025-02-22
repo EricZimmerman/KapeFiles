@@ -6,27 +6,27 @@ RecreateDirectories: true
 Targets:
     -
         Name: Freenet
-        Category: File Downloads
+        Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\Freenet\
         FileMask: 'node*'
     -
         Name: Freenet
-        Category: File Downloads
+        Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\Freenet\
         FileMask: '*completed.list.downloads'
     -
         Name: Freenet
-        Category: File Downloads
+        Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\Freenet\
         FileMask: '*completed.list.uploads'
     -
         Name: Freenet
-        Category: File Downloads
+        Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\Freenet\
         FileMask: '*.bak'
     -
         Name: Freenet
-        Category: File Downloads
+        Category: FileDownload
         Path: C:\Users\%user%\AppData\Local\Freenet\downloads\
         Recursive: true
 

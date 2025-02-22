@@ -1,14 +1,9 @@
 Description: Microsoft Edge Chromium Artifacts
 Author: Chad Tilbury and Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: 2844dba2-fb47-466c-8d57-dab2bc02294f
 RecreateDirectories: true
 Targets:
-    -
-        Name: Edge bookmarks
-        Category: Communications
-        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
-        FileMask: Bookmarks*
     -
         Name: Edge Collections
         Category: Communications

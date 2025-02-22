@@ -1,5 +1,5 @@
 Description: 'Using pf64.exe to parse Prefetch files from C:\Windows\Prefetch folder. Prefetch files, while tracking GUI AND Command Line based executions; it captures the number times the application was executed, last 8 timestamps of executions and the files and directories accessed by the application for upto 1st 10 seconds'
-Category: Program_Execution
+Category: ProgramExecution
 Author: Ajith Ravindran
 Version: 0.1
 Id: 3e90ee36-7b19-4787-a8af-438d15e6e417

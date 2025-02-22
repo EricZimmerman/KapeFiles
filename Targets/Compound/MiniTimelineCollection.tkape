@@ -6,11 +6,11 @@ RecreateDirectories: true
 Targets:
     -
         Name: Event Logs
-        Category: Event Logs
+        Category: EventLogs
         Path: EventLogs.tkape
     -
         Name: File System
-        Category: File System
+        Category: FileSystem
         Path: FileSystem.tkape
     -
         Name: RegistryHives

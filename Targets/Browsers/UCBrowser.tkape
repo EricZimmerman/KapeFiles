@@ -1,0 +1,142 @@
+Description: UCBrowser
+Author: Reece394
+Version: 1.0
+Id: 89989d8d-933e-47d7-a775-c43d897f4633
+RecreateDirectories: true
+Targets:
+    -
+        Name: UCBrowser Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Bookmarks*
+    -
+        Name: UCBrowser Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: UCBrowser Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Current Session
+    -
+        Name: UCBrowser Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Current Tabs
+    -
+        Name: UCBrowser Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: DownloadMetadata
+    -
+        Name: UCBrowser Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Extension Cookies
+    -
+        Name: UCBrowser Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Favicons*
+    -
+        Name: UCBrowser History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: History*
+    -
+        Name: UCBrowser Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Last Session
+    -
+        Name: UCBrowser Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Last Tabs
+    -
+        Name: UCBrowser Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\Sessions\
+        Recursive: false
+    -
+        Name: UCBrowser Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Login Data*
+    -
+        Name: UCBrowser Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Media History*
+    -
+        Name: UCBrowser Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Network Action Predictor
+    -
+        Name: UCBrowser Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Network Persistent State
+    -
+        Name: UCBrowser Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Preferences
+    -
+        Name: UCBrowser Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: QuotaManager
+    -
+        Name: UCBrowser Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Reporting and NEL
+    -
+        Name: UCBrowser Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Shortcuts*
+    -
+        Name: UCBrowser Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Top Sites*
+    -
+        Name: UCBrowser Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Trust Tokens*
+    -
+        Name: UCBrowser SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\Sync Data
+        Recursive: true
+    -
+        Name: UCBrowser Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Visited Links
+    -
+        Name: UCBrowser Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: UCBrowser Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\UCBrowser\User Data*\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of UCBrowser SQLite DBs organized by version #."
+
+# Documentation
+# https://ucweb.com/

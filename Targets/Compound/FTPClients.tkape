@@ -1,6 +1,6 @@
 Description: FTP Clients
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: b1f3e04d-6525-4a1a-9e19-82300ec1e3b7
 RecreateDirectories: true
 Targets:
@@ -16,6 +16,10 @@ Targets:
         Name: WinSCP
         Category: FTP
         Path: WinSCP.tkape
+    -
+        Name: Robo-FTP
+        Category: FTP
+        Path: Robo-FTP.tkape
 
 # Documentation
 # For those looking for ideas to contribute to this Compound Target, check here: https://en.wikipedia.org/wiki/Comparison_of_FTP_client_software.

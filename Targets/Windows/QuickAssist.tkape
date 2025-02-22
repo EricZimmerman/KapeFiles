@@ -1,0 +1,20 @@
+Description: Microsoft Quick Assist/Remote Help
+Author: Andrew Rathbun
+Version: 1.1
+Id: 553b355d-8279-46ec-abd1-d43147583c6e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Microsoft Quick Assist
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Local\Temp\QuickAssist
+        Recursive: true
+    -
+        Name: Microsoft Remote Help
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Local\Temp\RemoteHelp
+        Recursive: true
+
+# Documentation
+# https://support.microsoft.com/en-us/windows/solve-pc-problems-remotely-using-quick-assist-b077e31a-16f4-2529-1a47-21f6a9040bf3
+# https://learn.microsoft.com/en-us/mem/intune/fundamentals/remote-help

@@ -1,0 +1,254 @@
+Description: Supermium
+Author: Reece394
+Version: 1.0
+Id: 489db515-48e5-48f1-b6ee-9fdddf51a331
+RecreateDirectories: true
+Targets:
+    -
+        Name: Supermium Bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Supermium Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Supermium Current Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Supermium Current Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Supermium Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Supermium History XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: History*
+    -
+        Name: Supermium Last Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Supermium Last Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Supermium Sessions Folder XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Supermium Network Action Predictor XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Supermium Network Persistent State XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Network Persistent State
+    -
+        Name: Supermium Login Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Login Data*
+    -
+        Name: Supermium Preferences XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Supermium Reporting and NEL XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Reporting and NEL
+    -
+        Name: Supermium Trust Tokens XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Trust Tokens*
+    -
+        Name: Supermium SyncData Database XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\Sync Data
+        Recursive: true
+    -
+        Name: Supermium Shortcuts XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Supermium Top Sites XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Supermium Visited Links XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Supermium Web Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Application Data\Supermium\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Supermium Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Supermium Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Supermium Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Supermium Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Supermium Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: Supermium Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: Supermium Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Supermium History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: History*
+    -
+        Name: Supermium Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Supermium Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Supermium Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Supermium Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Login Data*
+    -
+        Name: Supermium Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Supermium Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Supermium Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Network Persistent State
+    -
+        Name: Supermium Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Supermium Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Supermium Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Reporting and NEL
+    -
+        Name: Supermium Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Supermium Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Supermium Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        Recursive: true
+        FileMask: Trust Tokens*
+    -
+        Name: Supermium SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\Sync Data
+        Recursive: true
+    -
+        Name: Supermium Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Supermium Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: Supermium Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of Supermium SQLite DBs organized by version #."
+    -
+        Name: SYSTEM Supermium History
+        Category: Communications
+        Path: C:\Windows\system32\config\systemprofile\AppData\Local\Supermium\User Data\*\
+        FileMask: History*
+
+# Documentation
+# https://github.com/win32ss/supermium

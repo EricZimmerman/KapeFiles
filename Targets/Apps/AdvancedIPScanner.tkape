@@ -1,0 +1,31 @@
+Description: Advanced IP Scanner Artifacts
+Author: Reece394
+Version: 1.0
+Id: 6b103fca-428f-45a7-a62e-18314d4562d7
+RecreateDirectories: true
+Targets:
+    -
+        Name: Advanced IP Scanner Aliases
+        Category: Apps
+        Path: C:\
+        FileMask: 'advanced_ip_scanner_Aliases.bin'
+        Recursive: true
+
+    -
+        Name: Advanced IP Scanner Comments
+        Category: Apps
+        Path: C:\
+        FileMask: 'advanced_ip_scanner_Comments.bin'
+        Recursive: true
+
+    -
+        Name: Advanced IP Scanner MAC
+        Category: Apps
+        Path: C:\
+        FileMask: 'advanced_ip_scanner_MAC.bin'
+        Recursive: true
+
+# Documentation
+# Advanced IP Scanner is a scanning tool commonly leveraged by threat actors.
+# After closing the program it writes three files the most important of which is advanced_ip_scanner_MAC.bin which contains a list of IPs and System Names the Program Scanned.
+# https://www.advanced-ip-scanner.com/

@@ -6,7 +6,7 @@ RecreateDirectories: true
 Targets:
     -
         Name: Chrome Extension Files
-        Category: Communication
+        Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
         Recursive: true
     -
