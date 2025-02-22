@@ -1,6 +1,7 @@
 Description: A Target to collect files that are currently open in Notepad (Windows 11+)
-Author: Andrew Rathbun
-Version: 1.0
+Category: Text Editor
+Author: Andrew Rathbun, ogmini
+Version: 2.0
 Id: 53e3b402-e53e-4841-bba0-56e98c53cf5b
 RecreateDirectories: true
 Targets:
@@ -10,6 +11,18 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\LocalState\TabState
         FileMask: "*.bin"
         Comment: "Contains .bin files which consist of the files opened in each tab in Windows Notepad"
+	-
+        Name: Windows Notepad Window State Files
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\LocalState\WindowState\
+        FileMask: "*.bin"
+        Comment: "Contains .bin files tracking the state of the Notepad Window"
+    -
+        Name: Windows Notepad Settings File
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\Settings\
+        FileMask: "settings.dat"
+        Comment: "Retrieves settings.dat which is an Application Registry"
 
 # Documentation
-# N/A
+# https://github.com/ogmini/Notepad-State-Library
