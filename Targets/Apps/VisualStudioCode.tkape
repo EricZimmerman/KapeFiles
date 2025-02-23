@@ -1,6 +1,6 @@
 Description: Visual Studio Code artifacts
-Author: Sebastian Søgaard
-Version: 1.0
+Author: Sebastian Søgaard, ogmini
+Version: 2.0
 Id: f90fe4ce-b349-4010-8d41-3b7b8273e5fe
 RecreateDirectories: true
 Targets:
@@ -52,6 +52,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Code\logs\
         Recursive: true
         Comment: "Grabs the VSCode logs. Further analysis is needed to determine which logs are junk, and which can be vital."
+    -
+        Name: VSCode File Backups
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\Backups\*\
+        Recursive: true
+        Comment: "Grabs the Backups for unsaved changes."
 
 # Documentation
 # N/A
