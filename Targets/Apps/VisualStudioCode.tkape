@@ -15,13 +15,13 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\
         FileMask: storage.json*
-        Comment: "Grabs the file containing information about the users workspaces"
+        Comment: "Grabs the file containing information about the user's workspaces"
     -
         Name: VSCode User extensions
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Code\CachedExtensions\
         FileMask: user*
-        Comment: "Grabs the files relating to the users installed extensions"
+        Comment: "Grabs the files relating to the user's installed extensions"
     -
         Name: VSCode User settings
         Category: Apps
@@ -60,5 +60,4 @@ Targets:
         Comment: "Grabs the Backups for unsaved changes."
 
 # Documentation
-# https://ogmini.github.io/2025/02/22/Investigating-Visual-Studio-Code-Part-3.html - Specific writeup on the Backups and 
-# History folders and files.
+# https://ogmini.github.io/2025/02/22/Investigating-Visual-Studio-Code-Part-3.html - Specific writeup on the Backups and History folders and files.
