@@ -1,6 +1,6 @@
 Description: Visual Studio Code artifacts
-Author: Sebastian Søgaard
-Version: 1.0
+Author: Sebastian Søgaard, ogmini
+Version: 2.0
 Id: f90fe4ce-b349-4010-8d41-3b7b8273e5fe
 RecreateDirectories: true
 Targets:
@@ -15,13 +15,13 @@ Targets:
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\
         FileMask: storage.json*
-        Comment: "Grabs the file containing information about the users workspaces"
+        Comment: "Grabs the file containing information about the user's workspaces"
     -
         Name: VSCode User extensions
         Category: Apps
         Path: C:\Users\%user%\AppData\Roaming\Code\CachedExtensions\
         FileMask: user*
-        Comment: "Grabs the files relating to the users installed extensions"
+        Comment: "Grabs the files relating to the user's installed extensions"
     -
         Name: VSCode User settings
         Category: Apps
@@ -52,6 +52,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\Code\logs\
         Recursive: true
         Comment: "Grabs the VSCode logs. Further analysis is needed to determine which logs are junk, and which can be vital."
+    -
+        Name: VSCode File Backups
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\Backups\*\
+        Recursive: true
+        Comment: "Grabs the Backups for unsaved changes."
 
 # Documentation
-# N/A
+# https://ogmini.github.io/2025/02/22/Investigating-Visual-Studio-Code-Part-3.html - Specific writeup on the Backups and History folders and files.
