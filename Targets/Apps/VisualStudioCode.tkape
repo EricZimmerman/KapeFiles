@@ -60,4 +60,5 @@ Targets:
         Comment: "Grabs the Backups for unsaved changes."
 
 # Documentation
-# N/A
+# https://ogmini.github.io/2025/02/22/Investigating-Visual-Studio-Code-Part-3.html - Specific writeup on the Backups and 
+# History folders and files.
