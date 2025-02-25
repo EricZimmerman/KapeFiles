@@ -1,0 +1,15 @@
+Description: PowerShell Command History
+Author: Nisarg Suthar
+Version: 1.0
+Id: ae4562b2-5f80-419e-9dd9-a76d849bdb91
+RecreateDirectories: true
+Targets:
+    -
+        Name: PowerShell Console Host History - Default Location
+        Category: PowerShell
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\
+        FileMask: 'ConsoleHost_history.txt'
+
+# Documentation
+# https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_history?view=powershell-7.5
+# https://learn.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.5
