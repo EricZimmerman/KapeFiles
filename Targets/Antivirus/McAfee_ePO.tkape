@@ -9,6 +9,26 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\McAfee\Endpoint Security\Logs\
         Recursive: true
-
+    -
+        Name: McAfee ePO Apache Logs
+        Category: Antivirus
+        Path: C:\Program Files (x86)\McAfee\ePolicy Orchestrator\Apache2\Logs
+        Recursive: true
+    -
+        Name: McAfee ePO DB Events
+        Category: Antivirus
+        Path: C:\Program Files (x86)\McAfee\ePolicy Orchestrator\DB\Events
+        Recursive: true
+    -
+        Name: McAfee ePO DB Debug Events
+        Category: Antivirus
+        Path: C:\Program Files (x86)\McAfee\ePolicy Orchestrator\DB\Events\Debug
+        Recursive: true
+    -
+        Name: McAfee ePO Server Logs
+        Category: Antivirus
+        Path: C:\Program Files (x86)\McAfee\ePolicy Orchestrator\Server\Logs
+        Recursive: true
+        
 # Documentation
 # N/A

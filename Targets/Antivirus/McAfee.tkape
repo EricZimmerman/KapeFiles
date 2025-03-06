@@ -29,6 +29,56 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Mcafee\VirusScan\
         Recursive: true
+    -
+        Name: McAfee MSC Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Mcafee\MSC\Logs
+        Recursive: true
+    -
+        Name: McAfee Agent Events
+        Category: Antivirus
+        Path: C:\ProgramData\Mcafee\Agent\AgentEvents
+        Recursive: true
+    -
+        Name: McAfee Agent Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Mcafee\Agent\logs
+        Recursive: true
+    -
+        Name: McAfee Data Reputation Logs
+        Category: Antivirus
+        Path: C:\ProgramData\Mcafee\datareputation\Logs
+        Recursive: true
+    -
+        Name: McAfee Managed VirusScan
+        Category: Antivirus
+        Path: C:\ProgramData\Mcafee\Managed\VirusScan\Logs
+        Recursive: true
+    -
+        Name: McAfee Agent Events XP
+        Category: Antivirus
+        Path: C:\Documents and SettingsAll Users\Application Data\McAfee\Common Framework\AgentEvents
+        Recursive: true
+    -
+        Name: McAfee MC Logs XP
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\McAfee\MCLOGS\SAE
+        Recursive: true
+    -
+        Name: McAfee Data Reputation Logs XP
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\McAfee\datreputation\Logs
+        Recursive: true
+    -
+        Name: McAfee Managed VirusScan Logs XP
+        Category: Antivirus
+        Path: C:\Documents and Settings\All Users\Application Data\McAfee\Managed\VirusScan\Logs
+        Recursive: true
+    -
+        Name: McAfee WCF Service Logs
+        Category: Antivirus
+        Path: C:\Program Files (x86)\McAfee\DLP\WCF Service\Log
+        Recursive: true
 
 # Documentation
 # N/A

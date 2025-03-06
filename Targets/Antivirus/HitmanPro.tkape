@@ -20,6 +20,11 @@ Targets:
         Path: C:\ProgramData\HitmanPro.Alert\
         FileMask: excalibur.db
         Comment: "SQLite DB"
+    -
+        Name: HitmanPro Quarantine
+        Category: Antivirus
+        Path: C:\ProgramData\HitmanPro\Quarantine
+        Recursive: true
 
 # Documentation
 # N/A
