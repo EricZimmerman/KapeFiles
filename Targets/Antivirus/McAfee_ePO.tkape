@@ -29,6 +29,6 @@ Targets:
         Category: Antivirus
         Path: C:\Program Files (x86)\McAfee\ePolicy Orchestrator\Server\Logs
         Recursive: true
-        
+
 # Documentation
 # N/A
