@@ -22,6 +22,11 @@ Targets:
         Path: C:\Windows\Logs\CBS\
         FileMask: 'CBS*.log'
         Recursive: true
+    -
+        Name: Windows Update History
+        Category: EventLogs
+        Path: C:\Windows\SoftwareDistribution\DataStore
+        Recursive: true
 
 # Documentation
 # https://learn.microsoft.com/en-us/windows/deployment/update/windows-update-logs
