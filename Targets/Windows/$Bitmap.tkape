@@ -1,0 +1,17 @@
+Description: $Bitmap
+Author: Nisarg Suthar
+Version: 1.0
+Id: 53303f6f-a8ee-47c3-8468-90cf01501215
+RecreateDirectories: true
+Targets:
+    -
+        Name: $Bitmap
+        Category: FileSystem
+        Path: C:\
+        FileMask: $Bitmap
+        AlwaysAddToQueue: true
+
+# Documentation
+# https://whereismydata.wordpress.com/2009/06/01/forensics-what-is-the-bitmap/
+# https://flatcap.github.io/linux-ntfs/ntfs/files/bitmap.html
+# https://kcall.co.uk/ntfs/
