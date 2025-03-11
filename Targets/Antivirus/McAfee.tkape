@@ -57,7 +57,7 @@ Targets:
     -
         Name: McAfee Agent Events XP
         Category: Antivirus
-        Path: C:\Documents and SettingsAll Users\Application Data\McAfee\Common Framework\AgentEvents
+        Path: C:\Documents and Settings\All Users\Application Data\McAfee\Common Framework\AgentEvents
         Recursive: true
     -
         Name: McAfee MC Logs XP
