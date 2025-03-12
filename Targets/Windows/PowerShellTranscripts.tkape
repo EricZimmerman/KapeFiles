@@ -1,7 +1,7 @@
 Description: PowerShell Transcripts
 Author: Andrew Rathbun and Chad Tilbury
-Version: 1.1
-Id: 316cd490-7a40-4518-aade-1de070191f3d
+Version: 1.2
+Id: 73f3f22a-04ef-4688-a1e2-cfed620e853a
 RecreateDirectories: true
 Targets:
     -
