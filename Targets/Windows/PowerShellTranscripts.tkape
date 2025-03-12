@@ -44,4 +44,4 @@ Targets:
 # These logs appears when auditing is turned on via Group Policy or Start-Transcript is used during PowerShell execution
 # As more locations are observed, they will be added here
 # Example location: C:\Users\USERNAME\Documents\20220301\PowerShell_transcript.DEVICENAME.qp9EOTN2.20220301132612.txt
-# Example location 2: C:\PSTranscript\20250311\PowerShell_transcript.DEVICENAME.+1234AbCd.20220301132612.txt
+# Example location 2: C:\PSTranscript\20250311\PowerShell_transcript.DEVICENAME.1234AbCd.20250311212612.txt
