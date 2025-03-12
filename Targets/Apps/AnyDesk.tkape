@@ -79,6 +79,7 @@ Targets:
 # https://www.linkedin.com/posts/mohamed-adil-re_github-mohamed-adil-cyberanydesk-velociraptorir-log-collector-activity-7039113200994287616-ig-e
 # https://jsac.jpcert.or.jp/archive/2023/pdf/JSAC2023_1_1_yamashige-nakatani-tanaka_en.pdf
 # https://www.synacktiv.com/en/publications/legitimate-rats-a-comprehensive-forensic-analysis-of-the-usual-suspects
+# https://www.thedfirspot.com/post/anydesk-investigating-threat-actors-favorite-tool
 # AnyDesk is a remote access tool similar to TeamViewer. A user can download and run AnyDesk without actually installing it and still generate the ad.trace log.
 # In regards to session recordings, note that it appears only the person who is remote connecting into another person's computer can record. The person being remoted into has to allow the recording to take place via a simple, intuitive setting while a remote session is active.
 # Session recordings will be stored in the .anydesk file format and they can only be played with AnyDesk.
