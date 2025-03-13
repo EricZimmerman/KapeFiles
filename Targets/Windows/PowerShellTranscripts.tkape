@@ -32,7 +32,7 @@ Targets:
     -
         Name: PowerShell Transcripts - Observed Location
         Category: PowerShellTranscripts
-        Path: C:\PSTranscript\20*\     
+        Path: C:\PSTranscript\20*\
         FileMask: 'PowerShell_transcript.*.txt'
 
 # Documentation
@@ -41,7 +41,7 @@ Targets:
 # https://www.stigviewer.com/stig/windows_10/2021-03-10/finding/V-230220
 # https://www.itprotoday.com/powershell/how-use-automatic-powershell-transcription
 # https://artefacts.help/windows_powershell_transcript.html
-# These logs appears when auditing is turned on via Group Policy or Start-Transcript is used during PowerShell execution
+# These logs appear when auditing is turned on via Group Policy or Start-Transcript is used during PowerShell execution
 # As more locations are observed, they will be added here
 # Example location: C:\Users\USERNAME\Documents\20220301\PowerShell_transcript.DEVICENAME.qp9EOTN2.20220301132612.txt
 # Example location 2: C:\PSTranscript\20250311\PowerShell_transcript.DEVICENAME.1234AbCd.20250311212612.txt
