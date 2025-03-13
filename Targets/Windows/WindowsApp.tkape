@@ -1,0 +1,14 @@
+Description: WindowsApp Logs
+Author: Vito Alfano
+Version: 1.0
+Id: 11bef2d8-39b2-4fc8-b81e-9bbe177fcf63
+RecreateDirectories: true
+Targets:
+    -
+        Name: WindowsApp
+        Category: EventLogs
+        Path: C:\Users\*\AppData\Local\Temp\DiagOutputDir\Windows365\
+        Recursive: true
+
+# Documentation
+# https://learn.microsoft.com/en-us/windows-app/admins/troubleshoot-collect-logs
