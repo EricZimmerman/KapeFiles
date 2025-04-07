@@ -1,7 +1,7 @@
 Description: Level.io Application Logs
 Author: Andrew Skatoff @DFIR_TNT
-Version: 1.0
-Id: 5e2c322f-616c-42e4-9cd7-4546cf2412e6
+Version: 1.1
+Id: 27ad29e0-13a8-11f0-8533-1faa3a27bf6a
 RecreateDirectories: true
 Targets:
     -
