@@ -1,0 +1,14 @@
+Description: Capability Access Manager database
+Author: qmadev
+Version: 1.0
+Id: a1d82b93-47ac-49bb-89f2-35543c47c550
+RecreateDirectories: true
+Targets:
+    -
+        Name: Capability Access Manager database
+        Category: Apps
+        Path: C:\ProgramData\Microsoft\Windows\CapabilityAccessManager\
+        FileMask: CapabilityAccessManager.db
+
+# Documentation
+# http://medium.com/@cyber.sundae.dfir/capability-access-manager-forensics-in-windows-11-f586ef8aac79
