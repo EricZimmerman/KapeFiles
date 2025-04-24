@@ -7,8 +7,9 @@ Targets:
     -
         Name: Capability Access Manager database 
         Category: Apps
-        Path: C:\ProgramData\Microsoft\Windows\CapabilityAccessManager\CapabilityAccessManager.db
-
+        Path: C:\ProgramData\Microsoft\Windows\CapabilityAccessManager\
+        FileMask: CapabilityAccessManager.db
+ 
 # Documentation
 # http://medium.com/@cyber.sundae.dfir/capability-access-manager-forensics-in-windows-11-f586ef8aac79
 
