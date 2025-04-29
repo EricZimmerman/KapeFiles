@@ -1,0 +1,14 @@
+Description: CrowdStrike Falcon
+Author: Cardinsou
+Version: 1.0
+Id: 1bc262c6-4345-4b2e-8741-ca5f7dbe4871
+RecreateDirectories: true
+Targets:
+    -
+        Name: CrowdStrike Falcon Quarantined File
+        Category: Antivirus
+        Path: C:\Windows\System32\Drivers\CrowdStrike\Quarantine\
+        Recursive: true
+
+# Documentation
+# https://github.com/cardinsou/Crowdstrike-quarantined-file-decipher
