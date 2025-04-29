@@ -9,6 +9,6 @@ Targets:
         Category: Antivirus
         Path: C:\Windows\System32\Drivers\CrowdStrike\Quarantine\
         Recursive: true
-   
+
 # Documentation
 # https://github.com/cardinsou/Crowdstrike-quarantined-file-decipher
