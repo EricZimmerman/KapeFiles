@@ -15,8 +15,7 @@ Processors:
 # https://github.com/ogmini/Notepad-State-Library
 # Can be useful in a Live Response situation in order to retrieve Unsaved Buffer Chunks
 # from Windows Notepad. More details and information can be found in the GitHub Repo.
-# Installation: 
+# Installation:
 # Download the latest release for WindowsNotepadParser-Minimal-v#.#.3-standalone
 # Create a "WindowsNotepadParser" folder in \Modules\bin
 # Place files in \Modules\bin\WindowsNotepadParser folder
-
