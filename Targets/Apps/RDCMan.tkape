@@ -29,8 +29,8 @@ Targets:
         Name: RDCMan Personal Certificate
         Category: Certificate
         Path: C:\Users%user%\AppData\Roaming\Microsoft\SystemCertificates\My\Certificates
-        Comment: "Encryption Certificate for stored passwords"   
- 
+        Comment: "Encryption Certificate for stored passwords"
+
 # Documentation
 # https://ogmini.github.io/2025/05/06/Researching-RDCMan.html
 # https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html
