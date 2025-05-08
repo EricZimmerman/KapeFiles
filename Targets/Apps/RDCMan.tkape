@@ -12,6 +12,13 @@ Targets:
         FileMask: "*.rdg"
         Comment: "These files store the information about Remote Desktop Groups."
     -
+        Name: Old RDG Files
+        Category: Configuration
+        Path: C:\
+        Recursive: true
+        FileMask: "*.rdg.old"
+        Comment: "These files store the information about Remote Desktop Groups. They are backups created when upgrading to a newer version of RDCMan."
+    -
         Name: RDCMan Settings File
         Category: Configuration
         Path: C:\Users\%user%\AppData\Local\Microsoft\Remote Desktop Connection Manager\
@@ -26,3 +33,4 @@ Targets:
  
 # Documentation
 # https://ogmini.github.io/2025/05/06/Researching-RDCMan.html
+# https://ogmini.github.io/2025/05/07/Researching-RDCMan-Part-2.html
