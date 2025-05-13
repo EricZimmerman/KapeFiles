@@ -1,22 +1,22 @@
 Description: 'OneDriveExplorer: process OneDrive .dat and .previous.dat files'
 Category: FileKnowledge
 Author: Brian Maloney
-Version: 1.2
+Version: 1.3
 Id: 6a2d7872-9eeb-4614-9090-b61a9ada2bba
 BinaryUrl: https://github.com/Beercow/OneDriveExplorer/releases/latest
 ExportFormat: csv
 Processors:
     -
         Executable: OneDriveExplorer.exe
-        CommandLine: -d %sourceDirectory% --output-dir %destinationDirectory% --csv
+        CommandLine: --LIVE %sourceDirectory% --output-dir %destinationDirectory% --csv
         ExportFormat: csv
     -
         Executable: OneDriveExplorer.exe
-        CommandLine: -d %sourceDirectory% --output-dir %destinationDirectory% --html
+        CommandLine: --LIVE %sourceDirectory% --output-dir %destinationDirectory% --html
         ExportFormat: html
     -
         Executable: OneDriveExplorer.exe
-        CommandLine: -d %sourceDirectory% --output-dir %destinationDirectory% --json
+        CommandLine: --LIVE %sourceDirectory% --output-dir %destinationDirectory% --json
         ExportFormat: json
 
 # Documentation
