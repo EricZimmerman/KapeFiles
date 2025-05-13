@@ -22,4 +22,4 @@ Processors:
 # Documentation
 # https://github.com/Beercow/OneDriveExplorer
 # https://www.sans.org/blog/recreating-onedrive-s-folder-structure-from-usercid-dat/
-# As of version v2022.06.17, if you would like to parse ODL logs add -l to the command
+# As of version v2022.06.17, if you would like to parse ODL logs add --LOGS to the command
