@@ -1,0 +1,40 @@
+Description: A Target to collect files related to ChatGPT Desktop
+Author: ogmini
+Version: 1.0
+Id: 7e0d5a5f-66d1-46aa-9f1c-6cbfe9fe35ac
+RecreateDirectories: true
+Targets:
+    -
+        Name: LevelDB
+        Category: Database
+        Path: C:\Users\%user%\AppData\Local\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\Local Storage\leveldb
+        FileMask: "*"
+        Comment: "LevelDB Database"
+    -
+        Name: IndexedDB
+        Category: Database
+        Path: C:\Users\%user%\AppData\Local\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\IndexedDB\https_chatgpt.com_0.indexeddb.leveldb
+        FileMask: "*"
+        Comment: "IndexedDB Database"
+    -
+        Name: ChromeCache
+        Category: Cache
+        Path: C:\Users\%user%\AppData\Local\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\LocalCache\Roaming\ChatGPT\Cache
+        Recursive: true
+        FileMask: "*"
+        Comment: "Chrome Cache"
+    -
+        Name: Helium Registry Hives
+        Category: Application Registry
+        Path: C:\Users\%user%\AppData\Local\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\SystemAppData\Helium
+        FileMask: "*.dat"
+        Comment: "Retrieves User.dat and UserClasses.dat which are Application Registries"
+    -
+        Name: ChatGPT Settings File
+        Category: Application Registry
+        Path: C:\Users\%user%\AppData\Local\Packages\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0\Settings
+        FileMask: "settings.dat"
+        Comment: "Retrieves settings.dat which is an Application Registry"
+
+# Documentation
+# https://ogmini.github.io/2025/01/20/David-Cowen-Sunday-Funday-ChatGPT.html
