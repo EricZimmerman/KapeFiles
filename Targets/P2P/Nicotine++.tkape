@@ -1,6 +1,6 @@
 Description: Nicotine++
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: c0b393d5-865e-479d-ac50-fe892ac40e8e
 RecreateDirectories: true
 Targets:
@@ -19,31 +19,36 @@ Targets:
     -
         Name: Nicotine++ Buddyfiles.db
         Category: FileDownload
-        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddyfiles.db
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\
+        FileMask: 'buddyfiles.db'
         Recursive: true
         Comment: "Locates a DB that appears to include shared files from a user's buddy list"
     -
         Name: Nicotine++ Buddystreams.db
         Category: FileDownload
-        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddystreams.db
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\
+        FileMask: 'buddystreams.db'
         Recursive: true
         Comment: "Locates a DB that appears to include shared files from a user's buddy list"
     -
         Name: Nicotine++ Buddymtimes.db
         Category: FileDownload
-        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddymtimes.db
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\
+        FileMask: 'buddymtimes.db'
         Recursive: true
         Comment: "Locates a DB that appears to enumerate which files the user is sharing to their buddy list, from a folder level"
     -
         Name: Nicotine++ Buddyfileindex.db
         Category: FileDownload
-        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddyfileindex.db
+        Path: C:\Users\%User%\AppData\Roaming\nicotine\
+        FileMask: 'buddyfileindex.db'
         Recursive: true
         Comment: "Locates a DB that appears to enumerate which files the user is sharing to their buddy list, from a file level"
     -
         Name: Nicotine++ Buddywordindex.db
         Category: FileDownload
-        Path: C:\Users\%User%\AppData\Roaming\nicotine\buddywordindex.db
+        Path: C:\Users\%User%\AppData\Roaming\nicotine
+        FileMask: 'buddywordindex.db'
         Recursive: true
         Comment: "Unknown what this is for at this time"
     -
