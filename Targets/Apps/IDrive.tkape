@@ -40,7 +40,7 @@ Targets:
     -
         Name: IDrive Tracefile
         Category: Apps
-        Path: C:\ProgramData\IDrive\IBCOMMON\*\Tracefile.txt
+        Path: C:\ProgramData\IDrive\IBCOMMON\*\
         FileMask: "Tracefile.txt"
         Comment: "Application log which includes error logs for failed uploads"
     -
