@@ -1,92 +1,92 @@
-Description: Idrive Backup Artifacts
+Description: IDrive Backup Artifacts
 Author: Thomas Burnette
 Version: 1.0
 Id: d5f9d7ac-4b34-47ad-beda-123c6f9cf73e
 RecreateDirectories: true
 Targets:
     -
-        Name: Idrive Cleanup Operations
+        Name: IDrive Cleanup Operations
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\Session\Archive Cleanup\
         Recursive: true
         FileMask: "*"
         Comment: "Contains individual log files for each archive cleanup operation"
     -
-        Name: Idrive Backup Operations
+        Name: IDrive Backup Operations
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\Session\Backup\
         Recursive: true
         FileMask: "*"
         Comment: "Contains individual log files for each backup operation"
     -
-        Name: Idrive Delete Operations
+        Name: IDrive Delete Operations
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\Session\Delete\
         Recursive: true
         FileMask: "*"
         Comment: "Contains individual log files for each delete operation"
     -
-        Name: Idrive Restore Operations
+        Name: IDrive Restore Operations
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\Session\Restore\
         FileMask: "*"
         Comment: "Contains individual log files for each restore operation"
     -
-        Name: Idrive Backup Summary
+        Name: IDrive Backup Summary
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\Session\LOGXML\
         FileMask: "*xml"
         Comment: "Contains summary of each backup session"
     -
-        Name: Idrive Tracefile
+        Name: IDrive Tracefile
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\Tracefile.txt
         FileMask: "Tracefile.txt"
         Comment: "Application log which includes error logs for failed uploads"
     -
-        Name: Idrive Mapped Drives
+        Name: IDrive Mapped Drives
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "IDMappedDrives.txt"
         Comment: "List of mapped drives for backup"
     -
-        Name: Idrive Backup Schedule
+        Name: IDrive Backup Schedule
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "schedule.xml"
         Comment: "Backup schedule configurations"
     -
-        Name: Idrive Schedule History
+        Name: IDrive Schedule History
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "Sch_Trace.txt"
         Comment: "History of schedule configurations"
     -
-        Name: Idrive Configuration
+        Name: IDrive Configuration
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "idrive.ini"
-        Comment: "List of Idrive configuration options"
+        Comment: "List of IDrive configuration options"
     -
-        Name: Idrive Local Drives
+        Name: IDrive Local Drives
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "get_Alldrives.txt"
         Comment: "List of all local drives"
     -
-        Name: Idrive Exclusion Configurations
+        Name: IDrive Exclusion Configurations
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "Exclude*"
         Comment: "Files pertaining to exclusion configurations"
     -
-        Name: Idrive User Details
+        Name: IDrive User Details
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\
         FileMask: "AutoComp.ini"
-        Comment: "Idrive username, Scheduler notification emails, local username"
+        Comment: "IDrive username, Scheduler notification emails, local username"
     -
-        Name: Idrive SQL Databse
+        Name: IDrive SQL Databse
         Category: Apps
         Path: C:\ProgramData\IDrive\IBCOMMON\*\LDBNEW\*\
         FileMask: "*.ibds"
