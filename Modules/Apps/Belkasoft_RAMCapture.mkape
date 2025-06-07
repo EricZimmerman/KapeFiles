@@ -14,7 +14,7 @@ Processors:
 # Documentation
 # https://belkasoft.com/ram-capturer
 #
-# 1. Download Belkasoft RAM Capture (Module works with both x86 and x64 binaries). Folder structure is taken from https://github.com/mikebdp2/ram-capturer/tree/master
+# 1. Download Belkasoft RAM Capture (Module works with both x86 and x64 binaries). The folder structure is taken from https://github.com/mikebdp2/ram-capturer/tree/master
 # 2. Rename both binaries to RamCapture.exe
 # 3. Place folders x86 and x64 into '<KAPE_working_directory>/Modules/bin/BelkaSoft'
-# Module dynamically determine OS arch with powershell and launch proper version of RAMCapture.
+# Module dynamically determines OS arch with PowerShell and launches the proper version of RAMCapture.
