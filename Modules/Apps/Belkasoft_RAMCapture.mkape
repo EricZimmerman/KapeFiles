@@ -1,0 +1,20 @@
+Description: Belkasoft RAM Capture Memory Acquisition
+Category: Memory
+Author: Nick Polosukhin
+Version: 1.0
+Id: b1da512a-a11a-4d2d-8361-0344acaf1dd7
+BinaryUrl: https://belkasoft.com/ram-capturer
+ExportFormat: raw
+Processors:
+  -
+    Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    CommandLine: -Command "$arch = if ([Environment]::Is64BitOperatingSystem) { 'x64' } else { 'x86' };$hostname=$env:COMPUTERNAME;$dumpname=$hostname+'-RAM.raw';$dumppath = Join-Path -Path %destinationDirectory% -ChildPath $dumpname;$toolPath = Join-Path -Path '%kapedirectory%\Modules\bin\BelkaSoft' -ChildPath $arch; $exe = Join-Path $toolPath 'RamCapture.exe'; Start-Process -FilePath $exe -ArgumentList $dumppath -Wait"
+    ExportFormat: raw
+
+# Documentation
+# https://belkasoft.com/ram-capturer
+#
+# 1. Download Belkasoft RAM Capture (Module works with both x86 and x64 binaries). The folder structure is taken from https://github.com/mikebdp2/ram-capturer/tree/master
+# 2. Rename both binaries to RamCapture.exe
+# 3. Place folders x86 and x64 into '<KAPE_working_directory>/Modules/bin/BelkaSoft'
+# Module dynamically determines OS arch with PowerShell and launches the proper version of RAMCapture.
