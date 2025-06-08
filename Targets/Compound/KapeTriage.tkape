@@ -1,7 +1,7 @@
-Description: KapeTriage collects most of the files needed for a DFIR Investigation. This Target pulls evidence from File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, SUM data, Cloud metadata, WER, WBEM, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, JumpLists, 3rd party remote access software logs, 3rd party antivirus software logs, Windows 10/11 Timeline database, and $I Recycle Bin files.
+Description: KapeTriage collects most of the files needed for a DFIR Investigation. This Target pulls evidence from File System files, Registry Hives, Event Logs, Scheduled Tasks, Evidence of Execution, SRUM data, SUM data, Cloud metadata, WER, WBEM, Web Browser data (IE/Edge, Chrome, Mozilla history), LNK Files, JumpLists, Notepad unsaved sessions (Win11), 3rd party remote access software logs, 3rd party antivirus software logs, Windows 10/11 Timeline database, and $I Recycle Bin files.
 Author: Scott Downie
-Version: 4.1
-Id: a745b730-d6b7-4cb7-9847-4e896d9f3c52
+Version: 4.2
+Id: 5e275faa-7bc7-4477-a141-042df174f8bd
 RecreateDirectories: true
 Targets:
     -
@@ -28,6 +28,10 @@ Targets:
         Name: LNKFilesAndJumpLists
         Category: Targets
         Path: LNKFilesAndJumpLists.tkape
+    -
+        Name: Notepad
+        Category: Targets
+        Path: Notepad.tkape
     -
         Name: PowerShellConsole
         Category: Targets
