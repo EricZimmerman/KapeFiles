@@ -22,6 +22,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\Settings\
         FileMask: "settings.dat"
         Comment: "Retrieves settings.dat which is an Application Registry"
+    -
+        Name: Notepad Registry Hives
+        Category: Text Editor
+        Path: C:\Users\%user%\AppData\Local\Packages\Microsoft.WindowsNotepad_8wekyb3d8bbwe\SystemAppData\Helium
+        FileMask: "*.dat"
+        Comment: "Retrieves User.dat and UserClasses.dat. User.dat contains MRU entries. UserClasses.dat contains Shell Bags."
 
 # Documentation
 # https://github.com/ogmini/Notepad-State-Library
