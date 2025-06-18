@@ -1,18 +1,18 @@
 Description: 'NTFS Log Tracker: process $LogFile files'
 Category: FileSystem
 Author: Hyun Yi @hyuunnn and Vito Alfano
-Version: 1.1
+Version: 1.2
 Id: 74ee60a6-2fb2-11ee-be56-0242ac120002
 BinaryUrl: https://sites.google.com/site/forensicnote/ntfs-log-tracker/
 ExportFormat: sqlite3
 FileMask: $LogFile
 Processors:
     -
-        Executable: NTFS Log Tracker v1.71 CMD\NTFS_Log_Tracker_CMD.exe
+        Executable: NTFS Log Tracker CMD v1.8\NTFS_Log_Tracker_CMD.exe
         CommandLine: -l %sourceFile% -o %destinationDirectory%
         ExportFormat: sqlite3
     -
-        Executable: NTFS Log Tracker v1.71 CMD\NTFS_Log_Tracker_CMD.exe
+        Executable: NTFS Log Tracker CMD v1.8\NTFS_Log_Tracker_CMD.exe
         CommandLine: -l %sourceFile% -o %destinationDirectory% -c
         ExportFormat: csv
 
