@@ -1,0 +1,33 @@
+Description: Mouse Without Borders
+Author: Mohamed Sultan
+Version: 1.0
+Id: 89fe72e3-4e58-4125-8e2d-66317f89f8e3
+RecreateDirectories: true
+Targets:
+  - Name: Mouse Without Borders settings - settings.json
+    Category: Communications
+    Path: C:\Users\%user%\AppData\Local\Microsoft\PowerToys\MouseWithoutBorders
+    FileMask: settings.json
+    Comment: "Collects the settings file which contains configurations for Mouse Without Borders"
+
+  - Name: Mouse Without Borders Logs folder
+    Category: Communications
+    Path: C:\Users\%user%\AppData\Local\Microsoft\PowerToys\MouseWithoutBorders\Logs\
+    Recursive: true
+    FileMask: '*'
+    Comment: "Collects the Logs folder for Mouse Without Borders"
+
+  - Name: Mouse Without Borders runtime activity logs
+    Category: Communications
+    Path: C:\Users\%user%\AppData\Local\Microsoft\PowerToys\MouseWithoutBorders\LogsModuleInterface
+    FileMask: '*'
+    Comment: "Collects runtime activity logs"
+
+  - Name: Mouse Without Borders msi log - MagicMouse.log
+    Category: Communications
+    Path: C:\Program Files (x86)\Microsoft Garage\Mouse without Borders
+    FileMask: MagicMouse.log
+    Comment: "Collects the log file of the Mouse Without Borders MSI version"
+
+# Documentation
+# https://0xsultan.github.io/dfir/Exfiltrate-Without-Borders/
