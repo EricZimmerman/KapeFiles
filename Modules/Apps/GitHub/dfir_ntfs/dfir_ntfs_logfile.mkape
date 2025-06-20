@@ -1,0 +1,17 @@
+Description: 'dfir_ntfs: process $LogFile file'
+Category: FileSystem
+Author: Nick Polosukhin
+Version: 1.0
+Id: 415bccbe-1317-4b88-b476-4e230725f5ea
+BinaryUrl: https://github.com/msuhanov/dfir_ntfs/archive/refs/tags/1.1.19.zip
+ExportFormat: txt
+FileMask: $MFT
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine:  -c "$LogFile_Path = Get-ChildItem -Path "%sourceDirectory%" -Recurse -Force -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq '$LogFile' } | Select-Object -ExpandProperty FullName;python.exe %kapeDirectory%\\Modules\\bin\\dfir_ntfs\\ntfs_parser --log '%sourceFile%' $LogFile_Path %destinationDirectory%\\dfir_ntfs_logfile.txt"
+        ExportFormat: txt
+
+# Documentation
+# https://github.com/msuhanov/dfir_ntfs
+
