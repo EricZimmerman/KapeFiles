@@ -1,0 +1,15 @@
+Description: MobaXTerm
+Author: Andrew Rathbun
+Version: 1.0
+Id: 5c219ccc-1415-4bf1-9e76-da0a9e91983c
+RecreateDirectories: true
+Targets:
+    -
+        Name: MobaXTerm Logs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\MobaXterm
+        Recursive: true
+        Comment: Contains what appears to be a Linux Filesystem that's set up upon use of MobaXTerm
+
+# Documentation
+# https://mobaxterm.mobatek.net/
