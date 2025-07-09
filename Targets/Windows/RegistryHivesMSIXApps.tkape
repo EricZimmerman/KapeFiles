@@ -1,6 +1,6 @@
 Description: MSIX/APPX App Hives
-Author: Zach Stanford / Mari DeGrazia
-Version: 1.0
+Author: Zach Stanford, Mari DeGrazia, Reece394
+Version: 1.1
 Id: 932a7d2b-3cb7-4e35-ab89-60dfa1e55c8e
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,16 @@ Targets:
         Name: Registry.dat MSIX Hive
         Category: Registry
         Path: C:\Users\%user%\AppData\Local\Packages\*\SystemAppData\Helium\
+        FileMask: Registry.dat*
+    -
+        Name: Registry.dat MSIX Hive
+        Category: Registry
+        Path: C:\Program Files\WindowsApps\*\
+        FileMask: Registry.dat*
+    -
+        Name: Registry.dat MSIX Hive
+        Category: Registry
+        Path: C:\Windows\SystemApps\*\
         FileMask: Registry.dat*
     -
         Name: User.dat MSIX Hive
@@ -23,3 +33,4 @@ Targets:
 # Documentation
 # https://www.zerofox.com/blog/the-registry-hives-you-may-be-msix-ing-registry-redirection-with-ms-msix/
 # https://github.com/ydkhatri/Appx-Analysis/blob/master/winapps_appx_mus_2019.pdf
+# https://learn.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-behind-the-scenes
