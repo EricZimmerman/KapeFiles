@@ -1,13 +1,13 @@
 Description: A Module to parse Certutil activity
 Category: Windows
-Author: DReneau
-Version: 1.0
+Author: DReneau, Paul CABON - CERT Cwatch - Almond
+Version: 2.0
 Id: 7d18d1ad-13b5-435c-a5f1-063093e39646
 BinaryUrl: https://github.com/AbdulRhmanAlfaifi/CryptnetURLCacheParser/releases/tag/1.1/CryptnetUrlCacheParser.exe
 ExportFormat: csv
 Processors:
   - Executable: CryptnetUrlCacheParser.exe
-    CommandLine: "-o \"%destinationDirectory%\\Certutil_Parsed.csv\""
+    CommandLine: "-d \"%sourceDirectory%\\Windows\\System32\\config\\systemprofile\\AppData\\LocalLow\\Microsoft\\CryptnetUrlCache\\Metadata\" \"%sourceDirectory%\\Windows\\SysWOW64\\config\\systemprofile\\AppData\\LocalLow\\Microsoft\\CryptnetUrlCache\\Metadata\" \"%sourceDirectory%\\Users\\*\\AppData\\LocalLow\\Microsoft\\CryptnetUrlCache\\MetaData\" -o \"%destinationDirectory%\\Certutil_Parsed.csv\""
     ExportFormat: csv
 
 # Documentation
