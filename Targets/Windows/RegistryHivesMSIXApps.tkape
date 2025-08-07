@@ -1,6 +1,6 @@
 Description: MSIX/APPX App Hives
 Author: Zach Stanford, Mari DeGrazia, Reece394
-Version: 1.1
+Version: 1.2
 Id: 932a7d2b-3cb7-4e35-ab89-60dfa1e55c8e
 RecreateDirectories: true
 Targets:
@@ -19,6 +19,11 @@ Targets:
         Category: Registry
         Path: C:\Windows\SystemApps\*\
         FileMask: Registry.dat*
+    -
+        Name: settings.dat MSIX Hive
+        Category: Registry
+        Path: C:\Users\%user%\AppData\Local\Packages\*\Settings\
+        FileMask: settings.dat*
     -
         Name: User.dat MSIX Hive
         Category: Registry
