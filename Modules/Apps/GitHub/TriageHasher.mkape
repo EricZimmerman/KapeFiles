@@ -12,5 +12,4 @@ Processors:
         ExportFormat: csv
 
 # Documentation
-
 # https://github.com/FlipForensics/TriageHasher
