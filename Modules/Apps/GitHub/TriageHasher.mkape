@@ -1,5 +1,5 @@
 Description: Collects hashes based on extension and location filter
-Category: LiveCollection
+Category: LiveResponse
 Author: FlipForensics
 Version: 1.0
 Id: c69467d4-1673-428b-8382-1ab2e448c484
@@ -12,4 +12,5 @@ Processors:
         ExportFormat: csv
 
 # Documentation
+
 # https://github.com/FlipForensics/TriageHasher
