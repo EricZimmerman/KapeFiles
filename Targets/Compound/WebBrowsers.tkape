@@ -1,6 +1,6 @@
 Description: Web browser history, bookmarks, etc.
 Author: Eric Zimmerman
-Version: 1.2
+Version: 1.3
 Id: e4ffb938-dcc0-4d91-9c77-3aa303d38512
 RecreateDirectories: true
 Targets:
@@ -44,6 +44,10 @@ Targets:
         Name: Opera
         Category: Communications
         Path: Opera.tkape
+    -
+        Name: Prisma Access Browser
+        Category: Communications
+        Path: PrismaAccessBrowser.tkape
     -
         Name: Puffin Secure Browser
         Category: Communications
