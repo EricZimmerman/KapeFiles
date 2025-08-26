@@ -1,0 +1,224 @@
+Description: Prisma Access Browser
+Author: Cassie Doemel and Andrew Rathbun
+Version: 1.0
+Id: 45ad9cbd-a4fa-4221-8f99-a68982564f56
+RecreateDirectories: true
+Targets:
+    -
+        Name: Prisma Access Browser bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Prisma Access Browser Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Prisma Access Browser Current Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Prisma Access Browser Current Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Prisma Access Browser Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Prisma Access Browser History XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: History*
+    -
+        Name: Prisma Access Browser Last Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Prisma Access Browser Last Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Prisma Access Browser Login Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Prisma Access Browser Preferences XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Prisma Access Browser Shortcuts XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Prisma Access Browser Top Sites XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Prisma Access Browser Visited Links XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Prisma Access Browser Web Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Prisma Access Browser bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Prisma Access Browser Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Prisma Access Browser Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Prisma Access Browser Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Prisma Access Browser Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: Prisma Access Browser Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Extension Cookies
+    -
+        Name: Prisma Access Browser Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Prisma Access Browser History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: History*
+    -
+        Name: Prisma Access Browser Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Prisma Access Browser Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Prisma Access Browser Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Prisma Access Browser Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Prisma Access Browser Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Prisma Access Browser Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Network Action Predictor
+    -
+        Name: Prisma Access Browser Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Prisma Access Browser Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Prisma Access Browser Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: QuotaManager
+    -
+        Name: Prisma Access Browser Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Reporting and NEL
+    -
+        Name: Prisma Access Browser Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Prisma Access Browser Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Prisma Access Browser Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Prisma Access Browser SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Prisma Access Browser Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Prisma Access Browser Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: Prisma Access Browser Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of Chrome SQLite DBs organized by version #."
+    -
+        Name: SYSTEM Chrome History
+        Category: Communications
+        Path: C:\Windows\system32\config\systemprofile\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: History*
+    -
+        Name: Prisma Access Browser User Data Backup Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data Backup\
+        Recursive: true
+
+# Documentation
+# https://docs.paloaltonetworks.com/prisma-access-browser
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_ChromiumBrowser_HistoryVisits.smap
+# For the files that aren't JSON or SQlite, aka Current Session, Current Tabs, Last Tabs, Last Session, see above links for clues on how to interpret that data
