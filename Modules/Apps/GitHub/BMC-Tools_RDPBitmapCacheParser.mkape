@@ -3,7 +3,7 @@ Category: RemoteAccess
 Author: dingtoffee
 Version: 1.1
 Id: fcb0083d-11d7-4305-9577-2379cd243bd0
-BinaryUrl: https://github.com/dingtoffee/bmc-tools/blob/master/dist/bmc-tools.exe
+BinaryUrl: https://github.com/Qazeer/bmc-tools-compiled/releases/download/v3.02/bmc-tools.exe
 FileMask: "regex:.*(.*\\.bmc|Cache.*\\.bin)$"
 ExportFormat: ""
 Processors:
