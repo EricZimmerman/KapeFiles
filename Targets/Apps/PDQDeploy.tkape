@@ -1,0 +1,15 @@
+Description: PDQ Deploy database
+Author: Paul Cabon - Cwatch CERT Almond
+Version: 1.0
+Id: 5f388422-ce52-45e8-b1a5-4d7300660439
+RecreateDirectories: true
+Targets:
+    -
+        Name: PDQ Deploy database
+        Category: Database
+        Path: C:\ProgramData\Admin Arsenal\PDQ Deploy\
+        FileMask: '*.db'
+
+# Documentation
+# https://thedfirreport.com/2025/02/24/confluence-exploit-leads-to-lockbit-ransomware/
+# https://documentation.pdq.com/PDQDeploy/19.3.409.0/index.html?pdq-deploy-database.htm
