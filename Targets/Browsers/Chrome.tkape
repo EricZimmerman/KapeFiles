@@ -1,6 +1,6 @@
 Description: Chrome
-Author: Eric Zimmerman and Andrew Rathbun
-Version: 1.2
+Author: Eric Zimmerman, Andrew Rathbun, Hernan Filannino
+Version: 1.3
 Id: a56d0a8f-3229-489e-aea7-353d1f6f9639
 RecreateDirectories: true
 Targets:
@@ -195,6 +195,18 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Web Data*
+    -
+        Name: Chrome IndexedDB
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\IndexedDB\
+        Recursive: true
+        Comment: "Collects IndexedDB (LevelDB) databases used by modern web applications to store data."
+    -
+        Name: Chrome Local Storage
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Local Storage\
+        Recursive: true
+        Comment: "Collects Local Storage (LevelDB) databases, another form of persistent client-side storage."
     -
         Name: Windows Protect Folder
         Category: FileSystem
