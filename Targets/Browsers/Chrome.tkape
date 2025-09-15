@@ -204,7 +204,7 @@ Targets:
     -
         Name: Chrome Local Storage
         Category: Communications
-        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Local Storage\
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Local Storage\leveldb\
         Recursive: true
         Comment: "Collects Local Storage (LevelDB) databases, another form of persistent client-side storage."
     -
