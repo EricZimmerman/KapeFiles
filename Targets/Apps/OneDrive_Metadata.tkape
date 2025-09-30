@@ -1,18 +1,13 @@
 Description: Microsoft OneDrive Storage Metadata
-Author: Chad Tilbury
-Version: 1.1
+Author: Chad Tilbury, Brian Maloney
+Version: 2.0
 Id: 726ca098-6c5b-40e3-ade8-60730c5ec4f8
 RecreateDirectories: true
 Targets:
     -
-        Name: OneDrive Metadata Logs
+        Name: OneDrive User Profile
         Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\logs\
-        Recursive: true
-    -
-        Name: OneDrive Metadata Settings
-        Category: Apps
-        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\settings\
+        Path: C:\Users\%user%\AppData\Local\Microsoft\OneDrive\
         Recursive: true
 
 # Documentation
