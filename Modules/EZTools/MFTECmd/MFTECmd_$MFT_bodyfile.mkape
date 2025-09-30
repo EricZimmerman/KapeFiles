@@ -1,0 +1,23 @@
+Description: 'MFTECmd: process $MFT files and output a bodyfile for mactime / tsk'
+Category: FileSysten
+Author: Angry-Bender
+Version: 1.0
+Id: 6d2af4e9-fc28-4b4f-ab23-5a21b4e7d802
+BinaryUrl: https://download.ericzimmermanstools.com/net9/MFTECmd.zip
+ExportFormat: txt
+FileMask: $MFT
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --body %destinationDirectory% --bdl c
+        ExportFormat: txt
+
+# Documentation
+# https://github.com/EricZimmerman/MFTECmd
+# https://docs.microsoft.com/en-us/windows/win32/fileio/master-file-table
+# https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
+# https://www.thedigitalforensics.com/incident-response/filesystem-based-timeline
+# https://frsecure.com/blog/file-system-forensic-analysis/
