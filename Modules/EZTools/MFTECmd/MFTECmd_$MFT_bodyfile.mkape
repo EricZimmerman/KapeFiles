@@ -1,5 +1,5 @@
 Description: 'MFTECmd: process $MFT files and output a bodyfile for mactime / tsk'
-Category: timeline
+Category: FileSysten
 Author: Angry-Bender
 Version: 1.0
 Id: 6d2af4e9-fc28-4b4f-ab23-5a21b4e7d802
