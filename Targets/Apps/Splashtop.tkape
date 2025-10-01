@@ -1,6 +1,6 @@
 Description: Splashtop
-Author: Andrew Rathbun, Yogesh Khatri
-Version: 1.0
+Author: Andrew Rathbun, Yogesh Khatri, Evangelos Dragonas
+Version: 2.0
 Id: 940c768b-b32c-4b4b-82d7-68385ff470c8
 
 RecreateDirectories: true
@@ -17,7 +17,20 @@ Targets:
         Path: C:\ProgramData\Splashtop\Temp\log
         Recursive: true
         Comment: "Collects logs for Splashtop"
+    -
+        Name: Splashtop Gateway Log Files
+        Category: Software
+        Path: C:\Program Files*\Splashtop\Splashtop Remote\Splashtop Gateway\log
+        Recursive: true
+        Comment: "Collects logs for Splashtop Gateway"
+    -
+        Name: Splashtop Enterprise/Business(legacy) Log Files in ProgramData
+        Category: Software
+        Path: C:\ProgramData\Splashtop\Splashtop Remote Client for ST*\*\log
+        Recursive: true
+        Comment: "Collects logs for Splashtop Enterprise/Business(legacy)"
 
 # Documentation
 # https://jsac.jpcert.or.jp/archive/2023/pdf/JSAC2023_1_1_yamashige-nakatani-tanaka_en.pdf
 # https://www.synacktiv.com/en/publications/legitimate-rats-a-comprehensive-forensic-analysis-of-the-usual-suspects
+# https://support-splashtoponprem.splashtop.com/hc/en-us/articles/900000385223-Log-files
