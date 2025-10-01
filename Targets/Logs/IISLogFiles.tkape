@@ -42,7 +42,8 @@ Targets:
     -
         Name: IIS log files
         Category: Logs
-        Path: C:\inetpub\logs\LogFiles\**\
+        Path: C:\inetpub\logs\LogFiles\*\
+        Recursive: true
         FileMask: '*.log'
 
 # Documentation
