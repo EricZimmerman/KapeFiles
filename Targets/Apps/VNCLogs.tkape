@@ -1,6 +1,6 @@
 Description: VNC Logs
-Author: Phill Moore
-Version: 1.2
+Author: Phill Moore, Evangelos Dragonas
+Version: 1.3
 Id: b98dab2e-81f3-472e-a22a-05269ad16270
 RecreateDirectories: true
 Targets:
@@ -10,6 +10,12 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\RealVNC\
         FileMask: vncserver.log
         Comment: "https://www.realvnc.com/en/connect/docs/logging.html#logging"
+    -
+        Name: RealVNC Viewer Log
+        Category: ApplicationLogs
+        Path: C:\Users\*\AppData\Local\RealVNC\
+        FileMask: vncviewer.log
+        Comment: "https://help.realvnc.com/hc/en-us/articles/360002254238-All-About-Logging#realvnc-server-0-1"
     -
         Name: RealVNC Log
         Category: ApplicationLogs
@@ -31,3 +37,4 @@ Targets:
 # Documentation
 # https://www.semanticscholar.org/paper/Tracing-VNC-And-RDP-Protocol-Artefacts-on-Windows-Kerai/20467cee88102cffcc2b856b93fc0bb7a58fd499
 # https://www.hackingarticles.in/capture-vnc-session-remote-pc-using-settoolkit/
+# https://help.realvnc.com/hc/en-us/articles/360002254238-All-About-Logging#realvnc-server-0-1
