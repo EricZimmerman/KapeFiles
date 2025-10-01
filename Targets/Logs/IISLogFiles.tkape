@@ -1,6 +1,6 @@
 Description: IIS Log Files
 Author: Troy Larson
-Version: 2.0
+Version: 3.0
 Id: 701573f6-0ce1-454d-af41-612713e22af5
 RecreateDirectories: true
 Targets:
@@ -33,6 +33,16 @@ Targets:
         Name: IIS log files
         Category: Logs
         Path: C:\Windows\system32\LogFiles\HTTPERR\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\inetpub\logs\LogFiles\FTPSVC*\
+        FileMask: '*.log'
+    -
+        Name: IIS log files
+        Category: Logs
+        Path: C:\inetpub\logs\LogFiles\**\
         FileMask: '*.log'
 
 # Documentation
