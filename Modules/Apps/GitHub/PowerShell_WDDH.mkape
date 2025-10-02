@@ -1,0 +1,16 @@
+Description: Windows Defender Detection History parser
+Category: Antivirus
+Author: Paul CABON - CERT Cwatch 
+Version: 1
+BinaryUrl: https://github.com/cert-orangecyberdefense/wddh-parser
+Id: 44f18055-a944-4549-9858-d52a47420993
+ExportFormat: json
+Processors:
+    -
+        Executable: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        CommandLine: -c "Set-Location '%sourceDirectory%\ProgramData\Microsoft\Windows Defender\Scans\History\Service\'; & %kapeDirectory%\Modules\bin\wddh.exe -D DetectionHistory"
+        ExportFormat: json
+        ExportFile: WDDH.json
+
+# Documentation
+# https://www.orangecyberdefense.com/global/blog/cybersecurity/digging-into-windows-defender-detection-history-wddh
