@@ -18,4 +18,4 @@ Targets:
         Path: PaloAlto.tkape
 
 # Documentation
-# To do: Add more targets for both enteprise (Cisco AnyConnect, Fortinet, etc.) and consumer VPN providers (NordVPN, ExpressVPN, etc.)
+# To do: Add more targets for both enterprise (Cisco AnyConnect, Fortinet, etc.) and consumer VPN providers (NordVPN, ExpressVPN, etc.).
