@@ -1,0 +1,21 @@
+Description: VPN Clients
+Author: Evangelos Dragonas
+Version: 1.0
+Id: 75244f93-1df6-4db7-a4be-e20481f38ff1
+RecreateDirectories: true
+Targets:
+    -
+        Name: Proton VPN
+        Category: VPN
+        Path: ProtonVPN.tkape
+    -
+        Name: OpenVPN
+        Category: VPN
+        Path: OpenVPNClient.tkape
+    -
+        Name: Palo Alto GlobalProtect VPN
+        Category: VPN
+        Path: PaloAlto.tkape
+
+# Documentation
+# To do: Add more targets for both enteprise (Cisco AnyConnect, Fortinet, etc.) and consumer VPN providers (NordVPN, ExpressVPN, etc.)
