@@ -1,0 +1,22 @@
+Description: Chrome Browser Extension Metadata
+Author: Bruce Breuer
+Version: 1.0
+Id: 7b6b8f25-bccc-4a64-92fd-bb3e7f7c9631
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome Browser Extension manifest.json (Extension ID, Version, Permissions)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
+        Recursive: true
+        FileMask: "manifest.json"
+    -
+        Name: Chrome Browser Extension messages.json (Friendly Name and Description)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\*\*\_locales\en\
+        Recursive: true
+        FileMask: "messages.json"
+
+# Documentation
+# Obtains the manifest/messages JSON files needed to parse friendly name, description, extension ID, version, and permissions
+# To analyze these JSON files, ensure you use the PowerShell_ChromeExtension_Metadata.mkape file in Modules/Apps/GitHub
