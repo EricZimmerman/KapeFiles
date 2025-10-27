@@ -1,6 +1,6 @@
 Description: Chrome Browser Extension Metadata
 Author: Bruce Breuer
-Version: 1.0 
+Version: 1.0
 Id: 7b6b8f25-bccc-4a64-92fd-bb3e7f7c9631
 RecreateDirectories: true
 Targets:
