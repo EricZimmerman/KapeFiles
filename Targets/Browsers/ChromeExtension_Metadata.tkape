@@ -10,7 +10,6 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\
         Recursive: true
         FileMask: "manifest.json"
-
     -
         Name: Chrome Browser Extension messages.json (Friendly Name and Description)
         Category: Browser Extensions
@@ -19,5 +18,5 @@ Targets:
         FileMask: "messages.json"
 
 # Documentation
-# Obtains the manifest/messages json files needed to parse friendly name, description, extension ID, version, and permissions
-# To analyze these json files, ensure you use the PowerShell_ChromeExtension_Metadata.mkape file in Modules/Apps/GitHub
+# Obtains the manifest/messages JSON files needed to parse friendly name, description, extension ID, version, and permissions
+# To analyze these JSON files, ensure you use the PowerShell_ChromeExtension_Metadata.mkape file in Modules/Apps/GitHub
