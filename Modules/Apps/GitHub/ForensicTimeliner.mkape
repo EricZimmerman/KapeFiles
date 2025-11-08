@@ -1,0 +1,19 @@
+Description: 'Forensic Timeliner: Quickly consolidate CSV output from top-tier triage tools into a unified mini timeline'
+Category: ForensicTimeliner
+Author: Reece394
+Version: 1.0
+Id: eea7a5c5-d0ed-4c56-88d7-0c2230104b4f
+BinaryUrl: https://github.com/acquiredsecurity/forensic-timeliner/releases/download/v2.2/ForensicTimeliner2.2.zip
+ExportFormat: csv
+Processors:
+    -
+        Executable: ForensicTimeliner\ForensicTimeliner.exe
+        CommandLine: --BaseDir %destinationDirectory%\.. --ALL --OutputFile %destinationDirectory%\ForensicTimeliner.csv --EnableTagger --NoBanner --NoPrompt
+        ExportFormat: csv
+    -
+        Executable: ForensicTimeliner\ForensicTimeliner.exe
+        CommandLine: --BaseDir %destinationDirectory%\.. --ALL --OutputFile %destinationDirectory%\ForensicTimeliner.json --ExportFormat jsonl --NoBanner --NoPrompt
+        ExportFormat: json
+
+# Documentation
+# https://github.com/acquiredsecurity/forensic-timeliner
