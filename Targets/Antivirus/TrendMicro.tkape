@@ -1,6 +1,6 @@
 Description: Trend Micro Data
-Author: Drew Ervin
-Version: 1.0
+Author: Drew Ervin, Paul Cabon CERT Almond
+Version: 2.0
 Id: 73f8ccea-61cf-4993-aa26-e5cad4f8cc8f
 RecreateDirectories: true
 Targets:
@@ -19,6 +19,12 @@ Targets:
         Category: Antivirus
         Path: C:\Program Files*\Trend Micro\Security Agent\ConnLog\
         FileMask: '*.log'
+    -
+        Name: Trend Micro Quarantine
+        Category: Antivirus
+        Path: C:\Program Files*\Trend Micro\*\Quarantine\
+        FileMask: '*'
 
 # Documentation
 # https://docs.trendmicro.com/en-us/enterprise/trend-micro-apex-one-2019-server-online-help/providing-additional/troubleshooting-reso_001/trend_client_program_021.aspx
+# https://docs.trendmicro.com/all/ent/tmcm/v3.5/en-us/tmcm_3.5_olh/Template_Files/decrypt_encrypted_quarantine_files.htm
