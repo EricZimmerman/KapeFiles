@@ -1,31 +1,187 @@
 Description: Advanced Port Scanner Artifacts
 Author: Reece394
-Version: 1.0
+Version: 1.1
 Id: 234332ea-77ca-4169-84ac-da28069fff84
 RecreateDirectories: true
 Targets:
     -
-        Name: Advanced Port Scanner Aliases
+        Name: Advanced Port Scanner Aliases - User Folder
         Category: Apps
-        Path: C:\
+        Path: C:\Users\%user%
         FileMask: 'advanced_port_scanner_Aliases.bin'
-        Recursive: true
 
     -
-        Name: Advanced Port Scanner Comments
+        Name: Advanced Port Scanner Aliases - User Temp Folder
         Category: Apps
-        Path: C:\
+        Path: C:\Users\%user%\AppData\Local\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+
+    -
+        Name: Advanced Port Scanner Aliases - Windows Temp Folder
+        Category: Apps
+        Path: C:\Windows\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+
+    -
+        Name: Advanced Port Scanner Aliases - SYSTEM SysWOW64 User Folder
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+
+    -
+        Name: Advanced Port Scanner Aliases - SYSTEM User Folder
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+
+    -
+        Name: Advanced Port Scanner Aliases - LocalService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+
+    -
+        Name: Advanced Port Scanner Aliases - NetworkService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService
+        FileMask: 'advanced_port_scanner_Aliases.bin'
+
+    -
+        Name: Advanced Port Scanner Comments - User Folder
+        Category: Apps
+        Path: C:\Users\%user%
         FileMask: 'advanced_port_scanner_Comments.bin'
-        Recursive: true
 
     -
-        Name: Advanced Port Scanner MAC
+        Name: Advanced Port Scanner Comments - User Temp Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_Comments.bin'
+
+    -
+        Name: Advanced Port Scanner Comments - Windows Temp Folder
+        Category: Apps
+        Path: C:\Windows\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_Comments.bin'
+
+    -
+        Name: Advanced Port Scanner Comments - SYSTEM SysWOW64 User Folder
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile
+        FileMask: 'advanced_port_scanner_Comments.bin'
+
+    -
+        Name: Advanced Port Scanner Comments - SYSTEM User Folder
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile
+        FileMask: 'advanced_port_scanner_Comments.bin'
+
+    -
+        Name: Advanced Port Scanner Comments - LocalService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService
+        FileMask: 'advanced_port_scanner_Comments.bin'
+
+    -
+        Name: Advanced Port Scanner Comments - NetworkService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService
+        FileMask: 'advanced_port_scanner_Comments.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - User Folder
+        Category: Apps
+        Path: C:\Users\%user%
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - User Temp Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - Windows Temp Folder
+        Category: Apps
+        Path: C:\Windows\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - SYSTEM SysWOW64 User Folder
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - SYSTEM User Folder
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - LocalService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner MAC - NetworkService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService
+        FileMask: 'advanced_port_scanner_MAC.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - User Folder
+        Category: Apps
+        Path: C:\Users\%user%
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - User Temp Folder
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - Windows Temp Folder
+        Category: Apps
+        Path: C:\Windows\Temp\Advanced Port Scanner 2
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - SYSTEM SysWOW64 User Folder
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - SYSTEM User Folder
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - LocalService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites - NetworkService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService
+        FileMask: 'advanced_port_scanner_Favorites.bin'
+
+    -
+        Name: Advanced Port Scanner Favorites
         Category: Apps
         Path: C:\
-        FileMask: 'advanced_port_scanner_MAC.bin'
+        FileMask: 'advanced_port_scanner_Favorites.bin'
         Recursive: true
 
 # Documentation
 # Advanced Port Scanner is a scanning tool commonly leveraged by threat actors.
-# After closing the program it writes three files the most important of which is advanced_port_scanner_MAC.bin which contains a list of IPs and System Names the Program Scanned.
+# After closing the program it writes three or four files the most important of which is advanced_port_scanner_MAC.bin which contains a list of IPs and System Names the Program Scanned.
+# advanced_port_scanner_Favorites.bin has been observed to behave differently to the other files. When run in portable mode it saves the .bin file beside the .exe rather than in a temp folder.
+# For performance reasons it is recommended to comment out the recursive Favorites rule with #s. On bigger disks with many files it could add hours on to the triage collection.
 # https://www.advanced-port-scanner.com/
