@@ -1,11 +1,11 @@
 Description: Chrome
-Author: Eric Zimmerman, Andrew Rathbun, Hernan Filannino
-Version: 1.3
+Author: Eric Zimmerman, Andrew Rathbun, Hernan Filannino, Reece394
+Version: 1.4
 Id: a56d0a8f-3229-489e-aea7-353d1f6f9639
 RecreateDirectories: true
 Targets:
     -
-        Name: Chrome bookmarks XP
+        Name: Chrome Bookmarks XP
         Category: Communications
         Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
         FileMask: Bookmarks*
@@ -75,7 +75,7 @@ Targets:
         Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome\User Data\*\
         FileMask: Web Data*
     -
-        Name: Chrome bookmarks
+        Name: Chrome Bookmarks
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
         FileMask: Bookmarks*
@@ -104,7 +104,7 @@ Targets:
         Name: Chrome Extension Cookies
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Extension Cookies
+        FileMask: Extension Cookies*
     -
         Name: Chrome Favicons
         Category: Communications
@@ -134,7 +134,7 @@ Targets:
         Name: Chrome Login Data
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Login Data
+        FileMask: Login Data*
     -
         Name: Chrome Media History
         Category: Communications
@@ -144,11 +144,16 @@ Targets:
         Name: Chrome Network Action Predictor
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Network Action Predictor
+        FileMask: Network Action Predictor*
     -
         Name: Chrome Network Persistent State
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Network
         FileMask: Network Persistent State
     -
         Name: Chrome Preferences
@@ -159,12 +164,22 @@ Targets:
         Name: Chrome Quota Manager
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: QuotaManager
+        FileMask: QuotaManager*
+    -
+        Name: Chrome Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\WebStorage
+        FileMask: QuotaManager*
     -
         Name: Chrome Reporting and NEL
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
-        FileMask: Reporting and NEL
+        FileMask: Reporting and NEL*
+    -
+        Name: Chrome Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Network
+        FileMask: Reporting and NEL*
     -
         Name: Chrome Shortcuts
         Category: Communications
@@ -179,6 +194,11 @@ Targets:
         Name: Chrome Trust Tokens
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Network
         FileMask: Trust Tokens*
     -
         Name: Chrome SyncData Database

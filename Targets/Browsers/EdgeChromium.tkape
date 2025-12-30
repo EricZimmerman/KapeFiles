@@ -1,6 +1,6 @@
 Description: Microsoft Edge Chromium Artifacts
-Author: Chad Tilbury and Andrew Rathbun
-Version: 1.2
+Author: Chad Tilbury, Andrew Rathbun, Reece394
+Version: 1.3
 Id: 2844dba2-fb47-466c-8d57-dab2bc02294f
 RecreateDirectories: true
 Targets:
@@ -8,7 +8,12 @@ Targets:
         Name: Edge Collections
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Collections
-        FileMask: collectionsSQLite
+        FileMask: collectionsSQLite*
+    -
+        Name: Edge Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Bookmarks*
     -
         Name: Edge Cookies
         Category: Communications
@@ -24,6 +29,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Current Tabs
+    -
+        Name: Edge Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Extension Cookies*
     -
         Name: Edge Favicons
         Category: Communications
@@ -53,7 +63,7 @@ Targets:
         Name: Edge Login Data
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
-        FileMask: Login Data
+        FileMask: Login Data*
     -
         Name: Edge Media History
         Category: Communications
@@ -63,12 +73,42 @@ Targets:
         Name: Edge Network Action Predictor
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
-        FileMask: Network Action Predictor
+        FileMask: Network Action Predictor*
+    -
+        Name: Edge Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Edge Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Network
+        FileMask: Network Persistent State
     -
         Name: Edge Preferences
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Preferences
+    -
+        Name: Edge Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: QuotaManager*
+    -
+        Name: Edge Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\WebStorage
+        FileMask: QuotaManager*
+    -
+        Name: Edge Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Reporting and NEL*
+    -
+        Name: Edge Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Network
+        FileMask: Reporting and NEL*
     -
         Name: Edge Shortcuts
         Category: Communications
@@ -80,15 +120,20 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Top Sites*
     -
+        Name: Edge Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Edge Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Network
+        FileMask: Trust Tokens*
+    -
         Name: Edge SyncData Database
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Sync Data
         FileMask: SyncData.sqlite3
-    -
-        Name: Edge Bookmarks
-        Category: Communications
-        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
-        FileMask: Bookmarks*
     -
         Name: Edge Visited Links
         Category: Communications
@@ -99,6 +144,18 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\
         FileMask: Web Data*
+    -
+        Name: Edge IndexedDB
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\IndexedDB\
+        Recursive: true
+        Comment: "Collects IndexedDB (LevelDB) databases used by modern web applications to store data."
+    -
+        Name: Edge Local Storage
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Local Storage\leveldb\
+        Recursive: true
+        Comment: "Collects Local Storage (LevelDB) databases, another form of persistent client-side storage."
     -
         Name: Edge WebAssistDatabase
         Category: Communications
