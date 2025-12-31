@@ -33,10 +33,6 @@ Targets:
         Category: MessagingClients
         Path: MessagingClients.tkape
     -
-        Name: NetworkScanner
-        Category: Apps
-        Path: NetworkScanner.tkape
-    -
         Name: RecycleBin_InfoFiles
         Category: RecycleBin_InfoFiles
         Path: RecycleBin_InfoFiles.tkape
