@@ -1,6 +1,6 @@
 Description: Chrome Browser Extension Metadata
-Author: Bruce Breuer
-Version: 1.0
+Author: Bruce Breuer, Reece394
+Version: 1.1
 Id: 7b6b8f25-bccc-4a64-92fd-bb3e7f7c9631
 RecreateDirectories: true
 Targets:
@@ -14,6 +14,42 @@ Targets:
         Name: Chrome Browser Extension messages.json (Friendly Name and Description)
         Category: Browser Extensions
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Extensions\*\*\_locales\en\
+        Recursive: true
+        FileMask: "messages.json"
+    -
+        Name: Chrome Beta Browser Extension manifest.json (Extension ID, Version, Permissions)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Extensions\
+        Recursive: true
+        FileMask: "manifest.json"
+    -
+        Name: Chrome Beta Browser Extension messages.json (Friendly Name and Description)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Extensions\*\*\_locales\en\
+        Recursive: true
+        FileMask: "messages.json"
+    -
+        Name: Chrome Dev Browser Extension manifest.json (Extension ID, Version, Permissions)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Dev\User Data\*\Extensions\
+        Recursive: true
+        FileMask: "manifest.json"
+    -
+        Name: Chrome Dev Browser Extension messages.json (Friendly Name and Description)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Dev\User Data\*\Extensions\*\*\_locales\en\
+        Recursive: true
+        FileMask: "messages.json"
+    -
+        Name: Chrome SxS - Canary Browser Extension manifest.json (Extension ID, Version, Permissions)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome SxS\User Data\*\Extensions\
+        Recursive: true
+        FileMask: "manifest.json"
+    -
+        Name: Chrome SxS - Canary Browser Extension messages.json (Friendly Name and Description)
+        Category: Browser Extensions
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome SxS\User Data\*\Extensions\*\*\_locales\en\
         Recursive: true
         FileMask: "messages.json"
 

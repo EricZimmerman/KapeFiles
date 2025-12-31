@@ -1,6 +1,6 @@
 Description: Edge Chromium Extension Files
-Author: cardinsou
-Version: 1.0
+Author: cardinsou, Reece394
+Version: 1.1
 Id: 20b17ef1-c9eb-4c16-b373-31e5af9bc066
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,21 @@ Targets:
         Name: Edge Chromium Extension Files
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Extensions\
+        Recursive: true
+    -
+        Name: Edge Beta Chromium Extension Files
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge Beta\User Data\*\Extensions\
+        Recursive: true
+    -
+        Name: Edge Dev Chromium Extension Files
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge Dev\User Data\*\Extensions\
+        Recursive: true
+    -
+        Name: Edge SxS - Canary Chromium Extension Files
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge SxS\User Data\*\Extensions\
         Recursive: true
 
 # Documentation
