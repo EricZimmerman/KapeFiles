@@ -1,0 +1,260 @@
+Description: Chrome Beta
+Author: Eric Zimmerman, Andrew Rathbun, Hernan Filannino, Reece394
+Version: 1.0
+Id: d9c53f6d-d938-4597-9955-b38694c1fe6e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chrome Beta Bookmarks XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Beta Cookies XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Cookies*
+    -
+        Name: Chrome Beta Current Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Beta Current Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Beta Favicons XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome Beta History XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Beta Last Session XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Beta Last Tabs XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Beta Login Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Login Data
+    -
+        Name: Chrome Beta Preferences XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Beta Shortcuts XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Beta Top Sites XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Beta Visited Links XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Beta Web Data XP
+        Category: Communications
+        Path: C:\Documents and Settings\%user%\Local Settings\Application Data\Google\Chrome Beta\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome Beta Bookmarks
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Bookmarks*
+    -
+        Name: Chrome Beta Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        Recursive: true
+        FileMask: Cookies*
+    -
+        Name: Chrome Beta Current Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Current Session
+    -
+        Name: Chrome Beta Current Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Current Tabs
+    -
+        Name: Chrome Beta Download Metadata
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: DownloadMetadata
+    -
+        Name: Chrome Beta Extension Cookies
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Extension Cookies*
+    -
+        Name: Chrome Beta Favicons
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Favicons*
+    -
+        Name: Chrome Beta History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: History*
+    -
+        Name: Chrome Beta Last Session
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Last Session
+    -
+        Name: Chrome Beta Last Tabs
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Last Tabs
+    -
+        Name: Chrome Beta Sessions Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Sessions\
+        Recursive: false
+    -
+        Name: Chrome Beta Login Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Login Data*
+    -
+        Name: Chrome Beta Media History
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Media History*
+    -
+        Name: Chrome Beta Network Action Predictor
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Network Action Predictor*
+    -
+        Name: Chrome Beta Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Beta Network Persistent State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Network
+        FileMask: Network Persistent State
+    -
+        Name: Chrome Beta Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Preferences
+    -
+        Name: Chrome Beta Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: QuotaManager*
+    -
+        Name: Chrome Beta Quota Manager
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\WebStorage
+        FileMask: QuotaManager*
+    -
+        Name: Chrome Beta Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Reporting and NEL*
+    -
+        Name: Chrome Beta Reporting and NEL
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Network
+        FileMask: Reporting and NEL*
+    -
+        Name: Chrome Beta Shortcuts
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Shortcuts*
+    -
+        Name: Chrome Beta Top Sites
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Top Sites*
+    -
+        Name: Chrome Beta Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome Beta Trust Tokens
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Network
+        FileMask: Trust Tokens*
+    -
+        Name: Chrome Beta SyncData Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Sync Data
+        FileMask: SyncData.sqlite3
+    -
+        Name: Chrome Beta Visited Links
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Visited Links
+    -
+        Name: Chrome Beta Web Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: Web Data*
+    -
+        Name: Chrome Beta IndexedDB
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\IndexedDB\
+        Recursive: true
+        Comment: "Collects IndexedDB (LevelDB) databases used by modern web applications to store data."
+    -
+        Name: Chrome Beta Local Storage
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Local Storage\leveldb\
+        Recursive: true
+        Comment: "Collects Local Storage (LevelDB) databases, another form of persistent client-side storage."
+    -
+        Name: Windows Protect Folder
+        Category: FileSystem
+        Path: C:\Users\%user%\AppData\Roaming\Microsoft\Protect\*\
+        Recursive: true
+        Comment: "Required for offline decryption"
+    -
+        Name: Chrome Beta Snapshots Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\Snapshots\*\
+        Recursive: true
+        Comment: "Grabs folder that appears to have snapshots of Chrome SQLite DBs organized by version #."
+    -
+        Name: SYSTEM Chrome Beta History
+        Category: Communications
+        Path: C:\Windows\system32\config\systemprofile\AppData\Local\Google\Chrome Beta\User Data\*\
+        FileMask: History*
+
+# Documentation
+# https://nasbench.medium.com/web-browsers-forensics-7e99940c579a
+# https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/
+# https://www.sans.org/blog/google-chrome-forensics/
+# http://cyberforensicator.com/wp-content/uploads/2017/02/20160919.pdf
+# https://forensicswiki.xyz/wiki/index.php?title=Google_Chrome
+# https://dfir.blog/chrome-values-lookup-tables/
+# https://www.sans.org/blog/forensically-mining-new-nuggets-of-google-chrome/
+# https://digitalinvestigation.wordpress.com/tag/snss/
+# https://dfir.blog/cookies-database-moving-in-chrome-96/
+# https://www.forensafe.com/blogs/googlechrome.html
+# The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s): https://github.com/EricZimmerman/SQLECmd/blob/master/SQLMap/Maps/Windows_Chrome_History.smap
+# For the files that aren't JSON or SQlite, aka Current Session, Current Tabs, Last Tabs, Last Session, see above links for clues on how to interpret that data

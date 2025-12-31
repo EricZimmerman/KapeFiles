@@ -1,6 +1,6 @@
 Description: Browser Caches
-Author: Bjorn Vanhaeren
-Version: 1.1
+Author: Bjorn Vanhaeren, Reece394
+Version: 1.2
 Id: bbb89525-6b8d-41f6-acdf-a4f513455703
 RecreateDirectories: true
 Targets:
@@ -10,9 +10,44 @@ Targets:
         Path: C:\Users\%user%\AppData\Local\Google\Chrome\User Data\*\Cache\
         Recursive: true
     -
+        Name: Chrome Beta Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Beta\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chrome Dev Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome Dev\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chrome SxS - Canary Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Google\Chrome SxS\User Data\*\Cache\
+        Recursive: true
+    -
         Name: Chromium Edge Cache Folder
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Microsoft\Edge\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chromium Edge Beta Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge Beta\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chromium Edge Dev Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge Dev\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chromium Edge SxS - Canary Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Microsoft\Edge SxS\User Data\*\Cache\
+        Recursive: true
+    -
+        Name: Chromium Cache Folder
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Chromium\User Data\*\Cache\
         Recursive: true
     -
         Name: Firefox Cache Folder
