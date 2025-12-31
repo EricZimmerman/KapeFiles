@@ -9,10 +9,6 @@ Targets:
         Category: Antivirus
         Path: Antivirus.tkape
     -
-        Name: CloudStorage_Metadata
-        Category: Apps
-        Path: CloudStorage_Metadata.tkape
-    -
         Name: CombinedLogs
         Category: WindowsLogs
         Path: CombinedLogs.tkape
@@ -28,10 +24,6 @@ Targets:
         Name: FileSystem
         Category: FileSystem
         Path: FileSystem.tkape
-    -
-        Name: FTPClients
-        Category: FTP
-        Path: FTPClients.tkape
     -
         Name: LNKFilesAndJumpLists
         Category: LNKFiles

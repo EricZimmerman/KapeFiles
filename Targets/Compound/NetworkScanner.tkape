@@ -12,10 +12,6 @@ Targets:
         Name: Advanced Port Scanner
         Category: Apps
         Path: AdvancedPortScanner.tkape
-    -
-        Name: Soft Perfect Network Scanner
-        Category: Apps
-        Path: SoftPerfectNetscan.tkape
 
 # Documentation
 # N/A
