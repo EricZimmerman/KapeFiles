@@ -1,17 +1,150 @@
 Description: Rclone config file
-Author: Eric Capuano
-Version: 1.0
+Author: Eric Capuano, Reece394
+Version: 1.1
 Id: 639f9e55-1ee1-4af4-be7c-e6303ffb4b0c
 RecreateDirectories: true
 Targets:
     -
-        Name: Rclone Config
+        Name: Rclone config - User Folder
+        Category: Apps
+        Path: C:\Users\%user%
+        FileMask: '.rclone.conf'
+        Comment: "Collects .rclone.conf from a user profile - v0.96"
+    -
+        Name: Rclone config - SYSTEM SysWOW64 User Folder
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile
+        FileMask: '.rclone.conf'
+        Comment: "Collects .rclone.conf from SYSTEM SysWOW64 user profile - v0.96"
+    -
+        Name: Rclone config - SYSTEM User Folder
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile
+        FileMask: '.rclone.conf'
+        Comment: "Collects .rclone.conf from SYSTEM user profile - v0.96"
+    -
+        Name: Rclone config - LocalService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService
+        FileMask: '.rclone.conf'
+        Comment: "Collects .rclone.conf from LocalService user profile - v0.96"
+    -
+        Name: Rclone config - NetworkService User Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService
+        FileMask: '.rclone.conf'
+        Comment: "Collects .rclone.conf from NetworkService user profile - v0.96"
+    -
+        Name: Rclone config - User .config Folder
+        Category: Apps
+        Path: C:\Users\%user%\.config\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the .config folder in a user profile - v1.55.1"
+    -
+        Name: Rclone config - SYSTEM SysWOW64 User .config Folder
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile\.config\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the .config folder in SYSTEM SysWOW64 user profile - v1.55.1"
+    -
+        Name: Rclone config - SYSTEM User .config Folder
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile\.config\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the .config folder in SYSTEM user profile - v1.55.1"
+    -
+        Name: Rclone config - LocalService User .config Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService\.config\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the .config folder in LocalService user profile - v1.55.1"
+    -
+        Name: Rclone config - NetworkService User .config Folder
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService\.config\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the .config folder in NetworkService user profile - v1.55.1"
+    -
+        Name: Rclone config - User config Folder - XDG_CONFIG_HOME Default
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in a user profile - v1.55.1. Default for XDG_CONFIG_HOME indicates LOCALAPPDATA"
+    -
+        Name: Rclone config - SYSTEM SysWOW64 User config Folder - XDG_CONFIG_HOME Default
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Local\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in SYSTEM SysWOW64 user profile - v1.55.1. Default for XDG_CONFIG_HOME indicates LOCALAPPDATA"
+    -
+        Name: Rclone config - SYSTEM User config Folder - XDG_CONFIG_HOME Default
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile\AppData\Local\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in SYSTEM user profile - v1.55.1. Default for XDG_CONFIG_HOME indicates LOCALAPPDATA"
+    -
+        Name: Rclone config - LocalService User config Folder - XDG_CONFIG_HOME Default
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService\AppData\Local\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in LocalService user profile - v1.55.1. Default for XDG_CONFIG_HOME indicates LOCALAPPDATA"
+    -
+        Name: Rclone config - NetworkService User config Folder - XDG_CONFIG_HOME Default
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService\AppData\Local\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in NetworkService user profile - v1.55.1. Default for XDG_CONFIG_HOME indicates LOCALAPPDATA"
+    -
+        Name: Rclone config - User config Folder - Roaming
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in a user profile - v1.56+"
+    -
+        Name: Rclone config - SYSTEM SysWOW64 User config Folder - Roaming
+        Category: Apps
+        Path: C:\Windows\SysWOW64\config\systemprofile\AppData\Roaming\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in SYSTEM SysWOW64 user profile - v1.56+"
+    -
+        Name: Rclone config - SYSTEM User config Folder - Roaming
+        Category: Apps
+        Path: C:\Windows\System32\config\systemprofile\AppData\Roaming\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in SYSTEM user profile - v1.56+"
+    -
+        Name: Rclone config - LocalService User config Folder - Roaming
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\LocalService\AppData\Roaming\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in LocalService user profile - v1.56+"
+    -
+        Name: Rclone config - NetworkService User config Folder - Roaming
+        Category: Apps
+        Path: C:\Windows\ServiceProfiles\NetworkService\AppData\Roaming\rclone
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the config folder in NetworkService user profile - v1.56+"
+    -
+        Name: Rclone config - Recursive
         Category: Apps
         Path: C:\
         FileMask: 'rclone.conf'
         Recursive: true
+        Comment: "Collects rclone.conf recursively. Needed if rclone.conf is sideloaded beside binary - portable mode or specifying custom path"
+    -
+        Name: Rclone config fallback - Recursive
+        Category: Apps
+        Path: C:\
+        FileMask: '.rclone.conf'
+        Recursive: true
+        Comment: "Collects .rclone.conf recursively. This is a fallback in the Rclone code for writing config to current working directory if all other methods fail"
 
 # Documentation
 # Rclone is a popular exfil tool that supports many cloud storage services
+# For performance reasons it is recommended to comment out the recursive Rclone config rules with #s. On bigger disks with many files it could add hours on to the triage collection.
 #
 # https://research.nccgroup.com/2021/05/27/detecting-rclone-an-effective-tool-for-exfiltration/
+# https://rclone.org/docs/#config-string
+# https://github.com/rclone/rclone/issues/4667
+# https://github.com/rclone/rclone/pull/5226
+# https://xdg-net.github.io/Xdg.Directories/docs/defaults.html
