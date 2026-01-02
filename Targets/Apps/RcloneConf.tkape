@@ -1,6 +1,6 @@
 Description: Rclone config file
 Author: Eric Capuano, Reece394
-Version: 1.1
+Version: 1.2
 Id: 639f9e55-1ee1-4af4-be7c-e6303ffb4b0c
 RecreateDirectories: true
 Targets:
@@ -124,6 +124,24 @@ Targets:
         Path: C:\Windows\ServiceProfiles\NetworkService\AppData\Roaming\rclone
         FileMask: 'rclone.conf'
         Comment: "Collects rclone.conf from the config folder in NetworkService user profile - v1.56+"
+    -
+        Name: Rclone config - SysWOW64 Sideloaded Config
+        Category: Apps
+        Path: C:\Windows\SysWOW64
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the SysWOW64 Folder"
+    -
+        Name: Rclone config - System32 Sideloaded Config
+        Category: Apps
+        Path: C:\Windows\System32
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the System32 Folder"
+    -
+        Name: Rclone config - Windows Sideloaded Config
+        Category: Apps
+        Path: C:\Windows
+        FileMask: 'rclone.conf'
+        Comment: "Collects rclone.conf from the Windows Folder"
     -
         Name: Rclone config - Recursive
         Category: Apps
