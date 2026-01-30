@@ -3,7 +3,7 @@ Category: SQLDatabases
 Author: Andrew Rathbun
 Version: 1.0
 Id: 74343dd0-47bf-406d-9173-fb626e38cc50
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SQLECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/SQLECmd.zip
 ExportFormat: csv
 Processors:
     -

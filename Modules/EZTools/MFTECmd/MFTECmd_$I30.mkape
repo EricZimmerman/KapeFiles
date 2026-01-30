@@ -3,7 +3,7 @@ Category: FileSystem
 Author: Phill Moore
 Version: 1.0
 Id: eccde70f-7828-4a3d-b2dd-0d534516df93
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/MFTECmd.zip
 ExportFormat: csv
 FileMask: $I30|INDX
 Processors:

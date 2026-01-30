@@ -3,7 +3,7 @@ Category: SRUMDatabase
 Author: Andrew Rathbun
 Version: 1.1
 Id: a0fac3f5-ee99-4973-b3ea-4cffc87da48d
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SrumECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/SrumECmd.zip
 ExportFormat: csv
 Processors:
     -
