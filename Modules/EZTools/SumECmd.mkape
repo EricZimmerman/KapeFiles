@@ -3,7 +3,7 @@ Category: SUMDatabase
 Author: Andrew Rathbun
 Version: 1.1
 Id: ac99af84-33b7-4f85-a9fa-146cd2fd6e31
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/SumECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/SumECmd.zip
 ExportFormat: csv
 Processors:
     -

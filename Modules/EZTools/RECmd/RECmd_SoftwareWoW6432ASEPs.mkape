@@ -3,7 +3,7 @@ Category: Registry
 Author: Andrew Rathbun
 Version: 1.1
 Id: 63e39ae3-63c3-44c8-86ac-fb7ac4365d7b
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/RECmd.zip
 ExportFormat: csv
 Processors:
     -

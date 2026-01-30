@@ -3,7 +3,7 @@ Category: FileSystem
 Author: Eric Zimmerman
 Version: 1.0
 Id: 7ef84a6b-5215-46bb-af2a-3339a3227e25
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/MFTECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/MFTECmd.zip
 ExportFormat: csv
 FileMask: $MFT
 Processors:

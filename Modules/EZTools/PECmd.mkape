@@ -3,7 +3,7 @@ Category: ProgramExecution
 Author: Eric Zimmerman and Andrew Rathbun
 Version: 1.1
 Id: 7ef84a6b-5115-45bb-af2a-3249a3237e75
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/PECmd.zip
 ExportFormat: csv
 Processors:
     -

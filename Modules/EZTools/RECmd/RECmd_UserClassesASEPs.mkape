@@ -3,7 +3,7 @@ Category: Registry
 Author: Andreas Hunkeler (@Karneades)
 Version: 1.1
 Id: df3d2d54-dda9-49fb-a427-c9d8348b375d
-BinaryUrl: https://f001.backblazeb2.com/file/EricZimmermanTools/RECmd.zip
+BinaryUrl: https://download.ericzimmermanstools.com/RECmd.zip
 ExportFormat: csv
 Processors:
     -
