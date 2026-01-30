@@ -2,7 +2,7 @@ Description: 'dfir_ntfs: process $LogFile file'
 Category: FileSystem
 Author: Nick Polosukhin
 Version: 1.0
-Id: 415bccbe-1317-4b88-b476-4e230725f5ea
+Id: 2df90ab9-b8b9-49ba-89ee-28b8b3c8e4e6
 BinaryUrl: https://github.com/msuhanov/dfir_ntfs/archive/refs/tags/1.1.19.zip
 ExportFormat: txt
 FileMask: $MFT
