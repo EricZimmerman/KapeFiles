@@ -1,0 +1,15 @@
+Description: Chocolatey
+Author: Paul CABON (CERT CWATCH - ALMOND)
+Version: 1.0
+Id: 23e556e4-614d-49c6-b2ee-bf97b1a2914b
+RecreateDirectories: true
+Targets:
+    -
+        Name: Chocolatey logs
+        Category: Apps
+        Path: C:\ProgramData\chocolatey\logs\
+        FileMask: '*.log'
+        Recursive: true
+
+# Documentation
+# https://medium.com/@stewalexander/how-to-get-chocolatey-package-manager-logs-parsed-by-the-elastic-search-elk-stack-d9bbd7d14864
