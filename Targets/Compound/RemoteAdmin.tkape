@@ -126,10 +126,6 @@ Targets:
         Name: ZohoAssist
         Category: ApplicationLogs
         Path: ZohoAssist.tkape
-    -
-        Name: Chocolatey
-        Category: ApplicationLogs
-        Path: Chocolatey.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software.
