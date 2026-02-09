@@ -9,7 +9,7 @@ FileMask: $MFT
 Processors:
     -
         Executable: MFTECmd.exe
-        CommandLine: -f %sourceFile% --csv %destinationDirectory% --dr
+        CommandLine: -f %sourceFile% --csv %destinationDirectory% --dr --ir
         ExportFormat: csv
 
 # Documentation
