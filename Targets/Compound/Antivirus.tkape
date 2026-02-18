@@ -1,6 +1,6 @@
 Description: Antivirus
 Author: Andrew Rathbun
-Version: 1.4
+Version: 1.5
 Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
 RecreateDirectories: true
 Targets:
@@ -36,6 +36,10 @@ Targets:
         Name: Cylance
         Category: Antivirus
         Path: Cylance.tkape
+    -
+        Name: Elastic Defend
+        Category: Antivirus
+        Path: ElasticDefend.tkape
     -
         Name: Emsisoft
         Category: Antivirus

@@ -1,0 +1,24 @@
+Description: Elastic Defend Data
+Author: AlliedPterodactyl
+Version: 1.0
+Id: cfa61264-c9f8-4807-b29c-0ef6236dff6f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Elastic Defend Logs
+        Category: Antivirus
+        Path: C:\Program Files\Elastic\Endpoint\state\log\
+        FileMask: '*.log'
+    -
+        Name: Elastic Defend Quarantine
+        Category: Antivirus
+        Path: C:\.equarantine\
+        FileMask: '*'
+    -
+        Name: Elastic Defend Quarantine
+        Category: Antivirus
+        Path: C:\Program Files\Elastic\Endpoint\state\.equarantine\
+        FileMask: '*'
+
+# Documentation
+# https://www.elastic.co/docs/solutions/security/configure-elastic-defend/configure-an-integration-policy-for-elastic-defend
