@@ -1,6 +1,6 @@
 Description: ProtonVPN
-Author: Andrew Rathbun
-Version: 1.0
+Author: Andrew Rathbun, AlliedPterodactyl
+Version: 1.1
 Id: 47dc8f4d-633d-4dcc-994d-2d62c3fa9c28
 RecreateDirectories: true
 Targets:
@@ -9,6 +9,21 @@ Targets:
         Category: ApplicationLogs
         Path: C:\Users\%user%\AppData\Local\ProtonVPN\Logs
         Comment: "Locates ProtonVPN connection logs."
+    -
+        Name: ProtonVPN - Connection Logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Proton\Proton VPN\Logs
+        Comment: "Locates ProtonVPN client logs."
+    -
+        Name: ProtonVPN - Service Logs
+        Category: ApplicationLogs
+        Path: C:\Program Files\Proton\VPN\v*\ServiceData\Logs
+        Comment: "Locates ProtonVPN service logs."
+    -
+        Name: ProtonVPN - Configuration
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Proton\Proton VPN\Storage
+        Comment: "Proton VPN configs including settings, recently connected server list and Proton VPN server IPs."
 
 # Documentation
 # ProtonVPN is a VPN application made by the people who make ProtonMail.
@@ -17,3 +32,6 @@ Targets:
 # When I tested connecting to VPN and then disconnecting shortly thereafter, I found the following entries in the app.txt file:
 # 2020-09-04 06:48:29.1233 INFO Connect requested
 # 2020-09-04 06:48:43.6800 INFO Disconnect requested
+# Target v1.1, tested from Proton VPN v4.3.11
+# - Log file names are now in the format client-logs.txt and service-logs.txt respectively, with logs rolling over at ~400KB and renamed e.g. client-logs.1.txt
+# - client-logs.txt include connection events, connected VPN server external IP and window focus, service-logs.txt include VPN connection RemoteIP and wireguard server IP
