@@ -84,7 +84,7 @@ Targets:
         Name: Remote Manipulator System
         Category: ApplicationLogs
         Path: RemoteManipulatorSystem.tkape
-        Comment: "Contains logs related to the Remote Manipulator System"
+        Comment: "Contains logs related to Remote Manipulator System"
     -
         Name: Remote Utilities
         Category: ApplicationLogs
