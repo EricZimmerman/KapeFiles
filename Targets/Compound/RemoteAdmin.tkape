@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
 Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore
-Version: 2.1
+Version: 2.2
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
