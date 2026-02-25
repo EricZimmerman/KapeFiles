@@ -81,6 +81,11 @@ Targets:
         Path: Remcos.tkape
         Comment: "Contains logs related to Remcos RAT"
     -
+        Name: Remote Manipulator System
+        Category: ApplicationLogs
+        Path: RemoteManipulatorSystem.tkape
+        Comment: "Contains logs related to the Remote Manipulator System"
+    -
         Name: Remote Utilities
         Category: ApplicationLogs
         Path: RemoteUtilities_app.tkape
