@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
 Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore
-Version: 2.1
+Version: 2.2
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -80,6 +80,11 @@ Targets:
         Category: ApplicationLogs
         Path: Remcos.tkape
         Comment: "Contains logs related to Remcos RAT"
+    -
+        Name: Remote Manipulator System
+        Category: ApplicationLogs
+        Path: RemoteManipulatorSystem.tkape
+        Comment: "Contains logs related to Remote Manipulator System"
     -
         Name: Remote Utilities
         Category: ApplicationLogs

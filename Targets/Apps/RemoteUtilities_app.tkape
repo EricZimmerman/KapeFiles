@@ -1,6 +1,6 @@
 Description: Remote Utilities
 Author: Ryan McVicar
-Version: 1.0
+Version: 1.1
 Id: 55733479-dd80-4958-a0a8-0d1c1392f494
 RecreateDirectories: true
 Targets:
@@ -8,6 +8,12 @@ Targets:
         Name: RemoteUtilities Connection Logs
         Category: Remote Access
         Path: C:\Program Files*\Remote Utilities - Host\Logs
+        FileMask: "rut_log_*.html"
+        Comment: "Includes connection log files"
+    -
+        Name: RemoteUtilities Connection Logs in ProgramData
+        Category: Remote Access
+        Path: C:\ProgramData\Remote Utilities\Logs
         FileMask: "rut_log_*.html"
         Comment: "Includes connection log files"
     -

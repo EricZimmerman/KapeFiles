@@ -1,0 +1,27 @@
+Description: Remote Manipulator System (RMS)
+Author: raggadhub based on RemoteUtilities_App.tkape by Ryan McVicar
+Version: 1.0
+Id: 2a971058-b1c7-486a-ac8f-c4e0de9f5eac
+RecreateDirectories: true
+Targets:
+    -
+        Name: Remote Manipulator System Connection Logs
+        Category: Remote Access
+        Path: C:\Program Files*\Remote Manipulator System - Host\Logs
+        FileMask: "rms_log_*.html"
+        Comment: "Includes connection log files"
+    -
+        Name: Remote Manipulator System Connection Logs in ProgramData
+        Category: Remote Access
+        Path: C:\ProgramData\Remote Manipulator System\Logs
+        FileMask: "rms_log_*.html"
+        Comment: "Includes connection log files"
+    -
+        Name: Remote Manipulator System Install Log
+        Category: Remote Access
+        Path: C:\ProgramData\Remote Manipulator System
+        FileMask: "install.log"
+        Comment: "Includes Install log file"
+
+# Documentation
+# Information on RemoteManipulatorSystem logs can be found here: https://rmansys.ru/support/help/
