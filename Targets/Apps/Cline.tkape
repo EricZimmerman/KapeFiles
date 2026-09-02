@@ -1,0 +1,98 @@
+Description: Cline (VS Code AI coding agent) task conversation histories, MCP settings, checkpoints, and global state
+Author: Eric Capuano
+Version: 1.0
+Id: 3d257046-3294-47af-a66e-b95577184c1d
+RecreateDirectories: true
+Targets:
+    -
+        Name: Cline Tasks
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\tasks\
+        Recursive: true
+        Comment: 'One folder per task ID containing api_conversation_history.json (full model conversation including tool calls and results), ui_messages.json, task_metadata.json, context_history.json'
+    -
+        Name: Cline Settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\settings\
+        Recursive: true
+        Comment: 'cline_mcp_settings.json (configured MCP servers) and other settings'
+    -
+        Name: Cline State
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\state\
+        Recursive: true
+        Comment: 'taskHistory.json index of all tasks with timestamps, workspace and token usage'
+    -
+        Name: Cline Checkpoints
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\checkpoints\
+        Recursive: true
+        Comment: 'Shadow git repositories holding workspace snapshots between agent edits. Can be large'
+    -
+        Name: Cline Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\cache\
+        Recursive: true
+        Comment: 'cline_recommended_models.json and remote_config_<orgId>.json'
+    -
+        Name: Cline Global State
+        Category: Apps
+        Path: C:\Users\%user%\.cline\data\
+        FileMask: 'globalState.json'
+        Comment: 'Provider configuration, selected models, and feature state (Cline 4.x moved this out of VS Code storage)'
+    -
+        Name: Cline Workspace State
+        Category: Apps
+        Path: C:\Users\%user%\.cline\data\workspaces\
+        Recursive: true
+        Comment: 'workspaceState.json per hashed workspace'
+    -
+        Name: Cline SDK Sessions
+        Category: Apps
+        Path: C:\Users\%user%\.cline\data\sessions\
+        Recursive: true
+        Comment: 'Session manifests and message files for CLI/SDK-driven sessions'
+    -
+        Name: Cline Logs
+        Category: Apps
+        Path: C:\Users\%user%\.cline\data\logs\
+        Recursive: true
+        Comment: 'hub-daemon.log and other runtime logs'
+    -
+        Name: Cline User MCP Servers
+        Category: Apps
+        Path: C:\Users\%user%\Documents\Cline\MCP\
+        Recursive: true
+        Comment: 'MCP servers built or installed by Cline for the user'
+    -
+        Name: Cline User Rules
+        Category: Apps
+        Path: C:\Users\%user%\Documents\Cline\Rules\
+        Recursive: true
+        Comment: 'Global rule files loaded into every task'
+    -
+        Name: Cline User Workflows
+        Category: Apps
+        Path: C:\Users\%user%\Documents\Cline\Workflows\
+        Recursive: true
+        Comment: 'Global workflow definitions'
+    -
+        Name: Cline User Hooks
+        Category: Apps
+        Path: C:\Users\%user%\Documents\Cline\Hooks\
+        Recursive: true
+        Comment: 'Hook scripts executed on lifecycle events. Review for persistence or data exfiltration'
+
+# Documentation
+# https://github.com/cline/cline/blob/main/apps/vscode/src/core/storage/disk.ts - tasks\<id>\ file names, settings\, cache\, Documents\Cline\ paths
+# https://github.com/cline/cline/blob/main/apps/vscode/src/shared/storage/storage-context.ts - %USERPROFILE%\.cline\data layout (CLINE_DATA_DIR / CLINE_DIR overrides)
+# https://github.com/cline/cline/blob/main/apps/vscode/src/hosts/vscode/vscode-to-file-migration.ts - state\taskHistory.json and checkpoints\ locations
+# https://github.com/cline/cline/blob/main/apps/vscode/package.json - publisher saoudrizwan, name claude-dev
+# https://github.com/microsoft/vscode/blob/main/src/vs/workbench/api/common/extHostStoragePaths.ts - globalStorage\<extension id lowercased>
+#
+# Cline stores task data in the VS Code extension globalStorage folder %APPDATA%\Code\User\globalStorage\saoudrizwan.claude-dev\
+# (extension ID lowercased) and, since 4.x, its global state and secrets under %USERPROFILE%\.cline\data\
+# (override: CLINE_DATA_DIR or CLINE_DIR). The VS Code User folder is %APPDATA%\Code\User by default;
+# Cline installed in Cursor or VSCodium would be under that editor's equivalent User\globalStorage.
+#
+# Deliberately not collected: .cline\data\secrets.json (API keys).

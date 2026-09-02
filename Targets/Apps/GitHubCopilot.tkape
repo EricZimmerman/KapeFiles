@@ -1,0 +1,135 @@
+Description: GitHub Copilot CLI and Copilot Chat (VS Code) agent sessions, prompt history, configuration, and MCP settings
+Author: Eric Capuano
+Version: 1.0
+Id: 7ccbfb16-0bbb-42b0-ac31-3fe86e74e617
+RecreateDirectories: true
+Targets:
+    -
+        Name: Copilot CLI Session State
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\session-state\
+        Recursive: true
+        Comment: 'One folder per session ID containing events.jsonl (every user message, assistant turn, tool execution and result, model change), workspace.yaml (cwd, git root, repository, branch, summary), plan.md, checkpoints\, files\, research\, rewind-file-snapshots\. VS Code-launched sessions also have vscode.metadata.json and a sibling <sessionId>.jsonl'
+    -
+        Name: Copilot CLI Session Store
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\
+        FileMask: 'session-store.db*'
+        Comment: 'SQLite index of sessions (Chronicle) with -wal and -shm sidecars'
+    -
+        Name: Copilot CLI Command History
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\
+        FileMask: 'command-history-state*'
+        Comment: 'Prompt history typed into the CLI (command-history-state.json). Newer builds document a command-history-state directory'
+    -
+        Name: Copilot CLI Command History Directory
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\command-history-state\
+        Recursive: true
+        Comment: 'Prompt history when stored as a directory'
+    -
+        Name: Copilot CLI Configuration
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\
+        FileMask: '*.json'
+        Comment: 'config.json (trusted folders, first launch time), settings.json, mcp-config.json (configured MCP servers), lsp-config.json, permissions-config.json, vscode.session.metadata.cache.json'
+    -
+        Name: Copilot CLI Instructions
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\
+        FileMask: 'copilot-instructions.md'
+        Comment: 'User-level custom instructions loaded into every session'
+    -
+        Name: Copilot CLI Agents
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\agents\
+        Recursive: true
+        Comment: 'Custom agent definitions'
+    -
+        Name: Copilot CLI Skills
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\skills\
+        Recursive: true
+        Comment: 'User-installed skills'
+    -
+        Name: Copilot CLI Hooks
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\hooks\
+        Recursive: true
+        Comment: 'User-defined hook scripts executed on lifecycle events. Review for persistence or data exfiltration'
+    -
+        Name: Copilot CLI Custom Instructions Directory
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\instructions\
+        Recursive: true
+        Comment: 'Additional instruction files'
+    -
+        Name: Copilot CLI Plugin Data
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\plugin-data\
+        Recursive: true
+        Comment: 'State written by installed plugins'
+    -
+        Name: Copilot CLI Logs
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\logs\
+        Recursive: true
+        Comment: 'Per-process log files (process-<epochms>-<pid>.log)'
+    -
+        Name: Copilot CLI IDE Locks
+        Category: Apps
+        Path: C:\Users\%user%\.copilot\ide\
+        FileMask: '*.lock'
+        Comment: 'IDE bridge lock files, one per connected editor instance'
+    -
+        Name: Copilot Chat Extension Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\
+        Recursive: true
+        Comment: 'session-store.db and agent-traces.db SQLite databases (sessions, turns, checkpoints, session_files), plus per-agent working folders'
+    -
+        Name: VS Code Workspace Chat Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\workspaceStorage\*\chatSessions\
+        Recursive: true
+        Comment: 'Copilot Chat conversation transcripts per workspace, one <sessionId>.json (or .jsonl on newer builds) per chat with requests, responses, tool calls and edits'
+    -
+        Name: VS Code Workspace Chat Editing Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\workspaceStorage\*\chatEditingSessions\
+        Recursive: true
+        Comment: 'state.json plus contents\ holding pre-edit file snapshots for agent-mode edits, enabling reconstruction of what the agent changed'
+    -
+        Name: VS Code Empty Window Chat Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\emptyWindowChatSessions\
+        Recursive: true
+        Comment: 'Chat sessions started with no workspace open'
+    -
+        Name: VS Code Transferred Chat Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\transferredChatSessions\
+        Recursive: true
+        Comment: 'Chat sessions moved between windows or workspaces'
+
+# Documentation
+# https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-config-dir-reference - Official list of everything under the Copilot CLI config directory
+# https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli - COPILOT_HOME and COPILOT_CACHE_HOME overrides
+# https://docs.github.com/en/copilot/how-tos/copilot-cli/cli-best-practices - session-state layout (events.jsonl, workspace.yaml, plan.md, checkpoints, files)
+# https://docs.github.com/en/copilot/concepts/agents/copilot-cli/chronicle - session-store.db
+# https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/chat/common/model/chatSessionStore.ts - chatSessions, emptyWindowChatSessions, transferredChatSessions
+# https://github.com/microsoft/vscode/blob/main/src/vs/workbench/contrib/chat/browser/chatEditing/chatEditingSessionStorage.ts - chatEditingSessions state.json and contents
+# https://github.com/microsoft/vscode/blob/main/extensions/copilot/src/extension/extension/vscode-node/services.ts - github.copilot-chat session-store.db
+#
+# Copilot CLI stores its state under %USERPROFILE%\.copilot\ (override: COPILOT_HOME). Its binary cache lives in
+# %LOCALAPPDATA%\copilot\pkg\ (override: COPILOT_CACHE_HOME) and is not collected. The root location and the
+# session-state, session-store.db, logs and config.json layout were confirmed on Windows Server 2025 with Copilot CLI 1.0.82.
+#
+# Copilot Chat inside VS Code persists conversations through VS Code core chat storage (chatSessions per workspace,
+# emptyWindowChatSessions globally) and the extension keeps its own SQLite session store under globalStorage.
+# The workspaceStorage folder name is an MD5-style hash of the workspace path; the sibling workspace.json (collected by
+# VisualStudioCode.tkape) maps it back to the folder.
+#
+# Deliberately not collected: .copilot\mcp-secrets\ and .copilot\mcp-oauth-config\ (tokens), installed-plugins\ and
+# extensions\ (plugin source trees), %LOCALAPPDATA%\copilot\pkg\ (binary cache).

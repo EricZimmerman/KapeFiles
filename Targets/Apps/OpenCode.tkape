@@ -1,0 +1,103 @@
+Description: OpenCode (open-source terminal coding agent) session database, logs, snapshots, and configuration
+Author: Eric Capuano
+Version: 1.0
+Id: 2361bd03-b48c-49c9-b115-66416d665f4b
+RecreateDirectories: true
+Targets:
+    -
+        Name: OpenCode Session Database
+        Category: Apps
+        Path: C:\Users\%user%\.local\share\opencode\
+        FileMask: 'opencode*.db*'
+        Comment: 'SQLite (WAL mode) store with session, message, part, todo, project, project_directory, permission, event, account, credential, workspace tables. Every prompt, response, tool call and result is in message and part. Named opencode.db on release channels, opencode-<channel>.db on dev builds; -wal and -shm sidecars included'
+    -
+        Name: OpenCode Logs
+        Category: Apps
+        Path: C:\Users\%user%\.local\share\opencode\log\
+        Recursive: true
+        Comment: 'opencode.log application log plus direct\<timestamp>-<pid>.jsonl run traces'
+    -
+        Name: OpenCode File Snapshots
+        Category: Apps
+        Path: C:\Users\%user%\.local\share\opencode\snapshot\
+        Recursive: true
+        Comment: 'Bare git directories (snapshot\<projectId>\<worktreeHash>\) holding file-state snapshots taken around agent edits. Can be large'
+    -
+        Name: OpenCode Legacy JSON Storage
+        Category: Apps
+        Path: C:\Users\%user%\.local\share\opencode\storage\
+        Recursive: true
+        Comment: 'Pre-SQLite storage: session\<projectId>\<sessionId>.json, message\<sessionId>\<messageId>.json, part\<messageId>\<partId>.json, project\, session_diff\'
+    -
+        Name: OpenCode Oldest JSON Storage
+        Category: Apps
+        Path: C:\Users\%user%\.local\share\opencode\project\
+        Recursive: true
+        Comment: 'Oldest layout: project\<slug>\storage\session\{info,message,part}\'
+    -
+        Name: OpenCode State
+        Category: Apps
+        Path: C:\Users\%user%\.local\state\opencode\
+        Recursive: true
+        Comment: 'model.json (last used model), plugin-meta.json, locks\<hash>.lock\meta.json (running instances)'
+    -
+        Name: OpenCode User Configuration
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\
+        FileMask: '*.json*'
+        Comment: 'opencode.json / opencode.jsonc / config.json (providers, MCP servers, permissions, instructions) and tui.json'
+    -
+        Name: OpenCode User Agents
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\agents\
+        Recursive: true
+        Comment: 'Custom agent definitions'
+    -
+        Name: OpenCode User Commands
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\commands\
+        Recursive: true
+        Comment: 'Custom slash commands'
+    -
+        Name: OpenCode User Plugins
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\plugins\
+        Recursive: true
+        Comment: 'User plugins (JavaScript/TypeScript executed by the agent runtime). Review for malicious behavior'
+    -
+        Name: OpenCode User Skills
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\skills\
+        Recursive: true
+        Comment: 'User-installed skills'
+    -
+        Name: OpenCode User Tools
+        Category: Apps
+        Path: C:\Users\%user%\.config\opencode\tools\
+        Recursive: true
+        Comment: 'Custom tool definitions'
+    -
+        Name: OpenCode Home Config Directory
+        Category: Apps
+        Path: C:\Users\%user%\.opencode\
+        Recursive: true
+        Comment: 'Alternate user-level config directory also searched by OpenCode'
+
+# Documentation
+# https://github.com/anomalyco/opencode/blob/dev/packages/core/src/global.ts - Global.Path (data, config, state, cache) built from xdg-basedir
+# https://github.com/anomalyco/opencode/blob/dev/packages/core/src/database/database.ts - opencode.db naming, WAL mode, OPENCODE_DB override
+# https://github.com/anomalyco/opencode/blob/dev/packages/opencode/src/snapshot/index.ts - snapshot bare git dirs
+# https://github.com/anomalyco/opencode/blob/dev/packages/opencode/src/storage/storage.ts - legacy JSON storage layouts
+# https://opencode.ai/docs/troubleshooting/ - Official Windows locations (%USERPROFILE%\.local\share\opencode)
+#
+# OpenCode uses the xdg-basedir package, which has no Windows branch, so on Windows it writes under the user profile rather
+# than AppData: %USERPROFILE%\.local\share\opencode (data), %USERPROFILE%\.config\opencode (config), %USERPROFILE%\.local\state\opencode
+# (state), %USERPROFILE%\.cache\opencode (cache). XDG_DATA_HOME / XDG_CONFIG_HOME / XDG_STATE_HOME / XDG_CACHE_HOME relocate
+# these; OPENCODE_CONFIG and OPENCODE_CONFIG_DIR point at alternate config. Confirmed on Windows Server 2025 with OpenCode 1.18.26
+# after running a real session: opencode.db, log\opencode.log, .local\state\opencode\locks and .config\opencode\opencode.jsonc were created.
+#
+# Project-level opencode.json(c) and .opencode\ folders live inside repositories and are not collected; the project and
+# project_directory tables in opencode.db list every directory the agent was run in.
+#
+# Deliberately not collected: auth.json and mcp-auth.json (API keys and OAuth tokens), repos\ (cloned plugin sources),
+# .cache\opencode\ (binaries and models.json), %TEMP%\opencode\.
