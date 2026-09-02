@@ -1,0 +1,28 @@
+Description: AI coding agent harnesses (Claude Code, OpenAI Codex) and the IDE that hosts their extensions
+Author: Eric Capuano
+Version: 1.0
+Id: 4760dcf6-9cf4-4098-80a6-4e5216ff7501
+RecreateDirectories: true
+Targets:
+    -
+        Name: Claude Code
+        Category: Apps
+        Path: ClaudeCode.tkape
+        Comment: 'Anthropic Claude Code CLI, VS Code extension, and Claude Desktop embedded sessions'
+    -
+        Name: OpenAI Codex
+        Category: Apps
+        Path: OpenAICodex.tkape
+        Comment: 'OpenAI Codex CLI and VS Code extension'
+    -
+        Name: Visual Studio Code
+        Category: Apps
+        Path: VisualStudioCode.tkape
+        Comment: 'Host IDE for agent extensions. Captures file history, unsaved backups, installed extension list and logs that record agent-driven edits'
+
+# Documentation
+# Agentic coding tools run shell commands, edit files, and reach network services on behalf of a user, and they keep
+# verbose local transcripts of everything they did. This compound Target gathers those transcripts and configuration for
+# the major harnesses so an examiner can reconstruct prompts, commands executed, files changed, MCP servers and hooks.
+# Add future harness Targets here (for example GitHub Copilot CLI %USERPROFILE%\.copilot\session-state\, Gemini CLI
+# %USERPROFILE%\.gemini\, Cursor, Windsurf, OpenCode) as they are created.
