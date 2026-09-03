@@ -1,0 +1,126 @@
+Description: Google Gemini CLI chat session logs, prompt history, shell history, checkpoints, and configuration
+Author: Eric Capuano
+Version: 1.0
+Id: 25f36466-14ec-4d70-988d-07d755abd14c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Gemini CLI Project Temp and Chat History
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\tmp\
+        Recursive: true
+        Comment: 'One folder per project (slug of folder name on current builds, sha256 of the path on older builds). Each holds .project_root (absolute project path), chats\session-<timestamp>-<id>.jsonl or .json (full conversation with tool calls), logs.json (prompt history), shell_history (commands run via !), checkpoints\ and checkpoint-<tag>.json, memory\, plans\, tasks\. tmp\bin\ holds downloaded helper binaries'
+    -
+        Name: Gemini CLI Project Registry
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'projects.json'
+        Comment: 'Maps absolute project paths to the slug folder names used under tmp\ and history\'
+    -
+        Name: Gemini CLI Settings
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'settings.json'
+        Comment: 'User settings including auth method, MCP servers, hooks, tool allow lists'
+    -
+        Name: Gemini CLI Trusted Folders
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'trustedFolders.json'
+        Comment: 'Folders the user marked as trusted'
+    -
+        Name: Gemini CLI Installation ID
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'installation_id'
+        Comment: 'Random UUID identifying the install'
+    -
+        Name: Gemini CLI Google Accounts
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'google_accounts.json'
+        Comment: 'Cached Google account identity used for login (no tokens)'
+    -
+        Name: Gemini CLI MCP Server Enablement
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'mcp-server-enablement.json'
+        Comment: 'Which configured MCP servers are enabled'
+    -
+        Name: Gemini CLI Global Context
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'GEMINI.md'
+        Comment: 'User-level instructions loaded into every session'
+    -
+        Name: Gemini CLI Keybindings
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\
+        FileMask: 'keybindings.json'
+        Comment: 'Custom keybindings'
+    -
+        Name: Gemini CLI Commands
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\commands\
+        Recursive: true
+        Comment: 'User custom slash commands (*.toml)'
+    -
+        Name: Gemini CLI Policies
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\policies\
+        Recursive: true
+        Comment: 'Policy engine rules controlling tool approval (*.toml, including auto-saved.toml)'
+    -
+        Name: Gemini CLI Skills
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\skills\
+        Recursive: true
+        Comment: 'User-installed skills'
+    -
+        Name: Gemini CLI Agents
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\agents\
+        Recursive: true
+        Comment: 'Custom subagent definitions'
+    -
+        Name: Gemini CLI Acknowledgments
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\acknowledgments\
+        Recursive: true
+        Comment: 'Agents the user acknowledged'
+    -
+        Name: Gemini CLI Extension Manifests
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\extensions\
+        FileMask: '*.json'
+        Recursive: true
+        Comment: 'gemini-extension.json and .gemini-extension-install.json per extension recording source URL and install type. Extension code is not collected'
+    -
+        Name: Gemini CLI Checkpoint Shadow Repositories
+        Category: Apps
+        Path: C:\Users\%user%\.gemini\history\
+        Recursive: true
+        Comment: 'Shadow git repositories holding file snapshots taken before tool edits (checkpointing). Can be large'
+    -
+        Name: Gemini CLI System Settings
+        Category: Apps
+        Path: C:\ProgramData\gemini-cli\
+        Recursive: true
+        Comment: 'Enterprise system-level settings.json and policies'
+
+# Documentation
+# https://github.com/google-gemini/gemini-cli/blob/main/packages/core/src/config/storage.ts - All path definitions (getGlobalGeminiDir, getProjectTempDir, getHistoryDir, getSystemConfigDir)
+# https://github.com/google-gemini/gemini-cli/blob/main/packages/core/src/utils/paths.ts - GEMINI_DIR and GEMINI_CLI_HOME override
+# https://github.com/google-gemini/gemini-cli/blob/main/packages/core/src/services/chatRecordingService.ts - chats\session-*.jsonl format
+# https://github.com/google-gemini/gemini-cli/blob/main/packages/core/src/config/projectRegistry.ts - projects.json slug registry and .project_root marker
+# https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/session-management.md
+# https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/checkpointing.md
+#
+# Gemini CLI stores its state under %USERPROFILE%\.gemini\ (override: GEMINI_CLI_HOME). The root, projects.json, tmp\<slug>\.project_root
+# and history\<slug>\ were confirmed on Windows Server 2025 with Gemini CLI 0.58.0. Chat logs are written as
+# tmp\<project>\chats\session-<YYYY-MM-DDTHH-MM>-<first 8 of sessionId>.jsonl (first line is session metadata, then one JSON
+# record per message including tool calls). Older builds wrote a single session-*.json object and named the project folder
+# by sha256 of its path; both patterns are covered by the recursive tmp\ entry.
+#
+# Deliberately not collected: oauth_creds.json, mcp-oauth-tokens.json, a2a-oauth-tokens.json and .env (credentials),
+# cli-browser-profile\ (Chrome profile for the browser agent, large).

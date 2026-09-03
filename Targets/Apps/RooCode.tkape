@@ -1,0 +1,41 @@
+Description: Roo Code (VS Code AI coding agent, archived May 2026) task conversation histories, MCP settings, custom modes, and checkpoints
+Author: Eric Capuano
+Version: 1.0
+Id: 2b3bd9f3-d7bf-4b06-bfbd-85f038ce427e
+RecreateDirectories: true
+Targets:
+    -
+        Name: Roo Code Tasks
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\rooveterinaryinc.roo-cline\tasks\
+        Recursive: true
+        Comment: 'tasks\_index.json plus one folder per task ID containing api_conversation_history.json (legacy claude_messages.json), ui_messages.json, task_metadata.json, history_item.json and per-task checkpoints\'
+    -
+        Name: Roo Code Settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\rooveterinaryinc.roo-cline\settings\
+        Recursive: true
+        Comment: 'mcp_settings.json (configured MCP servers) and custom_modes.yaml'
+    -
+        Name: Roo Code Checkpoints
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\rooveterinaryinc.roo-cline\checkpoints\
+        Recursive: true
+        Comment: 'Shadow git repositories per hashed workspace holding snapshots between agent edits. Can be large'
+    -
+        Name: Roo Code Cache
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\rooveterinaryinc.roo-cline\cache\
+        Recursive: true
+        Comment: 'Model metadata cache'
+
+# Documentation
+# https://github.com/RooCodeInc/Roo-Code/blob/main/src/utils/storage.ts - getStorageBasePath, tasks\, settings\, cache\ (roo-cline.customStoragePath override)
+# https://github.com/RooCodeInc/Roo-Code/blob/main/src/shared/globalFileNames.ts - file names within a task folder
+# https://github.com/RooCodeInc/Roo-Code/blob/main/src/core/task-persistence/apiMessages.ts - api_conversation_history.json
+# https://github.com/RooCodeInc/Roo-Code/blob/main/src/services/checkpoints/ShadowCheckpointService.ts - checkpoints layout
+# https://github.com/RooCodeInc/Roo-Code/blob/main/src/package.json - publisher RooVeterinaryInc, name roo-cline
+#
+# Roo Code stores everything under the VS Code extension globalStorage folder %APPDATA%\Code\User\globalStorage\rooveterinaryinc.roo-cline\
+# unless the roo-cline.customStoragePath setting points elsewhere (check the user settings.json collected by VisualStudioCode.tkape).
+# The project was archived in May 2026 in favor of a successor, but existing installs retain their task history.

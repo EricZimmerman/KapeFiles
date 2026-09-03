@@ -1,0 +1,142 @@
+Description: Cursor AI editor agent chat history, composer data, local file history, MCP and hook configuration, and logs
+Author: Eric Capuano
+Version: 1.0
+Id: f490d529-091c-47af-ba00-becdb4fc7a3f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Cursor Global State Database
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\globalStorage\
+        FileMask: 'state.vscdb*'
+        Comment: 'SQLite ItemTable and cursorDiskKV tables. cursorDiskKV holds agent/composer conversations as composerData:<composerId> and bubbleId:<composerId>:<bubbleId> records, checkpointId:* and messageRequestContext:* entries. Includes -wal, -shm and .backup files'
+    -
+        Name: Cursor Global Storage JSON
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\globalStorage\
+        FileMask: 'storage.json'
+        Comment: 'Window state, recently opened workspaces and files'
+    -
+        Name: Cursor Workspace State Databases
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\workspaceStorage\*\
+        FileMask: 'state.vscdb*'
+        Comment: 'Per-workspace ItemTable with composer.composerData (list of conversations for the workspace), aiService.prompts and legacy workbench.panel.aichat.view.aichat.chatdata'
+    -
+        Name: Cursor Workspace Mapping
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\workspaceStorage\*\
+        FileMask: 'workspace.json'
+        Comment: 'Maps each hashed workspaceStorage folder back to the workspace folder path'
+    -
+        Name: Cursor Local File History
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\History\
+        Recursive: true
+        Comment: 'Timeline copies of edited files (VS Code local history), including agent-driven edits'
+    -
+        Name: Cursor Unsaved Backups
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\Backups\
+        Recursive: true
+        Comment: 'Hot-exit backups of unsaved editor contents'
+    -
+        Name: Cursor User Settings
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\
+        FileMask: 'settings.json'
+        Comment: 'User settings'
+    -
+        Name: Cursor Logs
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\logs\
+        Recursive: true
+        Comment: 'Per-launch log folders (yyyyMMddTHHmmss) with main.log, renderer.log, exthost logs for anysphere.cursor-agent-exec, anysphere.cursor-mcp, cursor.hooks.*.log and cursor.requestTraces.log'
+    -
+        Name: Cursor Machine ID
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\
+        FileMask: 'machineid'
+        Comment: 'Stable machine identifier sent with telemetry'
+    -
+        Name: Cursor Agent Transcripts
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\projects\*\agent-transcripts\
+        Recursive: true
+        Comment: 'Per-project agent conversation transcripts as <conversationId>\<conversationId>.jsonl'
+    -
+        Name: Cursor Project Terminals
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\projects\*\terminals\
+        Recursive: true
+        Comment: 'Captured terminal output from agent-run commands'
+    -
+        Name: Cursor Project MCP Data
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\projects\*\mcps\
+        Recursive: true
+        Comment: 'Per-project MCP server state'
+    -
+        Name: Cursor AI Code Tracking
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\ai-tracking\
+        FileMask: 'ai-code-tracking.db*'
+        Comment: 'SQLite database attributing code changes to AI versus human authorship'
+    -
+        Name: Cursor MCP Configuration
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\
+        FileMask: 'mcp.json'
+        Comment: 'User-level MCP servers (commands, URLs, env)'
+    -
+        Name: Cursor Hooks
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\
+        FileMask: 'hooks.json'
+        Comment: 'User-level agent hooks executed on lifecycle events. Review for persistence or data exfiltration'
+    -
+        Name: Cursor Hook Scripts
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\hooks\
+        Recursive: true
+        Comment: 'Scripts referenced by hooks.json'
+    -
+        Name: Cursor Startup Arguments
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\
+        FileMask: 'argv.json'
+        Comment: 'Runtime arguments'
+    -
+        Name: Cursor Agents
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\agents\
+        Recursive: true
+        Comment: 'Custom agent definitions'
+    -
+        Name: Cursor Installed Extensions List
+        Category: Apps
+        Path: C:\Users\%user%\.cursor\extensions\
+        FileMask: 'extensions.json'
+        Comment: 'Installed extension identifiers and versions'
+    -
+        Name: Cursor Enterprise Hooks
+        Category: Apps
+        Path: C:\ProgramData\Cursor\
+        FileMask: 'hooks.json'
+        Comment: 'Machine-wide hooks configured by administrators'
+
+# Documentation
+# https://docs.specstory.com/faqs - Windows path of globalStorage\state.vscdb holding Cursor chat history
+# https://github.com/Callum-Ward/cursaves/blob/main/docs/how-cursor-stores-chats.md - cursorDiskKV keys (composerData, bubbleId, checkpointId, messageRequestContext)
+# https://cursor.com/docs/mcp - %USERPROFILE%\.cursor\mcp.json
+# https://cursor.com/docs/hooks - hooks.json locations including C:\ProgramData\Cursor\hooks.json, transcript_path
+# https://forum.cursor.com/t/accessing-the-full-agent-transcript-in-cursor/157311 - agent-transcripts JSONL location (confirmed by Cursor staff)
+# https://github.com/microsoft/vscode/blob/main/src/vs/platform/storage/electron-main/storageMain.ts - state.vscdb (Cursor is a VS Code fork)
+#
+# Cursor keeps VS Code-style user data under %APPDATA%\Cursor\ and Cursor-specific agent data under %USERPROFILE%\.cursor\.
+# Both roots, User\globalStorage\state.vscdb, User\workspaceStorage\<hash>\state.vscdb + workspace.json, User\History,
+# Backups, logs\<timestamp>\, machineid, and .cursor\{agents,ai-tracking\ai-code-tracking.db,plugins,projects\<slug>\{canvases,mcps,terminals},argv.json,extensions\extensions.json}
+# were confirmed on Windows Server 2025 with a fresh Cursor install (winget Anysphere.Cursor).
+# Agent conversations are stored in globalStorage\state.vscdb (cursorDiskKV table); per-workspace state.vscdb lists which
+# conversations belong to which folder. Full agent transcripts are also written as JSONL under .cursor\projects\<encoded path>\agent-transcripts\.
+# The .cursor\projects\<slug>\canvases\ folder can contain node_modules and is not collected.

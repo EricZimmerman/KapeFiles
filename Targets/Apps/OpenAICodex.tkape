@@ -1,0 +1,143 @@
+Description: OpenAI Codex CLI (agentic coding CLI) session rollouts, prompt history, state databases, and configuration
+Author: Eric Capuano
+Version: 1.0
+Id: 306d20f0-f659-47ae-98e6-3e3ab92c5f7c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Codex Session Rollouts
+        Category: Apps
+        Path: C:\Users\%user%\.codex\sessions\
+        Recursive: true
+        Comment: 'Full session transcripts organized as sessions\YYYY\MM\DD\rollout-<timestamp>-<sessionId>.jsonl. Contains session_meta (cwd, cli version, originator, model), every user and assistant message, reasoning summaries, tool/function calls including shell commands and their output'
+    -
+        Name: Codex Archived Session Rollouts
+        Category: Apps
+        Path: C:\Users\%user%\.codex\archived_sessions\
+        Recursive: true
+        Comment: 'Rollout files moved here when a session is archived from the CLI or app'
+    -
+        Name: Codex History and Session Index
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "*.jsonl"
+        Comment: 'history.jsonl (every prompt with session_id and unix timestamp), session_index.jsonl (session ID to thread name and last update), transcription-history.jsonl (voice dictation)'
+    -
+        Name: Codex State Databases
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "*.sqlite*"
+        Comment: 'state_*.sqlite (threads, projects, project_roots, thread_spawn_edges, remote_control_enrollments), thread_history_*.sqlite (thread_items, thread_turns), logs_*.sqlite (application logs), memories_*.sqlite, queue_*.sqlite, goals_*.sqlite and their -wal/-shm files'
+    -
+        Name: Codex Legacy Databases
+        Category: Apps
+        Path: C:\Users\%user%\.codex\sqlite\
+        FileMask: "*.db*"
+        Comment: 'Older codex-dev.db, codex-history-snapshots-dev.db and codex-thread-summaries-dev.db databases'
+    -
+        Name: Codex Configuration
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "config.toml"
+        Comment: 'Model, provider, approval policy, sandbox mode, MCP servers, profiles, and trusted project directories'
+    -
+        Name: Codex Global Instructions
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "AGENTS.md"
+        Comment: 'User-level instructions loaded into every session'
+    -
+        Name: Codex Hooks
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "hooks.json"
+        Comment: 'User-defined hook commands executed on lifecycle events'
+    -
+        Name: Codex Installation Metadata
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "installation_id"
+        Comment: 'Stable per-install identifier'
+    -
+        Name: Codex Version
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "version.json"
+        Comment: 'Installed CLI version and last update check'
+    -
+        Name: Codex External Agent Imports
+        Category: Apps
+        Path: C:\Users\%user%\.codex\
+        FileMask: "*import*.json"
+        Comment: 'external_agent_session_imports.json and claude-cowork-import-history.json: records of sessions imported from other agents (e.g. Claude Code) into Codex'
+    -
+        Name: Codex Rules
+        Category: Apps
+        Path: C:\Users\%user%\.codex\rules\
+        Recursive: true
+        Comment: 'Execution policy rules (.rules files) controlling which commands may run without approval'
+    -
+        Name: Codex Skills
+        Category: Apps
+        Path: C:\Users\%user%\.codex\skills\
+        Recursive: true
+        Comment: 'User-installed skills (SKILL.md plus supporting files)'
+    -
+        Name: Codex Agents
+        Category: Apps
+        Path: C:\Users\%user%\.codex\agents\
+        Recursive: true
+        Comment: 'Custom subagent definitions'
+    -
+        Name: Codex Memories
+        Category: Apps
+        Path: C:\Users\%user%\.codex\memories\
+        Recursive: true
+        Comment: 'Persistent memory notes written by the agent'
+    -
+        Name: Codex Shell Snapshots
+        Category: Apps
+        Path: C:\Users\%user%\.codex\shell_snapshots\
+        Recursive: true
+        Comment: 'Snapshot of the user''s shell environment captured at session start, named <sessionId>.<timestamp>.sh'
+    -
+        Name: Codex Logs
+        Category: Apps
+        Path: C:\Users\%user%\.codex\log\
+        Recursive: true
+        Comment: 'Text logs such as codex-login.log and codex-tui.log'
+    -
+        Name: Codex Thread Writer Locks
+        Category: Apps
+        Path: C:\Users\%user%\.codex\thread-writer-locks\
+        Recursive: true
+        Comment: 'Per-thread lock files indicating sessions that were open'
+    -
+        Name: Codex VS Code Extension Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\openai.chatgpt\
+        Recursive: true
+        Comment: 'Global storage for the Codex VS Code extension (publisher.name openai.chatgpt)'
+
+# Documentation
+# https://github.com/openai/codex
+# https://developers.openai.com/codex/config-reference - config.toml reference
+# https://developers.openai.com/codex/cli/reference - CLI reference including resume/sessions
+# https://github.com/openai/codex/discussions/3827 - Rollout file naming
+# https://ccusage.com/guide/codex/ - Third-party parser documenting sessions\YYYY\MM\DD\rollout-*.jsonl layout
+#
+# Codex stores all state under CODEX_HOME, which defaults to %USERPROFILE%\.codex\ (C:\Users\<user>\.codex\) on Windows.
+# If the CODEX_HOME environment variable is set (it may be a comma-separated list), check those directories instead.
+#
+# Primary evidence of use is sessions\YYYY\MM\DD\rollout-<ISO timestamp>-<uuid>.jsonl. Each line has timestamp, type
+# (session_meta, response_item, event_msg, turn_context, compacted) and payload. session_meta records cwd, cli_version,
+# originator (codex_cli_rs, vscode, codex_desktop, etc), model, and git metadata. response_item function_call entries
+# contain the exact shell commands executed and function_call_output their results.
+# history.jsonl provides a quick cross-session timeline of prompts.
+#
+# Project-level AGENTS.md files and .codex\ folders inside repositories are not collected because their locations are
+# arbitrary; the projects table in state_*.sqlite and the cwd values in session_meta identify which directories to examine.
+#
+# Deliberately not collected: .codex\auth.json (API key / OAuth tokens), .codex\cache\ and .codex\plugins\ (large, reproducible),
+# .codex\tmp\ and .codex\computer-use\ (transient).
+# Layout verified against Codex CLI on macOS; the relative layout under CODEX_HOME is the same on Windows.

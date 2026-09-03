@@ -1,0 +1,237 @@
+Description: Claude Code (Anthropic agentic coding CLI) session transcripts, prompt history, configuration, hooks, and IDE integration artifacts
+Author: Eric Capuano
+Version: 1.0
+Id: 4c41d4f8-faf9-42ac-a3ae-4d6dfe230698
+RecreateDirectories: true
+Targets:
+    -
+        Name: Claude Code Global State
+        Category: Apps
+        Path: C:\Users\%user%\
+        FileMask: ".claude.json*"
+        Comment: 'Global app state. Contains configured MCP servers, per-project allowed tools and trust decisions, list of every project directory Claude Code has been run in, OAuth account metadata (email/org, no tokens), install method, and usage counters. Backup copies match .claude.json.backup*'
+    -
+        Name: Claude Code Session Transcripts
+        Category: Apps
+        Path: C:\Users\%user%\.claude\projects\
+        Recursive: true
+        Comment: 'One subfolder per project (path with separators replaced by dashes). Each session is <sessionId>.jsonl containing every user prompt, assistant response, tool call and tool result. Subfolders per session hold subagent transcripts (subagents\agent-*.jsonl), oversized tool outputs (tool-results\), session-memory summaries and the per-project auto memory (memory\*.md)'
+    -
+        Name: Claude Code Prompt History
+        Category: Apps
+        Path: C:\Users\%user%\.claude\
+        FileMask: "history.jsonl"
+        Comment: 'Global index of every prompt typed into Claude Code with timestamp, project path, and pasted content references'
+    -
+        Name: Claude Code User Settings
+        Category: Apps
+        Path: C:\Users\%user%\.claude\
+        FileMask: "settings*.json"
+        Comment: 'settings.json and settings.local.json: permission allow/deny lists, hooks, environment variables, enabled plugins, model and telemetry configuration'
+    -
+        Name: Claude Code User Instructions
+        Category: Apps
+        Path: C:\Users\%user%\.claude\
+        FileMask: "CLAUDE.md"
+        Comment: 'User-level instructions loaded into every session'
+    -
+        Name: Claude Code Keybindings
+        Category: Apps
+        Path: C:\Users\%user%\.claude\
+        FileMask: "keybindings.json"
+        Comment: 'Custom keyboard shortcuts'
+    -
+        Name: Claude Code Stats Cache
+        Category: Apps
+        Path: C:\Users\%user%\.claude\
+        FileMask: "stats-cache.json"
+        Comment: 'Aggregated usage statistics (sessions, messages, tokens, models used per day)'
+    -
+        Name: Claude Code Hooks
+        Category: Apps
+        Path: C:\Users\%user%\.claude\hooks\
+        Recursive: true
+        Comment: 'User-defined scripts executed automatically on tool use, prompt submit, session start/stop, etc. Review for persistence or data exfiltration'
+    -
+        Name: Claude Code Commands
+        Category: Apps
+        Path: C:\Users\%user%\.claude\commands\
+        Recursive: true
+        Comment: 'User-defined slash commands (markdown prompts)'
+    -
+        Name: Claude Code Skills
+        Category: Apps
+        Path: C:\Users\%user%\.claude\skills\
+        Recursive: true
+        Comment: 'User-installed skills (SKILL.md plus supporting scripts). Can be large if many skills are installed'
+    -
+        Name: Claude Code Agents
+        Category: Apps
+        Path: C:\Users\%user%\.claude\agents\
+        Recursive: true
+        Comment: 'User-defined subagent definitions and their persistent agent-memory'
+    -
+        Name: Claude Code Rules
+        Category: Apps
+        Path: C:\Users\%user%\.claude\rules\
+        Recursive: true
+        Comment: 'User-level rule files loaded into every project'
+    -
+        Name: Claude Code Workflows
+        Category: Apps
+        Path: C:\Users\%user%\.claude\workflows\
+        Recursive: true
+        Comment: 'User-level dynamic workflow scripts that orchestrate subagents'
+    -
+        Name: Claude Code Plugin Configuration
+        Category: Apps
+        Path: C:\Users\%user%\.claude\plugins\
+        FileMask: "*.json"
+        Comment: 'installed_plugins.json, known_marketplaces.json, blocklist.json, config.json and plugin-catalog-cache.json. Records which third-party plugins and marketplaces were installed and from where. Plugin source trees under plugins\cache and plugins\repos are intentionally not collected'
+    -
+        Name: Claude Code Shell Snapshots
+        Category: Apps
+        Path: C:\Users\%user%\.claude\shell-snapshots\
+        Recursive: true
+        Comment: 'Snapshot of the user''s shell environment (functions, aliases, PATH) captured at session start. One file per session'
+    -
+        Name: Claude Code File History
+        Category: Apps
+        Path: C:\Users\%user%\.claude\file-history\
+        Recursive: true
+        Comment: 'Pre-edit copies of files modified by Claude Code, organized by session ID with versioned entries (<hash>@v1, @v2...). Allows reconstruction of what the agent changed'
+    -
+        Name: Claude Code Todos
+        Category: Apps
+        Path: C:\Users\%user%\.claude\todos\
+        Recursive: true
+        Comment: 'Per-session task lists (older versions)'
+    -
+        Name: Claude Code Tasks
+        Category: Apps
+        Path: C:\Users\%user%\.claude\tasks\
+        Recursive: true
+        Comment: 'Per-session task state, background task output and lock files (newer versions)'
+    -
+        Name: Claude Code Plans
+        Category: Apps
+        Path: C:\Users\%user%\.claude\plans\
+        Recursive: true
+        Comment: 'Plan-mode documents written before implementation'
+    -
+        Name: Claude Code Sessions
+        Category: Apps
+        Path: C:\Users\%user%\.claude\sessions\
+        FileMask: "*.json"
+        Comment: 'Live session registry keyed by PID: session ID, working directory, start time, and connected IDE. Per-session .key files are not collected'
+    -
+        Name: Claude Code IDE Locks
+        Category: Apps
+        Path: C:\Users\%user%\.claude\ide\
+        FileMask: "*.lock"
+        Comment: 'IDE integration lock files, one per IDE extension instance, containing the IDE PID, workspace folders and auth token used for the local IDE bridge'
+    -
+        Name: Claude Code Debug Logs
+        Category: Apps
+        Path: C:\Users\%user%\.claude\debug\
+        Recursive: true
+        Comment: 'Per-session debug logs when present'
+    -
+        Name: Claude Code Paste Cache
+        Category: Apps
+        Path: C:\Users\%user%\.claude\paste-cache\
+        Recursive: true
+        Comment: 'Content pasted into the prompt that was too large to inline in history.jsonl'
+    -
+        Name: Claude Code Session Environment
+        Category: Apps
+        Path: C:\Users\%user%\.claude\session-env\
+        Recursive: true
+        Comment: 'Per-session environment variable overrides'
+    -
+        Name: Claude Code Settings Backups
+        Category: Apps
+        Path: C:\Users\%user%\.claude\backups\
+        Recursive: true
+        Comment: 'Automatic backups of settings files, named by epoch millisecond timestamp'
+    -
+        Name: Claude Code Telemetry Cache
+        Category: Apps
+        Path: C:\Users\%user%\.claude\statsig\
+        Recursive: true
+        Comment: 'Feature-flag and telemetry cache containing stable device ID and last session metadata'
+    -
+        Name: Claude Code VS Code Extension Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Code\User\globalStorage\anthropic.claude-code\
+        Recursive: true
+        Comment: 'Global storage for the Claude Code VS Code extension (publisher.name anthropic.claude-code)'
+    -
+        Name: Claude Code Cursor Extension Storage
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Cursor\User\globalStorage\anthropic.claude-code\
+        Recursive: true
+        Comment: 'Global storage for the Claude Code extension when installed in Cursor'
+    -
+        Name: Claude Desktop Embedded Claude Code Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Claude\claude-code-sessions\
+        Recursive: true
+        Comment: 'Claude Code sessions launched from the Claude Desktop app (Code tab). Organized by account and session ID'
+    -
+        Name: Claude Desktop Cowork Agent Sessions
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Claude\local-agent-mode-sessions\
+        Recursive: true
+        Comment: 'Claude Desktop Cowork (local agent mode) session state. One JSON per turn plus spaces.json. Cowork runs the Claude Code agent against local files'
+    -
+        Name: Claude Desktop MCP Configuration
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Roaming\Claude\
+        FileMask: "claude_desktop_config.json"
+        Comment: 'MCP servers configured for Claude Desktop, which are also exposed to embedded Claude Code and Cowork sessions'
+    -
+        Name: Claude Desktop Embedded Claude Code Sessions (MSIX)
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code-sessions\
+        Recursive: true
+        Comment: 'Same as above for Microsoft Store / MSIX installs of Claude Desktop, where AppData\Roaming is virtualized under the package LocalCache'
+    -
+        Name: Claude Desktop Cowork Agent Sessions (MSIX)
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\local-agent-mode-sessions\
+        Recursive: true
+        Comment: 'Same as above for Microsoft Store / MSIX installs of Claude Desktop'
+    -
+        Name: Claude Desktop MCP Configuration (MSIX)
+        Category: Apps
+        Path: C:\Users\%user%\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\
+        FileMask: "claude_desktop_config.json"
+        Comment: 'Same as above for Microsoft Store / MSIX installs of Claude Desktop'
+
+# Documentation
+# https://code.claude.com/docs/en/claude-directory - Official reference for the ~/.claude directory layout
+# https://code.claude.com/docs/en/settings - Settings, permissions and environment variables
+# https://code.claude.com/docs/en/hooks - Hook configuration and lifecycle events
+# https://code.claude.com/docs/en/memory - CLAUDE.md and auto memory
+# https://github.com/anthropics/claude-code
+# https://github.com/anthropics/claude-code/issues/26073 - MSIX virtualized AppData path for Claude Desktop
+#
+# Claude Code stores its state under %USERPROFILE%\.claude\ (C:\Users\<user>\.claude\) plus a single %USERPROFILE%\.claude.json.
+# If the CLAUDE_CONFIG_DIR environment variable is set, everything under .claude\ lives in that directory instead; check
+# the user's environment variables (registry: HKU\<SID>\Environment) if the default location is empty.
+#
+# Primary evidence of use is projects\<project-slug>\<sessionId>.jsonl. Each line is a JSON record with type
+# (user, assistant, system, summary, etc), uuid, parentUuid, sessionId, cwd, gitBranch, version, timestamp and the
+# full message content including tool_use inputs (commands run, files written) and tool_result outputs.
+# history.jsonl provides a quick cross-project timeline of prompts. file-history\ contains the pre-edit copies
+# of every file the agent modified, keyed by session ID.
+#
+# Project-level configuration also exists inside individual repositories (<repo>\CLAUDE.md, <repo>\.claude\settings.json,
+# <repo>\.claude\settings.local.json, <repo>\.mcp.json). Those are not collected here because their locations are
+# arbitrary; the project list in .claude.json and the projects\ folder names identify which directories to examine.
+#
+# Deliberately not collected: .claude\.credentials.json (OAuth tokens), .claude\sessions\*.key, and the plugin
+# source trees under .claude\plugins\cache and .claude\plugins\repos (large, reproducible from the recorded marketplace URLs).
+# Folder names for the Claude Desktop embedded sessions were verified against the macOS build (Application Support\Claude)
+# and mapped to the equivalent Windows AppData\Roaming\Claude location.
