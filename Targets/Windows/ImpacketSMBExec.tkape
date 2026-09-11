@@ -7,13 +7,10 @@ Targets:
     -
         Name: SMBExec Output File
         Category: LateralMovement
-        Path: C:\__output
+        Path: C:\
+        FileMask: __output
+        Recursive: true # Optional
         Comment: "Command output file created by Impacket smbexec.py. Persists when the tool crashes before cleanup."
-    -
-        Name: SMBExec Batch File
-        Category: LateralMovement
-        Path: %systemroot%\Temp\execute.bat
-        Comment: "Batch file written by Impacket smbexec.py containing the attacker's command. Persists when the tool crashes before cleanup."
 
 # Documentation
 # https://u0041.co/posts/articals/smbexec-analysis/
