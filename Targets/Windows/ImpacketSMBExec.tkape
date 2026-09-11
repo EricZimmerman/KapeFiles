@@ -1,0 +1,19 @@
+Description: Impacket SMBExec Artifacts
+Author: Paul CABON CERT Almond
+Version: 1.0
+Id: f171a1d9-5f47-40f6-8143-d9787de560a9
+RecreateDirectories: true
+Targets:
+    -
+        Name: SMBExec Output File
+        Category: LateralMovement
+        Path: C:\__output
+        Comment: "Command output file created by Impacket smbexec.py. Persists when the tool crashes before cleanup."
+    -
+        Name: SMBExec Batch File
+        Category: LateralMovement
+        Path: %systemroot%\Temp\execute.bat
+        Comment: "Batch file written by Impacket smbexec.py containing the attacker's command. Persists when the tool crashes before cleanup."
+
+# Documentation
+# https://u0041.co/posts/articals/smbexec-analysis/
