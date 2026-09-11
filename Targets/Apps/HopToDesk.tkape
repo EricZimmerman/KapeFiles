@@ -1,0 +1,15 @@
+Description: HopToDesk artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 00e509f0-5c94-431a-ad16-1a6934ede6d4
+RecreateDirectories: true
+Targets:
+    -
+        Name: HopToDesk configuration and logs
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\HopToDesk\config\
+        Recursive: true
+        Comment: "Collects HopToDesk configuration and current activity log"
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/hoptodesk.yaml

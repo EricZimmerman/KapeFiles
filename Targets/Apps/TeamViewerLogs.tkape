@@ -1,6 +1,6 @@
 Description: TeamViewer Logs
-Author: Hadar Yudovich, Sam Smoker
-Version: 2.0
+Author: Hadar Yudovich, Sam Smoker, Paul Cabon CERT Almond
+Version: 2.1
 Id: 6f2cd531-1f4b-4f0b-aa96-2426621b0a14
 RecreateDirectories: true
 Targets:
@@ -28,6 +28,21 @@ Targets:
         Path: C:\Users\%user%\AppData\Roaming\TeamViewer\MRU\RemoteSupport\
         Recursive: true
         Comment: "Includes miscellaneous config files"
+    -
+        Name: TeamViewer installer log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Temp\TeamViewer\
+        FileMask: TV15Install.log
+    -
+        Name: TeamViewer chat file cache database
+        Category: Database
+        Path: C:\Users\%user%\AppData\Local\TeamViewer\Database\
+        FileMask: tvchatfilecache.db
+    -
+        Name: TeamViewer remote printing database
+        Category: Database
+        Path: C:\Users\%user%\AppData\Local\TeamViewer\RemotePrinting\
+        FileMask: tvprint.db
 
 # Documentation
 # https://www.champlain.edu/Documents/LCDI/archive/Team-Viewer-Forensics.pdf

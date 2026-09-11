@@ -1,6 +1,6 @@
 Description: Splashtop
-Author: Andrew Rathbun, Yogesh Khatri, Evangelos Dragonas
-Version: 2.0
+Author: Andrew Rathbun, Yogesh Khatri, Evangelos Dragonas, Paul Cabon CERT Almond
+Version: 2.1
 Id: 940c768b-b32c-4b4b-82d7-68385ff470c8
 
 RecreateDirectories: true
@@ -29,6 +29,22 @@ Targets:
         Path: C:\ProgramData\Splashtop\Splashtop Remote Client for ST*\*\log
         Recursive: true
         Comment: "Collects logs for Splashtop Enterprise/Business(legacy)"
+    -
+        Name: Splashtop Streamer status event log
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\Logs\
+        FileMask: Splashtop-Splashtop Streamer-Status%4Operational.evtx
+    -
+        Name: Splashtop Streamer remote session event log
+        Category: EventLogs
+        Path: C:\Windows\System32\winevt\Logs\
+        FileMask: Splashtop-Splashtop Streamer-Remote Session%4Operational.evtx
+    -
+        Name: Splashtop Streamer agent database
+        Category: Database
+        Path: C:\Program Files (x86)\Splashtop\Splashtop Remote\Server\db\
+        FileMask: SRAgent.sqlite3
+        Comment: "Collects Splashtop Streamer agent database"
 
 # Documentation
 # https://jsac.jpcert.or.jp/archive/2023/pdf/JSAC2023_1_1_yamashige-nakatani-tanaka_en.pdf

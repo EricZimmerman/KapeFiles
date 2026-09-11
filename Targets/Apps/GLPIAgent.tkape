@@ -1,0 +1,24 @@
+Description: GLPI Agent artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: a1c8018a-bbd9-477e-b903-c46e28380ae9
+RecreateDirectories: true
+Targets:
+    -
+        Name: GLPI Agent configuration
+        Category: RemoteAdmin
+        Path: C:\Program Files\GLPI-Agent\etc\
+        FileMask: agent.cfg
+    -
+        Name: GLPI Agent log
+        Category: ApplicationLogs
+        Path: C:\Program Files\GLPI-Agent\logs\
+        FileMask: glpi-agent.log
+    -
+        Name: GLPI Agent state data
+        Category: RemoteAdmin
+        Path: C:\Program Files\GLPI-Agent\var\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/glpi.yaml

@@ -1,0 +1,14 @@
+Description: VIZOR Asset Management Client artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 0b7981b1-21b2-40a8-b9f2-5f2f0caec3ed
+RecreateDirectories: true
+Targets:
+    -
+        Name: VIZOR client configuration files
+        Category: RemoteAdmin
+        Path: C:\
+        FileMask: regex:(LUCLIENT\.(INI|MOD)|winchk\.dat|luhboot\.bat)
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/vizor.yaml

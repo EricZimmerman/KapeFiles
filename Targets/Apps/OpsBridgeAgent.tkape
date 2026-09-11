@@ -1,0 +1,24 @@
+Description: OpsBridge Agent artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: e909fa5d-0fa9-4e26-b8eb-c0004101d552
+RecreateDirectories: true
+Targets:
+    -
+        Name: OpsBridge Agent state and task data
+        Category: RemoteAdmin
+        Path: C:\ProgramData\OpsBridge\
+        FileMask: regex:(agent_state\.json|\.persisted_v4|task_.*\.json)
+    -
+        Name: OpsBridge Agent logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\OpsBridge\
+        FileMask: regex:(agent\.log|install\.log)
+    -
+        Name: OpsBridge Agent scheduled task
+        Category: RemoteAdmin
+        Path: C:\Windows\System32\Tasks\
+        FileMask: OpsBridge Agent
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/opsbridge_agent.yaml

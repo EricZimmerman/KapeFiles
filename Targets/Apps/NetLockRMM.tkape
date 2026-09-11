@@ -1,0 +1,19 @@
+Description: NetLock RMM artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: c045a607-7021-48bb-a23a-cf912824b33d
+RecreateDirectories: true
+Targets:
+    -
+        Name: NetLock RMM installer logs
+        Category: ApplicationLogs
+        Path: C:\temp\netlock rmm\installer\logs\
+        Recursive: true
+    -
+        Name: NetLock RMM agent configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\0x101 Cyber Security\NetLock RMM\Comm Agent\
+        FileMask: server_config.json
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/netlock_rmm.yaml

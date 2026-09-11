@@ -1,0 +1,24 @@
+Description: Teramind Agent artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: fac11bf3-bb41-48f2-b658-ae9565aed60c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Teramind Agent configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Teramind Agent\
+        FileMask: config
+    -
+        Name: Teramind legacy agent configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\
+        FileMask: config
+    -
+        Name: Teramind updater configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\{4CEC2908-5CE4-48F0-A717-8FC833D8017A}\updates\
+        FileMask: rundll32.exe.config
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/teramind.yaml

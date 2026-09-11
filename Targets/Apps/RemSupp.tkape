@@ -1,0 +1,29 @@
+Description: RemSupp artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 3d1e9018-461d-4fae-95b2-39da6a48bd52
+RecreateDirectories: true
+Targets:
+    -
+        Name: RemSupp application state
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\RemSupp\
+        FileMask: regex:(Local State|Preferences|chromium\.log|quitAndInstall\.json)
+    -
+        Name: RemSupp Chromium local storage
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\RemSupp\Local Storage\leveldb\
+        Recursive: true
+    -
+        Name: RemSupp crash and telemetry data
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\RemSupp\Crashpad\
+        Recursive: true
+    -
+        Name: RemSupp telemetry queue and session data
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\RemSupp\sentry\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/remsupp.yaml

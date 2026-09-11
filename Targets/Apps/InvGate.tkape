@@ -1,0 +1,24 @@
+Description: InvGate artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 02cedcbc-1f59-4427-8148-99c242854fcc
+RecreateDirectories: true
+Targets:
+    -
+        Name: InvGate client logs
+        Category: ApplicationLogs
+        Path: C:\Program Files (x86)\Inventec\InvGate.net Client\logs\
+        Recursive: true
+    -
+        Name: InvGate client data
+        Category: RemoteAdmin
+        Path: C:\Program Files (x86)\Inventec\InvGate.net Client\
+        FileMask: regex:(InvClient-Log\.txt|invid|sm_rep\.inv|sm_temp\.inv|build\.txt)
+    -
+        Name: InvGate USB activity log
+        Category: ApplicationLogs
+        Path: C:\Program Files (x86)\Inventec\InvGate.net Client\usbFiles\
+        FileMask: usbLog.txt
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/invgate.yaml

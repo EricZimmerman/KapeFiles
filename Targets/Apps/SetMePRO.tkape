@@ -1,0 +1,24 @@
+Description: SetMe PRO artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 050348be-3c11-492c-8b2b-e8dc7b2169e9
+RecreateDirectories: true
+Targets:
+    -
+        Name: SetMe PRO configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Techinline Ltd\
+        FileMask: settings.ini*
+    -
+        Name: SetMe PRO client data
+        Category: RemoteAdmin
+        Path: C:\ProgramData\SetMe Client\
+        Recursive: true
+    -
+        Name: SetMe PRO Sentry data
+        Category: ApplicationLogs
+        Path: C:\Windows\Temp\setme\Sentry\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/setme_pro.yaml

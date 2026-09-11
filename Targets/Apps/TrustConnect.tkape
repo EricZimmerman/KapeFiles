@@ -1,0 +1,19 @@
+Description: TrustConnect artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: c32ecdae-473f-458a-81d5-035a76044980
+RecreateDirectories: true
+Targets:
+    -
+        Name: TrustConnect Agent configuration
+        Category: RemoteAdmin
+        Path: C:\Program Files\TrustConnect Agent\
+        FileMask: config.json
+    -
+        Name: TrustConnect device configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\TrustConnect\*\
+        FileMask: regex:(config\.json|device\.id)
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/trustconnect.yaml

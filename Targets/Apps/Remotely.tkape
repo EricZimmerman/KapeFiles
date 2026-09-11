@@ -1,0 +1,19 @@
+Description: Remotely artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 5b0d7035-177a-4d83-8947-18875416268f
+RecreateDirectories: true
+Targets:
+    -
+        Name: Remotely connection information
+        Category: RemoteAdmin
+        Path: C:\Program Files\Remotely\
+        FileMask: ConnectionInfo.json
+    -
+        Name: Remotely installer log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: Remotely_Install.txt
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/remotely.yaml

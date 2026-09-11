@@ -1,0 +1,19 @@
+Description: NVDA artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: f493e76c-52ae-4e87-b150-23c4b36e1d96
+RecreateDirectories: true
+Targets:
+    -
+        Name: NVDA log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\nvda\
+        FileMask: nvda.log
+    -
+        Name: NVDA configuration
+        Category: Configuration
+        Path: C:\Users\%user%\AppData\Roaming\nvda\
+        FileMask: nvda.ini
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/nvda.yaml

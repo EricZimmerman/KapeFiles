@@ -1,0 +1,24 @@
+Description: ControlR artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: a73d0efd-0244-467b-89fe-4571c7c28a2f
+RecreateDirectories: true
+Targets:
+    -
+        Name: ControlR agent configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\ControlR\*\
+        FileMask: appsettings.json
+    -
+        Name: ControlR agent logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\ControlR\*\Logs\ControlR.Agent\
+        FileMask: LogFile*.log
+    -
+        Name: ControlR desktop client logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\ControlR\*\Logs\ControlR.DesktopClient\
+        FileMask: LogFile*.log
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/controlr.yaml

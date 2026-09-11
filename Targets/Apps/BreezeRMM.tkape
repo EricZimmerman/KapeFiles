@@ -1,0 +1,25 @@
+Description: BreezeRMM artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: da2b25db-0d67-4fc5-b529-f2e7bb219fa6
+RecreateDirectories: true
+Targets:
+    -
+        Name: BreezeRMM agent log
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Breeze\logs\
+        FileMask: agent.log
+    -
+        Name: BreezeRMM agent configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Breeze\
+        FileMask: agent.env
+    -
+        Name: BreezeRMM agent secrets
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Breeze\
+        FileMask: secrets.yaml
+        Comment: "Collects agent secrets; handle the output as sensitive evidence"
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/breezermm.yaml

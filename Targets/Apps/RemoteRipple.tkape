@@ -1,0 +1,19 @@
+Description: Remote Ripple artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 7c5427a5-74e6-463f-97f1-f862c9563972
+RecreateDirectories: true
+Targets:
+    -
+        Name: Remote Ripple application data
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\GlavSoft\RemoteRipple\
+        Recursive: true
+    -
+        Name: Remote Ripple temporary files
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: Remote_Ripple_*
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/remoteripple.yaml

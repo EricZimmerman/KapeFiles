@@ -1,0 +1,29 @@
+Description: Teleport Connect artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 9d80d67c-30cf-43f4-a151-226c6e94dfc2
+RecreateDirectories: true
+Targets:
+    -
+        Name: Teleport Connect application state
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\Teleport Connect\
+        FileMask: regex:(app_state\.json|app_config\.json)
+    -
+        Name: Teleport Connect certificate
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\Teleport Connect\certs\
+        FileMask: tshd.crt
+    -
+        Name: Teleport Connect logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\Teleport Connect\logs\
+        Recursive: true
+    -
+        Name: Teleport Connect updater data
+        Category: RemoteAdmin
+        Path: C:\ProgramData\TeleportConnectUpdater\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/teleport_connect.yaml

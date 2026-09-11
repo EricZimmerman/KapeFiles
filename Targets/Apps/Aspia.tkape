@@ -1,0 +1,26 @@
+Description: Aspia artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: d410dfb2-3039-4194-abfe-fc3977541914
+RecreateDirectories: true
+Targets:
+    -
+        Name: Aspia client configuration
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\aspia\
+        FileMask: client.ini
+        Comment: "Collects Aspia client configuration"
+    -
+        Name: Aspia client logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Temp\aspia\
+        FileMask: aspia_client-*.log
+        Comment: "Collects Aspia client logs"
+    -
+        Name: Aspia Qt configuration
+        Category: RemoteAdmin
+        Path: C:\Program Files\Aspia\Client\
+        FileMask: qt.conf
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/aspia.yaml

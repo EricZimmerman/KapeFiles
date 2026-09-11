@@ -1,0 +1,15 @@
+Description: Alpemix artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: a573643e-3a8e-4efc-b51d-76411e9351aa
+RecreateDirectories: true
+Targets:
+    -
+        Name: Alpemix client configuration
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Local\Alpemix\
+        FileMask: Alpemix.ini
+        Comment: "Collects Alpemix client configuration"
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/alpemix.yaml

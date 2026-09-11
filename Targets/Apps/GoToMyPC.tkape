@@ -1,0 +1,14 @@
+Description: GoToMyPC artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 85761d92-537b-42d2-98b2-d0144fdfc2bc
+RecreateDirectories: true
+Targets:
+    -
+        Name: GoToMyPC log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\GoTo\Logs\
+        FileMask: goto.log
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/gotomypc.yaml

@@ -1,0 +1,20 @@
+Description: RMMmax artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 92e1fecd-30b4-47a3-8cab-cfb70b2e025e
+RecreateDirectories: true
+Targets:
+    -
+        Name: RMMmax agent activity log
+        Category: ApplicationLogs
+        Path: C:\ProgramData\RMMmax\AgentService\
+        FileMask: activity.log
+    -
+        Name: RMMmax temporary PowerShell scripts
+        Category: RemoteAdmin
+        Path: C:\Windows\Temp\
+        FileMask: rmmmax_*.ps1
+        Comment: "Collects scripts created by the RMMmax agent"
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/rmmmax.yaml

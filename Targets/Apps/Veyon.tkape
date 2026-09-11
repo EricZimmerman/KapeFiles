@@ -1,0 +1,19 @@
+Description: Veyon artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: d3350484-c5e0-4602-b293-54fa3cb903fa
+RecreateDirectories: true
+Targets:
+    -
+        Name: Veyon service logs
+        Category: ApplicationLogs
+        Path: C:\Windows\Temp\
+        FileMask: regex:Veyon(Server|Service)\.log
+    -
+        Name: Veyon CLI log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\
+        FileMask: VeyonCLI.log
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/veyon.yaml

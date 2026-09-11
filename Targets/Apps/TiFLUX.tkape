@@ -1,0 +1,24 @@
+Description: TiFLUX artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: ed1f1a74-759d-4faa-b211-5d6809b522c7
+RecreateDirectories: true
+Targets:
+    -
+        Name: TiFLUX application data
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Tiflux\
+        Recursive: true
+    -
+        Name: TiFLUX service configuration
+        Category: RemoteAdmin
+        Path: C:\Program Files (x86)\TiFLUX\
+        FileMask: TiUpdateService.exe.config
+    -
+        Name: TiFLUX desktop agent configuration
+        Category: RemoteAdmin
+        Path: C:\Program Files (x86)\TiFLUX\desktop\
+        FileMask: TiAgent.exe.config
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/tiflux.yaml

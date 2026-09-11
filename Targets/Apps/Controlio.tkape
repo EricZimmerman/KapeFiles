@@ -1,0 +1,15 @@
+Description: Controlio artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: b5a0cb1a-82b9-43b2-b9de-b4083b6c007c
+RecreateDirectories: true
+Targets:
+    -
+        Name: Controlio application data
+        Category: RemoteAdmin
+        Path: C:\ProgramData\{E0E95C6C-F194-4846-928D-E5538022226D}\
+        Recursive: true
+        Comment: "Collects Controlio application data"
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/controlio.yaml

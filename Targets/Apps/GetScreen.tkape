@@ -1,0 +1,24 @@
+Description: GetScreen artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 5da9c6f6-ed4e-4e7f-93fa-dbb736363bfd
+RecreateDirectories: true
+Targets:
+    -
+        Name: GetScreen logs and session information
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Getscreen.me\
+        FileMask: regex:.*\.(gui\.)?log
+    -
+        Name: GetScreen session information
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Getscreen.me\
+        FileMask: session.inf
+    -
+        Name: GetScreen user data
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Local\Getscreen.me\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/getscreen.yaml

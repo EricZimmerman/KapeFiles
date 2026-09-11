@@ -1,0 +1,30 @@
+Description: ImmyBot artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 775fc7cb-6caa-4a1a-89d3-ea7b845ff68a
+RecreateDirectories: true
+Targets:
+    -
+        Name: ImmyBot logs
+        Category: ApplicationLogs
+        Path: C:\ProgramData\ImmyBot\Logs\
+        Recursive: true
+    -
+        Name: ImmyBot scripts
+        Category: RemoteAdmin
+        Path: C:\ProgramData\ImmyBot\Scripts\
+        Recursive: true
+        Comment: "Collects scripts deployed by ImmyBot"
+    -
+        Name: ImmyBot agent configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\ImmyBotAgentService\
+        FileMask: config.json
+    -
+        Name: ImmyBot temporary files
+        Category: RemoteAdmin
+        Path: C:\Windows\Temp\ImmyBot\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/immybot.yaml

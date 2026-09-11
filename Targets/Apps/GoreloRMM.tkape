@@ -1,0 +1,21 @@
+Description: Gorelo RMM artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: f0e11170-d969-45b0-8126-caeda8df2729
+RecreateDirectories: true
+Targets:
+    -
+        Name: Gorelo RMM diagnostics logs
+        Category: ApplicationLogs
+        Path: C:\Program Files\Gorelo\LogFiles\
+        Recursive: true
+        FileMask: diagnostics-*.txt
+    -
+        Name: Gorelo RMM downloaded plugins
+        Category: RemoteAdmin
+        Path: C:\Program Files\Gorelo\Agent\Plugins\Downloads\
+        Recursive: true
+        Comment: "Collects RMM plugins downloaded to the endpoint"
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/gorelormm.yaml

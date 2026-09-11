@@ -1,0 +1,14 @@
+Description: Faronics Deep Freeze artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 287f812c-d672-4cbb-b130-5f82a142006a
+RecreateDirectories: true
+Targets:
+    -
+        Name: Faronics Deep Freeze service initialization log
+        Category: ApplicationLogs
+        Path: C:\Windows\Temp\
+        FileMask: DFServiceInit.log
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/faronics_deep_freeze.yaml

@@ -1,9 +1,21 @@
 Description: Composite target for files related to remote administration tools
-Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore
-Version: 2.2
+Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore, Paul Cabon CERT Almond
+Version: 2.3
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
+    -
+        Name: Access Remote PC
+        Category: ApplicationLogs
+        Path: AccessRemotePC.tkape
+    -
+        Name: Alpemix
+        Category: ApplicationLogs
+        Path: Alpemix.tkape
+    -
+        Name: Aspia
+        Category: ApplicationLogs
+        Path: Aspia.tkape
     -
         Name: Action1
         Category: ApplicationLogs
@@ -17,6 +29,18 @@ Targets:
         Category: ApplicationLogs
         Path: AnyDesk.tkape
     -
+        Name: BreezeRMM
+        Category: ApplicationLogs
+        Path: BreezeRMM.tkape
+    -
+        Name: ControlR
+        Category: ApplicationLogs
+        Path: ControlR.tkape
+    -
+        Name: Controlio
+        Category: ApplicationLogs
+        Path: Controlio.tkape
+    -
         Name: Chrome Remote Desktop
         Category: ApplicationLogs
         Path: ApplicationEvents.tkape
@@ -24,6 +48,50 @@ Targets:
         Name: DWAgent
         Category: ApplicationLogs
         Path: DWAgent.tkape
+    -
+        Name: Faronics Deep Freeze
+        Category: ApplicationLogs
+        Path: FaronicsDeepFreeze.tkape
+    -
+        Name: Faronics Deploy
+        Category: ApplicationLogs
+        Path: FaronicsDeploy.tkape
+    -
+        Name: FleetDeck
+        Category: ApplicationLogs
+        Path: FleetDeck.tkape
+    -
+        Name: Freshservice Discovery Agent
+        Category: ApplicationLogs
+        Path: Freshservice.tkape
+    -
+        Name: GetScreen
+        Category: ApplicationLogs
+        Path: GetScreen.tkape
+    -
+        Name: GLPI Agent
+        Category: ApplicationLogs
+        Path: GLPIAgent.tkape
+    -
+        Name: Gorelo RMM
+        Category: ApplicationLogs
+        Path: GoreloRMM.tkape
+    -
+        Name: GoToMyPC
+        Category: ApplicationLogs
+        Path: GoToMyPC.tkape
+    -
+        Name: HopToDesk
+        Category: ApplicationLogs
+        Path: HopToDesk.tkape
+    -
+        Name: ImmyBot
+        Category: ApplicationLogs
+        Path: ImmyBot.tkape
+    -
+        Name: InvGate
+        Category: ApplicationLogs
+        Path: InvGate.tkape
     -
         Name: ISLOnline
         Category: ApplicationLogs
@@ -45,6 +113,10 @@ Targets:
         Category: ApplicationLogs
         Path: LogMeIn.tkape
     -
+        Name: LocalXpose
+        Category: ApplicationLogs
+        Path: LocalXpose.tkape
+    -
         Name: MeshAgent
         Category: ApplicationLogs
         Path: MeshAgent.tkape
@@ -53,9 +125,37 @@ Targets:
         Category: ApplicationLogs
         Path: mRemoteNG.tkape
     -
+        Name: Monitic
+        Category: ApplicationLogs
+        Path: Monitic.tkape
+    -
         Name: NetMonitor
         Category: ApplicationLogs
         Path: NetMonitorforEmployeesProfessional.tkape
+    -
+        Name: NetBird
+        Category: ApplicationLogs
+        Path: NetBird.tkape
+    -
+        Name: NetLock RMM
+        Category: ApplicationLogs
+        Path: NetLockRMM.tkape
+    -
+        Name: Ninite Pro
+        Category: ApplicationLogs
+        Path: Ninite.tkape
+    -
+        Name: NVDA
+        Category: ApplicationLogs
+        Path: NVDA.tkape
+    -
+        Name: OpsBridge Agent
+        Category: ApplicationLogs
+        Path: OpsBridgeAgent.tkape
+    -
+        Name: PDQ Connect
+        Category: ApplicationLogs
+        Path: PDQConnect.tkape
     -
         Name: QuickAssist
         Category: ApplicationLogs
@@ -86,6 +186,22 @@ Targets:
         Path: RemoteManipulatorSystem.tkape
         Comment: "Contains logs related to Remote Manipulator System"
     -
+        Name: Remote Ripple
+        Category: ApplicationLogs
+        Path: RemoteRipple.tkape
+    -
+        Name: Remotely
+        Category: ApplicationLogs
+        Path: Remotely.tkape
+    -
+        Name: RemSupp
+        Category: ApplicationLogs
+        Path: RemSupp.tkape
+    -
+        Name: RMMmax
+        Category: ApplicationLogs
+        Path: RMMmax.tkape
+    -
         Name: Remote Utilities
         Category: ApplicationLogs
         Path: RemoteUtilities_app.tkape
@@ -108,9 +224,29 @@ Targets:
         Category: ApplicationLogs
         Path: SupremoRemoteDesktop.tkape
     -
+        Name: SetMe PRO
+        Category: ApplicationLogs
+        Path: SetMePRO.tkape
+    -
         Name: TeamViewer
         Category: ApplicationLogs
         Path: TeamViewerLogs.tkape
+    -
+        Name: TiFLUX
+        Category: ApplicationLogs
+        Path: TiFLUX.tkape
+    -
+        Name: Teleport Connect
+        Category: ApplicationLogs
+        Path: TeleportConnect.tkape
+    -
+        Name: Teramind
+        Category: ApplicationLogs
+        Path: Teramind.tkape
+    -
+        Name: TrustConnect
+        Category: ApplicationLogs
+        Path: TrustConnect.tkape
     -
         Name: UEMS
         Category: ApplicationLogs
@@ -123,6 +259,14 @@ Targets:
         Name: VNC
         Category: ApplicationLogs
         Path: VNCLogs.tkape
+    -
+        Name: Veyon
+        Category: ApplicationLogs
+        Path: Veyon.tkape
+    -
+        Name: VIZOR Asset Management Client
+        Category: ApplicationLogs
+        Path: VIZOR.tkape
     -
         Name: Xeox
         Category: ApplicationLogs

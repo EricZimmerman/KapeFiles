@@ -1,0 +1,14 @@
+Description: LocalXpose artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 95f589f4-8d72-48c5-8c4a-941c6ba66fdd
+RecreateDirectories: true
+Targets:
+    -
+        Name: LocalXpose configuration
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Roaming\loclx\
+        FileMask: config.yaml
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/localxpose.yaml

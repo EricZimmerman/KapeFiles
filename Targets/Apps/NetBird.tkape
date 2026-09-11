@@ -1,0 +1,14 @@
+Description: NetBird artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 5fb48e8f-6a08-4ac6-8317-f4cbcb89e659
+RecreateDirectories: true
+Targets:
+    -
+        Name: NetBird configuration
+        Category: RemoteAdmin
+        Path: C:\ProgramData\Netbird\
+        FileMask: config.json
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/netbird.yaml

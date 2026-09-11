@@ -1,0 +1,14 @@
+Description: PDQ Connect artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 9d5b6400-9b9a-40f5-b055-2a1ca6a6d348
+RecreateDirectories: true
+Targets:
+    -
+        Name: PDQ Connect Agent database journal
+        Category: Database
+        Path: C:\ProgramData\PDQ\PDQConnectAgent\
+        FileMask: PDQConnectAgent.db-journal
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/pdq_connect.yaml

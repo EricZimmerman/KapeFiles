@@ -1,6 +1,6 @@
-Description: Action1 Application Logs
-Author: Andrew Skatoff @DFIR_TNT
-Version: 1.0
+Description: Action1 Application Logs and Data
+Author: Andrew Skatoff @DFIR_TNT, Paul Cabon CERT Almond
+Version: 1.1
 Id: 9cdf145a-c67e-45cd-bdec-1bcfeb2d50b1
 RecreateDirectories: true
 Targets:
@@ -10,6 +10,18 @@ Targets:
         Path: C:\Windows\Action1\logs
         FileMask: '*.log'
         Comment: "Contains Application Log entries such as service start and incomming connections, and deployed scripts/jobs."
+    -
+        Name: Action1 deployed scripts
+        Category: RemoteAdmin
+        Path: C:\Windows\Action1\scripts\
+        Recursive: true
+        Comment: "Collects scripts deployed by the Action1 agent"
+    -
+        Name: Action1 rule data
+        Category: RemoteAdmin
+        Path: C:\Windows\Action1\rule_data\
+        Recursive: true
+        Comment: "Collects Action1 rule data"
 
 # Documentation
 # https://dfirtnt.wordpress.com/2023/08/23/rmm-action1-client-side-evidence/

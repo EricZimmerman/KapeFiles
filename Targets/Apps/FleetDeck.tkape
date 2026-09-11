@@ -1,0 +1,14 @@
+Description: FleetDeck artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: a30b1c49-47d6-4068-a537-eaeb6fe5dcbf
+RecreateDirectories: true
+Targets:
+    -
+        Name: FleetDeck temporary data
+        Category: RemoteAdmin
+        Path: C:\Windows\Temp\FleetDeck\
+        Recursive: true
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/fleetdeck.yaml

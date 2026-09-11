@@ -1,0 +1,29 @@
+Description: Freshservice Discovery Agent artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 671b9833-6382-43e4-ac80-fbf17752da26
+RecreateDirectories: true
+Targets:
+    -
+        Name: Freshservice Discovery Agent logs and configuration
+        Category: ApplicationLogs
+        Path: C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\
+        FileMask: regex:(settings\.conf|fslogger\.xml)
+    -
+        Name: Freshservice Discovery Agent logs
+        Category: ApplicationLogs
+        Path: C:\Program Files (x86)\Freshdesk\Freshservice Discovery Agent\logs\
+        Recursive: true
+    -
+        Name: Freshservice Discovery Probe database
+        Category: Database
+        Path: C:\Program Files (x86)\Freshworks\FreshServiceProbe\db\
+        FileMask: freshservice_discovery.db
+    -
+        Name: Freshservice Discovery Probe configuration
+        Category: RemoteAdmin
+        Path: C:\Program Files (x86)\Freshworks\FreshServiceProbe\conf\
+        FileMask: regex:(Configurations\.json|fslogger\.xml|fsautoupdatelogger\.xml)
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/freshservice.yaml

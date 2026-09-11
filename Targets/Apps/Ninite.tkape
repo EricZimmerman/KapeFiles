@@ -1,0 +1,19 @@
+Description: Ninite Pro artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: c6326376-3c32-4b17-9fd9-b1bc51115fef
+RecreateDirectories: true
+Targets:
+    -
+        Name: Ninite downloaded files
+        Category: RemoteAdmin
+        Path: C:\Users\%user%\AppData\Local\Temp\NiniteDownloads\
+        Recursive: true
+    -
+        Name: Ninite update summary log
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Local\Temp\
+        FileMask: NiniteUpdateSummary.log
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/ninite.yaml

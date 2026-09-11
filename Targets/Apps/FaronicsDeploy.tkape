@@ -1,0 +1,19 @@
+Description: Faronics Deploy artifacts
+Author: Paul Cabon CERT Almond
+Version: 1.0
+Id: 77d4c717-8448-4e62-9cc1-ee6bbe8b5044
+RecreateDirectories: true
+Targets:
+    -
+        Name: Faronics Deploy cloud agent log
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Faronics\StorageSpace\FWA\
+        FileMask: CloudAgentLogs.LOG
+    -
+        Name: Faronics Deploy service log
+        Category: ApplicationLogs
+        Path: C:\ProgramData\Faronics\StorageSpace\FWA\Logs\
+        FileMask: FWASvc.log
+
+# Documentation
+# https://github.com/magicsword-io/LOLRMM/blob/main/yaml/faronics_deploy.yaml
