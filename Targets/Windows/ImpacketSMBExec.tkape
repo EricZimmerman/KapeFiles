@@ -1,0 +1,16 @@
+Description: Impacket SMBExec Artifacts
+Author: Paul CABON CERT Almond
+Version: 1.0
+Id: f171a1d9-5f47-40f6-8143-d9787de560a9
+RecreateDirectories: true
+Targets:
+    -
+        Name: SMBExec Output File
+        Category: LateralMovement
+        Path: C:\
+        FileMask: __output
+        Recursive: true
+        Comment: "Command output file created by Impacket smbexec.py. Persists when the tool crashes before cleanup."
+
+# Documentation
+# https://u0041.co/posts/articals/smbexec-analysis/
