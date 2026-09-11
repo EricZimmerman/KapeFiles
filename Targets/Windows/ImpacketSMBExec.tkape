@@ -9,7 +9,7 @@ Targets:
         Category: LateralMovement
         Path: C:\
         FileMask: __output
-        Recursive: true # Optional
+        Recursive: true
         Comment: "Command output file created by Impacket smbexec.py. Persists when the tool crashes before cleanup."
 
 # Documentation
