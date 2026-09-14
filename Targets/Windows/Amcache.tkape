@@ -1,6 +1,6 @@
-Description: Amcache.hve
+Description: Amcache.hve and databases
 Author: Eric Zimmerman
-Version: 1.0
+Version: 1.1
 Id: 13ba1e33-4899-4843-adf1-c7e6b20d759a
 RecreateDirectories: true
 Targets:
@@ -24,6 +24,16 @@ Targets:
         Category: ApplicationCompatibility
         Path: C:\Windows.old\Windows\AppCompat\Programs\
         FileMask: Amcache.hve.LOG*
+    -
+        Name: Amcache databases
+        Category: ApplicationCompatibility
+        Path: C:\Windows\AppCompat\Programs\
+        FileMask: '*.db'
+    -
+        Name: Amcache databases
+        Category: ApplicationCompatibility
+        Path: C:\Windows.old\Windows\AppCompat\Programs\
+        FileMask: '*.db'
 
 # Documentation
 # https://digital-forensics.sans.org/media/poster-windows-forensics-final.pdf
