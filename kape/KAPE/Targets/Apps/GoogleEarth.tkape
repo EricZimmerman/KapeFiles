@@ -1,0 +1,18 @@
+Description: Google Earth
+Author: Dielle De Noon
+Version: 1.0
+Id: 9a4aea7c-e407-44e1-a783-c5038436ab48
+RecreateDirectories: true
+Targets:
+    -
+        Name: Google Earth Saved Places
+        Category: Apps
+        Path: C:\Users\%user%\AppData\LocalLow\Google\GoogleEarth\
+        FileMask: 'myplaces*.kml'
+        Recursive: true
+        Comment: "Saved placemarks, paths, polygons, and folders from Google Earth Pro's My Places. Wildcard covers both myplaces.kml and any myplaces.backup.kml-style backup copy Google Earth Pro may create alongside it. Recursive in case a given install nests these under a versioned or profile subfolder."
+
+# Documentation
+# https://support.google.com/earth/answer/166438
+# Google Earth Pro stores the user's saved locations ("My Places" - placemarks, paths, polygons, folders, and any imported/saved KML data) in myplaces.kml under AppData\LocalLow\Google\GoogleEarth\. This is the exact file and path Google's own support documentation points to for moving saved locations between computers.
+# Addresses KapeFiles #832 (Google Earth KML files). Google Earth Pro's own save file is fixed at "myplaces.kml", but FileMask uses a wildcard to also catch a "myplaces.backup.kml"-style backup copy some installs create, without needing a second hardcoded filename.
