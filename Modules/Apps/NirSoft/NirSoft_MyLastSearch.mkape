@@ -1,0 +1,18 @@
+Description: 'NirSoft_MyLastSearch - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: 8ecf4008-2fb2-4c15-8b0f-eb8d1b57be0d
+BinaryUrl: https://www.nirsoft.net/utils/mylastsearch.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: MyLastSearch.exe
+    CommandLine: /scomma %destinationDirectory%\MyLastSearch.csv    
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/my_last_search.html
+# MyLastSearch extracts search-engine query terms (Google, Bing, Yahoo, etc.) that a user typed, by scanning browser history/cache files (IE, Firefox, Opera, Chrome). This is a different artifact from visited URLs, which the existing BrowsingHistoryView module already covers.
+# LiveResponse only: MyLastSearch's /loadfrom switch is documented to accept explicit history/cache folder paths, which would in theory allow targeting files KAPE has already collected. In testing, /loadfrom consistently produced a 0-byte CSV with no error - both against real KAPE-collected files and against the live system's own real cache/history folders using the exact same paths - across multiple shells (PowerShell and cmd.exe) and argument-passing methods (quoted empty-string placeholders and PowerShell array splatting). Running MyLastSearch with no /loadfrom argument at all (its default behavior, which auto-detects the live/current user's actual browser profiles) reliably produced real, correct results in every test - hundreds of genuine recovered search queries from a live Chrome profile. This module relies on that default live-detection behavior rather than /loadfrom, so it must be run live against the target system rather than against files KAPE has already collected.
+# Known limitation: MyLastSearch's CSV export has no header row by default (Search Text, Search Engine, Search Type, Search Time, Web Browser, Hits, URL). To include one, open MyLastSearch.exe's GUI once and enable Options > "Add Header Line To CSV/Tab-Delimited File" - this is a persistent per-user setting rather than a command-line switch, so it also applies to later command-line/KAPE-driven runs once turned on.
