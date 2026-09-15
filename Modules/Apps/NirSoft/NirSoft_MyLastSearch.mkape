@@ -1,0 +1,22 @@
+Description: 'NirSoft_MyLastSearch - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: 8ecf4008-2fb2-4c15-8b0f-eb8d1b57be0d
+BinaryUrl: https://www.nirsoft.net/utils/mylastsearch.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: MyLastSearch.exe
+    CommandLine: /scomma %destinationDirectory%\MyLastSearch.csv    
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/my_last_search.html
+# MyLastSearch extracts search-engine query terms (Google, Bing, Yahoo, etc.) that a user typed, by scanning browser history/cache files. This is a different artifact from visited URLs, which the existing BrowsingHistoryView module already covers.
+# Requires --mvars username:<username> at runtime so %username% resolves to the actual collected user folder name under %sourceDirectory%\Users\ - KAPE's %user% wildcard is a Target-only feature and is not available inside a Module command line.
+# Known limitations, verified directly against NirSoft's own documentation (the /loadfrom switch takes exact literal paths, no wildcard support):
+#   - Firefox/Mozilla: omitted (empty string) in this command line. Firefox profile folders include a randomized suffix (e.g. xxxxxxxx.default-release) that can't be hardcoded generically across installs.
+#   - Opera: omitted (empty string) in this command line since it could not be tested on the authoring machine (no Opera install available to verify against). If you have Opera, its cache folder is conventionally at "...\AppData\Local\Opera Software\Opera Stable\Cache" - add that path to the corresponding /loadfrom slot yourself if needed.
+#   - IE Cache: included as a best-effort path (the modern INetCache folder), but MyLastSearch is built for the legacy History.IE5/Content.IE5 index.dat format. On a modern Windows 10/11 system INetCache no longer stores data in a format MyLastSearch reads, so this slot is expected to return nothing - confirmed empty during testing.
+#   - Chrome: assumes the "Default" profile folder. Will not surface search terms from additional/secondary Chrome profiles on multi-profile setups.
