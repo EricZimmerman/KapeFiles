@@ -1,0 +1,18 @@
+Description: 'NirSoft_TaskSchedulerView - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: 59ad5bec-ce62-4c9b-ab61-54032dfb678f
+BinaryUrl: https://www.nirsoft.net/utils/taskschedulerview-x64.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: TaskSchedulerView.exe
+    CommandLine: /LoadFrom 1 /scomma %destinationDirectory%\TaskSchedulerView.csv
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/task_scheduler_view.html
+# TaskSchedulerView exports the live state of every task in Windows Task Scheduler - name, status, last/next run time, last run result, actions, triggers, and more - into a single CSV.
+# Complements the raw .xml task definitions already collected by the Persistence\ScheduledTasks Target: the XML shows how a task is defined, this shows its live runtime state (e.g. last run result, next scheduled run) at the time KAPE was run, which isn't present in the static XML alone.
+# LiveResponse only: per NirSoft's own documentation, /LoadFrom accepts only 1 (local machine) or 2 (remote computer) - there is no offline/folder-load option, so this must run live against the target system rather than against files KAPE has already collected.
