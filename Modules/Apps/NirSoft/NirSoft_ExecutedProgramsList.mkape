@@ -1,0 +1,18 @@
+Description: 'NirSoft_ExecutedProgramsList - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: c89723a0-9ffc-4104-a1c0-2bb9bdc5a027
+BinaryUrl: https://www.nirsoft.net/utils/executedprogramslist.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: ExecutedProgramsList.exe
+    CommandLine: /scomma %destinationDirectory%\ExecutedProgramsList.csv
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/executed_programs_list.html
+# ExecutedProgramsList combines program-execution evidence from multiple live sources into one view: the MuiCache and AppCompatFlags "Compatibility Assistant" registry keys under HKEY_CURRENT_USER, plus the parsed Windows Prefetch folder - showing what ran on the system and, where available, when.
+# LiveResponse only: verified directly against NirSoft's own documentation - ExecutedProgramsList has no command-line switch for pointing at an offline/collected registry hive or Prefetch folder copy, only export-format switches (/stext, /stab, /scomma, /stabular, /shtml, /sverhtml, /sxml). It reads HKEY_CURRENT_USER and C:\Windows\Prefetch directly from the running system, so it must be run live rather than against files KAPE has already collected.
+# Complements existing raw-artifact collection (e.g. a Prefetch Target, Registry hive Targets) that gather the underlying files for offline parsing elsewhere (e.g. PECmd for Prefetch) - this module instead gives a live, at-a-glance combined view across MuiCache/AppCompatFlags/Prefetch in one CSV at the time KAPE was run.
