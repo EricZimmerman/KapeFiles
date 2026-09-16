@@ -1,0 +1,43 @@
+Description: Windows OS Upgrade Artifacts
+Author: Andrew Rathbun
+Version: 1.1
+Id: e223d74f-7f36-46e8-b4ec-6d46f695a717
+RecreateDirectories: true
+Targets:
+    -
+        Name: MigLog.xml
+        Category: OS Upgrade
+        Path: C:\Windows\Panther
+        FileMask: MigLog.xml
+    -
+        Name: Setupact.log
+        Category: OS Upgrade
+        Path: C:\Windows\Panther
+        FileMask: Setupact.log
+    -
+        Name: HumanReadable.xml
+        Category: OS Upgrade
+        Path: C:\Windows\Panther
+        FileMask: "*HumanReadable.xml"
+    -
+        Name: FolderMoveLog.txt
+        Category: OS Upgrade
+        Path: C:\Windows\Panther\Rollback
+        FileMask: FolderMoveLog.txt
+    -
+        Name: Update Store.db
+        Category: OS Upgrade
+        Path: C:\ProgramData\USOPrivate\UpdateStore
+        FileMask: store.db
+
+# Documentation
+# https://cyberarms.wordpress.com/2012/08/30/windows-8-forensics-reset-and-refresh-artifacts/
+# https://support.microsoft.com/en-us/topic/log-files-that-are-created-when-you-upgrade-to-a-new-version-of-windows-9ec8aa31-0cc1-a0b2-2d98-e9c6714349b9
+# #MigLog.xml appears to provide a large list of settings, users, and other configuration settings that have been migrated from one OS version to another
+# There appears to be a lot of registry entries that are enumerated within this log, so this can serve as a potentially good snapshot in time of a user's system registry
+# Setupact.log has some good information about the hardware configuration of the system, current antivirus, and what appears to be an enumeration of the registry keys/subkeys
+# Setupact.log appears to provide good historical information about a system at the time of OS Upgrade (i.e. W10 2004 upgrading to W10 20H2)
+# https://en.wikipedia.org/wiki/Windows_10_version_history will provide a history of when W10 updates have released. Assuming the target system had a user that was timely with their OS updates, one could plan on artifacts to reflect around the dates of OS update release dates
+# On my personal system, MigLog.xml was 245mb and setupact.log was 151mb, so be cognizant of the potentially large file size of these artifacts compared to other artifacts that store this same information
+# *_APPRAISER_HumanReadable.xml and FolderMoveLog.txt appear to have human readable and therefore potentially forensically interesting information located within. They aren't as large as the other files so they won't bloat any targeted collection
+# Store.db appears to be a SQLite database which stores a record of every Windows Update installed
