@@ -1,0 +1,17 @@
+Description: 'NirSoft_RecentFilesView - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: e25ee12d-17f0-4925-94d5-b86e1021aed8
+BinaryUrl: https://www.nirsoft.net/utils/recentfilesview.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: RecentFilesView.exe
+    CommandLine: /scomma %destinationDirectory%\RecentFilesView.csv
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/recent_files_view.html
+# RecentFilesView lists recently opened/saved files by reading the Recent folder (shell shortcuts to recently accessed files/folders) and the HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSaveMRU registry key (recent Open/Save common-dialog history). This is a different artifact from OpenedFilesView (currently-open file handles at run time) already in this repo - RecentFilesView is historical MRU evidence of what a user opened or saved over time, not what's open right now.
+# LiveResponse only: verified directly against NirSoft's own documentation - RecentFilesView has no command-line switch for loading an offline/collected Recent folder or registry hive. Its "external source" loading is a GUI-only feature (Advanced Options, F9), not exposed on the command line, so it must be run live against the target system rather than against files KAPE has already collected.
