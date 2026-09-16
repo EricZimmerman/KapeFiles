@@ -1,15 +1,16 @@
 Description: 'NirSoft_WebBrowserDownloads- Nirsoft'
 Category: WebBrowsers
-Author: Pedro Sanchez Cordero (conexioninversa), Thomas DIOT (Qazeer)
-Version: 1.2
+Author: Pedro Sanchez Cordero (conexioninversa), Thomas DIOT (Qazeer), Dielle De Noon
+Version: 1.3
 Id: 03f66bb3-0583-4371-a817-b39d9a2e4990
 BinaryUrl: https://www.nirsoft.net/utils/browserdownloadsview-x64.zip
 ExportFormat: csv
 Processors:
     -
         Executable: BrowserDownloadsView.exe
-        CommandLine: /DownloadsSource 3 /SourceFolder %sourceDirectory%\Users /ShowTimeInGMT 1 /scomma %destinationDirectory%\BrowserDownloadsView.csv
+        CommandLine: /DownloadsSource 3 /SourceFolder %sourceDirectory%\Users /ShowTimeInGMT 1 /Columns "Filename,Download URL 1,Download URL 2,Download URL 3,Web Page URL,Start Time,End Time,Server Modified Time,Download Size,Download Duration,Calculated Speed,Download State,Web Browser,Browser Profile Path,Full Path Filename,MIME Type,ID" /scomma %destinationDirectory%\BrowserDownloadsView.csv
         ExportFormat: csv
 
 # Documentation
 # https://www.nirsoft.net/utils/web_browser_downloads_view.html
+# Fixes EricZimmerman/KapeFiles#898: BrowserDownloadsView's File Exists, File Size, and Hash columns check the absolute path recorded in browser history directly against the filesystem, rather than resolving it under /SourceFolder. When an offline collection happens to be staged on the same drive letter as the analysis workstation's own OS drive (commonly C:), that check silently succeeds against the live, running system instead of the staged data, injecting live-system file-existence truth into what should be a purely offline view. Staged on a different drive letter, the same check returns blank for every row instead. Verified by staging an identical Chrome History file on both C: and D:, then diffing the outputs: the underlying download-history records are identical either way, but File Exists/File Size/Hash differ - 91 Yes/37 No/33 blank on C:, all 161 blank on D:. Dropping those three columns via /Columns removes the leak entirely; the two outputs then match exactly.
