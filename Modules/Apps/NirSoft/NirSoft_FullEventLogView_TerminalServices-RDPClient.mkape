@@ -1,0 +1,21 @@
+Description: Parses Terminal Services RDP Client event log using Nirsoft FullEventLogView.exe
+Category: EventLogs
+Author: Dielle De Noon
+Version: 1.0
+Id: 8c60cd6c-ec17-4626-808f-0186998a373e
+BinaryUrl: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
+ExportFormat: csv
+FileMask: Microsoft-Windows-TerminalServices-RDPClient%4Operational.evtx
+Processors:
+    -
+        Executable: FullEventLogView.exe
+        CommandLine: /TimeFilter 0 /DataSource 3 /LogFolder %sourceDirectory%\Windows\System32\winevt\Logs\ /LogFolderWildcard Microsoft-Windows-TerminalServices-RDPClient%4Operational.evtx /scomma %destinationDirectory%\full_rdp_client_event_log.csv
+        ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/full_event_log_view.html
+# Uses Nirsoft's FullEventLogView to export the Microsoft-Windows-TerminalServices-RDPClient/Operational event log to csv - same pattern as the existing NirSoft_FullEventLogView_System/Security/etc. modules by Barrie Hill.
+# This log records outbound RDP connection attempts made BY this machine as a client (Event ID 1024 - client is attempting to connect, 1102 - client disconnected, among others), regardless of whether the connection succeeded. Standard evidence for establishing what remote hosts a machine attempted to RDP into - works on any Windows edition, unlike the server-side RemoteConnectionManager/LocalSessionManager logs which require RDP hosting (Pro/Enterprise only).
+# FullEventLogView.exe should be in the Modules\bin folder
+# Assumes the msource will include the drive letter. e.g. D:\kape\C
+# Example: .\kape.exe --msource D:\kape\C --mdest D:\kape\out --module NirSoft_FullEventLogView_TerminalServices-RDPClient
