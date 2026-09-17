@@ -1,0 +1,18 @@
+Description: 'NirSoft_USBDriveLog - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: c69da637-b823-4c3d-822b-aad9e581f8a3
+BinaryUrl: https://www.nirsoft.net/utils/usbdrivelog.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: USBDriveLog.exe
+    CommandLine: /scomma %destinationDirectory%\USBDriveLog.csv
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/usb_drive_log.html
+# USBDriveLog parses the Microsoft-Windows-Partition/Diagnostic and Microsoft-Windows-Storsvc/Diagnostic event log channels (on by default on Windows 10/11) into a plug/unplug history for USB storage devices - Device Model, Revision, Manufacturer, Serial Number, Plug Time, Unplug Time, Device ID, Device Capacity, Vendor/Product ID and Name, and more.
+# This is a different artifact from the existing USBDeview module: USBDeview lists devices that have ever been connected (a historical inventory), while USBDriveLog is a timestamped log of individual plug/unplug events - when a given device was connected and disconnected, not just that it was connected at some point.
+# LiveResponse only: verified directly against NirSoft's own documentation - USBDriveLog's "external folder" data source (for loading an offline/collected event log copy) is a GUI-only feature (Choose Data Source window, F7), not exposed on the command line, so it must be run live against the target system rather than against files KAPE has already collected. Requires Windows 10/11 - the two event log channels don't exist on earlier versions.
