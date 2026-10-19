@@ -1,0 +1,19 @@
+Description: 'NirSoft_ESEDatabaseView_SRUM - Nirsoft'
+Category: SRUMDatabase
+Author: Dielle De Noon
+Version: 1.0
+Id: 15966775-96cf-40e5-9dd5-74e63a314d3e
+BinaryUrl: https://www.nirsoft.net/utils/esedatabaseview.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: ESEDatabaseView.exe
+    CommandLine: /SaveDirect /table "%sourceDirectory%\Windows\System32\SRU\SRUDB.dat" * /scomma "%destinationDirectory%\SRUM_*.csv"
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/ese_database_view.html
+# ESEDatabaseView dumps every table in the SRUM database (SRUDB.dat) to its own CSV - the "*" table name exports all tables, and the "*" in the output filename is replaced by each table's name (e.g. SRUM_{5C8CF1C7-7257-4F13-B223-970EF5939312}.csv).
+# This is a raw table dump, complementary to SrumECmd: SrumECmd resolves AppId/UserId against SruDbIdMapTable and the SOFTWARE hive into friendly per-provider CSVs, while this module exports every table as-is (including SruDbIdMapTable itself and any provider tables SrumECmd does not have a parser for).
+# /SaveDirect writes records straight to disk instead of buffering whole tables in memory - recommended by NirSoft for very large tables, which SRUM's network and app usage tables can be.
+# Offline only: ESEDatabaseView cannot open the live, locked C:\Windows\System32\SRU\SRUDB.dat (its locked-file handling only covers WebCache and the Windows Update DataStore). Collect the SRUM Target first, then set --msource to the collected drive root (e.g. <tdest>\C) so %sourceDirectory%\Windows\System32\SRU\SRUDB.dat resolves.
