@@ -1,0 +1,19 @@
+Description: 'NirSoft_AppNetworkCounter - Nirsoft'
+Category: LiveResponse
+Author: Dielle De Noon
+Version: 1.0
+Id: 62e12c9a-4cd4-48c6-8c86-34c27c3e0bc0
+BinaryUrl: https://www.nirsoft.net/utils/appnetworkcounter-x64.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: AppNetworkCounter.exe
+    CommandLine: /CaptureTime 10000 /scomma "%destinationDirectory%\AppNetworkCounter.csv"
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/app_network_counter.html
+# AppNetworkCounter counts the TCP/UDP traffic of every application on the system for the length of the capture window - Application Name and Path, Received/Sent Bytes and Packets, IPv4/IPv6 Received/Sent Bytes, Receive/Send Speed, First/Last Activity Time, and the Product Name, Version, Description and Company Name from the .exe's version resource.
+# This is different from the existing live network modules (Windows_NetStat, SysInternals_Tcpvcon, PowerShell_TCPConnections): those list which connections are open and to where, while AppNetworkCounter measures how much data each application actually moved during the capture window.
+# Not a SRUM parser: despite appearing alongside SRUM tools, AppNetworkCounter has no historical data source. It only counts traffic from the moment it starts, for /CaptureTime milliseconds (10 seconds here, NirSoft's default), so applications that are idle during that window will not appear. Increase /CaptureTime for a longer sample, at the cost of a longer collection. For historical per-application network usage, use the SRUM-based modules (SrumECmd, NirSoft_ESEDatabaseView_SRUM).
+# LiveResponse only, requires Administrator. As this processes live data off the system, any directory can be set as "msource".
