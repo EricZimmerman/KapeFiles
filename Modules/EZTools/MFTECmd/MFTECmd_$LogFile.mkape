@@ -1,0 +1,25 @@
+Description: 'MFTECmd: process $LogFile files'
+Category: FileSystem
+Author: Reece394
+Version: 1.0
+Id: 573b3dd9-0263-479d-87f7-205786e6116b
+BinaryUrl: https://download.ericzimmermanstools.com/MFTECmd.zip
+ExportFormat: csv
+FileMask: $LogFile
+Processors:
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --csv %destinationDirectory%
+        ExportFormat: csv
+    -
+        Executable: MFTECmd.exe
+        CommandLine: -f %sourceFile% --json %destinationDirectory%
+        ExportFormat: json
+
+# Documentation
+# https://github.com/EricZimmerman/MFTECmd
+# https://docs.microsoft.com/en-us/windows/win32/fileio/master-file-table
+# https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html
+# https://aboutdfir.com/toolsandartifacts/windows/mft-explorer-mftecmd/
+# https://www.youtube.com/watch?v=GhCZfCzn2l0
+# https://leanpub.com/eztoolsmanuals
