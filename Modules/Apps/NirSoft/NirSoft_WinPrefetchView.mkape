@@ -1,0 +1,20 @@
+Description: 'NirSoft_WinPrefetchView - Nirsoft'
+Category: ProgramExecution
+Author: Dielle De Noon
+Version: 1.0
+Id: 31bee807-fcb2-4114-8fc7-7bb251fd0c4d
+BinaryUrl: https://www.nirsoft.net/utils/winprefetchview-x64.zip
+ExportFormat: csv
+Processors:
+  -
+    Executable: WinPrefetchView.exe
+    CommandLine: /folder "%sourceDirectory%\Windows\Prefetch" /scomma "%destinationDirectory%\WinPrefetchView.csv"
+    ExportFormat: csv
+
+# Documentation
+# https://www.nirsoft.net/utils/win_prefetch_view.html
+# WinPrefetchView parses Windows Prefetch (.pf) files into one CSV row per file - Filename, Created Time, Modified Time, File Size, Process EXE, Process Path, Run Counter, Last Run Time (up to the last 8 run times), and Missing Process.
+# An alternative Prefetch parser to PECmd, useful for cross-validating PECmd's results with an independent implementation. PECmd is the more detailed parser (volume information, per-file loaded-file lists, and a timeline output).
+# Offline: /folder points WinPrefetchView at a Prefetch folder from another Windows instance. Collect the Prefetch Target first, then set --msource to the collected drive root (e.g. <tdest>\C) so %sourceDirectory%\Windows\Prefetch resolves.
+# Windows 11 version 31 Prefetch: verified to parse the version 31 (0x1F) .pf files written by recent Windows 11 builds, which use the same layout as version 30 apart from the version number. Run Counter and Last Run Time values matched PECmd 2026.10.3 on every file (older PECmd builds such as 1.5.0.0 reject version 31 files with "Unknown version '0000001F'" - update PECmd if it reports that).
+# Known limitation: WinPrefetchView's CSV export has no header row by default, and unlike some NirSoft tools it does not accept /AddExportHeaderLine on the command line. To include one, create WinPrefetchView.cfg next to WinPrefetchView.exe in .\KAPE\Modules\bin containing the two lines "[General]" and "AddExportHeaderLine=1" (or enable Options > "Add Header Line To CSV/Tab-Delimited File" in the GUI once). Without it, the columns are: Filename, Created Time, Modified Time, File Size, Process EXE, Process Path, Run Counter, Last Run Time, Missing Process.
