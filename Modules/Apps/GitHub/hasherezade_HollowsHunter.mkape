@@ -1,9 +1,9 @@
 Description: 'HollowsHunter'
 Category: HollowsHunter
-Author: Jonas A. Wendorf
-Version: 1.0
+Author: Jonas A. Wendorf, Dielle De Noon
+Version: 1.1
 Id: a3916582-d43a-4b19-b4f5-c31e65d6daf2
-BinaryUrl: https://github.com/hasherezade/hollows_hunter/releases
+BinaryUrl: https://github.com/hasherezade/hollows_hunter/releases/latest/download/hollows_hunter64.zip
 ExportFormat: json
 Processors:
     -
@@ -16,7 +16,8 @@ Processors:
 # https://securityliterate.com/extracting-malware-from-memory-with-hollows-hunter/
 # HollowsHunter Scans all running processes. Recognizes and dumps a variety of potentially malicious implants (replaced/implanted PEs, shellcodes, hooks, in-memory patches).
 # By default only replaced/implanted PEs are detected.
-# In order for this module to work, place hollows_hunter.exe and pe-sieve.dll in the Modules/bin folder
+# In order for this module to work, place hollows_hunter.exe in the Modules/bin folder. Current releases (hollows_hunter64.zip / hollows_hunter32.zip) contain a single, standalone hollows_hunter.exe with PE-sieve built in - a separate pe-sieve.dll is only needed for the hollows_hunter*_dll.zip builds.
 # Expected Results:
-# If replaced/implanted PEs are detected: The HollowsHunter folder will have the related process information (summary.json and report.json) as well as dump files
+# If replaced/implanted PEs are detected: The HollowsHunter folder will have summary.json (scanned/failed/suspicious counts and a list of the suspicious processes) plus a process_<PID> folder for each suspicious process, containing scan_report.json, dump_report.json and the dumped modules/shellcode (.dll, .exe, .shc)
 # Otherwise: No HollowsHunter folder will be created
+# Detections are not necessarily malicious - common benign hits include security software (which hooks and injects into processes) and Windows/Store components whose DLL was updated on disk while still loaded (e.g. a mapped file named <dll>.0), so review each hit before drawing conclusions. Dumps contain process memory and may hold sensitive data.
