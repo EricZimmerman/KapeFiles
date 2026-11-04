@@ -1,25 +1,20 @@
-Description: 'SQLECmd: process SQLite databases with Hunt mode'
+Description: 'SQLECmd: process SQLite databases with Hunt mode disabled'
 Category: SQLDatabases
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 74343dd0-47bf-406d-9173-fb626e38cc50
 BinaryUrl: https://download.ericzimmermanstools.com/SQLECmd.zip
 ExportFormat: csv
 Processors:
     -
         Executable: SQLECmd\SQLECmd.exe
-        CommandLine: -d %sourceDirectory% --hunt --csv %destinationDirectory%
+        CommandLine: -d %sourceDirectory% --hunt false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: SQLECmdHuntResults.txt
     -
         Executable: SQLECmd\SQLECmd.exe
-        CommandLine: -d %sourceDirectory% --hunt --json %destinationDirectory%
+        CommandLine: -d %sourceDirectory% --hunt false --json %destinationDirectory%
         ExportFormat: json
-        ExportFile: SQLECmdHuntResults.txt
 
 # Documentation
 # https://github.com/EricZimmerman/SQLECmd
 # https://leanpub.com/eztoolsmanuals
-# Hunt mode should be used to help identify SQLite databases within a dataset (check console window to see which SQLite databases don't have a Map)
-# Hunt mode should also be used to parse SQLite databases which do not follow a strict naming convention, i.e. %timestamp%.SQLite
-# An example of a SQLECmd Map that will require Hunt mode every time is Windows_TeraCopy_History.smap

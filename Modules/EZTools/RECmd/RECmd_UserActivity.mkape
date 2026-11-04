@@ -1,7 +1,7 @@
 Description: 'RECmd: UserActivity'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: 05db97da-327b-46d0-942c-a468c087c09c
 BinaryUrl: https://download.ericzimmermanstools.com/RECmd.zip
 ExportFormat: csv
@@ -10,7 +10,10 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\UserActivity.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: UserActivity_RECmdConsoleLog.txt
+    -
+        Executable: RECmd\RECmd.exe
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\UserActivity.reb --nl false --json %destinationDirectory%
+        ExportFormat: json
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
