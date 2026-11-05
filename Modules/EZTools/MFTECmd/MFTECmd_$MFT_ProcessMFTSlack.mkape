@@ -1,7 +1,7 @@
 Description: 'MFTECmd: process $MFT files with FILE slack recovery'
 Category: FileSystem
 Author: Andrew Rathbun
-Version: 1.0
+Version: 1.1
 Id: 69553b37-e8d9-4ae9-b325-bc0dd2808a71
 BinaryUrl: https://download.ericzimmermanstools.com/MFTECmd.zip
 ExportFormat: csv
@@ -11,12 +11,10 @@ Processors:
         Executable: MFTECmd.exe
         CommandLine: -f %sourceFile% --csv %destinationDirectory% --rs
         ExportFormat: csv
-        ExportFile: MFTFileSlack.txt
     -
         Executable: MFTECmd.exe
         CommandLine: -f %sourceFile% --json %destinationDirectory% --rs
         ExportFormat: json
-        ExportFile: MFTFileSlack.txt
 
 # Documentation
 # https://github.com/EricZimmerman/MFTECmd

@@ -1,7 +1,7 @@
 Description: 'RECmd: SystemASEPs'
 Category: Registry
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.2
 Id: 3ef19b6e-3489-44ee-a5fa-0245fd54ecd1
 BinaryUrl: https://download.ericzimmermanstools.com/RECmd.zip
 ExportFormat: csv
@@ -10,7 +10,10 @@ Processors:
         Executable: RECmd\RECmd.exe
         CommandLine: -d %sourceDirectory% --bn BatchExamples\SystemASEPs.reb --nl false --csv %destinationDirectory%
         ExportFormat: csv
-        ExportFile: SystemASEPs_RECmdConsoleLog.txt
+    -
+        Executable: RECmd\RECmd.exe
+        CommandLine: -d %sourceDirectory% --bn BatchExamples\SystemASEPs.reb --nl false --json %destinationDirectory%
+        ExportFormat: json
 
 # Documentation
 # https://github.com/EricZimmerman/RECmd
