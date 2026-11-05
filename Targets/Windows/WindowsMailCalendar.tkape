@@ -1,0 +1,40 @@
+Description: Windows Mail, Calendar, and People app data
+Author: Dielle De Noon
+Version: 1.0
+Id: 3b16425e-90f9-4462-b3c0-559bf8a68e84
+RecreateDirectories: true
+Targets:
+    -
+        Name: Windows Mail and Calendar Unistore Database
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Comms\UnistoreDB\
+        Comment: "Retrieves store.vol, an ESE database with tables for appointments, messages, attachments, and contacts, along with its transaction logs"
+    -
+        Name: Windows Mail and Calendar Unistore Data
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Comms\Unistore\data\
+        Recursive: true
+        Comment: "Retrieves AggregateCache.uca and the .dat files in numbered subfolders, which are reported to hold message bodies, attachments, and calendar invitations"
+    -
+        Name: Windows Mail and Calendar App State
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\LocalState\
+        Recursive: true
+        Comment: "Retrieves app state from the Mail and Calendar app package"
+    -
+        Name: Windows Mail and Calendar Settings File
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\microsoft.windowscommunicationsapps_8wekyb3d8bbwe\Settings\
+        FileMask: "settings.dat"
+        Comment: "Retrieves settings.dat which is an Application Registry"
+
+# Documentation
+# https://eprints.whiterose.ac.uk/133161
+# https://support.microsoft.com/office/outlook-for-windows-the-future-of-mail-calendar-and-people-on-windows-11-715fc27c-e0f4-4652-9174-47faa751b199
+# https://forums.passmark.com/osforensics-osfmount-osfclone/51182-how-to-extract-the-emails-from-the-windows-10-mail-app
+# Microsoft ended support for the Windows Mail, Calendar, and People apps on December 31, 2024, but their data can remain on systems where the apps were used.
+# App State includes HxStore.hxd (file signature "Nostromo") and the Hx*AlwaysOnLog .etl files. Their contents were not parsed in testing.
+# store.vol, store.jfm, tmp.edb, and USS.jtx can be locked even when the apps are closed. KAPE collects them as deferred files.
+# A collected store.vol can be in a Dirty Shutdown state. To open a copy in an ESE viewer such as NirSoft ESEDatabaseView, keep the collected files together and replay the logs on the copy: esentutl /r USS /l . /s . /d . /i
+# If KAPE deduplicated USSres00002.jrs, recovery can still succeed without it, as it did in testing.
+# The .dat subfolder meanings come from the forum post above (3 = message bodies, 5 = calendar invitations, 7 = attachments) and were not confirmed in testing, as the test system only had subfolder 2.
