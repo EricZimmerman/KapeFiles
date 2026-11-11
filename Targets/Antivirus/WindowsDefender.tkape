@@ -49,6 +49,11 @@ Targets:
         Category: Antivirus
         Path: C:\ProgramData\Microsoft\Windows Defender\Scans\History\Service\
         FileMask: Detections.log
+    -
+        Name: Windows Defender mpenginedb
+        Category: Antivirus
+        Path: C:\ProgramData\Microsoft\Windows Defender\Scans\
+        FileMask: mpenginedb.db*
 
 # Documentation
 # https://knez.github.io/posts/how-to-extract-quarantine-files-from-windows-defender/
@@ -56,3 +61,4 @@ Targets:
 # https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/README.md
 # https://forensafe.com/blogs/windows_defender.html
 # https://www.thedfirspot.com/post/windows-defender-mp-logs-a-story-of-artifacts
+# https://protokol-7.github.io/dfir/2026/11/10/defenders-hidden-flight-recorder-mpenginedb.html
