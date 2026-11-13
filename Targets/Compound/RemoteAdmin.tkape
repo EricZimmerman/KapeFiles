@@ -1,6 +1,6 @@
 Description: Composite target for files related to remote administration tools
 Author: Drew Ervin, Mathias Frank, Andrew Rathbun, Phill Moore, Paul Cabon CERT Almond
-Version: 2.3
+Version: 2.4
 Id: 31cf5a4e-c44c-4457-b11f-74dca73e141b
 RecreateDirectories: true
 Targets:
@@ -254,7 +254,7 @@ Targets:
     -
         Name: UltraViewer
         Category: ApplicationLogs
-        Path: UltraViewer.tkape
+        Path: Ultraviewer.tkape
     -
         Name: VNC
         Category: ApplicationLogs

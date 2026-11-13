@@ -1,6 +1,6 @@
 Description: Antivirus
 Author: Andrew Rathbun
-Version: 1.5
+Version: 1.6
 Id: 280c6a63-f6ab-438a-b40b-ca42fa78315f
 RecreateDirectories: true
 Targets:
@@ -23,7 +23,7 @@ Targets:
     -
         Name: ComboFix
         Category: Antivirus
-        Path: ComboFix.tkape
+        Path: Combofix.tkape
     -
         Name: CrowdStrikeFalcon
         Category: Antivirus
