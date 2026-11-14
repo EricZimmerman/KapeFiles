@@ -1,0 +1,43 @@
+Description: Hancom Office (Hangul word processor, HWP) recent files, settings and logs
+Author: Kim Minwoo
+Version: 1.0
+Id: c0af5f9c-955d-4b0d-91d5-3ccd00a8cce6
+RecreateDirectories: true
+Targets:
+    -
+        Name: Hancom Office Recent Files and Settings
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\HNC\User\Common\*\
+        FileMask: "recentInfo.xml"
+        Comment: "Recent file list shared by the Hancom Office editors (Hwp, HCell, Hpdf and Hocr on the test system), plus per-program settings. The numbered folder is the product version, e.g. 130 for Hancom Office 2024"
+    -
+        Name: Hancom Office Viewer Recent Files and Settings
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\HNC\User\CommonViewer\*\
+        FileMask: "recentInfo.xml"
+        Comment: "Recent file list and settings of the Hancom Office viewers (HwpViewer, HwordViewer, HCellViewer and HShowViewer on the test system)"
+    -
+        Name: Hancom Office Hwp Preview Cache
+        Category: FileKnowledge
+        Path: C:\Users\%user%\AppData\Roaming\HNC\User\Hwp\Cache\*\
+        Comment: "HwpPrv.ini (a text file that begins with ### Preview Cache) and prvimg*.prv files, which are PNG images"
+    -
+        Name: Hancom Office Logs
+        Category: ApplicationLogs
+        Path: C:\Users\%user%\AppData\Roaming\HNC\Log\
+        Recursive: true
+        FileMask: "*.zip"
+        Comment: "One subfolder per program (Hwp, HCell, Hpdf and Hocr on the test system). Each <program>_<GUID>_<timestamp>.zip holds a single .log file"
+
+# Documentation
+# N/A
+# No vendor documentation was found for these files. Everything below was observed on Hancom Office 2024 Edu (13.0.0.304) and Hancom Office 2024 Viewer (13.0.0.226) on Windows 11.
+# Hancom Office is an office suite used in South Korea. Its word processor saves HWP and HWPX documents.
+# recentInfo.xml is UTF-8 XML. Its structure, read as element and attribute names only (values were not examined):
+# root\Common\RecentFileListInfos\RecentFileListInfo - one element per recent file, with the attributes AppName, PathName, UserName and IsFixed. There is no timestamp attribute.
+# root\<program>\StorageLastDirPath - one per program (Hwp, HCell, Hpdf, Hocr, and the viewers)
+# root\Hwp\FindReplace\FindString with a Find attribute, and root\Hwp\TypingSpeed with DayInfo and MonthInfo elements
+# root\Common\ConfigInfo and root\<program>\ConfigInfo - settings, including UserName, UserGuid, AutoSave, AutoSaveInterval, BackupFileFolder, TempFileSaveFolder and StartFileFolder
+# The backup and temp (auto-save) folders named in those settings are not covered by this Target. No auto-save files existed on the test system.
+# The contents of the preview cache and of the .log files inside the zip archives were not examined. Only the member list of each archive was read (one .log member each).
+# Also not covered: the installer logs directly under HNC\, User\Hwp\Config130.json, User\Common\<version>\OptionInfo.xml, and HNC\Office\Recent\ (empty on the test system).
