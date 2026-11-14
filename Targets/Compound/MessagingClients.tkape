@@ -1,6 +1,6 @@
 Description: Messaging and communication apps
 Author: Gregor Wegberg
-Version: 1.0
+Version: 1.1
 Id: c6d3b238-0be7-4764-afa7-9224e46097c0
 RecreateDirectories: true
 Targets:
@@ -16,6 +16,10 @@ Targets:
         Name: Discord
         Category: Apps
         Path: Discord.tkape
+    -
+        Name: KakaoTalk
+        Category: Apps
+        Path: KakaoTalk.tkape
     -
         Name: Mattermost
         Category: Apps
