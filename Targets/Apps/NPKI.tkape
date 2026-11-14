@@ -1,0 +1,24 @@
+Description: NPKI certificate store (South Korean joint certificates used for online banking)
+Author: Kim Minwoo
+Version: 1.0
+Id: fe7e6018-ecb4-4e91-ad3d-5d9fa4b7f4f2
+RecreateDirectories: true
+Targets:
+    -
+        Name: NPKI Certificates and Private Keys
+        Category: Credentials
+        Path: C:\Users\%user%\AppData\LocalLow\NPKI\
+        Recursive: true
+        Comment: "Retrieves each user certificate (signCert.der) with its password-encrypted private key file (signPri.key), and the CA certificates. The folder that holds a user certificate is named after the certificate subject"
+
+# Documentation
+# https://www.dreamsecurity.com/download/browsercert_guide.pdf
+# The guide above (Dream Security, 2023-09, in Korean) explains how to import a joint certificate into the browser and gives the storage path for banking certificates, %USERPROFILE%\AppData\LocalLow\NPKI\yessign\USER, with the file pair signCert.der and signPri.key. It also notes that certificates are kept on USB disks and in browser storage.
+# Layout observed on Windows 11 with a user certificate from one certificate authority (CA):
+# NPKI\<CA name>\*.der - CA certificates (one folder per CA, e.g. yessign)
+# NPKI\<CA name>\USER\<certificate subject DN>\signCert.der and signPri.key - one folder per user certificate
+# The subject DN folder name has the form cn=<holder name>...,o=<CA name>,c=kr, so the holder's name can be read from the folder name alone.
+# signCert.der is a DER-encoded X.509 certificate. signPri.key is the private key in a password-encrypted PKCS #8 container (the file header carries a PKCS #5 password-based encryption identifier), so using the pair requires the certificate password.
+# Note that this Target collects private key files, in their password-encrypted form. The OpenSSHClient Target is an existing precedent for collecting private key files.
+# The folder shows which certificates were available to each Windows user, and the file timestamps can indicate when they were saved.
+# Not covered: certificates on USB disks or in browser storage. The test system also had C:\Program Files\NPKI\ and C:\Program Files (x86)\NPKI\, which held CA certificates only (no USER folder). Those two folders are not covered either.
