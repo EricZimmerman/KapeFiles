@@ -1,7 +1,7 @@
 Description: Google Earth
 Author: Guus Beckers
-Version: 1.0
-Id: 1ad35449-19a6-4e90-855e-elb4bfb2748b
+Version: 1.1
+Id: 1ad35449-19a6-4e90-855e-e1b4bfb2748b
 RecreateDirectories: true
 Targets:
     -
