@@ -1,0 +1,43 @@
+Description: KakaoTalk for Windows encrypted thumbnail and media caches
+Author: Kim Minwoo
+Version: 1.0
+Id: d79a4260-4700-4abb-9cd8-38b25fb9fa55
+RecreateDirectories: true
+Targets:
+    -
+        Name: KakaoTalk Chat Thumbnails
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\chat_data\
+        Recursive: true
+        FileMask: "*.cng"
+        Comment: "Thumbnails of photos and videos sent or received in chats, URL link images and chat room profile images. Can get very large"
+    -
+        Name: KakaoTalk Contact Profile Images
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\Contacts\
+        Recursive: true
+        FileMask: "*.cng"
+        Comment: "Profile images of the account's contacts"
+    -
+        Name: KakaoTalk Open Chat Cover Images
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\OCH\
+        Recursive: true
+        FileMask: "*.cng"
+        Comment: "Cover images of open chat rooms"
+    -
+        Name: KakaoTalk Board Media
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\Moim\
+        Recursive: true
+        FileMask: "*.cng"
+        Comment: "Media posted to chat room boards"
+
+# Documentation
+# https://doi.org/10.13089/JKIISC.2023.33.1.51
+# Jo and Chang (2023), Table 4, lists what each subfolder holds: chat_data\cli (transmitted photos), chat_data\cli\thumbnail (transmitted photos and videos, miniaturized), chat_data\cli_http_v2 (URL links, boards), chat_data\fci_v2 and mci_v2 (chat room profile images), chat_data\oci_v2 and OCH\img_v2 (open chat room covers), chat_data\tti (temporary folder), chat_data\url_image_v2 (user profiles, bot responses, search), Contacts\fpi_v2 and mpi_v2 (user profile images), Moim\Media (boards).
+# The test system also had chat_data\gfve_t_v2 holding .cng files, which Table 4 does not list. The recursive Path collects it as well.
+# The .cng files have encrypted names and encrypted contents. The same paper describes how they are decrypted, how the thumbnail of a message is found from the chat database, and how thumbnails change when a user sends, views or deletes media. That method was not re-tested against the version below.
+# Tested on KakaoTalk 26.9.2.5342 on Windows 11, where the folders and the .cng extension matched the paper. On the test system the files matched by this Target came to over 2 GB.
+# Collect the KakaoTalk Target as well, since the chat databases are needed to relate a thumbnail to a message.
+# Emoticon caches under DigitalItem are not collected.

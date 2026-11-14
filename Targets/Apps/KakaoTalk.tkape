@@ -1,0 +1,60 @@
+Description: KakaoTalk for Windows (Please view this tkape file for documentation on the encrypted databases!)
+Author: Kim Minwoo
+Version: 1.0
+Id: aeba0d4f-93da-4354-8d16-99446b5ac66f
+RecreateDirectories: true
+Targets:
+    -
+        Name: KakaoTalk Account Files
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\
+        Comment: "login_list.dat and last_pc_login.dat start with plain text that includes the login account ID. Also retrieves ActionLogDB.edb and the connect_conf_* files"
+    -
+        Name: KakaoTalk User Databases
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\
+        Comment: "Per-account folder (40 hex characters), and any <user directory>_backup_<date> copy of it. Retrieves TalkUserDB.edb, talk_user_prf.edb, CalendarDB.edb, MultiProfileDB.edb, chatWindowUi.db, the .dat and .bin files (including credential.bin and keystore.bin), user_pref.ini and the migration logs"
+    -
+        Name: KakaoTalk Chat Databases
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\chat_data\
+        FileMask: "*.edb*"
+        Comment: "One chatLogs_<chat ID>.edb per chat room, plus talkmedia.edb, talkfile.edb and others, along with their -wal and -shm files. Encrypted"
+    -
+        Name: KakaoTalk Contacts Databases
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\Contacts\
+        FileMask: "*.edb*"
+        Comment: "Databases stored next to the profile image caches (fpi_v2, mpi_v2). Encrypted"
+    -
+        Name: KakaoTalk Open Chat Databases
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\OCH\
+        FileMask: "*.edb*"
+        Comment: "Database stored next to the open chat room cover image cache (img_v2). Encrypted"
+    -
+        Name: KakaoTalk Board Databases
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Kakao\KakaoTalk\users\*\Moim\
+        FileMask: "*.edb*"
+        Comment: "Database stored next to the chat room board media cache (Media). Encrypted"
+
+# Documentation
+# https://doi.org/10.13089/JKIISC.2023.33.1.51
+# https://doi.org/10.13089/JKIISC.2018.28.4.839
+# KakaoTalk is a widely used messenger in South Korea. The papers above (Jo and Chang 2023, Pak and Lee 2018) describe the Windows client's data under %LocalAppData%\Kakao\KakaoTalk\users\<user directory>\chat_data\chatLogs_<chat ID>.edb.
+# According to Pak and Lee (2018) and Jo and Chang (2023, Fig. 6), the user directory name is a hash computed from the account's encrypted user ID (Fig. 6: a SHA-1 hex string, i.e. 40 hexadecimal characters, over an AES-encrypted value built from the users folder path and the AES-encrypted user ID), so each account that logged in on the system has its own folder.
+# The test system also had a backup copy of the user directory, named <user directory>_backup_<date>_<number>. The users\*\ Paths match it as well.
+# Tested on KakaoTalk 26.9.2.5342 on Windows 11. Paths and file names below were observed on that version.
+# ***IMPORTANT NOTES***
+# The .edb files collected by this Target are encrypted as a whole and do not start with the SQLite header. Their -wal files, when not empty, start with the SQLite WAL magic (37 7F 06 82; in an earlier check, when most databases had a -wal file, some of those were 0 bytes), so keep each .edb together with its -wal and -shm files.
+# According to Pak and Lee (2018), the database key is derived from hardware identifiers (disk serial number, disk model, SMBIOS UUID), and they recommend recording these identifiers from the source system during acquisition. Jo and Chang (2023) describe the decryption, which also needs the account's user ID.
+# KakaoTalk also stores sys_uuid, hdd_model and hdd_serial under a subkey of HKCU\Software\Kakao\KakaoTalk\DeviceInfo\ and names a subkey of HKCU\Software\Kakao\KakaoTalk\UserAccounts\ after the login account. Collect NTUSER.DAT (RegistryHives Target) alongside this Target.
+# The published decryption methods were written for earlier versions and were not re-tested against 26.9.2.
+# RecentEmoticon.db and chatWindowUi.db in the user directory are unencrypted SQLite databases. Their schema was not examined.
+# credential.bin and keystore.bin are collected because the whole user directory is. Their contents were not examined.
+# The FileMask *.edb* relies on the trailing * also matching the bare .edb name, as NTUSER.DAT* in RegistryHivesUser and wpndatabase.db* in WindowsNotificationsDB do. This was not confirmed with kape.exe.
+# The encrypted thumbnail and media caches (*.cng) are covered by the KakaoTalk_Media Target because they can get very large.
+# Not covered: the embedded WebView2 profile (users\<user directory>\wv\EBWebView\), KakaoTalk\global\ (pvi_v2), KakaoTalk\pref.ini, and the unencrypted SQLite file users\<user directory>\BalloonFactory\CarouselPosition.edb.
+# On the test system (Korean UI) the folder for files saved from chats has a Korean name and sits under the user's Documents folder. Other UI languages were not checked. That folder is not covered by this Target.
+# Related work (not consulted for the paths in this Target): Choi et al., Digital Investigation 28 (2019), on encrypted KakaoTalk, NateOn and QQ databases on Windows.
