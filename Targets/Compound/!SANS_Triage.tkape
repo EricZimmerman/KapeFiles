@@ -1,6 +1,6 @@
 Description: SANS Triage Collection
 Author: Mark Hallman
-Version: 1.5
+Version: 1.6
 Id: 1bfbd59d-6c58-4eeb-9da7-1d9612b79964
 RecreateDirectories: true
 Targets:
@@ -75,7 +75,7 @@ Targets:
     -
         Name: ThumbCache
         Category: FileKnowledge
-        Path: Thumbcache.tkape
+        Path: ThumbCache.tkape
     -
         Name: WBEM
         Category: WBEM
